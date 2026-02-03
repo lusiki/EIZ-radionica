@@ -1,0 +1,74 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Dropbox
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+# R/RStudio
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Quarto
+/.quarto/
+_site/
+_book/
+*_files/
+*_cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+
+# Large data files (keep sample data only)
+*.csv.gz
+*.parquet
+*.rds
+!data/sample_*.csv
+!data/sample_*.rds
+
+# Sensitive files
+.env
+.env.local
+*.pem
+*.key
+credentials.json
+secrets.yaml
+
+# Workshop admin (keep templates)
+admin/registrations/
+admin/feedback/

@@ -1,10 +1,20 @@
-# AI alati u ekonomskom istraživanju: od ideje do rezultata
+# LLM alati za ekonomiste: Od pregleda literature do statističke analize
 
-**AI Tools in Economic Research: From Idea to Results**
-
-Praktična primjena velikih jezičnih modela u pisanju seminarskih radova, diplomskih radova i istraživačkih projekata.
+**LLM Tools for Economists: From Literature Review to Statistical Analysis**
 
 **[Workshop overview](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/workshop_overview.html#/title-slide)**
+
+## Program radionice
+
+Kako koristiti ChatGPT, Claude i druge AI alate u akademskom istraživanju, a pritom zadržati akademsku čestitost? ▪ Kako pretvoriti nejasnu ideju u strukturiranu temu za seminarski ili diplomski rad? ▪ Kako provjeriti činjenice koje AI generira i izbjeći halucinacije? ▪ Kako napisati kod za analizu podataka čak i ako niste programer? ▪ Kako ubrzati pregled literature i sintezu izvora? ▪ Kako izgraditi reproducibilan istraživački workflow od ideje do gotovog rada?
+
+Na radionici će biti predstavljeni praktični alati i tehnike koje studenti mogu odmah primijeniti u pisanju seminarskih radova, diplomskih radova i istraživačkih projekata. Program je koncipiran u dva dana (ukupno 7 sati, 3.5 sata dnevno) i uključuje:
+
+- pregled vodećih AI alata za istraživanje (Perplexity, Gemini, Claude)
+- praktične vježbe na vlastitim temama i primjerima
+- demonstracije generiranja i debugiranja koda u R/Python
+- tehnike pisanja učinkovitih promptova za različite zadatke
+- smjernice za etičko korištenje AI u akademskom kontekstu
 
 ## O radionici
 
@@ -17,30 +27,29 @@ Praktična primjena velikih jezičnih modela u pisanju seminarskih radova, diplo
 | **Kontakt** | luka.sikic@unicat.hr |
 | **Jezik** | Hrvatski |
 
-## Što ćete naučiti
+## Dan 1 · Istraživanje i strukturiranje
 
-- Kako formulirati učinkovite upite (prompte) za različite istraživačke zadatke
-- Kako koristiti AI za pregled literature i sintezu izvora
-- Kako generirati, debugirati i dokumentirati kod za ekonomsku analizu (R/Python)
-- Kako strukturirati akademski tekst uz pomoć AI alata
-- Kako prepoznati i izbjeći zamke (halucinacije, plagijat, loša metodologija)
-- Kako izgraditi reproducibilan istraživački workflow s AI alatima
+- Uvod u radionicu i ključni ciljevi
+- Što su veliki jezični modeli i kako funkcioniraju
+- Akademska čestitost i etička pitanja korištenja AI alata
+- Pretraživanje literature s Perplexity
+- Kako provjeriti i verificirati izvore koje AI pronađe
+- Generiranje dubinskih istraživačkih izvješća s Gemini
+- Strukturiranje istraživačkog pitanja i nacrta rada s Claude
+- Praktična vježba na vlastitoj temi
+- Zaključci
 
-## Struktura radionice
+## Dan 2 · Kodiranje i pisanje
 
-### Dan 1: Temelji i literatura
-
-- Uvod u velike jezične modele (LLM)
-- Istraživanje literature s Perplexity
-- Dubinska analiza s Gemini Deep Research
-- Strukturiranje ideja s Claude
-
-### Dan 2: Kodiranje i pisanje
-
-- Kodiranje s Claude Code
-- IDE integracija s GitHub Copilot + Positron
-- LLM Notebooks za analizu podataka
-- Pisanje i uređivanje teksta s AI
+- Uvod u agentsko kodiranje s Claude Code
+- Generiranje R/Python koda za analizu podataka
+- Kako opisati što želite kada ne znate programirati
+- Integracija AI u razvojno okruženje (GitHub Copilot + Positron)
+- Iterativno poboljšavanje koda i vizualizacija
+- Pisanje i uređivanje akademskog teksta s AI alatima
+- Izgradnja kompletnog workflowa od ideje do rezultata
+- Praktična vježba na vlastitim podacima
+- Zaključci
 
 ## Alati
 

@@ -1,0 +1,188 @@
+---
+title: "AI alati u ekonomskom istraživanju"
+subtitle: "Studentska radionica (EIZ)"
+author: "Luka Šikić, UNICATH"
+date: ""
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    footer: "Ekonomski institut Zagreb | Studentska radionica"
+    transition: fade
+    width: 1600
+    height: 900
+execute:
+  echo: true
+  eval: false
+---
+
+## O radionici
+
+Dvodnevna praktična radionica o korištenju AI alata u ekonomskom istraživanju
+
+<br>
+
+**Lokacija** Ekonomski institut Zagreb, Trg J. F. Kennedyja 7
+
+**Vrijeme** 16:00 – 19:30 (oba dana)
+
+**Za koga** Studenti preddiplomskih i diplomskih studija ekonomije
+
+## Zašto ova radionica?
+
+::: {.incremental}
+- AI alati rapidno mijenjaju način na koji radimo istraživanja
+- Studenti ih već koriste, ali često neučinkovito ili neetički
+- Postoji pravi način da se AI integrira u akademski rad
+- Cilj je **ubrzati** istraživanje, a ne **zamijeniti** razmišljanje
+:::
+
+## Što ćete naučiti
+
+::: {.columns}
+::: {.column width="50%"}
+### Dan 1
+Pretraživanje i strukturiranje
+
+- Pregled literature s AI alatima
+- Sinteza izvora i provjera činjenica
+- Formuliranje istraživačkih pitanja
+- Strukturiranje akademskog teksta
+:::
+
+::: {.column width="50%"}
+### Dan 2
+Kodiranje i pisanje
+
+- Generiranje i debugiranje koda (R/Python)
+- Integracija AI u razvojno okruženje
+- Pisanje i uređivanje teksta
+- Izgradnja reproducibilnog workflowa
+:::
+:::
+
+## Alati koje ćemo koristiti
+
+| Alat | Namjena |
+|------|---------|
+| Perplexity | Pretraživanje literature s izvorima |
+| Gemini | Dubinska istraživačka izvješća |
+| Claude | Strukturiranje, pisanje, kodiranje |
+| Claude Code | Agentsko kodiranje u terminalu |
+| GitHub Copilot | Autocomplete u IDE okruženju |
+| Positron | Moderna IDE za R i Python |
+
+## Dan 1 · Istraživanje i struktura
+
+```{mermaid}
+%%| fig-width: 14
+flowchart LR
+    A[Nejasna ideja] --> B[Perplexity]
+    B --> C[Literatura i izvori]
+    C --> D[Gemini Deep Research]
+    D --> E[Sintetizirani pregled]
+    E --> F[Claude]
+    F --> G[Strukturirani nacrt]
+```
+
+## Dan 2 · Kod i tekst
+
+```{mermaid}
+%%| fig-width: 14
+flowchart LR
+    A[Istraživačko pitanje] --> B[Claude Code]
+    B --> C[R/Python skripta]
+    C --> D[Copilot + Positron]
+    D --> E[Analiza podataka]
+    E --> F[Claude]
+    F --> G[Gotov rad]
+```
+
+## Primjer workflowa · Seminarski rad
+
+::: {.incremental}
+1. **Tema** Utjecaj inflacije na potrošnju kućanstava u Hrvatskoj
+2. **Perplexity** Pronalazak ključnih studija i podataka
+3. **Gemini** Generiranje pregleda literature
+4. **Claude** Strukturiranje rada i formuliranje hipoteza
+5. **Claude Code** Pisanje R koda za analizu HBS podataka
+6. **Copilot** Iterativno poboljšanje i vizualizacije
+7. **Claude** Uređivanje i provjera teksta
+:::
+
+## Akademska čestitost
+
+::: {.callout-important}
+## AI nije zamjena za vlastito razmišljanje
+AI alati su asistenti, ne autori. Morate razumjeti sve što predajete.
+:::
+
+<br>
+
+**Što je dozvoljeno**
+
+- Korištenje AI za pretraživanje i sažimanje literature
+- Generiranje i debugiranje koda uz razumijevanje
+- Uređivanje i poboljšanje vlastitog teksta
+
+**Što nije dozvoljeno**
+
+- Predavanje AI generiranog teksta kao vlastitog
+- Citiranje izvora koje niste provjerili
+- Korištenje AI za ispit ili zadaću bez dozvole
+
+## Što trebate donijeti
+
+::: {.columns}
+::: {.column width="50%"}
+### Obavezno
+- Laptop s pristupom internetu
+- Račun na claude.ai (besplatno)
+- Račun na perplexity.ai (besplatno)
+:::
+
+::: {.column width="50%"}
+### Poželjno
+- Temu za seminarski/diplomski rad
+- Instaliran R i RStudio/Positron
+- GitHub račun (za Copilot)
+:::
+:::
+
+## Očekivani ishodi
+
+Nakon radionice moći ćete
+
+::: {.incremental}
+- Učinkovito koristiti AI za pregled literature
+- Pisati prompte koji daju korisne rezultate
+- Generirati i razumjeti kod za analizu podataka
+- Prepoznati kada AI griješi i kako to provjeriti
+- Izgraditi vlastiti istraživački workflow s AI alatima
+:::
+
+## Prijave
+
+<br>
+
+📧 **irubil@eizg.hr**
+
+<br>
+
+Navedite u predmetu „Studentska radionica"
+
+Broj mjesta je ograničen
+
+<br>
+
+::: {.callout-note}
+Ova aktivnost financirana je sredstvima iz Nacionalnog plana oporavka i otpornosti 2021.–2026. (NextGenerationEU)
+:::
+
+## Pitanja?
+
+<br>
+
+::: {.r-fit-text}
+Vidimo se u ožujku!
+:::

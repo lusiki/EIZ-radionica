@@ -4,7 +4,7 @@
 
 Praktična primjena velikih jezičnih modela u pisanju seminarskih radova, diplomskih radova i istraživačkih projekata.
 
-**[Workshop overview](admin/workshop_overview.html)**
+**[Workshop overview](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/workshop_overview.html#/title-slide)**
 
 ## O radionici
 
@@ -14,7 +14,7 @@ Praktična primjena velikih jezičnih modela u pisanju seminarskih radova, diplo
 | **Vrijeme** | 16:00 – 19:30 (7 sati ukupno) |
 | **Lokacija** | Ekonomski institut, Zagreb; Trg J. F. Kennedyja 7 |
 | **Organizator** | Ekonomski institut Zagreb (EIZ) |
-| **Kontakt** | irubil@eizg.hr |
+| **Kontakt** | luka.sikic@unicat.hr |
 | **Jezik** | Hrvatski |
 
 ## Što ćete naučiti

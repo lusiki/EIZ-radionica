@@ -4,7 +4,7 @@
 
 Praktična primjena velikih jezičnih modela u pisanju seminarskih radova, diplomskih radova i istraživačkih projekata.
 
-**[Poziv za radionicu (PDF)](admin/old_announcements/Studentska_radionica_EIZ.pdf)**
+**[Workshop overview (PDF)](admin/old_announcements/Studentska_radionica_EIZ.pdf)**
 
 ## O radionici
 

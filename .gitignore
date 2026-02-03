@@ -45,8 +45,9 @@ ENV/
 /.quarto/
 _site/
 _book/
-*_files/
 *_cache/
+# Keep workshop_overview_files for rendered HTML
+!admin/workshop_overview_files/
 
 # Temporary files
 *.tmp

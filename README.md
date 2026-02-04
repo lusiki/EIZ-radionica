@@ -2,7 +2,7 @@
 
 **LLM Tools for Economists: From Literature Review to Statistical Analysis**
 
-**[Workshop overview](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/workshop_overview.html#/title-slide)**
+**[Workshop overview](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/workshop_overview.html#/title-slide)** | **[Prerequisites](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/prerequisites.html)**
 
 ## Program radionice
 

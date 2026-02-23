@@ -26,9 +26,9 @@ execute:
   message: false
 ---
 
-```{css}
-#| echo: false
 
+::: {.cell}
+<style type="text/css">
 .tool-card {
   border-left: 4px solid #3498db;
   padding: 1rem;
@@ -63,7 +63,9 @@ execute:
   font-size: 0.85rem;
   font-weight: bold;
 }
-```
+</style>
+:::
+
 
 ## Pregled potrebnih alata {.unnumbered}
 
@@ -291,8 +293,10 @@ R je vodeći programski jezik za statističku analizu u ekonomiji i društvenim 
 
 #### Linux (Ubuntu/Debian)
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 # Dodajte CRAN repozitorij
 sudo apt update
 sudo apt install software-properties-common dirmngr
@@ -305,6 +309,8 @@ sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu jammy-
 sudo apt update
 sudo apt install r-base r-base-dev
 ```
+:::
+
 
 :::
 
@@ -312,10 +318,14 @@ sudo apt install r-base r-base-dev
 
 Nakon instalacije, otvorite terminal (Command Prompt na Windowsima) i upišite:
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 R --version
 ```
+:::
+
 
 Trebali biste vidjeti informacije o verziji R-a.
 
@@ -374,8 +384,10 @@ RStudio je odličan alat koji možete nastaviti koristiti. Positron odabiremo za
 2. Preuzmite .deb (Debian/Ubuntu) ili .rpm (Fedora) paket
 3. Instalirajte paket:
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 # Za Debian/Ubuntu
 sudo dpkg -i positron_*.deb
 sudo apt install -f
@@ -383,6 +395,8 @@ sudo apt install -f
 # Za Fedora
 sudo rpm -i positron_*.rpm
 ```
+:::
+
 
 :::
 
@@ -437,30 +451,42 @@ Quarto je sustav otvorenog koda za kreiranje znanstvenih i tehničkih dokumenata
 
 Alternativno, ako koristite Homebrew:
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 brew install quarto
 ```
+:::
+
 
 #### Linux
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 # Preuzmite najnoviju verziju
 wget https://github.com/quarto-dev/quarto-cli/releases/latest/download/quarto-linux-amd64.deb
 
 # Instalirajte
 sudo dpkg -i quarto-linux-amd64.deb
 ```
+:::
+
 
 :::
 
 ### Provjera instalacije
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 quarto --version
 ```
+:::
+
 
 ---
 
@@ -581,10 +607,14 @@ Copilot je AI asistent koji predlaže kod dok pišete. Integriran direktno u Pos
 
 Otvorite novu R datoteku i počnite pisati:
 
-```{r}
-#| eval: false
+
+::: {.cell}
+
+```{.r .cell-code}
 # Funkcija za izračun srednje vrijednosti
 ```
+:::
+
 
 Copilot bi trebao automatski predložiti nastavak koda u sivoj boji. Pritisnite **Tab** za prihvaćanje prijedloga.
 
@@ -627,28 +657,40 @@ Git prati sve promjene u vašem kodu i omogućuje vam da se vratite na bilo koju
 
 Git je vjerojatno već instaliran. Provjerite:
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 git --version
 ```
+:::
+
 
 Ako nije instaliran, instalirajte putem Homebrew:
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 brew install git
 ```
+:::
+
 
 #### Linux
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 # Debian/Ubuntu
 sudo apt install git
 
 # Fedora
 sudo dnf install git
 ```
+:::
+
 
 :::
 
@@ -656,11 +698,15 @@ sudo dnf install git
 
 Nakon instalacije, konfigurirajte svoje ime i email:
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 git config --global user.name "Vaše Ime"
 git config --global user.email "vas.email@example.com"
 ```
+:::
+
 
 Koristite istu email adresu kao na GitHubu.
 
@@ -698,11 +744,15 @@ Claude Code zahtijeva Anthropic API ključ i naplaćuje se po korištenju. Cijen
 
 ### Instalacija
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 # Zahtijeva Node.js 18+
 npm install -g @anthropic-ai/claude-code
 ```
+:::
+
 
 ### Konfiguracija
 
@@ -710,14 +760,18 @@ npm install -g @anthropic-ai/claude-code
 2. Generirajte API ključ
 3. Postavite environment varijablu:
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 # Linux/macOS (dodajte u .bashrc ili .zshrc)
 export ANTHROPIC_API_KEY="sk-ant-..."
 
 # Windows (PowerShell)
 $env:ANTHROPIC_API_KEY="sk-ant-..."
 ```
+:::
+
 
 ::: {.callout-note}
 ## Za radionicu
@@ -774,8 +828,10 @@ Prije radionice provjerite da su svi alati ispravno instalirani.
 
 Otvorite terminal (Command Prompt/PowerShell na Windowsima, Terminal na macOS/Linux) i izvršite:
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 # R
 R --version
 
@@ -785,6 +841,8 @@ quarto --version
 # Git
 git --version
 ```
+:::
+
 
 ## Provjera u Positronu
 
@@ -792,14 +850,18 @@ git --version
 2. Kreirajte novu R datoteku (File > New File > R Script)
 3. Upišite i izvršite:
 
-```{r}
-#| eval: false
+
+::: {.cell}
+
+```{.r .cell-code}
 # Trebalo bi ispisati verziju R-a
 R.version.string
 
 # Testirajte Copilot - počnite pisati komentar:
 # Funkcija koja računa
 ```
+:::
+
 
 Ako Copilot radi, trebali biste vidjeti prijedloge koda u sivoj boji.
 
@@ -847,8 +909,10 @@ Ako Copilot radi, trebali biste vidjeti prijedloge koda u sivoj boji.
 
 Konfigurirajte credential helper:
 
-```{bash}
-#| eval: false
+
+::: {.cell}
+
+```{.bash .cell-code}
 # Windows
 git config --global credential.helper wincred
 
@@ -858,6 +922,8 @@ git config --global credential.helper osxkeychain
 # Linux
 git config --global credential.helper store
 ```
+:::
+
 :::
 
 ## Kontakt
@@ -879,3 +945,4 @@ Molimo u poruci navedite:
 ## Vidimo se na radionici!
 Hvala na strpljenju pri instalaciji alata. Dobro pripremljeni sudionici omogućuju nam da se fokusiramo na učenje, a ne na tehničke probleme.
 :::
+

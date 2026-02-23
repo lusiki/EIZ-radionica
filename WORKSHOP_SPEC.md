@@ -1,11 +1,11 @@
-# Studentska radionica: AI alati u ekonomskom istraživanju
+# Studentska radionica: Upotreba AI alata u studentskom istraživanju
 
 ## Workshop Metadata
 
 | Field | Value |
 |-------|-------|
-| Title (HR) | **AI alati u ekonomskom istraživanju: od ideje do rezultata** |
-| Title (EN) | AI Tools in Economic Research: From Idea to Results |
+| Title (HR) | **Upotreba AI alata u studentskom istraživanju: pregled literature, kodiranje, analiza, pisanje** |
+| Title (EN) | Using AI Tools in Student Research: Literature Review, Coding, Analysis, Writing |
 | Subtitle (HR) | Praktična primjena velikih jezičnih modela u pisanju seminarskih radova, diplomskih radova i istraživačkih projekata |
 | Location | Ekonomski institut, Zagreb; Trg J. F. Kennedyja 7 |
 | Dates | 16. i 17. ožujka 2025. |

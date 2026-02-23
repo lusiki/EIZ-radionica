@@ -1,5 +1,5 @@
 ---
-title: "AI alati u ekonomskom istraživanju"
+title: "Upotreba AI alata u studentskom istraživanju: pregled literature, kodiranje, analiza, pisanje"
 subtitle: "Studentska radionica (EIZ)"
 author: "Luka Šikić, UNICATH"
 date: ""
@@ -18,7 +18,7 @@ execute:
 
 ## O radionici
 
-Dvodnevna praktična radionica o korištenju AI alata u ekonomskom istraživanju
+Dvodnevna praktična radionica o upotrebi AI alata u studentskom istraživanju
 
 <br>
 

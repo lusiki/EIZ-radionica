@@ -1,6 +1,6 @@
-# LLM alati za ekonomiste: Od pregleda literature do statističke analize
+# Upotreba AI alata u studentskom istraživanju: pregled literature, kodiranje, analiza, pisanje
 
-**LLM Tools for Economists: From Literature Review to Statistical Analysis**
+**Using AI Tools in Student Research: Literature Review, Coding, Analysis, Writing**
 
 **[Workshop overview](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/workshop_overview.html#/title-slide)** | **[Prerequisites](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/prerequisites.html)**
 

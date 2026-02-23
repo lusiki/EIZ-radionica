@@ -1,6 +1,6 @@
 ---
 title: "Vodič za instalaciju i postavljanje alata"
-subtitle: "Studentska EIZ radionica: LLM alati za ekonomiste"
+subtitle: "Studentska EIZ radionica: Upotreba AI alata u studentskom istraživanju"
 author: "Luka Šikić, UNICATH"
 date: "Ožujak 2025"
 lang: hr

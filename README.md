@@ -8,7 +8,7 @@ Radionica za diplomske studente ekonomije. Ekonomski institut Zagreb, 16.–17. 
 
 Blok 1.1 uvodi transformer arhitekturu, RAG sustave, akademsku čestitost i APA 7 format za AI alate. Blok 1.2 pokriva Perplexity platformu sa trostrukom verifikacijom izvora, Spaces kolaboracijom i prompt inženjeringom za akademsko pretraživanje. Blok 1.3 objašnjava Gemini Deep Research kroz šest faza autonomnog istraživanja, MoE arhitekturu, G-button verifikaciju i instruction drift. Blok 1.4 demonstrira strukturiranje istraživačkog nacrta s Claudeom, Claude Projects, MCP konektore i iterativni prompt dizajn.
 
-[HTML verzija](slides/day1.html) · [PDF verzija](slides/day1.pdf) · [QMD izvorni kod](slides/day1.qmd)
+[HTML verzija](https://raw.githack.com/lusiki/EIZ-radionica/refs/heads/main/slides/day1.html) · [PDF verzija](slides/day1.pdf) · [QMD izvorni kod](slides/day1.qmd)
 
 ## Struktura
 

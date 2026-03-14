@@ -1,94 +1,44 @@
-# Upotreba AI alata u studentskom istraživanju: pregled literature, kodiranje, analiza, pisanje
+# Upotreba AI alata u studentskom istraživanju
 
-**Using AI Tools in Student Research: Literature Review, Coding, Analysis, Writing**
+Radionica za diplomske studente ekonomije. Ekonomski institut Zagreb, 16.–17. ožujka 2025.
 
-**[Workshop overview](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/workshop_overview.html#/title-slide)** | **[Prerequisites](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/prerequisites.html)**
+## Materijali
 
-## Program radionice
+**Dan 1 — Istraživanje i strukturiranje**
 
-Kako koristiti ChatGPT, Claude i druge AI alate u akademskom istraživanju, a pritom zadržati akademsku čestitost? ▪ Kako pretvoriti nejasnu ideju u strukturiranu temu za seminarski ili diplomski rad? ▪ Kako provjeriti činjenice koje AI generira i izbjeći halucinacije? ▪ Kako napisati kod za analizu podataka čak i ako niste programer? ▪ Kako ubrzati pregled literature i sintezu izvora? ▪ Kako izgraditi reproducibilan istraživački workflow od ideje do gotovog rada?
+Blok 1.1 uvodi transformer arhitekturu, RAG sustave, akademsku čestitost i APA 7 format za AI alate. Blok 1.2 pokriva Perplexity platformu sa trostrukom verifikacijom izvora, Spaces kolaboracijom i prompt inženjeringom za akademsko pretraživanje. Blok 1.3 objašnjava Gemini Deep Research kroz šest faza autonomnog istraživanja, MoE arhitekturu, G-button verifikaciju i instruction drift. Blok 1.4 demonstrira strukturiranje istraživačkog nacrta s Claudeom, Claude Projects, MCP konektore i iterativni prompt dizajn.
 
-Na radionici će biti predstavljeni praktični alati i tehnike koje studenti mogu odmah primijeniti u pisanju seminarskih radova, diplomskih radova i istraživačkih projekata. Program je koncipiran u dva dana (ukupno 7 sati, 3.5 sata dnevno) i uključuje:
+[HTML verzija](slides/day1.html) · [PDF verzija](slides/day1.pdf) · [QMD izvorni kod](slides/day1.qmd)
 
-- pregled vodećih AI alata za istraživanje (Perplexity, Gemini, Claude)
-- praktične vježbe na vlastitim temama i primjerima
-- demonstracije generiranja i debugiranja koda u R/Python
-- tehnike pisanja učinkovitih promptova za različite zadatke
-- smjernice za etičko korištenje AI u akademskom kontekstu
-
-## O radionici
+## Struktura
 
 | | |
 |---|---|
-| **Datum** | 16. i 17. ožujka 2025. |
-| **Vrijeme** | 16:00 – 19:30 (7 sati ukupno) |
-| **Lokacija** | Ekonomski institut, Zagreb; Trg J. F. Kennedyja 7 |
-| **Organizator** | Ekonomski institut Zagreb (EIZ) |
-| **Kontakt** | luka.sikic@unicat.hr |
-| **Jezik** | Hrvatski |
-
-## Dan 1 · Istraživanje i strukturiranje
-
-- Uvod u radionicu i ključni ciljevi
-- Što su veliki jezični modeli i kako funkcioniraju
-- Akademska čestitost i etička pitanja korištenja AI alata
-- Pretraživanje literature s Perplexity
-- Kako provjeriti i verificirati izvore koje AI pronađe
-- Generiranje dubinskih istraživačkih izvješća s Gemini
-- Strukturiranje istraživačkog pitanja i nacrta rada s Claude
-- Praktična vježba na vlastitoj temi
-- Zaključci
-
-## Dan 2 · Kodiranje i pisanje
-
-- Uvod u agentsko kodiranje s Claude Code
-- Generiranje R/Python koda za analizu podataka
-- Kako opisati što želite kada ne znate programirati
-- Integracija AI u razvojno okruženje (GitHub Copilot + Positron)
-- Iterativno poboljšavanje koda i vizualizacija
-- Pisanje i uređivanje akademskog teksta s AI alatima
-- Izgradnja kompletnog workflowa od ideje do rezultata
-- Praktična vježba na vlastitim podacima
-- Zaključci
+| Datum | 16.–17. ožujka 2025. |
+| Vrijeme | 16:00–19:30 (7 sati ukupno) |
+| Lokacija | Ekonomski institut Zagreb, Trg J. F. Kennedyja 7 |
+| Kontakt | luka.sikic@unicat.hr |
+| Jezik | Hrvatski |
 
 ## Alati
 
 | Alat | Namjena | Pristup |
 |------|---------|---------|
 | Perplexity | AI pretraživanje s citatima | [perplexity.ai](https://perplexity.ai) |
-| Gemini | Deep Research značajka | [gemini.google.com](https://gemini.google.com) |
-| Claude | Razmišljanje, pisanje, kodiranje | [claude.ai](https://claude.ai) |
-| Claude Code | Terminal-based agentic coding | API pristup |
-| GitHub Copilot | IDE code completion | [GitHub Copilot](https://github.com/features/copilot) (besplatno za studente) |
-| Positron | Moderni R/Python IDE | [positron.posit.co](https://positron.posit.co) |
+| Gemini | Deep Research izvješća | [gemini.google.com](https://gemini.google.com) |
+| Claude | Strukturiranje, pisanje, kodiranje | [claude.ai](https://claude.ai) |
+| Claude Code | Agentsko kodiranje u terminalu | API pristup |
+| GitHub Copilot | Dovršavanje koda u IDE-u | [github.com/features/copilot](https://github.com/features/copilot) |
+| Positron | R/Python IDE | [positron.posit.co](https://positron.posit.co) |
 
-## Struktura repozitorija
+## Administrativno
 
-```
-├── README.md               # Ovaj dokument
-├── WORKSHOP_SPEC.md        # Detaljna specifikacija radionice
-├── slides/                 # Quarto prezentacije
-│   ├── day1.qmd
-│   └── day2.qmd
-├── materials/              # Materijali za radionicu
-│   ├── prompts/            # Primjeri promptova
-│   ├── exercises/          # Praktične vježbe
-│   └── cheatsheets/        # Brzi vodiči
-├── data/                   # Uzorci podataka
-├── code/                   # Demo skripte
-└── admin/                  # Administrativni materijali
-```
+[Pregled radionice](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/workshop_overview.html#/title-slide) · [Preduvjeti](https://raw.githack.com/lusiki/EIZ-radionica/main/admin/prerequisites.html) · [Specifikacija](WORKSHOP_SPEC.md)
 
 ## Preduvjeti
 
-- Osnovna računalna pismenost
-- Interes za istraživačke metode
-- Vlastiti laptop s pristupom internetu
+Vlastiti laptop s pristupom internetu. Osnovna računalna pismenost. Interes za istraživačke metode.
 
 ## Financiranje
 
 Radionica je financirana iz Nacionalnog plana oporavka i otpornosti 2021.–2026. (NextGenerationEU).
-
----
-
-*Zadnja izmjena: veljača 2025.*

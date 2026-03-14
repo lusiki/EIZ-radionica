@@ -1,0 +1,610 @@
+---
+title: "Dan 1: Istraživanje i strukturiranje"
+subtitle: "Upotreba AI alata u studentskom istraživanju"
+author: "Luka Šikić, UNICATH"
+date: "Ožujak 2025"
+lang: hr
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    toc-title: "Sadržaj"
+    toc-location: left
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    code-summary: "Prikaži kod"
+    highlight-style: github
+    fig-align: center
+    smooth-scroll: true
+    link-external-newwindow: true
+    self-contained: true
+execute:
+  echo: true
+  eval: false
+  warning: false
+  message: false
+---
+
+<style>
+.tool-card {
+  border-left: 4px solid #3498db;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 0 8px 8px 0;
+}
+
+.demo-box {
+  border-left: 4px solid #e67e22;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0;
+  background: linear-gradient(135deg, #fef9f3 0%, #fdf2e9 100%);
+  border-radius: 0 8px 8px 0;
+}
+
+.prompt-box {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.prompt-box .user-label {
+  color: #64b5f6;
+  font-weight: bold;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.comparison-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+}
+
+.time-badge {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.exercise-card {
+  border: 2px solid #27ae60;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin: 1.2rem 0;
+  background: #f0faf4;
+}
+
+.exercise-card h4 {
+  color: #27ae60;
+  margin-top: 0;
+}
+
+.key-point {
+  border-left: 4px solid #9b59b6;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  background: #f5f0fa;
+  border-radius: 0 8px 8px 0;
+}
+
+.spectrum-green {
+  border-left: 4px solid #27ae60;
+  padding: 0.8rem 1rem;
+  margin: 0.8rem 0;
+  background: #f0faf4;
+  border-radius: 0 8px 8px 0;
+}
+
+.spectrum-yellow {
+  border-left: 4px solid #f39c12;
+  padding: 0.8rem 1rem;
+  margin: 0.8rem 0;
+  background: #fef9e7;
+  border-radius: 0 8px 8px 0;
+}
+
+.spectrum-red {
+  border-left: 4px solid #e74c3c;
+  padding: 0.8rem 1rem;
+  margin: 0.8rem 0;
+  background: #fdedec;
+  border-radius: 0 8px 8px 0;
+}
+</style>
+
+# Uvod {.unnumbered}
+
+Zamislite da pred sobom imate hrpu od pedesetak akademskih radova, nejasnu ideju za temu seminarskog rada, i rok koji se opasno bliži. Do prije godinu dana vaš jedini put naprijed bio je sjediti u knjižnici, otvarati jedan po jedan rad, bilježiti na papiru, i pokušavati sastaviti smislenu priču iz fragmenata koji se ponekad čine nepovezanima. Danas postoji drugi put. Nije bolji u svakom pogledu, ali je dramatično brži u nekim ključnim fazama, i upravo te faze prolazimo na ovoj radionici.
+
+Danas ćemo raditi s tri alata koji pokrivaju tri različite potrebe istraživačkog procesa. Perplexity je AI pretraživač koji kombinira pretraživanje interneta sa sintezom rezultata i automatskim citiranjem izvora, što ga čini idealnim za prvu eksploraciju teme. Gemini Deep Research ide korak dalje i generira cjelovita višestraničana izvješća na temelju pretraživanja stotina web stranica, pa ga koristimo za dublju sintezu kad trebamo razumjeti cijelo polje. Claude je konverzacijski model iznimno dobar u strukturiranju argumenata, analizi teksta, i akademskom pisanju, pa njime zatvaramo dan pretvarajući nestrukturirane bilješke u organiziran nacrt rada.
+
+Sve primjere gradimo oko jednog stvarnog istraživačkog projekta iz ekonomije: analize vidljivosti Hrvatske narodne banke u medijskom diskursu o inflaciji. To istraživanje koristi korpus od 31.536 članaka hrvatskih digitalnih medija i kombinira ekonometriju, analizu teksta, i mrežnu analizu. Nećete trebati razumjeti sve detalje tog projekta, ali ćete vidjeti kako alati koje danas učimo funkcioniraju na pravom istraživačkom problemu, ne na pojednostavljenim primjerima iz udžbenika. Na kraju dana imat ćete jasan predložak kako primijeniti iste alate na vlastitu temu.
+
+::: {.callout-tip}
+## Prije nego počnemo
+Provjerite da imate otvorene račune na [claude.ai](https://claude.ai), [perplexity.ai](https://perplexity.ai) i [gemini.google.com](https://gemini.google.com). Ako niste instalirali alate prema uputama iz [vodiča za instalaciju](../admin/prerequisites.html), sada je zadnji trenutak.
+:::
+
+---
+
+# Blok 1.1: Uvod u AI alate za istraživanje [45 min]{.time-badge}
+
+## Kako zapravo rade jezični modeli
+
+U studenom 2022. godine tvrtka OpenAI pustila je u javnost alat pod nazivom ChatGPT. U prvih pet dana registriralo se milijun korisnika. U roku od dva mjeseca ta brojka prešla je stotinu milijuna, čime je ChatGPT postao najbrže rastući softverski proizvod u povijesti. Tri godine kasnije, ulaskom u 2026. godinu, alati poput GPT-5.4, Claude 4.6 Opus i Gemini 3.1 Pro prestali su biti tek interaktivni chatbotovi i postali su autonomni istraživački agenti sposobni za dubinsko rezoniranje, analizu cijelih repozitorija koda i sintezu izvještaja koji po opsegu i dubini pariraju ljudskim asistentima. No unatoč toj golemoj transformaciji, većina ljudi koji svakodnevno koriste jezične modele zapravo ne razumije što se događa ispod površine, i upravo to nerazumijevanje vodi do dviju opasnih krajnosti. Prva je slijepo povjerenje u sve što model kaže. Druga je potpuno odbacivanje jer je model jednom pogriješio. Obje su pogrešne, i obje proizlaze iz istog uzroka: iz nepoznavanja mehanizma.
+
+Najlakše je razumjeti kako radi veliki jezični model ili LLM (od engleskog large language model) ako zamislite studenta koji je na ispitu iz ekonomije pročitao apsolutno sve udžbenike, sve radove, sve novinske članke, sve blogove, sve komentare na internetu. Taj student ima fenomenalnu sposobnost prepoznavanja uzoraka. Može završiti svaku rečenicu koju započnete jer je vidio tisuće sličnih rečenica. Može napisati uvjerljiv paragraf o monetarnoj politici jer je čitao stotine takvih paragrafa. Ali postoji ključna razlika između tog studenta i pravog ekonomista: taj student nikada nije bio na terenu. Nikada nije analizirao stvarne podatke, nikada nije stajao pred metodološkim izborom između instrumentalnih varijabli i razlike u razlikama, nikada nije osjetio frustraciju kad mu se model ne konvergira. On reproducira uzorke iz teksta, ne iz iskustva.
+
+Upravo tako funkcionira LLM. Arhitektura transformatora (transformer architecture) koja pokreće ove modele koristi mehanizme pažnje (attention mechanisms) kako bi izračunala težinu svake riječi, odnosno tokena, u rečenici. Kada model generira odgovor, on doslovno pogađa koja je sljedeća najvjerojatnija riječ u nizu. Matematički, odabir sljedećeg tokena $t_{n+1}$ temelji se na maksimiziranju uvjetne vjerojatnosti:
+
+$$P(t_{n+1} | t_1, t_2,..., t_n; \theta)$$
+
+gdje $\theta$ predstavlja milijarde parametara naučenih tijekom treninga. Ne morate razumjeti formulu, ali morate razumjeti njezinu posljedicu: čak i kada je vjerojatnost ispravnog odgovora visoka, postoji mala šansa za pogrešku koja se akumulira u dugim tekstovima. U ekonomiji, gdje jedna decimala u kamatnoj stopi mijenja ishod modela, ta akumulirana vjerojatnost pogreške postaje kritična. Model ne "razmišlja" o inflaciji kada mu postavite pitanje o inflaciji u Hrvatskoj. On generira niz riječi koji je statistički najvjerojatniji nastavak vašeg upita, na temelju svega što je vidio o inflaciji, Hrvatskoj, i akademskim tekstovima koji počinju sličnim pitanjima. To znači da model "zvuči pametno" jer savršeno oponaša uzorke stručnog diskursa, ali mu nedostaje stvarna kognitivna usidrenost u stvarnosti. On ne memorira podatke kao klasična baza podataka, već memorira odnose između ideja, što ga čini iznimno kreativnim, ali i sklonim greškama.
+
+Ova distinkcija nije akademska pedanterija. Ona ima izravne praktične posljedice za sve što ćemo raditi na ovoj radionici. Ako model generira tekst koji je statistički vjerojatan ali faktički netočan, to se zove halucinacija ili konfabulacija (hallucination). U ekonomiji se to manifestira na tri opasna načina. Prvo, fabriciranje referenci: model može navesti autora koji postoji, primjerice guvernera Vujčića, i temu koja je relevantna, primjerice transmisijski mehanizam eura, ali izmisliti naslov rada i godinu objave. Istraživanja pokazuju da čak i GPT-4.0 halucinira nepostojeće citate u više od dvadeset posto slučajeva, što se u novijim modelima smanjilo ali nije eliminirano. Drugo, statističke anomalije: model može tvrditi da je HNB projicirao inflaciju od 5.5 posto dok stvarni dokumenti ukazuju na raspon od 3.1 do 3.4 posto. Treće, pogrešne formule: prilikom pisanja koda za ekonometrijsku analizu, model može generirati uvjerljive ali matematički neispravne transformacije varijabli koje vode do pogrešnih zaključaka o kauzalnosti. Uzrok je uvijek isti: model nema pristup "istini", samo "vjerojatnosti teksta", i teži tome da bude koristan sugovornik, što ga ponekad navodi da generira odgovor čak i kada nema dovoljno podataka, preferirajući fluidnost nad točnošću. Vaš posao, i to je fundamentalni princip cijele ove radionice, jest provjeriti svaki put.
+
+::: {.callout-note}
+## Ključni pojmovi
+Nekoliko termina koji će se ponavljati kroz cijelu radionicu korisno je zapamtiti odmah. Token (token) je osnovna jedinica teksta koju model obrađuje, otprilike tri četvrtine riječi na engleskom, nešto manje na hrvatskom. Kontekstni prozor (context window) je količina teksta koju model može "vidjeti" odjednom; modeli poput Claude 4.6 i Gemini 3.1 Pro danas obrađuju preko milijun tokena, što je ekvivalent tisućama stranica teksta ili desecima tisuća redaka koda, omogućujući studentima da učitaju cijele baze podataka ili opsežne literature i traže od modela da identificira istraživačke praznine unutar tog specifičnog korpusa. Upit ili prompt je tekst koji vi šaljete modelu, a dovršetak ili completion je odgovor koji model generira. Temperatura (temperature) je parametar koji kontrolira koliko je model "kreativan" nasuprot "preciznom": niska temperatura (0.1) ključna je za dobivanje egzaktnih podataka o BDP-u, dok viša služi za brainstorming tema.
+:::
+
+## Krajolik AI modela u 2026.
+
+Da biste razumjeli zašto na ovoj radionici koristimo baš alate koje koristimo, morate imati barem osnovnu sliku tko su glavni igrači i po čemu se razlikuju. Tržište modela u 2026. godini iznimno je kompetitivno, s jasnom podjelom na vlasničke (proprietary) i otvorene (open-source) modele, i krajolik se mijenja gotovo iz mjeseca u mjesec.
+
+OpenAI razvija GPT seriju modela, trenutno GPT-5.4 Pro koji donosi vrhunsko rezoniranje i agente koji mogu samostalno koristiti računalo, ali uz visoku cijenu i zatvoren sustav bez uvida u podatke za treniranje. Anthropic razvija Claude seriju, trenutno Claude 4.6 Opus koji se ističe izuzetnom preciznošću u citiranju, sigurnošću, i najvećim kontekstnim prozorom na tržištu, premda ima stroža pravila odbijanja za kontroverzne teme. Google razvija Gemini modele, od kojih je Gemini 3.1 Pro posebno zanimljiv zbog integracije s Google ekosustavom i napredne analize videa i slika, ali ponekad previše fokusiran na promoviranje Googleovih servisa. Meta je objavila Llama 4 kao najjači model otvorenog koda koji omogućuje potpunu privatnost podataka pri lokalnom pokretanju, ali zahtijeva snažan hardver za optimalno rezoniranje. Europski Mistral AI razvija Mistral Large s posebnim fokusom na europske jezike uključujući hrvatski, premda ima manji ekosustav dodataka u usporedbi s OpenAI-jem. DeepSeek R1 iz kineskog DeepSeeka izvrstan je za matematiku i kompleksno kodiranje uz nižu cijenu, ali s ograničenim mogućnostima za opće kreativno pisanje.
+
+Za studente je posebno važna jedna inovacija iz ove generacije modela: višekoračno rezoniranje (multi-step reasoning). Modeli poput GPT-5.4 i Claude 4.6 unutar sebe provode više ciklusa provjere: generiraju odgovor, interno ga kritiziraju, ispravljaju, i tek onda isporučuju finalni rezultat. To je revolucionarno za rješavanje ekonometrijskih problema jer značajno smanjuje stopu pogreške u kompleksnim izračunima. Ipak, ni ovo ne eliminira halucinacije, samo ih smanjuje.
+
+Zašto bi vas ovo trebalo zanimati? Zato što ne postoji jedan model koji je najbolji za sve. Model koji je izvrstan za brzu sintezu literature možda je slab za generiranje koda. Model koji piše savršen tekst na engleskom možda ima problema s hrvatskim deklinacijama. Cijeli prvi dan ove radionice gradi se oko principa "pravi alat za pravi zadatak", a da biste taj princip primijenili, morate razumjeti barem osnovno čime raspolažete.
+
+## AI alati po fazama istraživačkog procesa
+
+Svaki istraživački projekt, bio to seminarski rad, diplomski rad ili doktorska disertacija, prolazi kroz nekoliko prepoznatljivih faza. Počinje se s pretraživanjem i otkrivanjem literature, nastavlja se sa sintezom i pregledom pronađenog, potom slijedi strukturiranje ideja i formuliranje hipoteza, zatim kodiranje i analiza podataka, i konačno pisanje i uređivanje teksta. Za svaku od tih faza danas postoje specijalizirani AI alati, i pravi izbor alata može dramatično ubrzati rad bez žrtvovanja kvalitete.
+
+Za pretraživanje i otkrivanje literature najbolji alati su Perplexity AI koji djeluje kao "tražilica s odgovorima" citirajući izvore uz svaku tvrdnju, Semantic Scholar koji koristi AI za rangiranje radova prema utjecaju i vizualizaciju grafova citiranosti pomažući studentima da pronađu "temeljne" radove u području ekonomske teorije, Elicit koji je specijaliziran za izvlačenje podataka iz tablica radova i njihovu usporedbu u obliku istraživačke matrice, i Connected Papers koji vizualizira mrežu citata oko pojedinog rada. Za dubinsku sintezu i generiranje pregleda literature ističu se Gemini Deep Research koji autonomno provodi istraživanje preko weba sintetizirajući izvještaje od dvadeset do trideset stranica s ugrađenim citatima, i Claude Projects koji omogućuje studentu da kreira privatnu bazu znanja od učitanih PDF-ova, primjerice sva izvješća HNB-a od 2020. do 2026., i postavlja pitanja isključivo na temelju tih dokumenata eliminirajući vanjske halucinacije. Za strukturiranje ideja i planiranje najkorisniji su Claude i ChatGPT kao konverzacijski partneri koji pomažu u dekompoziciji kompleksnih pitanja na manje cjeline. Za kodiranje i analizu podataka tu su Claude Code za agentsko kodiranje iz terminala, Positron kao sljedeća generacija IDE-a za R i Python s nativnim AI asistentima, GitHub Copilot za autocomplete u editoru, te Cursor kao alternativna IDE integracija. Za pisanje i uređivanje teksta ponovo su na prvom mjestu Claude koji je poznat po najprirodnijem stilu pisanja koji najmanje podsjeća na "robotski" tekst, uz specijalizirane alate poput Grammarly i DeepL Write za profesionalni akademski ton.
+
+Na ovoj radionici fokusiramo se na šest alata: Perplexity, Gemini, Claude, Claude Code, GitHub Copilot, i Positron. Odabrani su prema tri kriterija. Prvo, svi imaju besplatan ili studentski pristup. Drugo, pokrivaju različite faze istraživačkog procesa. Treće, predstavljaju različite paradigme interakcije s AI, od pretraživanja preko konverzacije do agentskog kodiranja, što vam daje široku sliku mogućnosti.
+
+::: {.callout-tip}
+## Napravite sami
+Otvorite [perplexity.ai](https://perplexity.ai), [gemini.google.com](https://gemini.google.com), i [claude.ai](https://claude.ai) u tri zasebna taba preglednika. Postavite isto pitanje svim trima: "Koji su ključni teorijski modeli koji objašnjavaju kako medijsko izvještavanje utječe na inflacijska očekivanja?" Usporedite odgovore. Koji je najdetaljniji? Koji ima najbolje izvore? Koji je najčitljiviji? Ova jednostavna vježba demonstrira zašto je korisno poznavati više alata.
+:::
+
+## Akademska čestitost: granice dopuštenog
+
+Ovo je najvažniji dio uvodnog bloka, i ako zapamtite samo jednu stvar s cijele radionice, neka bude ova. AI alati su iznimno korisni za istraživanje, ali granica između legitimne pomoći i akademske nepoštenja nije uvijek očita, a posljedice krivog izbora mogu biti ozbiljne.
+
+U eri modela koji mogu generirati cijele seminarske radove u nekoliko sekundi, akademska čestitost prestaje biti set administrativnih pravila i postaje temelj profesionalnog identiteta ekonomista. Studenti moraju razumjeti da je svako korištenje AI-ja koje prikriva nedostatak vlastitog razumijevanja ili truda čin akademskog nepoštenja. Stanje u Hrvatskoj karakterizira svojevrsna siva zona. Većina hrvatskih sveučilišta nema eksplicitnu politiku o korištenju AI alata u studentskim radovima, premda Rektorski zbor RH redovito raspravlja o nacionalnim kriterijima naglašavajući da je AI alat koji zahtijeva transparentnost. Ekonomski fakultet u Zagrebu ima smjernice, ali one su generalne i ostavljaju prostor za tumačenje, s naglaskom na originalnosti, provjeri činjenica, i mogućnosti usmene obrane rada. To je bitno drugačije od situacije na vodećim međunarodnim sveučilištima. MIT i Stanford potiču eksperimentiranje uz strogu obvezu navođenja promptova i verzija modela u metodologiji rada. LSE se fokusira na "vještine budućnosti", integrirajući AI u ispite ali uz uvjet da studenti mogu usmeno obraniti svaki logički korak koji je AI sugerirao. U odsutnosti jasnih institucijskih pravila, odgovornost pada na vas, i upravo zato trebate razumjeti gdje su granice.
+
+Najlakše je razmišljati o tome kroz tri zone. U zelenoj zoni nalaze se aktivnosti koje su potpuno legitimne i koje ova radionica aktivno podučava. Tu spadaju pretraživanje literature uz pomoć AI alata, brainstorming ideja u razgovoru s modelom, provjera gramatike i pravopisa, generiranje koda uz razumijevanje što taj kod radi, sažimanje dugih tekstova za vlastitu upotrebu, prijevod stručnih termina, i traženje objašnjenja složenih koncepata. Sve su to aktivnosti u kojima AI radi nešto što biste i sami mogli, samo sporije.
+
+::: {.spectrum-green}
+**Zelena zona** (dopušteno): pretraživanje literature, brainstorming, provjera gramatike, generiranje koda uz razumijevanje, sažimanje tekstova za vlastitu upotrebu, prijevod stručnih termina, objašnjenje koncepata.
+:::
+
+U žutoj zoni nalaze se aktivnosti koje ovise o kontekstu, predmetu, i vašem profesoru. Ovdje spadaju generiranje prvog nacrta teksta koji zatim značajno prerađujete, korištenje AI za parafraziranje tuđih radova, generiranje strukture rada, i korištenje AI za analizu podataka bez potpunog razumijevanja koda koji se izvršava. Sve su to aktivnosti koje mogu biti legitimne ako ste transparentni i ako je vaš doprinos značajan, ali mogu prijeći u nepoštenje ako se svedete na kozmetičke izmjene AI generiranog teksta i predate ga kao vlastiti rad.
+
+::: {.spectrum-yellow}
+**Žuta zona** (ovisi o kontekstu): generiranje nacrta teksta uz značajnu preradu, AI parafraziranje, generiranje strukture rada, AI analiza podataka bez potpunog razumijevanja koda.
+:::
+
+U crvenoj zoni nalaze se aktivnosti koje su nedopuštene bez iznimke. Tu spadaju predavanje AI generiranog teksta kao vlastitog bez prerade i bez navođenja korištenja AI, citiranje izvora koje niste verificirali, korištenje AI na ispitu bez dozvole, fabriciranje podataka ili rezultata uz pomoć AI, i plagiranje rada drugih studenata uz AI "preradu" koja maskira izvorni plagijat.
+
+::: {.spectrum-red}
+**Crvena zona** (nedopušteno): predavanje AI teksta kao vlastitog, citiranje neverificiranih izvora, AI na ispitu bez dozvole, fabriciranje podataka, plagijat uz AI "preradu".
+:::
+
+Kako citirati korištenje AI alata? Prema najnovijim ažuriranjima APA 7 stila, AI se tretira kao softver ili algoritam, ne kao autor. Format za popis literature jest: Autor (Tvrtka). (Godina). Naziv modela (Verzija) [Opis]. URL. Na primjer: OpenAI. (2025). ChatGPT (GPT-5.4 verzija) [Veliki jezični model]. https://chatgpt.com/chat. Citiranje unutar teksta slijedi standardnu formu: parantetičko (OpenAI, 2025) ili narativno "OpenAI (2025) navodi da...". Ako ste koristili AI za generiranje strukture, to treba navesti u metodologiji ili u fusnoti: "Claude (Anthropic, 2026) korišten je za generiranje inicijalne strukture pregleda literature, koja je zatim ručno verificirana i dopunjena od strane autora." Ključno je biti specifičan o tome što je AI napravio, a ne pisati generičan disclaimer da ste "koristili AI". Norme se brzo razvijaju, pa uvijek provjerite aktualne smjernice svog fakulteta.
+
+Postoji jednostavan test koji možete primijeniti na sve što radite. Sastoji se od tri pitanja. Prvo: mogu li objasniti svaki dio svog rada bez AI alata, vlastitim riječima, pred profesorom? Drugo: jesam li verificirao svaki izvor i svaki podatak koji se pojavljuje u mom radu? Treće: jesam li transparentno naveo gdje i kako sam koristio AI? Ako je odgovor na sva tri pitanja potvrdan, nalazite se na sigurnom terenu.
+
+::: {.callout-warning}
+## Halucinacije u praksi
+Zatražite od bilo kojeg jezičnog modela da navede pet ključnih radova o utjecaju monetarne politike na tržište nekretnina u Hrvatskoj. Gotovo sigurno ćete dobiti listu od pet uvjerljivih referenci: autori postoje, teme su relevantne, čak su i časopisi stvarni. Ali kada te reference provjerite na Google Scholaru ili CrossRefu, otkrit ćete da barem dvije ili tri ne postoje. Model je generirao reference koje zvuče kao nešto što bi moglo postojati, ali nije provjerio jesu li stvarne. Ovo je razlog zašto je verifikacija obavezna, bez iznimke.
+:::
+
+## Mentalni model: AI kao istraživački asistent
+
+Svi koncepti koje smo prošli u ovom bloku svode se na jedan mentalni model koji ćete nositi kroz cijelu radionicu i, nadajmo se, kroz cijelo vaše istraživačko djelovanje. U ekonomiji postoji koncept problema principala i agenta (principal-agent problem). Vi ste principal: vlasnik istraživanja, odgovorni za rezultate i integritet. AI je vaš agent: pomoćnik koji obavlja zadatke. Problem nastaje kada agent počne donositi odluke umjesto principala. Vi delegirate rad, traženje podataka, pisanje koda, ispravak gramatike, ali ne delegirate razmišljanje i odgovornost. Ako AI pogriješi, vi ste krivi pred akademskom zajednicom. AI je istraživački asistent s visokim stupnjem samopouzdanja ali varijabilnom točnošću. Može pretražiti bazu podataka, sastaviti bilješke, predložiti strukturu, napisati prvi nacrt, i provjeriti gramatiku. Ali odgovornost za rad je vaša.
+
+Četiri principa sažimaju sve što trebate znati o radu s AI u akademskom kontekstu. Prvo, verificirajte sve, jer nijedan AI output ne smije ući u vaš rad bez neovisne potvrde iz primarnih izvora, bilo da je to HNB, Eurostat, DZS ili Scopus. Drugo, razumijte što koristite, jer nikada ne predajte kod koji ne biste znali objasniti na ploči bez tehnologije niti tekst čije argumente ne možete braniti. Treće, budite transparentni, jer skrivanje korištenja AI-ja je štetno za vašu reputaciju; navedite alate, verzije i način upotrebe. Četvrto, zadržite kritičko mišljenje, jer AI je treniran na prosjeku ljudskog znanja, i ako želite biti natprosječan istraživač, morate dodati vlastiti uvid, kritiku i lokalni kontekst koji AI nema.
+
+::: {.callout-note}
+## AI i hrvatsko gospodarstvo u 2026.
+Integracija AI-ja u hrvatsko gospodarstvo nije samo akademsko pitanje. Projekcija rasta BDP-a RH za 2026. kreće se između 2.8 i 2.9 posto prema HNB-u, prognozirana inflacija između 3.1 i 3.4 posto, a studije procjenjuju potencijalni doprinos generativnog AI-ja hrvatskom BDP-u od pet posto do 2035. godine. Istovremeno, problem ekonomske dezinformacije na globalnoj razini uzrokuje gubitke od procijenjenih 78 milijardi dolara godišnje. Kao studenti ekonomije, vi ste generacija koja će operirati u svijetu gdje se makroekonomska stabilnost prati AI sustavima i investicijske odluke donose uz pomoć agentičkih workflowa. Vaša sposobnost da razlikujete halucinaciju od činjenice bit će vaša najveća tržišna prednost.
+:::
+
+Sada prelazimo na konkretne alate. U sljedećem bloku upoznajete Perplexity, AI pretraživač koji će vam postati prvi korak u svakom novom istraživačkom projektu.
+
+---
+
+# Blok 1.2: Pretraživanje literature s Perplexity [45 min]{.time-badge}
+
+## Od Google pretraživanja do AI sinteze
+
+Prisjetite se kako ste zadnji put tražili literaturu za seminarski rad. Vjerojatno ste otvorili Google Scholar, upisali dva ili tri ključna pojma, i dobili tisuće rezultata. Otvorili ste prvih deset linkova, od kojih su tri bila iza paywalla, dva su bila irelevantna, jedan je bio doktorska disertacija od četiristo stranica, a preostala četiri ste pokušali pročitati istovremeno dok ste gubili pregled o tome koji rad govori o čemu. Na kraju ste nakon tri sata imali pet izvora, nejasan osjećaj da ste nešto propustili, i rastući stres. Ovaj scenarij toliko je univerzalan da ga gotovo svaki student odmah prepoznaje. Perplexity ne eliminira sve probleme iz ovog scenarija, ali radikalno mijenja prvih trideset minuta istraživačkog procesa.
+
+Perplexity je AI pretraživač, što znači da radi nešto fundamentalno drugačije od klasičnog pretraživanja. Kada u Google upišete "utjecaj inflacije na potrošnju kućanstava", dobivate listu linkova poredanih po algoritmu relevantnosti. Vi morate otvoriti svaki link, pročitati tekst, i sami sintetizirati informacije. Kada isto pitanje postavite Perplexityu, on pretražuje internet u realnom vremenu, prikuplja sadržaj s relevantnih stranica, i generira sintetizirani odgovor koji citira svaki navod s numeriranim referencama. Zamislite to kao razliku između odlaska u knjižnicu gdje vam daju katalog polica i knjižničara koji ode na police umjesto vas, pročita relevantne stranice, i donese vam sažetak s bilješkama o tome odakle je svaka informacija. Knjižničar ponekad pogriješi, pa morate provjeriti, ali počinjete s puno boljom polaznom točkom nego s golim katalogom.
+
+Tehnički, razlika između Perplexitya i klasičnih jezičnih modela leži u arhitekturi koja se zove Retrieval-Augmented Generation ili skraćeno RAG. Kada postavite pitanje ChatGPT-u, on generira odgovor iz svojih internih parametara, iz memorije stvorene tijekom treniranja na golemom korpusu teksta. To je kao da pitate kolegu koji je pročitao tisuće udžbenika prije pet mjeseci ali od tada nije otvorio nijednu novu knjigu. Perplexity radi drugačije. Vaš upit u prirodnom jeziku koristi za pretraživanje weba u realnom vremenu, prikuplja sadržaj s pronađenih stranica, i tek tada koristi jezični model za generiranje koherentnog odgovora s ugrađenim numeriranim referencama. Svaka tvrdnja u odgovoru ima digitalni trag koji možete pratiti do izvora. Ovim pristupom drastično se smanjuje stopa halucinacija jer model ne nagađa informaciju nego je traži, čita, i sintetizira.
+
+Razmjer ove promjene u istraživačkoj praksi nije zanemariv. Analitičari iz Gartnera i McKinseyja predvidjeli su pad volumena tradicionalnog pretraživanja za dvadeset i pet posto do kraja 2026. godine, upravo zbog prodora sintetičkih alata koji istraživačima štede do trideset posto vremena u inicijalnoj fazi rada. Perplexity je u tom razdoblju zabilježio rast upita od dvjesto trideset i devet posto, dosegnuvši preko sedamsto osamdeset milijuna mjesečnih pretraživanja do sredine 2025. godine. Za vas kao studente to znači konkretnu promjenu uloge. Umjesto da budete tragači koji otvaraju desetke kartica i ručno ekstrahiraju informacije, od prvog trenutka postajete analitičari koji evaluiraju, filtriraju, i sintetiziraju ono što im AI donese. Ali upravo zato što AI radi težak posao prikupljanja, vaša odgovornost za kritičku evaluaciju postaje veća, ne manja.
+
+Besplatna verzija Perplexitya daje vam neograničen broj Quick pretraga i ograničen broj Pro pretraga, obično tri do pet dnevno ovisno o opterećenju servera. Quick pretrage su brze i dovoljne za opće informacije, ali Pro pretrage su ono što Perplexity čini superiornim jer uključuju agentno rezoniranje. Prije nego što pretražuje internet, model vam postavlja dodatna pojašnjavajuća pitanja i potom analizira do tristo izvora po jednom upitu, u usporedbi s desetak izvora u besplatnoj verziji. Za radionicu je besplatni pristup sasvim dovoljan jer daje transparentne citate i pristup aktualnim informacijama, što je značajan napredak u odnosu na klasično pretraživanje.
+
+Pro verzija koja košta dvadeset dolara mjesečno ili dvjesto dolara godišnje donosi praktički neograničene Pro pretrage, mogućnost odabira između različitih modela uključujući GPT-5, Claude 4.5 Sonnet, Gemini 3 Pro i o3-mini, upload do pedeset datoteka po prostoru od kojih svaka može biti do pedeset megabajta, i pristup Deep Research modu koji provodi višekoračno rezoniranje. Za seminarski rad besplatni pristup pokriva sve što trebate, ali za ozbiljnije istraživačke projekte mogućnost učitavanja PDF-ova i njihove unakrsne analize s web izvorima transformira alat u pravi istraživački laboratorij. Dodatna razlika tiče se privatnosti podataka. Pro korisnici imaju opciju isključivanja korištenja svojih upita za treniranje modela, što može biti relevantno za osjetljive istraživačke projekte.
+
+::: {.callout-note}
+## Pejzaž istraživačkih alata u 2026.
+Pejzaž alata za akademsko pretraživanje visoko je specijaliziran i svaki alat ima jasnu nišu. Google Scholar ostaje nezamjenjiv jer indeksira preko tristo milijuna radova, ali nema nikakvu AI sintezu i rezultati su često pretrpani. Semantic Scholar nudi napredno mapiranje utjecaja i citatnih veza, ali njegov AI dijalog zaostaje za punim jezičnim modelima. Elicit je izvrstan za ekstrakciju podataka iz tablica unutar radova, no ima manji korpus od općih tražilica. Connected Papers vizualizira citatne mreže oko pojedinog rada i neprocjenjiv je za otkrivanje seminalnih radova koje biste inače propustili, ali nije alat za pretraživanje sadržaja. Perplexity ima najširi zahvat jer kombinira opći web i akademske baze u sintetičke odgovore s citatima, što ga čini idealnim za eksploratornu fazu kada još ne znate točno što tražite. Za finalni, iscrpni pregled literature i dalje se morate oslanjati na Google Scholar ili specijalizirane baze kako biste osigurali da nijedan relevantan rad nije izostavljen zbog ograničenja AI algoritma u pristupu određenim izdavačkim repozitorijima.
+:::
+
+## Demonstracija: od lošeg upita do dobrog rezultata
+
+Kvaliteta odgovora koji dobijete od Perplexitya izravno ovisi o kvaliteti pitanja koje postavite. Ovo zvuči očito, ali razlika između lošeg i dobrog upita može biti razlika između beskorisnog generičnog teksta i fokusirane akademske informacije s relevantnim izvorima. Pogledajmo tri razine kvalitete upita na istoj temi.
+
+::: {.demo-box}
+**Loš upit:**
+
+::: {.prompt-box}
+inflacija Hrvatska
+:::
+
+Rezultat ovog upita bit će mješavina novinske vijesti o poskupljenju kave i goriva, trenutnih podataka DZS-a bez konteksta, i možda jedan ili dva akademska rada zatrpana u masi neakademskih izvora. Upit je prekratak, preširok, i ne signalizira Perplexityu da tražite akademski kontekst. Dobili ste informacijski šum, ne znanje.
+
+**Bolji upit:**
+
+::: {.prompt-box}
+Koji su ključni faktori koji utječu na percepciju inflacije kod kućanstava u europskim zemljama? Navedi akademske studije.
+:::
+
+Ovaj upit je fokusiraniji jer specificira što vas zanima (percepcija, ne sama inflacija), definira geografski opseg (europske zemlje), i eksplicitno traži akademske izvore. Rezultat će sadržavati sintezu faktora poput cijena goriva i hrane, referiranje na opće ekonomske principe, i identifikaciju nekoliko relevantnih istraživanja. Kvalitativni skok u odnosu na prvi upit je očigledan.
+
+**Najbolji upit:**
+
+::: {.prompt-box}
+What are the main academic studies on the relationship between media coverage of central bank policy and inflation expectations in European economies? Focus on empirical papers published after 2015 that use text analysis or media indices.
+:::
+
+Ovaj upit je na engleskom, što općenito daje bolje rezultate za akademsko pretraživanje jer je golem dio znanstvenog korpusa, osobito onaj indeksiran u bazama poput Semantic Scholara, dostupan isključivo na engleskom. Preciznost terminologije čini ogromnu razliku. Kada napišete "rational inattention" umjesto "racionalna nepažnja", Perplexity pronalazi relevantnije izvore jer prepoznaje etablirani tehnički termin. Upit specificira točnu temu, geografski opseg, vremenski okvir, i metodološki fokus. Rezultat će identificirati specifične metodologije poput LDA analize i sentiment analize, referirati se na autore poput Lamle, Leina ili Carrolla, i fokusirati se na novije digitalne korpuse vijesti. To je razlika između informacijskog šuma i istraživačkog materijala.
+:::
+
+Lekcija je jasna: specifičnost pobjeđuje. Svaki dodatni detalj koji date Perplexityu, bilo da je to vremenski okvir, metodološki pristup, ili eksplicitni zahtjev za akademskim izvorima, sužava prostor pretrage i povećava vjerojatnost da ćete dobiti korisne rezultate.
+
+Nakon što dobijete odgovor, slijedi analiza rezultata. Perplexity prikazuje inline citate kao numerirane reference u tekstu, a na desnoj strani ekrana ili ispod odgovora vidite panel s izvorima. Svaki izvor možete kliknuti i otvoriti. Ovo je trenutak u kojem morate uključiti kritičko mišljenje. Akademski rad objavljen u recenziranom časopisu ima drugačiju težinu od blog posta, novinskog članka, ili Wikipedia stranice. Perplexity ne razlikuje te kategorije, pa morate vi.
+
+Iterativno pretraživanje je ključna tehnika koja razlikuje iskusnog korisnika od početnika. Nakon prvog odgovora, postavljate follow-up pitanja u istom razgovornom nizu. Na primjer, nakon odgovora o medijskom praćenju i inflacijskim očekivanjima, možete pitati: "Od navedenih studija, koje koriste panel podatke za europske zemlje? Možeš li navesti točne naslove i autore?" Svaka iteracija sužava i precizira rezultate, slično kao što biste u razgovoru s kolegom postupno fokusirali diskusiju na ono što vas zaista zanima.
+
+No najvažniji korak cijelog procesa je verifikacija, i ovdje vam predstavljam protokol trostruke provjere koji morate internalizirati kao naviku. Prva razina je verifikacija postojanja. Pronađite rad na Google Scholaru ili putem DOI broja. Ako rad ne postoji, riječ je o halucinaciji i ne smijete ga citirati bez obzira koliko uvjerljivo zvuči naslov. Druga razina je verifikacija konteksta. Provjerite jesu li autori doista dokazali ono što AI tvrdi. Perplexity može tvrditi da mediji "uvijek" povećavaju inflacijska očekivanja, dok originalna studija pokazuje da to ovisi o tonu vijesti i da loše intonirane vijesti mogu imati suprotan efekt. AI simplificira nijanse, a nijanse su upravo ono što čini dobar akademski rad. Treća razina je kategorizacija izvora. Razlikujte između recenziranog akademskog rada, radnog materijala centralne banke poput ECB Working Paper Seriesa, i novinarskog izvještaja. Sva tri mogu biti korisna, ali imaju različitu težinu dokaza i različite zahtjeve za citiranjem. Tek nakon trostruke provjere izvor smijete uvrstiti u svoj pregled literature.
+
+## Napredne tehnike i obrasci za pretraživanje
+
+Perplexity nudi različite moduse pretraživanja ili Focus modes koji značajno utječu na kvalitetu rezultata. Modus All pretražuje cijeli web bez filtriranja. Modus Academic filtrira rezultate kroz baze poput Semantic Scholara, osiguravajući da odgovori dolaze iz recenziranih izvora. Modus Writing pomaže pri pisanju teksta, a Modus Math pri matematičkim problemima. Za akademsko istraživanje, Academic mode je imperativ jer eliminira šum novinskih članaka i blogova i fokusira se na recenzirane izvore. U kombinaciji s naprednim modelima poput Claude 4.5 Sonnet koji je superioran u rezoniranju nad dugim tekstovima, ovaj pristup omogućuje dubinske preglede literature u minutama.
+
+Spaces i Collections postali su u 2026. godini centralni dio radnog procesa za timske projekte. Spaces funkcioniraju kao AI potpomognuti folderi u kojima možete organizirati istraživanje po temama, primjerice kreirati poseban prostor za "Digitalizaciju MSP-ova u JI Europi". Unutar svakog prostora možete postaviti trajni kontekst, instrukcije poput "uvijek koristi akademski stil pisanja i fokusiraj se na empirijske dokaze" koje se primjenjuju na sve razgovorne niti unutar tog prostora. Kolege možete pozvati kao istraživačke partnere, do pet u Pro verziji, neograničeno u Enterprise verziji. Možete učitati PDF-ove, Excel tablice, ili povezati Google Drive kako bi AI mogao unakrsno analizirati vaše interne dokumente s javnim informacijama. Za grupne seminarske radove ovo je neprocjenjivo jer svi članovi tima mogu vidjeti i nadograđivati istraživačke nalaze u zajedničkom kontekstu.
+
+::: {.callout-tip}
+## Studija slučaja: od upita do istraživačkog okvira
+Korištenje Perplexitya na primjeru referentnog istraživanja o medijskoj analizi HNB-a pokazuje kako alat povezuje teoriju i empiriju. Pretraga na temu "media coverage and inflation expectations" brzo identificira tri teorijske okosnice. Prvo, racionalnu nepažnju prema Simsu iz 2003. koja sugerira da potrošači ne prate sve informacije zbog kognitivnih ograničenja, što medije čini ključnim filtrima ekonomskih informacija. Drugo, epidemiološki model prema Carrollu iz 2003. gdje se informacije o inflaciji šire od profesionalnih prognostičara prema kućanstvima poput virusa, primarno putem medija. Treće, razlikovanje kanala utjecaja prema Lamli i Leinu iz 2008. i 2014. gdje postoji razlika između "volume" kanala koji mjeri koliko se piše o temi i "tone" kanala koji mjeri kako se piše.
+
+Ovdje se pojavljuje primjer koji savršeno ilustrira zašto je trostruka provjera neophodna. Tijekom pretraživanja literature o medijskoj pažnji, istraživači se često susreću s kraticom IAG indeks. AI pretraga otkriva da u kontekstu medijskog utjecaja IAG dolazi od Intermediary Advertising Group, kasnije dio Nielsena, i mjeri pažnju publike i prisjećanje oglasa. Ali bez preciznog konteksta, sustav može ponuditi i Ibrahim Index of African Governance koji je potpuno irelevantan za monetarnu ekonomiju. Ovakva terminološka dvosmislenost je zamka u koju upada svaki istraživač koji slijepo vjeruje AI outputu.
+:::
+
+
+::: {.key-point}
+**Gotovi obrasci za akademsko pretraživanje** koje možete odmah koristiti:
+
+Za pregled literature: "What are the key academic papers on [tema] published between [godina] and [godina]? Focus on [metodologija/pristup]. List authors, titles, journals, and main findings."
+
+Za metodološki pregled: "What empirical methods have been used to study [tema]? Compare OLS, IV, DiD, and RDD approaches used in recent studies."
+
+Za teorijski okvir: "What are the main theoretical frameworks used to explain [fenomen]? Describe each theory, its key assumptions, and empirical predictions."
+
+Za pregled podataka: "What datasets are commonly used to study [tema] in [zemlja/regija]? Include data source, time period, and key variables."
+
+Za provjeru tvrdnje: "Is it true that [specifična tvrdnja]? What does the academic evidence say? Cite specific studies and mention if there are conflicting results."
+:::
+
+## Praktična vježba: vaše prvo AI potpomognuto pretraživanje
+
+::: {.exercise-card}
+#### Vježba 1: Pretraživanje s Perplexity (15 min)
+
+Radite individualno na vlastitoj temi, ili odaberite jednu od zadanih tema ako još nemate definiranu temu.
+
+**Korak 1** (2 min): Formulirajte istraživačko pitanje iz svoje teme u jednoj rečenici.
+
+**Korak 2** (5 min): Napišite tri Perplexity upita s rastućom specifičnošću. Počnite široko, zatim suzite na specifičan aspekt, i konačno dodajte metodološki ili vremenski filtar.
+
+**Korak 3** (3 min): Iz najboljih rezultata identificirajte pet potencijalno relevantnih izvora. Za svaki zapišite naslov, autore, i jednu rečenicu o tome zašto bi mogao biti relevantan.
+
+**Korak 4** (3 min): Verificirajte barem dva izvora na Google Scholaru. Postoje li zaista? Jesu li točno citirani?
+
+**Korak 5** (2 min): Zapišite kratku bilješku o tome što ste pronašli, što nedostaje, i što trebate dalje istražiti.
+
+**Zadane teme** za studente bez vlastite teme: (a) Utjecaj monetarne politike ECB na tržišta rada u perifernim članicama eurozone, gdje istraživanje otkriva heterogenost utjecaja zajedničke politike i spillovers efekte nekonvencionalnih mjera poput APP i PEPP programa. (b) Digitalizacija i produktivnost u malim i srednjim poduzećima u jugoistočnoj Europi, gdje analiza pokazuje jasan geografski jaz između sjevernih zemalja s preko devedeset posto digitaliziranih MSP-ova i zemalja poput Hrvatske koje značajno zaostaju. (c) Utjecaj inflacije na nejednakost dohotka u zemljama EU, gdje unatoč relativno stabilnom Gini koeficijentu oko 0.33 do 0.34, realna percepcija nejednakosti raste jer rast troškova života nesrazmjerno pogađa kućanstva s niskim primanjima. (d) Efektivnost fiskalnih poticaja za zelenu tranziciju u europskom kontekstu, gdje empirijski podaci sugeriraju učinkovitost poreznih kredita za čistu tehnologiju ali uz rizik od regionalnih dispariteta.
+
+**Očekivani ishod**: jedno formulirano istraživačko pitanje, barem tri verificirana izvora, i razumijevanje kako koristiti Perplexity za daljnje istraživanje. Ove rezultate koristit ćete u sljedećim blokovima.
+
+**Pitanja za debriefing**: Jeste li naišli na autore koji se ponavljaju kroz različite upite, jer to ukazuje na seminalne radove? Je li Perplexity ponudio izvor koji je bio iza paywalla ali je ipak uspio izvući sažetak? Kako se vaš osjećaj sigurnosti u informaciju mijenja kada vidite inline citat u usporedbi s običnim tekstom iz ChatGPT-a?
+:::
+
+---
+
+# Blok 1.3: Dubinsko istraživanje s Gemini Deep Research [45 min]{.time-badge}
+
+## Što ako vam treba cijelo izvješće, ne samo odgovor
+
+Perplexity vam daje brze, fokusirane odgovore s izvorima. To je izuzetno korisno za eksploraciju, za provjeru činjenica, i za pronalaženje ključnih radova. Ali što ako se nalazite na početku istraživanja i trebate razumjeti cijelo polje? Što ako trebate strukturiran pregled koji pokriva teorijske okvire, empirijske nalaze, metodološke pristupe, i otvorena pitanja, sve u jednom koherentnom dokumentu? Za to postoji Gemini Deep Research.
+
+Najlakše je razumjeti Deep Research ako zamislite razliku između turista koji pita lokalnog vodiča "Što vrijedi vidjeti u ovom gradu?" i istraživača koji angažira stručnjaka da mu napiše detaljan izvještaj o kulturnoj povijesti grada s poglavljima, izvorima, i kritičkom analizom. Perplexity je onaj lokalni vodič: brz, informativan, ali nužno površan. Deep Research je angažirani stručnjak koji odlazi, čita desetke izvora, i vraća vam organiziran dokument. Proces traje duže, od pet do trideset minuta umjesto instant odgovora, ali rezultat je kvalitativno drugačiji. Ovo nije evolucija chatbota, nego pojava autonomnog istraživačkog agenta koji simulira kognitivne procese ljudskog istraživača kroz višekoračne radne tijekove.
+
+Tehnički, Deep Research funkcionira kroz višekoračni proces koji je bitno drugačiji od standardnog chatbota, strukturiran u šest diskretnih ali međusobno povezanih faza. U prvoj fazi sustav analizira semantičku strukturu vašeg upita i procjenjuje je li zadatak prikladan za dubinsko istraživanje. U drugoj fazi, umjesto da odmah krene pretraživati, konstruira istraživački plan s predloženim poglavljima, specifičnim aspektima teme, i ključnim riječima za pretraživanje. Kritična inovacija u ovom koraku je mogućnost korisničke intervencije. Odabirom opcije "Edit Plan" možete dodati specifične kriterije, zatražiti fokus na određene geografske regije, ili uključiti specifične metodološke zahtjeve. Ova interakcija dramatično smanjuje vjerojatnost generiranja generičkih odgovora i usmjerava AI prema visokospecijaliziranim izvorima.
+
+U trećoj fazi, nakon odobrenja plana, agent započinje autonomno pretraživanje. Gemini generira desetke ciljanih pretraživanja, posjećujući stotine web izvora u realnom vremenu. Sustav koristi multimodalne sposobnosti za analizu ne samo teksta nego i tablica, grafikona i slikovnih prikaza unutar PDF dokumenata i web stranica. Tijekom pretraživanja imate uvid u proces kroz značajke "Show Thinking" i "Sites Browsed" koje osiguravaju transparentnost i omogućuju vam da pratite koje izvore agent smatra relevantnima i kakva je logika iza prioritizacije određenih informacija. Četvrta faza je sinteza koja koristi masivni kontekstualni prozor od milijun tokena, ekvivalent tisuća stranica teksta, kako bi se sve prikupljene informacije analizirale simultano. Ovo omogućuje prepoznavanje kompleksnih veza i trendova koji bi promakli sustavima s manjim memorijskim kapacitetom. U petoj fazi generira se strukturirano izvješće s uvodom, tematskim poglavljima, zaključcima i referencama. Izvješće se automatski sprema u Google Docs gdje ga možete dalje uređivati. Šesta faza je verifikacija, o kojoj ćemo detaljnije govoriti za trenutak.
+
+Iza svega toga stoji arhitektura mješavine stručnjaka ili Mixture-of-Experts koja omogućuje modelima Gemini serije 3.1 da aktiviraju samo relevantne dijelove neuronske mreže za specifične upite, čime se povećava efikasnost bez žrtvovanja kvalitete outputa. Deep Research se primarno oslanja na ove visokokapacitetne modele kako bi održao koherentnost kroz dugotrajne istraživačke procese koji mogu trajati i do trideset minuta.
+
+No Deep Research ima ograničenja koja morate razumjeti prije nego mu povjerite svoj pregled literature. Prvo i najvažnije, ne pretražuje zaključane akademske baze poput Scopusa, Web of Sciencea, ili časopisa iza paywalla. Agent se primarno oslanja na otvoreni web, što znači da izvještaji mogu biti nagnuti prema radovima dostupnima u open access formatu na platformama poput ResearchGatea, SSRN-a ili NBER-a. To može rezultirati sustavnom pristranošću jer kvalitetni radovi u prestižnim časopisima koji nisu u open access formatu jednostavno neće biti uključeni.
+
+Drugo, može generirati tekst koji zvuči autoritativno ali je površan u metodološkoj evaluaciji. Navodi da neka studija "koristi OLS regresiju" ali ne kaže ništa o specifikaciji, identifikacijskoj strategiji, ili potencijalnim problemima s endogenošću. Neće nužno prepoznati probleme s neadekvatnim kontrolnim grupama ako to nije eksplicitno navedeno u samom tekstu koji pretražuje. Treće, može previdjeti literaturu na jezicima osim engleskog, što je posebno relevantno za istraživanja fokusirana na Hrvatsku.
+
+Četvrto, i ovo je suptilniji problem koji istraživači rijetko očekuju, postoji rizik od takozvanog instruction drifta. Tijekom dugotrajnih sesija dubinskog istraživanja agent ponekad može oslabiti fokus na originalne upute. Može zanemariti negativne filtre poput "nemoj uključivati studije prije 2010." ako pronađe vrlo relevantan izvor koji krši to pravilo. Upravo zato je faza provjere plana prije pokretanja i finalna verifikacija nakon generiranja neophodna.
+
+Dobra vijest je da Gemini nudi napredne alate za verifikaciju koji pomažu u adresiranju ovih ograničenja. Gumb "G" omogućuje kolor kodiranje teksta gdje zelena boja označava tvrdnje izravno potkrijepljene pretraživanjem, dok narančasta označava sintezu ili tvrdnje koje zahtijevaju dodatnu provjeru. Bočna traka s izvorima klikom na citat unutar teksta otvara prozor koji prikazuje točan paragraf iz originalnog dokumenta, što vam štedi sate manualne provjere. Koristite ove alate sustavno, ne kao opciju nego kao obavezan korak svake evaluacije.
+
+::: {.callout-note}
+## Pristup i cijena Gemini Deep Research
+Deep Research je dostupan unutar Google AI Pro plana koji u 2026. godini košta oko dvadeset dolara mjesečno ili sto dolara godišnje uz promotivne popuste od pedeset posto na godišnje planove. Plan uključuje dva terabajta pohrane u oblaku, Deep Research s kontekstualnim prozorom od milijun tokena, i integraciju s cijelim Google Workspace ekosustavom. Postoji besplatni probni period koji možete iskoristiti za radionicu. Integracija s Google Docs-om omogućuje da jednim klikom prebacite generirano izvješće u okruženje za uređivanje, što štedi procijenjenih petnaest do dvadeset i pet minuta po svakom istraživačkom zadatku. Ako nemate pristup, možete koristiti standardni Gemini chat s dugim detaljnim promptom koji zahtijeva strukturirano izvješće, što neće biti jednako kvalitetno ali demonstrira isti princip.
+:::
+
+## Demonstracija: od lošeg prompta do korisnog izvješća
+
+Kvaliteta Deep Research izvješća još više ovisi o kvaliteti prompta nego što je to slučaj s Perplexityem, jer model na temelju vašeg upita gradi cijelu strukturu dokumenta, a ne samo kratki odgovor.
+
+::: {.demo-box}
+**Loš prompt:**
+
+::: {.prompt-box}
+Napiši pregled literature o inflaciji.
+:::
+
+Problem s ovim promptom je što je preopćenit. Inflacija je tema o kojoj su napisane tisuće radova. Rezultat će biti udžbenički pregled koji pokriva sve od Phillipsove krivulje do hiperinflacije u Zimbabveu, bez ikakvog fokusa koji bi bio koristan za vaš specifičan rad.
+
+**Dobar prompt:**
+
+::: {.prompt-box}
+Napravi detaljan pregled akademske literature o utjecaju medijskog izvještavanja o monetarnoj politici na inflacijska očekivanja kućanstava. Fokusiraj se na empirijske studije objavljene nakon 2010. godine.
+
+Obuhvati sljedeće teme:
+(1) Teorijski okvir: rational inattention i sticky information modeli
+(2) Mjerenje medijske pažnje prema centralnim bankama (media attention indices)
+(3) Empirijski dokazi o vezi medijskog praćenja i inflacijskih očekivanja
+(4) Metodološki pristupi (text mining, sentiment analysis, panel modeli)
+
+Za svaku studiju navedi autore, godinu, metodu, glavne nalaze i ograničenja.
+:::
+
+Ovaj prompt je bolji po svakoj dimenziji jer sadrži pet ključnih komponenti koje svaki visokokvalitetni Deep Research upit mora imati. Prva je kontekst i uloga, implicitno definirana specifičnošću teme. Druga je specifičan obuhvat koji definira točnu temu umjesto općenitog pojma. Treća je vremenski i geografski okvir koji filtrira zastarjele radove. Četvrta je metodološki zahtjev koji sužava rezultate na relevantne pristupe. Peta je zahtjev za strukturom koja odgovara onome što vam treba za pregled literature. Kada vaš upit sadrži svih pet komponenti, rezultat prelazi iz generičkog udžbeničkog pregleda u fokusirano istraživačko izvješće koje možete direktno koristiti kao temelj za vlastiti rad.
+:::
+
+Nakon što pokrenete Deep Research, Gemini će vam predložiti istraživački plan. Ovo je korak koji mnogi studenti preskaču, a ne bi smjeli, jer je to upravo ona faza korisničke intervencije koja razlikuje generičko izvješće od visokospecijaliziranog dokumenta. Pregledajte predloženu strukturu. Ako vidite sekciju "History of Central Banking" koja pokriva sto godina povijesti a vi trebate fokus na empirijske studije nakon 2010., uklonite je. Ako nedostaje sekcija o metodologiji koja vam je ključna, dodajte je. Ako želite fokus na specifičnu geografsku regiju ili metodološki pristup, ovo je trenutak da to eksplicitno zahtijevate. Aktivno oblikovanje istraživačkog plana je vještina jednako važna kao samo pretraživanje jer definira granice onoga što će agent tražiti i kako će strukturirati nalaze.
+
+Kada izvješće stigne, evaluirajte ga sustavno umjesto da ga prihvatite kao gotov proizvod. Koristite "G" gumb za kolor kodiranje teksta i bočnu traku s izvorima kao prvi korak evaluacije, ali nemojte stati na tome. Tražite tri stvari. Prvo, što je dobro: koherentna struktura, identificirani ključni autori, pregled empirijskih metoda, jasna organizacija po temama. Zeleno kodirane tvrdnje su dobar znak ali i dalje zahtijevaju vašu procjenu je li izvor akademski relevantan. Drugo, što je problematično: površan tretman metodologije, nedostatak ključnih radova koji nisu open access, citati koji su web stranice a ne akademski radovi, generalizacije poput "studies show that..." bez specifičnih brojki. Narančasto kodirane tvrdnje zahtijevaju posebnu pažnju jer predstavljaju sinteze ili zaključke koje agent sam konstruira iz više izvora. Treće, što nedostaje: najnoviji radovi iza paywalla, radovi na hrvatskom ili drugim jezicima osim engleskog, kritička evaluacija kvalitete studija, identifikacija istraživačkih praznina. Upravo ono što nedostaje često je najvrjednije jer vam otkriva prostor za vaš vlastiti doprinos.
+
+Pravi način korištenja Deep Research izvješća je kao polazne točke, ne kao gotovog proizvoda. Ekstrahirajte listu izvora i verificirajte svaki na Google Scholaru. Koristite identificirane ključne riječi za ciljano pretraživanje akademskih baza. Koristite strukturu izvješća kao skelet za vlastiti pregled literature, ali zamijenite nepouzdane izvore provjerenim akademskim radovima. Identificirajte praznine u izvješću jer upravo te praznine mogu biti smjer za vaše vlastito istraživanje.
+
+## Perplexity vs. Gemini: komplementarnost, ne konkurencija
+
+Studenti često pitaju koji je alat bolji. Odgovor je da to pitanje nema smisla jer alati rade fundamentalno različite stvari po šest ključnih dimenzija. Vrijeme odziva je prva razlika. Perplexity daje odgovor za šest do dvanaest sekundi, dok Deep Research traje pet do trideset minuta. Priroda outputa je druga razlika. Perplexity generira sažete odgovore s puno poveznica, dok Gemini generira duga, strukturirana izvješća. Citatni stil se razlikuje jer Perplexity citira granularno na razini svake rečenice, dok Gemini citira bibliografski na razini paragrafa. Fokus izvora je različit jer Perplexity zahvaća široki web uključujući društvene mreže i kod, dok Gemini preferira izvore visokog autoriteta i službene stranice. Interaktivnost je područje gdje Perplexity dominira s iterativnim praćenjem i preciziranjem, dok Gemini nudi autonomno planiranje i sintezu. Eksport podataka kod Perplexitya znači dijeljenje chat niti, dok Gemini izvozi izravno u Google Docs.
+
+Kritična prednost Gemini sustava je njegova konzervativnost u odabiru izvora. Gemini rjeđe griješi u visokorizičnim temama jer preferira službene dokumente regulatornih tijela umjesto popularnih blogova. Međutim, Perplexity nudi veću kontrolu kroz Focus modove, osobito Academic fokus koji pretražuje samo znanstvene repozitorije, što ga čini agilnijim u ranoj fazi definiranja istraživačkog pitanja.
+
+Optimalni workflow koristi oba alata komplementarno u pet koraka. Prvo, Perplexity za početnu eksploraciju, provjeru terminologije i pronalaženje tri do pet ključnih radova. Drugo, Gemini Deep Research s detaljnim upitom temeljenim na informacijama iz Perplexitya, s pažljivim pregledom i modifikacijom plana prije pokretanja. Treće, evaluacija izvješća koristeći "G" gumb za provjeru činjenica i bočnu traku za verifikaciju najvažnijih tvrdnji. Četvrto, Google Scholar za naknadno popunjavanje praznina i pristup radovima iza paywalla. Peto, eksport u Google Docs i početak manualnog pisanja, koristeći AI output kao bogat izvor strukturiranih informacija i početni nacrt.
+
+Jednostavno pravilo odlučivanja: ako trebate brzo provjeriti jednu činjenicu, koristite Perplexity. Ako trebate razumjeti novo polje za trideset minuta, pokrenite Deep Research. Ako trebate pronaći specifičan akademski rad, idite na Google Scholar. Ako trebate sintezu dvadeset ili više izvora u koherentan tekst, to je posao za Deep Research.
+
+## Praktična vježba: vaše prvo dubinsko istraživanje
+
+::: {.exercise-card}
+#### Vježba 2: Gemini Deep Research (15 min)
+
+Koristite istraživačko pitanje i izvore iz prethodnog bloka i sada ih produbljujete s Gemini.
+
+**Korak 1** (3 min): Formulirajte Deep Research prompt na temelju svog istraživačkog pitanja. Koristite obrazac: tema + vremenski okvir + metodološki fokus + zahtjev za strukturom. Pogledajte primjer dobrog prompta iznad.
+
+**Korak 2** (1 min): Pokrenite Deep Research. Pregledajte predloženi plan i modificirajte ga po potrebi.
+
+**Korak 3** (7 min): Dok čekate rezultat, napišite kratku bilješku od pet rečenica o tome što ste naučili iz Perplexity pretraživanja i što očekujete od Deep Research izvješća. Identificirajte tri pitanja na koja još nemate odgovor. Ovo čekanje nije izgubljeno vrijeme jer vam daje priliku za refleksiju koju inače rijetko imate u brzom istraživačkom procesu.
+
+**Korak 4** (4 min): Kada izvješće stigne, koristite "G" gumb za kolor kodiranje tvrdnji i bočnu traku za provjeru izvora. Brzo pregledajte strukturu i identificirajte: (a) najkorisniju sekciju i provjerite je li zeleno kodirana, (b) sekciju koja vam se čini nepouzdanom, osobito narančasto kodirane tvrdnje, (c) što nedostaje, posebno radove iza paywalla koje ćete morati naknadno potražiti na Google Scholaru.
+
+**Alternativa** ako nemate pristup Deep Research: koristite standardni Gemini chat s dugim promptom koji zahtijeva strukturirano izvješće s podnaslovima i izvorima. Kvaliteta neće biti jednaka jer standardni chat ne prolazi kroz šest faza autonomnog istraživanja, ali demonstrira isti princip strukturiranog upita i evaluacije rezultata.
+:::
+
+---
+
+# Blok 1.4: Strukturiranje ideja s Claudeom [45 min]{.time-badge}
+
+## Od hrpe bilješki do nacrta rada
+
+Ako ste pratili radionicu od početka, sada imate pred sobom rezultate iz dva bloka: listu izvora i bilješke iz Perplexity pretraživanja, i strukturirano izvješće iz Gemini Deep Research. To je više materijala nego što ste imali prije sat i pol. Ali imate i novi problem: sav taj materijal je nestrukturiran. Imate fragmente, ne priču. Imate izvore, ali ne argument. Imate informacije, ali ne nacrt rada.
+
+Upravo tu dolazi Claude. Od svih AI alata koje danas koristimo, Claude je najjači u dugom razgovoru, u praćenju složenih argumenata kroz desete i desete poruka, u strukturiranju kaotičnih ideja u organizirane nacrte, i u akademskom pisanju na hrvatskom jeziku koje zvuči kao nešto što bi napisao čovjek a ne stroj. Zamislite ga kao mentora koji sjedi s vama u uredu, sluša dok mu objašnjavate svoje bilješke, postavlja precizna pitanja o onome što nedostaje, i predlaže način kako organizirati sve u koherentan rad. Razlika između mentora i AI modela jest što mentor ima iskustvo i intuiciju, dok AI ima neograničeno strpljenje i sposobnost obrade velike količine teksta istovremeno.
+
+Ono što izdvaja Claudea od drugih modela za ovakav tip rada jest kontekstni prozor od dvjesto tisuća tokena, što je otprilike ekvivalent petsto stranica teksta. To znači da Claude može pročitati vaš cijeli seminarski rad zajedno sa svim bilješkama, izvorima, i prijašnjim verzijama, i dati koherentan komentar na cjelinu umjesto da komentira izolirane fragmente. Besplatan pristup na claude.ai daje vam Claude 3.5 Sonnet s ograničenim brojem poruka dnevno, što je sasvim dovoljno za radionicu ako poruke koristite promišljeno.
+
+::: {.callout-tip}
+## Claude Projects i agentičke sposobnosti
+Ako planirate koristiti Claudea za dugoročni projekt poput diplomskog rada, istražite značajku Projects koja omogućuje upload materijala, PDF radova, bilješki, CSV datoteka s podacima, koji su trajno dostupni u svakom razgovoru unutar projekta. To eliminira potrebu da svaki put kopirate i lijepite kontekst i omogućuje održavanje kontinuiteta i baze znanja kroz cijeli semestar. Claude Projects pretvaraju fragmentirane razgovore u koherentan istraživački proces.
+
+U 2026. godini, funkcija "Research" omogućuje Claudeu da samostalno provodi višestruke pretrage koje se nadovezuju jedna na drugu. Ako postavite kompleksno pitanje o utjecaju cijena energije na hrvatski turistički sektor, Claude može pretražiti najnovije Eurostat podatke, naći izvješća o noćenjima, potražiti novinske članke o cjenovnoj konkurentnosti, i sintetizirati sve to u koherentan odgovor s citatima. Putem Model Context Protocol (MCP) konektora, Claude se može povezati s vanjskim bazama podataka i izravno čitati rezultate regresije iz CSV datoteka bez potrebe za ručnim kopiranjem. Ovo je budućnost akademskog rada s AI alatima.
+:::
+
+## Prompt inženjering: kako razgovarati s AI o akademskom radu
+
+Ovo je ključna sekcija cijelog prvog dana, jer kvaliteta vaše komunikacije s AI modelom određuje kvalitetu pomoći koju dobijete. Prompt inženjering ili umijeće pisanja upita (prompt engineering) zvuči tehnički, ali u praksi se svodi na pet principa koji su jednako primjenjivi na komunikaciju s AI kao i na komunikaciju s ljudskim mentorom.
+
+::: {.demo-box}
+**Princip 1: Zadajte ulogu i kontekst.**
+
+Kada ulazite u mentorov ured, ne kažete samo "pomozi mi". Kažete tko ste, što radite, i kakva vam pomoć treba. Isto vrijedi za AI.
+
+Loš prompt:
+
+::: {.prompt-box}
+Pomozi mi s radom.
+:::
+
+Dobar prompt:
+
+::: {.prompt-box}
+Ti si viši istraživač makroekonomije s ekspertizom u tranzicijskim ekonomijama EU. Tvoj zadatak je kritička evaluacija korelacije između medijskog izvještavanja o inflaciji i stvarne dinamike HICP-a u Hrvatskoj od 2021. do 2025. Pomažeš mi strukturirati diplomski rad o utjecaju medijskog praćenja HNB-a na inflacijska očekivanja u Hrvatskoj. Moja ciljna publika je komisija od tri profesora makroekonomije, a rad treba imati 40-50 stranica.
+:::
+
+Primijetite razliku. Ovaj prompt ne samo da definira ulogu nego aktivira specifičnu domenu znanja. Kada napišete "viši istraživač makroekonomije s ekspertizom u tranzicijskim ekonomijama EU", Claude mijenja težinu kojom pristupa leksičkom izboru i analitičkim okvirima. Umjesto generičkog asistenta dobivate specijaliziranog partnera koji razumije kontekst eurozone, HICP metodologije, i specifičnosti tranzicijskih ekonomija.
+
+**Princip 2: Budite specifični o formatu i opsegu.**
+
+Loš prompt:
+
+::: {.prompt-box}
+Napiši pregled literature.
+:::
+
+Dobar prompt:
+
+::: {.prompt-box}
+Na temelju sljedećih 5 izvora, napiši pregled literature od otprilike 1000 riječi. Organiziraj pregled tematski (ne kronološki) u tri potpoglavlja: teorijski okvir (teorija očekivanja i rational inattention), empirijski dokazi (gatekeeping u medijima i korelacija s inflacijskim očekivanjima), i metodološki pristupi (text mining, sentiment analiza, panel modeli). Za svaki izvor navedi ključne autore iz učitanih materijala, točke njihovog slaganja, i otvorena pitanja koja moj rad treba riješiti.
+:::
+
+Ovakva razina detalja osigurava da model ne preskače kritične korake u sintezi informacija. Kada eksplicitno navedete da želite tematsku organizaciju umjesto kronološke, Claude neće poredati radove po godini objave nego će ih grupirati po doprinosu vašem argumentu, što je upravo ono što vaša komisija očekuje vidjeti.
+
+**Princip 3: Dajte primjer željenog outputa.**
+
+::: {.prompt-box}
+Evo primjera kako želim da izgleda jedan paragraf pregleda literature: [umetni primjer]. Molim te napiši ostatak u istom stilu i na istoj razini detaljnosti.
+:::
+
+**Princip 4: Zahtijevajte kritičko mišljenje, ne samo sažimanje.**
+
+Claude izvrsno prepoznaje ono što nedostaje u tekstu, ali morate ga eksplicitno usmjeriti da traži praznine umjesto da samo sažima.
+
+::: {.prompt-box}
+Na temelju priloženih 10 izvora, identificiraj koji su aspekti inflacijskih očekivanja u Hrvatskoj nedovoljno istraženi. Fokusiraj se na metodološka ograničenja u postojećim radovima te predloži kako bi uporaba Newey-West standardnih pogrešaka u mom modelu mogla poboljšati robusnost rezultata u usporedbi s postojećom literaturom. Identificiraj: (a) točke slaganja među autorima, (b) ključna neslaganja i kontroverze, (c) istraživačke praznine koje moj rad može popuniti.
+:::
+
+**Princip 5: Iterativno poboljšavanje.** Nemojte očekivati savršen rezultat iz prvog pokušaja. Normalno je proći tri do četiri iteracije, i podaci pokazuju da razgovori s iteracijom i rafiniranjem rezultiraju dvostruko boljim outputom jer korisnici aktivnije testiraju granice modelovog rezoniranja. Evaluirajte svaki odgovor, identificirajte što je dobro a što ne, i u sljedećoj poruci korigirajte i produbite. Konkretni primjeri follow-up promptova koji poboljšavaju kvalitetu: "Ovaj dio o Phillips krivulji je previše općenit. Produbi ga povezivanjem s konceptom racionalne nepažnje koji se spominje u izvorima." Ili: "Ton uvodnog paragrafa zvuči previše kao novinski članak. Preoblikuj ga da zvuči kao uvod u rad za Journal of Monetary Economics." Ili: "Usporedi zaključke o utjecaju rasta plaća na inflaciju iz MMF-ovog rada s projekcijama HNB-a. Gdje se te prognoze razilaze i što to implicira za moju prvu hipotezu?"
+:::
+
+## Demonstracija: od bilješki do nacrta
+
+Pogledajmo kako izgleda cjelovit workflow transformacije nestrukturiranih bilješki u organiziran nacrt rada. Učinkovitost Claudea najbolje se očituje kroz simulaciju stvarnog istraživačkog procesa.
+
+Zamislite studenta koji je nakon prve dvije faze rada prikupio fragmentirane informacije o inflaciji u Hrvatskoj. Njegove bilješke su kaotične. Spominje se peak inflacije od 13.1 posto u 2022., uvođenje eura, rast plaća u javnom sektoru od 30 posto, te medijski napisi o cijenama kave i frizura. Ima MMF-ov rad o fiskalnoj politici, HNB-ove makroekonomske projekcije, rad o Phillips krivulji, i fragmente iz Deep Research izvješća. Student kreira Claude Project naziva "Inflacija_Hrvatska_2025", učitava ključne dokumente, i počinje strukturirani razgovor.
+
+::: {.demo-box}
+**Korak 1: Dajte kontekst.**
+
+::: {.prompt-box}
+Ovo su moje bilješke za seminarski rad iz makroekonomije. Tema je utjecaj medijskog praćenja monetarne politike na inflacijska očekivanja. Imam sljedeće izvore i bilješke:
+[ovdje paste bilješki iz prethodnih blokova]
+:::
+
+**Korak 2: Zatražite analizu praznina.**
+
+::: {.prompt-box}
+Na temelju ovih bilješki, identificiraj:
+(1) Što već imam dovoljno pokriveno za seminarski rad
+(2) Što trebam dodatno istražiti
+(3) Koja pitanja su otvorena i zahtijevaju daljnje istraživanje
+:::
+
+Claude će identificirati praznine koje vi možda niste primijetili. Tipičan odgovor na gap analizu izgleda ovako: imate podatke o fiskalnoj politici i službenoj inflaciji, ali nedostaje vam sustavna analiza medijskog sentimenta i korelacija s anketama o očekivanjima potrošača. Vaš teorijski okvir oslanja se na Sims (2003) ali ne uključuje novije doprinose o rational inattention u kontekstu eurozone. Metodološka sekcija je preslaba, trebate se odlučiti između panel pristupa i vremenskih serija, i trebate objasniti zašto koristite OLS s Newey-West korekcijom umjesto alternativnih pristupa. Nedostaje vam varijabla učestalosti spominjanja HNB-a u negativnom kontekstu kao moderator inflacijskih očekivanja. Ovo je informacija koju Claude generira upravo zato što je pročitao sve vaše materijale simultano i može vidjeti veze i praznine koje vam promiču kada čitate jedan izvor za drugim.
+
+**Korak 3: Zatražite strukturu.**
+
+::: {.prompt-box}
+Na temelju svega navedenog, predloži detaljan nacrt rada s naslovima poglavlja, potpoglavljima, i za svako potpoglavlje naznači: koje izvore koristiti i koji argument graditi.
+:::
+
+**Korak 4: Iterirajte.**
+
+::: {.prompt-box}
+Uvod je previše opći. Dodaj hook koji polazi od konkretnog primjera medijskog izvještavanja o inflaciji u Hrvatskoj 2022. kada je inflacija dosegla 13.1 posto. Također, treće poglavlje o metodologiji treba biti detaljnije, s jasnim obrazloženjem zašto koristim OLS s Newey-West korekcijom u kontekstu autokorelacije i heteroskedastičnosti podataka o inflaciji umjesto alternativnih pristupa.
+:::
+
+Primijetite što se dogodilo u četiri koraka. Claude je generirao logički slijed koji ide od postavljanja scene s inflacijom i ulogom medija, preko teorijskog okvira New Keynesian Phillips Curve s fokusom na ulogu očekivanja, kroz analizu kako 31.536 analiziranih članaka oblikuje "racionalnu nepažnju" potrošača, do empirijskog dijela s OLS modelom i Newey-West standardnim pogreškama, i konačno do usporedbe utjecaja fiskalnih šokova poput rasta plaća naspram informacijskih šokova poput medijskog intenziteta. Ovaj nacrt nije samo lista poglavlja nego koherentan argument koji gradi priču od teorije do dokaza.
+:::
+
+Ono što ćete primijetiti kroz ovaj proces je da Claude ne samo organizira vaše ideje nego vam pomaže identificirati ono što niste ni znali da nedostaje. To je možda najvrjednija sposobnost ovog alata: ne da napiše vaš rad, nego da vam pomogne vidjeti gdje vaš argument ima rupe, gdje vaša evidencija nije dovoljno čvrsta, i gdje trebate uložiti dodatni rad. Claude je dizajniran da favorizira augmentaciju, ne automatizaciju. Njegov stil komunikacije potiče vas da objasnite svoje razmišljanje, i značajke poput iterativnog dijaloga namjerno vas tjeraju da aktivno sudjelujete u procesu umjesto da pasivno prihvaćate generirani tekst.
+
+Ali upravo ovdje leži i najveći rizik. Budući da Claude piše izvrsnim akademskim tonom, možete pasti u zamku prihvaćanja netočnih ekonomskih zaključaka samo zato što su gramatički savršeni i zvuče autoritativno. Podaci o AI fluenciji iz 2026. godine upozoravaju na fenomen gdje korisnici manje kritički evaluiraju rad ako on izgleda "gotovo i profesionalno". Zato je provjera izvora i dalje najvažniji dio istraživačkog procesa. Svaki put kada Claude navede činjenicu, brojku, ili citat, vaša odgovornost je verificirati tu informaciju iz primarnog izvora.
+
+::: {.key-point}
+**Gotovi obrasci** koje možete koristiti s Claudeom:
+
+Za strukturiranje rada: "Imam sljedeće istraživačko pitanje: [pitanje]. Na temelju pregleda literature identificirao/la sam sljedeće ključne teme: [teme]. Predloži strukturu akademskog rada (seminarski rad, 15-20 stranica) s naslovima poglavlja i potpoglavlja. Za svako poglavlje navedi: sadržaj koji treba pokriti, očekivanu duljinu, i 2-3 ključna pitanja na koja poglavlje treba odgovoriti."
+
+Za formuliranje hipoteza: "Na temelju sljedećeg teorijskog okvira: [okvir] i sljedećih empirijskih nalaza iz literature: [nalazi], formuliraj 3 testabilne hipoteze za moje istraživanje. Za svaku hipotezu navedi: (a) jasnu formulaciju, (b) teorijsko obrazloženje, (c) kako bi se empirijski testirala."
+
+Za kritičku analizu izvora: "Pročitaj sljedeći sažetak rada: [sažetak]. Kritički evaluiraj: (a) je li istraživačko pitanje jasno formulirano, (b) je li metodologija prikladna, (c) jesu li zaključci potkrijepljeni rezultatima, (d) koja su ključna ograničenja koja autori ne navode."
+
+Za poboljšanje akademskog stila: dajte Claudeu paragraf koji ste napisali i zatražite da pojača akademski ton koristeći preciznu ekonomsku terminologiju, da doda jasne logičke tranzicije između rečenica, da ukloni nepotrebne riječi i filler fraze, i da objasni svaku promjenu. Claude izvrsno prepoznaje XML tagove za razdvajanje uputa od podataka, pa možete koristiti strukturu poput "&lt;input_tekst&gt;[vaš paragraf]&lt;/input_tekst&gt;" kako biste jasno odvojili tekst koji treba poboljšati od instrukcija o tome kako ga poboljšati.
+:::
+
+## Praktična vježba: strukturirajte svoj nacrt
+
+::: {.exercise-card}
+#### Vježba 3: Strukturiranje s Claudeom (15 min)
+
+Koristite materijale prikupljene u Blokovima 1.2 i 1.3 za strukturiranje vlastitog istraživačkog nacrta.
+
+**Korak 1** (2 min): Kompajlirajte sve bilješke iz prethodnih vježbi u jedan tekst.
+
+**Korak 2** (1 min): Kopirajte bilješke u Claude chat i dodajte kontekst o svojoj temi.
+
+**Korak 3** (3 min): Koristite prompt za analizu praznina: "Na temelju ovih bilješki, identificiraj: (1) što imam pokriveno, (2) što trebam istražiti, (3) koja su pitanja otvorena."
+
+**Korak 4** (4 min): Koristite prompt za strukturiranje: "Predloži nacrt rada s poglavlja, potpoglavljima, i za svako potpoglavlje navedi koje izvore koristiti."
+
+**Korak 5** (3 min): Napišite jedan follow-up prompt koji poboljšava najslabiji dio nacrta. Obično je to metodologija ili teorijski okvir. Koristite specifične instrukcije poput "Produbi poglavlje o metodologiji. Objasni zašto koristimo Newey-West standardne pogreške u kontekstu autokorelacije i heteroskedastičnosti podataka" umjesto generičkih zahtjeva za poboljšanje.
+
+**Korak 6** (2 min): Zapišite finalni nacrt i listu preostalih zadataka. Posebno označite otvorena pitanja na koja još morate pronaći odgovor jer vam to služi kao plan rada za kod kuće.
+
+**Očekivani ishod**: na kraju ovog bloka morate imati dva konkretna dokumenta. Prvi je detaljan nacrt rada s poglavljima i ključnim argumentima za svako poglavlje. Drugi je popis otvorenih pitanja na koja još trebate pronaći odgovor. Treći ishod je neopipljiv ali jednako važan: razumijevanje kako koristiti Claudea kao kolegu s kojim se diskutira, a ne kao stroj za pisanje koji se pasivno promatra. Ovi deliverables koristit ćete sutra u drugom danu radionice.
+:::
+
+---
+
+# Zaključak prvog dana {.unnumbered}
+
+Pogledajte što ste napravili u tri i pol sata. Na početku ste imali nejasnu ideju ili čak samo ime teme. S Perplexityem ste eksplorirali polje, pronašli ključne autore i radove, i naučili razlikovati dobre od loših upita te verificirati izvore. S Gemini Deep Research ste generirali strukturirano izvješće koje vam je dalo širu sliku polja, identificirali prednosti i ograničenja takvog AI generiranog pregleda, i naučili kako takav output transformirati u korisnu polaznu točku. S Claudeom ste pretvorili nestrukturirane bilješke u organiziran nacrt rada, identificirali praznine u svojoj argumentaciji, i naučili tehnike prompt inženjeringa koje daju kvalitetne akademske odgovore.
+
+Cijeli ovaj workflow, od eksploratorne pretrage do strukturiranog nacrta, prije pojave AI alata trajao bi dane. Sada traje sate. Ali, i to je jednako važno razumjeti, AI nije eliminirao potrebu za vašim vlastitim razmišljanjem. Ubrzao je mehaničke korake, pretraživanje, sažimanje, organiziranje, ali odluke o tome što je vaše istraživačko pitanje, koja metodologija je prikladna, i je li vaš argument logički koherentan, te odluke i dalje donosite vi.
+
+::: {.callout-tip}
+## Zadatak za sutra
+Za drugi dan radionice pripremite: (1) jedno formulirano istraživačko pitanje, (2) tri verificirana izvora, (3) nacrt rada iz današnje vježbe s Claudeom. Sutra prelazimo na kodiranje i analizu podataka, pa ćete vidjeti kako AI alati pomažu pretvoriti vašu istraživačku ideju u konkretne empirijske rezultate.
+:::

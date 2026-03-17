@@ -14,7 +14,7 @@ Blok 1.1 uvodi transformer arhitekturu, RAG sustave, akademsku čestitost i APA 
 
 Blok 2.1 uvodi agentsko kodiranje s Claude Codeom, tri generacije AI kodiranja, arhitekturu agentskog razmišljanja i demonstracijski tijek makroekonomske analize. Blok 2.2 pokriva IDE integraciju s GitHub Copilotom i Positronom, tri načina rada Copilota, kognitivne rizike i demo s HNB podacima. Blok 2.3 objašnjava LLM bilježnice za eksplorativnu analizu, konverzacijsko programiranje, stratešku matricu paradigmi i krizu reproducibilnosti. Blok 2.4 demonstrira pisanje i uređivanje akademskog teksta s AI, četiri razine asistencije, protokol uređivanja i specifičnosti hrvatskog jezika.
 
-[HTML verzija](https://raw.githack.com/lusiki/EIZ-radionica/refs/heads/main/slides/day2.html) · [QMD izvorni kod](slides/day2.qmd)
+[HTML verzija](https://raw.githack.com/lusiki/EIZ-radionica/refs/heads/main/slides/day2.html) · [PDF verzija](slides/day2.pdf) · [QMD izvorni kod](slides/day2.qmd)
 
 ## Struktura
 

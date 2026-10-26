@@ -69,6 +69,15 @@ Jedno pitanje, tri provjerena izvora, skripta, graf ili tablica, približno
 200 riječi i zapis uporabe AI-ja.
 [Provjerite kriterije predaje](materials/rubric.qmd).
 
+## Za one koji žele pročitati više
+
+Prošireni tekst izvornih dvaju dana sada je dostupan kao revidirani
+priručnik: osam poglavlja s objašnjenjima, primjerima upita i dodatnim
+vježbama za samostalni rad.
+
+[Čitajte priručnik](booklet/index.qmd) ·
+[Preuzmite cijeli PDF](downloads/EIZ-prirucnik.pdf)
+
 ::: {.concept-box}
 **Radna verzija za pregled.** Sadržaj je revidiran {{< var workshop.revision >}}
 Termin sljedeće izvedbe i kontakt potvrđuje organizator. Datum revizije nije

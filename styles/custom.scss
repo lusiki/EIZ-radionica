@@ -78,6 +78,16 @@ pre { background: $tok-paper-soft; border: 1px solid $tok-rule; padding: 1rem; }
 details { border-top: 1px solid $tok-rule; padding: .7rem 0; }
 summary { font-family: $tok-font-sans; min-height: $tok-touch; cursor: pointer; }
 figure img { max-width: 100%; }
+.booklet-cover { background: $tok-brand-cream; border-top: 6px solid $tok-brand-ink;
+  border-bottom: 2px solid $tok-brand-ink; padding: 1.6rem; margin: 2rem 0; }
+.booklet-cover h2 { border: 0; margin-top: .5rem; padding-top: 0; }
+.booklet h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); line-height: 1.18; }
+.booklet h3 { font-size: 1.35rem; line-height: 1.3; }
+.booklet blockquote { border-left: 3px solid $tok-concept; color: $tok-ink;
+  padding: .7rem 1.15rem; margin: 1.4rem 0; background: $tok-paper-soft; }
+.booklet blockquote p:last-child { margin-bottom: 0; }
+.booklet-next { border-top: 2px solid $tok-ink; margin-top: 3rem; padding-top: 1rem;
+  font-family: $tok-font-sans; font-size: 1.15rem; }
 .nav-footer { border-top: 2px solid $tok-ink; font-size: .85rem; }
 @media (max-width: 650px) {
   .hero { grid-template-columns: 1fr; gap: .5rem; }

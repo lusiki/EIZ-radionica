@@ -1,0 +1,57 @@
+---
+title: "Priručnik za samostalno čitanje"
+subtitle: "Prošireni tekst obaju dana · Revidirano izdanje"
+body-classes: booklet
+toc: false
+---
+
+::: {.booklet-cover}
+::: {.eyebrow}
+EIZ / čitanje nakon radionice
+:::
+
+## Više od kratkih uputa
+
+Osam poglavlja o izvorima, analizi i pisanju. Temelj je izvorni tekst
+radionice, ažuriran za današnje alate i povezan s provjerljivim primjerom.
+
+[Preuzmite cijeli priručnik (PDF)](../downloads/EIZ-prirucnik.pdf){.btn-workshop}
+:::
+
+::: {.step-links}
+::: {.step-link}
+## 01 / Istraživanje i strukturiranje
+
+Kako modeli oblikuju odgovor, kako provjeriti literaturu, pripremiti
+dubinsko istraživanje i pretvoriti bilješke u izvediv plan.
+
+[Čitajte prvi dio →](day1.qmd)
+:::
+::: {.step-link}
+## 02 / Kodiranje i pisanje
+
+Kako surađivati s agentom, pratiti kod u editoru, sačuvati reproducibilan
+postupak i napisati zaključak koji odgovara dokazima.
+
+[Čitajte drugi dio →](day2.qmd)
+:::
+:::
+
+{{< include _00-intro.qmd >}}
+
+## Što je ažurirano
+
+- Sačuvani su slijed osam tema, istraživački scenariji, obrasci upita,
+  protokol provjere izvora i postupak uređivanja teksta.
+- Usporedbe alata temelje se na mogućnostima i provjerenoj dokumentaciji.
+  Dodane su promjene u Posit Assistantu i objašnjenje dohvaćanja projektnih
+  dokumenata; uklonjene su zastarjele rang-liste i obećanja o kvotama.
+- Razjašnjeni su anketni saldo, vremenske serije, korelacija, uzročnost,
+  prognoza, p-vrijednosti i granice HAC standardnih pogrešaka.
+- Demonstracije koriste isti hrvatski skup. Medijski korpus i napredni
+  panel modeli ostaju jasno označeni nastavci s dodatnim preduvjetima.
+
+Za rad u učionici koristite [kratki prvi dan](../slides/day1.qmd),
+[kratki drugi dan](../slides/day2.qmd) i [radne listove](../materials/exercises/index.qmd).
+Za provjeru brojeva otvorite [rječnik podataka](../data/dictionary.qmd)
+i [referentne rezultate](../materials/results.qmd).

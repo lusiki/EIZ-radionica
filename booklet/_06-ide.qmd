@@ -1,0 +1,158 @@
+## 2.2 Rad u editoru: Copilot, RStudio i Positron {#poglavlje-22}
+
+### Mali koraci olakšavaju učenje
+
+Agentsko izvršavanje korisno je kada znate koji postupak želite ostvariti.
+Tijekom učenja često je bolje stati nakon malog koraka: pročitati tablicu,
+ispitati jednu varijablu i objasniti jednu transformaciju. Razvojno
+okruženje, odnosno IDE, okuplja editor, konzolu i prikaz rezultata. AI
+asistent u njemu može dopuniti kod ili objasniti pogrešku dok vi pratite
+što se izvršava.
+
+Izvorna analogija pomoćnika koji dodaje alat dok vi radite ostaje korisna.
+Prijedlog treba pročitati prije prihvaćanja, a rezultat nakon izvršavanja.
+Pritiskanje tipke za prihvaćanje nije provjera. Ako ne znate što funkcija
+radi, tražite objašnjenje na malom primjeru i usporedite ga s dokumentacijom.
+
+### Ispravljena usporedba okruženja
+
+RStudio i Positron mogu poslužiti za ovu radionicu. RStudio ima
+[dokumentiranu integraciju Copilota](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html),
+pa stara tvrdnja da ga ne podržava nije točna. Nema potrebe objašnjavati
+izbor editora netočnom pričom da su cijelo sučelje RStudija i svi njegovi
+procesi jedan R proces. Odvojite pitanje mogućnosti alata od pitanja
+istraživačke metode.
+
+Positron je okruženje za rad s R-om i Pythonom. Njegova
+[dokumentacija proširenja](https://positron.posit.co/extensions.html)
+objašnjava način instalacije i ograničenja kompatibilnosti; ne treba
+pretpostaviti da svako proširenje za VS Code radi na isti način. Za ovu
+radionicu važni su otvaranje projektne mape, odabir R-a, čitanje skripte,
+izvršavanje i pregled izlaza. AI dodatak ostaje izborna pomoć.
+
+Konkretna novost provjerena za ovo izdanje: prema
+[Positovoj dokumentaciji](https://positron.posit.co/assistant), Posit Assistant
+od verzije Positrona 2026.07 zamjenjuje prethodni Positron Assistant i
+Databot. Stare upute o sučelju mogu se odnositi na stariji proizvod.
+Provjerite instaliranu verziju i odgovarajuće upute. Ne pretpostavljajte
+da se dostupni modeli, naredbe i dozvole podudaraju u svakoj instalaciji.
+
+Izbor se može svesti na praktična pitanja: u kojem okruženju znate
+otvoriti projekt, kako vidite izvršeni kod, možete li ponovno pokrenuti
+sve od početka i gdje završavaju izlazne datoteke? Promjena editora sama
+po sebi ne povećava valjanost analize. Dobra radna navika prenosiva je
+između okruženja.
+
+### Tri vrste pomoći koje treba razlikovati
+
+**Linijsko dopunjavanje** predlaže nastavak uz kursor. Korisno je za
+ponavljajuću sintaksu i male funkcije. Provjerite nazive stupaca, argumente
+i smjer filtra. Prijedlog koji je sintaktički točan može koristiti
+varijablu iz nekog drugog projekta ili pretpostaviti pogrešnu jedinicu.
+
+**Razgovor o kodu** služi objašnjenjima i usmjerenim pitanjima. Umjesto
+„popravi sve” navedite poruku o pogrešci, relevantan dio skripte i
+očekivani ishod. Tražite objašnjenje uzroka, a zatim najmanju promjenu
+koja ga rješava. Nemojte izostaviti upozorenje samo zato što se graf ipak
+prikazao.
+
+**Uređivanje i agentsko izvršavanje** mogu zahvatiti više datoteka.
+Njihova dostupnost ovisi o proizvodu i integraciji. Pregled izmjena,
+dopuštenja i izvršenih naredbi važniji je od opće etikete „IDE” ili
+„agent”. Terminalski alat može omogućiti detaljnu provjeru, a pomoćnik
+u editoru može izvoditi opsežne radnje.
+
+### Demonstracija na istim podacima
+
+Otvorite korijen preuzetog projekta. Sljedeći mali primjer koristi
+osnovni R i iste podatke kao službene skripte. Svrha mu je pokazati
+što čitate i provjeravate; završni postupak radionice ostaje zapisan
+u datotekama u mapi `code`.
+
+```r
+d <- read.csv("data/processed/croatia_inflation.csv")
+stopifnot(nrow(d) == 120L, !anyDuplicated(d$month))
+str(d)
+head(d)
+```
+
+Pitajte asistenta što provjerava `stopifnot`, a što još ne provjerava.
+Primjer potvrđuje broj redaka i jedinstvenost mjeseca, ali ne i potpunost
+kalendara ili definiciju varijabli. Usporedite ga s opsežnijom provjerom
+u projektu. Dobro objašnjenje navodi i ograničenje vlastitog koda.
+
+Zatim izračunajte jednostavan sažetak:
+
+```r
+summary(d[c("hicp_yoy_pct", "expectations_balance")])
+colSums(is.na(d))
+```
+
+U ovoj tablici prazna polja `hicp_flag` i `expectations_flag` znače da
+nema dodatne oznake statusa podatka; nisu isto što i nedostajuća vrijednost
+inflacije ili salda. Zato popis iz `colSums` čitajte zajedno s rječnikom
+podataka. Automatsko uklanjanje svakog retka koji ima bilo koje prazno
+polje uklonilo bi i valjana opažanja.
+
+Zahtjev „napravi profesionalnu tablicu” prerano usmjerava pažnju na izgled.
+Prvo provjerite mjere, broj opažanja i nedostajuće vrijednosti. Naknadno
+možete urediti naslove i broj decimala. Uredna tablica ne uklanja problem
+ako su u istoj koloni pomiješane stope i indeksi.
+
+Za godišnji prosjek napišite pravilo prije koda: grupiramo prema godini,
+očekujemo dvanaest mjeseci i prosječno računamo mjesečne godišnje stope.
+To nije nova mjera godišnje promjene prosječnog indeksa. Asistent neka
+objasni svaki argument i provjeri `n_months` prije sažimanja.
+
+Za vizualizaciju zatražite dva panela sa zajedničkom osi vremena, jasnim
+jedinicama i izvorom. Ispravite oznaku ako piše „očekivana inflacija (%)”.
+U našem slučaju odgovarajuća je oznaka „saldo očekivanih promjena cijena”.
+Navedite i da HICP predstavlja godišnju stopu promjene, kako čitatelj ne
+bi pretpostavio mjesečnu promjenu.
+
+### Dijagnosticiranje umjesto nasumičnog popravljanja
+
+Kada kod ne radi, prvo pročitajte poruku i utvrdite u kojem koraku nastaje
+problem. Nedostajuća datoteka često je problem radnog direktorija.
+Nepostojeći stupac može značiti pogrešno ime ili drukčiji način učitavanja.
+Ne popravljajte taj simptom preimenovanjem svega što model predloži bez
+usporedbe s rječnikom podataka.
+
+Koristan upit glasi:
+
+> Ova naredba javlja sljedeću pogrešku: [poruka]. Radim iz korijena
+> projekta, a ulazna datoteka ima ove nazive stupaca: [nazivi]. Objasni
+> vjerojatan uzrok i predloži najmanju izmjenu. Nemoj mijenjati definicije
+> varijabli ni izostavljati opažanja da bi kod prošao.
+
+Provjerite rješenje u čistoj sesiji. Objekt koji je ostao od ranijeg
+pokretanja može prikriti nedostajući korak. Spremite skriptu, ponovno
+pokrenite R i izvodite je od početka. Taj postupak vrijedi i u RStudiju
+i u Positronu; nije svojstvo samo jednog editora.
+
+### Napredni koraci imaju preduvjete
+
+Proširenje s Hrvatske na više zemalja traži usklađene definicije, obuhvat
+i datume. Tek tada ima smisla razmatrati panel pristup. Izbor fiksnih ili
+slučajnih efekata ne treba svesti na automatsko pravilo temeljeno na jednoj
+p-vrijednosti. Način uzorkovanja, pretpostavke o neopaženim razlikama i
+struktura zavisnosti određuju koje su procjene i standardne pogreške
+prikladne.
+
+Takva analiza nije završni korak petnaestominutne početničke vježbe.
+Zadržavamo je kao mogući nastavak, uz mentorovu pomoć i prikladne podatke.
+U osnovnoj radionici važnije je razumjeti malu izmjenu postojećeg koda
+nego prihvatiti veliki model koji ne možete objasniti.
+
+### Vježba: promjena koju možete objasniti
+
+U `code/starter.R` odaberite jedan mali zadatak. Primjerice, poboljšajte
+oznaku grafa ili dodajte broj opažanja uz sažetak. Zatražite prijedlog,
+pročitajte ga i napišite jednu rečenicu o tome što se mijenja. Pokrenite
+skriptu i usporedite rezultat prije i poslije. Ako se zbog promjene oznake
+promijenio broj opažanja ili izračunata vrijednost, istražite zašto.
+
+Za samostalni nastavak zapišite jedan prihvaćen i jedan odbijen AI
+prijedlog. Obrazložite oba izbora. Takva bilješka pokazuje učenje bolje
+od broja generiranih redaka. Ishod rada u editoru je skripta čiji postupak
+razumijete i koju druga osoba može pokrenuti.

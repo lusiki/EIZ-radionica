@@ -41,7 +41,8 @@ site = Path(sys.argv[1]).resolve() if len(sys.argv)>1 else root/"_site"
 names = ["index.html","admin/prerequisites.html","admin/workshop_overview.html",
  "slides/day1.html","slides/day2.html","data/dictionary.html",
  "materials/exercises/index.html","materials/sources.html","materials/rubric.html",
- "materials/solutions.html","materials/results.html","admin/instructor.html"]
+ "materials/solutions.html","materials/results.html","admin/instructor.html",
+ "booklet/index.html","booklet/day1.html","booklet/day2.html"]
 pages = {site/n:Page((site/n).read_text(encoding="utf-8")) for n in names}
 assert {str(p.relative_to(site)).replace("\\", "/") for p in site.rglob("*.html")} == set(names), "Unexpected HTML in preview"
 assert (site/"results/inflation_expectations.svg").read_text(encoding="utf-8").count("data:font/ttf;base64,") == 2
@@ -60,7 +61,10 @@ for path,p in pages.items():
 with zipfile.ZipFile(root/"downloads/eiz-workshop.zip") as z:
     members = z.namelist()
     assert all(not ("/.git/" in n or n.startswith((".git/",".claude/","submissions/","renv/library/"))) for n in members)
-    assert not any(n.endswith((".html",".pdf",".log")) for n in members)
+    assert not any(n.endswith((".html",".log")) for n in members)
+    assert {n for n in members if n.endswith(".pdf")} == {"downloads/EIZ-prirucnik.pdf"}
+    assert len([n for n in members if re.match(r"booklet/_0[1-8]-.*\.qmd$", n)]) == 8
+    assert z.read("downloads/EIZ-prirucnik.pdf") == (site/"downloads/EIZ-prirucnik.pdf").read_bytes()
     assert "code/starter.R" in members and "data/processed/croatia_inflation.csv" in members
 for css in (site/"styles").glob("*.css"):
     for rel in re.findall(r'url\(["\']?([^)"\']+)', css.read_text(encoding="utf-8")):

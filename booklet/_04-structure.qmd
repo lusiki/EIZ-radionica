@@ -1,0 +1,144 @@
+## 1.4 Od bilješki do nacrta rada s Claudeom {#poglavlje-14}
+
+### Imate izvore, ali još nemate argument
+
+Ako ste pratili prethodna poglavlja, sada imate popis izvora, provjerene
+tvrdnje i bilješke o otvorenim pitanjima. To je više materijala nego na
+početku, ali pojavljuje se novi problem: imate fragmente, ne priču. Imate
+informacije, ali još ne znate redoslijed kojim ih treba objasniti čitatelju.
+
+Upravo je to koristan zadatak za razgovornog asistenta. Claude ovdje ostaje
+primjer alata kojemu dajete vlastite materijale i od kojega tražite
+organizaciju, pitanja i kritičke komentare. Ista se vještina može vježbati
+u drugom dostupnom sustavu ili s kolegom. Vrijednost nije u tvrdnji da je
+jedan proizvod najbolji za hrvatski jezik, nego u jasnoći razgovora koji
+vodite o svom istraživanju.
+
+Zamislite razgovor s mentorom. Ne dolazite samo s molbom „pomozi mi”, nego
+objašnjavate pitanje, raspoložive podatke i mjesto na kojem ste zapeli.
+Asistentu također treba dati te informacije. Razlika je u tome što odgovor
+modela morate provjeriti i kada zvuči kao siguran stručni savjet.
+
+### Pripremite materijale prije razgovora
+
+Odvojite tri vrste sadržaja: provjerene bilješke, vlastite pretpostavke i
+otvorena pitanja. Uz izvor navedite naziv datoteke i mjesto relevantnog
+odlomka. Uz broj navedite jedinicu, razdoblje i skriptu ili tablicu iz koje
+potječe. Ako je rečenica samo radna ideja, označite je tako da model ne bi
+ugradio pretpostavku u nacrt kao već potvrđen nalaz.
+
+Claude [Projects](https://support.claude.com/en/articles/9517075-what-are-projects)
+omogućuje organiziranje materijala i projektnih uputa. Dokumentacija
+[projektnog dohvaćanja](https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects)
+opisuje korištenje relevantnih dijelova datoteka kada sadržaj nadilazi
+raspoloživi kontekst. To nije isto što i čitanje svih priloženih dokumenata
+u cijelosti pri svakom odgovoru. Za ključnu tvrdnju navedite točan dokument
+i zatražite mjesto na kojem se temelji odgovor.
+
+Projektne upute mogu biti kratke: piši hrvatski, razlikuj podatak od
+pretpostavke, ne dodaj izvore koje nisi otvorio i označi nedostatak dokaza.
+Takve upute usmjeravaju rad; ne mijenjaju naučene težine modela i ne jamče
+da će svaki odgovor biti točan. Korisnije su provjerljive granice od
+dugog opisa zamišljene osobnosti stručnjaka.
+
+### Pet načela za koristan upit
+
+**1. Dajte kontekst i jasno zaduženje.** Umjesto „pomozi mi s radom” napišite:
+
+> Pripremam kratki studentski izvještaj o ostvarenoj inflaciji i saldu
+> očekivanih promjena cijena u Hrvatskoj od 2015. do 2024. Imam 120
+> mjesečnih opažanja i tri provjerena izvora. Pomozi mi urediti plan
+> opisne analize. Nemam medijske podatke ni istraživački dizajn za
+> procjenu uzročnog učinka. Najprije navedi nejasnoće u mom planu.
+
+Uputa „budi kritički recenzent” može pomoći objasniti vrstu komentara, ali
+ne pretvara model u recenzenta s provjerenim kompetencijama. Kontekst,
+materijali i kriteriji provjere čine glavninu korisne upute.
+
+**2. Odredite format i opseg.** Ako želite nacrt, tražite nacrt, a ne cijeli
+rad. Ako želite usporedbu izvora, zatražite teme, slaganja, razlike i
+ograničenja. Primjer:
+
+> Predloži pet odjeljaka: pitanje, podaci, postupak, rezultati i ograničenja.
+> Za svaki napiši svrhu, dokaz koji je potreban i pitanje na koje još
+> moram odgovoriti. Nemoj pisati nalaze prije nego što dobiješ izlaz analize.
+
+**3. Dajte primjer željenog rezultata.** Jedan dobro napisan odlomak ili
+jedan dovršen dokazni zapis često je korisniji od mnoštva stilskih
+pridjeva. Primjer mora sadržavati istinite podatke ili jasno označena
+mjesta za unos. U suprotnom će se i pogreška iz primjera proširiti na ostatak.
+
+**4. Tražite kritiku, a ne potvrdu.** Izvorni prompt koji je tražio
+obrazloženje već odabrane Newey-West korekcije previše je usmjeravao odgovor.
+Bolji upit pita je li metoda uopće potrebna, koje pretpostavke zahtijeva i
+što ne rješava. Jednako vrijedi za pitanje o istraživačkoj praznini:
+neka model razlikuje prazninu u vašim bilješkama od tvrdnje da nešto nitko
+još nije istražio.
+
+**5. Poboljšavajte pojedinačne dijelove.** Nakon prvog nacrta izaberite
+jedan problem. „Pojasni zašto saldo nije postotna prognoza” preciznije je
+od „učini tekst akademskijim”. Sačuvajte inačice i odbacite prijedlog koji
+mijenja značenje. Više iteracija nije samo po sebi dokaz više kvalitete.
+
+### Demonstracija: četiri koraka do izvedivog plana
+
+U prvom koraku prikupite bilješke. U našem primjeru one mogu glasiti:
+„Imam mjesečni HICP, godišnju stopu promjene; imam kvalitativni saldo
+očekivanja; podaci pokrivaju Hrvatsku 2015.–2024.; želim usporediti
+kretanja; nisam siguran/na kako opisati odnos.” Uključite definicije iz
+rječnika, a ne samo nazive stupaca.
+
+U drugom koraku zatražite analizu praznina:
+
+> Razdvoji što već mogu istražiti ovim podacima, što trebam dodatno
+> provjeriti u metodologiji i što zahtijeva nove podatke. Za svaku
+> preporuku objasni vezu s mojim pitanjem. Ne dodaj varijable koje nemam.
+
+Koristan odgovor može upozoriti na različite jedinice i vremenski horizont
+ankete. Prijedlog da analizirate medijski sentiment zahtijeva novi korpus,
+pravilo mjerenja i provjeru kvalitete. Nije mala dopuna postojećem planu.
+Razlikovanje tih razina štiti vas od nacrta koji obećava znatno više nego
+što se može napraviti.
+
+U trećem koraku odredite redoslijed argumenta. Najprije objasnite pitanje
+i mjere, zatim provjeru podataka, vizualni prikaz i sažetke, a na kraju
+interpretaciju i ograničenja. Svaki odjeljak treba imati posao koji obavlja.
+Naslov „Metodologija” bez informacije što je izračunato nije dovoljan plan.
+
+U četvrtom koraku popravite najslabije mjesto. Ako nacrt zaključuje da
+mediji oblikuju očekivanja, vratite ga na ono što podaci sadrže. Ako
+predviđa regresiju zato što rad „mora biti ozbiljan”, pitajte na koje
+pitanje ta regresija odgovara. Opisna analiza može biti dovršen i vrijedan
+studentski zadatak kada su mjere i ograničenja dobro objašnjeni.
+
+### Hipoteze, teorija i rezultat ne nastaju istim putem
+
+Model može predložiti hipoteze. Istraživač provjerava jesu li jasne,
+zanimljive, povezane s teorijom i mjerljive dostupnim podacima. Nije
+potrebno tvrditi da AI ne može predložiti originalnu ideju da bismo
+razumjeli zašto konačna odgovornost ostaje na autoru.
+
+Hipoteza nastala nakon gledanja grafa dio je eksploracije. Nemojte je
+naknadno prikazati kao unaprijed postavljenu potvrđujuću hipotezu. Ako
+želite provjeravati prognozu, treba unaprijed razjasniti ciljnu varijablu,
+horizont i razdoblje evaluacije. Ako želite uzročni zaključak, potrebno je
+obrazložiti identifikaciju. Nacrt ne smije preskočiti te razlike.
+
+Za kritiku izvora možete zatražiti procjenu jasnoće pitanja, podataka,
+metode i granica zaključka. Ako modelu dajete samo sažetak, neka i komentar
+bude ograničen na sažetak. Zaključivanje o detaljima specifikacije koje
+ni vi ni model niste vidjeli nije kritičko čitanje.
+
+### Nacrt koji možete braniti
+
+Završite prvi dan s pitanjem, trima provjerenim izvorima i planom na jednoj
+stranici. Uz plan dodajte popis otvorenih pitanja i naziv prve skripte
+koju ćete pokrenuti. Za svaku planiranu tablicu ili sliku napišite koju
+rečenicu treba pomoći objasniti. Time stvarate vezu između čitanja,
+analize i pisanja.
+
+Kao samostalnu vježbu zamijenite nacrt s kolegom. Neka označi jednu tvrdnju
+bez dokaza, jedan nejasan pojam i jedan korak koji se ne može izvesti
+raspoloživim podacima. AI može predložiti istu vrstu pitanja, ali vi trebate
+znati odgovoriti bez ponovnog prepuštanja razgovora modelu. To je najbolja
+priprema za drugi dan, kada će svaki izbor postati dio konkretnog postupka.

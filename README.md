@@ -25,7 +25,12 @@ Gotov `_site/index.html` možete otvoriti i izravno u pregledniku; pretraživanj
 weba pouzdanije radi preko lokalnog poslužitelja.
 
 Preduvjeti za punu gradnju: R 4.6.0 (provjerena verzija), Quarto 1.9.38
-(provjerena verzija) i paketi iz renv.lock. Na Linuxu paketi za fontove mogu
+(provjerena verzija), Python s paketom ReportLab i R paketi iz renv.lock.
+PDF priručnik gradi se iz istih izvora kao čitateljske stranice. Po potrebi
+instalirajte `python -m pip install reportlab` i postavite `EIZ_PYTHON` na
+putanju tog Python interpretera. Skripta na ovom računalu prepoznaje i
+bundled Codex Python. Za provjeru PDF-a koristite `pypdf` i `pdfplumber`.
+Na Linuxu paketi za fontove mogu
 zahtijevati sistemske biblioteke; taj sustav nije provjeren ovom revizijom.
 
 ```r
@@ -45,6 +50,8 @@ bez punog builda dovoljan je `source("code/starter.R", encoding = "UTF-8")`.
 
 - [Početak](admin/prerequisites.qmd), [raspored](admin/workshop_overview.qmd)
 - [Dan 1](slides/day1.qmd), [Dan 2](slides/day2.qmd): čitateljski materijali
+- [Prošireni priručnik](booklet/index.qmd): revidirani izvorni tekst u osam
+  poglavlja, dva dijela za web i cjelovit PDF u `downloads/EIZ-prirucnik.pdf`
 - [Osam vježbi](materials/exercises/index.qmd), [rješenja](materials/solutions.qmd)
 - [Rječnik podataka](data/dictionary.qmd), [izvori](materials/sources.qmd)
 - [Rubrika](materials/rubric.qmd), [upute za nastavnika](admin/instructor.qmd)
@@ -55,7 +62,8 @@ Dodatna provjera s Pythonovom standardnom bibliotekom:
 `python scripts/check_release.py` (nakon gradnje). Ona ne zamjenjuje pilot.
 
 Radni ZIP nastaje u downloads/eiz-workshop.zip. Sadrži izvore, podatke,
-skripte i upute; ne sadrži .git, osobne postavke, staru objavu ili renv biblioteku.
+skripte, upute i novi PDF priručnik; ne sadrži .git, osobne postavke,
+staru objavu ili renv biblioteku.
 Novi web gradi se isključivo iz eksplicitnog popisa u _quarto.yml.
 
 ## Povijesni materijal i sljedeće odluke

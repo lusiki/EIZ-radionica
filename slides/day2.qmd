@@ -18,6 +18,10 @@ internet, AI račun ni instalacija dodatnih R paketa.
 
 ## 2.1 Upoznajte podatke prije modela {#blok-21}
 
+Za opširnija objašnjenja agenata, editora, bilježnica i pisanja otvorite
+[drugi dio priručnika](../booklet/day2.qmd). [Cijeli PDF](../downloads/EIZ-prirucnik.pdf)
+obuhvaća oba dana.
+
 Jedan redak predstavlja jedan mjesec. Ključ je `month`, a ne redni broj retka.
 Očekujemo 120 različitih, uzastopnih mjeseci. Provjerite raspon datuma,
 duplikate, nedostajuće vrijednosti i jedinice prije izračuna. Ako nešto ne

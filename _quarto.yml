@@ -7,6 +7,9 @@ project:
     - admin/workshop_overview.qmd
     - slides/day1.qmd
     - slides/day2.qmd
+    - booklet/index.qmd
+    - booklet/day1.qmd
+    - booklet/day2.qmd
     - data/dictionary.qmd
     - materials/exercises/index.qmd
     - materials/sources.qmd
@@ -29,6 +32,7 @@ project:
     - results/*.svg
     - results/*.csv
     - downloads/*.zip
+    - downloads/EIZ-prirucnik.pdf
 website:
   title: "AI u istraživanju"
   search: true
@@ -44,6 +48,8 @@ website:
         text: Dan 2
       - href: materials/exercises/index.qmd
         text: Vježbe
+      - href: booklet/index.qmd
+        text: Priručnik
       - text: Materijali
         menu:
           - href: data/dictionary.qmd

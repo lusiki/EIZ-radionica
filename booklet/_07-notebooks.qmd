@@ -1,0 +1,146 @@
+## 2.3 Bilježnice, eksploracija i reproducibilnost {#poglavlje-23}
+
+### Istraživački dnevnik koji izvršava kod
+
+Zamislite bilježnicu u kojoj zapisujete pitanje, odmah ispod njega
+izvodite izračun, a zatim dodajete graf i komentar. Takav dokument može
+biti i istraživački dnevnik i radno okruženje. Računalne bilježnice spajaju
+tekst, kod i rezultate; AI pomoć može dodati razgovorno sučelje za pisanje
+i objašnjavanje koda.
+
+Ipak, ne predstavljaju sva razgovorna sučelja istu vrstu dokumenta.
+Chat koji prikazuje graf, interaktivni prikaz izrađen u razgovoru i
+Jupyter bilježnica nemaju nužno isti način spremanja koda i izvođenja.
+Prije analize provjerite možete li vidjeti izvršeni kod, preuzeti podatke
+i rezultat te ponovno pokrenuti postupak iz prazne sesije.
+
+Googleova [dokumentacija Colaba](https://research.google.com/colaboratory/intl/en-GB/faq.html)
+opisuje razgovornu pomoć, izmjene koda i agentske postupke unutar
+bilježnice. Pristup ovisi o računu i dostupnosti funkcije. Za učenje
+je važnije razumjeti što je izvršeno nego pamtiti koji se model nalazi
+u pozadini pojedinog proizvoda.
+
+Bilježnica nije nužno samo privremena skica. Može biti kvalitetan završni
+istraživački dokument ako uključuje sav potreban kod, opis ulaza i
+okruženja te se može izvršiti pravilnim redom. Suprotno tome, ni skripta
+u repozitoriju nije automatski reproducibilna. Presudni su sadržaj i
+provjeren postupak, a ne naziv formata.
+
+### Pet pitanja za eksploraciju
+
+U izvornom materijalu demonstracija je naglo prelazila na američke
+podatke o komunikaciji središnje banke. Ovdje nastavljamo s istih 120
+hrvatskih mjeseci kako biste mogli usporediti različite načine rada
+bez istodobnog učenja novog skupa podataka.
+
+**Prvo pitanje: što je učitano?** Prikažite broj opažanja, nazive i tipove
+stupaca, nekoliko redaka te vremenski raspon. Usporedite odgovor modela
+sa stvarnom tablicom. Ako model saldo nazove „očekivanom inflacijom u
+postocima”, ispravite definiciju prije bilo kakvog grafa.
+
+**Drugo pitanje: kako se mjere kreću kroz vrijeme?** Zatražite dva panela
+sa zajedničkom vremenskom osi. Jasno navedite jedinice i razdoblje.
+Provjerite da kronološki redoslijed nije zamijenjen abecednim ili
+redoslijedom nastanka objekata. U ovom skupu tekstualni format YYYY-MM
+omogućuje kronološko sortiranje, ali to nije svojstvo svakog formata datuma.
+
+**Treće pitanje: kakav je raspon i raspodjela?** Sažetak i histogram
+otkrivaju različite stvari. Histogram prikazuje raspodjelu, ali skriva
+vremenski slijed; vremenski graf čuva slijed, ali slabije pokazuje koliko
+je često pojedina vrijednost zastupljena. Koristite ih za različita
+pitanja. Minima i maksima ne proglašavajte pogreškama bez provjere izvora.
+
+**Četvrto pitanje: koliko je sažetak osjetljiv na razdoblje?** Izračunajte
+korelaciju za cijeli uzorak i dva unaprijed navedena podrazdoblja.
+Objasnite da se uspoređuju isti mjeseci dviju serija. Ako želite ispitati
+vremenski odmak, napišite koju varijablu pomičete, u kojem smjeru i zašto.
+Nemojte iskušavati odmake dok ne dobijete najveći koeficijent i prikazati
+ga kao jedini rezultat.
+
+**Peto pitanje: što je sljedeće istraživačko pitanje?** Eksploracija može
+otvoriti hipotezu o razlikama između razdoblja, ali ne daje automatski
+njezinu potvrdu. Zapišite kada je ideja nastala i kakvi su dodatni podaci
+ili dizajn potrebni. AI prijedlog da dodate medijski ton nije rezultat
+postojeće tablice, nego mogući novi projekt.
+
+### Skriveno stanje: zašto dokument radi samo vama
+
+Bilježnica može sadržavati ćeliju koja koristi objekt stvoren ranije,
+ali čija je izrada poslije izbrisana. Možete izvršiti ćelije redoslijedom
+3, 1, 4, promijeniti podatke i zaboraviti ponovno pokrenuti graf.
+Na ekranu tada vidite uredan niz rezultata koji ne odgovara redoslijedu
+koda u spremljenom dokumentu. To je problem skrivenog stanja.
+
+AI ga može dodatno zamagliti ako kaže da je „ponovno izračunao sve”,
+a izmijeni samo jednu ćeliju. Rješenje je konkretno: spremite dokument,
+ponovno pokrenite jezgru i izvršite sve ćelije od početka. Provjerite
+rezultate i spremite ih nakon uspješnog izvođenja. Ako postupak ne radi,
+pronađite nedostajući korak umjesto da se oslonite na staru sliku.
+
+Isti problem postoji u interaktivnoj R konzoli. Objekt iz jučerašnje
+sesije može omogućiti današnjoj nepotpunoj skripti da radi. Zato radionica
+traži pokretanje spremljenog postupka od početka. Uspješno ponovno
+izvođenje s poznatim ulazom uvjerljivije je od dugog razgovora o tome
+što je navodno napravljeno.
+
+### Reproducirati analizu nije isto što i ponoviti prompt
+
+Ako sutra pošaljete isti upit modelu, može nastati drukčiji kod. Model,
+postavke, dostupni alati ili izvori također se mogu promijeniti. Za
+reprodukciju našeg numeričkog rezultata zato čuvamo **prihvaćeni kod i
+ulazne podatke**, a ne očekujemo da model ponovno napiše istu analizu.
+Zapis upita objašnjava nastanak rada, ali nije zamjena za skriptu.
+
+Za slučajne postupke treba navesti sjeme generatora i relevantne
+postavke. Za vanjske izvore treba sačuvati datum dohvata i, kada je
+dopušteno, korištenu kopiju. Za softverske ovisnosti treba opisati verzije
+i način obnove okruženja. [renv](https://rstudio.github.io/renv/articles/renv.html)
+pomaže upravljanju R paketima, ali sama zaključana lista paketa ne jamči
+prisutnost svih sistemskih biblioteka, podataka ili vanjskih usluga.
+
+Ne trebate automatski uvoditi Docker i složenu infrastrukturu u svaki
+studentski zadatak. U ovom osnovnom primjeru dovoljne su javne spremljene
+datoteke i osnovni R. Složeniji projekti mogu tražiti izolirano okruženje
+i automatizirane provjere. Razina infrastrukture treba odgovarati
+stvarnim ovisnostima i riziku gubitka postupka.
+
+### Što treba izvesti iz razgovornog okruženja
+
+Preuzmite skriptu ili bilježnicu, potrebne ulazne podatke ako to dopuštaju
+uvjeti uporabe, tablicu rezultata i graf. Dodajte opis koraka, verzije
+važnih paketa i bilješku o AI pomoći. Nemojte kao jedini dokaz predati
+snimku ekrana razgovora. Ona ne omogućuje provjeru brojeva ni promjenu
+pretpostavki.
+
+Spremanje svih razgovora bez razlike također nije cilj. Mogu sadržavati
+osobne podatke ili nepotreban sadržaj. Sačuvajte relevantne odluke i
+potreban dokazni trag, uz pravila kolegija i zaštitu podataka. Primjer
+korisne bilješke: „Model je predložio interpolaciju; odbijena je jer
+zamrznuti skup nema praznina i takva transformacija nije dio plana.”
+
+### Usporedite tri načina rada
+
+Agent je praktičan za dobro ograničen zadatak nad više datoteka. Editor
+je praktičan kada želite pratiti i učiti male promjene. Bilježnica je
+praktična kada pitanja, kod i komentari trebaju stajati zajedno. Sve
+tri mogućnosti mogu biti transparentne ili nepregledne, ovisno o načinu
+uporabe. Ni jedna nema zajamčenu razinu kontrole ili reproducibilnosti.
+
+Umjesto rangiranja proizvoda, usporedite isti mali zadatak u dvama
+okruženjima: koliko vam treba vremena do **provjerenog** rezultata,
+možete li objasniti svaku transformaciju, gdje se sprema kod i može li
+ga druga osoba pokrenuti? Ako ste brže dobili graf, a ne možete doći
+do koda, dobitak može nestati pri pisanju završnog rada.
+
+### Vježba: ponovno izvođenje bez razgovora
+
+Napravite kratak eksplorativni dokument s pet pitanja iz ovog poglavlja.
+Spremite prihvaćeni kod, ponovno pokrenite okruženje i izvedite ga od
+početka. Usporedite broj mjeseci i korelaciju s referentnim datotekama.
+Zatim dajte kolegi postupak bez svoje otvorene sesije i usmenih dopuna.
+Zabilježite što mu je nedostajalo.
+
+Vježba završava kratkim odgovorom na dva pitanja: što se može ponoviti
+iz spremljenih datoteka i što još ovisi o vama ili vanjskoj usluzi?
+Time spremate analizu za pisanje, gdje čitatelju treba pokazati i nalaz
+i način na koji ste do njega došli.

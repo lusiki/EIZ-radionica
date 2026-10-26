@@ -17,6 +17,10 @@ i plan analize na jednoj stranici. [Otvorite radne listove](../materials/exercis
 
 ## 1.1 Što model može znati? {#blok-11}
 
+Za opširnija objašnjenja, primjere upita i dodatno čitanje otvorite
+[prvi dio priručnika](../booklet/day1.qmd). [Cijeli PDF](../downloads/EIZ-prirucnik.pdf)
+obuhvaća oba dana.
+
 Jezični model generira nastavak teksta prema obrascima naučenima tijekom
 treniranja i sadržaju koji mu je dostupan u razgovoru. Vjerojatnost tokena
 nije vjerojatnost da je tvrdnja istinita. Način odabira tokena može uključiti

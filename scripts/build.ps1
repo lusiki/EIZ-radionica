@@ -19,6 +19,21 @@ if (-not $SkipAnalysis) {
 }
 & $rExe scripts/check_design.R
 if ($LASTEXITCODE -ne 0) { throw 'Design token check failed.' }
+# Typeset the same chapter sources that Quarto includes in the reading pages.
+$pythonCandidates = @()
+if ($env:EIZ_PYTHON) { $pythonCandidates += $env:EIZ_PYTHON }
+$bundledPython = Join-Path $env:USERPROFILE '.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
+if (Test-Path -LiteralPath $bundledPython) { $pythonCandidates += $bundledPython }
+$pythonCommand = Get-Command python -ErrorAction SilentlyContinue
+if ($pythonCommand) { $pythonCandidates += $pythonCommand.Source }
+$bookletPython = $null
+foreach ($candidate in ($pythonCandidates | Select-Object -Unique)) {
+  & $candidate -c 'import reportlab' 2>$null
+  if ($LASTEXITCODE -eq 0) { $bookletPython = $candidate; break }
+}
+if (-not $bookletPython) { throw 'PDF build needs Python with reportlab. Install it and set EIZ_PYTHON; see README.md.' }
+& $bookletPython scripts/build_booklet.py
+if ($LASTEXITCODE -ne 0) { throw 'Booklet PDF build failed.' }
 & (Join-Path $PSScriptRoot 'package.ps1')
 # Render a source-only copy outside Dropbox. Quarto moves intermediate HTML
 # and cloud sync can lock those files; this also preserves historical exports.

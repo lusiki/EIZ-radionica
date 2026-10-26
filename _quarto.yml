@@ -1,0 +1,81 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - admin/prerequisites.qmd
+    - admin/workshop_overview.qmd
+    - slides/day1.qmd
+    - slides/day2.qmd
+    - data/dictionary.qmd
+    - materials/exercises/index.qmd
+    - materials/sources.qmd
+    - materials/rubric.qmd
+    - materials/solutions.qmd
+    - materials/results.qmd
+    - admin/instructor.qmd
+  resources:
+    - "!work/**"
+    - "!renv/**"
+    - "!.claude/**"
+    - "!submissions/**"
+    - styles/fonts/**
+    - data/processed/*.csv
+    - data/raw/*.json
+    - data/reference/*.csv
+    - code/*.R
+    - materials/templates/*.md
+    - materials/examples/*.md
+    - results/*.svg
+    - results/*.csv
+    - downloads/*.zip
+website:
+  title: "AI u istraživanju"
+  search: true
+  navbar:
+    background: light
+    title: "EIZ / radionica"
+    left:
+      - href: admin/prerequisites.qmd
+        text: Početak
+      - href: slides/day1.qmd
+        text: Dan 1
+      - href: slides/day2.qmd
+        text: Dan 2
+      - href: materials/exercises/index.qmd
+        text: Vježbe
+      - text: Materijali
+        menu:
+          - href: data/dictionary.qmd
+            text: Podaci
+          - href: materials/sources.qmd
+            text: Izvori
+          - href: materials/results.qmd
+            text: Referentni rezultati
+          - href: materials/rubric.qmd
+            text: Predaja i vrednovanje
+          - href: admin/instructor.qmd
+            text: Za nastavnike
+  page-footer:
+    left: "Ekonomski institut, Zagreb · Radna verzija za pregled"
+    right:
+      - href: admin/workshop_overview.qmd
+        text: Raspored
+lang: hr
+format:
+  html:
+    theme: [default, styles/custom.scss]
+    css: styles/fonts.css
+    toc: true
+    toc-title: "Na ovoj stranici"
+    toc-depth: 2
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: styles/statistika.theme
+    grid:
+      body-width: 760px
+      margin-width: 220px
+    anchor-sections: true
+    link-external-newwindow: true
+execute:
+  enabled: false

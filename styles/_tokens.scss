@@ -1,0 +1,125 @@
+// =====================================================================
+//  _tokens.scss — HTML sloj dizajnerskih tokena (sustav Zvono)
+// =====================================================================
+//  Preslikava design-tokens.yml. NIJEDNA druga .scss/.css/.html datoteka u
+//  repozitoriju ne smije sadržavati sirovi hex ili ime pisma — sve se
+//  referencira preko $tok-* varijabli ili var(--tok-*) svojstava.
+//
+//  Ova datoteka je PARTIAL bez Quarto slojnih oznaka: uvlači se u
+//  defaults blok datoteke custom.scss (`@import "tokens";`), pa smije
+//  sadržavati isključivo deklaracije varijabli.
+//
+//  ZAŠTO SVE NOSI !default. Quarto spaja defaults blokove svih tema
+//  OBRNUTIM redoslijedom (zadnja navedena tema ide prva), pa u tamnom
+//  compileu _dark.scss dodijeli svoje vrijednosti PRIJE ovih. Bez
+//  !default ove bi ih zatim pregazile i tamni način ne bi radio.
+//
+//  Provjera sinkronizacije s design-tokens.yml i tex/theme.tex:
+//      Rscript scripts/check-tokens.R
+//
+//  Zamjena dizajna: DESIGN.md.
+// =====================================================================
+
+// --- površine --------------------------------------------------------
+$tok-paper:       #F2E8D5 !default;   // token:paper
+$tok-paper-soft:  #E6D9BC !default;   // token:paper-soft
+$tok-surface:     #FAF5EA !default;   // token:surface
+
+// --- tekst -----------------------------------------------------------
+$tok-ink:         #1B1A17 !default;   // token:ink
+$tok-ink-soft:    #2F2D28 !default;   // token:ink-soft
+$tok-ink-mute:    #4F4A3F !default;   // token:ink-mute
+$tok-ink-faint:   #625B4B !default;   // token:ink-faint
+
+// --- vlas linije -----------------------------------------------------
+// Strukturne, ne izvedene iz tinte: topli papir traži toplu liniju.
+$tok-rule:        #CDBF9C !default;   // token:rule
+$tok-rule-soft:   #DDD0B2 !default;   // token:rule-soft
+
+// --- akcent: OKER. Samo dodir i navođenje. ----------------------------
+// Na papiru oker ima 1,6 : 1, pa ga uvijek prati tinta, rub ili debljina.
+$tok-accent:      #E8B343 !default;   // token:accent
+$tok-on-accent:   #1B1A17 !default;   // token:on-accent
+$tok-accent-deep: #7A5A0F !default;   // token:accent-deep
+$tok-accent-dark: #4F3A08 !default;   // token:accent-dark
+$tok-accent-wash: #F6E6BE !default;   // token:accent-wash
+
+// --- modra gradi pojam, crvena označava grešku -----------------------
+$tok-concept:     #1E3F7A !default;   // token:concept
+$tok-error:       #D1472F !default;   // token:error
+$tok-alert:       #9E2F1C !default;   // token:alert
+
+// --- paleta podataka, poredana po svjetlini --------------------------
+$tok-data-1:      #1B1A17 !default;   // token:data-1
+$tok-data-2:      #1E3F7A !default;   // token:data-2
+$tok-data-3:      #7F6234 !default;   // token:data-3
+$tok-data-4:      #998F7B !default;   // token:data-4
+$tok-data-5:      #D2C4A2 !default;   // token:data-5
+
+// --- naslovna zona: iste vrijednosti u obje teme ---------------------
+// _dark.scss ih namjerno ne nadjačava.
+$tok-brand-mustard: #E8B343 !default; // token:brand-mustard
+$tok-brand-navy:    #1E3F7A !default; // token:brand-navy
+$tok-brand-cream:   #F2E8D5 !default; // token:brand-cream
+$tok-brand-red:     #D1472F !default; // token:brand-red
+$tok-brand-ink:     #1B1A17 !default; // token:brand-ink
+
+// --- izvedene prozirnosti (nikad novi hex) ---------------------------
+$tok-rule-strong: rgba($tok-ink, 0.34) !default;
+$tok-shadow:      rgba($tok-ink, 0.16) !default;
+
+// --- pisma -----------------------------------------------------------
+// Jost displej, naslovi i sučelje · Literata tijelo · JetBrains Mono brojke
+// i kod. Učitava ih styles/head.html.
+$tok-font-display: "Jost", Futura, "Century Gothic", sans-serif !default;            // token-font:display
+$tok-font-serif:   "Literata", Georgia, serif !default;                              // token-font:serif
+$tok-font-sans:    "Jost", Futura, "Century Gothic", sans-serif !default;            // token-font:sans
+$tok-font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, monospace !default; // token-font:mono
+
+// --- mjerilo, crte i ritam --------------------------------------------
+$tok-measure:          66ch !default;    // mjera retka — najvažnije pravilo u knjizi
+$tok-radius:           0 !default;       // pravi kut; krug i kupola su oblici
+$tok-radius-lg:        0 !default;
+$tok-radius-dome:      9999px !default;  // kupola: samo gornji (ili samo donji) kutovi
+$tok-rule-width:       2px !default;     // os
+$tok-definition-width: 4px !default;     // lijeva os definicije
+$tok-heading-width:    3px !default;     // crta iznad naslova odjeljka
+$tok-baseline-width:   6px !default;     // osnovica
+$tok-touch:            44px !default;    // najmanja visina kontrole
+$tok-space:            1.15rem !default; // osnovni razmak između pasusa
+
+// --- Bootstrap preslikavanje ----------------------------------------
+// !default da _dark.scss može nadjačati pri tamnom compileu.
+$body-color:             $tok-ink-soft !default;
+$body-bg:                $tok-paper !default;
+$font-family-base:       $tok-font-serif;
+$font-family-serif:      $tok-font-serif;
+$font-family-sans-serif: $tok-font-sans;
+$font-family-monospace:  $tok-font-mono;
+
+$headings-font-family:   $tok-font-sans;
+$headings-font-weight:   500;          // Jost 500; displejni registar je 400
+$headings-color:         $tok-ink !default;
+$headings-line-height:   1.2;
+
+$font-size-base:         1.0625rem;    // 17 px
+$line-height-base:       1.62;
+$h1-font-size:           3.25rem;
+$h2-font-size:           1.75rem;
+$h3-font-size:           1.25rem;
+$h4-font-size:           1.0625rem;
+
+$primary:                $tok-accent-deep !default;
+$secondary:              $tok-ink-mute !default;
+$link-color:             $tok-accent-deep !default;
+$link-hover-color:       $tok-accent-dark !default;
+$border-color:           $tok-rule !default;
+$border-radius:          0;
+$border-radius-sm:       0;
+$border-radius-lg:       0;
+$card-bg:                $tok-surface !default;
+$card-border-color:      $tok-rule !default;
+$code-color:             $tok-ink !default;
+$code-bg:                $tok-accent-wash !default;
+$callout-border-width:   $tok-rule-width;
+$callout-border-radius:  0;

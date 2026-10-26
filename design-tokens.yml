@@ -1,0 +1,135 @@
+# =====================================================================
+#  design-tokens.yml — JEDINI IZVOR ISTINE ZA DIZAJN (design single source of truth)
+# =====================================================================
+#  Ovdje se mijenja izgled knjige. Sve ostalo (SCSS, LaTeX, R grafovi)
+#  preslikava ove vrijednosti i provjerava se skriptom:
+#
+#      Rscript scripts/check-tokens.R
+#
+#  Postupak zamjene dizajna opisan je u DESIGN.md.
+#
+#  ZAŠTO NIJE _brand.yml. Quarto ima vlastiti brand sloj koji čita _brand.yml
+#  i sam ubacuje SCSS varijable i pisma. Ovdje se namjerno ne koristi: njegova
+#  se shema mijenja s inačicama Quarta, prihvaća samo dio onoga što nam treba
+#  i uvodi drugi put kojim boja može ući u stranicu. Ova je datoteka obični
+#  YAML koji čitaju R tema grafova i scripts/check-tokens.R, a stil se u
+#  cijelosti gradi iz styles/custom.scss.
+#
+#  IDENTITET: „Zvono". Bauhausovska geometrija korice 02 Zvono: kupola
+#  normalne raspodjele nad osnovicom, disk s brojem, tanka os, mala slova
+#  u displejnom registru. Isti sustav objavljen je kao Claude Design System
+#  „Sustav Zvono"; puna specifikacija je u DESIGN.md.
+#
+#  PET NAČELA KOJA OVE VRIJEDNOSTI NOSE
+#    1. Oblik nosi značenje: kupola, disk, os, osnovica.
+#    2. Boja je posao. Oker znači dodir, modra gradi pojam, crvena
+#       označava grešku. Nijedna nije ukras u čitateljskoj zoni.
+#    3. Crno-bijelo prvo. Tiskani blok je jednobojan.
+#    4. Brojke su monospace, tabularne i verzalne.
+#    5. Mjera prije širine: redak teksta nikad šire od 66 znakova.
+#
+#  DVIJE ZONE. Naslovna zona (korica, naslovna stranica, stranica dijela)
+#  troši paletu kao velika polja i koristi brand-* tokene koji se ne mijenjaju
+#  s temom. Čitateljska zona (poglavlje, widget, tisak) troši boju samo kao
+#  ulogu.
+# =====================================================================
+
+meta:
+  name: "Statistika 101: Intuitivni uvod u analizu podataka"
+  link: https://lusiki.github.io/statistika-knjiga/
+
+color:
+  palette:
+    # --- površine ---------------------------------------------------
+    paper:        "#F2E8D5"   # token:paper        stranica — topla krem podloga
+    paper-soft:   "#E6D9BC"   # token:paper-soft   uvučene plohe: sažetak, kod, ploča widgeta
+    surface:      "#FAF5EA"   # token:surface      površina crtanja u widgetu, oblačić pojma
+    # --- tekst ------------------------------------------------------
+    ink:          "#1B1A17"   # token:ink          naslovi, osnovice, disk s brojem
+    ink-soft:     "#2F2D28"   # token:ink-soft     tijelo teksta (11,3 : 1 na papiru)
+    ink-mute:     "#4F4A3F"   # token:ink-mute     sekundarno (7,3 : 1)
+    ink-faint:    "#625B4B"   # token:ink-faint    potpisi, izvori (5,5 : 1; 4,8 : 1 na paper-soft)
+    # --- vlas linije (strukturne, ne izvedene iz tinte) -------------
+    rule:         "#CDBF9C"   # token:rule         strukturna vlas linija
+    rule-soft:    "#DDD0B2"   # token:rule-soft    meka vlas linija
+    # --- akcent: OKER. Samo dodir i navođenje. -----------------------
+    accent:       "#E8B343"   # token:accent       ispuna gumba, palac klizača, aktivna stavka
+    on-accent:    "#1B1A17"   # token:on-accent    tekst i rub na okeru (9,1 : 1)
+    accent-deep:  "#7A5A0F"   # token:accent-deep  tekst poveznice (5,2 : 1 na papiru)
+    accent-dark:  "#4F3A08"   # token:accent-dark  prijelaz mišem, posjećeno
+    accent-wash:  "#F6E6BE"   # token:accent-wash  odabir, kod u retku, bljesak promjene
+    # --- modra: POJAM ------------------------------------------------
+    concept:      "#1E3F7A"   # token:concept      os definicije, kupola vinjete, pojam
+    # --- crvena: GREŠKA ----------------------------------------------
+    error:        "#D1472F"   # token:error        znak i crta okvira Nađite grešku
+    alert:        "#9E2F1C"   # token:alert        tekst pogreške, pogreška u izlazu koda
+    # --- paleta podataka --------------------------------------------
+    # Poredana po SVJETLINI da preživi pretvorbu u sivo: tiskani blok je
+    # jednobojan i ovih pet tonova u njemu postaju pet razlučivih sivih.
+    # Treba li serija više od pet razina, mijenja se oblik točke ili
+    # uzorak ispune — nikad ton. Oker i crvena nisu boje podataka.
+    data-1:       "#1B1A17"   # token:data-1        L* 9   tinta
+    data-2:       "#1E3F7A"   # token:data-2        L* 27  modra
+    data-3:       "#7F6234"   # token:data-3        L* 44  zemljani oker
+    data-4:       "#998F7B"   # token:data-4        L* 60  topla siva
+    data-5:       "#D2C4A2"   # token:data-5        L* 79  blijeda
+    # --- naslovna zona: iste vrijednosti u obje teme ------------------
+    brand-mustard: "#E8B343"  # token:brand-mustard  podloga korice i naslovne stranice
+    brand-navy:    "#1E3F7A"  # token:brand-navy     vanjska kupola
+    brand-cream:   "#F2E8D5"  # token:brand-cream    srednja kupola, tekst na tamnom polju
+    brand-red:     "#D1472F"  # token:brand-red      unutarnja kupola
+    brand-ink:     "#1B1A17"  # token:brand-ink      naslov, disk, os i osnovica na okeru
+
+  foreground: ink-soft
+  background: paper
+  primary: accent-deep
+  secondary: ink-mute
+  success: accent-deep
+  info: concept
+  warning: accent
+  danger: alert
+
+typography:
+  # Tri obitelji, sve s punom Latin Extended-A podrškom (č ć đ š ž).
+  # Web ih učitava iz styles/head.html; PDF i R grafovi učitavaju statičke
+  # instance iz fonts/print/ (vidi tex/theme.tex i R/theme_book.R).
+
+  # Displej: korica, naslov poglavlja i dijela. Malim slovima, rez 400.
+  display:
+    family: "Jost, Futura, 'Century Gothic', sans-serif"              # token-font:display
+    weight: 400
+    tracking: -0.01em
+
+  # Tijelo teksta.
+  base:
+    family: "Literata, Georgia, serif"                                # token-font:serif
+    size: 1.0625rem      # 17 px zaslon; 10,5 pt / 14,5 pt u tisku
+    line-height: 1.62
+
+  # Naslovi odjeljaka: Jost 500, rečenično pismo.
+  headings:
+    family: "Jost, Futura, 'Century Gothic', sans-serif"
+    weight: 500
+    color: ink
+
+  # Kod, brojke, oznake widgeta. Ligature ISKLJUČENE — vidi DESIGN.md.
+  monospace:
+    family: "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace"  # token-font:mono
+    size: 0.8125rem
+
+# UI / sans registar (sučelje, potpisi, margina, izvori, glave tablica).
+ui-font:
+  family: "Jost, Futura, 'Century Gothic', sans-serif"                # token-font:sans
+  size: 0.8125rem
+
+# Mjera, crte i ritam.
+layout:
+  measure: 66ch          # stupac teksta nikad širi od 66 znakova
+  radius: 0px            # pravi kut; krug i kupola su oblici, ne zaobljenja
+  rule-width: 2px        # os: gornja crta okvira, spoj diska i naslova
+  definition-width: 4px  # lijeva os definicije
+  heading-width: 3px     # crta iznad naslova odjeljka
+  baseline-width: 6px    # osnovica: vrh ploče widgeta, dno naslovne zone
+  body-width: 680px
+  margin-width: 260px
+  touch-target: 44px

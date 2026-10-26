@@ -1,12 +1,8 @@
-# Admin
+# Administracija
 
-Administrativni materijali za radionicu.
+Aktivni materijali: prerequisites.qmd, workshop_overview.qmd i instructor.qmd.
+corrections.md prati činjenične i metodološke ispravke. compatibility.md
+razlikuje izvršene provjere od neprovjerenih integracija.
 
-## Sadržaj
-
-- `old_announcements/` - Starije verzije poziva za radionicu (PDF)
-
-## Planirani sadržaj
-
-- `announcement_hr.md` - Tekst najave na hrvatskom
-- `announcement_en.md` - Tekst najave na engleskom
+Stari HTML izvozi i old_announcements/ su povijesni. Ne ulaze u novi build.
+Datum nove izvedbe, publiku, kontakt i financiranje potvrđuje organizator.

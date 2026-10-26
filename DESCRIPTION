@@ -1,0 +1,15 @@
+Package: eizworkshop
+Title: Reproducible Teaching Materials for the EIZ AI Workshop
+Version: 0.1.0
+Description: Frozen Croatian inflation case and workshop reference scripts.
+Authors@R: person("EIZ", "Workshop", role = c("aut", "cre"))
+License: file LICENSE-NOTICE.md
+Imports:
+    base64enc,
+    jsonlite,
+    yaml,
+    svglite,
+    systemfonts
+Suggests:
+    renv,
+    sandwich

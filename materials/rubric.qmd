@@ -1,0 +1,35 @@
+---
+title: "Predaja i vrednovanje"
+subtitle: "Provjeravamo istraživački rad, ne broj upotrijebljenih alata"
+---
+
+Predajte jednu mapu s pitanjem i planom, tri dokazna zapisa, R skriptom,
+grafom ili tablicom, tekstom od približno 200 riječi i zapisom uporabe AI-ja.
+Sačuvajte tekst prije i nakon jezičnog uređivanja. Podatke ne morate ponovno
+slati ako se referirate na zamrznuti paket.
+
+## Rubrika
+
+Svaka dimenzija nosi 0–2 boda; ukupno 10. Ovo je nastavna rubrika, a nije
+odluka o ocjeni kolegija. Kao radni prag uspjeha predlaže se 8 bodova, uz
+najmanje 1 bod u svakoj dimenziji. Prag treba provjeriti u pilotu.
+
+| Dimenzija | 0 bodova | 1 bod | 2 boda |
+|---|---|---|---|
+| Dokazi | Izvori nisu provjereni ili ne podupiru tvrdnje | Postoji provjera uz nepotpune lokatore ili ograničenja | Tri izvora, točni odjeljci, odgovarajuće tvrdnje i granice |
+| Metoda | Pogrešan uzorak, jedinica ili nerazjašnjena transformacija | Većina odluka je primjerena, jedna nije objašnjena | Pitanje, uzorak, jedinice i obrada potpuno su usklađeni |
+| Reproducibilnost | Skripta se ne može pokrenuti od početka | Izvršava se uz ručni nedokumentirani korak | Nova sesija daje navedeni rezultat iz priloženih podataka |
+| Tumačenje | Izmišljeni broj ili neosnovana uzročna tvrdnja | Točan opis uz nedovoljno ograničenje | Brojke se slažu s izlazima; navedene su granice zaključka |
+| Transparentnost | Nije moguće razlučiti podrijetlo teksta/koda | Opća izjava bez konkretne provjere | Zabilježeni alat ili rad bez AI-ja, izmjene i neovisna provjera |
+
+## Završna samoprovjera
+
+- Može li kolega pronaći odlomak koji podupire svaku važnu tvrdnju?
+- Razlikujem li stopu inflacije od anketnog salda?
+- Radi li skripta iz nove sesije bez ručnog popravljanja podataka?
+- Slaže li se svaka brojka u tekstu s tablicom ili grafom?
+- Jesam li opisao što analiza ne može pokazati?
+- Je li jasno što sam prihvatio od AI-ja i kako sam to provjerio?
+
+Povratna informacija o zadovoljstvu radionicom korisna je za organizaciju,
+ali ne zamjenjuje pregled ovih rezultata.

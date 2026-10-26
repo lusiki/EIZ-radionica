@@ -73,3 +73,14 @@ secrets.yaml
 # Workshop admin (keep templates)
 admin/registrations/
 admin/feedback/
+
+# Local workshop build and participant work
+/results/
+/downloads/
+/submissions/
+/work/
+/admin/verification-local.txt
+/site_libs/
+
+
+**/*.quarto_ipynb

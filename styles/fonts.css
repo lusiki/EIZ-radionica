@@ -1,0 +1,6 @@
+/* Local fonts; names mirror design-tokens.yml. No external font requests. */
+@font-face{font-family:Jost;src:url("fonts/Jost-Regular.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Jost;src:url("fonts/Jost-Medium.ttf") format("truetype");font-style:normal;font-weight:500 900;font-display:swap}
+@font-face{font-family:Literata;src:url("fonts/Literata-Regular.ttf") format("truetype");font-style:normal;font-weight:400 900;font-display:swap}
+@font-face{font-family:Literata;src:url("fonts/Literata-Italic.ttf") format("truetype");font-style:italic;font-weight:400 900;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/JetBrainsMono-Regular.ttf") format("truetype");font-style:normal;font-weight:400 900;font-display:swap}

@@ -207,9 +207,9 @@ def build():
     if len(CHAPTERS) != 8: raise RuntimeError("Expected exactly eight reader chapters")
     quarto = shutil.which("quarto")
     if not quarto: raise RuntimeError("Quarto is required for its bundled Pandoc")
-    sections = [INTRO.read_text(encoding="utf-8"), "# Prvi dan: istraživanje i strukturiranje\n"]
+    sections = [INTRO.read_text(encoding="utf-8"), "# Prvi dan / istraživanje i planiranje\n"]
     sections.extend(p.read_text(encoding="utf-8") for p in CHAPTERS[:4])
-    sections.append("# Drugi dan: kodiranje i pisanje\n")
+    sections.append("# Drugi dan / kodiranje i pisanje\n")
     sections.extend(p.read_text(encoding="utf-8") for p in CHAPTERS[4:])
     manuscript = "\n\n".join(sections)
     result = subprocess.run([quarto, "pandoc", "--from", "markdown", "--to", "json"],

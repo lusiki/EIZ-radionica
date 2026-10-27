@@ -1,8 +1,9 @@
 # Stranice obaju dana
 
-day1.qmd i day2.qmd sadrže sve primjere za zajednički rad.
-Svaka tema ima razgovor, jedan primjer i jedan mali pokušaj.
-Tekst primjera dolazi iz zajedničkih datoteka u materials/activities/.
+day1.qmd i day2.qmd sadrže upite, pregled 120 mjeseci i referentne brojke.
+Svaka tema ima razgovor, pokazani primjer i vlastiti pokušaj.
+Zajednički izvori su u materials/activities/.
 
-Priručnik pruža dodatna objašnjenja i širi postupak za samostalno istraživanje.
+CSV se jednom dodaje u AI razgovor s izvršavanjem koda. Priručnik
+detaljnije objašnjava istu analizu. R projekt je mogućnost za nastavak.
 Stari HTML i PDF izvozi čuvaju povijest. Aktualni web grade QMD izvori.

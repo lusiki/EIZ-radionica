@@ -1,32 +1,32 @@
 ---
 title: "Put kroz radionicu"
-subtitle: "Razgovor, primjer i mali pokušaj"
+subtitle: "Od pitanja do zaključka na 120 opažanja"
 ---
 
-Svaka tema ima isti slijed. Razgovaramo o jednom pitanju, pogledamo
-jedan primjer i isprobamo sličan zadatak. Upiti, tekst i brojke već su
-na stranici dana. Radimo u jednom AI razgovoru.
+Radimo s jednim CSV-om za Hrvatsku od 2015. do 2024. U istom AI razgovoru
+biramo pitanje, planiramo i izvodimo analizu te uređujemo zaključak.
+Svaka tema ima razgovor, pokazani primjer i vlastiti pokušaj.
 
 ## Prvi dan
 
-| Tema | Jedan pokušaj |
+| Tema | Što isprobavamo |
 |---|---|
-| [1.1 Postavite istraživačko pitanje](../slides/day1.qmd#blok-11) | Promijenite godinu u upitu i pogledajte pitanje. |
-| [1.2 Pronađite i provjerite izvore](../slides/day1.qmd#blok-12) | Pronađite podatak na Eurostatovoj stranici. |
-| [1.3 Provjerite i uredite sažetak](../slides/day1.qmd#blok-13) | Ispravite jednu pogrešnu rečenicu. |
-| [1.4 Pripremite plan analize](../slides/day1.qmd#blok-14) | Zatražite kratak plan za jedno pitanje. |
+| [1.1 Postavite istraživačko pitanje](../slides/day1.qmd#blok-11) | Odabrati pitanje koje dvije mjere i 120 mjeseci mogu istražiti. |
+| [1.2 Pronađite i provjerite izvore](../slides/day1.qmd#blok-12) | Objasniti saldo očekivanja uz službenu metodologiju. |
+| [1.3 Provjerite i uredite sažetak](../slides/day1.qmd#blok-13) | Preraditi uvjerljiv odlomak s pogrešnim tumačenjima. |
+| [1.4 Pripremite plan analize](../slides/day1.qmd#blok-14) | Odabrati prikaz i usporedbu za svoje pitanje. |
 
 ## Drugi dan
 
-| Tema | Jedan pokušaj |
+| Tema | Što isprobavamo |
 |---|---|
-| [2.1 Upoznajte i provjerite podatke](../slides/day2.qmd#blok-21) | Objasnite jedan redak male tablice. |
-| [2.2 Dopunite i objasnite kod](../slides/day2.qmd#blok-22) | Zamijenite prosjek najvećom vrijednošću. |
-| [2.3 Ponovite analizu od početka](../slides/day2.qmd#blok-23) | Provjerite prosjek triju brojeva. |
-| [2.4 Napišite i uredite zaključak](../slides/day2.qmd#blok-24) | Uredite jednu rečenicu o rezultatu. |
+| [2.1 Upoznajte i provjerite podatke](../slides/day2.qmd#blok-21) | Provjeriti mjesece, praznine i jedinice cijelog skupa. |
+| [2.2 Dopunite i objasnite kod](../slides/day2.qmd#blok-22) | Izraditi grafove i godišnje sažetke te prilagoditi prikaz. |
+| [2.3 Ponovite analizu od početka](../slides/day2.qmd#blok-23) | Provjeriti izračun i usporediti povezanost u dva razdoblja. |
+| [2.4 Napišite i uredite zaključak](../slides/day2.qmd#blok-24) | Objasniti svoj nalaz u odlomku uz graf i provjerene brojke. |
 
-[Svi primjeri na jednoj stranici](../materials/exercises/index.qmd) ·
-[Kako voditi razgovor](instructor.qmd)
+Završni rezultat je graf i kratak odgovor na vlastito pitanje, prikazan
+u AI razgovoru.
 
-[Priručnik](../booklet/index.qmd) nudi detaljnije objašnjenje svake teme
-za one koji žele nastaviti čitati.
+[Svi primjeri](../materials/exercises/index.qmd) ·
+[Kako voditi radionicu](instructor.qmd) · [Priručnik](../booklet/index.qmd)

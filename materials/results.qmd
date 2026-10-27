@@ -1,10 +1,11 @@
 ---
 title: "Referentni rezultati"
-subtitle: "Dodatni primjer sa svih 120 mjeseci"
+subtitle: "Provjera analize svih 120 mjeseci"
 ---
 
-Ovdje je prikazana cijela analiza za samostalno istraživanje. Kratki
-primjeri sa stranice drugog dana koriste samo nekoliko mjeseci iz ovog skupa.
+Ovdje su referentni grafovi i brojke za zajedničku analizu. Usporedite ih
+s rezultatima iz svojeg AI razgovora. Koristimo isti CSV sa 120 mjeseci
+za Hrvatsku od 2015. do 2024.
 
 ## Dvije serije na odvojenim osima
 
@@ -12,7 +13,7 @@ Graf prikazuje 120 mjesečnih opažanja. Svaka ploha ima vlastitu jedinicu,
 a vremenska je os zajednička. Različite vrste linija ostaju raspoznatljive
 i bez boje. Uspoređujte kretanje kroz vrijeme. Visinu svake linije tumačite prema jedinici označenoj na njezinoj osi.
 
-![Mjesečna stopa HICP-a i saldo očekivanja cijena u Hrvatskoj, 2015.–2024., na odvojenim osima i s različitim vrstama linija.](../results/inflation_expectations.svg)
+![Godišnja stopa HICP-a i saldo očekivanja cijena u Hrvatskoj, 2015.–2024., na odvojenim osima i s različitim vrstama linija.](../results/inflation_expectations.svg)
 
 Podaci su iz Eurostata i DG ECFIN-a, preuzeti 26. listopada 2026. Vlastita obrada.
 Eurostat nije odgovoran za ovu obradu i tumačenje.
@@ -29,6 +30,19 @@ iz vrijednosti indeksa.
 [Potpuna godišnja tablica](../results/annual_summary.csv) ·
 [Provjera podataka](../results/audit.csv) ·
 [Korelacije i podrazdoblja](../results/correlations.csv)
+
+## Usporedba podrazdoblja
+
+Korelaciju računamo iz mjesečnih vrijednosti dviju mjera u istom mjesecu.
+
+| Razdoblje | Broj mjeseci | Pearsonova korelacija |
+|---|---:|---:|
+| 2015.–2024. | 120 | 0,6985 |
+| 2015.–2019. | 60 | 0,8279 |
+| 2020.–2024. | 60 | 0,5342 |
+
+Za provjeru prosjeka iz teme 2.3 zbroj 12 stopa HICP-a za 2022. iznosi
+127,6. Dijeljenjem s 12 dobivamo približno 10,6333 %.
 
 ## Kako protumačiti nalaz
 

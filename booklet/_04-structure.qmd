@@ -2,11 +2,17 @@
 
 [Dan 1, tema 1.4](../slides/day1.qmd#blok-14) · [Vježba 1.4](../materials/exercises/index.qmd#v14)
 
-### Kratki primjer iz radionice
+### Primjer iz radionice
 
-Tražimo plan u tri jednostavna koraka za opis inflacije. Zatim suzimo pitanje na usporedbu siječnja i ožujka i pogledamo kako se plan promijenio.
+**Razgovor.** Koji graf i usporedba odgovaraju našem pitanju?
 
-Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+**Primjer.** Zatražimo plan u četiri koraka. Pregledamo podatke, izradimo
+dva vremenska grafa i godišnje sažetke, usporedimo razdoblja i napišemo
+zaključak. Svaki korak povežemo s onim što želimo saznati.
+
+**Isprobajte.** Prilagodite plan svojem pitanju iz teme 1.1. Odaberite
+razdoblje, prikaz i usporedbu. Objasnite jedan izbor i granicu svojeg
+zaključka. Plan ostaje u istom razgovoru za drugi dan.
 
 ### Povežite izvore u obrazloženje
 
@@ -81,7 +87,7 @@ jedan problem. „Objasni kako se računa i tumači saldo” preciznije je
 od „učini tekst akademskijim”. Sačuvajte verzije i odbacite prijedlog koji
 mijenja značenje. Svaku novu verziju usporedite s prethodnom prema jasnoći i točnosti.
 
-### Demonstracija / četiri koraka do izvedivog plana
+### Dodatno čitanje / razrada plana za dulji rad
 
 U prvom koraku prikupite bilješke. Za naš primjer možete zapisati sljedeće.
 „Imam mjesečni HICP, godišnju stopu promjene. Imam kvalitativni saldo
@@ -129,6 +135,7 @@ metodološki odjeljak rada.
 
 ### Plan za sljedeći korak
 
-U radionici je plan kratak odgovor u AI razgovoru. Ako kasnije razvijete
-vlastiti projekt, možete mu dodati izvore, podatke i odabrane prikaze.
-Uz zamišljenu tablicu ili graf objasnite što vam pomaže saznati.
+U radionici plan ostaje u AI razgovoru uz učitani CSV. Drugi dan iz njega
+izrađujemo prikaze i usporedbe. Uz svaki graf i tablicu objasnite kako
+pomažu odgovoriti na pitanje. Za dulji projekt možete kasnije dodati
+zaseban opis podataka, izvora i odluka.

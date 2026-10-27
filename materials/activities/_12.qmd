@@ -1,14 +1,21 @@
-**Razgovor.** Kad AI navede neku činjenicu, kako možemo provjeriti odakle dolazi?
+**Razgovor.** Što točno uspoređujemo kada uspoređujemo inflaciju i očekivanja?
+Kako definicija pokazatelja mijenja ono što možemo zaključiti?
 
-**Primjer.** Pošaljite ovaj upit.
+**Primjer.** Otvorite [Eurostatov opis HICP-a](https://ec.europa.eu/eurostat/web/hicp/information-data).
+U odjeljku **Indices and rates of change** pronađite godišnju stopu promjene.
+Povežite je sa stupcem `hicp_yoy_pct` i oznakom `RCH_A` u našem CSV-u.
+Zatim u AI razgovoru zatražite objašnjenje.
 
-> Koliko često Eurostat objavljuje podatke o inflaciji mjerene HICP-om?
-> Odgovori jednom rečenicom i navedi službeni izvor.
+> U našem CSV-u hicp_yoy_pct predstavlja godišnju stopu promjene HICP-a,
+> a podaci se bilježe svaki mjesec. Objasni što znači vrijednost 7,3 %
+> za ožujak 2022. Navedi s kojim se mjesecom uspoređuju cijene i poveži
+> objašnjenje s Eurostatovim opisom mjere.
 
-Otvorite [Eurostatovo objašnjenje HICP-a](https://ec.europa.eu/eurostat/web/hicp/information-data).
-U dijelu **Data release** piše da se podaci o inflaciji objavljuju
-mjesečno. Usporedite to s AI odgovorom.
+Cijene mjerene HICP-om uspoređujemo s ožujkom 2021. Mjesečna učestalost
+i godišnja stopa opisuju dvije različite značajke istog stupca.
 
-**Isprobajte.** Na istoj stranici, u dijelu **Indices and rates of change**,
-pronađite godišnju i mjesečnu stopu promjene. Recite koje dvije riječi
-u engleskom tekstu razlikuju te stope.
+**Isprobajte.** Otvorite [metodologiju ankete Europske komisije](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en).
+Pronađite **Consumer Survey**, pitanje **CONS_006**, te odjeljak **Balances**.
+Objasnite što mjeri `expectations_balance`, na koje se razdoblje pitanje
+odnosi i što znače bodovi salda. Usporedite svoje objašnjenje s AI odgovorom
+i recite kako biste označili tu mjeru na grafu.

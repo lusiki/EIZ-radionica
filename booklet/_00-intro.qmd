@@ -1,25 +1,29 @@
 ## Kako čitati ovaj priručnik {#kako-citati}
 
-Radionica slijedi jednostavan ritam. Razgovaramo o jednom pitanju,
-pogledamo primjer i isprobamo sličan mali zadatak. Svi upiti, tekstovi
-i brojke za zajednički rad nalaze se na stranicama obaju dana.
+Radionica prati jedan stvarni skup podataka. Imamo 120 mjesečnih opažanja
+za Hrvatsku od siječnja 2015. do prosinca 2024. Uspoređujemo godišnju
+stopu HICP-a i saldo očekivanih promjena cijena. Podaci su preuzeti
+26. listopada 2026. i spremljeni uz materijale.
 
-Priručnik je dodatno čitanje. Svako poglavlje najprije podsjeća na kratki
-primjer iz radionice, a zatim šire objašnjava temu. Možete otvoriti
-samo ono što vas zanima. Brojevi i naslovi povezuju priručnik i primjere.
+Svaku temu otvaramo razgovorom, pogledamo jedan primjer i zatim isprobamo
+vlastiti pristup. Prvi dan biramo pitanje, provjeravamo izvore, uređujemo
+sažetak i pripremamo plan. Drugi dan pregledavamo cijeli skup, izrađujemo
+grafove i godišnje sažetke, uspoređujemo razdoblja i pišemo zaključak.
 
-Prvi dan bavimo se pitanjem, izvorom, jednom pogrešnom rečenicom i kratkim
-planom. Drugi dan čitamo malu tablicu, mijenjamo jednu naredbu, provjeravamo
-prosjek triju brojeva i uređujemo rečenicu o rezultatu.
+Za zajednički rad koristimo stranicu dana i jedan AI razgovor koji može
+učitati CSV i izvršiti kod. Datoteku dodajemo jednom, a pitanje, plan,
+grafovi, tablice i tekst ostaju u istom razgovoru. Ako sesija istekne,
+ponovno dodamo isti CSV. Na stranici dana dostupni su svi upiti, pregled
+svih 120 mjeseci i referentne brojke. Završni rezultat je graf i kratak
+odgovor na odabrano pitanje.
 
-Za kratke primjere koristimo nekoliko mjeseci iz hrvatskih podataka.
-Cijeli skup obuhvaća 2015.–2024. i preuzet je 26. listopada 2026.
-U nastavku priručnika objašnjeni su i rad sa svih 120 mjeseci, R skripte,
-agenti i računalne bilježnice. To su mogućnosti za samostalno istraživanje.
+Priručnik prati iste brojeve i naslove kao dani i vježbe. Svako poglavlje
+najprije opisuje aktivnost, a zatim objašnjava postupak i njegove granice.
+Možete pročitati cijelo poglavlje ili otvoriti dio koji vam treba.
+Pripremljeni rezultati služe usporedbi s analizom iz vašeg razgovora.
 
-U zajedničkom radu dovoljne su stranica dana i jedan AI razgovor.
-Upute za mapu projekta, skripte i dodatne alate odnose se na prošireni
-primjer koji možete isprobati kasnije.
+Upute za R projekt, agente, računalne bilježnice i napredne metode
+služe daljnjem radu. To su mogući načini nastavka istog istraživanja.
 
 Izvorne materijale napisao je Luka Šikić, UNICATH. Priručnik se temelji
 na njegovim tekstovima za oba dana, uz ažurirana objašnjenja i provjeru

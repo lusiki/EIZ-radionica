@@ -58,7 +58,7 @@ website:
           - href: materials/sources.qmd
             text: Izvori
           - href: materials/results.qmd
-            text: Cijela analiza
+            text: Referentni rezultati
           - href: materials/rubric.qmd
             text: Završni razgovor
           - href: admin/instructor.qmd

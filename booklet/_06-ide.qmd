@@ -2,20 +2,31 @@
 
 [Dan 2, tema 2.2](../slides/day2.qmd#blok-22) · [Vježba 2.2](../materials/exercises/index.qmd#v22)
 
-### Kratki primjer iz radionice
+### Primjer iz radionice
 
-U AI razgovoru pogledamo dva retka R koda. Funkcija mean računa prosjek vrijednosti 5,5, 6,3 i 7,3. U vlastitom pokušaju zatražimo najveću vrijednost i pogledamo promjenu u max. Rezultat usporedimo s brojevima na stranici.
+**Razgovor.** Kako usporediti dvije mjere i jasno prikazati njihove različite jedinice?
 
-Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+**Primjer.** AI izvrši kod koji izrađuje dva vremenska grafa sa zajedničkom
+osi mjeseci i godišnju tablicu prosjeka. Pregledamo dio koda za grupiranje
+po godini, oznake osi i broj mjeseci. Svaka godina ima 12 opažanja.
+Za 2022. dobivamo približno 10,63 % za prosjek mjesečnih godišnjih stopa
+HICP-a i 46,62 boda za prosjek salda.
 
-### Mali koraci olakšavaju učenje
+**Isprobajte.** Prilagodite prikaz svojem pitanju, primjerice izdvojite
+2020.–2024. Zadržite cijeli učitani skup za kasnije usporedbe. Objasnite
+promjenu koda i obrazac koji je sada lakše uočiti. Graf, tablica i kod
+ostaju u istom AI razgovoru.
 
-Agent može obaviti zadatak kada mu jasno kažete što treba napraviti.
-Dok učite, radite korak po korak. Učitajte tablicu, pregledajte jednu
-varijablu i objasnite što se promijenilo nakon svake naredbe. Razvojno
-okruženje, odnosno IDE, okuplja editor, konzolu i prikaz rezultata. AI
-asistent u njemu može dopuniti kod ili objasniti pogrešku dok vi pratite
-što se izvršava.
+### Od upita do izvršene analize
+
+U razgovornom alatu tražimo da učita CSV, pokrene kod i prikaže rezultat.
+Tako možemo pratiti vezu između upita, postupka i dobivenog grafa.
+Pogledajte dio koda koji bira mjesece ili grupira retke po godini.
+Zatražite objašnjenje i usporedite ga s tablicom rezultata.
+
+Ako kasnije radite u razvojnom okruženju, odnosno IDE-u, editor, konzola
+i prikaz rezultata dostupni su na jednom mjestu. Iste provjere vrijede
+za analizu u pregledniku i za taj način rada.
 
 Asistent je ovdje poput pomoćnika koji vam dodaje alat dok radite.
 Pročitajte njegov prijedlog prije prihvaćanja i pregledajte rezultat
@@ -109,11 +120,12 @@ U našem slučaju odgovarajuća je oznaka „saldo očekivanih promjena cijena�
 Navedite i da HICP predstavlja godišnju stopu promjene, kako čitatelj ne
 bi pretpostavio mjesečnu promjenu.
 
-### Od kratkog koda do cijele skripte
+### Objasnite promjenu prikaza
 
-U kratkom primjeru mijenjamo mean u max i gledamo što nova naredba radi.
-Istu naviku možete prenijeti na dulju skriptu. Odaberite jedan mali dio,
-zatražite objašnjenje i usporedite rezultat s podacima koje koristi.
+Za prikaz 2020.–2024. kod bira 60 mjeseci. Ostale mjesece čuvamo u
+izvornom skupu jer nam trebaju za usporedbu razdoblja. Pogledajte odabir
+datuma u izmijenjenom kodu i usporedite ga s rasponom osi na grafu.
+Objasnite što je na tom prikazu lakše uočiti i što se vidi tek u cijelom nizu.
 
 ### Kako pronaći uzrok pogreške
 
@@ -149,6 +161,6 @@ isprobajte malu izmjenu koda i pogledajte što ona mijenja.
 
 ### Ako želite nastaviti
 
-U R konzoli možete pokrenuti dva retka iz kratkog primjera i isprobati
-drugu funkciju. Usporedite dobiveni broj s vlastitim računom. Kad poželite
-raditi s cijelim skupom, početna skripta u paketu pokazuje sljedeće korake.
+U R-u možete ponoviti analizu koju ste izveli u razgovoru. Početna
+skripta u paketu koristi isti skup. Usporedite broj mjeseci, godišnje
+prosjeke i grafove te objasnite dijelove koda koji ih stvaraju.

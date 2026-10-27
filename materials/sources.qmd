@@ -3,8 +3,9 @@ title: "Izvori koje možete provjeriti"
 subtitle: "Polazište za čitanje i vlastite bilješke"
 ---
 
-U kratkom primjeru otvaramo Eurostatovu stranicu i provjeravamo jednu
-tvrdnju. Ostali izvori na ovoj stranici služe daljnjem čitanju o podacima i metodama.
+Za zajedničku analizu provjeravamo definiciju HICP-a na Eurostatovoj
+stranici i značenje anketnog salda u metodologiji Europske komisije.
+Ostali izvori služe daljnjem čitanju o podacima i metodama.
 
 ## Tri početna izvora
 
@@ -45,4 +46,4 @@ tvrdnju. Ostali izvori na ovoj stranici služe daljnjem čitanju o podacima i me
 [CLASSLA](https://github.com/clarinsi/classla).
 
 Provjera poveznica i značenja, 26. listopada 2026. Dostupnost funkcija i
-uvjeti pristupa mogu se promijeniti. Osnovne zadatke možete riješiti priloženim materijalima i besplatnim alatima.
+uvjeti pristupa mogu se promijeniti. Za izvođenje analize koristite razgovor s podrškom za CSV i izvršavanje koda. Pripremljeni rezultati služe usporedbi i radu kad taj pristup nije dostupan.

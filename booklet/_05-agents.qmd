@@ -2,20 +2,28 @@
 
 [Dan 2, tema 2.1](../slides/day2.qmd#blok-21) · [Vježba 2.1](../materials/exercises/index.qmd#v21)
 
-### Kratki primjer iz radionice
+### Primjer iz radionice
 
-Na stranici drugog dana gledamo tablicu s tri mjeseca. Zajedno pročitamo redak za siječanj, zatim svatko objasni redak za ožujak. Važno je uz broj navesti njegovu jedinicu.
+**Razgovor.** Što treba provjeriti prije izrade grafa i izračuna?
 
-Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+**Primjer.** Učitanom CSV-u zatražimo pregled prvih i posljednjih redaka,
+broja opažanja, stupaca, datuma i jedinica. Prikaz usporedimo s cijelom
+tablicom na stranici dana.
 
-### Od malog primjera do cijelog skupa
+**Isprobajte.** Provjerite jedinstvenost i potpunost mjeseci te praznine
+u dvjema brojčanim serijama. Očekujemo 120 uzastopnih mjeseci od 2015-01
+do 2024-12, bez duplikata i praznina u tim serijama. Prazne oznake statusa
+čitamo prema njihovu značenju. Pregledajte izvršeni kod i objasnite
+što nalaz govori o spremnosti podataka za analizu.
 
-Tablica na stranici drugog dana prikazuje tri mjeseca iz spremljenog skupa.
-U njoj vježbamo čitanje retka i razlikovanje jedinica. Za taj pokušaj
-dovoljno je pogledati tablicu na ekranu.
+### Pregled podataka u jednom razgovoru
 
-Ako kasnije želite pregledati cijeli skup, u paketu su CSV, rječnik
-podataka i početna R skripta. Sljedeći odjeljci objašnjavaju taj širi postupak.
+Za analizu koristimo učitani CSV sa svih 120 mjeseci. Na stranici dana
+možete otvoriti cijelu tablicu i usporediti nekoliko redaka s prikazom
+koji je dao AI. To pomaže provjeriti koristi li stvarne podatke.
+
+Kod koji alat izvrši možete otvoriti u istom razgovoru. Ako nastavite
+rad u R-u, početna skripta i rječnik u paketu opisuju isti skup.
 
 ### Što sadrži naš skup podataka
 
@@ -26,9 +34,9 @@ mjesecom prethodne godine.
 
 Prije analize potvrdite 120 uzastopnih mjeseci, od siječnja 2015. do
 prosinca 2024. Provjerite ima li dvostrukih zapisa, praznina i neočekivanih
-vrijednosti. Usporedite nekoliko vrijednosti s izvornim JSON datotekama.
-U datoteci s podacima o preuzimanju, manifestu, navedeni su upiti
-korišteni za preuzimanje i kontrolni zbrojevi za provjeru promjena datoteka.
+vrijednosti. Usporedite nekoliko vrijednosti s tablicom na stranici dana.
+Za detaljniju provjeru podrijetla u paketu su izvorne JSON datoteke
+i zapis upita korištenih za preuzimanje.
 U svim primjerima koristimo istu spremljenu kopiju podataka. Tako naknadne službene izmjene
 ne mijenjaju rezultate radionice.
 
@@ -55,11 +63,12 @@ u izvornim jedinicama. U modelu s logaritmiranim varijablama tumačenje
 koeficijenta ovisi o obliku jednadžbe. Za spajanje dnevnih i mjesečnih
 podataka unaprijed odredite pravilo svođenja na istu vremensku razinu.
 
-### Za dulji projekt / pregled cijele tablice
+### Povežite nalaz provjere s analizom
 
-Pri radu s cijelim skupom korisno je provjeriti broj i raspon mjeseci,
-praznine i jedinice. Te provjere nalaze se u priloženim skriptama.
-Pomažu razumjeti podatke prije složenije analize.
+Broj redaka, raspon mjeseci, praznine i jedinice zajedno govore kakvu
+tablicu analiziramo. Prazna oznaka statusa može biti očekivana, a prazna
+brojčana vrijednost traži objašnjenje. Zato provjere čitamo uz definicije
+stupaca. U našem skupu oba brojčana niza imaju svih 120 vrijednosti.
 
 ### Dodatno čitanje / provjera podataka uz agenta
 

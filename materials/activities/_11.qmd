@@ -1,14 +1,20 @@
-**Razgovor.** Što biste htjeli saznati o inflaciji? Kako od široke teme
-dobiti pitanje na koje možemo odgovoriti?
+**Razgovor.** Što bismo htjeli saznati o inflaciji i očekivanjima potrošača?
+Koji dio tog pitanja možemo istražiti s dvije mjesečne serije za Hrvatsku?
 
-**Primjer.** U AI razgovor pošaljite ovaj upit.
+**Primjer.** Pogledajte tablicu sa 120 mjeseci na ovoj stranici. U istom AI
+razgovoru u koji ste dodali CSV pošaljite ovaj upit.
 
-> Tema je inflacija u Hrvatskoj. Predloži jedno jednostavno istraživačko
-> pitanje za razdoblje od siječnja do ožujka 2022.
+> U priloženom CSV-u imam 120 mjesečnih opažanja za Hrvatsku od 2015. do
+> 2024. Stupac hicp_yoy_pct sadrži godišnju stopu HICP-a u postocima,
+> a expectations_balance anketni saldo očekivanih promjena cijena u bodovima.
+> Od teme „inflacija i očekivanja” predloži jedno jasno pitanje za opisnu
+> analizu. Objasni kako na njega možemo odgovoriti ovim podacima.
 
-Jedan mogući odgovor glasi „Kako se godišnja stopa inflacije u Hrvatskoj
-mijenjala od siječnja do ožujka 2022.?” Usporedite temu i pitanje.
-Pitanje sada ima zemlju, razdoblje i ono što želimo pogledati.
+Jedno pitanje glasi „Kako su se inflacija i saldo očekivanja kretali
+od 2015. do 2024. i koliko je njihova povezanost ovisila o razdoblju?”
+Usporedite prijedlog s onim što stupci stvarno mjere.
 
-**Isprobajte.** Pošaljite isti upit za 2019. godinu. Pročitajte pitanje
-koje dobijete i recite je li jasno što biste istraživali.
+**Isprobajte.** Predložite svoje pitanje o određenom razdoblju ili obrascu.
+Možete se usredotočiti na promjene tijekom 2020.–2024. ili na usporedbu
+ranijih i kasnijih godina. Zatražite AI komentar i odaberite pitanje
+koje možete istražiti ovim stupcima. Objasnite što biste gledali u podacima.

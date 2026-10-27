@@ -1,12 +1,26 @@
 ---
 title: "Svi primjeri na jednoj stranici"
-subtitle: "Razgovor · Jedan primjer · Vaš pokušaj"
+subtitle: "120 opažanja · Jedan AI razgovor · Osam povezanih tema"
 ---
 
-Ovo su isti primjeri kao na stranicama obaju dana. Uz svaku temu je jedno
-pitanje za razgovor, gotov primjer i mali zadatak koji možete odmah isprobati.
-Otvorite jedan AI razgovor i koristite upite, tekst i brojke s ove stranice.
-Odgovore uspoređujemo u razgovoru.
+Ovdje su iste aktivnosti kao na stranicama obaju dana. Svaka počinje
+razgovorom, pokazuje jedan primjer i daje zadatak koji možete prilagoditi
+svojem pitanju. Preuzmite CSV i dodajte ga jednom u AI razgovor koji može
+izvršavati analizu. U tom razgovoru ostaju plan, grafovi, tablice i zaključak.
+
+## Podaci i zajedničko pitanje {#podaci}
+
+Radimo sa **120 mjesečnih opažanja za Hrvatsku od 2015. do 2024.**
+Stupac `hicp_yoy_pct` sadrži godišnju stopu HICP-a u postocima.
+Stupac `expectations_balance` sadrži saldo odgovora potrošača o kretanju
+cijena u sljedećih 12 mjeseci, izražen u bodovima salda.
+Podaci su spremljeni 26. listopada 2026.
+
+[Preuzmite CSV sa 120 opažanja](../../data/processed/croatia_inflation.csv){.btn-workshop}
+
+**Kako su se inflacija i saldo očekivanja kretali od 2015. do 2024. i koliko je njihova povezanost ovisila o razdoblju?**
+
+{{< include ../activities/_dataset.qmd >}}
 
 ## 1.1 Postavite istraživačko pitanje {#v11}
 
@@ -32,6 +46,15 @@ Odgovore uspoređujemo u razgovoru.
 
 {{< include ../activities/_22.qmd >}}
 
+<details>
+<summary>Pogledajte referentni graf</summary>
+
+![Godišnja stopa HICP-a i saldo očekivanja u Hrvatskoj za svih 120 mjeseci, na odvojenim osima.](../../results/inflation_expectations.svg)
+
+Izvori su Eurostat i DG ECFIN. Podaci su preuzeti 26. listopada 2026. Vlastita obrada.
+
+</details>
+
 ## 2.3 Ponovite analizu od početka {#v23}
 
 {{< include ../activities/_23.qmd >}}
@@ -40,6 +63,7 @@ Odgovore uspoređujemo u razgovoru.
 
 {{< include ../activities/_24.qmd >}}
 
-Brojke dolaze iz [podataka radionice](../../data/dictionary.qmd) za Hrvatsku,
-spremljenih 26. listopada 2026. Za dodatna objašnjenja otvorite
-[priručnik](../../booklet/index.qmd).
+Za provjeru otvorite [primjere odgovora](../solutions.qmd) i
+[referentne rezultate](../results.qmd). [Priručnik](../../booklet/index.qmd)
+objašnjava iste teme detaljnije. Ako alat trenutačno ne može izvršiti analizu,
+upotrijebite prikazane rezultate za usporedbu i razgovor.

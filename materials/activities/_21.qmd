@@ -1,17 +1,25 @@
-**Razgovor.** Što znači jedan redak ove tablice? U kojim su jedinicama dva broja?
+**Razgovor.** Što bismo provjerili prije nego što od ovih podataka
+zatražimo graf ili izračun?
 
-| Mjesec | Godišnja stopa HICP-a, % | Saldo očekivanja, bodovi |
-|---|---:|---:|
-| Siječanj 2022. | 5,5 | 48,1 |
-| Veljača 2022. | 6,3 | 53,0 |
-| Ožujak 2022. | 7,3 | 55,5 |
+**Primjer.** Nastavite u razgovoru s učitanim CSV-om. Zatražite početni pregled.
 
-To su tri mjeseca iz podataka radionice za Hrvatsku. Godišnja stopa
-uspoređuje cijene s istim mjesecom prethodne godine. Saldo sažima odgovore
-potrošača o budućem kretanju cijena.
+> Učitaj priloženi CSV i prikaži prvih i posljednjih pet redaka.
+> Navedi broj redaka, nazive stupaca i raspon mjeseci. Objasni što
+> predstavlja jedan redak te jedinice stupaca hicp_yoy_pct i expectations_balance.
+> Koristi stvarni sadržaj datoteke.
 
-**Primjer.** Pročitajte prvi redak naglas. U siječnju 2022. godišnja stopa
-HICP-a iznosi 5,5 %, a saldo očekivanja 48,1 bod. Uz svaki broj izgovorite jedinicu.
+Usporedite prikaz sa svih 120 mjeseci na ovoj stranici. Jedan redak je
+jedan mjesec u Hrvatskoj. Prvi je 2015-01, a posljednji 2024-12.
+U CSV-u su i šifre jedinica te oznake statusa podataka.
 
-**Isprobajte.** Na isti način objasnite redak za ožujak. Možete ga
-objasniti osobi pokraj sebe ili zatražiti AI objašnjenje i usporediti ga s tablicom.
+**Isprobajte.** Zatražite provjeru potpunosti tablice.
+
+> Provjeri jesu li mjeseci jedinstveni i uzastopni od 2015-01 do 2024-12.
+> Prikaži broj nedostajućih vrijednosti u hicp_yoy_pct i expectations_balance.
+> Prazne oznake hicp_flag i expectations_flag znače da dodatni status
+> nije naveden. Sačuvaj sva opažanja i pokaži kod koji si izvršio.
+
+Pogledajte nalaz i objasnite bi li podaci bili spremni za analizu.
+Očekujemo **120 različitih uzastopnih mjeseci**, **0 duplikata** i
+**0 praznina u dvjema brojčanim serijama**. Usporedite nekoliko prikazanih
+redaka s tablicom na stranici, uključujući neki koji nije na početku.

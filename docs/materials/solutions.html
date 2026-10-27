@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Odgovori uz kratke primjere – AI u istraživanju</title>
+<title>Primjeri odgovora – AI u istraživanju</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,41 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -162,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../materials/results.html">
- <span class="dropdown-text">Cijela analiza</span></a>
+ <span class="dropdown-text">Referentni rezultati</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../materials/rubric.html">
@@ -206,8 +171,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Odgovori uz kratke primjere</h1>
-<p class="subtitle lead">Iste teme kao na stranicama dana</p>
+<h1 class="title">Primjeri odgovora</h1>
+<p class="subtitle lead">Provjera postupka i tumačenja na istim podacima</p>
 </div>
 
 
@@ -224,45 +189,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Ovdje možete pogledati odgovore na male zadatke iz radionice. Usporedite značenje odgovora i račun. Rečenice možete oblikovati vlastitim riječima.</p>
+<p>Ovi odgovori prate osam tema. Brojčane rezultate usporedite s njima, a vlastito pitanje i zaključak obrazložite prema onome što ste istražili.</p>
 <section id="pitanje-i-pravila" class="level2">
 <h2 class="anchored" data-anchor-id="pitanje-i-pravila">1.1 Postavite istraživačko pitanje</h2>
-<p>„Kako se godišnja stopa inflacije u Hrvatskoj mijenjala od siječnja do ožujka 2019.?” Pitanje ima zemlju, razdoblje i ono što želimo pogledati.</p>
+<p>Jedno pitanje glasi „Kako su se inflacija i saldo očekivanja kretali u Hrvatskoj od 2015. do 2024. i koliko je njihova povezanost ovisila o razdoblju?” Uže pitanje može se odnositi na kretanje tijekom 2020.–2024. Odabrani stupci omogućuju opis kretanja i istodobne povezanosti. Pitanje o uzroku ili uspješnosti prognoze traži poseban postupak.</p>
 </section>
 <section id="dokazi" class="level2">
 <h2 class="anchored" data-anchor-id="dokazi">1.2 Pronađite i provjerite izvore</h2>
-<p>Na <a href="https://ec.europa.eu/eurostat/web/hicp/information-data">Eurostatovoj stranici</a> u dijelu <strong>Data release</strong> piše da se podaci objavljuju mjesečno. U dijelu <strong>Indices and rates of change</strong> navedene su <strong>annual rate of change</strong> i <strong>monthly rate of change</strong>. Ključne riječi su <strong>annual</strong> i <strong>monthly</strong>.</p>
+<p><code>hicp_yoy_pct</code> mjeri godišnju promjenu cijena. Vrijednost 7,3 % za ožujak 2022. uspoređuje cijene s ožujkom 2021. Podatak bilježimo svaki mjesec. Vrste mjera opisane su na <a href="https://ec.europa.eu/eurostat/web/hicp/information-data">Eurostatovoj stranici</a>.</p>
+<p><code>expectations_balance</code> sažima raspodjelu kvalitativnih odgovora potrošača o budućem kretanju cijena. Pitanje CONS_006 odnosi se na sljedećih 12 mjeseci. Bodovi salda opisuju odnos kategorija odgovora. Na grafu koristimo oznaku „Saldo očekivanih promjena cijena, bodovi”. Pogledajte odjeljke Consumer Survey i Balances u <a href="https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en">metodologiji Europske komisije</a>.</p>
 </section>
 <section id="pogrešan-sažetak" class="level2">
 <h2 class="anchored" data-anchor-id="pogrešan-sažetak">1.3 Provjerite i uredite sažetak</h2>
-<p>„Saldo očekivanja iznosi 55,5 bodova i sažima odgovore potrošača o budućem kretanju cijena.” Saldo je anketni pokazatelj izražen u bodovima.</p>
-<p>U pokazanom primjeru godišnja stopa od 7,3 % za ožujak 2022. uspoređuje cijene s ožujkom 2021.</p>
+<p>Jedna moguća ispravljena verzija glasi ovako.</p>
+<blockquote class="blockquote">
+<p>Skup sadrži 120 mjesečnih opažanja za Hrvatsku od 2015. do 2024. Prosjek salda očekivanih promjena cijena za 2022. iznosi 46,62 boda. Korelacija između godišnje stope HICP-a i salda u istom mjesecu za cijelo razdoblje iznosi približno 0,6985 i opisuje pozitivnu linearnu povezanost. Za zaključke o prognoziranju i povezanosti u pojedinim razdobljima treba provesti odgovarajuće dodatne usporedbe.</p>
+</blockquote>
+<p>Promijenjeni su jedinica opažanja, jedinica salda, tvrdnja o prognozi i tvrdnja koja jedan rezultat prenosi na svako razdoblje.</p>
 </section>
 <section id="plan" class="level2">
 <h2 class="anchored" data-anchor-id="plan">1.4 Pripremite plan analize</h2>
-<p>Za usporedbu siječnja i ožujka dovoljan je ovaj slijed. Pogledamo stopu u svakom mjesecu, izračunamo razliku i opišemo promjenu. Razlika između 7,3 % i 5,5 % iznosi <strong>1,8 postotnih bodova</strong>.</p>
+<p>Pregledamo mjesece i jedinice, izradimo dva vremenska grafa i godišnju tablicu, usporedimo 2015.–2019. s 2020.–2024. te napišemo odgovor na pitanje. Za fokus na kasnije razdoblje izradimo i graf samo za te godine. Odvojeni paneli čuvaju različite jedinice, a zajednička vremenska os olakšava usporedbu trenutka promjene.</p>
 </section>
 <section id="audit" class="level2">
 <h2 class="anchored" data-anchor-id="audit">2.1 Upoznajte i provjerite podatke</h2>
-<p>U ožujku 2022. godišnja stopa HICP-a iznosi <strong>7,3 %</strong>, a saldo očekivanja <strong>55,5 bodova</strong>. Svaki broj čitamo s njegovom jedinicom.</p>
+<p>Skup ima <strong>120 redaka i 120 različitih uzastopnih mjeseci</strong>, od <strong>2015-01 do 2024-12</strong>. Oba brojčana stupca imaju <strong>0 nedostajućih vrijednosti</strong>. Prazne oznake statusa podataka znače da dodatni status nije naveden. Svaka godina ima <strong>12 mjeseci</strong>.</p>
+<p>Provjera datuma razlikuje broj redaka od potpunosti kalendara. Značenje stupaca potvrđujemo opisom izvora i jedinicama u CSV-u.</p>
 </section>
 <section id="primjer-izmjene" class="level2">
 <h2 class="anchored" data-anchor-id="primjer-izmjene">2.2 Dopunite i objasnite kod</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>inflacija <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.5</span>, <span class="fl">6.3</span>, <span class="fl">7.3</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(inflacija)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Funkciju <code>mean</code>, koja računa prosjek, zamijenili smo funkcijom <code>max</code>. Najveća vrijednost je <strong>7,3 %</strong>.</p>
+<p>Grafovi dijele vremensku os, dok svaki ima svoju jedinicu na okomitoj osi. Godišnja tablica ima deset redaka. Za 2022. prosjek mjesečnih godišnjih stopa HICP-a iznosi <strong>10,6333 %</strong>, a prosjek salda <strong>46,6167 bodova</strong>. Za 2021. odgovarajući su prosjeci <strong>2,675 %</strong> i <strong>28,2583 boda</strong>. Zaokružene vrijednosti su 10,63 %, 46,62 boda, 2,68 % i 28,26 bodova.</p>
+<p>Pri prilagodbi grafa na 2020.–2024. mijenja se odabir mjeseci za taj prikaz. Cijeli skup ostaje osnova daljnjih usporedbi. Godišnje sažimanje grupira retke po godini i uz prosjek provjerava broj mjeseci.</p>
+<p><a href="../materials/results.html">Pogledajte referentne grafove i godišnju tablicu</a>.</p>
 </section>
 <section id="popravak" class="level2">
 <h2 class="anchored" data-anchor-id="popravak">2.3 Ponovite analizu od početka</h2>
-<p>Za tri mjesečne godišnje stope iz 2022. račun je <strong>(5,5 + 6,3 + 7,3) / 3 = 6,3667</strong>, približno <strong>6,37 %</strong>.</p>
-<p>Za tri mjesečne godišnje stope iz 2019. račun je <strong>(0,6 + 0,8 + 1,1) / 3 = 0,8333</strong>, približno <strong>0,83 %</strong>.</p>
-<p>Svaki rezultat sažima navedena tri mjeseca. Prosjek cijele godine računamo iz svih dvanaest mjesečnih vrijednosti.</p>
+<p>Dvanaest mjesečnih godišnjih stopa HICP-a za 2022. daje zbroj <strong>127,6</strong>. Prosjek iznosi <strong>127,6 / 12 = 10,6333</strong>, odnosno približno <strong>10,63 %</strong>. To je prosjek dvanaest mjesečnih godišnjih stopa. Promjena godišnjeg prosjeka indeksa računa se zasebno iz razina indeksa.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Razdoblje</th>
+<th style="text-align: right;">Broj mjeseci</th>
+<th style="text-align: right;">Pearsonova korelacija</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2015.–2024.</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">0,6985</td>
+</tr>
+<tr class="even">
+<td>2015.–2019.</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0,8279</td>
+</tr>
+<tr class="odd">
+<td>2020.–2024.</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0,5342</td>
+</tr>
+</tbody>
+</table>
+<p>Povezanost u ranijem podrazdoblju jača je prema ovom opisnom pokazatelju. Jedna vrijednost za cijeli uzorak skriva tu razliku. Za ocjenu statističke razlike ili objašnjenje uzroka treba dodatna analiza koja uvažava vremensku ovisnost, zajedničke šokove i izbor razdoblja.</p>
 </section>
 <section id="primjer-tumačenja" class="level2">
 <h2 class="anchored" data-anchor-id="primjer-tumačenja">2.4 Napišite i uredite zaključak</h2>
-<p>„Godišnja stopa inflacije u Hrvatskoj porasla je s 0,6 % u siječnju na 1,1 % u ožujku 2019.”</p>
-<p>Ta rečenica opisuje promjenu između dvaju mjeseci. O uzrocima promjene možemo postaviti novo istraživačko pitanje.</p>
-<p><a href="../materials/exercises/index.html">Svi primjeri</a> · <a href="../materials/results.html">Rezultati za cijelo razdoblje 2015.–2024.</a></p>
+<p>Sljedeći odlomak odgovara na zajedničko pitanje. Vlastiti zaključak prilagodite svojem pitanju, grafu i rezultatima.</p>
+<blockquote class="blockquote">
+<p>Usporedili smo godišnju stopu HICP-a i saldo očekivanih promjena cijena u Hrvatskoj tijekom 120 mjeseci od 2015. do 2024. Vremenski grafovi pokazuju kako se svaka mjera mijenjala, a godišnja tablica sažima njihovo kretanje. Prosjek mjesečnih godišnjih stopa HICP-a porastao je s 2,68 % u 2021. na 10,63 % u 2022. U istim godinama prosjek salda porastao je s 28,26 na 46,62 boda. Povezanost dviju mjera ovisi o promatranom razdoblju. Pearsonova korelacija iznosi približno 0,6985 za cijeli uzorak, 0,8279 za 2015.–2019. i 0,5342 za 2020.–2024. Jedna korelacija za cijelo desetljeće zato daje sažet pregled, dok usporedba podrazdoblja otkriva drukčiju jačinu povezanosti. U svim izračunima uspoređujemo vrijednosti iz istog mjeseca. Anketni saldo tumačimo kao pokazatelj raspodjele odgovora o budućem kretanju cijena. Zajednički šokovi i vremenska ovisnost ograničavaju tumačenje ovog opisnog odnosa. Za zaključke o uzrocima ili točnosti prognoze potreban je zaseban istraživački postupak.</p>
+</blockquote>
+<p><a href="../materials/exercises/index.html">Svi primjeri</a> · <a href="../booklet/index.html">Priručnik</a></p>
 
 
 </section>

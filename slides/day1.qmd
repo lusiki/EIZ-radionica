@@ -1,11 +1,29 @@
 ---
 title: "Od pitanja do provjerenih izvora"
-subtitle: "Razgovor · Jedan primjer · Vaš pokušaj"
+subtitle: "Dan 1 · Jedan skup podataka · Razgovor, primjer i pokušaj"
 ---
 
-Za svaku temu prvo razgovaramo, zatim zajedno pogledamo jedan primjer,
-pa svatko isproba malu promjenu. Svi upiti i zadaci nalaze se ovdje.
-Otvorite AI razgovor koji inače koristite i ostanite na ovoj stranici.
+Razgovaramo o pitanju, pogledamo jedan primjer, a zatim svatko isproba
+vlastiti pristup. Danas biramo pitanje, provjeravamo izvore, uređujemo
+sažetak i pripremamo plan koji ćemo provesti drugi dan.
+
+Preuzmite CSV i dodajte ga u **jedan AI razgovor koji podržava učitavanje
+datoteka i izvršavanje analize**. U njemu ostaju pitanje, plan i kasniji
+rezultati. Svi upiti nalaze se na ovoj stranici.
+
+## Podaci i zajedničko pitanje {#podaci}
+
+Radimo sa **120 mjesečnih opažanja za Hrvatsku od 2015. do 2024.**
+Stupac `hicp_yoy_pct` sadrži godišnju stopu HICP-a u postocima.
+Stupac `expectations_balance` sadrži saldo odgovora potrošača o kretanju
+cijena u sljedećih 12 mjeseci, izražen u bodovima salda.
+Podaci su spremljeni 26. listopada 2026.
+
+[Preuzmite CSV sa 120 opažanja](../data/processed/croatia_inflation.csv){.btn-workshop}
+
+**Kako su se inflacija i saldo očekivanja kretali od 2015. do 2024. i koliko je njihova povezanost ovisila o razdoblju?**
+
+{{< include ../materials/activities/_dataset.qmd >}}
 
 ## 1.1 Postavite istraživačko pitanje {#blok-11}
 
@@ -23,7 +41,11 @@ Otvorite AI razgovor koji inače koristite i ostanite na ovoj stranici.
 
 {{< include ../materials/activities/_14.qmd >}}
 
-## Ako želite čitati dalje
+## Za provjeru i daljnje čitanje
 
-[Priručnik za prvi dan](../booklet/day1.qmd) objašnjava teme detaljnije.
+[Priručnik za prvi dan](../booklet/day1.qmd) objašnjava isti postupak detaljnije.
+[Primjeri odgovora](../materials/solutions.qmd) i [referentni rezultati](../materials/results.qmd)
+pomažu pri usporedbi. Ako alat trenutačno ne može izvršiti analizu, koristite
+prikazane rezultate i zajedno razmotrite njihove zaključke.
+
 [Nastavite na drugi dan](day2.qmd).

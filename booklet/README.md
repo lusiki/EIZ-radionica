@@ -91,3 +91,13 @@ Each reader chapter now starts with the corresponding short activity.
 Full-data workflows, file management, notebooks and advanced methods are
 clearly presented as optional further reading. No activity depends on
 written notes or files produced in an earlier topic.
+
+## Full dataset with a simple workflow, 27 October 2026
+
+This revision supersedes the three-month activities above. All eight topics
+use the full 120-month CSV through one AI conversation with code execution.
+Participants choose a question, verify measures, revise a flawed summary,
+plan and execute descriptive analysis, compare periods and write about
+150 words supported by a graph and checked numbers. The shared chapter
+openers match the day pages and exercises. Desktop R, project folders,
+separate logs and advanced methods remain optional further reading.

@@ -2,17 +2,26 @@
 
 [Dan 1, tema 1.3](../slides/day1.qmd#blok-13) · [Vježba 1.3](../materials/exercises/index.qmd#v13)
 
-### Kratki primjer iz radionice
+### Primjer iz radionice
 
-Ispravljamo jednu rečenicu koja godišnju promjenu cijena uspoređuje s pogrešnim mjesecom. U vlastitom pokušaju popravljamo rečenicu o saldu očekivanja i njegovoj jedinici.
+**Razgovor.** Što provjeravamo u sažetku koji zvuči uvjerljivo?
 
-Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+**Primjer.** Ispravimo tvrdnju da korelacija od približno 0,70 dokazuje
+uzročni učinak očekivanja na inflaciju. Objasnimo što usporedba
+vrijednosti iz istog mjeseca stvarno pokazuje.
 
-### Od jedne rečenice do duljeg sažetka
+**Isprobajte.** Preradite namjerno pogrešan odlomak sa stranice dana.
+U njemu su 120 mjeseci zamijenjeni kućanstvima, saldo postotkom
+inflacije, a korelacija uspješnom prognozom. Jedan je rezultat prenesen
+na svako razdoblje. U tri ili četiri rečenice popravite tumačenje uzorka,
+jedinice, vremenske usporedbe i opsega zaključka.
 
-U kratkom primjeru popravljamo jednu rečenicu. Godišnja stopa uspoređuje
-cijene s istim mjesecom prethodne godine, a saldo očekivanja izražavamo
-u bodovima. Isti način čitanja možete primijeniti na dulji sažetak.
+### Provjerite tvrdnju po tvrdnju
+
+U radionici uređujemo odlomak o cijelom skupu. Provjeravamo što je
+jedinica opažanja, kako su izražene mjere i koje se razdoblje uspoređuje.
+Korelaciju tumačimo kao opis linearnog odnosa. Za prognozu treba povezati
+ranija očekivanja s odgovarajućim kasnijim ishodom i provjeriti točnost.
 
 Pogledajte što rečenica tvrdi, koju mjeru spominje i s čime uspoređuje
 rezultat. Te pojedinosti često pokazuju gdje je sažimanjem promijenjeno značenje.
@@ -118,7 +127,7 @@ prepričavate jedan za drugim.
 
 ### Povezivanje s našim podacima
 
-Za proširenu analizu proučite
+Za našu analizu proučite
 HICP i anketni saldo, odredite opisno pitanje i odlučite što ćete
 prikazati. U početnom pregledu objasnite što svaka mjera znači, koja su njezina
 ograničenja i kako možete usporediti dvije serije.

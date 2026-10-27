@@ -1,12 +1,21 @@
-**Razgovor.** Što bismo prvo napravili kad pred sobom imamo tri broja?
+**Razgovor.** Koji bi nam graf ili usporedba pomogli odgovoriti na odabrano
+pitanje? Što bismo iz njih mogli saznati?
 
-**Primjer.** Pošaljite ovaj upit.
+**Primjer.** U istom razgovoru zatražite plan za zajedničko pitanje.
 
-> Imam godišnje stope inflacije u Hrvatskoj za siječanj, veljaču i ožujak
-> 2022. Predloži tri jednostavna koraka za opis njihova kretanja.
+> Želim opisati kretanje inflacije i salda očekivanja u Hrvatskoj od
+> 2015. do 2024. i usporediti njihovu povezanost kroz vrijeme. Koristi
+> naš CSV sa 120 mjeseci. Predloži četiri koraka analize. Za svaki
+> objasni koji će rezultat dati i kako taj rezultat odgovara na pitanje.
 
-Jedan plan može biti „Pogledati vrijednosti, izračunati njihov prosjek
-i opisati promjenu.” Zajedno prođite kroz ta tri koraka.
+Prođite kroz prijedlog. Izvediv slijed je pregled podataka, dva vremenska
+grafa i godišnji sažeci, usporedba razdoblja te zaključak. Objasnite zašto
+dvije mjere s različitim jedinicama prikazujemo odvojeno.
 
-**Isprobajte.** Zatražite plan za uže pitanje „Kako se stopa inflacije
-promijenila između siječnja i ožujka 2022.?” Usporedite što se u planu promijenilo.
+**Isprobajte.** Prilagodite plan svojem pitanju iz teme 1.1. Odaberite
+razdoblje, graf i usporedbu koji mu odgovaraju. Možete, primjerice,
+usredotočiti graf na 2020.–2024. ili usporediti ranijih i kasnijih pet godina.
+U razgovoru objasnite jedan izbor i jednu granicu svojeg zaključka.
+
+Pitanje i plan ostaju u istom AI razgovoru. Drugi dan iz tog plana
+izrađujemo analizu.

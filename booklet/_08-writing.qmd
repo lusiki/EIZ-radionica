@@ -2,24 +2,28 @@
 
 [Dan 2, tema 2.4](../slides/day2.qmd#blok-24) · [Vježba 2.4](../materials/exercises/index.qmd#v24)
 
-### Kratki primjer iz radionice
+### Primjer iz radionice
 
-Pokažemo kako AI pojednostavljuje jednu rečenicu o inflaciji. Zatim svatko sastavi i uredi sličnu rečenicu za 2019. Usporedimo brojke, razdoblje i značenje.
+**Razgovor.** Kojim rezultatom podupiremo glavni nalaz?
 
-Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+**Primjer.** Uredimo odlomak o rastu godišnjih prosjeka između 2021.
+i 2022. Za HICP koristimo 2,68 % i 10,63 %, a za saldo 28,26 i 46,62 boda.
+Usporedimo AI izmjenu s tablicom i sačuvamo značenje mjera i granice zaključka.
+
+**Isprobajte.** U istom razgovoru napišite oko 150 riječi odgovora na
+svoje pitanje, uz graf, provjerene brojke i jedno ograničenje.
+Zatražite jezičnu doradu i provjerite svaku promjenu značenja.
+Pokažite graf i objasnite jedan nalaz iz završnog odlomka.
 
 ### Pisanje je dio istraživanja
 
-Zamislite da ste prikupili podatke, provjerili skriptu i izradili graf.
-Sjednete pisati i shvatite da ne znate objasniti što ste otkrili. Odlomak
-zvuči kao dnevnik naredbi, zaključak obećava više nego što analiza daje,
-a čitatelj ne vidi vezu između pitanja i rezultata. Pri pisanju se zato vraćate na analizu, što ste utvrdili, što
-pretpostavljate i što treba dodatno istražiti?
+Nakon analize treba objasniti što rezultati govore o pitanju. U tekstu
+povežite nalaz s grafom i brojkama. Razjasnite što ste utvrdili, što
+pretpostavljate i što biste htjeli dodatno istražiti.
 
-AI može pomoći kao čitatelj nacrta, označiti nejasan pojam, predložiti
-redoslijed i upozoriti na rečenicu bez potpore. Procijenite pomažu li komentari vašem tekstu i koliko vam vremena
-treba da ih provjerite. Kvaliteta jezičnog uređivanja može se razlikovati
-među alatima i jezicima.
+AI može označiti nejasan pojam, predložiti redoslijed i upozoriti na
+tvrdnju bez potpore. Procijenite komentare prema tome koliko pomažu
+objasniti vaš nalaz.
 
 Korinekov [pregled primjena u ekonomskim istraživanjima](https://www.aeaweb.org/articles?id=10.1257/jel.20231736)
 opisuje pomoć pri razvoju ideja i komentiranju rada, pisanju,
@@ -28,13 +32,11 @@ Svaki preuzeti prijedlog provjerite prema zahtjevima svojeg rada.
 
 ### Kako koristiti pomoć pri pisanju
 
-Krenite od svojeg pitanja, pročitanih izvora i vlastitog tumačenja rezultata.
-Zatim odaberite gdje bi vam komentar pomogao. Možete tražiti jasniju
-rečenicu, bolji redoslijed odlomaka ili objašnjenje dijela koji je teško pratiti.
+Krenite od pitanja, izvora i vlastitog tumačenja. Zatražite pomoć tamo
+gdje vam treba jasnija rečenica ili bolji redoslijed objašnjenja.
 
-Usporedite prijedlog s početnom verzijom i pogledajte što se promijenilo.
-Posebno provjerite brojke, izvore i značenje tvrdnji. Kratka bilješka o
-prihvaćenim izmjenama olakšat će vam povratak na raniju verziju.
+Usporedite novu verziju s početnom. Provjerite brojke, izvore i značenje
+tvrdnji te odaberite izmjene koje čine objašnjenje jasnijim.
 
 Kada tuđu misao prepričate vlastitim riječima, sačuvajte njezino značenje
 i navedite izvor. Objasnite kako vam taj rad pomaže odgovoriti na pitanje.
@@ -58,10 +60,8 @@ povezanosti. Vi provjeravate jesu li prigovori relevantni za konkretan
 dizajn. Prihvatite prigovore za koje možete pokazati razlog u podacima ili metodi.
 
 3\. Prijelaz između odlomaka. Dajte dva susjedna odlomka i zatražite
-rečenicu koja objašnjava njihovu vezu. Dobar prijelaz čitatelju govori
-zašto nakon definicije mjere slijedi određeni izračun. Ako ta veza nije
-opravdana, možda treba promijeniti redoslijed ili ukloniti odlomak, a ne
-samo dodati veznu frazu.
+jasniju vezu između njih. Provjerite slijed objašnjenja. Čitatelj treba
+razumjeti zašto nakon definicije mjere slijedi odabrani izračun.
 
 4\. Prepričavanje i navođenje izvora. Priložite provjereni odlomak i bibliografske
 podatke. Zatražite prijedlog parafraze koji čuva granice nalaza te
@@ -105,7 +105,7 @@ decimalne oznake, datume, padeže i kratice. Svaku mjeru dosljedno imenujte prem
 percepciju, očekivanje i pouzdanje. Nakon jezične izmjene ponovno pročitajte značenje, jer
 gramatički glađa rečenica može sadržajno biti manje precizna.
 
-### Dodatni primjer / tekst o cijeloj analizi
+### Kako obrazložiti nalaz
 
 Sljedeća je rečenica **namjerno pogrešan početni nacrt**.
 
@@ -148,9 +148,3 @@ U vlastitom malom pojmovniku zadržite razliku između inflacije i razine
 cijena, salda i postotka, opažanja i ispitanika, korelacije i učinka,
 standardne pogreške i reziduala. Ako isti naziv koristite za različite mjere, čitatelj neće moći
 pratiti vaš zaključak.
-
-### Isprobajte na vlastitoj rečenici
-
-U radionici uređujemo jednu rečenicu i provjeravamo što je ostalo isto.
-Taj mali postupak možete ponoviti kad god neki svoj tekst želite učiniti jasnijim.
-Za dulji rad koristite objašnjenja o strukturi, izvorima i argumentima iz ovog poglavlja.

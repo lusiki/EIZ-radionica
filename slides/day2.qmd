@@ -1,12 +1,31 @@
 ---
 title: "Od podataka do zaključka"
-subtitle: "Razgovor · Jedan primjer · Vaš pokušaj"
+subtitle: "Dan 2 · Jedan skup podataka · Razgovor, primjer i pokušaj"
 ---
 
-Nastavljamo istim ritmom. Pogledamo primjer, objasnimo ga i isprobamo
-malu promjenu. Za današnji rad dovoljne su brojke i kratki primjeri na ovoj
-stranici te AI razgovor. Kod čitamo i mijenjamo u razgovoru.
-Ako već koristite R, iste kratke primjere možete pokrenuti u konzoli.
+Nastavite u AI razgovoru iz prvog dana, uz isto pitanje, plan i učitani CSV.
+Danas pregledavamo podatke, izrađujemo grafove, uspoređujemo razdoblja
+i pišemo zaključak. Najprije pogledamo primjer, zatim svatko prilagodi
+postupak svojem pitanju.
+
+Ako počinjete ovdje, preuzmite CSV i dodajte ga jednom u AI razgovor
+koji podržava učitavanje datoteka i izvršavanje analize. Možete krenuti
+od zajedničkog pitanja ispod. Ako je prethodna sesija istekla, ponovno
+dodajte istu datoteku. Grafovi, tablice i kod prikazuju se u razgovoru.
+
+## Podaci i zajedničko pitanje {#podaci}
+
+Radimo sa **120 mjesečnih opažanja za Hrvatsku od 2015. do 2024.**
+Stupac `hicp_yoy_pct` sadrži godišnju stopu HICP-a u postocima.
+Stupac `expectations_balance` sadrži saldo odgovora potrošača o kretanju
+cijena u sljedećih 12 mjeseci, izražen u bodovima salda.
+Podaci su spremljeni 26. listopada 2026.
+
+[Preuzmite CSV sa 120 opažanja](../data/processed/croatia_inflation.csv){.btn-workshop}
+
+**Kako su se inflacija i saldo očekivanja kretali od 2015. do 2024. i koliko je njihova povezanost ovisila o razdoblju?**
+
+{{< include ../materials/activities/_dataset.qmd >}}
 
 ## 2.1 Upoznajte i provjerite podatke {#blok-21}
 
@@ -16,6 +35,15 @@ Ako već koristite R, iste kratke primjere možete pokrenuti u konzoli.
 
 {{< include ../materials/activities/_22.qmd >}}
 
+<details>
+<summary>Pogledajte referentni graf</summary>
+
+![Godišnja stopa HICP-a i saldo očekivanja u Hrvatskoj za svih 120 mjeseci, na odvojenim osima.](../results/inflation_expectations.svg)
+
+Izvori su Eurostat i DG ECFIN. Podaci su preuzeti 26. listopada 2026. Vlastita obrada.
+
+</details>
+
 ## 2.3 Ponovite analizu od početka {#blok-23}
 
 {{< include ../materials/activities/_23.qmd >}}
@@ -24,9 +52,9 @@ Ako već koristite R, iste kratke primjere možete pokrenuti u konzoli.
 
 {{< include ../materials/activities/_24.qmd >}}
 
-## Ako želite čitati dalje
+## Za provjeru i daljnje čitanje
 
-[Priručnik za drugi dan](../booklet/day2.qmd) objašnjava teme detaljnije.
-Brojke su preuzete iz [hrvatskih podataka radionice](../data/dictionary.qmd),
-spremljenih 26. listopada 2026. [Cijela analiza](../materials/results.qmd)
-dostupna je za daljnje istraživanje.
+[Priručnik za drugi dan](../booklet/day2.qmd) objašnjava isti postupak detaljnije.
+[Primjeri odgovora](../materials/solutions.qmd) i [referentni rezultati](../materials/results.qmd)
+pomažu pri usporedbi. Ako alat trenutačno ne može izvršiti analizu, koristite
+prikazane rezultate i zajedno razmotrite njihove zaključke.

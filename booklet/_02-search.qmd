@@ -2,11 +2,18 @@
 
 [Dan 1, tema 1.2](../slides/day1.qmd#blok-12) · [Vježba 1.2](../materials/exercises/index.qmd#v12)
 
-### Kratki primjer iz radionice
+### Primjer iz radionice
 
-Pogledamo AI odgovor o učestalosti objave inflacijskih podataka i usporedimo ga s Eurostatovom stranicom. Zatim na istoj stranici pronalazimo godišnju i mjesečnu stopu promjene.
+**Razgovor.** Kako definicija mjere utječe na usporedbu inflacije i očekivanja?
 
-Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+**Primjer.** Povežemo stupac hicp_yoy_pct s godišnjom stopom u Eurostatovu
+opisu HICP-a. Objasnimo da vrijednost za ožujak 2022. uspoređuje cijene
+s ožujkom 2021., iako tablica ima jedan redak za svaki mjesec.
+
+**Isprobajte.** U metodologiji Europske komisije pronađite Consumer Survey,
+CONS_006 i Balances. Objasnite što mjeri expectations_balance, na koje
+se razdoblje odnosi i kako biste ga označili na grafu. Usporedite svoje
+objašnjenje s AI odgovorom i izvornim opisom.
 
 ### Kako početi pregled literature
 
@@ -140,8 +147,8 @@ zabilježite koje ste izvore provjerili.
 
 Filtri izvora i nazivi načina pretraživanja mogu se mijenjati. Za svaki
 rad provjerite status recenzije kod izdavača. Za sustavni pregled unaprijed
-opišite baze, pojmove za pretragu i pravila odabira radova. Na radionici provjeravamo jednu tvrdnju na službenoj stranici.
-Opsežniju pretragu možete razviti kasnije.
+opišite baze, pojmove za pretragu i pravila odabira radova. Na radionici povezujemo obje mjere s njihovim službenim definicijama.
+Opsežniji pregled literature možete razviti kasnije.
 
 ### Ako želite nastaviti
 

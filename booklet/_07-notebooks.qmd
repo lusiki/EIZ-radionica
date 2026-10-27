@@ -2,25 +2,34 @@
 
 [Dan 2, tema 2.3](../slides/day2.qmd#blok-23) · [Vježba 2.3](../materials/exercises/index.qmd#v23)
 
-### Kratki primjer iz radionice
+### Primjer iz radionice
 
-Pokažemo račun od triju vrijednosti do njihova prosjeka. Za 2022. dobivamo 19,1 / 3, približno 6,37 %. Zatim isti postupak isprobamo s vrijednostima 0,6, 0,8 i 1,1 iz 2019. i provjerimo rezultat 0,83 %.
+**Razgovor.** Koliko rezultat ovisi o razdoblju i kako možemo provjeriti izračun?
 
-Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+**Primjer.** Iz izvornog CSV-a ponovno izdvojimo svih 12 stopa za 2022.
+Njihov zbroj je 127,6, a prosjek približno 10,6333 %. Izdvojene retke
+usporedimo s tablicom podataka i dobiveni prosjek s godišnjim sažetkom.
 
-### Od tri broja do ponovljivog postupka
+**Isprobajte.** Ponovno krenite od cijelog CSV-a. Izračunajte istodobnu
+Pearsonovu korelaciju za svih 120 mjeseci te zasebno za 2015.–2019.
+i 2020.–2024., po 60 mjeseci. Rezultati su približno 0,6985, 0,8279
+i 0,5342. Usporedite ih s grafovima i objasnite što jedna korelacija
+za cijelo desetljeće sažima, a što se vidi tek po podrazdobljima.
 
-U kratkom primjeru svi brojevi i cijeli račun stanu u jednu poruku.
-Zato lako vidimo je li zbroj točan i dijelimo li s tri.
-Pokazani račun možete ponoviti kalkulatorom.
+### Provjerite izračun prije tumačenja
 
-U većem projektu istu svrhu imaju spremljeni podaci i kod. Ako kasnije
-isprobate cijelu analizu, nova R sesija pomaže provjeriti može li se sve
-pokrenuti od početka. U paketu je i pogrešna skripta za dodatno istraživanje.
+Godišnji prosjek provjeravamo iz njegovih sastavnica. U prikazu za 2022.
+trebaju biti svih 12 mjeseci iz CSV-a. Usporedite vrijednosti s podacima
+na stranici, zbrojite ih i podijelite s 12. Tako provjeravamo odabir
+redaka i račun koji je proizveo godišnju tablicu.
+
+Pri usporedbi podrazdoblja ponovno krećemo od cijelog skupa. Raniji
+odabir 2020.–2024. za graf ostaje zaseban prikaz. Broj opažanja uz
+korelaciju pomaže uočiti je li izračun koristio namjeravano razdoblje.
 
 ### Pročitajte grafove i sažetke
 
-Dvije serije imaju različite jedinice. U proširenoj analizi prikazujemo ih u
+Dvije serije imaju različite jedinice. U analizi prikazujemo ih u
 odvojenim panelima sa zajedničkom vremenskom osi. Čitatelj vidi kada se
 promjene događaju, ali ih ne zamjenjuje za brojčano usporedive veličine.
 Dvije neovisno skalirane y-osi mogu proizvesti privid preklapanja linija
@@ -39,7 +48,7 @@ među podrazdobljima pokazuje da sažetak ovisi o promatranom razdoblju.
 Za test razlike korelacija ili promjene uzročnog mehanizma trebalo bi
 provesti zasebnu analizu.
 
-### Kako ponovno dobiti isti rezultat
+### Dodatno čitanje / kako sačuvati ponovljiv postupak
 
 Ako sutra pošaljete isti upit modelu, može nastati drukčiji kod. Model,
 postavke, dostupni alati ili izvori također se mogu promijeniti. Za
@@ -134,7 +143,7 @@ razdoblja. Za njezinu provjeru pripremite zaseban plan analize. Zapišite kada j
 ili dizajn potrebni. Za AI prijedlog da dodate medijski ton morali biste prikupiti nove
 podatke i započeti zaseban projekt.
 
-### Što treba izvesti iz razgovornog okruženja
+### Za dulji projekt / što sačuvati iz razgovora
 
 Preuzmite skriptu ili bilježnicu, potrebne ulazne podatke ako to dopuštaju
 uvjeti uporabe, tablicu rezultata i graf. Dodajte opis koraka, verzije

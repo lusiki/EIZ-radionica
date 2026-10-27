@@ -15,8 +15,8 @@ Ekonomski institut, Zagreb / praktična radionica
 # Istraživanje uz AI
 
 Razgovaramo o jednoj ideji, pogledamo primjer i odmah ga isprobamo.
-Kroz kratke upite, nekoliko brojki i jednostavne rečenice upoznajemo
-kako AI može pomoći u istraživanju.
+Na 120 mjesečnih opažanja za Hrvatsku pratimo put od istraživačkog
+pitanja i izvora do grafova, usporedbi i jasnog zaključka.
 
 [Otvorite prvi dan](slides/day1.qmd){.btn-workshop}
 [Otvorite drugi dan](slides/day2.qmd){.btn-workshop .secondary}
@@ -30,54 +30,55 @@ kako AI može pomoći u istraživanju.
 
 ## Kako izgleda radionica
 
-Svaka tema ima tri dijela. **Razgovor** otvara jedno pitanje.
-**Primjer** pokazuje upit, tekst ili brojke. **Isprobajte** daje jedan
-mali zadatak, primjerice promjenu godine u upitu ili jedne naredbe u kodu.
-
-Sve za taj dan nalazi se na jednoj stranici. Uz nju otvorite AI razgovor
-koji inače koristite. Odgovore uspoređujemo zajedno.
+Svaka tema ima **razgovor**, jedan pokazani **primjer** i zadatak koji
+možete **isprobati na svojem pitanju**. Radimo s jednim CSV-om u jednom
+AI razgovoru koji može izvoditi analizu. Sve upite i pregled podataka
+pratite na stranici dana.
 
 [Što otvoriti za početak](admin/prerequisites.qmd) ·
 [Svi primjeri na jednoj stranici](materials/exercises/index.qmd)
 
 ::: {.step-links}
 ::: {.step-link}
-## 01 / Pitanje, izvor i jasna rečenica
+## 01 / Pitanje, izvori i plan
 
-Postavite jedno pitanje, provjerite izvor, ispravite rečenicu i
-zatražite kratak plan.
+Upoznajte podatke, odaberite pitanje, provjerite značenje mjera,
+preradite sažetak i pripremite plan analize.
 
 [Prvi dan](slides/day1.qmd)
 :::
 ::: {.step-link}
-## 02 / Tri retka podataka i mali izračun
+## 02 / Podaci, grafovi i zaključak
 
-Objasnite redak tablice, promijenite jednu naredbu, provjerite prosjek
-i uredite rečenicu o rezultatu.
+Provjerite svih 120 mjeseci, izradite grafove i godišnju tablicu,
+usporedite razdoblja i napišite zaključak uz provjerene brojke.
 
 [Drugi dan](slides/day2.qmd)
 :::
 :::
 
-## Jedan poznat primjer
+## Jedan stvarni skup podataka
 
-Koristimo podatke o inflaciji i očekivanjima potrošača u Hrvatskoj.
-Za zajednički rad izdvajamo nekoliko mjeseci. Brojke su prikazane uz
-zadatak, pa odmah možemo razgovarati o tome što znače.
+Pratimo godišnju stopu HICP-a i saldo očekivanih promjena cijena u
+Hrvatskoj od 2015. do 2024. Pitanje, kod, grafovi, tablice i tekst
+ostaju u istom razgovoru. Završavamo grafom i kratkim odgovorom na
+odabrano pitanje.
 
+[Preuzmite CSV sa 120 opažanja](data/processed/croatia_inflation.csv) ·
 [Pregled svih tema](admin/workshop_overview.qmd) ·
 [Kako voditi radionicu](admin/instructor.qmd)
 
-## Ako želite istražiti više
+## Za provjeru i daljnje čitanje
 
-Priručnik donosi dulja objašnjenja, dodatne primjere alata i postupak
-cijele analize. Otvorite ga kad vas neka tema posebno zainteresira.
+[Referentni rezultati](materials/results.qmd) pomažu provjeriti analizu.
+Priručnik prati iste aktivnosti i objašnjava njihove metode i ograničenja.
+U njemu su i dodatni primjeri alata za samostalni nastavak.
 
 [Čitajte priručnik](booklet/index.qmd) ·
 [Preuzmite PDF](downloads/EIZ-prirucnik.pdf)
 
-[Cijela analiza](materials/results.qmd), [podaci](data/dictionary.qmd)
-i [radni paket](downloads/eiz-workshop.zip) dostupni su za samostalni nastavak.
+Za daljnji rad u R-u dostupni su [rječnik podataka](data/dictionary.qmd)
+i [radni paket](downloads/eiz-workshop.zip).
 
 ::: {.concept-box}
 Sadržaj je revidiran {{< var workshop.revision >}}

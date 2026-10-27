@@ -1,20 +1,39 @@
-**Razgovor.** Kako bismo sami provjerili prosjek koji je AI izračunao?
+**Razgovor.** Koliko se naš zaključak može promijeniti kada promijenimo
+promatrano razdoblje? Kako provjeriti broj koji je AI prikazao?
 
-**Primjer.** Pošaljite sve podatke i postupak u jednoj poruci.
+**Primjer.** Vratite se učitanom CSV-u i provjerite jedan godišnji rezultat.
 
-> Godišnje stope HICP-a u Hrvatskoj za siječanj, veljaču i ožujak 2022.
-> iznose 5,5 %, 6,3 % i 7,3 %. Izračunaj njihov aritmetički prosjek.
-> Pokaži zbroj i dijeljenje.
+> Iz izvornog CSV-a ponovno izdvoji svih 12 mjeseci 2022. Prikaži njihove
+> vrijednosti hicp_yoy_pct, zbroj i prosjek. Pokreni izračun i usporedi
+> ga s godišnjom tablicom koju smo već dobili.
 
-Provjerite račun na ekranu ili kalkulatorom. Zbroj je **19,1**,
-a **19,1 / 3 = 6,3667**, odnosno približno **6,37 %**.
+Zbroj je **127,6**, a prosjek **127,6 / 12 = 10,6333**, približno **10,63 %**.
+Usporedite izdvojene retke s tablicom podataka na ovoj stranici. Zatim
+pitajte što bi se izgubilo kada bismo cijelo desetljeće opisali jednim brojem.
 
-**Isprobajte.** Ponovite isti postupak za siječanj, veljaču i ožujak 2019.
-Vrijednosti su **0,6 %, 0,8 % i 1,1 %**. Usporedite svoj račun s AI odgovorom.
+**Isprobajte.** Usporedite povezanost u dvama unaprijed odabranim razdobljima.
+
+> Ponovno kreni od svih 120 redaka izvornog CSV-a. Izračunaj Pearsonovu
+> korelaciju između hicp_yoy_pct i expectations_balance za cijelo razdoblje,
+> za 2015.–2019. te za 2020.–2024. Poveži vrijednosti iz istog mjeseca.
+> Za svaki izračun prikaži broj opažanja i izvršeni kod. Usporedi
+> rezultate s vremenskim grafovima i opiši razlike.
+
+Objasnite daje li jedna korelacija za cijelo razdoblje dovoljan opis.
+Za zajedničku usporedbu koristimo ista dva podrazdoblja, a zatim nalaz
+povežite sa svojim pitanjem.
 
 <details>
-<summary>Pogledajte rješenje</summary>
+<summary>Pogledajte referentne rezultate</summary>
 
-Zbroj je **2,5**. Dijeljenjem s tri dobivamo **0,8333**, odnosno približno **0,83 %**.
+| Razdoblje | Broj mjeseci | Pearsonova korelacija |
+|---|---:|---:|
+| 2015.–2024. | 120 | 0,6985 |
+| 2015.–2019. | 60 | 0,8279 |
+| 2020.–2024. | 60 | 0,5342 |
+
+Pozitivna linearna povezanost u ovom je uzorku jača u ranijem podrazdoblju.
+To je opisna usporedba. Za provjeru statističke razlike, uzroka ili
+uspješnosti prognoze treba zaseban postupak koji uvažava vremensku ovisnost.
 
 </details>

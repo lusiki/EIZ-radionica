@@ -1,28 +1,26 @@
-**Razgovor.** Možemo li iz dva retka koda razumjeti što se računa?
+**Razgovor.** Kako prikazati dvije mjere da možemo usporediti njihovo
+kretanje i pritom jasno vidjeti njihove jedinice?
 
-**Primjer.** Kopirajte ovaj R kod u AI razgovor i dodajte „Objasni svaki redak.”
+**Primjer.** Zatražite analizu učitanog skupa.
 
-```r
-inflacija <- c(5.5, 6.3, 7.3)
-mean(inflacija)
-```
+> Iz našeg CSV-a izradi dva vremenska grafa jedan iznad drugoga, sa
+> zajedničkom osi mjeseci od 2015-01 do 2024-12. Na prvom prikaži
+> hicp_yoy_pct u postocima, a na drugom expectations_balance u bodovima salda.
+> Zatim napravi godišnju tablicu s prosjekom svake mjere i brojem mjeseci.
+> Svaka godina treba imati 12 mjeseci. Prosjek HICP-a nazovi prosjekom
+> mjesečnih godišnjih stopa. Pokreni kod i prikaži grafove, tablicu i kod
+> ovdje u razgovoru. Uz rezultate navedi Eurostat i DG ECFIN te datum
+> preuzimanja podataka 26. listopada 2026.
 
-Prvi redak sadrži tri godišnje stope iz tablice. Drugi računa njihov
-prosjek, približno **6,37 %**. U kodu decimalni broj pišemo s točkom.
-Ovdje računamo prosjek triju mjesečnih godišnjih stopa.
+Pogledajte razdoblja rasta i pada. Otvorite dio koda koji grupira podatke
+po godini i zatražite njegovo objašnjenje. Provjerite oznake osi i broj
+mjeseci u godišnjoj tablici.
 
-**Isprobajte.** Zatražite od AI-ja da kod promijeni tako da pokaže najveću
-vrijednost. Pogledajte koja se riječ promijenila i usporedite rezultat
-s najvećim brojem u tablici.
+**Isprobajte.** Prilagodite prikaz svojem pitanju. Primjerice, zatražite
+grafove samo za 2020.–2024., s jasno označenim godinama. Zadržite cijeli
+učitani skup za kasnije usporedbe. Pogledajte koji se dio koda promijenio
+i objasnite jedan obrazac koji se sada lakše vidi.
 
-<details>
-<summary>Pogledajte rješenje</summary>
-
-```r
-inflacija <- c(5.5, 6.3, 7.3)
-max(inflacija)
-```
-
-`max` daje **7,3 %**.
-
-</details>
+U godišnjoj tablici za 2022. očekujemo **10,63 %** za prosjek mjesečnih
+godišnjih stopa HICP-a i **46,62 boda** za prosjek salda, uz **12 mjeseci**.
+To su dvije različite mjere. Svaku čitamo u njezinoj jedinici.

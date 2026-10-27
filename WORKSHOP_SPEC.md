@@ -2,46 +2,46 @@
 
 Pregled materijala, 27. listopada 2026.
 
-## Osnovni način rada
+## Zajednički način rada
 
-Svaka od osam tema ima pitanje za razgovor, jedan gotov primjer i jedan
-mali zadatak. Sadržaj se nalazi na stranici dana ili na jednoj stranici
-sa svim primjerima. Zajednički rad koristi preglednik i jedan AI razgovor.
+Jedan CSV sa 120 mjesečnih opažanja za Hrvatsku od 2015. do 2024.
+dodaje se jednom u AI razgovor s podrškom za izvršavanje analize.
+Pitanje, plan, kod, tablice, grafovi i zaključak ostaju u tom razgovoru.
+Stranice dana sadrže sve upite i pregled svih mjeseci. Ako sesija istekne,
+ponovno se dodaje ista datoteka. Pripremljeni rezultati dostupni su na stranici.
 
-| Tema | Mali zadatak |
+Svaka tema ima razgovor, jedan pokazani primjer i vlastiti pokušaj.
+Završni rezultat je graf i oko 150 riječi tumačenja vlastitog pitanja.
+
+| Tema | Aktivnost |
 |---|---|
-| 1.1 Postavite istraživačko pitanje | Promijeniti godinu u upitu |
-| 1.2 Pronađite i provjerite izvore | Pronaći podatak na službenoj stranici |
-| 1.3 Provjerite i uredite sažetak | Ispraviti jednu rečenicu |
-| 1.4 Pripremite plan analize | Zatražiti jednostavan plan |
-| 2.1 Upoznajte i provjerite podatke | Objasniti redak tablice |
-| 2.2 Dopunite i objasnite kod | Promijeniti mean u max |
-| 2.3 Ponovite analizu od početka | Provjeriti prosjek triju brojeva |
-| 2.4 Napišite i uredite zaključak | Urediti jednu rečenicu |
+| 1.1 Postavite istraživačko pitanje | Odabrati pitanje koje dvije mjere i 120 mjeseci mogu istražiti. |
+| 1.2 Pronađite i provjerite izvore | Objasniti saldo očekivanja uz službenu metodologiju. |
+| 1.3 Provjerite i uredite sažetak | Preraditi uvjerljiv odlomak s pogrešnim tumačenjima. |
+| 1.4 Pripremite plan analize | Odabrati prikaz i usporedbu za svoje pitanje. |
+| 2.1 Upoznajte i provjerite podatke | Provjeriti mjesece, praznine i jedinice cijelog skupa. |
+| 2.2 Dopunite i objasnite kod | Izraditi grafove i godišnje sažetke te prilagoditi prikaz. |
+| 2.3 Ponovite analizu od početka | Provjeriti izračun i usporediti povezanost u dva razdoblja. |
+| 2.4 Napišite i uredite zaključak | Objasniti svoj nalaz u odlomku uz graf i provjerene brojke. |
 
-Primjeri su u materials/activities/ i uključuju se u stranice obaju dana
-i zajedničku stranicu. Time prikaz i zadatak ostaju usklađeni.
+## Metode i provjere
 
-## Dodatno čitanje i potpuna analiza
+Koristimo već izračunanu godišnju stopu HICP-a u postocima i anketni saldo
+u bodovima. Provjeravamo jedinstvenost i potpunost mjeseci te praznine
+u dvjema brojčanim serijama. Prazne oznake statusa čitamo prema rječniku.
+Prikazujemo dva odvojena vremenska grafa, godišnje prosjeke i broj mjeseci.
+HICP sažetak je prosjek 12 mjesečnih godišnjih stopa.
 
-Priručnik prati iste naslove i najprije opisuje mali primjer iz radionice.
-Zatim objašnjava širu temu. Potpuna analiza, R okruženje, predlošci i
-preuzimanje radnog paketa služe samostalnom nastavku.
+Korelacije uspoređuju vrijednosti iz istog mjeseca. Za podrazdoblja
+2015.–2019. i 2020.–2024. koristimo po 60 mjeseci. Rezultate tumačimo
+opisno. Statistička razlika, prognoza i uzročni učinak traže zasebnu analizu.
 
-## Podaci
+## Materijali i daljnji rad
 
-Za male izračune koristimo siječanj, veljaču i ožujak 2022., a za vlastiti
-pokušaj ista tri mjeseca 2019. To su stvarni retci spremljenog skupa.
-Prosjek triju mjesečnih godišnjih stopa odnosi se na ta tri opažanja.
-HICP izražavamo u postocima, a anketni saldo u bodovima salda.
+materials/activities/ sadrži zajedničke aktivnosti za stranice dana
+i sve primjere. Priručnik prati iste naslove i aktivnosti. R projekt,
+agenti, bilježnice, predlošci i OLS/HAC ostaju mogućnosti za nastavak.
+Privatni vodič čuva se izvan repozitorija, javnog weba i ZIP-a.
 
-Puni skup sadrži 120 mjeseci za Hrvatsku, od 2015-01 do 2024-12.
-Opisna analiza koristi odvojene vremenske grafove i godišnje prosjeke.
-Korelacija opisuje istodobnu linearnu povezanost. Pitanja o uzroku ili
-prognozi traže zaseban postupak. OLS/HAC ostaje dodatni primjer.
-
-## Izrada materijala
-
-Quarto gradi stranice iz QMD izvora. PDF i web priručnik koriste iste
-tekstove poglavlja. Upute za gradnju, cijeli R postupak i objavu nalaze se
-u README.md. Osnovni primjeri rade i kao običan tekst s prikazanim odgovorima.
+Quarto gradi web, a PDF koristi iste tekstove poglavlja kao web priručnik.
+Upute za gradnju, cijeli R postupak i objavu nalaze se u README.md.

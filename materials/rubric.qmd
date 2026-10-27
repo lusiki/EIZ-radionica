@@ -1,16 +1,18 @@
 ---
 title: "Razgovor na kraju"
-subtitle: "Što biste htjeli isprobati sljedeće?"
+subtitle: "Pokažite nalaz i objasnite kako ste do njega došli"
 ---
 
-## Osvrnimo se na primjere {#rubrika}
+## Vratimo se pitanju {#rubrika}
 
-Prisjetite se jednog AI odgovora koji vam je pomogao i jednog koji ste
-popravili. Recite što ste u njemu uočili.
+Pogledajte svoj graf i zaključak. Što ste saznali o pitanju koje ste
+odabrali? Koji podatak najbolje podupire vaš odgovor? Kako se tumačenje
+promijenilo kada ste usporedili razdoblja?
 
 ## Usporedite iskustva {#završna-samoprovjera}
 
-Koji je primjer bio najjasniji? Što biste od toga htjeli isprobati na
-vlastitoj temi? O tim pitanjima možete razgovarati zajedno ili u paru.
+Pokažite jedan AI prijedlog koji ste prihvatili ili doradili i objasnite
+zašto. Zatim razgovarajte o tome što bi vam trebalo za sljedeći korak
+u istraživanju. Možete pokazati rezultat izravno iz svojeg razgovora.
 
 [Svi primjeri](exercises/index.qmd) · [Priručnik](../booklet/index.qmd)

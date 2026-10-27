@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -162,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../../materials/results.html">
- <span class="dropdown-text">Cijela analiza</span></a>
+ <span class="dropdown-text">Referentni rezultati</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../materials/rubric.html">
@@ -190,7 +155,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Na ovoj stranici</h2>
    
   <ul class="collapse">
-  <li><a href="#v11" id="toc-v11" class="nav-link active" data-scroll-target="#v11">1.1 Postavite istraživačko pitanje</a></li>
+  <li><a href="#podaci" id="toc-podaci" class="nav-link active" data-scroll-target="#podaci">Podaci i zajedničko pitanje</a></li>
+  <li><a href="#v11" id="toc-v11" class="nav-link" data-scroll-target="#v11">1.1 Postavite istraživačko pitanje</a></li>
   <li><a href="#v12" id="toc-v12" class="nav-link" data-scroll-target="#v12">1.2 Pronađite i provjerite izvore</a></li>
   <li><a href="#v13" id="toc-v13" class="nav-link" data-scroll-target="#v13">1.3 Provjerite i uredite sažetak</a></li>
   <li><a href="#v14" id="toc-v14" class="nav-link" data-scroll-target="#v14">1.4 Pripremite plan analize</a></li>
@@ -207,7 +173,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Svi primjeri na jednoj stranici</h1>
-<p class="subtitle lead">Razgovor · Jedan primjer · Vaš pokušaj</p>
+<p class="subtitle lead">120 opažanja · Jedan AI razgovor · Osam povezanih tema</p>
 </div>
 
 
@@ -224,54 +190,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Ovo su isti primjeri kao na stranicama obaju dana. Uz svaku temu je jedno pitanje za razgovor, gotov primjer i mali zadatak koji možete odmah isprobati. Otvorite jedan AI razgovor i koristite upite, tekst i brojke s ove stranice. Odgovore uspoređujemo u razgovoru.</p>
-<section id="v11" class="level2">
-<h2 class="anchored" data-anchor-id="v11">1.1 Postavite istraživačko pitanje</h2>
-<p><strong>Razgovor.</strong> Što biste htjeli saznati o inflaciji? Kako od široke teme dobiti pitanje na koje možemo odgovoriti?</p>
-<p><strong>Primjer.</strong> U AI razgovor pošaljite ovaj upit.</p>
-<blockquote class="blockquote">
-<p>Tema je inflacija u Hrvatskoj. Predloži jedno jednostavno istraživačko pitanje za razdoblje od siječnja do ožujka 2022.</p>
-</blockquote>
-<p>Jedan mogući odgovor glasi „Kako se godišnja stopa inflacije u Hrvatskoj mijenjala od siječnja do ožujka 2022.?” Usporedite temu i pitanje. Pitanje sada ima zemlju, razdoblje i ono što želimo pogledati.</p>
-<p><strong>Isprobajte.</strong> Pošaljite isti upit za 2019. godinu. Pročitajte pitanje koje dobijete i recite je li jasno što biste istraživali.</p>
-</section>
-<section id="v12" class="level2">
-<h2 class="anchored" data-anchor-id="v12">1.2 Pronađite i provjerite izvore</h2>
-<p><strong>Razgovor.</strong> Kad AI navede neku činjenicu, kako možemo provjeriti odakle dolazi?</p>
-<p><strong>Primjer.</strong> Pošaljite ovaj upit.</p>
-<blockquote class="blockquote">
-<p>Koliko često Eurostat objavljuje podatke o inflaciji mjerene HICP-om? Odgovori jednom rečenicom i navedi službeni izvor.</p>
-</blockquote>
-<p>Otvorite <a href="https://ec.europa.eu/eurostat/web/hicp/information-data">Eurostatovo objašnjenje HICP-a</a>. U dijelu <strong>Data release</strong> piše da se podaci o inflaciji objavljuju mjesečno. Usporedite to s AI odgovorom.</p>
-<p><strong>Isprobajte.</strong> Na istoj stranici, u dijelu <strong>Indices and rates of change</strong>, pronađite godišnju i mjesečnu stopu promjene. Recite koje dvije riječi u engleskom tekstu razlikuju te stope.</p>
-</section>
-<section id="v13" class="level2">
-<h2 class="anchored" data-anchor-id="v13">1.3 Provjerite i uredite sažetak</h2>
-<p><strong>Razgovor.</strong> Kako jedna promijenjena riječ može promijeniti značenje broja?</p>
-<p><strong>Primjer.</strong> Godišnja stopa uspoređuje cijene s istim mjesecom prethodne godine. Pošaljite ovaj namjerno pogrešan primjer AI-ju.</p>
-<blockquote class="blockquote">
-<p>Godišnja stopa HICP-a u ožujku 2022. bila je 7,3 %. Ispravi rečenicu „Cijene su u ožujku porasle 7,3 % u odnosu na veljaču.”</p>
-</blockquote>
-<p>Ispravak glasi „Cijene mjerene HICP-om u ožujku 2022. bile su 7,3 % više nego u ožujku 2021.” Pogledajte koji je dio usporedbe promijenjen.</p>
-<p><strong>Isprobajte.</strong> Zatražite ispravak ove druge rečenice.</p>
-<blockquote class="blockquote">
-<p>Saldo očekivanja iznosi 55,5 bodova i sažima odgovore ankete. Ispravi rečenicu „Potrošači očekuju inflaciju od 55,5 %.”</p>
-</blockquote>
-<p>Usporedite dobivenu rečenicu s opisom salda u upitu.</p>
-</section>
-<section id="v14" class="level2">
-<h2 class="anchored" data-anchor-id="v14">1.4 Pripremite plan analize</h2>
-<p><strong>Razgovor.</strong> Što bismo prvo napravili kad pred sobom imamo tri broja?</p>
-<p><strong>Primjer.</strong> Pošaljite ovaj upit.</p>
-<blockquote class="blockquote">
-<p>Imam godišnje stope inflacije u Hrvatskoj za siječanj, veljaču i ožujak 2022. Predloži tri jednostavna koraka za opis njihova kretanja.</p>
-</blockquote>
-<p>Jedan plan može biti „Pogledati vrijednosti, izračunati njihov prosjek i opisati promjenu.” Zajedno prođite kroz ta tri koraka.</p>
-<p><strong>Isprobajte.</strong> Zatražite plan za uže pitanje „Kako se stopa inflacije promijenila između siječnja i ožujka 2022.?” Usporedite što se u planu promijenilo.</p>
-</section>
-<section id="v21" class="level2">
-<h2 class="anchored" data-anchor-id="v21">2.1 Upoznajte i provjerite podatke</h2>
-<p><strong>Razgovor.</strong> Što znači jedan redak ove tablice? U kojim su jedinicama dva broja?</p>
+<p>Ovdje su iste aktivnosti kao na stranicama obaju dana. Svaka počinje razgovorom, pokazuje jedan primjer i daje zadatak koji možete prilagoditi svojem pitanju. Preuzmite CSV i dodajte ga jednom u AI razgovor koji može izvršavati analizu. U tom razgovoru ostaju plan, grafovi, tablice i zaključak.</p>
+<section id="podaci" class="level2">
+<h2 class="anchored" data-anchor-id="podaci">Podaci i zajedničko pitanje</h2>
+<p>Radimo sa <strong>120 mjesečnih opažanja za Hrvatsku od 2015. do 2024.</strong> Stupac <code>hicp_yoy_pct</code> sadrži godišnju stopu HICP-a u postocima. Stupac <code>expectations_balance</code> sadrži saldo odgovora potrošača o kretanju cijena u sljedećih 12 mjeseci, izražen u bodovima salda. Podaci su spremljeni 26. listopada 2026.</p>
+<p><a href="../../data/processed/croatia_inflation.csv" class="btn-workshop">Preuzmite CSV sa 120 opažanja</a></p>
+<p><strong>Kako su se inflacija i saldo očekivanja kretali od 2015. do 2024. i koliko je njihova povezanost ovisila o razdoblju?</strong></p>
+<details>
+<summary>
+Pogledajte svih 120 mjeseci
+</summary>
+<p>Prikazane su dvije mjere koje analiziramo. CSV sadrži i zemlju, šifre jedinica i oznake statusa.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -282,69 +211,752 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>Siječanj 2022.</td>
+<td>2015-01</td>
+<td style="text-align: right;">-0,6</td>
+<td style="text-align: right;">-4,2</td>
+</tr>
+<tr class="even">
+<td>2015-02</td>
+<td style="text-align: right;">-0,4</td>
+<td style="text-align: right;">2,0</td>
+</tr>
+<tr class="odd">
+<td>2015-03</td>
+<td style="text-align: right;">0,0</td>
+<td style="text-align: right;">0,0</td>
+</tr>
+<tr class="even">
+<td>2015-04</td>
+<td style="text-align: right;">-0,1</td>
+<td style="text-align: right;">-2,2</td>
+</tr>
+<tr class="odd">
+<td>2015-05</td>
+<td style="text-align: right;">0,0</td>
+<td style="text-align: right;">7,2</td>
+</tr>
+<tr class="even">
+<td>2015-06</td>
+<td style="text-align: right;">0,1</td>
+<td style="text-align: right;">6,8</td>
+</tr>
+<tr class="odd">
+<td>2015-07</td>
+<td style="text-align: right;">-0,2</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2015-08</td>
+<td style="text-align: right;">-0,1</td>
+<td style="text-align: right;">7,6</td>
+</tr>
+<tr class="odd">
+<td>2015-09</td>
+<td style="text-align: right;">-0,5</td>
+<td style="text-align: right;">1,4</td>
+</tr>
+<tr class="even">
+<td>2015-10</td>
+<td style="text-align: right;">-0,5</td>
+<td style="text-align: right;">1,7</td>
+</tr>
+<tr class="odd">
+<td>2015-11</td>
+<td style="text-align: right;">-0,4</td>
+<td style="text-align: right;">3,5</td>
+</tr>
+<tr class="even">
+<td>2015-12</td>
+<td style="text-align: right;">-0,3</td>
+<td style="text-align: right;">-4,9</td>
+</tr>
+<tr class="odd">
+<td>2016-01</td>
+<td style="text-align: right;">-0,2</td>
+<td style="text-align: right;">-5,0</td>
+</tr>
+<tr class="even">
+<td>2016-02</td>
+<td style="text-align: right;">-0,6</td>
+<td style="text-align: right;">-8,0</td>
+</tr>
+<tr class="odd">
+<td>2016-03</td>
+<td style="text-align: right;">-0,9</td>
+<td style="text-align: right;">1,0</td>
+</tr>
+<tr class="even">
+<td>2016-04</td>
+<td style="text-align: right;">-0,9</td>
+<td style="text-align: right;">0,1</td>
+</tr>
+<tr class="odd">
+<td>2016-05</td>
+<td style="text-align: right;">-1,2</td>
+<td style="text-align: right;">3,5</td>
+</tr>
+<tr class="even">
+<td>2016-06</td>
+<td style="text-align: right;">-1,2</td>
+<td style="text-align: right;">1,4</td>
+</tr>
+<tr class="odd">
+<td>2016-07</td>
+<td style="text-align: right;">-1,1</td>
+<td style="text-align: right;">-0,5</td>
+</tr>
+<tr class="even">
+<td>2016-08</td>
+<td style="text-align: right;">-1,5</td>
+<td style="text-align: right;">-1,1</td>
+</tr>
+<tr class="odd">
+<td>2016-09</td>
+<td style="text-align: right;">-0,7</td>
+<td style="text-align: right;">-3,5</td>
+</tr>
+<tr class="even">
+<td>2016-10</td>
+<td style="text-align: right;">-0,3</td>
+<td style="text-align: right;">-1,1</td>
+</tr>
+<tr class="odd">
+<td>2016-11</td>
+<td style="text-align: right;">0,2</td>
+<td style="text-align: right;">11,3</td>
+</tr>
+<tr class="even">
+<td>2016-12</td>
+<td style="text-align: right;">0,7</td>
+<td style="text-align: right;">6,6</td>
+</tr>
+<tr class="odd">
+<td>2017-01</td>
+<td style="text-align: right;">0,9</td>
+<td style="text-align: right;">9,9</td>
+</tr>
+<tr class="even">
+<td>2017-02</td>
+<td style="text-align: right;">1,4</td>
+<td style="text-align: right;">9,1</td>
+</tr>
+<tr class="odd">
+<td>2017-03</td>
+<td style="text-align: right;">1,1</td>
+<td style="text-align: right;">11,4</td>
+</tr>
+<tr class="even">
+<td>2017-04</td>
+<td style="text-align: right;">1,4</td>
+<td style="text-align: right;">15,3</td>
+</tr>
+<tr class="odd">
+<td>2017-05</td>
+<td style="text-align: right;">1,0</td>
+<td style="text-align: right;">15,1</td>
+</tr>
+<tr class="even">
+<td>2017-06</td>
+<td style="text-align: right;">1,1</td>
+<td style="text-align: right;">8,9</td>
+</tr>
+<tr class="odd">
+<td>2017-07</td>
+<td style="text-align: right;">1,2</td>
+<td style="text-align: right;">11,3</td>
+</tr>
+<tr class="even">
+<td>2017-08</td>
+<td style="text-align: right;">1,5</td>
+<td style="text-align: right;">11,2</td>
+</tr>
+<tr class="odd">
+<td>2017-09</td>
+<td style="text-align: right;">1,6</td>
+<td style="text-align: right;">16,3</td>
+</tr>
+<tr class="even">
+<td>2017-10</td>
+<td style="text-align: right;">1,6</td>
+<td style="text-align: right;">17,9</td>
+</tr>
+<tr class="odd">
+<td>2017-11</td>
+<td style="text-align: right;">1,6</td>
+<td style="text-align: right;">19,0</td>
+</tr>
+<tr class="even">
+<td>2017-12</td>
+<td style="text-align: right;">1,3</td>
+<td style="text-align: right;">21,1</td>
+</tr>
+<tr class="odd">
+<td>2018-01</td>
+<td style="text-align: right;">1,2</td>
+<td style="text-align: right;">16,3</td>
+</tr>
+<tr class="even">
+<td>2018-02</td>
+<td style="text-align: right;">0,9</td>
+<td style="text-align: right;">18,8</td>
+</tr>
+<tr class="odd">
+<td>2018-03</td>
+<td style="text-align: right;">1,2</td>
+<td style="text-align: right;">18,5</td>
+</tr>
+<tr class="even">
+<td>2018-04</td>
+<td style="text-align: right;">1,4</td>
+<td style="text-align: right;">23,2</td>
+</tr>
+<tr class="odd">
+<td>2018-05</td>
+<td style="text-align: right;">1,8</td>
+<td style="text-align: right;">21,9</td>
+</tr>
+<tr class="even">
+<td>2018-06</td>
+<td style="text-align: right;">2,2</td>
+<td style="text-align: right;">21,1</td>
+</tr>
+<tr class="odd">
+<td>2018-07</td>
+<td style="text-align: right;">2,2</td>
+<td style="text-align: right;">17,9</td>
+</tr>
+<tr class="even">
+<td>2018-08</td>
+<td style="text-align: right;">2,1</td>
+<td style="text-align: right;">17,4</td>
+</tr>
+<tr class="odd">
+<td>2018-09</td>
+<td style="text-align: right;">1,6</td>
+<td style="text-align: right;">14,8</td>
+</tr>
+<tr class="even">
+<td>2018-10</td>
+<td style="text-align: right;">1,7</td>
+<td style="text-align: right;">18,3</td>
+</tr>
+<tr class="odd">
+<td>2018-11</td>
+<td style="text-align: right;">1,3</td>
+<td style="text-align: right;">14,5</td>
+</tr>
+<tr class="even">
+<td>2018-12</td>
+<td style="text-align: right;">1,0</td>
+<td style="text-align: right;">12,3</td>
+</tr>
+<tr class="odd">
+<td>2019-01</td>
+<td style="text-align: right;">0,6</td>
+<td style="text-align: right;">2,1</td>
+</tr>
+<tr class="even">
+<td>2019-02</td>
+<td style="text-align: right;">0,8</td>
+<td style="text-align: right;">8,5</td>
+</tr>
+<tr class="odd">
+<td>2019-03</td>
+<td style="text-align: right;">1,1</td>
+<td style="text-align: right;">16,1</td>
+</tr>
+<tr class="even">
+<td>2019-04</td>
+<td style="text-align: right;">0,8</td>
+<td style="text-align: right;">19,5</td>
+</tr>
+<tr class="odd">
+<td>2019-05</td>
+<td style="text-align: right;">1,0</td>
+<td style="text-align: right;">18,0</td>
+</tr>
+<tr class="even">
+<td>2019-06</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">10,4</td>
+</tr>
+<tr class="odd">
+<td>2019-07</td>
+<td style="text-align: right;">0,9</td>
+<td style="text-align: right;">17,1</td>
+</tr>
+<tr class="even">
+<td>2019-08</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">22,6</td>
+</tr>
+<tr class="odd">
+<td>2019-09</td>
+<td style="text-align: right;">0,6</td>
+<td style="text-align: right;">16,1</td>
+</tr>
+<tr class="even">
+<td>2019-10</td>
+<td style="text-align: right;">0,7</td>
+<td style="text-align: right;">18,6</td>
+</tr>
+<tr class="odd">
+<td>2019-11</td>
+<td style="text-align: right;">0,8</td>
+<td style="text-align: right;">17,1</td>
+</tr>
+<tr class="even">
+<td>2019-12</td>
+<td style="text-align: right;">1,3</td>
+<td style="text-align: right;">16,9</td>
+</tr>
+<tr class="odd">
+<td>2020-01</td>
+<td style="text-align: right;">1,8</td>
+<td style="text-align: right;">16,7</td>
+</tr>
+<tr class="even">
+<td>2020-02</td>
+<td style="text-align: right;">1,2</td>
+<td style="text-align: right;">19,9</td>
+</tr>
+<tr class="odd">
+<td>2020-03</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">24,4</td>
+</tr>
+<tr class="even">
+<td>2020-04</td>
+<td style="text-align: right;">-0,1</td>
+<td style="text-align: right;">20,3</td>
+</tr>
+<tr class="odd">
+<td>2020-05</td>
+<td style="text-align: right;">-0,7</td>
+<td style="text-align: right;">20,7</td>
+</tr>
+<tr class="even">
+<td>2020-06</td>
+<td style="text-align: right;">-0,4</td>
+<td style="text-align: right;">15,2</td>
+</tr>
+<tr class="odd">
+<td>2020-07</td>
+<td style="text-align: right;">-0,6</td>
+<td style="text-align: right;">20,2</td>
+</tr>
+<tr class="even">
+<td>2020-08</td>
+<td style="text-align: right;">-0,4</td>
+<td style="text-align: right;">17,7</td>
+</tr>
+<tr class="odd">
+<td>2020-09</td>
+<td style="text-align: right;">-0,3</td>
+<td style="text-align: right;">16,5</td>
+</tr>
+<tr class="even">
+<td>2020-10</td>
+<td style="text-align: right;">-0,2</td>
+<td style="text-align: right;">18,1</td>
+</tr>
+<tr class="odd">
+<td>2020-11</td>
+<td style="text-align: right;">0,0</td>
+<td style="text-align: right;">15,2</td>
+</tr>
+<tr class="even">
+<td>2020-12</td>
+<td style="text-align: right;">-0,3</td>
+<td style="text-align: right;">16,7</td>
+</tr>
+<tr class="odd">
+<td>2021-01</td>
+<td style="text-align: right;">0,0</td>
+<td style="text-align: right;">14,8</td>
+</tr>
+<tr class="even">
+<td>2021-02</td>
+<td style="text-align: right;">0,7</td>
+<td style="text-align: right;">14,7</td>
+</tr>
+<tr class="odd">
+<td>2021-03</td>
+<td style="text-align: right;">1,6</td>
+<td style="text-align: right;">20,7</td>
+</tr>
+<tr class="even">
+<td>2021-04</td>
+<td style="text-align: right;">2,1</td>
+<td style="text-align: right;">20,3</td>
+</tr>
+<tr class="odd">
+<td>2021-05</td>
+<td style="text-align: right;">2,4</td>
+<td style="text-align: right;">15,4</td>
+</tr>
+<tr class="even">
+<td>2021-06</td>
+<td style="text-align: right;">2,2</td>
+<td style="text-align: right;">23,0</td>
+</tr>
+<tr class="odd">
+<td>2021-07</td>
+<td style="text-align: right;">2,7</td>
+<td style="text-align: right;">29,4</td>
+</tr>
+<tr class="even">
+<td>2021-08</td>
+<td style="text-align: right;">3,1</td>
+<td style="text-align: right;">35,8</td>
+</tr>
+<tr class="odd">
+<td>2021-09</td>
+<td style="text-align: right;">3,5</td>
+<td style="text-align: right;">43,5</td>
+</tr>
+<tr class="even">
+<td>2021-10</td>
+<td style="text-align: right;">3,9</td>
+<td style="text-align: right;">43,4</td>
+</tr>
+<tr class="odd">
+<td>2021-11</td>
+<td style="text-align: right;">4,7</td>
+<td style="text-align: right;">39,7</td>
+</tr>
+<tr class="even">
+<td>2021-12</td>
+<td style="text-align: right;">5,2</td>
+<td style="text-align: right;">38,4</td>
+</tr>
+<tr class="odd">
+<td>2022-01</td>
 <td style="text-align: right;">5,5</td>
 <td style="text-align: right;">48,1</td>
 </tr>
 <tr class="even">
-<td>Veljača 2022.</td>
+<td>2022-02</td>
 <td style="text-align: right;">6,3</td>
 <td style="text-align: right;">53,0</td>
 </tr>
 <tr class="odd">
-<td>Ožujak 2022.</td>
+<td>2022-03</td>
 <td style="text-align: right;">7,3</td>
 <td style="text-align: right;">55,5</td>
 </tr>
+<tr class="even">
+<td>2022-04</td>
+<td style="text-align: right;">9,6</td>
+<td style="text-align: right;">47,5</td>
+</tr>
+<tr class="odd">
+<td>2022-05</td>
+<td style="text-align: right;">10,7</td>
+<td style="text-align: right;">53,1</td>
+</tr>
+<tr class="even">
+<td>2022-06</td>
+<td style="text-align: right;">12,1</td>
+<td style="text-align: right;">56,7</td>
+</tr>
+<tr class="odd">
+<td>2022-07</td>
+<td style="text-align: right;">12,7</td>
+<td style="text-align: right;">52,6</td>
+</tr>
+<tr class="even">
+<td>2022-08</td>
+<td style="text-align: right;">12,6</td>
+<td style="text-align: right;">49,0</td>
+</tr>
+<tr class="odd">
+<td>2022-09</td>
+<td style="text-align: right;">12,5</td>
+<td style="text-align: right;">36,8</td>
+</tr>
+<tr class="even">
+<td>2022-10</td>
+<td style="text-align: right;">12,7</td>
+<td style="text-align: right;">35,8</td>
+</tr>
+<tr class="odd">
+<td>2022-11</td>
+<td style="text-align: right;">12,9</td>
+<td style="text-align: right;">37,0</td>
+</tr>
+<tr class="even">
+<td>2022-12</td>
+<td style="text-align: right;">12,7</td>
+<td style="text-align: right;">34,3</td>
+</tr>
+<tr class="odd">
+<td>2023-01</td>
+<td style="text-align: right;">12,5</td>
+<td style="text-align: right;">26,8</td>
+</tr>
+<tr class="even">
+<td>2023-02</td>
+<td style="text-align: right;">11,7</td>
+<td style="text-align: right;">21,1</td>
+</tr>
+<tr class="odd">
+<td>2023-03</td>
+<td style="text-align: right;">10,6</td>
+<td style="text-align: right;">25,7</td>
+</tr>
+<tr class="even">
+<td>2023-04</td>
+<td style="text-align: right;">8,9</td>
+<td style="text-align: right;">18,6</td>
+</tr>
+<tr class="odd">
+<td>2023-05</td>
+<td style="text-align: right;">8,2</td>
+<td style="text-align: right;">19,9</td>
+</tr>
+<tr class="even">
+<td>2023-06</td>
+<td style="text-align: right;">8,3</td>
+<td style="text-align: right;">20,4</td>
+</tr>
+<tr class="odd">
+<td>2023-07</td>
+<td style="text-align: right;">8,0</td>
+<td style="text-align: right;">22,2</td>
+</tr>
+<tr class="even">
+<td>2023-08</td>
+<td style="text-align: right;">8,4</td>
+<td style="text-align: right;">17,3</td>
+</tr>
+<tr class="odd">
+<td>2023-09</td>
+<td style="text-align: right;">7,4</td>
+<td style="text-align: right;">19,2</td>
+</tr>
+<tr class="even">
+<td>2023-10</td>
+<td style="text-align: right;">6,7</td>
+<td style="text-align: right;">15,3</td>
+</tr>
+<tr class="odd">
+<td>2023-11</td>
+<td style="text-align: right;">5,5</td>
+<td style="text-align: right;">14,9</td>
+</tr>
+<tr class="even">
+<td>2023-12</td>
+<td style="text-align: right;">5,4</td>
+<td style="text-align: right;">16,2</td>
+</tr>
+<tr class="odd">
+<td>2024-01</td>
+<td style="text-align: right;">4,8</td>
+<td style="text-align: right;">15,5</td>
+</tr>
+<tr class="even">
+<td>2024-02</td>
+<td style="text-align: right;">4,8</td>
+<td style="text-align: right;">13,5</td>
+</tr>
+<tr class="odd">
+<td>2024-03</td>
+<td style="text-align: right;">4,9</td>
+<td style="text-align: right;">15,6</td>
+</tr>
+<tr class="even">
+<td>2024-04</td>
+<td style="text-align: right;">4,7</td>
+<td style="text-align: right;">8,9</td>
+</tr>
+<tr class="odd">
+<td>2024-05</td>
+<td style="text-align: right;">4,3</td>
+<td style="text-align: right;">14,7</td>
+</tr>
+<tr class="even">
+<td>2024-06</td>
+<td style="text-align: right;">3,5</td>
+<td style="text-align: right;">16,0</td>
+</tr>
+<tr class="odd">
+<td>2024-07</td>
+<td style="text-align: right;">3,3</td>
+<td style="text-align: right;">14,4</td>
+</tr>
+<tr class="even">
+<td>2024-08</td>
+<td style="text-align: right;">3,0</td>
+<td style="text-align: right;">15,6</td>
+</tr>
+<tr class="odd">
+<td>2024-09</td>
+<td style="text-align: right;">3,1</td>
+<td style="text-align: right;">17,0</td>
+</tr>
+<tr class="even">
+<td>2024-10</td>
+<td style="text-align: right;">3,6</td>
+<td style="text-align: right;">13,0</td>
+</tr>
+<tr class="odd">
+<td>2024-11</td>
+<td style="text-align: right;">4,0</td>
+<td style="text-align: right;">16,7</td>
+</tr>
+<tr class="even">
+<td>2024-12</td>
+<td style="text-align: right;">4,5</td>
+<td style="text-align: right;">20,8</td>
+</tr>
 </tbody>
 </table>
-<p>To su tri mjeseca iz podataka radionice za Hrvatsku. Godišnja stopa uspoređuje cijene s istim mjesecom prethodne godine. Saldo sažima odgovore potrošača o budućem kretanju cijena.</p>
-<p><strong>Primjer.</strong> Pročitajte prvi redak naglas. U siječnju 2022. godišnja stopa HICP-a iznosi 5,5 %, a saldo očekivanja 48,1 bod. Uz svaki broj izgovorite jedinicu.</p>
-<p><strong>Isprobajte.</strong> Na isti način objasnite redak za ožujak. Možete ga objasniti osobi pokraj sebe ili zatražiti AI objašnjenje i usporediti ga s tablicom.</p>
+</details>
+</section>
+<section id="v11" class="level2">
+<h2 class="anchored" data-anchor-id="v11">1.1 Postavite istraživačko pitanje</h2>
+<p><strong>Razgovor.</strong> Što bismo htjeli saznati o inflaciji i očekivanjima potrošača? Koji dio tog pitanja možemo istražiti s dvije mjesečne serije za Hrvatsku?</p>
+<p><strong>Primjer.</strong> Pogledajte tablicu sa 120 mjeseci na ovoj stranici. U istom AI razgovoru u koji ste dodali CSV pošaljite ovaj upit.</p>
+<blockquote class="blockquote">
+<p>U priloženom CSV-u imam 120 mjesečnih opažanja za Hrvatsku od 2015. do 2024. Stupac hicp_yoy_pct sadrži godišnju stopu HICP-a u postocima, a expectations_balance anketni saldo očekivanih promjena cijena u bodovima. Od teme „inflacija i očekivanja” predloži jedno jasno pitanje za opisnu analizu. Objasni kako na njega možemo odgovoriti ovim podacima.</p>
+</blockquote>
+<p>Jedno pitanje glasi „Kako su se inflacija i saldo očekivanja kretali od 2015. do 2024. i koliko je njihova povezanost ovisila o razdoblju?” Usporedite prijedlog s onim što stupci stvarno mjere.</p>
+<p><strong>Isprobajte.</strong> Predložite svoje pitanje o određenom razdoblju ili obrascu. Možete se usredotočiti na promjene tijekom 2020.–2024. ili na usporedbu ranijih i kasnijih godina. Zatražite AI komentar i odaberite pitanje koje možete istražiti ovim stupcima. Objasnite što biste gledali u podacima.</p>
+</section>
+<section id="v12" class="level2">
+<h2 class="anchored" data-anchor-id="v12">1.2 Pronađite i provjerite izvore</h2>
+<p><strong>Razgovor.</strong> Što točno uspoređujemo kada uspoređujemo inflaciju i očekivanja? Kako definicija pokazatelja mijenja ono što možemo zaključiti?</p>
+<p><strong>Primjer.</strong> Otvorite <a href="https://ec.europa.eu/eurostat/web/hicp/information-data">Eurostatov opis HICP-a</a>. U odjeljku <strong>Indices and rates of change</strong> pronađite godišnju stopu promjene. Povežite je sa stupcem <code>hicp_yoy_pct</code> i oznakom <code>RCH_A</code> u našem CSV-u. Zatim u AI razgovoru zatražite objašnjenje.</p>
+<blockquote class="blockquote">
+<p>U našem CSV-u hicp_yoy_pct predstavlja godišnju stopu promjene HICP-a, a podaci se bilježe svaki mjesec. Objasni što znači vrijednost 7,3 % za ožujak 2022. Navedi s kojim se mjesecom uspoređuju cijene i poveži objašnjenje s Eurostatovim opisom mjere.</p>
+</blockquote>
+<p>Cijene mjerene HICP-om uspoređujemo s ožujkom 2021. Mjesečna učestalost i godišnja stopa opisuju dvije različite značajke istog stupca.</p>
+<p><strong>Isprobajte.</strong> Otvorite <a href="https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en">metodologiju ankete Europske komisije</a>. Pronađite <strong>Consumer Survey</strong>, pitanje <strong>CONS_006</strong>, te odjeljak <strong>Balances</strong>. Objasnite što mjeri <code>expectations_balance</code>, na koje se razdoblje pitanje odnosi i što znače bodovi salda. Usporedite svoje objašnjenje s AI odgovorom i recite kako biste označili tu mjeru na grafu.</p>
+</section>
+<section id="v13" class="level2">
+<h2 class="anchored" data-anchor-id="v13">1.3 Provjerite i uredite sažetak</h2>
+<p><strong>Razgovor.</strong> Kako prepoznati uvjerljiv odlomak koji tvrdi više nego što podaci pokazuju?</p>
+<p><strong>Primjer.</strong> Pogledajte ovu <strong>namjerno pogrešnu tvrdnju</strong>.</p>
+<blockquote class="blockquote">
+<p>Korelacija od približno 0,70 dokazuje da očekivanja potrošača uzrokuju inflaciju.</p>
+</blockquote>
+<p>U AI razgovoru zatražite ispravak i objašnjenje. Usporedba vrijednosti iz istog mjeseca pokazuje pozitivnu linearnu povezanost. Za uzročni zaključak treba zasebno istražiti moguća objašnjenja tog odnosa.</p>
+<p><strong>Isprobajte.</strong> Pročitajte ovaj <strong>namjerno pogrešan sažetak</strong>. Najprije predložite što biste promijenili, a zatim zatražite AI reviziju.</p>
+<blockquote class="blockquote">
+<p>U uzorku od 120 hrvatskih kućanstava očekivana inflacija 2022. iznosila je prosječno 46,62 %. Korelacija s ostvarenom inflacijom od približno 0,70 pokazuje da su potrošači uspješno predvidjeli buduće cijene. Isti zaključak vrijedi za svako razdoblje od 2015. do 2024.</p>
+</blockquote>
+<p>Za provjeru koristite ove podatke. Imamo <strong>120 mjeseci</strong> za Hrvatsku. Godišnji prosjek <strong>salda</strong> za 2022. iznosi <strong>46,62 boda</strong>. Korelacija od približno <strong>0,6985</strong> izračunana je iz vrijednosti dviju mjera u <strong>istom mjesecu</strong> za cijelo razdoblje. Povezanost po podrazdobljima provjerit ćemo u temi 2.3.</p>
+<p>Uredite sažetak u tri ili četiri rečenice i objasnite koje ste tvrdnje promijenili. Obratite pozornost na uzorak, jedinicu, vremensku usporedbu i opseg zaključka.</p>
+</section>
+<section id="v14" class="level2">
+<h2 class="anchored" data-anchor-id="v14">1.4 Pripremite plan analize</h2>
+<p><strong>Razgovor.</strong> Koji bi nam graf ili usporedba pomogli odgovoriti na odabrano pitanje? Što bismo iz njih mogli saznati?</p>
+<p><strong>Primjer.</strong> U istom razgovoru zatražite plan za zajedničko pitanje.</p>
+<blockquote class="blockquote">
+<p>Želim opisati kretanje inflacije i salda očekivanja u Hrvatskoj od 2015. do 2024. i usporediti njihovu povezanost kroz vrijeme. Koristi naš CSV sa 120 mjeseci. Predloži četiri koraka analize. Za svaki objasni koji će rezultat dati i kako taj rezultat odgovara na pitanje.</p>
+</blockquote>
+<p>Prođite kroz prijedlog. Izvediv slijed je pregled podataka, dva vremenska grafa i godišnji sažeci, usporedba razdoblja te zaključak. Objasnite zašto dvije mjere s različitim jedinicama prikazujemo odvojeno.</p>
+<p><strong>Isprobajte.</strong> Prilagodite plan svojem pitanju iz teme 1.1. Odaberite razdoblje, graf i usporedbu koji mu odgovaraju. Možete, primjerice, usredotočiti graf na 2020.–2024. ili usporediti ranijih i kasnijih pet godina. U razgovoru objasnite jedan izbor i jednu granicu svojeg zaključka.</p>
+<p>Pitanje i plan ostaju u istom AI razgovoru. Drugi dan iz tog plana izrađujemo analizu.</p>
+</section>
+<section id="v21" class="level2">
+<h2 class="anchored" data-anchor-id="v21">2.1 Upoznajte i provjerite podatke</h2>
+<p><strong>Razgovor.</strong> Što bismo provjerili prije nego što od ovih podataka zatražimo graf ili izračun?</p>
+<p><strong>Primjer.</strong> Nastavite u razgovoru s učitanim CSV-om. Zatražite početni pregled.</p>
+<blockquote class="blockquote">
+<p>Učitaj priloženi CSV i prikaži prvih i posljednjih pet redaka. Navedi broj redaka, nazive stupaca i raspon mjeseci. Objasni što predstavlja jedan redak te jedinice stupaca hicp_yoy_pct i expectations_balance. Koristi stvarni sadržaj datoteke.</p>
+</blockquote>
+<p>Usporedite prikaz sa svih 120 mjeseci na ovoj stranici. Jedan redak je jedan mjesec u Hrvatskoj. Prvi je 2015-01, a posljednji 2024-12. U CSV-u su i šifre jedinica te oznake statusa podataka.</p>
+<p><strong>Isprobajte.</strong> Zatražite provjeru potpunosti tablice.</p>
+<blockquote class="blockquote">
+<p>Provjeri jesu li mjeseci jedinstveni i uzastopni od 2015-01 do 2024-12. Prikaži broj nedostajućih vrijednosti u hicp_yoy_pct i expectations_balance. Prazne oznake hicp_flag i expectations_flag znače da dodatni status nije naveden. Sačuvaj sva opažanja i pokaži kod koji si izvršio.</p>
+</blockquote>
+<p>Pogledajte nalaz i objasnite bi li podaci bili spremni za analizu. Očekujemo <strong>120 različitih uzastopnih mjeseci</strong>, <strong>0 duplikata</strong> i <strong>0 praznina u dvjema brojčanim serijama</strong>. Usporedite nekoliko prikazanih redaka s tablicom na stranici, uključujući neki koji nije na početku.</p>
 </section>
 <section id="v22" class="level2">
 <h2 class="anchored" data-anchor-id="v22">2.2 Dopunite i objasnite kod</h2>
-<p><strong>Razgovor.</strong> Možemo li iz dva retka koda razumjeti što se računa?</p>
-<p><strong>Primjer.</strong> Kopirajte ovaj R kod u AI razgovor i dodajte „Objasni svaki redak.”</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>inflacija <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.5</span>, <span class="fl">6.3</span>, <span class="fl">7.3</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(inflacija)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Prvi redak sadrži tri godišnje stope iz tablice. Drugi računa njihov prosjek, približno <strong>6,37 %</strong>. U kodu decimalni broj pišemo s točkom. Ovdje računamo prosjek triju mjesečnih godišnjih stopa.</p>
-<p><strong>Isprobajte.</strong> Zatražite od AI-ja da kod promijeni tako da pokaže najveću vrijednost. Pogledajte koja se riječ promijenila i usporedite rezultat s najvećim brojem u tablici.</p>
+<p><strong>Razgovor.</strong> Kako prikazati dvije mjere da možemo usporediti njihovo kretanje i pritom jasno vidjeti njihove jedinice?</p>
+<p><strong>Primjer.</strong> Zatražite analizu učitanog skupa.</p>
+<blockquote class="blockquote">
+<p>Iz našeg CSV-a izradi dva vremenska grafa jedan iznad drugoga, sa zajedničkom osi mjeseci od 2015-01 do 2024-12. Na prvom prikaži hicp_yoy_pct u postocima, a na drugom expectations_balance u bodovima salda. Zatim napravi godišnju tablicu s prosjekom svake mjere i brojem mjeseci. Svaka godina treba imati 12 mjeseci. Prosjek HICP-a nazovi prosjekom mjesečnih godišnjih stopa. Pokreni kod i prikaži grafove, tablicu i kod ovdje u razgovoru. Uz rezultate navedi Eurostat i DG ECFIN te datum preuzimanja podataka 26. listopada 2026.</p>
+</blockquote>
+<p>Pogledajte razdoblja rasta i pada. Otvorite dio koda koji grupira podatke po godini i zatražite njegovo objašnjenje. Provjerite oznake osi i broj mjeseci u godišnjoj tablici.</p>
+<p><strong>Isprobajte.</strong> Prilagodite prikaz svojem pitanju. Primjerice, zatražite grafove samo za 2020.–2024., s jasno označenim godinama. Zadržite cijeli učitani skup za kasnije usporedbe. Pogledajte koji se dio koda promijenio i objasnite jedan obrazac koji se sada lakše vidi.</p>
+<p>U godišnjoj tablici za 2022. očekujemo <strong>10,63 %</strong> za prosjek mjesečnih godišnjih stopa HICP-a i <strong>46,62 boda</strong> za prosjek salda, uz <strong>12 mjeseci</strong>. To su dvije različite mjere. Svaku čitamo u njezinoj jedinici.</p>
 <details>
 <summary>
-Pogledajte rješenje
+Pogledajte referentni graf
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>inflacija <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.5</span>, <span class="fl">6.3</span>, <span class="fl">7.3</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(inflacija)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>max</code> daje <strong>7,3 %</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../results/inflation_expectations.svg" class="img-fluid figure-img"></p>
+<figcaption>Godišnja stopa HICP-a i saldo očekivanja u Hrvatskoj za svih 120 mjeseci, na odvojenim osima.</figcaption>
+</figure>
+</div>
+<p>Izvori su Eurostat i DG ECFIN. Podaci su preuzeti 26. listopada 2026. Vlastita obrada.</p>
 </details>
 </section>
 <section id="v23" class="level2">
 <h2 class="anchored" data-anchor-id="v23">2.3 Ponovite analizu od početka</h2>
-<p><strong>Razgovor.</strong> Kako bismo sami provjerili prosjek koji je AI izračunao?</p>
-<p><strong>Primjer.</strong> Pošaljite sve podatke i postupak u jednoj poruci.</p>
+<p><strong>Razgovor.</strong> Koliko se naš zaključak može promijeniti kada promijenimo promatrano razdoblje? Kako provjeriti broj koji je AI prikazao?</p>
+<p><strong>Primjer.</strong> Vratite se učitanom CSV-u i provjerite jedan godišnji rezultat.</p>
 <blockquote class="blockquote">
-<p>Godišnje stope HICP-a u Hrvatskoj za siječanj, veljaču i ožujak 2022. iznose 5,5 %, 6,3 % i 7,3 %. Izračunaj njihov aritmetički prosjek. Pokaži zbroj i dijeljenje.</p>
+<p>Iz izvornog CSV-a ponovno izdvoji svih 12 mjeseci 2022. Prikaži njihove vrijednosti hicp_yoy_pct, zbroj i prosjek. Pokreni izračun i usporedi ga s godišnjom tablicom koju smo već dobili.</p>
 </blockquote>
-<p>Provjerite račun na ekranu ili kalkulatorom. Zbroj je <strong>19,1</strong>, a <strong>19,1 / 3 = 6,3667</strong>, odnosno približno <strong>6,37 %</strong>.</p>
-<p><strong>Isprobajte.</strong> Ponovite isti postupak za siječanj, veljaču i ožujak 2019. Vrijednosti su <strong>0,6 %, 0,8 % i 1,1 %</strong>. Usporedite svoj račun s AI odgovorom.</p>
+<p>Zbroj je <strong>127,6</strong>, a prosjek <strong>127,6 / 12 = 10,6333</strong>, približno <strong>10,63 %</strong>. Usporedite izdvojene retke s tablicom podataka na ovoj stranici. Zatim pitajte što bi se izgubilo kada bismo cijelo desetljeće opisali jednim brojem.</p>
+<p><strong>Isprobajte.</strong> Usporedite povezanost u dvama unaprijed odabranim razdobljima.</p>
+<blockquote class="blockquote">
+<p>Ponovno kreni od svih 120 redaka izvornog CSV-a. Izračunaj Pearsonovu korelaciju između hicp_yoy_pct i expectations_balance za cijelo razdoblje, za 2015.–2019. te za 2020.–2024. Poveži vrijednosti iz istog mjeseca. Za svaki izračun prikaži broj opažanja i izvršeni kod. Usporedi rezultate s vremenskim grafovima i opiši razlike.</p>
+</blockquote>
+<p>Objasnite daje li jedna korelacija za cijelo razdoblje dovoljan opis. Za zajedničku usporedbu koristimo ista dva podrazdoblja, a zatim nalaz povežite sa svojim pitanjem.</p>
 <details>
 <summary>
-Pogledajte rješenje
+Pogledajte referentne rezultate
 </summary>
-<p>Zbroj je <strong>2,5</strong>. Dijeljenjem s tri dobivamo <strong>0,8333</strong>, odnosno približno <strong>0,83 %</strong>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Razdoblje</th>
+<th style="text-align: right;">Broj mjeseci</th>
+<th style="text-align: right;">Pearsonova korelacija</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2015.–2024.</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">0,6985</td>
+</tr>
+<tr class="even">
+<td>2015.–2019.</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0,8279</td>
+</tr>
+<tr class="odd">
+<td>2020.–2024.</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0,5342</td>
+</tr>
+</tbody>
+</table>
+<p>Pozitivna linearna povezanost u ovom je uzorku jača u ranijem podrazdoblju. To je opisna usporedba. Za provjeru statističke razlike, uzroka ili uspješnosti prognoze treba zaseban postupak koji uvažava vremensku ovisnost.</p>
 </details>
 </section>
 <section id="v24" class="level2">
 <h2 class="anchored" data-anchor-id="v24">2.4 Napišite i uredite zaključak</h2>
-<p><strong>Razgovor.</strong> Kako biste rezultat objasnili nekome tko upravo prvi put vidi ove brojke?</p>
-<p><strong>Primjer.</strong> U AI razgovoru zatražite jednostavniju verziju ove rečenice.</p>
+<p><strong>Razgovor.</strong> Koji je najvažniji nalaz za naše pitanje i kojim ga rezultatom možemo potkrijepiti?</p>
+<p><strong>Primjer.</strong> Pogledajte nacrt koji se oslanja na provjerenu godišnju tablicu.</p>
 <blockquote class="blockquote">
-<p>Napiši jednostavnije uz iste brojke i značenje. „U promatranom razdoblju zabilježeno je povećanje godišnje stope HICP-a u Hrvatskoj s 5,5 % u siječnju na 7,3 % u ožujku 2022.”</p>
+<p>Godišnji prosjek mjesečnih godišnjih stopa HICP-a u Hrvatskoj porastao je s 2,68 % u 2021. na 10,63 % u 2022., a prosjek salda očekivanja s 28,26 na 46,62 boda. Obje mjere u toj usporedbi rastu. Rezultat opisuje njihovo kretanje, a objašnjenje uzroka traži dodatne dokaze.</p>
 </blockquote>
-<p>Jedna verzija glasi „Godišnja stopa inflacije u Hrvatskoj porasla je s 5,5 % u siječnju na 7,3 % u ožujku 2022.” Usporedite brojke, razdoblje i značenje prije i poslije uređivanja.</p>
-<p><strong>Isprobajte.</strong> Sastavite jednu rečenicu za 2019. godinu, kada su stope iznosile 0,6 % u siječnju i 1,1 % u ožujku. Pošaljite je AI-ju i zatražite jasniju verziju. Odaberite onu koju vam je lakše razumjeti.</p>
-<p>Brojke dolaze iz <a href="../../data/dictionary.html">podataka radionice</a> za Hrvatsku, spremljenih 26. listopada 2026. Za dodatna objašnjenja otvorite <a href="../../booklet/index.html">priručnik</a>.</p>
+<p>Zatražite jasniju verziju uz iste brojke, jedinice i značenje. Usporedite izmjenu s tablicom. Posebno provjerite ostaje li jasno što godišnji prosjek sažima.</p>
+<p><strong>Isprobajte.</strong> U istom razgovoru napišite oko <strong>150 riječi</strong> koje odgovaraju na vaše pitanje iz prvog dana. Oslonite se na svoj graf i provjerene rezultate. Objasnite glavni obrazac, upotrijebite brojke koje ga podupiru i navedite jedno ograničenje. Zatim pošaljite ovaj upit uz svoj odlomak.</p>
+<blockquote class="blockquote">
+<p>Uredi ovaj odlomak da bude jasan i prirodan. Sačuvaj brojke, jedinice, razdoblje i granice zaključka. Koristi rezultate iz našeg razgovora. Objasni svaku promjenu koja bi mogla utjecati na značenje.</p>
+</blockquote>
+<p>Pročitajte završnu verziju uz graf i tablicu. Pokažite jedan nalaz i objasnite zašto ga smatrate uvjerljivim. Završni rezultat ostaje u razgovoru kao graf i kratak zaključak.</p>
+<p>Za provjeru otvorite <a href="../../materials/solutions.html">primjere odgovora</a> i <a href="../../materials/results.html">referentne rezultate</a>. <a href="../../booklet/index.html">Priručnik</a> objašnjava iste teme detaljnije. Ako alat trenutačno ne može izvršiti analizu, upotrijebite prikazane rezultate za usporedbu i razgovor.</p>
 
 
 </section>

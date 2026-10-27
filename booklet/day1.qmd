@@ -9,9 +9,10 @@ toc-title: "Sadržaj prvog dijela"
 [O priručniku](index.qmd) · [Cijeli PDF](../downloads/EIZ-prirucnik.pdf) ·
 [Kratki pregled prvog dana](../slides/day1.qmd)
 
-Svako poglavlje najprije podsjeća na kratki primjer iz radionice,
-a zatim objašnjava temu detaljnije. Dulje upite i postupke možete
-isprobati kasnije na vlastitom istraživanju. Dokumentacija alata provjerena je 26. listopada 2026.
+Svako poglavlje počinje aktivnošću sa stranice prvog dana. Na istom
+skupu od 120 mjeseci biramo pitanje, provjeravamo mjere, uređujemo sažetak
+i planiramo analizu. Daljnji tekst objašnjava razloge i mogućnosti za
+nastavak. Dokumentacija alata provjerena je 26. listopada 2026.
 
 {{< include _01-foundations.qmd >}}
 

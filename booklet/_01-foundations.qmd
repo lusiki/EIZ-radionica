@@ -2,11 +2,17 @@
 
 [Dan 1, tema 1.1](../slides/day1.qmd#blok-11) · [Vježba 1.1](../materials/exercises/index.qmd#v11)
 
-### Kratki primjer iz radionice
+### Primjer iz radionice
 
-Razgovaramo o razlici između teme i pitanja. AI-ju zadajemo inflaciju u Hrvatskoj od siječnja do ožujka 2022., zatim isti upit isprobavamo za 2019. Jedno jasno pitanje dovoljno je za ovaj pokušaj.
+**Razgovor.** Koje pitanje možemo istražiti s dvije mjesečne serije za Hrvatsku?
 
-Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+**Primjer.** Pogledamo svih 120 mjeseci i zatražimo od AI-ja da temu
+„inflacija i očekivanja” pretvori u opisno pitanje. Zajedničko pitanje
+odnosi se na kretanje mjera od 2015. do 2024. i povezanost u različitim razdobljima.
+
+**Isprobajte.** Odaberite vlastito pitanje o razdoblju ili obrascu.
+Zatražite komentar i objasnite koje biste stupce i prikaze koristili.
+Pitanje ostaje u razgovoru i vodi kasniju analizu.
 
 ### Od prazne stranice do istraživačkog pitanja
 
@@ -23,8 +29,7 @@ Za proširenu analizu opisani su R skripte, programski asistenti i bilježnice.
 Mogućnosti tih proizvoda preklapaju se. Odaberite dostupan alat i uvježbajte pronalaženje dokaza i objašnjavanje
 rezultata.
 
-Kratki primjeri izdvajaju nekoliko mjeseci iz šireg skupa za Hrvatsku.
-U cijelom skupu pratimo
+Tijekom oba dana koristimo cijeli skup za Hrvatsku. U njemu pratimo
 ostvarenu inflaciju i odgovore potrošača o očekivanim promjenama cijena
 od 2015. do 2024. Imamo dvije mjere i 120 mjeseci. Sve izračune možete
 ponoviti priloženim skriptama. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje
@@ -33,13 +38,14 @@ medijske pažnje.
 
 ### Odredite što želite saznati
 
-Pitanje za proširenu analizu glasi „Kako su se u Hrvatskoj od 2015. do 2024.
+Zajedničko početno pitanje glasi „Kako su se u Hrvatskoj od 2015. do 2024.
 kretali ostvarena inflacija i očekivanja potrošača o promjenama cijena?”
 U njemu su navedeni zemlja, razdoblje i dvije mjere. Iz tog pitanja
 možete odrediti koje izvore i podatke trebate pronaći.
 
-U kratkom primjeru 1.1 pitanje ograničavamo na tri mjeseca i jednu mjeru.
-Kasnije ga možete proširiti na dulje razdoblje i usporedbu dviju mjera.
+U temi 1.1 svatko odabire pitanje o određenom razdoblju ili obrascu.
+Cijeli skup ostaje dostupan za usporedbu. Odabrano pitanje vodi plan,
+graf i završni odlomak.
 
 ### Kako jezični model oblikuje odgovor
 

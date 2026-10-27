@@ -1,17 +1,27 @@
-**Razgovor.** Kako jedna promijenjena riječ može promijeniti značenje broja?
+**Razgovor.** Kako prepoznati uvjerljiv odlomak koji tvrdi više nego što
+podaci pokazuju?
 
-**Primjer.** Godišnja stopa uspoređuje cijene s istim mjesecom prethodne
-godine. Pošaljite ovaj namjerno pogrešan primjer AI-ju.
+**Primjer.** Pogledajte ovu **namjerno pogrešnu tvrdnju**.
 
-> Godišnja stopa HICP-a u ožujku 2022. bila je 7,3 %.
-> Ispravi rečenicu „Cijene su u ožujku porasle 7,3 % u odnosu na veljaču.”
+> Korelacija od približno 0,70 dokazuje da očekivanja potrošača uzrokuju inflaciju.
 
-Ispravak glasi „Cijene mjerene HICP-om u ožujku 2022. bile su 7,3 % više
-nego u ožujku 2021.” Pogledajte koji je dio usporedbe promijenjen.
+U AI razgovoru zatražite ispravak i objašnjenje. Usporedba vrijednosti
+iz istog mjeseca pokazuje pozitivnu linearnu povezanost. Za uzročni
+zaključak treba zasebno istražiti moguća objašnjenja tog odnosa.
 
-**Isprobajte.** Zatražite ispravak ove druge rečenice.
+**Isprobajte.** Pročitajte ovaj **namjerno pogrešan sažetak**. Najprije
+predložite što biste promijenili, a zatim zatražite AI reviziju.
 
-> Saldo očekivanja iznosi 55,5 bodova i sažima odgovore ankete.
-> Ispravi rečenicu „Potrošači očekuju inflaciju od 55,5 %.”
+> U uzorku od 120 hrvatskih kućanstava očekivana inflacija 2022. iznosila
+> je prosječno 46,62 %. Korelacija s ostvarenom inflacijom od približno
+> 0,70 pokazuje da su potrošači uspješno predvidjeli buduće cijene.
+> Isti zaključak vrijedi za svako razdoblje od 2015. do 2024.
 
-Usporedite dobivenu rečenicu s opisom salda u upitu.
+Za provjeru koristite ove podatke. Imamo **120 mjeseci** za Hrvatsku.
+Godišnji prosjek **salda** za 2022. iznosi **46,62 boda**. Korelacija od
+približno **0,6985** izračunana je iz vrijednosti dviju mjera u **istom mjesecu**
+za cijelo razdoblje. Povezanost po podrazdobljima provjerit ćemo u temi 2.3.
+
+Uredite sažetak u tri ili četiri rečenice i objasnite koje ste tvrdnje
+promijenili. Obratite pozornost na uzorak, jedinicu, vremensku usporedbu
+i opseg zaključka.

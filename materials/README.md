@@ -1,11 +1,12 @@
 # Primjeri i dodatni materijali
 
-activities/ sadrži osam kratkih primjera. Svaki ima pitanje za razgovor,
-jedan pokazani primjer i mali pokušaj. Stranice dana i exercises/index.qmd
-uključuju iste datoteke.
+activities/ sadrži osam aktivnosti i pregled svih 120 mjeseci.
+Svaka tema ima razgovor, pokazani primjer i vlastiti pokušaj.
+Stranice dana i exercises/index.qmd uključuju iste datoteke.
 
-solutions.qmd donosi kratke odgovore. rubric.qmd otvara završni razgovor.
-Za zajednički rad dovoljni su primjeri na stranici i jedan AI razgovor.
+solutions.qmd donosi primjere odgovora, a results.qmd referentnu analizu.
+Za rad se jednom učitava CSV u AI razgovor koji može izvršavati kod.
+Svi rezultati i zaključak ostaju u tom razgovoru.
 
-sources.qmd i results.qmd nude izvore i rezultate cijele analize.
-templates/ i examples/ služe dodatnom radu s priručnikom i punim skupom podataka.
+sources.qmd objašnjava izvore. rubric.qmd otvara završni razgovor.
+templates/ i examples/ služe daljnjem radu s priručnikom.

@@ -1,31 +1,40 @@
 ---
 title: "Spremni za početak"
-subtitle: "Otvorite stranicu dana i jedan AI razgovor"
+subtitle: "Jedan CSV, jedan AI razgovor i stranica dana"
 ---
 
 ## Što otvoriti
 
-Otvorite [prvi dan](../slides/day1.qmd) ili [drugi dan](../slides/day2.qmd)
-i AI razgovor koji inače koristite. Sve što treba za primjere nalazi se
-na stranici dana, upiti, kratki tekstovi, tablica i kod.
+Otvorite [prvi dan](../slides/day1.qmd) i AI razgovor koji podržava
+učitavanje CSV-a, izvršavanje koda i prikaz grafova. Preuzmite
+[podatke sa 120 opažanja](../data/processed/croatia_inflation.csv)
+i dodajte ih u taj razgovor. Datoteku možete dodati iz mape preuzimanja.
+Na stranici dana možete pogledati cijelu tablicu i kopirati sve upite.
 
-Možete raditi sami ili podijeliti ekran s osobom pokraj sebe. Ako AI alat
-trenutno nije dostupan, koristite prikazane odgovore i usporedite vlastite prijedloge.
+Drugi dan nastavljamo u istom razgovoru. Ako je sesija istekla,
+ponovno dodajte isti CSV. Plan, kod, tablice, grafovi i zaključak
+ostaju u razgovoru, gdje ih možete zajedno pregledati.
 
 ## Kako ćemo raditi
 
-Prvo razgovaramo o jednom pitanju. Zatim zajedno pogledamo jedan primjer.
-Nakon toga svatko isproba sličan mali zadatak i usporedimo što smo dobili.
+Prvo razgovaramo o pitanju. Zatim pogledamo jedan primjer, a nakon toga
+svatko prilagodi postupak svojem pitanju i objasni što je dobio.
+Možete raditi sami ili podijeliti ekran s osobom pokraj sebe.
 
-Za prvi dan biramo pitanje, provjeravamo izvor, popravljamo rečenicu i
-tražimo kratak plan. Drugi dan čitamo tri retka tablice, mijenjamo jednu
-naredbu, provjeravamo prosjek i uređujemo rečenicu o rezultatu.
+Prvi dan biramo pitanje, provjeravamo značenje mjera, popravljamo
+sažetak i planiramo analizu. Drugi dan koristimo svih 120 mjeseci,
+izrađujemo grafove i godišnje sažetke, uspoređujemo razdoblja i pišemo
+kratak zaključak. Završni rezultat je graf i odlomak u istom razgovoru.
 
-[Otvorite sve primjere na jednoj stranici](../materials/exercises/index.qmd){.btn-workshop}
+## Ako alat trenutačno ne može analizirati datoteku
 
-## Za kasnije istraživanje
+Pridružite se osobi čiji alat može izvršiti kod ili koristite pripremljeni
+graf i rezultate uz primjere. Možete razmotriti iste obrasce, provjeriti
+tvrdnje i sastaviti zaključak. [Referentni rezultati](../materials/results.qmd)
+dostupni su i zasebno.
 
-[Priručnik](../booklet/index.qmd) donosi šira objašnjenja.
-[Cijeli skup podataka](../data/dictionary.qmd) i
-[radni paket](../downloads/eiz-workshop.zip) dostupni su ako poželite
-provesti potpunu analizu u R-u. Upute za taj postupak nalaze se u paketu.
+## Za daljnji rad
+
+[Priručnik](../booklet/index.qmd) objašnjava teme detaljnije.
+Za rad u R-u dostupni su [radni paket](../downloads/eiz-workshop.zip)
+i upute u njemu. To je mogućnost za nastavak nakon zajedničkog rada u pregledniku.

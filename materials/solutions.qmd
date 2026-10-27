@@ -1,70 +1,114 @@
 ---
-title: "Odgovori uz kratke primjere"
-subtitle: "Iste teme kao na stranicama dana"
+title: "Primjeri odgovora"
+subtitle: "Provjera postupka i tumačenja na istim podacima"
 ---
 
-Ovdje možete pogledati odgovore na male zadatke iz radionice.
-Usporedite značenje odgovora i račun. Rečenice možete oblikovati vlastitim riječima.
+Ovi odgovori prate osam tema. Brojčane rezultate usporedite s njima,
+a vlastito pitanje i zaključak obrazložite prema onome što ste istražili.
 
 ## 1.1 Postavite istraživačko pitanje {#pitanje-i-pravila}
 
-„Kako se godišnja stopa inflacije u Hrvatskoj mijenjala od siječnja
-do ožujka 2019.?” Pitanje ima zemlju, razdoblje i ono što želimo pogledati.
+Jedno pitanje glasi „Kako su se inflacija i saldo očekivanja kretali
+u Hrvatskoj od 2015. do 2024. i koliko je njihova povezanost ovisila
+o razdoblju?” Uže pitanje može se odnositi na kretanje tijekom 2020.–2024.
+Odabrani stupci omogućuju opis kretanja i istodobne povezanosti.
+Pitanje o uzroku ili uspješnosti prognoze traži poseban postupak.
 
 ## 1.2 Pronađite i provjerite izvore {#dokazi}
 
-Na [Eurostatovoj stranici](https://ec.europa.eu/eurostat/web/hicp/information-data)
-u dijelu **Data release** piše da se podaci objavljuju mjesečno.
-U dijelu **Indices and rates of change** navedene su **annual rate of change**
-i **monthly rate of change**. Ključne riječi su **annual** i **monthly**.
+`hicp_yoy_pct` mjeri godišnju promjenu cijena. Vrijednost 7,3 % za ožujak
+2022. uspoređuje cijene s ožujkom 2021. Podatak bilježimo svaki mjesec.
+Vrste mjera opisane su na [Eurostatovoj stranici](https://ec.europa.eu/eurostat/web/hicp/information-data).
+
+`expectations_balance` sažima raspodjelu kvalitativnih odgovora potrošača
+o budućem kretanju cijena. Pitanje CONS_006 odnosi se na sljedećih
+12 mjeseci. Bodovi salda opisuju odnos kategorija odgovora. Na grafu
+koristimo oznaku „Saldo očekivanih promjena cijena, bodovi”.
+Pogledajte odjeljke Consumer Survey i Balances u
+[metodologiji Europske komisije](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en).
 
 ## 1.3 Provjerite i uredite sažetak {#pogrešan-sažetak}
 
-„Saldo očekivanja iznosi 55,5 bodova i sažima odgovore potrošača o budućem
-kretanju cijena.” Saldo je anketni pokazatelj izražen u bodovima.
+Jedna moguća ispravljena verzija glasi ovako.
 
-U pokazanom primjeru godišnja stopa od 7,3 % za ožujak 2022. uspoređuje
-cijene s ožujkom 2021.
+> Skup sadrži 120 mjesečnih opažanja za Hrvatsku od 2015. do 2024.
+> Prosjek salda očekivanih promjena cijena za 2022. iznosi 46,62 boda.
+> Korelacija između godišnje stope HICP-a i salda u istom mjesecu za
+> cijelo razdoblje iznosi približno 0,6985 i opisuje pozitivnu linearnu
+> povezanost. Za zaključke o prognoziranju i povezanosti u pojedinim
+> razdobljima treba provesti odgovarajuće dodatne usporedbe.
+
+Promijenjeni su jedinica opažanja, jedinica salda, tvrdnja o prognozi
+i tvrdnja koja jedan rezultat prenosi na svako razdoblje.
 
 ## 1.4 Pripremite plan analize {#plan}
 
-Za usporedbu siječnja i ožujka dovoljan je ovaj slijed.
-Pogledamo stopu u svakom mjesecu, izračunamo razliku i opišemo promjenu.
-Razlika između 7,3 % i 5,5 % iznosi **1,8 postotnih bodova**.
+Pregledamo mjesece i jedinice, izradimo dva vremenska grafa i godišnju
+tablicu, usporedimo 2015.–2019. s 2020.–2024. te napišemo odgovor na
+pitanje. Za fokus na kasnije razdoblje izradimo i graf samo za te godine.
+Odvojeni paneli čuvaju različite jedinice, a zajednička vremenska os
+olakšava usporedbu trenutka promjene.
 
 ## 2.1 Upoznajte i provjerite podatke {#audit}
 
-U ožujku 2022. godišnja stopa HICP-a iznosi **7,3 %**, a saldo očekivanja
-**55,5 bodova**. Svaki broj čitamo s njegovom jedinicom.
+Skup ima **120 redaka i 120 različitih uzastopnih mjeseci**, od
+**2015-01 do 2024-12**. Oba brojčana stupca imaju **0 nedostajućih
+vrijednosti**. Prazne oznake statusa podataka znače da dodatni status
+nije naveden. Svaka godina ima **12 mjeseci**.
+
+Provjera datuma razlikuje broj redaka od potpunosti kalendara.
+Značenje stupaca potvrđujemo opisom izvora i jedinicama u CSV-u.
 
 ## 2.2 Dopunite i objasnite kod {#primjer-izmjene}
 
-```r
-inflacija <- c(5.5, 6.3, 7.3)
-max(inflacija)
-```
+Grafovi dijele vremensku os, dok svaki ima svoju jedinicu na okomitoj
+osi. Godišnja tablica ima deset redaka. Za 2022. prosjek mjesečnih
+godišnjih stopa HICP-a iznosi **10,6333 %**, a prosjek salda **46,6167 bodova**.
+Za 2021. odgovarajući su prosjeci **2,675 %** i **28,2583 boda**.
+Zaokružene vrijednosti su 10,63 %, 46,62 boda, 2,68 % i 28,26 bodova.
 
-Funkciju `mean`, koja računa prosjek, zamijenili smo funkcijom `max`.
-Najveća vrijednost je **7,3 %**.
+Pri prilagodbi grafa na 2020.–2024. mijenja se odabir mjeseci za taj
+prikaz. Cijeli skup ostaje osnova daljnjih usporedbi. Godišnje sažimanje
+grupira retke po godini i uz prosjek provjerava broj mjeseci.
+
+[Pogledajte referentne grafove i godišnju tablicu](results.qmd).
 
 ## 2.3 Ponovite analizu od početka {#popravak}
 
-Za tri mjesečne godišnje stope iz 2022. račun je
-**(5,5 + 6,3 + 7,3) / 3 = 6,3667**, približno **6,37 %**.
+Dvanaest mjesečnih godišnjih stopa HICP-a za 2022. daje zbroj **127,6**.
+Prosjek iznosi **127,6 / 12 = 10,6333**, odnosno približno **10,63 %**.
+To je prosjek dvanaest mjesečnih godišnjih stopa. Promjena godišnjeg
+prosjeka indeksa računa se zasebno iz razina indeksa.
 
-Za tri mjesečne godišnje stope iz 2019. račun je
-**(0,6 + 0,8 + 1,1) / 3 = 0,8333**, približno **0,83 %**.
+| Razdoblje | Broj mjeseci | Pearsonova korelacija |
+|---|---:|---:|
+| 2015.–2024. | 120 | 0,6985 |
+| 2015.–2019. | 60 | 0,8279 |
+| 2020.–2024. | 60 | 0,5342 |
 
-Svaki rezultat sažima navedena tri mjeseca. Prosjek cijele godine
-računamo iz svih dvanaest mjesečnih vrijednosti.
+Povezanost u ranijem podrazdoblju jača je prema ovom opisnom pokazatelju.
+Jedna vrijednost za cijeli uzorak skriva tu razliku. Za ocjenu statističke
+razlike ili objašnjenje uzroka treba dodatna analiza koja uvažava
+vremensku ovisnost, zajedničke šokove i izbor razdoblja.
 
 ## 2.4 Napišite i uredite zaključak {#primjer-tumačenja}
 
-„Godišnja stopa inflacije u Hrvatskoj porasla je s 0,6 % u siječnju
-na 1,1 % u ožujku 2019.”
+Sljedeći odlomak odgovara na zajedničko pitanje. Vlastiti zaključak
+prilagodite svojem pitanju, grafu i rezultatima.
 
-Ta rečenica opisuje promjenu između dvaju mjeseci. O uzrocima promjene
-možemo postaviti novo istraživačko pitanje.
+> Usporedili smo godišnju stopu HICP-a i saldo očekivanih promjena cijena
+> u Hrvatskoj tijekom 120 mjeseci od 2015. do 2024. Vremenski grafovi
+> pokazuju kako se svaka mjera mijenjala, a godišnja tablica sažima njihovo
+> kretanje. Prosjek mjesečnih godišnjih stopa HICP-a porastao je s 2,68 %
+> u 2021. na 10,63 % u 2022. U istim godinama prosjek salda porastao je
+> s 28,26 na 46,62 boda. Povezanost dviju mjera ovisi o promatranom
+> razdoblju. Pearsonova korelacija iznosi približno 0,6985 za cijeli uzorak,
+> 0,8279 za 2015.–2019. i 0,5342 za 2020.–2024. Jedna korelacija za cijelo
+> desetljeće zato daje sažet pregled, dok usporedba podrazdoblja otkriva
+> drukčiju jačinu povezanosti. U svim izračunima uspoređujemo vrijednosti
+> iz istog mjeseca. Anketni saldo tumačimo kao pokazatelj raspodjele
+> odgovora o budućem kretanju cijena. Zajednički šokovi i vremenska
+> ovisnost ograničavaju tumačenje ovog opisnog odnosa. Za zaključke o
+> uzrocima ili točnosti prognoze potreban je zaseban istraživački postupak.
 
-[Svi primjeri](exercises/index.qmd) ·
-[Rezultati za cijelo razdoblje 2015.–2024.](results.qmd)
+[Svi primjeri](exercises/index.qmd) · [Priručnik](../booklet/index.qmd)

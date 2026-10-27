@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../materials/results.html">
- <span class="dropdown-text">Cijela analiza</span></a>
+ <span class="dropdown-text">Referentni rezultati</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../materials/rubric.html">
@@ -157,6 +157,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#dvije-serije-na-odvojenim-osima" id="toc-dvije-serije-na-odvojenim-osima" class="nav-link active" data-scroll-target="#dvije-serije-na-odvojenim-osima">Dvije serije na odvojenim osima</a></li>
   <li><a href="#provjerite-brojke" id="toc-provjerite-brojke" class="nav-link" data-scroll-target="#provjerite-brojke">Provjerite brojke</a></li>
+  <li><a href="#usporedba-podrazdoblja" id="toc-usporedba-podrazdoblja" class="nav-link" data-scroll-target="#usporedba-podrazdoblja">Usporedba podrazdoblja</a></li>
   <li><a href="#kako-protumačiti-nalaz" id="toc-kako-protumačiti-nalaz" class="nav-link" data-scroll-target="#kako-protumačiti-nalaz">Kako protumačiti nalaz</a></li>
   </ul>
 </nav>
@@ -167,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Referentni rezultati</h1>
-<p class="subtitle lead">Dodatni primjer sa svih 120 mjeseci</p>
+<p class="subtitle lead">Provjera analize svih 120 mjeseci</p>
 </div>
 
 
@@ -184,14 +185,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Ovdje je prikazana cijela analiza za samostalno istraživanje. Kratki primjeri sa stranice drugog dana koriste samo nekoliko mjeseci iz ovog skupa.</p>
+<p>Ovdje su referentni grafovi i brojke za zajedničku analizu. Usporedite ih s rezultatima iz svojeg AI razgovora. Koristimo isti CSV sa 120 mjeseci za Hrvatsku od 2015. do 2024.</p>
 <section id="dvije-serije-na-odvojenim-osima" class="level2">
 <h2 class="anchored" data-anchor-id="dvije-serije-na-odvojenim-osima">Dvije serije na odvojenim osima</h2>
 <p>Graf prikazuje 120 mjesečnih opažanja. Svaka ploha ima vlastitu jedinicu, a vremenska je os zajednička. Različite vrste linija ostaju raspoznatljive i bez boje. Uspoređujte kretanje kroz vrijeme. Visinu svake linije tumačite prema jedinici označenoj na njezinoj osi.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../results/inflation_expectations.svg" class="img-fluid figure-img"></p>
-<figcaption>Mjesečna stopa HICP-a i saldo očekivanja cijena u Hrvatskoj, 2015.–2024., na odvojenim osima i s različitim vrstama linija.</figcaption>
+<figcaption>Godišnja stopa HICP-a i saldo očekivanja cijena u Hrvatskoj, 2015.–2024., na odvojenim osima i s različitim vrstama linija.</figcaption>
 </figure>
 </div>
 <p>Podaci su iz Eurostata i DG ECFIN-a, preuzeti 26. listopada 2026. Vlastita obrada. Eurostat nije odgovoran za ovu obradu i tumačenje.</p>
@@ -267,6 +268,37 @@ ul.task-list li input[type="checkbox"] {
 <p>Istodobna korelacija cijelog uzorka (n = 120), <strong>0.6985</strong>.</p>
 <p>Godišnji prikaz koristi aritmetički prosjek mjesečnih godišnjih stopa i aritmetički prosjek mjesečnih salda. Svaka godina ima 12 opažanja. Za promjenu godišnjeg prosjeka indeksa potreban je zaseban izračun iz vrijednosti indeksa.</p>
 <p><a href="../results/annual_summary.csv">Potpuna godišnja tablica</a> · <a href="../results/audit.csv">Provjera podataka</a> · <a href="../results/correlations.csv">Korelacije i podrazdoblja</a></p>
+</section>
+<section id="usporedba-podrazdoblja" class="level2">
+<h2 class="anchored" data-anchor-id="usporedba-podrazdoblja">Usporedba podrazdoblja</h2>
+<p>Korelaciju računamo iz mjesečnih vrijednosti dviju mjera u istom mjesecu.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Razdoblje</th>
+<th style="text-align: right;">Broj mjeseci</th>
+<th style="text-align: right;">Pearsonova korelacija</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2015.–2024.</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">0,6985</td>
+</tr>
+<tr class="even">
+<td>2015.–2019.</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0,8279</td>
+</tr>
+<tr class="odd">
+<td>2020.–2024.</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0,5342</td>
+</tr>
+</tbody>
+</table>
+<p>Za provjeru prosjeka iz teme 2.3 zbroj 12 stopa HICP-a za 2022. iznosi 127,6. Dijeljenjem s 12 dobivamo približno 10,6333 %.</p>
 </section>
 <section id="kako-protumačiti-nalaz" class="level2">
 <h2 class="anchored" data-anchor-id="kako-protumačiti-nalaz">Kako protumačiti nalaz</h2>

@@ -58,7 +58,7 @@ for path,p in pages.items():
             q=pages.get(target)
             if q is None: q=Page(target.read_text(encoding="utf-8"))
             if unquote(u.fragment) not in q.ids: errors.append(f"{path.relative_to(site)}: missing anchor {link}")
-with zipfile.ZipFile(root/"downloads/eiz-workshop.zip") as z:
+with zipfile.ZipFile(site/"downloads/eiz-workshop.zip") as z:
     members = z.namelist()
     assert all(not ("/.git/" in n or n.startswith((".git/",".claude/","submissions/","renv/library/"))) for n in members)
     assert not any(n.endswith((".html",".log")) for n in members)

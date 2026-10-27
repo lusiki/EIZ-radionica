@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hr" xml:lang="hr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Istraživanje i strukturiranje – AI u istraživanju</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f5924159d218d016f09a39c4b3f22a5c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-50dd4cb241bbe2cc63e5549cf49426c7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/fonts.css">
+</head>
+
+<body class="nav-fixed booklet quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">EIZ / radionica</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../admin/prerequisites.html"> 
+<span class="menu-text">Početak</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/day1.html"> 
+<span class="menu-text">Dan 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/day2.html"> 
+<span class="menu-text">Dan 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../materials/exercises/index.html"> 
+<span class="menu-text">Vježbe</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../booklet/index.html"> 
+<span class="menu-text">Priručnik</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-materijali" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Materijali</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-materijali">    
+        <li>
+    <a class="dropdown-item" href="../data/dictionary.html">
+ <span class="dropdown-text">Podaci</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../materials/sources.html">
+ <span class="dropdown-text">Izvori</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../materials/results.html">
+ <span class="dropdown-text">Referentni rezultati</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../materials/rubric.html">
+ <span class="dropdown-text">Predaja i vrednovanje</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../admin/instructor.html">
+ <span class="dropdown-text">Za nastavnike</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sadržaj prvog dijela</h2>
+   
+  <ul>
+  <li><a href="#poglavlje-11" id="toc-poglavlje-11" class="nav-link active" data-scroll-target="#poglavlje-11">1.1 Kako razumjeti AI asistenta</a>
+  <ul class="collapse">
+  <li><a href="#od-prazne-stranice-do-istraživačkog-pitanja" id="toc-od-prazne-stranice-do-istraživačkog-pitanja" class="nav-link" data-scroll-target="#od-prazne-stranice-do-istraživačkog-pitanja">Od prazne stranice do istraživačkog pitanja</a></li>
+  <li><a href="#kako-jezični-model-oblikuje-odgovor" id="toc-kako-jezični-model-oblikuje-odgovor" class="nav-link" data-scroll-target="#kako-jezični-model-oblikuje-odgovor">Kako jezični model oblikuje odgovor</a></li>
+  <li><a href="#tri-vrste-uvjerljive-pogreške" id="toc-tri-vrste-uvjerljive-pogreške" class="nav-link" data-scroll-target="#tri-vrste-uvjerljive-pogreške">Tri vrste uvjerljive pogreške</a></li>
+  <li><a href="#birajte-mogućnost-a-zatim-alat" id="toc-birajte-mogućnost-a-zatim-alat" class="nav-link" data-scroll-target="#birajte-mogućnost-a-zatim-alat">Birajte mogućnost, a zatim alat</a></li>
+  <li><a href="#integritet-i-odgovornost" id="toc-integritet-i-odgovornost" class="nav-link" data-scroll-target="#integritet-i-odgovornost">Integritet i odgovornost</a></li>
+  <li><a href="#pokušajte-sami" id="toc-pokušajte-sami" class="nav-link" data-scroll-target="#pokušajte-sami">Pokušajte sami</a></li>
+  </ul></li>
+  <li><a href="#poglavlje-12" id="toc-poglavlje-12" class="nav-link" data-scroll-target="#poglavlje-12">1.2 Pretraživanje literature s Perplexityjem</a>
+  <ul class="collapse">
+  <li><a href="#od-popisa-poveznica-do-početne-sinteze" id="toc-od-popisa-poveznica-do-početne-sinteze" class="nav-link" data-scroll-target="#od-popisa-poveznica-do-početne-sinteze">Od popisa poveznica do početne sinteze</a></li>
+  <li><a href="#tri-upita-koji-postupno-razjašnjavaju-temu" id="toc-tri-upita-koji-postupno-razjašnjavaju-temu" class="nav-link" data-scroll-target="#tri-upita-koji-postupno-razjašnjavaju-temu">Tri upita koji postupno razjašnjavaju temu</a></li>
+  <li><a href="#protokol-trostruke-provjere" id="toc-protokol-trostruke-provjere" class="nav-link" data-scroll-target="#protokol-trostruke-provjere">Protokol trostruke provjere</a></li>
+  <li><a href="#od-pronađenog-rada-do-dokaznog-zapisa" id="toc-od-pronađenog-rada-do-dokaznog-zapisa" class="nav-link" data-scroll-target="#od-pronađenog-rada-do-dokaznog-zapisa">Od pronađenog rada do dokaznog zapisa</a></li>
+  <li><a href="#obrasci-za-nastavak-pretraživanja" id="toc-obrasci-za-nastavak-pretraživanja" class="nav-link" data-scroll-target="#obrasci-za-nastavak-pretraživanja">Obrasci za nastavak pretraživanja</a></li>
+  <li><a href="#organizacija-i-pristup" id="toc-organizacija-i-pristup" class="nav-link" data-scroll-target="#organizacija-i-pristup">Organizacija i pristup</a></li>
+  <li><a href="#vježba-za-samostalno-čitanje" id="toc-vježba-za-samostalno-čitanje" class="nav-link" data-scroll-target="#vježba-za-samostalno-čitanje">Vježba za samostalno čitanje</a></li>
+  </ul></li>
+  <li><a href="#poglavlje-13" id="toc-poglavlje-13" class="nav-link" data-scroll-target="#poglavlje-13">1.3 Dubinsko istraživanje s Gemini Deep Research</a>
+  <ul class="collapse">
+  <li><a href="#kada-jedan-odgovor-nije-dovoljan" id="toc-kada-jedan-odgovor-nije-dovoljan" class="nav-link" data-scroll-target="#kada-jedan-odgovor-nije-dovoljan">Kada jedan odgovor nije dovoljan</a></li>
+  <li><a href="#istraživački-plan-je-vaš-dokument" id="toc-istraživački-plan-je-vaš-dokument" class="nav-link" data-scroll-target="#istraživački-plan-je-vaš-dokument">Istraživački plan je vaš dokument</a></li>
+  <li><a href="#što-može-nedostajati-u-dugom-izvješću" id="toc-što-može-nedostajati-u-dugom-izvješću" class="nav-link" data-scroll-target="#što-može-nedostajati-u-dugom-izvješću">Što može nedostajati u dugom izvješću</a></li>
+  <li><a href="#kako-provjeriti-i-preraditi-izvješće" id="toc-kako-provjeriti-i-preraditi-izvješće" class="nav-link" data-scroll-target="#kako-provjeriti-i-preraditi-izvješće">Kako provjeriti i preraditi izvješće</a></li>
+  <li><a href="#povezivanje-s-nastavnim-skupom" id="toc-povezivanje-s-nastavnim-skupom" class="nav-link" data-scroll-target="#povezivanje-s-nastavnim-skupom">Povezivanje s nastavnim skupom</a></li>
+  <li><a href="#vježba-od-plana-do-provjerene-stranice" id="toc-vježba-od-plana-do-provjerene-stranice" class="nav-link" data-scroll-target="#vježba-od-plana-do-provjerene-stranice">Vježba: od plana do provjerene stranice</a></li>
+  </ul></li>
+  <li><a href="#poglavlje-14" id="toc-poglavlje-14" class="nav-link" data-scroll-target="#poglavlje-14">1.4 Od bilješki do nacrta rada s Claudeom</a>
+  <ul class="collapse">
+  <li><a href="#imate-izvore-ali-još-nemate-argument" id="toc-imate-izvore-ali-još-nemate-argument" class="nav-link" data-scroll-target="#imate-izvore-ali-još-nemate-argument">Imate izvore, ali još nemate argument</a></li>
+  <li><a href="#pripremite-materijale-prije-razgovora" id="toc-pripremite-materijale-prije-razgovora" class="nav-link" data-scroll-target="#pripremite-materijale-prije-razgovora">Pripremite materijale prije razgovora</a></li>
+  <li><a href="#pet-načela-za-koristan-upit" id="toc-pet-načela-za-koristan-upit" class="nav-link" data-scroll-target="#pet-načela-za-koristan-upit">Pet načela za koristan upit</a></li>
+  <li><a href="#demonstracija-četiri-koraka-do-izvedivog-plana" id="toc-demonstracija-četiri-koraka-do-izvedivog-plana" class="nav-link" data-scroll-target="#demonstracija-četiri-koraka-do-izvedivog-plana">Demonstracija: četiri koraka do izvedivog plana</a></li>
+  <li><a href="#hipoteze-teorija-i-rezultat-ne-nastaju-istim-putem" id="toc-hipoteze-teorija-i-rezultat-ne-nastaju-istim-putem" class="nav-link" data-scroll-target="#hipoteze-teorija-i-rezultat-ne-nastaju-istim-putem">Hipoteze, teorija i rezultat ne nastaju istim putem</a></li>
+  <li><a href="#nacrt-koji-možete-braniti" id="toc-nacrt-koji-možete-braniti" class="nav-link" data-scroll-target="#nacrt-koji-možete-braniti">Nacrt koji možete braniti</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Istraživanje i strukturiranje</h1>
+<p class="subtitle lead">Priručnik · Prvi dio · Četiri poglavlja za samostalno čitanje</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="../booklet/index.html">O priručniku</a> · <a href="../downloads/EIZ-prirucnik.pdf">Cijeli PDF</a> · <a href="../slides/day1.html">Kratki materijal za nastavu</a></p>
+<p>Čitajte od početne ideje prema provjerenim izvorima i planu. Primjeri upita su predlošci za prilagodbu; prikazani odgovori nisu obećanje kako će se pojedini alat ponašati. Dokumentacija alata provjerena je 26. listopada 2026.</p>
+<section id="poglavlje-11" class="level2">
+<h2 class="anchored" data-anchor-id="poglavlje-11">1.1 Kako razumjeti AI asistenta</h2>
+<section id="od-prazne-stranice-do-istraživačkog-pitanja" class="level3">
+<h3 class="anchored" data-anchor-id="od-prazne-stranice-do-istraživačkog-pitanja">Od prazne stranice do istraživačkog pitanja</h3>
+<p>Zamislite da trebate napisati seminarski rad. Imate temu, nekoliko otvorenih kartica i bilješke iz predavanja, ali još ne znate kojim pitanjem započeti. Traženje literature, povezivanje pojmova i organiziranje bilježaka oduzimaju vrijeme prije nego što uopće počnete analizirati podatke. AI može pomoći u svakom od tih koraka. Korist nastaje kada njegov prijedlog pretvorite u nešto što možete provjeriti: pitanje s jasnim opsegom, izvor s poznatim autorom, skriptu koja se može pokrenuti ili odlomak čije tvrdnje odgovaraju dokazima.</p>
+<p>U izvornom tekstu radionice taj je put prikazan kroz Perplexity, Gemini i Claude, a zatim kroz programske asistente i bilježnice. Zadržavamo taj slijed jer odgovara istraživačkom procesu. Nazivi proizvoda služe kao primjeri; njihove se mogućnosti preklapaju. Ne morate imati račun u svakom alatu da biste naučili pronaći dokaz ili objasniti rezultat.</p>
+<p>Radionicu povezuje hrvatski primjer. Promatramo mjesečnu ostvarenu inflaciju i anketni pokazatelj očekivanih promjena cijena od 2015. do 2024. To je namjerno ograničen zadatak: dvije mjere, 120 mjeseci i postupak koji možete ponovno izvesti. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje motivacija za nastavak istraživanja. Ovaj paket ne sadrži medijski korpus ni indeks medijske pažnje i ne prikazuje rezultate takvog istraživanja.</p>
+</section>
+<section id="kako-jezični-model-oblikuje-odgovor" class="level3">
+<h3 class="anchored" data-anchor-id="kako-jezični-model-oblikuje-odgovor">Kako jezični model oblikuje odgovor</h3>
+<p>Veliki jezični model tijekom treniranja uči obrasce u podacima. U razgovoru koristi naučene parametre i dostupan kontekst kako bi oblikovao nastavak teksta. Tekst obrađuje u tokenima: dijelovima riječi, riječima ili drugim jedinicama. Broj tokena po riječi ovisi o jeziku i tokenizatoru, pa jednu procjenu za engleski ne treba primijeniti na hrvatski seminarski rad.</p>
+<p>Pojednostavljeno, model procjenjuje raspodjelu <span class="math inline">\(P(t_k \mid t_1, \ldots, t_{k-1}; \theta)\)</span>: vjerojatnosti mogućih sljedećih tokena uz prethodni kontekst i naučene parametre. Način odabira nastavka može uključiti uzorkovanje. <strong>Vjerojatnost tokena nije vjerojatnost da je tvrdnja istinita.</strong> Model može proizvesti vrlo uvjerljivu rečenicu čiji se sadržaj ne može potvrditi.</p>
+<p>Korisna je analogija s dobro načitanim suradnikom koji brzo predlaže formulacije. Ipak, analogija ima granice. Model nema provjerljivo osobno iskustvo istraživanja koje opisuje. S druge strane, aplikacija s pristupom alatima može stvarno otvoriti dokument, pretražiti web ili izvršiti kod. Zato treba razlikovati tri situacije: odgovor iz naučenih obrazaca, odgovor uz dohvaćene izvore i rezultat izvršenog izračuna. U svakom slučaju tražite trag koji odgovara vrsti tvrdnje.</p>
+<p>Kontekstni prozor određuje koliko sadržaja model može obraditi u pojedinom koraku. Dug razgovor, projektna zbirka datoteka i aktivni kontekst nisu ista stvar. Aplikacija može sažeti ranije poruke ili dohvatiti samo dijelove dokumenata. Učitavanje dvadeset radova zato ne jamči da je svaka rečenica iz svakog rada uključena u svaki odgovor. Posebno navedite datoteku, odjeljak ili tablicu na koju se pitanje odnosi.</p>
+<p>Temperatura, kada je dostupna, utječe na način uzorkovanja. Ni niska temperatura ni način rada s duljim računanjem nisu potvrda istinitosti. Korisniku je korisnije provjeriti citat i rezultat nego nagađati što se dogodilo u unutarnjem postupku modela. Prikaz plana ili objašnjenja također nije potpuni zapis svih internih operacija.</p>
+</section>
+<section id="tri-vrste-uvjerljive-pogreške" class="level3">
+<h3 class="anchored" data-anchor-id="tri-vrste-uvjerljive-pogreške">Tri vrste uvjerljive pogreške</h3>
+<p><strong>Izmišljena referenca</strong> može sadržavati stvarno prezime autora, uvjerljiv naslov i nepostojeći DOI. Ako je citat sastavljen uredno, lakše ga je zamijeniti s provjerenim izvorom. Postojanje rada provjerite kod izdavača ili u bibliografskoj bazi, a zatim pročitajte dio koji navodno podupire tvrdnju.</p>
+<p><strong>Pogrešno protumačen broj</strong> može potjecati iz stvarne tablice. Primjerice, vrijednost salda očekivanja 40 ne znači da potrošači očekuju inflaciju od 40 posto. To je druga mjera, s drugom konstrukcijom i jedinicom. Provjera aritmetike bez provjere definicije varijable nije dovoljna.</p>
+<p><strong>Kod koji radi pogrešnu stvar</strong> može se izvršiti bez upozorenja. Spajanje dviju tablica prema rednom broju retka umjesto prema mjesecu može povezati različite datume. Automatsko uklanjanje praznina može promijeniti uzorak. Zato uz izlaznu tablicu provjeravamo ulaz, broj opažanja i pravilo obrade.</p>
+<p>Za demonstraciju pogreške nije potrebno čekati da AI nešto izmisli. Uzmite tvrdnju „pozitivna korelacija dokazuje da očekivanja uzrokuju inflaciju” i usporedite je s onim što izračun doista pokazuje. Time vježbate istu vještinu čak i kada model ponudi besprijekoran odgovor. Namjerno pogrešan primjer treba jasno označiti, kako ga netko ne bi kasnije preuzeo kao nalaz.</p>
+</section>
+<section id="birajte-mogućnost-a-zatim-alat" class="level3">
+<h3 class="anchored" data-anchor-id="birajte-mogućnost-a-zatim-alat">Birajte mogućnost, a zatim alat</h3>
+<p>Za prvo upoznavanje teme koristan je sustav koji pretražuje izvore i daje poveznice. Za usporedbu više pročitanih radova koristan je rad s dokumentima. Za izračun je potrebno okruženje koje izvršava kod i omogućuje njegov izvoz. Za uređivanje teksta potrebni su jasni komentari i mogućnost usporedbe inačica. Jedan proizvod može pokrivati nekoliko tih potreba.</p>
+<p>Službena dokumentacija sada opisuje pretraživanje i istraživačke postupke u više aplikacija, uključujući <a href="https://learn.chatgpt.com/docs/web-search">ChatGPT</a>, <a href="https://support.google.com/gemini/answer/15719111?hl=en">Gemini</a> i <a href="https://support.claude.com/en/articles/9517075-what-are-projects">Claude Projects</a>. Pristup ovisi o računu, planu i postavkama ustanove. U ovom izdanju ne navodimo rang-listu „najboljih modela”, cijene ni zajamčene dnevne kvote. Prije nastave provjerite funkciju koju ćete stvarno koristiti.</p>
+<p>Za usporedbu dvaju dostupnih alata pripremite isti mali zadatak: isti odlomak, tri ista izvora i isto pitanje. Usporedite točnost, sljedivost, razumljivost i vrijeme potrebno za provjeru. Dulji odgovor ili više citata nisu sami po sebi bolji rezultat. Ako alat ne može otvoriti izvor, bilješka „nemam pristup punom tekstu” korisnija je od uvjerljivog nagađanja.</p>
+</section>
+<section id="integritet-i-odgovornost" class="level3">
+<h3 class="anchored" data-anchor-id="integritet-i-odgovornost">Integritet i odgovornost</h3>
+<p>Izvorna podjela na zelenu, žutu i crvenu zonu može pomoći u razgovoru o riziku, ali nije zamjena za pravila kolegija. Pravopisna pomoć obično mijenja manje istraživačkog sadržaja od izrade cijelog argumenta. Ipak, ni jednu od tih uporaba ne proglašavamo univerzalno dopuštenom. Provjerite upute zadatka i navedite opseg pomoći kada je to traženo.</p>
+<p>Manji rizik imaju prijedlog ključnih riječi, objašnjenje poruke o pogrešci i komentar jasnoće vašeg odlomka. Veću pažnju traže sažimanje nepročitanog rada, izbor metode, prerada argumenta i generiranje koda koji mijenja podatke. Izmišljeni izvori, prikrivanje nedopuštene pomoći i predstavljanje neizvedene analize kao vlastitog rezultata nisu prihvatljiv istraživački postupak. Izjava o uporabi AI-ja ne ispravlja takve probleme.</p>
+<p>Ne unosite identifikacijske podatke ispitanika, povjerljive intervjue ili neobjavljene materijale u vanjsku uslugu bez odgovarajućeg dopuštenja. Plaćeni račun sam po sebi nije potvrda prikladnosti za te podatke. Za ovu radionicu dovoljan je javni skup službenih agregiranih podataka.</p>
+<p>Zapis uporabe može biti jednostavan: datum, alat, zadatak, prihvaćeni prijedlog i način provjere. Primjerice: „AI je predložio oznake osi; usporedio/la sam ih s rječnikom podataka i promijenio/la oznaku očekivanja iz postotka u saldo.” Citiranje empirijske tvrdnje vodi na njezin izvor; bilješka o uporabi alata objašnjava kako ste radili.</p>
+</section>
+<section id="pokušajte-sami" class="level3">
+<h3 class="anchored" data-anchor-id="pokušajte-sami">Pokušajte sami</h3>
+<p>Napišite jedno pitanje o inflaciji i unaprijed odredite što bi bio provjerljiv odgovor. Zatim zatražite prijedlog od dostupnog asistenta. Razdvojite rečenice u tri skupine: tvrdnje koje trebaju izvor, prijedloge istraživačkog postupka i pitanja na koja još nema odgovora. Provjerite jednu tvrdnju u izvornom dokumentu i jednu brojku u podacima. Na kraju vlastitim riječima objasnite što vam je model olakšao i koju ste odluku ipak morali donijeti sami.</p>
+</section>
+</section>
+<section id="poglavlje-12" class="level2">
+<h2 class="anchored" data-anchor-id="poglavlje-12">1.2 Pretraživanje literature s Perplexityjem</h2>
+<section id="od-popisa-poveznica-do-početne-sinteze" class="level3">
+<h3 class="anchored" data-anchor-id="od-popisa-poveznica-do-početne-sinteze">Od popisa poveznica do početne sinteze</h3>
+<p>Prisjetite se kako ste zadnji put tražili literaturu za seminarski rad. Otvorili ste tražilicu, upisali nekoliko pojmova i dobili mnogo rezultata. Neki su bili iza pristupne barijere, neki se nisu odnosili na vašu temu, a nakon nekoliko otvorenih radova postalo je teško pratiti tko govori što. AI pretraživanje može pomoći u početnom snalaženju: predložiti pojmove, sažeti pronađene stranice i povezati tvrdnje s izvorima.</p>
+<p>Zadržimo izvornu analogiju knjižnice. Katalog vas usmjerava prema policama; asistent pokušava donijeti i sažetak pronađenog materijala. Sažetak je koristan samo ako možete ustanoviti što je stvarno pročitano. Asistent može zamijeniti sažetak rada s cijelim radom, povezati citat s preširokom tvrdnjom ili zanemariti izvor do kojeg nije uspio doći.</p>
+<p>Perplexity je u ovom poglavlju primjer takvog rada. To više nije granica između njega i svih drugih razgovornih sustava: i drugi proizvodi nude web pretraživanje i izvore. Dohvaćanje sadržaja i njegovo korištenje pri generiranju odgovora često se opisuje pojmom RAG. Dohvaćeni dokumenti mogu poboljšati utemeljenost odgovora, ali sam postupak ne jamči potpunost, točnost citata ni kvalitetu uključenih studija.</p>
+</section>
+<section id="tri-upita-koji-postupno-razjašnjavaju-temu" class="level3">
+<h3 class="anchored" data-anchor-id="tri-upita-koji-postupno-razjašnjavaju-temu">Tri upita koji postupno razjašnjavaju temu</h3>
+<p>Prvi upit iz izvornog materijala ostaje dobar primjer početne neodređenosti:</p>
+<blockquote class="blockquote">
+<p>Inflacija Hrvatska.</p>
+</blockquote>
+<p>Ovakav upit ne govori tražite li najnoviji statistički podatak, objašnjenje pojma ili empirijsku literaturu. Mješavina vijesti, službenih podataka i općih objašnjenja može biti korisna za orijentaciju, ali teško ju je pretvoriti u pregled literature bez dodatnog usmjeravanja.</p>
+<p>Sljedeći korak određuje predmet interesa:</p>
+<blockquote class="blockquote">
+<p>Koji čimbenici mogu biti povezani s percepcijom inflacije kod kućanstava u europskim zemljama? Pronađi istraživanja i za svako navedi autora, naslov, godinu i poveznicu na izvor. Odvoji radove od novinskih prikaza.</p>
+</blockquote>
+<p>Sada je jasnije da vas zanima percepcija, a ne samo promjena indeksa cijena. Ipak, percepcija prošlih promjena i očekivanje budućih promjena nisu isti pojam. U nastavku razgovora razjasnite koji konstrukt želite proučavati. Najprecizniji upit treba proizlaziti iz vašeg pitanja, a ne iz želje da zvuči tehnički složeno.</p>
+<blockquote class="blockquote">
+<p>Find empirical studies on media coverage and households’ inflation expectations in European economies, published from 2015 onward. Separate studies of perceptions from studies of expectations. For each candidate, report the exact title, authors, publication type, data, method and source URL. State whether you accessed the full text or only an abstract. Do not infer findings from the title.</p>
+</blockquote>
+<p>Ovaj upit zadržava temu izvornog materijala i dodaje provjerljive zahtjeve. Engleski pojmovi mogu olakšati pretraživanje međunarodne literature, ali pretragu treba dopuniti hrvatskim izrazima i lokalnim izvorima. Preuski vremenski filtar može isključiti temeljni teorijski rad. Stoga noviju empirijsku literaturu i teorijske početne radove možete tražiti odvojeno.</p>
+</section>
+<section id="protokol-trostruke-provjere" class="level3">
+<h3 class="anchored" data-anchor-id="protokol-trostruke-provjere">Protokol trostruke provjere</h3>
+<p><strong>Prva provjera je postojanje.</strong> Otvorite stranicu rada kod izdavača, institucionalni repozitorij ili bibliografski zapis. Usporedite naslov, autore, godinu i identifikator. DOI koji se otvara nije dovoljan ako vodi na drugi članak. Ako ne možete doći do punog teksta, to označite umjesto da prepričavate zaključke koje niste pročitali.</p>
+<p><strong>Druga provjera je potpora tvrdnji.</strong> Pronađite odjeljak, tablicu ili stranicu koji odgovaraju rečenici koju želite napisati. Studija može opisivati povezanost, a AI sažetak uzročnost. Može proučavati određenu zemlju, skupinu ispitanika ili informacijski eksperiment, dok sažetak govori o svim kućanstvima. Zabilježite te granice uz sam izvor.</p>
+<p><strong>Treća provjera je vrsta i kvaliteta izvora.</strong> Recenzirani članak, radni materijal središnje banke, metodološki priručnik i novinski tekst imaju različite namjene. Institucionalni ugled ne znači da je svaki dokument recenzirani znanstveni rad. Ni recenzija sama po sebi ne potvrđuje da je metoda prikladna za vaše pitanje. Procijenite podatke, dizajn, ograničenja i relevantnost.</p>
+<p>Primjer za naš slučaj jest članak Meylera i Reiche o percepcijama i očekivanjima u <a href="https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html">ECB Economic Bulletinu</a>. Koristan je za razumijevanje razlike između kvalitativnih i kvantitativnih mjera. Ne potvrđuje numerički rezultat naše hrvatske analize za cijelo razdoblje 2015.–2024. Jedan izvor može dobro podupirati definiciju, a ne podupirati vlastiti empirijski nalaz.</p>
+</section>
+<section id="od-pronađenog-rada-do-dokaznog-zapisa" class="level3">
+<h3 class="anchored" data-anchor-id="od-pronađenog-rada-do-dokaznog-zapisa">Od pronađenog rada do dokaznog zapisa</h3>
+<p>Za svaki od tri izvora potrebna radionici napišite kratak zapis: tvrdnja koju izvor podupire, puni bibliografski podaci, poveznica, mjesto u tekstu, vaš sažetak i jedno ograničenje. Tako nastaje pregled koji možete ponovno otvoriti kada budete pisali. Sam popis referenci bez tih bilježaka lako postaje zbirka naslova koje više ne povezujete s argumentom.</p>
+<p>Razmislite o rečenici „potrošači očekuju rast inflacije”. Prvo provjerite što točno pita anketa. Pitanje o promjenama cijena u sljedećih dvanaest mjeseci u odnosu na proteklih dvanaest mjeseci nije zahtjev za brojčanom prognozom godišnje stope inflacije. Dokazni zapis treba sačuvati tu razliku, inače će se pogreška prenositi iz pregleda literature u analizu i zaključak.</p>
+<p>Ponovljeno pojavljivanje istog autora u rezultatima može biti trag za daljnje čitanje. Nije dokaz važnosti samo po sebi: pretraživač može više puta pronaći isti popularni izvor ili njegove novinske prikaze. Pratite reference unatrag i novije citate unaprijed. Vodite bilješku o korištenim pojmovima, datumu pretrage i kriterijima odabira.</p>
+</section>
+<section id="obrasci-za-nastavak-pretraživanja" class="level3">
+<h3 class="anchored" data-anchor-id="obrasci-za-nastavak-pretraživanja">Obrasci za nastavak pretraživanja</h3>
+<p>Za <strong>metodološki pregled</strong> pitajte koje se metode koriste za konkretno pitanje i što omogućuje njihovu interpretaciju. Nemojte unaprijed tražiti usporedbu OLS-a, IV-a, DiD-a i RDD-a ako još ne znate kakvi podaci postoje. Bolje je zatražiti odnos između pitanja, dizajna i pretpostavki u svakom pronađenom radu.</p>
+<p>Za <strong>teorijski okvir</strong> tražite definiciju mehanizma, njegove pretpostavke i predviđanja koja bi se mogla razlikovati od alternativnih objašnjenja. Pojmovi poput racionalne nepažnje i sporog usvajanja informacija mogu biti korisni za temu očekivanja. Nije dovoljno samo uvrstiti njihova imena u uvod; potrebno je pročitati izvor i objasniti što bi teorija značila za vaše mjere.</p>
+<p>Za <strong>pregled podataka</strong> zatražite instituciju, šifru skupa, jedinicu, frekvenciju, obuhvat i uvjete pristupa. Za <strong>provjeru tvrdnje</strong> tražite i dokaze koji joj ne idu u prilog. Na primjer:</p>
+<blockquote class="blockquote">
+<p>Koji nalazi ograničavaju tvrdnju da intenzivnije medijsko izvještavanje povećava inflacijska očekivanja? Razlikuj opisnu povezanost od učinka identificiranog istraživačkim dizajnom. Navedi mjesto u svakom izvoru.</p>
+</blockquote>
+<p>Ako naiđete na nepoznatu kraticu, poput IAG u starom nastavnom primjeru, nemojte pretpostaviti njezino značenje. Pronađite definiciju u radu, pravilo izračuna i izvor podataka. U ovom paketu ne postoji potvrđena definicija takvog indeksa. Njegovo mjesto ne popunjavamo značenjem iz drugog područja.</p>
+</section>
+<section id="organizacija-i-pristup" class="level3">
+<h3 class="anchored" data-anchor-id="organizacija-i-pristup">Organizacija i pristup</h3>
+<p>Perplexityjevi <a href="https://hub-prod.perplexity.ai/hub/faq/what-are-spaces">Spaces</a> služe organiziranju razgovora i materijala po temama. Za nastavni zadatak korisno je odvojiti provjerene bilješke od početnih odgovora. Zajednički prostor olakšava suradnju, ali ne čini izvor provjerenim i ne zamjenjuje vlastitu spremljenu bibliografiju.</p>
+<p>Filtri izvora i nazivi načina pretraživanja mogu se mijenjati. Oznaka „academic” nije jamstvo da je svaki rezultat recenziran. Jednako tako, Google Scholar ili specijalizirana baza ne jamče iscrpnost samo zato što ste ih otvorili. Za sustavni pregled potreban je unaprijed opisan postupak pretrage i odabira. Za ovu radionicu radimo ograničenu, dokumentiranu početnu pretragu.</p>
+</section>
+<section id="vježba-za-samostalno-čitanje" class="level3">
+<h3 class="anchored" data-anchor-id="vježba-za-samostalno-čitanje">Vježba za samostalno čitanje</h3>
+<p>Odaberite pitanje iz radionice ili vlastitu temu. Sastavite tri upita s rastućom preciznošću, izdvojite pet kandidata i detaljno provjerite tri. Za svaki ispunite dokazni zapis. Zapišite i jedan odbačeni izvor te razlog odbijanja. Moguće teme su očekivanja i inflacija, digitalizacija poduzeća, nejednakost ili učinci fiskalnih mjera; nijedna od njih unaprijed ne pretpostavlja smjer rezultata.</p>
+<p>Usporedite početni AI sažetak s vlastitim bilješkama. Koju ste tvrdnju suzili? Koji je izvor bio relevantan, ali nedostupan? Što još nedostaje? Vježba završava kada možete objasniti izbor izvora, a ne kada alat proizvede dovoljno dug popis. Ako nemate pristup AI pretrazi, isti postupak provedite ručno s početnim izvorima radionice.</p>
+</section>
+</section>
+<section id="poglavlje-13" class="level2">
+<h2 class="anchored" data-anchor-id="poglavlje-13">1.3 Dubinsko istraživanje s Gemini Deep Research</h2>
+<section id="kada-jedan-odgovor-nije-dovoljan" class="level3">
+<h3 class="anchored" data-anchor-id="kada-jedan-odgovor-nije-dovoljan">Kada jedan odgovor nije dovoljan</h3>
+<p>Što ako ste na početku istraživanja i trebate razumjeti cijelo područje? Kratak odgovor može vam pomoći pronaći pojam ili rad. Za usporedbu teorijskih objašnjenja, vrsta podataka i otvorenih pitanja treba vam organiziraniji pregled. Tu je koristan istraživački način rada koji planira više pretraga, prikuplja izvore i predlaže njihovu sintezu.</p>
+<p>Izvorni materijal uspoređivao je brz upit s pitanjem lokalnom vodiču, a dubinsko istraživanje s naručivanjem opširnog izvješća. Analogija je korisna za razlikovanje zadataka, ali je ne treba pretvoriti u trajnu podjelu proizvoda. Isti alat može nuditi oba načina. Opširnije izvješće nije automatski potpunije ili točnije; može samo uvjerljivije prikriti praznine.</p>
+<p>U ovom poglavlju zadržavamo Gemini Deep Research kao demonstracijski primjer. Prema <a href="https://support.google.com/gemini/answer/15719111?hl=en">Googleovim uputama</a>, možete odabrati izvore, priložiti materijale i urediti predloženi plan prije pokretanja istraživanja. Dostupnost povezanih izvora ovisi o računu i postavkama. Taj izbor je važniji od pamćenja položaja gumba koji se može promijeniti do sljedeće izvedbe radionice.</p>
+</section>
+<section id="istraživački-plan-je-vaš-dokument" class="level3">
+<h3 class="anchored" data-anchor-id="istraživački-plan-je-vaš-dokument">Istraživački plan je vaš dokument</h3>
+<p>Prije pokretanja napišite što trebate znati. Razdvojite definicije, empirijske nalaze, metodološka pitanja i podatke. Zatim odredite obuhvat: zemlje, razdoblje objavljivanja, populaciju i jezike. Ako tražite noviju literaturu, dopustite zasebno navođenje starijih teorijskih radova kako vremenski filtar ne bi uklonio temeljne pojmove.</p>
+<p>Slab početni zahtjev iz izvornog teksta glasi:</p>
+<blockquote class="blockquote">
+<p>Napiši pregled literature o inflaciji.</p>
+</blockquote>
+<p>On ne kaže trebate li udžbeničko objašnjenje, pregled prognoziranja ili raspravu o očekivanjima. Sljedeći primjer zadržava izvorni interes za medije, ali bolje odvaja ono što tražimo od onoga što već znamo:</p>
+<blockquote class="blockquote">
+<p>Pripremi plan pregleda empirijske literature o medijskom izvještavanju i inflacijskim očekivanjima kućanstava u europskim zemljama. Glavni obuhvat su radovi objavljeni od 2010. nadalje; temeljne teorijske radove navedi zasebno. Organiziraj pregled prema mjerenju očekivanja, mjerenju medijske pažnje, istraživačkom dizajnu i ograničenjima.</p>
+<p>Za svaki rad navedi izvor, uzorak, razdoblje, mjere, metodu i glavni nalaz. Označi imaš li puni tekst. Razlikuj korelaciju, prognozu i uzročni zaključak. Ako podatak ne možeš provjeriti, označi ga kao nepoznat. Najprije pokaži plan; nemoj pretpostaviti da imamo medijski korpus.</p>
+</blockquote>
+<p>Pogledajte kako zahtjev određuje rezultat. Ne traži određeni zaključak ni „dokaz” željene hipoteze. Ne dopušta da nepoznat uzorak bude popunjen izmišljenim brojem. Od agenta traži strukturu usporedivih zapisa, a ne samo elegantan pregled. I dalje morate provjeriti pridržava li se tih uputa.</p>
+<p>Pregledajte predloženi plan prije izvršavanja. Ako se većina prostora troši na povijest središnjih banaka, a vi trebate usporediti mjere očekivanja, promijenite raspored. Ako nedostaje odjeljak o hrvatskim izvorima, dodajte ga. Ako plan predviđa procjenu učinka medija na temelju podataka koje nemate, zaustavite taj korak i razjasnite što bi trebalo prikupiti.</p>
+</section>
+<section id="što-može-nedostajati-u-dugom-izvješću" class="level3">
+<h3 class="anchored" data-anchor-id="što-može-nedostajati-u-dugom-izvješću">Što može nedostajati u dugom izvješću</h3>
+<p>Prvo ograničenje jest <strong>pristup izvorima</strong>. Alat može pronaći naslov ili sažetak, ali ne i tekst iza pretplate. Može koristiti javnu radnu verziju umjesto kasnije objavljene verzije. Institucionalni pristup koji imate u svom pregledniku ne prenosi se automatski na alat. Za važan rad sami provjerite verziju dokumenta i dostupnost metodoloških dodataka.</p>
+<p>Drugo ograničenje jest <strong>dubina metodološkog čitanja</strong>. Rečenica „autori koriste regresijsku analizu” ne govori kako je izabran uzorak, koje su varijable uključene ili što omogućuje uzročnu interpretaciju. Tražite konkretnu specifikaciju i argument autora, zatim pročitajte odgovarajući odjeljak. Ako izvješće navodi samo naziv metode, to je polazna bilješka, a ne završena kritička evaluacija.</p>
+<p>Treće ograničenje jest <strong>obuhvat pretrage</strong>. Odsutnost hrvatskog rada iz izvješća ne znači da takav rad ne postoji. Mogu nedostajati drugi jezici, radovi bez javnog punog teksta ili termini drukčiji od onih u upitu. Pregled koji priprema AI nije samim time sustavni pregled literature. Istraživačku prazninu treba dokazivati pregledom relevantnog polja, a ne samo prazninom u jednom generiranom odgovoru.</p>
+<p>Četvrto ograničenje jest <strong>pridržavanje zadatka</strong>. Dugi postupak može završiti izvješćem koje krši dio kriterija: drugi vremenski raspon, druga populacija ili niz općenitih zaključaka bez pojedinačnih izvora. Usporedite rezultat s početnim planom. Ta je provjera jednostavna ako ste kriterije prethodno zapisali; mnogo je teža ako ih tek naknadno prilagođavate dobivenom tekstu.</p>
+</section>
+<section id="kako-provjeriti-i-preraditi-izvješće" class="level3">
+<h3 class="anchored" data-anchor-id="kako-provjeriti-i-preraditi-izvješće">Kako provjeriti i preraditi izvješće</h3>
+<p>Prvo pročitajte naslove i zaključak. Zatim izdvojite tri tvrdnje koje su najvažnije za vaše pitanje. Za svaku otvorite izvor i provedite trostruku provjeru iz prethodnog poglavlja. To je početna revizija, ne zamjena za provjeru svih tvrdnji koje ćete preuzeti u svoj rad. Broj izvora i izgled citata nisu potvrda da je sadržaj potkrijepljen.</p>
+<p>Ne oslanjajte se na boju teksta, oznaku pouzdanosti ili gumb za automatsku provjeru kao na certifikat točnosti. Čak i kada takva pomoć postoji, istraživačko je pitanje šire: podupire li navedeni odlomak baš ovu tvrdnju, za ovu populaciju i ovu vrstu zaključka? U ovom izdanju zato zamjenjujemo stare upute o zelenim i narančastim oznakama izravnim otvaranjem izvora.</p>
+<p>Napravite jednostavnu evidenciju nalaza: zadržati, provjeriti, suziti ili izostaviti. Primjerice, dobru definiciju mjere možete zadržati uz izvor; tvrdnju o „svim europskim kućanstvima” suziti na uzorak studije; broj bez izvora izostaviti. Ako se dva izvora razlikuju, nemojte ih automatski izjednačiti u kompromisnu tvrdnju. Razlika može proizlaziti iz pitanja, mjere, razdoblja ili istraživačkog dizajna.</p>
+<p>Sačuvajte plan, datum pretrage, popis izvora i vlastite bilješke. Generirano izvješće služi kao radni materijal. Njegovu strukturu možete preraditi, ali svaka tvrdnja u završnom pregledu treba imati mjesto u vašem dokaznom zapisu. Kada pišete, uspoređujte radove po doprinosu pitanju umjesto da prepričavate jedan za drugim.</p>
+</section>
+<section id="povezivanje-s-nastavnim-skupom" class="level3">
+<h3 class="anchored" data-anchor-id="povezivanje-s-nastavnim-skupom">Povezivanje s nastavnim skupom</h3>
+<p>Za osnovni zadatak ne trebate cijelo istraživanje medija. Trebate razumjeti HICP i anketni saldo, ograničiti opisno pitanje i odrediti što ćete prikazati. Korisna početna sinteza odgovara na tri pitanja: što svaka mjera mjeri, koje su njezine granice i kakvu usporedbu vremenskih serija dopušta.</p>
+<p>Nakon čitanja metodologije možete odlučiti prikazati dvije odvojene serije sa zajedničkom vremenskom osi, izračunati godišnje sažetke i opisati suvremenu korelaciju. Ne trebate odmah dodati panel model, sentiment medija ili predviđanje inflacije. Svako proširenje traži nove podatke i novi argument. Dobar pregled pomaže vidjeti te zahtjeve prije kodiranja.</p>
+</section>
+<section id="vježba-od-plana-do-provjerene-stranice" class="level3">
+<h3 class="anchored" data-anchor-id="vježba-od-plana-do-provjerene-stranice">Vježba: od plana do provjerene stranice</h3>
+<p>Sastavite plan za vlastito pitanje i napišite što bi vas navelo da ga promijenite. Ako imate pristup istraživačkom načinu rada, pokrenite ga; dok čekate, provjerite jedan već pronađeni izvor. Nije potrebno završiti cijeli postupak u unaprijed zadanih petnaest minuta. Za samostalno čitanje važnija je kvaliteta provjere od brzine odgovora.</p>
+<p>Kada izvješće stigne, provjerite tri ključne tvrdnje, zabilježite jednu prazninu i napišite vlastiti sažetak na jednoj stranici. Razdvojite potvrđeno, vjerojatno i zasad nepoznato. Ako nemate pristup alatu, napravite isti plan i sažetak iz tri početna izvora radionice. Ishod je isti: organizirano znanje čiju potporu možete pokazati.</p>
+</section>
+</section>
+<section id="poglavlje-14" class="level2">
+<h2 class="anchored" data-anchor-id="poglavlje-14">1.4 Od bilješki do nacrta rada s Claudeom</h2>
+<section id="imate-izvore-ali-još-nemate-argument" class="level3">
+<h3 class="anchored" data-anchor-id="imate-izvore-ali-još-nemate-argument">Imate izvore, ali još nemate argument</h3>
+<p>Ako ste pratili prethodna poglavlja, sada imate popis izvora, provjerene tvrdnje i bilješke o otvorenim pitanjima. To je više materijala nego na početku, ali pojavljuje se novi problem: imate fragmente, ne priču. Imate informacije, ali još ne znate redoslijed kojim ih treba objasniti čitatelju.</p>
+<p>Upravo je to koristan zadatak za razgovornog asistenta. Claude ovdje ostaje primjer alata kojemu dajete vlastite materijale i od kojega tražite organizaciju, pitanja i kritičke komentare. Ista se vještina može vježbati u drugom dostupnom sustavu ili s kolegom. Vrijednost nije u tvrdnji da je jedan proizvod najbolji za hrvatski jezik, nego u jasnoći razgovora koji vodite o svom istraživanju.</p>
+<p>Zamislite razgovor s mentorom. Ne dolazite samo s molbom „pomozi mi”, nego objašnjavate pitanje, raspoložive podatke i mjesto na kojem ste zapeli. Asistentu također treba dati te informacije. Razlika je u tome što odgovor modela morate provjeriti i kada zvuči kao siguran stručni savjet.</p>
+</section>
+<section id="pripremite-materijale-prije-razgovora" class="level3">
+<h3 class="anchored" data-anchor-id="pripremite-materijale-prije-razgovora">Pripremite materijale prije razgovora</h3>
+<p>Odvojite tri vrste sadržaja: provjerene bilješke, vlastite pretpostavke i otvorena pitanja. Uz izvor navedite naziv datoteke i mjesto relevantnog odlomka. Uz broj navedite jedinicu, razdoblje i skriptu ili tablicu iz koje potječe. Ako je rečenica samo radna ideja, označite je tako da model ne bi ugradio pretpostavku u nacrt kao već potvrđen nalaz.</p>
+<p>Claude <a href="https://support.claude.com/en/articles/9517075-what-are-projects">Projects</a> omogućuje organiziranje materijala i projektnih uputa. Dokumentacija <a href="https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects">projektnog dohvaćanja</a> opisuje korištenje relevantnih dijelova datoteka kada sadržaj nadilazi raspoloživi kontekst. To nije isto što i čitanje svih priloženih dokumenata u cijelosti pri svakom odgovoru. Za ključnu tvrdnju navedite točan dokument i zatražite mjesto na kojem se temelji odgovor.</p>
+<p>Projektne upute mogu biti kratke: piši hrvatski, razlikuj podatak od pretpostavke, ne dodaj izvore koje nisi otvorio i označi nedostatak dokaza. Takve upute usmjeravaju rad; ne mijenjaju naučene težine modela i ne jamče da će svaki odgovor biti točan. Korisnije su provjerljive granice od dugog opisa zamišljene osobnosti stručnjaka.</p>
+</section>
+<section id="pet-načela-za-koristan-upit" class="level3">
+<h3 class="anchored" data-anchor-id="pet-načela-za-koristan-upit">Pet načela za koristan upit</h3>
+<p><strong>1. Dajte kontekst i jasno zaduženje.</strong> Umjesto „pomozi mi s radom” napišite:</p>
+<blockquote class="blockquote">
+<p>Pripremam kratki studentski izvještaj o ostvarenoj inflaciji i saldu očekivanih promjena cijena u Hrvatskoj od 2015. do 2024. Imam 120 mjesečnih opažanja i tri provjerena izvora. Pomozi mi urediti plan opisne analize. Nemam medijske podatke ni istraživački dizajn za procjenu uzročnog učinka. Najprije navedi nejasnoće u mom planu.</p>
+</blockquote>
+<p>Uputa „budi kritički recenzent” može pomoći objasniti vrstu komentara, ali ne pretvara model u recenzenta s provjerenim kompetencijama. Kontekst, materijali i kriteriji provjere čine glavninu korisne upute.</p>
+<p><strong>2. Odredite format i opseg.</strong> Ako želite nacrt, tražite nacrt, a ne cijeli rad. Ako želite usporedbu izvora, zatražite teme, slaganja, razlike i ograničenja. Primjer:</p>
+<blockquote class="blockquote">
+<p>Predloži pet odjeljaka: pitanje, podaci, postupak, rezultati i ograničenja. Za svaki napiši svrhu, dokaz koji je potreban i pitanje na koje još moram odgovoriti. Nemoj pisati nalaze prije nego što dobiješ izlaz analize.</p>
+</blockquote>
+<p><strong>3. Dajte primjer željenog rezultata.</strong> Jedan dobro napisan odlomak ili jedan dovršen dokazni zapis često je korisniji od mnoštva stilskih pridjeva. Primjer mora sadržavati istinite podatke ili jasno označena mjesta za unos. U suprotnom će se i pogreška iz primjera proširiti na ostatak.</p>
+<p><strong>4. Tražite kritiku, a ne potvrdu.</strong> Izvorni prompt koji je tražio obrazloženje već odabrane Newey-West korekcije previše je usmjeravao odgovor. Bolji upit pita je li metoda uopće potrebna, koje pretpostavke zahtijeva i što ne rješava. Jednako vrijedi za pitanje o istraživačkoj praznini: neka model razlikuje prazninu u vašim bilješkama od tvrdnje da nešto nitko još nije istražio.</p>
+<p><strong>5. Poboljšavajte pojedinačne dijelove.</strong> Nakon prvog nacrta izaberite jedan problem. „Pojasni zašto saldo nije postotna prognoza” preciznije je od „učini tekst akademskijim”. Sačuvajte inačice i odbacite prijedlog koji mijenja značenje. Više iteracija nije samo po sebi dokaz više kvalitete.</p>
+</section>
+<section id="demonstracija-četiri-koraka-do-izvedivog-plana" class="level3">
+<h3 class="anchored" data-anchor-id="demonstracija-četiri-koraka-do-izvedivog-plana">Demonstracija: četiri koraka do izvedivog plana</h3>
+<p>U prvom koraku prikupite bilješke. U našem primjeru one mogu glasiti: „Imam mjesečni HICP, godišnju stopu promjene; imam kvalitativni saldo očekivanja; podaci pokrivaju Hrvatsku 2015.–2024.; želim usporediti kretanja; nisam siguran/na kako opisati odnos.” Uključite definicije iz rječnika, a ne samo nazive stupaca.</p>
+<p>U drugom koraku zatražite analizu praznina:</p>
+<blockquote class="blockquote">
+<p>Razdvoji što već mogu istražiti ovim podacima, što trebam dodatno provjeriti u metodologiji i što zahtijeva nove podatke. Za svaku preporuku objasni vezu s mojim pitanjem. Ne dodaj varijable koje nemam.</p>
+</blockquote>
+<p>Koristan odgovor može upozoriti na različite jedinice i vremenski horizont ankete. Prijedlog da analizirate medijski sentiment zahtijeva novi korpus, pravilo mjerenja i provjeru kvalitete. Nije mala dopuna postojećem planu. Razlikovanje tih razina štiti vas od nacrta koji obećava znatno više nego što se može napraviti.</p>
+<p>U trećem koraku odredite redoslijed argumenta. Najprije objasnite pitanje i mjere, zatim provjeru podataka, vizualni prikaz i sažetke, a na kraju interpretaciju i ograničenja. Svaki odjeljak treba imati posao koji obavlja. Naslov „Metodologija” bez informacije što je izračunato nije dovoljan plan.</p>
+<p>U četvrtom koraku popravite najslabije mjesto. Ako nacrt zaključuje da mediji oblikuju očekivanja, vratite ga na ono što podaci sadrže. Ako predviđa regresiju zato što rad „mora biti ozbiljan”, pitajte na koje pitanje ta regresija odgovara. Opisna analiza može biti dovršen i vrijedan studentski zadatak kada su mjere i ograničenja dobro objašnjeni.</p>
+</section>
+<section id="hipoteze-teorija-i-rezultat-ne-nastaju-istim-putem" class="level3">
+<h3 class="anchored" data-anchor-id="hipoteze-teorija-i-rezultat-ne-nastaju-istim-putem">Hipoteze, teorija i rezultat ne nastaju istim putem</h3>
+<p>Model može predložiti hipoteze. Istraživač provjerava jesu li jasne, zanimljive, povezane s teorijom i mjerljive dostupnim podacima. Nije potrebno tvrditi da AI ne može predložiti originalnu ideju da bismo razumjeli zašto konačna odgovornost ostaje na autoru.</p>
+<p>Hipoteza nastala nakon gledanja grafa dio je eksploracije. Nemojte je naknadno prikazati kao unaprijed postavljenu potvrđujuću hipotezu. Ako želite provjeravati prognozu, treba unaprijed razjasniti ciljnu varijablu, horizont i razdoblje evaluacije. Ako želite uzročni zaključak, potrebno je obrazložiti identifikaciju. Nacrt ne smije preskočiti te razlike.</p>
+<p>Za kritiku izvora možete zatražiti procjenu jasnoće pitanja, podataka, metode i granica zaključka. Ako modelu dajete samo sažetak, neka i komentar bude ograničen na sažetak. Zaključivanje o detaljima specifikacije koje ni vi ni model niste vidjeli nije kritičko čitanje.</p>
+</section>
+<section id="nacrt-koji-možete-braniti" class="level3">
+<h3 class="anchored" data-anchor-id="nacrt-koji-možete-braniti">Nacrt koji možete braniti</h3>
+<p>Završite prvi dan s pitanjem, trima provjerenim izvorima i planom na jednoj stranici. Uz plan dodajte popis otvorenih pitanja i naziv prve skripte koju ćete pokrenuti. Za svaku planiranu tablicu ili sliku napišite koju rečenicu treba pomoći objasniti. Time stvarate vezu između čitanja, analize i pisanja.</p>
+<p>Kao samostalnu vježbu zamijenite nacrt s kolegom. Neka označi jednu tvrdnju bez dokaza, jedan nejasan pojam i jedan korak koji se ne može izvesti raspoloživim podacima. AI može predložiti istu vrstu pitanja, ali vi trebate znati odgovoriti bez ponovnog prepuštanja razgovora modelu. To je najbolja priprema za drugi dan, kada će svaki izbor postati dio konkretnog postupka.</p>
+<div class="booklet-next">
+<p><a href="../booklet/day2.html">Nastavite na drugi dio: kodiranje i pisanje →</a></p>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lusiki\.github\.io\/EIZ-radionica\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Ekonomski institut, Zagreb · Materijali radionice</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../admin/workshop_overview.html">
+<p>Raspored</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

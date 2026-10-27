@@ -1,0 +1,200 @@
+/* quarto syntax highlight colors */
+:root {
+  --quarto-hl-ot-color: #29454A;
+  --quarto-hl-at-color: #245A79;
+  --quarto-hl-ss-color: #176653;
+  --quarto-hl-an-color: #526E73;
+  --quarto-hl-fu-color: #18343B;
+  --quarto-hl-st-color: #176653;
+  --quarto-hl-cf-color: #18343B;
+  --quarto-hl-op-color: #456268;
+  --quarto-hl-er-color: #94382F;
+  --quarto-hl-bn-color: #245A79;
+  --quarto-hl-al-color: #94382F;
+  --quarto-hl-va-color: #29454A;
+  --quarto-hl-bu-color: #18343B;
+  --quarto-hl-ex-color: #29454A;
+  --quarto-hl-pp-color: #456268;
+  --quarto-hl-in-color: #526E73;
+  --quarto-hl-vs-color: #176653;
+  --quarto-hl-wa-color: #176653;
+  --quarto-hl-do-color: #526E73;
+  --quarto-hl-im-color: #245A79;
+  --quarto-hl-ch-color: #176653;
+  --quarto-hl-dt-color: #245A79;
+  --quarto-hl-fl-color: #245A79;
+  --quarto-hl-co-color: #526E73;
+  --quarto-hl-cv-color: #526E73;
+  --quarto-hl-cn-color: #245A79;
+  --quarto-hl-sc-color: #176653;
+  --quarto-hl-dv-color: #245A79;
+  --quarto-hl-kw-color: #18343B;
+}
+
+/* other quarto variables */
+:root {
+  --quarto-font-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* syntax highlight based on Pandoc's rules */
+/* Alert */
+code span.al {
+  color: #94382F;
+  font-weight: bold;
+}
+
+/* Annotation */
+code span.an {
+  color: #526E73;
+  font-style: italic;
+}
+
+/* Attribute */
+code span.at {
+  color: #245A79;
+}
+
+/* BaseN */
+code span.bn {
+  color: #245A79;
+}
+
+/* BuiltIn */
+code span.bu {
+  color: #18343B;
+}
+
+/* ControlFlow */
+code span.cf {
+  color: #18343B;
+  font-weight: bold;
+}
+
+/* Char */
+code span.ch {
+  color: #176653;
+}
+
+/* Constant */
+code span.cn {
+  color: #245A79;
+}
+
+/* Comment */
+code span.co {
+  color: #526E73;
+  font-style: italic;
+}
+
+/* CommentVar */
+code span.cv {
+  color: #526E73;
+  font-style: italic;
+}
+
+/* Documentation */
+code span.do {
+  color: #526E73;
+  font-style: italic;
+}
+
+/* DataType */
+code span.dt {
+  color: #245A79;
+}
+
+/* DecVal */
+code span.dv {
+  color: #245A79;
+}
+
+/* Error */
+code span.er {
+  color: #94382F;
+  font-weight: bold;
+}
+
+/* Extension */
+code span.ex {
+  color: #29454A;
+}
+
+/* Float */
+code span.fl {
+  color: #245A79;
+}
+
+/* Function */
+code span.fu {
+  color: #18343B;
+}
+
+/* Import */
+code span.im {
+  color: #245A79;
+}
+
+/* Information */
+code span.in {
+  color: #526E73;
+  font-style: italic;
+}
+
+/* Keyword */
+code span.kw {
+  color: #18343B;
+  font-weight: bold;
+}
+
+/* Operator */
+code span.op {
+  color: #456268;
+}
+
+/* Other */
+code span.ot {
+  color: #29454A;
+  font-style: inherit;
+}
+
+/* Preprocessor */
+code span.pp {
+  color: #456268;
+}
+
+/* SpecialChar */
+code span.sc {
+  color: #176653;
+}
+
+/* SpecialString */
+code span.ss {
+  color: #176653;
+}
+
+/* String */
+code span.st {
+  color: #176653;
+}
+
+/* Variable */
+code span.va {
+  color: #29454A;
+}
+
+/* VerbatimString */
+code span.vs {
+  color: #176653;
+}
+
+/* Warning */
+code span.wa {
+  color: #176653;
+  font-style: italic;
+}
+
+.prevent-inlining {
+  content: "</";
+}
+
+/*# sourceMappingURL=9f8893369d8312a9f4e418419675f6d5.css.map */

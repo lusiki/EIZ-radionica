@@ -1,7 +1,8 @@
 # Upotreba AI alata u studentskom istraživanju
 
-**Lokalna radna verzija za pregled** na grani `codex/workshop-core-redesign`.
-Revidirana 26. listopada 2026.; datum sljedeće izvedbe nije potvrđen.
+**[Otvorite glavnu stranicu radionice](https://lusiki.github.io/EIZ-radionica/).**
+Sadržaj revidiran 26. listopada 2026.; nova paleta i objava 27. listopada 2026.
+Datum sljedeće izvedbe nije potvrđen.
 
 Radionica na hrvatskom jeziku povezuje provjeru izvora, istraživački plan,
 analizu i pisanje kroz jedan slučaj: ostvarenu inflaciju i kvalitativni
@@ -9,6 +10,11 @@ saldo očekivanja cijena u Hrvatskoj, 2015.–2024. Osam blokova, sedam sati,
 200 minuta predviđenog aktivnog rada.
 
 ## Lokalni pregled
+
+GitHub Pages objavljuje provjerenu statičku mapu `docs/` nakon promjene na
+`main`. Za novu objavu pokrenite `scripts/build.ps1`, zatim
+`scripts/prepare_pages.ps1`; uključite osvježenu mapu `docs/` u isti commit
+kao izvore. Workflow provjerava poveznice i podatke prije objave.
 
 Na Windowsu u korijenskoj mapi repozitorija:
 

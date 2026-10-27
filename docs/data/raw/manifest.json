@@ -1,0 +1,26 @@
+{
+  "description": "Croatia, monthly HICP annual change and qualitative price expectations",
+  "sample_start": "2015-01",
+  "sample_end": "2024-12",
+  "note": "Revised historical data, not real-time vintages. Never mix NSA and SA.",
+  "provider": "Eurostat; survey source: European Commission DG ECFIN",
+  "reuse": "Acknowledge European Union / Eurostat and DG ECFIN; see data/README.md.",
+  "sources": {
+    "hicp": {
+      "file": "hicp.json",
+      "dataset": "prc_hicp_minr",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?lang=EN&freq=M&geo=HR&coicop18=TOTAL&unit=RCH_A&sinceTimePeriod=2015-01&untilTimePeriod=2024-12",
+      "provider_updated": "2026-10-16T23:00:00+0200",
+      "retrieved_utc": "2026-10-26T11:34:38Z",
+      "md5": "e696da13649c0d7e3a8d4dcfae29827e"
+    },
+    "expectations": {
+      "file": "expectations.json",
+      "dataset": "ei_bsco_m",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bsco_m?lang=EN&freq=M&geo=HR&indic=BS-PT-NY&s_adj=NSA&unit=BAL&sinceTimePeriod=2015-01&untilTimePeriod=2024-12",
+      "provider_updated": "2026-09-29T11:00:00+0200",
+      "retrieved_utc": "2026-10-26T11:34:39Z",
+      "md5": "de4fcb08fd957018f6746f2239df4825"
+    }
+  }
+}

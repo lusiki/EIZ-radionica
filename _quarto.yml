@@ -35,6 +35,7 @@ project:
     - downloads/EIZ-prirucnik.pdf
 website:
   title: "AI u istraživanju"
+  site-url: https://lusiki.github.io/EIZ-radionica/
   search: true
   navbar:
     background: light
@@ -63,7 +64,7 @@ website:
           - href: admin/instructor.qmd
             text: Za nastavnike
   page-footer:
-    left: "Ekonomski institut, Zagreb · Radna verzija za pregled"
+    left: "Ekonomski institut, Zagreb · Materijali radionice"
     right:
       - href: admin/workshop_overview.qmd
         text: Raspored

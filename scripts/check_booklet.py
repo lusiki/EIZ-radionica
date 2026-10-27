@@ -31,7 +31,7 @@ reader = PdfReader(OUT)
 full_text = "\n".join(p.extract_text() for p in reader.pages)
 body_lines = [line for line in full_text.splitlines()
               if line.strip() not in ("EIZ / AI U STUDENTSKOM ISTRAŽIVANJU",
-                                      "Radna verzija / 26. listopada 2026.")
+                                      "Izdanje / 26. listopada 2026.")
               and not re.fullmatch(r"\s*\d+\s*", line)]
 normalized_pdf = normalize("\n".join(body_lines))
 assert "Luka Šikić" in full_text and "UNICATH" in full_text

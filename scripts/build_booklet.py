@@ -29,10 +29,12 @@ ROOT = Path(__file__).resolve().parents[1]
 CHAPTERS = sorted((ROOT / "booklet").glob("_0[1-8]-*.qmd"))
 INTRO = ROOT / "booklet/_00-intro.qmd"
 OUT = ROOT / "downloads/EIZ-prirucnik.pdf"
-INK = colors.HexColor("#1B1A17")
-NAVY = colors.HexColor("#1E3F7A")
-CREAM = colors.HexColor("#F2E8D5")
-MUSTARD = colors.HexColor("#E8B343")
+PALETTE = dict(re.findall(r'^\s+([\w-]+):\s*"(#[0-9A-Fa-f]{6})"',
+                         (ROOT / "design-tokens.yml").read_text(encoding="utf-8"), re.M))
+INK = colors.HexColor(PALETTE["ink"])
+NAVY = colors.HexColor(PALETTE["concept"])
+CREAM = colors.HexColor(PALETTE["paper"])
+MUSTARD = colors.HexColor(PALETTE["accent"])
 
 
 def register_fonts():
@@ -92,7 +94,7 @@ def rich_text(nodes):
             url = value[2][0]
             if not url.startswith("https://"):
                 raise ValueError(f"Print chapter link must be external HTTPS: {url}")
-            parts.append(f'<link href="{html.escape(url, quote=True)}" color="#1E3F7A">'
+            parts.append(f'<link href="{html.escape(url, quote=True)}" color="{PALETTE["concept"]}">'
                          f'<u>{rich_text(value[1])}</u></link>')
         elif kind == "Span": parts.append(rich_text(value[1]))
         elif kind == "Math":
@@ -140,7 +142,7 @@ class Cover(Flowable):
         c.setFillColor(INK); c.setFont("Jost", 11)
         c.drawString(0, 57, "OSAM POGLAVLJA / IZVORI · ANALIZA · PISANJE")
         c.setFont("Literata-Italic", 10)
-        c.drawString(0, 32, "Radna verzija za autorov pregled.")
+        c.drawString(0, 32, "Materijali za radionicu i samostalno čitanje.")
 
 
 class ReaderDoc(BaseDocTemplate):
@@ -155,7 +157,7 @@ class ReaderDoc(BaseDocTemplate):
         self.outline_counter = 0
         self.canv.setTitle("AI u studentskom istraživanju - priručnik")
         self.canv.setAuthor("Izvorni materijal: Luka Šikić, UNICATH")
-        self.canv.setSubject("Revidirani tekst dvaju dana radionice; radna verzija 26.10.2026.")
+        self.canv.setSubject("Revidirani tekst dvaju dana radionice; sadržaj 26.10.2026.; paleta 27.10.2026.")
         self.canv.setCreator("EIZ booklet builder / ReportLab; shared Quarto chapter sources")
 
     def decorate(self, c, doc):
@@ -165,7 +167,7 @@ class ReaderDoc(BaseDocTemplate):
         c.drawString(self.leftMargin, A4[1]-15*mm, "EIZ / AI U STUDENTSKOM ISTRAŽIVANJU")
         c.setLineWidth(.5)
         c.line(self.leftMargin, A4[1]-18*mm, A4[0]-self.rightMargin, A4[1]-18*mm)
-        c.drawString(self.leftMargin, 13*mm, "Radna verzija / 26. listopada 2026.")
+        c.drawString(self.leftMargin, 13*mm, "Izdanje / 26. listopada 2026.")
         c.drawRightString(A4[0]-self.rightMargin, 13*mm, str(doc.page))
         c.restoreState()
 
@@ -188,7 +190,7 @@ def make_styles():
     s.add(ParagraphStyle("Body", **common))
     s.add(ParagraphStyle("Prompt", parent=s["Body"], leftIndent=12, rightIndent=8,
                          borderColor=NAVY, borderWidth=1, borderPadding=9,
-                         backColor=colors.HexColor("#F7F3EB"), spaceBefore=8, spaceAfter=13))
+                         backColor=colors.HexColor(PALETTE["paper-soft"]), spaceBefore=8, spaceAfter=13))
     s.add(ParagraphStyle("Part", fontName="Jost", fontSize=29, leading=33,
                          textColor=NAVY, spaceAfter=22, keepWithNext=True))
     s.add(ParagraphStyle("Chapter", fontName="Jost-Medium", fontSize=23, leading=27,
@@ -197,7 +199,7 @@ def make_styles():
                          textColor=INK, spaceBefore=16, spaceAfter=8, keepWithNext=True))
     s.add(ParagraphStyle("CodeReader", fontName="JetBrainsMono", fontSize=8.2, leading=12,
                          leftIndent=9, rightIndent=4, spaceBefore=7, spaceAfter=14,
-                         backColor=colors.HexColor("#F7F3EB"), borderPadding=8))
+                         backColor=colors.HexColor(PALETTE["paper-soft"]), borderPadding=8))
     return s
 
 

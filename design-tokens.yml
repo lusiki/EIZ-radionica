@@ -4,7 +4,7 @@
 #  Ovdje se mijenja izgled knjige. Sve ostalo (SCSS, LaTeX, R grafovi)
 #  preslikava ove vrijednosti i provjerava se skriptom:
 #
-#      Rscript scripts/check-tokens.R
+#      Rscript scripts/check_design.R
 #
 #  Postupak zamjene dizajna opisan je u DESIGN.md.
 #
@@ -35,50 +35,50 @@
 # =====================================================================
 
 meta:
-  name: "Statistika 101: Intuitivni uvod u analizu podataka"
-  link: https://lusiki.github.io/statistika-knjiga/
+  name: "EIZ radionica / Mint & Slate"
+  link: https://lusiki.github.io/EIZ-radionica/
 
 color:
   palette:
     # --- površine ---------------------------------------------------
-    paper:        "#F2E8D5"   # token:paper        stranica — topla krem podloga
-    paper-soft:   "#E6D9BC"   # token:paper-soft   uvučene plohe: sažetak, kod, ploča widgeta
-    surface:      "#FAF5EA"   # token:surface      površina crtanja u widgetu, oblačić pojma
+    paper:        "#F5F8F7"   # token:paper        stranica — hladna svijetla podloga
+    paper-soft:   "#E5EFEC"   # token:paper-soft   uvučene plohe: sažetak, kod, ploča widgeta
+    surface:      "#FFFFFF"   # token:surface      površina crtanja u widgetu, oblačić pojma
     # --- tekst ------------------------------------------------------
-    ink:          "#1B1A17"   # token:ink          naslovi, osnovice, disk s brojem
-    ink-soft:     "#2F2D28"   # token:ink-soft     tijelo teksta (11,3 : 1 na papiru)
-    ink-mute:     "#4F4A3F"   # token:ink-mute     sekundarno (7,3 : 1)
-    ink-faint:    "#625B4B"   # token:ink-faint    potpisi, izvori (5,5 : 1; 4,8 : 1 na paper-soft)
+    ink:          "#18343B"   # token:ink          naslovi, osnovice, disk s brojem
+    ink-soft:     "#29454A"   # token:ink-soft     tijelo teksta
+    ink-mute:     "#456268"   # token:ink-mute     sekundarno
+    ink-faint:    "#526E73"   # token:ink-faint    potpisi, izvori
     # --- vlas linije (strukturne, ne izvedene iz tinte) -------------
-    rule:         "#CDBF9C"   # token:rule         strukturna vlas linija
-    rule-soft:    "#DDD0B2"   # token:rule-soft    meka vlas linija
+    rule:         "#A9C1BA"   # token:rule         strukturna vlas linija
+    rule-soft:    "#D0E0DA"   # token:rule-soft    meka vlas linija
     # --- akcent: OKER. Samo dodir i navođenje. -----------------------
-    accent:       "#E8B343"   # token:accent       ispuna gumba, palac klizača, aktivna stavka
-    on-accent:    "#1B1A17"   # token:on-accent    tekst i rub na okeru (9,1 : 1)
-    accent-deep:  "#7A5A0F"   # token:accent-deep  tekst poveznice (5,2 : 1 na papiru)
-    accent-dark:  "#4F3A08"   # token:accent-dark  prijelaz mišem, posjećeno
-    accent-wash:  "#F6E6BE"   # token:accent-wash  odabir, kod u retku, bljesak promjene
+    accent:       "#A9D9C7"   # token:accent       ispuna gumba, palac klizača, aktivna stavka
+    on-accent:    "#18343B"   # token:on-accent    tekst i rub na okeru
+    accent-deep:  "#176653"   # token:accent-deep  tekst poveznice
+    accent-dark:  "#104839"   # token:accent-dark  prijelaz mišem, posjećeno
+    accent-wash:  "#DBF0E7"   # token:accent-wash  odabir, kod u retku, bljesak promjene
     # --- modra: POJAM ------------------------------------------------
-    concept:      "#1E3F7A"   # token:concept      os definicije, kupola vinjete, pojam
+    concept:      "#245A79"   # token:concept      os definicije, kupola vinjete, pojam
     # --- crvena: GREŠKA ----------------------------------------------
-    error:        "#D1472F"   # token:error        znak i crta okvira Nađite grešku
-    alert:        "#9E2F1C"   # token:alert        tekst pogreške, pogreška u izlazu koda
+    error:        "#BA493E"   # token:error        znak i crta okvira Nađite grešku
+    alert:        "#94382F"   # token:alert        tekst pogreške, pogreška u izlazu koda
     # --- paleta podataka --------------------------------------------
     # Poredana po SVJETLINI da preživi pretvorbu u sivo: tiskani blok je
     # jednobojan i ovih pet tonova u njemu postaju pet razlučivih sivih.
     # Treba li serija više od pet razina, mijenja se oblik točke ili
     # uzorak ispune — nikad ton. Oker i crvena nisu boje podataka.
-    data-1:       "#1B1A17"   # token:data-1        L* 9   tinta
-    data-2:       "#1E3F7A"   # token:data-2        L* 27  modra
-    data-3:       "#7F6234"   # token:data-3        L* 44  zemljani oker
-    data-4:       "#998F7B"   # token:data-4        L* 60  topla siva
-    data-5:       "#D2C4A2"   # token:data-5        L* 79  blijeda
+    data-1:       "#18343B"   # token:data-1        tinta
+    data-2:       "#245A79"   # token:data-2        modra
+    data-3:       "#687766"   # token:data-3        maslinastosiva
+    data-4:       "#9CAA9D"   # token:data-4        sivozelena
+    data-5:       "#D5DDD4"   # token:data-5        blijeda kadulja
     # --- naslovna zona: iste vrijednosti u obje teme ------------------
-    brand-mustard: "#E8B343"  # token:brand-mustard  podloga korice i naslovne stranice
-    brand-navy:    "#1E3F7A"  # token:brand-navy     vanjska kupola
-    brand-cream:   "#F2E8D5"  # token:brand-cream    srednja kupola, tekst na tamnom polju
-    brand-red:     "#D1472F"  # token:brand-red      unutarnja kupola
-    brand-ink:     "#1B1A17"  # token:brand-ink      naslov, disk, os i osnovica na okeru
+    brand-mustard: "#A9D9C7"  # token:brand-mustard  podloga korice i naslovne stranice
+    brand-navy:    "#245A79"  # token:brand-navy     vanjska kupola
+    brand-cream:   "#F5F8F7"  # token:brand-cream    srednja kupola, tekst na tamnom polju
+    brand-red:     "#BA493E"  # token:brand-red      unutarnja kupola
+    brand-ink:     "#18343B"  # token:brand-ink      naslov, disk, os i osnovica na okeru
 
   foreground: ink-soft
   background: paper

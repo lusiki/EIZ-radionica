@@ -1,8 +1,8 @@
 # Rights and attribution
 
 No new repository-wide licence is asserted by this revision. The repository
-owner should choose one before wider redistribution of original workshop
-prose and code. This is a local review branch.
+owner retains the applicable rights in the original workshop prose and code.
+Publication on GitHub Pages does not itself grant a new reuse licence.
 
 The bundled font files have their own SIL Open Font License notices under
 styles/fonts/. The visual system was supplied by the repository owner.

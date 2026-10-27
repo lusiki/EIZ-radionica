@@ -79,7 +79,7 @@ vježbama za samostalni rad.
 [Preuzmite cijeli PDF](downloads/EIZ-prirucnik.pdf)
 
 ::: {.concept-box}
-**Radna verzija za pregled.** Sadržaj je revidiran {{< var workshop.revision >}}
+**Materijali radionice.** Sadržaj je revidiran {{< var workshop.revision >}}
 Termin sljedeće izvedbe i kontakt potvrđuje organizator. Datum revizije nije
 datum događaja.
 :::

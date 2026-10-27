@@ -31,6 +31,17 @@ New-Item -ItemType Directory -Force (Join-Path $repoRoot 'downloads') | Out-Null
 $zipPath = Join-Path $repoRoot 'downloads/eiz-workshop.zip'
 # Only this known generated ZIP may be replaced; no recursive deletion.
 if (Test-Path -LiteralPath $zipPath) { Remove-Item -LiteralPath $zipPath }
-Add-Type -AssemblyName System.IO.Compression.FileSystem
-[IO.Compression.ZipFile]::CreateFromDirectory($staging, $zipPath)
+Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
+# .NET Framework's CreateFromDirectory can store Windows backslashes. ZIP
+# entry names must use forward slashes so Linux and macOS see real folders.
+$archive = [IO.Compression.ZipFile]::Open($zipPath, [IO.Compression.ZipArchiveMode]::Create)
+try {
+  foreach ($entryFile in (Get-ChildItem -LiteralPath $staging -Recurse -File | Sort-Object FullName)) {
+    $entryName = $entryFile.FullName.Substring($staging.Length + 1).Replace('\', '/')
+    [IO.Compression.ZipFileExtensions]::CreateEntryFromFile(
+      $archive, $entryFile.FullName, $entryName, [IO.Compression.CompressionLevel]::Optimal
+    ) | Out-Null
+  }
+}
+finally { $archive.Dispose() }
 Write-Output "Workshop package: $zipPath"

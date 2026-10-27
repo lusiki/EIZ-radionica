@@ -59,6 +59,9 @@ for path,p in pages.items():
             if q is None: q=Page(target.read_text(encoding="utf-8"))
             if unquote(u.fragment) not in q.ids: errors.append(f"{path.relative_to(site)}: missing anchor {link}")
 with zipfile.ZipFile(site/"downloads/eiz-workshop.zip") as z:
+    # Windows Python normalizes backslashes in filename, so inspect the raw
+    # archive names to catch packages that would fail on Linux or macOS.
+    assert all("\\" not in entry.orig_filename for entry in z.infolist()), "ZIP entry paths must use forward slashes"
     members = z.namelist()
     assert all(not ("/.git/" in n or n.startswith((".git/",".claude/","submissions/","renv/library/"))) for n in members)
     assert not any(n.endswith((".html",".log")) for n in members)

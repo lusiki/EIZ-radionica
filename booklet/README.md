@@ -78,3 +78,16 @@ Repeated teacher/student roles, fixed timings, word counts and grading
 criteria were replaced with practical suggestions and questions for reflection.
 The eight headings, crosslinks, source verification and numerical examples
 remain connected. Both HTML and PDF are rebuilt from these sources.
+
+## Simpler activities, 27 October 2026
+
+The live workshop uses one discussion question, one displayed example and
+one small attempt per topic. The canonical examples in materials/activities/
+are included by both day pages and the all-examples page. They require only
+the page and an AI conversation. Numerical tasks use three actual months
+and simple arithmetic, with R code read and modified in chat.
+
+Each reader chapter now starts with the corresponding short activity.
+Full-data workflows, file management, notebooks and advanced methods are
+clearly presented as optional further reading. No activity depends on
+written notes or files produced in an earlier topic.

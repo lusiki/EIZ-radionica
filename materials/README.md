@@ -1,12 +1,11 @@
-# Materijali za radionicu
+# Primjeri i dodatni materijali
 
-- exercises/index.qmd povezuje osam vježbi s kratkim pregledima i priručnikom.
-- solutions.qmd donosi primjere rješenja.
-- templates/ sadrži predloške za plan i bilješke o izvorima, podacima i AI pomoći.
-- examples/ sadrži jasno označen sažetak s namjernim pogreškama.
-- sources.qmd vodi na početne izvore.
-- rubric.qmd nudi pitanja za osvrt na vlastiti rad.
-- results.qmd prikazuje referentne rezultate.
+activities/ sadrži osam kratkih primjera. Svaki ima pitanje za razgovor,
+jedan pokazani primjer i mali pokušaj. Stranice dana i exercises/index.qmd
+uključuju iste datoteke.
 
-Sve vježbe koriste istu spremljenu kopiju podataka. Možete ih isprobati
-s priloženim materijalima i osnovnim R-om, a AI pomoć uključiti po želji.
+solutions.qmd donosi kratke odgovore. rubric.qmd otvara završni razgovor.
+Za zajednički rad dovoljni su primjeri na stranici i jedan AI razgovor.
+
+sources.qmd i results.qmd nude izvore i rezultate cijele analize.
+templates/ i examples/ služe dodatnom radu s priručnikom i punim skupom podataka.

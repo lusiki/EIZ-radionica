@@ -1,50 +1,35 @@
 ---
-title: "Ideje za zajednički rad"
-subtitle: "Kako primjere isprobati u paru ili maloj grupi"
+title: "Kako voditi radionicu"
+subtitle: "Jedno pitanje, jedan primjer i jedan pokušaj"
 ---
 
-## Krenite od zajedničkog pitanja {#kako-voditi-oba-dana}
+## Otvorite stranicu dana {#kako-voditi-oba-dana}
 
-Otvorite primjer s hrvatskim podacima i dogovorite što vas zanima.
-Možete proći oba dana redom ili se zadržati na jednoj temi.
-Priručnik donosi šira objašnjenja, a vježbe daju polazište za vlastiti pokušaj.
+Za prvi dio koristite [Dan 1](../slides/day1.qmd), a za drugi [Dan 2](../slides/day2.qmd).
+Na svakoj su stranici svi primjeri za taj dan. Držite otvoren i jedan AI razgovor.
 
-Korisno je najprije zajedno proći jedan mali primjer. Netko može
-pokazati pretragu izvora, drugi objasniti dopunu koda, a treći pročitati
-odlomak i predložiti jasniji izraz.
+## Ponovite isti jednostavan slijed {#pripremite-radno-okruženje}
 
-[Dan 1](../slides/day1.qmd) · [Dan 2](../slides/day2.qmd) ·
-[Pregled osam tema](../booklet/index.qmd#osam-povezanih-blokova)
+1. **Razgovor.** Pročitajte pitanje i saslušajte nekoliko odgovora.
+2. **Primjer.** Kopirajte pripremljeni upit ili pokažite tablicu. Objasnite jednu stvar koju vrijedi uočiti.
+3. **Isprobajte.** Pozovite sve da naprave mali zadatak ispod primjera. Zatim zajedno pogledajte jedan ili dva odgovora.
 
-## Pripremite mapu i alate {#pripremite-radno-okruženje}
+Pokazujte samo primjer koji je upravo na redu. Recite „Sad promijenite
+godinu”, „Objasnite drugi redak” ili „Zatražite najveću vrijednost”.
+Svaki pokušaj završava kratkim razgovorom o onome što se promijenilo.
 
-Preuzmite isti radni paket i otvorite početnu skriptu u Positronu ili
-RStudiju. Za osnovni primjer dovoljan je R. AI pomoć možete koristiti
-iz preglednika ili dostupnog dodatka.
+## Ako netko zapne {#pomoć-tijekom-rada}
 
-Prije zajedničkog rada isprobajte učitavanje podataka i otvorite početne
-izvore. Uz njih pripremite sažetak i skriptu s namjernim pogreškama.
-Ti primjeri mogu poslužiti i dok je AI alat nedostupan.
+Vratite se na upit koji ste upravo pokazali i zajedno promijenite jedan dio.
+Kod brojeva pokažite račun na kalkulatoru. Kod teksta usporedite dvije
+rečenice i pitajte koja je jasnija.
 
-## Uspoređujte pokušaje {#pomoć-tijekom-rada}
+Primjeri odgovora i izračuna već su na stranici. Mogu poslužiti kad je
+AI alat nedostupan ili kad želite odmah pokazati o čemu razgovarate.
 
-U paru možete mijenjati uloge. Jedna osoba predlaže pitanje, upit ili
-naredbu, a druga pogleda izvor ili ponovi izračun. Zatim zamijenite mjesta.
+## Za pitanja koja otvaraju novu temu {#napredni-dio-nakon-radionice}
 
-Ako kod postane previše složen, vratite se na jednu godinu i jedan
-prosjek. Za početak je dovoljan dobro označen graf. Iz istog postupka
-kasnije možete napraviti drugi prikaz.
+Priručnik služi za dulja objašnjenja i daljnje istraživanje. Možete
+pokazati odgovarajuće poglavlje zainteresiranoj osobi nakon zajedničkog primjera.
 
-Vrijedi zastati kod zanimljive razlike između dvaju odgovora.
-Pitajte se što ju je proizvelo i kojim biste je izvorom ili izračunom razjasnili.
-
-## Kad poželite dalje {#napredni-dio-nakon-radionice}
-
-Za nastavak možete isprobati agenta, bilježnicu ili regresijski primjer
-iz `code/optional_hac.R`. Regresijski dio pretpostavlja poznavanje
-vremenske ovisnosti i statističkog zaključivanja.
-
-Istraživanje medijskih tekstova traži vlastitu zbirku, definiciju mjere
-i način provjere rezultata. To može postati novi zajednički projekt.
-
-[Rješenja](../materials/solutions.qmd) · [Osvrt na rad](../materials/rubric.qmd)
+[Pregled tema](workshop_overview.qmd) · [Svi primjeri](../materials/exercises/index.qmd)

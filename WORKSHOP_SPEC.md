@@ -2,49 +2,46 @@
 
 Pregled materijala, 27. listopada 2026.
 
-## Jedan primjer kroz osam tema
+## Osnovni način rada
 
-Radionica povezuje traženje izvora, planiranje, analizu i pisanje.
-Pratimo ostvarenu inflaciju i kvalitativni saldo očekivanja cijena u
-Hrvatskoj od 2015. do 2024. Materijale možete koristiti redom,
-samostalno ili u grupi, vlastitim tempom.
+Svaka od osam tema ima pitanje za razgovor, jedan gotov primjer i jedan
+mali zadatak. Sadržaj se nalazi na stranici dana ili na jednoj stranici
+sa svim primjerima. Zajednički rad koristi preglednik i jedan AI razgovor.
 
-| Tema | Primjer rada |
+| Tema | Mali zadatak |
 |---|---|
-| 1.1 Postavite istraživačko pitanje | Pitanje o dvjema mjerama |
-| 1.2 Pronađite i provjerite izvore | Bilješke o izvorima i njihovim tvrdnjama |
-| 1.3 Provjerite i uredite sažetak | Početni sažetak i vlastiti ispravak |
-| 1.4 Pripremite plan analize | Skica postupka i prikaza |
-| 2.1 Upoznajte i provjerite podatke | Pregled 120 mjesečnih opažanja |
-| 2.2 Dopunite i objasnite kod | Mala dopuna R skripte |
-| 2.3 Ponovite analizu od početka | Tablica i graf iz spremljene skripte |
-| 2.4 Napišite i uredite zaključak | Odlomak povezan s dobivenim rezultatom |
+| 1.1 Postavite istraživačko pitanje | Promijeniti godinu u upitu |
+| 1.2 Pronađite i provjerite izvore | Pronaći podatak na službenoj stranici |
+| 1.3 Provjerite i uredite sažetak | Ispraviti jednu rečenicu |
+| 1.4 Pripremite plan analize | Zatražiti jednostavan plan |
+| 2.1 Upoznajte i provjerite podatke | Objasniti redak tablice |
+| 2.2 Dopunite i objasnite kod | Promijeniti mean u max |
+| 2.3 Ponovite analizu od početka | Provjeriti prosjek triju brojeva |
+| 2.4 Napišite i uredite zaključak | Urediti jednu rečenicu |
 
-Stranice dana daju kratke preglede, priručnik donosi objašnjenja,
-a vježbe primjere za isprobavanje. Naslovi i poveznice prate isti redoslijed.
-Osvrt na rad čine pitanja koja pomažu odlučiti što dalje doraditi.
+Primjeri su u materials/activities/ i uključuju se u stranice obaju dana
+i zajedničku stranicu. Time prikaz i zadatak ostaju usklađeni.
 
-## Podaci i metode
+## Dodatno čitanje i potpuna analiza
 
-Uzorak sadrži 120 mjeseci za Hrvatsku, od 2015-01 do 2024-12.
-Godišnju promjenu HICP-a izražavamo u postocima, a sezonski neprilagođen
-anketni saldo u bodovima salda. Zadržavamo izvorne jedinice i sva opažanja.
+Priručnik prati iste naslove i najprije opisuje mali primjer iz radionice.
+Zatim objašnjava širu temu. Potpuna analiza, R okruženje, predlošci i
+preuzimanje radnog paketa služe samostalnom nastavku.
 
-Osnovna analiza koristi odvojene vremenske grafove i godišnje prosjeke.
+## Podaci
+
+Za male izračune koristimo siječanj, veljaču i ožujak 2022., a za vlastiti
+pokušaj ista tri mjeseca 2019. To su stvarni retci spremljenog skupa.
+Prosjek triju mjesečnih godišnjih stopa odnosi se na ta tri opažanja.
+HICP izražavamo u postocima, a anketni saldo u bodovima salda.
+
+Puni skup sadrži 120 mjeseci za Hrvatsku, od 2015-01 do 2024-12.
+Opisna analiza koristi odvojene vremenske grafove i godišnje prosjeke.
 Korelacija opisuje istodobnu linearnu povezanost. Pitanja o uzroku ili
-prognoznoj točnosti traže zaseban postupak. OLS/HAC je dodatni primjer,
-s konstantom, navedenim postavkama i objašnjenim ograničenjima.
+prognozi traže zaseban postupak. OLS/HAC ostaje dodatni primjer.
 
-## Alati i datoteke
+## Izrada materijala
 
-Početna skripta radi u osnovnom R-u, u Positronu ili RStudiju.
-Pripremljeni podaci, tekst i pogrešna skripta omogućuju rad izvan mreže.
-AI pomoć možete isprobati dostupnim alatom.
-
-Za obnovu svih referentnih rezultata služe skripte i renv.lock.
-Izvorni JSON i manifest bilježe podrijetlo podataka. Quarto i PDF skripta
-grade web i priručnik iz zajedničkih izvora. Upute za gradnju i objavu
-nalaze se u README.md.
-
-Povezani materijali su admin/workshop_overview.qmd,
-materials/exercises/index.qmd i materials/rubric.qmd.
+Quarto gradi stranice iz QMD izvora. PDF i web priručnik koriste iste
+tekstove poglavlja. Upute za gradnju, cijeli R postupak i objavu nalaze se
+u README.md. Osnovni primjeri rade i kao običan tekst s prikazanim odgovorima.

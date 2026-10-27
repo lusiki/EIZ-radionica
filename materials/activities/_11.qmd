@@ -1,0 +1,14 @@
+**Razgovor.** Što biste htjeli saznati o inflaciji? Kako od široke teme
+dobiti pitanje na koje možemo odgovoriti?
+
+**Primjer.** U AI razgovor pošaljite ovaj upit.
+
+> Tema je inflacija u Hrvatskoj. Predloži jedno jednostavno istraživačko
+> pitanje za razdoblje od siječnja do ožujka 2022.
+
+Jedan mogući odgovor glasi „Kako se godišnja stopa inflacije u Hrvatskoj
+mijenjala od siječnja do ožujka 2022.?” Usporedite temu i pitanje.
+Pitanje sada ima zemlju, razdoblje i ono što želimo pogledati.
+
+**Isprobajte.** Pošaljite isti upit za 2019. godinu. Pročitajte pitanje
+koje dobijete i recite je li jasno što biste istraživali.

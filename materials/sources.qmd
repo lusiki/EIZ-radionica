@@ -3,8 +3,8 @@ title: "Izvori koje možete provjeriti"
 subtitle: "Polazište za čitanje i vlastite bilješke"
 ---
 
-Počnite od ovih izvora. U svakome pronađite odjeljak koji podupire
-vašu tvrdnju i sačuvajte ga uz svoje bilješke.
+U kratkom primjeru otvaramo Eurostatovu stranicu i provjeravamo jednu
+tvrdnju. Ostali izvori na ovoj stranici služe daljnjem čitanju o podacima i metodama.
 
 ## Tri početna izvora
 

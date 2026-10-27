@@ -1,152 +1,45 @@
 ---
-title: "Isprobajte na jednom primjeru"
-subtitle: "Osam vježbi koje povezuju izvore, podatke i pisanje"
+title: "Svi primjeri na jednoj stranici"
+subtitle: "Razgovor · Jedan primjer · Vaš pokušaj"
 ---
 
-Krenite redom ili otvorite ono što vas trenutno zanima. Sve vježbe koriste
-iste podatke za Hrvatsku, pa se lako možete vratiti na raniji korak.
-Možete raditi sami ili usporediti ideje s nekim drugim.
-
-Svoje bilješke i izmjene spremajte u `submissions/`. Uz svaki zadatak
-nalaze se povezano objašnjenje i poglavlje priručnika.
-[Rješenja](../solutions.qmd) mogu pomoći kada zapnete ili želite usporediti postupak.
+Ovo su isti primjeri kao na stranicama obaju dana. Uz svaku temu je jedno
+pitanje za razgovor, gotov primjer i mali zadatak koji možete odmah isprobati.
+Otvorite jedan AI razgovor i koristite upite, tekst i brojke s ove stranice.
+Odgovore uspoređujemo u razgovoru.
 
 ## 1.1 Postavite istraživačko pitanje {#v11}
 
-[Dan 1, tema 1.1](../../slides/day1.qmd#blok-11) · [Priručnik 1.1](../../booklet/day1.qmd#poglavlje-11)
-
-Počnite od pitanja o kretanju inflacije i očekivanja u Hrvatskoj od 2015.
-do 2024. U [rječniku podataka](../../data/dictionary.qmd) pogledajte
-što mjere dvije varijable i u kojim su jedinicama.
-
-Napišite pitanje vlastitim riječima. Ako želite, zatražite i AI prijedlog,
-pa usporedite dvije verzije. Pokušajte zamisliti graf ili izračun koji bi
-vam pomogao odgovoriti na pitanje.
-
-[Predložak plana](../templates/research-plan.md) može poslužiti za prve bilješke.
-
-**Za razmišljanje.** Što biste trebali dodatno istražiti da vas zanima
-uzrokuju li očekivanja promjenu inflacije?
+{{< include ../activities/_11.qmd >}}
 
 ## 1.2 Pronađite i provjerite izvore {#v12}
 
-[Dan 1, tema 1.2](../../slides/day1.qmd#blok-12) · [Priručnik 1.2](../../booklet/day1.qmd#poglavlje-12)
-
-Otvorite [tri početna izvora](../sources.qmd). U njima potražite
-objašnjenje HICP-a, anketnog salda i načina na koji se te mjere mogu uspoređivati.
-AI pretraživanje može vam pomoći pronaći još literature.
-
-Uz svaki pročitani izvor zapišite jednu korisnu tvrdnju i mjesto na kojem
-je objašnjena. Dodajte svoj kratki sažetak i granice primjene. Tako ćete
-se lakše vratiti na izvor kad počnete pisati.
-
-Ako vam odgovara, koristite [predložak bilješke o izvoru](../templates/evidence-log.md).
-U paru možete otvoriti bilješku onog drugog i usporediti je s izvornim tekstom.
-
-**Za razmišljanje.** Može li točan naslov rada pratiti preširoku tvrdnju?
-Koji dio izvora pomaže odrediti što možemo zaključiti?
+{{< include ../activities/_12.qmd >}}
 
 ## 1.3 Provjerite i uredite sažetak {#v13}
 
-[Dan 1, tema 1.3](../../slides/day1.qmd#blok-13) · [Priručnik 1.3](../../booklet/day1.qmd#poglavlje-13)
-
-Pročitajte [pripremljeni sažetak](../examples/flawed-summary.md).
-U njega su namjerno unesene pogreške. Pogledajte što se dogodilo s
-jedinicama, uzorkom i zaključkom.
-
-Usporedite sumnjive rečenice s izvorima iz prethodne vježbe. Uz svaku
-zapišite što biste promijenili i zašto. Zatim sastavite kratak ispravljeni
-odlomak. Sačuvajte obje verzije da možete vidjeti razliku.
-
-**Za razmišljanje.** Koje bi vam objašnjenje još trebalo da razumijete
-kako je analiza provedena?
+{{< include ../activities/_13.qmd >}}
 
 ## 1.4 Pripremite plan analize {#v14}
 
-[Dan 1, tema 1.4](../../slides/day1.qmd#blok-14) · [Priručnik 1.4](../../booklet/day1.qmd#poglavlje-14)
-
-Skupite pitanje i bilješke iz prethodnih vježbi. U
-[predložak plana](../templates/research-plan.md) upišite što želite
-usporediti, koje podatke koristite i koje biste prikaze htjeli dobiti.
-
-Za naš primjer polazimo od 120 mjeseci, izvornih jedinica, godišnjih
-prosjeka i odvojenih vremenskih grafova. Zabilježite kako ćete provjeriti
-podatke i što ćete pogledati ako naiđete na prazninu ili ponovljen mjesec.
-
-Plan može biti nekoliko jasnih bilježaka. Sačuvajte ga uz podatke
-i vratite mu se kad počnete raditi u R-u.
-
-**Za razmišljanje.** Koji bi vas nalaz naveo da dopunite plan?
-Kako biste objasnili tu promjenu?
+{{< include ../activities/_14.qmd >}}
 
 ## 2.1 Upoznajte i provjerite podatke {#v21}
 
-[Dan 2, tema 2.1](../../slides/day2.qmd#blok-21) · [Priručnik 2.1](../../booklet/day2.qmd#poglavlje-21)
-
-Otvorite [CSV](../../data/processed/croatia_inflation.csv) i
-[početnu skriptu](../../code/starter.R). Pogledajte prve retke i
-povežite stupce s opisima u rječniku podataka.
-
-Provjerite broj i jedinstvenost mjeseci, raspon datuma, praznine i
-raspon obiju mjera. Naš primjer sadrži 120 mjeseci, od 2015-01 do 2024-12,
-s potpunim brojčanim vrijednostima.
-
-U [predložak bilježaka](../templates/data-audit.md) možete spremiti
-naredbe i njihove rezultate. Nule i negativne vrijednosti protumačite
-prema definiciji svake mjere.
-
-**Za razmišljanje.** Što znači prazna oznaka statusa, a što prazna
-brojčana vrijednost? U kojim biste stupcima provjerili tu razliku?
+{{< include ../activities/_21.qmd >}}
 
 ## 2.2 Dopunite i objasnite kod {#v22}
 
-[Dan 2, tema 2.2](../../slides/day2.qmd#blok-22) · [Priručnik 2.2](../../booklet/day2.qmd#poglavlje-22)
-
-U početnoj skripti pronađite izračun za 2022. Pokrenite ga i pogledajte
-koji su redci uključeni. Zatim dodajte prosjek salda za istu godinu
-i tablicu godišnjih prosjeka.
-
-Možete zatražiti AI prijedlog ili se osloniti na primjere koda u priručniku.
-Pročitajte dopunu, pokrenite je i usporedite rezultat s odabranim recima.
-Za svaku godinu očekujemo 12 mjeseci.
-
-Uz spremljenu skriptu dodajte kratku bilješku o tome što ste promijenili.
-[Zapis rada s AI-jem](../templates/ai-use-log.md) može pomoći sačuvati koristan prijedlog i način provjere.
-
-**Za razmišljanje.** Što nova naredba računa i u kojoj je jedinici rezultat?
+{{< include ../activities/_22.qmd >}}
 
 ## 2.3 Ponovite analizu od početka {#v23}
 
-[Dan 2, tema 2.3](../../slides/day2.qmd#blok-23) · [Priručnik 2.3](../../booklet/day2.qmd#poglavlje-23)
-
-Otvorite [namjerno pogrešnu skriptu](../../code/flawed_example.R).
-Prvo je pročitajte i potražite korake koji mijenjaju uzorak ili značenje mjere.
-Uz njih zapišite što biste napravili drukčije.
-
-U svojoj skripti učitajte svih 120 mjeseci, sačuvajte jedinice i izradite
-godišnju tablicu. Počnite jednim vremenskim grafom, pa dodajte drugu mjeru
-u zaseban prikaz.
-
-Spremite skriptu, pokrenite novu R sesiju i izvedite je od početka.
-Usporedite jedan broj s [referentnim rezultatima](../results.qmd).
-Ako zapnete, pogledajte [primjer rješenja](../solutions.qmd#popravak).
-
-**Za razmišljanje.** Kako bi se sažetak promijenio kad biste izostavili
-mjesec najveće inflacije?
+{{< include ../activities/_23.qmd >}}
 
 ## 2.4 Napišite i uredite zaključak {#v24}
 
-[Dan 2, tema 2.4](../../slides/day2.qmd#blok-24) · [Priručnik 2.4](../../booklet/day2.qmd#poglavlje-24)
+{{< include ../activities/_24.qmd >}}
 
-Otvorite svoj graf ili tablicu i napišite kratak odlomak. Objasnite što
-gledate, izdvojite zanimljiv broj i navedite što biste još željeli istražiti.
-
-Zamolite kolegu ili AI za prijedlog jasnijeg teksta. Usporedite novu
-verziju s početnom, posebno brojke, jedinice i značenje tvrdnji.
-Sačuvajte obje verzije da vidite koje su izmjene pomogle.
-
-Pitanje, izvore, skriptu i zaključak možete povezati u mali izvještaj.
-[Pitanja za osvrt](../rubric.qmd) pomoći će vam proći kroz ono što ste napravili.
-
-**Za razmišljanje.** Koji biste dio ovog postupka htjeli isprobati
-na vlastitoj temi?
+Brojke dolaze iz [podataka radionice](../../data/dictionary.qmd) za Hrvatsku,
+spremljenih 26. listopada 2026. Za dodatna objašnjenja otvorite
+[priručnik](../../booklet/index.qmd).

@@ -9,10 +9,10 @@ toc-title: "Sadržaj drugog dijela"
 [O priručniku](index.qmd) · [Cijeli PDF](../downloads/EIZ-prirucnik.pdf) ·
 [Kratki pregled drugog dana](../slides/day2.qmd)
 
-Otvorite plan iz vježbe 1.4. Poglavlja 2.1–2.4 prate provjeru podataka,
-dopunu koda, ponovno izvođenje analize i pisanje zaključka. Sve te korake
-možete isprobati u istoj R skripti. Agenti, bilježnice i napredne metode obrađeni su
-u dijelovima za dodatno čitanje. Primjeri koda izvode se iz korijena projekta.
+Svako poglavlje počinje malim primjerom sa stranice drugog dana.
+Zatim objašnjava širi postupak za one koji žele istražiti više.
+Upute za R projekt, agente, bilježnice i napredne metode pripadaju tom
+samostalnom nastavku. Kratki primjeri radionice nalaze se zajedno na stranici dana.
 
 {{< include _05-agents.qmd >}}
 

@@ -2,6 +2,12 @@
 
 [Dan 1, tema 1.1](../slides/day1.qmd#blok-11) · [Vježba 1.1](../materials/exercises/index.qmd#v11)
 
+### Kratki primjer iz radionice
+
+Razgovaramo o razlici između teme i pitanja. AI-ju zadajemo inflaciju u Hrvatskoj od siječnja do ožujka 2022., zatim isti upit isprobavamo za 2019. Jedno jasno pitanje dovoljno je za ovaj pokušaj.
+
+Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+
 ### Od prazne stranice do istraživačkog pitanja
 
 Zamislite da želite istražiti neku temu. Imate nekoliko otvorenih kartica
@@ -12,13 +18,13 @@ svakom od tih koraka, no njegov prijedlog treba provjeriti. Je li pitanje
 dovoljno određeno? Možete li pronaći autora i izvor? Izvršava li se skripta
 i podupiru li dokazi tvrdnje u odlomku?
 
-Za pretraživanje i planiranje koristit ćemo primjere iz Perplexityja,
-Geminija i Claudea. Analizu provodimo u R skripti, a programske asistente
-i bilježnice razmatramo kao dodatne mogućnosti.
+U ovom priručniku nalaze se i primjeri iz Perplexityja, Geminija i Claudea.
+Za proširenu analizu opisani su R skripte, programski asistenti i bilježnice.
 Mogućnosti tih proizvoda preklapaju se. Odaberite dostupan alat i uvježbajte pronalaženje dokaza i objašnjavanje
 rezultata.
 
-Tijekom cijele radionice radimo s istim podacima za Hrvatsku. Pratimo
+Kratki primjeri izdvajaju nekoliko mjeseci iz šireg skupa za Hrvatsku.
+U cijelom skupu pratimo
 ostvarenu inflaciju i odgovore potrošača o očekivanim promjenama cijena
 od 2015. do 2024. Imamo dvije mjere i 120 mjeseci. Sve izračune možete
 ponoviti priloženim skriptama. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje
@@ -27,14 +33,13 @@ medijske pažnje.
 
 ### Odredite što želite saznati
 
-Zajedničko pitanje glasi „Kako su se u Hrvatskoj od 2015. do 2024.
+Pitanje za proširenu analizu glasi „Kako su se u Hrvatskoj od 2015. do 2024.
 kretali ostvarena inflacija i očekivanja potrošača o promjenama cijena?”
 U njemu su navedeni zemlja, razdoblje i dvije mjere. Iz tog pitanja
 možete odrediti koje izvore i podatke trebate pronaći.
 
-U vježbi 1.1 napišite svoju formulaciju istog opisnog pitanja.
-Uz nju objasnite što svaka mjera predstavlja. U sljedećem bloku
-potražit ćete izvore koji podupiru te definicije.
+U kratkom primjeru 1.1 pitanje ograničavamo na tri mjeseca i jednu mjeru.
+Kasnije ga možete proširiti na dulje razdoblje i usporedbu dviju mjera.
 
 ### Kako jezični model oblikuje odgovor
 
@@ -113,7 +118,7 @@ odlomak, tri ista izvora i isto pitanje. Usporedite točnost, mogućnost provjer
 razumljivost i vrijeme potrebno za provjeru. Prednost dajte odgovoru čije tvrdnje možete potvrditi u navedenim izvorima. Ako alat ne može otvoriti izvor, bilješka
 „nemam pristup punom tekstu” korisnija je od uvjerljivog nagađanja.
 
-### Bilješke koje će vam koristiti
+### Za dulji projekt / korisne bilješke
 
 Uz važnu tvrdnju sačuvajte izvor i mjesto na kojem je objašnjena.
 Kad vam AI pomogne, zabilježite koristan prijedlog i kako ste ga provjerili.

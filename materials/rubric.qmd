@@ -1,34 +1,16 @@
 ---
-title: "Pogledajte što ste dobili"
-subtitle: "Nekoliko pitanja za osvrt na vlastiti rad"
+title: "Razgovor na kraju"
+subtitle: "Što biste htjeli isprobati sljedeće?"
 ---
 
-Kad povežete pitanje, izvore, kod i kratak zaključak, imate mali
-istraživački primjer kojem se možete vratiti ili ga podijeliti s nekim.
+## Osvrnimo se na primjere {#rubrika}
 
-## Prođite kroz rezultat {#rubrika}
+Prisjetite se jednog AI odgovora koji vam je pomogao i jednog koji ste
+popravili. Recite što ste u njemu uočili.
 
-Otvorite svoje bilješke, skriptu i graf. Pokušajte objasniti kako ste
-od početnog pitanja došli do završnog odlomka.
+## Usporedite iskustva {#završna-samoprovjera}
 
-- Koji izvor podupire važnu tvrdnju i gdje se nalazi taj dio teksta?
-- Što mjere stopa HICP-a i anketni saldo?
-- Dobivate li iste rezultate kad skriptu pokrenete u novoj sesiji?
-- Možete li broj iz odlomka pronaći u tablici ili grafu?
-- Što vam rezultat govori, a što biste htjeli dodatno istražiti?
-- Koji vam je AI prijedlog pomogao i kako ste ga provjerili?
+Koji je primjer bio najjasniji? Što biste od toga htjeli isprobati na
+vlastitoj temi? O tim pitanjima možete razgovarati zajedno ili u paru.
 
-## Isprobajte s nekim drugim {#završna-samoprovjera}
-
-Dajte kolegi svoju skriptu i bilješke. Pogledajte može li pratiti
-postupak i pronaći rezultat koji opisujete. Njegova pitanja često pokažu
-gdje bi koristilo dodati objašnjenje.
-
-## Sačuvajte ono što će vam koristiti
-
-Pitanje, izvore, skriptu, tablicu ili graf i zaključak držite u istoj
-radnoj mapi. Kratka bilješka o korištenom alatu i važnim izmjenama
-olakšat će nastavak rada.
-
-[Primjer rješenja](solutions.qmd) · [Referentni rezultati](results.qmd) ·
-[Povratak na vježbe](exercises/index.qmd)
+[Svi primjeri](exercises/index.qmd) · [Priručnik](../booklet/index.qmd)

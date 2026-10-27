@@ -1,0 +1,17 @@
+**Razgovor.** Što znači jedan redak ove tablice? U kojim su jedinicama dva broja?
+
+| Mjesec | Godišnja stopa HICP-a, % | Saldo očekivanja, bodovi |
+|---|---:|---:|
+| Siječanj 2022. | 5,5 | 48,1 |
+| Veljača 2022. | 6,3 | 53,0 |
+| Ožujak 2022. | 7,3 | 55,5 |
+
+To su tri mjeseca iz podataka radionice za Hrvatsku. Godišnja stopa
+uspoređuje cijene s istim mjesecom prethodne godine. Saldo sažima odgovore
+potrošača o budućem kretanju cijena.
+
+**Primjer.** Pročitajte prvi redak naglas. U siječnju 2022. godišnja stopa
+HICP-a iznosi 5,5 %, a saldo očekivanja 48,1 bod. Uz svaki broj izgovorite jedinicu.
+
+**Isprobajte.** Na isti način objasnite redak za ožujak. Možete ga
+objasniti osobi pokraj sebe ili zatražiti AI objašnjenje i usporediti ga s tablicom.

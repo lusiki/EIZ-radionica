@@ -2,16 +2,20 @@
 
 [Dan 2, tema 2.1](../slides/day2.qmd#blok-21) · [Vježba 2.1](../materials/exercises/index.qmd#v21)
 
-### Od plana do prvog retka podataka
+### Kratki primjer iz radionice
 
-Otvorite plan iz vježbe 1.4, rječnik podataka i `code/starter.R`.
-Prvoga dana odredili ste pitanje i mjere. Sada provjerite sadrži li
-tablica očekivane podatke. U Positronu otvorite mapu projekta, pokrenite
-učitavanje CSV-a i pregledajte prve retke.
+Na stranici drugog dana gledamo tablicu s tri mjeseca. Zajedno pročitamo redak za siječanj, zatim svatko objasni redak za ožujak. Važno je uz broj navesti njegovu jedinicu.
 
-U vježbi 2.1 bilježite naredbe i rezultate provjere. Taj zapis prati
-vašu skriptu kroz sljedeće zadatke. Nakon provjere podataka prelazite
-na godišnje prosjeke u poglavlju 2.2.
+Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+
+### Od malog primjera do cijelog skupa
+
+Tablica na stranici drugog dana prikazuje tri mjeseca iz spremljenog skupa.
+U njoj vježbamo čitanje retka i razlikovanje jedinica. Za taj pokušaj
+dovoljno je pogledati tablicu na ekranu.
+
+Ako kasnije želite pregledati cijeli skup, u paketu su CSV, rječnik
+podataka i početna R skripta. Sljedeći odjeljci objašnjavaju taj širi postupak.
 
 ### Što sadrži naš skup podataka
 
@@ -51,12 +55,11 @@ u izvornim jedinicama. U modelu s logaritmiranim varijablama tumačenje
 koeficijenta ovisi o obliku jednadžbe. Za spajanje dnevnih i mjesečnih
 podataka unaprijed odredite pravilo svođenja na istu vremensku razinu.
 
-### Isprobajte u vježbi 2.1
+### Za dulji projekt / pregled cijele tablice
 
-U predložak za provjeru podataka upišite broj redaka i različitih mjeseci,
-prvi i posljednji mjesec, broj nedostajućih vrijednosti te raspon i jedinicu
-svake mjere. Uz svaki nalaz sačuvajte naredbu kojom ste ga dobili.
-Objasnite jednu nultu ili negativnu vrijednost prema definiciji mjere.
+Pri radu s cijelim skupom korisno je provjeriti broj i raspon mjeseci,
+praznine i jedinice. Te provjere nalaze se u priloženim skriptama.
+Pomažu razumjeti podatke prije složenije analize.
 
 ### Dodatno čitanje / provjera podataka uz agenta
 

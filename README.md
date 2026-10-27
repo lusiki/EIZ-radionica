@@ -3,12 +3,16 @@
 **[Otvorite glavnu stranicu radionice](https://lusiki.github.io/EIZ-radionica/).**
 Materijali uređeni 27. listopada 2026. Dokumentacija alata provjerena 26. listopada 2026.
 
-Radionica na hrvatskom jeziku povezuje provjeru izvora, istraživački plan,
-analizu i pisanje kroz jedan slučaj, ostvarenu inflaciju i kvalitativni
-saldo očekivanja cijena u Hrvatskoj, 2015.–2024. Osam povezanih tema
-možete proći redom ili istraživati vlastitim tempom, sami ili s drugima.
+Radionica na hrvatskom jeziku ima osam kratkih tema. Svaka počinje
+razgovorom, pokazuje jedan primjer i daje jedan mali zadatak.
+Za zajednički rad dovoljne su stranica dana i jedan AI razgovor.
+Upiti, tekst, tablica i kratki kod već su na stranici.
 
-## Lokalni pregled
+Brojčani primjeri koriste nekoliko mjeseci iz podataka za Hrvatsku.
+Priručnik, svih 120 mjeseci, R skripte i predlošci dostupni su za
+samostalni nastavak.
+
+## Izrada i lokalni pregled materijala
 
 GitHub Pages objavljuje provjerenu statičku mapu `docs/` nakon promjene na
 `main`. Za novu objavu pokrenite `scripts/build.ps1`, zatim
@@ -48,15 +52,16 @@ source("code/run_all.R", encoding = "UTF-8")
 Pakiranje ZIP-a automatizirano je PowerShell skriptom za Windows.
 Na drugim sustavima referentni R postupak i `quarto render` mogu se izvesti
 zasebno. Lokalni ZIP treba pripremiti prije provjere poveznice za preuzimanje.
-Za isprobavanje osnovnih primjera
-dovoljan je `source("code/starter.R", encoding = "UTF-8")`.
+Za samostalni nastavak u R-u možete pokrenuti
+`source("code/starter.R", encoding = "UTF-8")`.
 
 ## Kako su materijali povezani
 
-Svaka od osam tema ima isti broj i naslov na stranici dana, u priručniku
-i u vježbama. Stranice dana daju kratke preglede, priručnik šira objašnjenja,
-a vježbe konkretne primjere za isprobavanje.
-Plan iz vježbe 1.4 povezuje oba dana. Pregled poveznica je u
+Svaka tema ima isti broj i naslov na stranici dana, u priručniku
+i u primjerima. Dan 1 i Dan 2 sadrže cijeli sadržaj za zajednički rad.
+Stranica Primjeri okuplja ih na jednom mjestu. Zajednički izvori su u
+`materials/activities/`. Priručnik počinje istim malim primjerima, a zatim
+objašnjava širi postupak. Pregled poveznica je u
 [priručniku](booklet/index.qmd#osam-povezanih-blokova).
 
 ## Materijali
@@ -65,9 +70,9 @@ Plan iz vježbe 1.4 povezuje oba dana. Pregled poveznica je u
 - [Dan 1](slides/day1.qmd), [Dan 2](slides/day2.qmd), kratki pregledi
 - [Prošireni priručnik](booklet/index.qmd), revidirani izvorni tekst u osam
   poglavlja, dva dijela za web i cjelovit PDF u `downloads/EIZ-prirucnik.pdf`
-- [Osam vježbi](materials/exercises/index.qmd), [rješenja](materials/solutions.qmd)
+- [Osam kratkih primjera](materials/exercises/index.qmd), [rješenja](materials/solutions.qmd)
 - [Rječnik podataka](data/dictionary.qmd), [izvori](materials/sources.qmd)
-- [Osvrt na rad](materials/rubric.qmd), [ideje za zajednički rad](admin/instructor.qmd)
+- [Završni razgovor](materials/rubric.qmd), [kako voditi radionicu](admin/instructor.qmd)
 - [Ispravci](admin/corrections.md), [dizajn](DESIGN.md)
 
 Provjere ove revizije zapisane su u [compatibility.md](admin/compatibility.md).

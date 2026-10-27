@@ -1,144 +1,29 @@
 ---
 title: "Od pitanja do provjerenih izvora"
-subtitle: "Dan 1 · Četiri povezane teme za istraživanje"
+subtitle: "Razgovor · Jedan primjer · Vaš pokušaj"
 ---
 
-::: {.chapter-kicker}
-01 / Istraživanje i planiranje
-:::
-
-AI može pomoći s pitanjem, izvorima i prvim nacrtom. Ovdje isprobavamo
-kako izgleda taj postupak na jednom primjeru, **kako su se u Hrvatskoj od
-2015. do 2024. kretali ostvarena inflacija i očekivanja potrošača o
-promjenama cijena?**
-
-Krenut ćemo od pitanja, pronaći izvore, urediti sažetak i skicirati analizu.
-Uz svaku temu možete otvoriti povezanu vježbu ili pročitati šire objašnjenje
-u priručniku. Isti broj i naslov povezuju sva tri materijala.
+Za svaku temu prvo razgovaramo, zatim zajedno pogledamo jedan primjer,
+pa svatko isproba malu promjenu. Svi upiti i zadaci nalaze se ovdje.
+Otvorite AI razgovor koji inače koristite i ostanite na ovoj stranici.
 
 ## 1.1 Postavite istraživačko pitanje {#blok-11}
 
-[Priručnik 1.1](../booklet/day1.qmd#poglavlje-11) · [Vježba 1.1](../materials/exercises/index.qmd#v11)
-
-Jezični model sastavlja odgovor prema obrascima koje je naučio i sadržaju
-razgovora. Procjenjuje vjerojatnosti mogućih sljedećih tokena, a zatim
-odabire nastavak prema postavkama sustava. Odabir može uključivati
-slučajnost. Činjenične tvrdnje provjerite u izvorima, a brojke ponovnim
-izračunom.
-
-Pretraživanje interneta i priloženi dokumenti pomažu pronaći dokaze.
-Otvorite citirani odlomak, provjerite njegovo značenje i razmotrite koje
-biste još izvore trebali pročitati.
-
-::: {.concept-box}
-**Razlikujte tri provjere.** Postoji li izvor? Podupire li konkretan odlomak
-tvrdnju? Odgovara li vrsta dokaza našem pitanju? Uz naslov provjerite zemlju, razdoblje i ishod koji rad istražuje.
-:::
-
-### Sačuvajte korisne bilješke
-
-Uz pročitani izvor zapišite tvrdnju koja vam je važna. Ako vam je AI pomogao,
-kratko zabilježite što ste preuzeli i kako ste to provjerili. Takve bilješke
-olakšavaju pisanje i povratak na ranije odluke.
-
-Za ove primjere koristimo javne podatke za cijelu zemlju. Povjerljive
-materijale čuvajte u okruženju prikladnom za njihovu obradu.
-
-[Vježba 1.1, postavite istraživačko pitanje](../materials/exercises/index.qmd#v11).
+{{< include ../materials/activities/_11.qmd >}}
 
 ## 1.2 Pronađite i provjerite izvore {#blok-12}
 
-[Priručnik 1.2](../booklet/day1.qmd#poglavlje-12) · [Vježba 1.2](../materials/exercises/index.qmd#v12)
-
-Počnite od [izvora za zajednički slučaj](../materials/sources.qmd), zatim
-pretražite literaturu. AI pretraživač može predložiti literaturu. Podatak o recenziranosti
-potražite na stranici časopisa ili izdavača.
-Za svaku tvrdnju otvorite izvor i zapišite odlomak, tablicu ili odjeljak
-na koji se oslanjate. Ako izvor ne možete otvoriti, označite zapis kao
-neprovjeren i nemojte ga koristiti kao potvrđen dokaz.
-
-HICP prati promjene potrošačkih cijena. U ovoj radionici uzimamo već
-izračunanu godišnju stopu promjene ukupnog HICP-a za Hrvatsku. U analizi izravno koristimo tu stopu, izraženu u postocima.
-[Eurostat objašnjava mjere i obuhvat HICP-a](https://ec.europa.eu/eurostat/web/hicp/information-data).
-
-Druga serija jest saldo odgovora na pitanje o kretanju cijena u sljedećih
-12 mjeseci. Saldo sažima kvalitativne odgovore i izražava se u bodovima salda. Opis pitanja i način izračuna salda nalaze se
-u [metodologiji Europske komisije](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en).
-Pri usporedbi svaku mjeru tumačimo prema njezinoj definiciji.
-
-::: {.prompt-box}
-**Upit za provjeru izvora**
-
-Za svaku tvrdnju predloži izvor i označi jesi li ga otvorio. Navedi naslov,
-autora ili ustanovu, poveznicu i točan odjeljak. Odvoji ono što izvor izravno
-pokazuje od svojeg tumačenja. Ako dokaz nije dostupan, napiši „nije provjereno”.
-:::
-
-Upit pomaže organizirati odgovor. Zatim otvorite izvore i usporedite ih
-s tvrdnjama koje želite koristiti. U [vježbi 1.2](../materials/exercises/index.qmd#v12)
-možete složiti bilješke o HICP-u, očekivanjima i njihovoj usporedbi.
+{{< include ../materials/activities/_12.qmd >}}
 
 ## 1.3 Provjerite i uredite sažetak {#blok-13}
 
-[Priručnik 1.3](../booklet/day1.qmd#poglavlje-13) · [Vježba 1.3](../materials/exercises/index.qmd#v13)
-
-Dobar sažetak razlikuje rezultat, tumačenje i otvoreno pitanje. Usporedite
-svaku njegovu rečenicu s izvornim tekstom. Tražite promjenu zemlje ili
-razdoblja, zamjenu korelacije uzročnošću, pogrešnu jedinicu i tvrdnju koja
-izostavlja ograničenje. I tekst koji nema netočnu rečenicu može biti
-obmanjujuć ako prešuti važan dio izvora.
-
-::: {.error-box}
-**Nađite grešku**
-
-„Saldo očekivanja od 20 znači da potrošači očekuju inflaciju od 20 %.
-Zato sličan rast salda i HICP-a dokazuje da očekivanja uzrokuju inflaciju.”
-
-Ovaj je primjer sastavljen za vježbanje prepoznavanja pogrešaka. Označite dvije zamjene značenja prije otvaranja rješenja.
-:::
-
-Alati za dulje istraživačke izvještaje mogu potrajati i imati ograničen
-pristup. Za početak možete otvoriti pripremljeni
-[tekst za provjeru](../materials/examples/flawed-summary.md).
-U njemu možete odmah isprobati provjeru tvrdnji.
-Ako koristite živi alat, sačuvajte stvarni odgovor i označite ga kao takav.
-Tvrdnje označene u sučelju provjerite čitanjem izvora.
-
-[Vježba 1.3, provjerite i uredite sažetak](../materials/exercises/index.qmd#v13).
+{{< include ../materials/activities/_13.qmd >}}
 
 ## 1.4 Pripremite plan analize {#blok-14}
 
-[Priručnik 1.4](../booklet/day1.qmd#poglavlje-14) · [Vježba 1.4](../materials/exercises/index.qmd#v14)
+{{< include ../materials/activities/_14.qmd >}}
 
-Plan navodi pitanje, uzorak, varijable i jedinice, obradu nedostajućih
-vrijednosti, planirane prikaze i granice tumačenja. Naš je osnovni zadatak
-opisni, dvije vremenske serije prikazujemo na odvojenim osima te računamo
-godišnje sažetke. Korelacija je dodatni opis istodobnog kretanja.
+## Ako želite čitati dalje
 
-Za istraživanje medija i komunikacije HNB-a trebali biste pribaviti korpus,
-provjeriti pravo uporabe te definirati indeks i napisati kod za njegovu
-izradu. To je mogući napredni zadatak. U ovom paketu imamo anketni saldo,
-izražen u bodovima salda. Hrvatska u više mjeseci čini vremensku seriju.
-Panel bi zahtijevao i više jedinica promatranja.
-
-::: {.prompt-box}
-**Upit za kritiku plana**
-
-Provjeri odgovara li moj nacrt istraživačkom pitanju. Navedi što podaci mjere,
-koje tvrdnje podupiru i koji dodatni podaci trebaju za šire zaključke.
-Procijeni prikladnost izabrane metode. Predloži jednostavniji postupak ako odgovara pitanju.
-:::
-
-Puko traženje da AI „opravda Newey–West” potiče potvrđivanje već odabrane
-metode. Najprije odredite cilj, zatim pretpostavke i postupak. Pitanje o
-predviđanju zahtijevalo bi odvajanje ranijih podataka za izradu modela od kasnijih podataka za provjeru te
-usporedbu s osnovnom prognozom. Pitanje o uzroku traži postupak kojim možemo odvojiti uzrok koji nas zanima
-od drugih mogućih objašnjenja. U ovoj radionici opisujemo kretanje dviju serija kroz vrijeme.
-
-[Vježba 1.4, pripremite plan analize](../materials/exercises/index.qmd#v14).
-
-## Nastavite s podacima
-
-Pitanje, bilješke o izvorima i plan sačuvajte u istoj mapi.
-[Drugi dan](day2.qmd) nastavlja se učitavanjem podataka i prvim izračunima.
-[Upute za početak](../admin/prerequisites.qmd) pomoći će vam otvoriti skriptu.
+[Priručnik za prvi dan](../booklet/day1.qmd) objašnjava teme detaljnije.
+[Nastavite na drugi dan](day2.qmd).

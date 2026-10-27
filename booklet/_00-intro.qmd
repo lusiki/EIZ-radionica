@@ -1,31 +1,28 @@
 ## Kako čitati ovaj priručnik {#kako-citati}
 
-Priručnik prati mali istraživački projekt, od početnog pitanja do
-rezultata i teksta. Možete ga čitati redom ili otvoriti temu koja vam
-upravo treba. Uz objašnjenja su primjeri upita, koda i ideje za vlastiti pokušaj.
+Radionica slijedi jednostavan ritam. Razgovaramo o jednom pitanju,
+pogledamo primjer i isprobamo sličan mali zadatak. Svi upiti, tekstovi
+i brojke za zajednički rad nalaze se na stranicama obaju dana.
 
-Prvi dan povezuje pitanje, izvore, sažetak i plan. Drugoga dana otvaramo
-podatke, dopunjavamo skriptu, ponavljamo analizu i pišemo zaključak.
-Plan iz vježbe 1.4 povezuje oba dijela.
+Priručnik je dodatno čitanje. Svako poglavlje najprije podsjeća na kratki
+primjer iz radionice, a zatim šire objašnjava temu. Možete otvoriti
+samo ono što vas zanima. Brojevi i naslovi povezuju priručnik i primjere.
 
-Brojevi i naslovi jednaki su na stranicama dana, u priručniku i u vježbama.
-Uz svako poglavlje nalaze se poveznice na kraće objašnjenje i pripadajući
-zadatak. Dodatno čitanje možete otvoriti kad poželite proširiti primjer.
+Prvi dan bavimo se pitanjem, izvorom, jednom pogrešnom rečenicom i kratkim
+planom. Drugi dan čitamo malu tablicu, mijenjamo jednu naredbu, provjeravamo
+prosjek triju brojeva i uređujemo rečenicu o rezultatu.
 
-Svi brojčani primjeri koriste istu spremljenu kopiju hrvatskih podataka
-za 2015.–2024., preuzetu 26. listopada 2026. Podaci, skripte i referentni
-izlazi dostupni su u radnom paketu, pa možete sami provjeriti izračune.
+Za kratke primjere koristimo nekoliko mjeseci iz hrvatskih podataka.
+Cijeli skup obuhvaća 2015.–2024. i preuzet je 26. listopada 2026.
+U nastavku priručnika objašnjeni su i rad sa svih 120 mjeseci, R skripte,
+agenti i računalne bilježnice. To su mogućnosti za samostalno istraživanje.
 
-Alati su primjeri mogućih načina rada. Odaberite onaj koji vam je
-dostupan i odgovara zadatku. Osnovni primjer možete proći besplatnim
-alatima i priloženim materijalima.
+U zajedničkom radu dovoljne su stranica dana i jedan AI razgovor.
+Upute za mapu projekta, skripte i dodatne alate odnose se na prošireni
+primjer koji možete isprobati kasnije.
 
 Izvorne materijale napisao je Luka Šikić, UNICATH. Priručnik se temelji
-na njegovim tekstovima za oba dana radionice, uz ažurirana objašnjenja,
-izvore i provjeru analize. Izdanje je pripremljeno uz AI pomoć.
-Dokumentacija alata provjerena je 26. listopada 2026., a izvorni tekst
-ostaje dostupan u povijesti repozitorija.
-
-Uz čitanje možete držati otvorene rječnik podataka, početnu skriptu
-i vlastite bilješke. Kad vas neka tvrdnja ili broj zainteresiraju,
-slijedite ih do izvora ili izračuna.
+na njegovim tekstovima za oba dana, uz ažurirana objašnjenja i provjeru
+analize. Izdanje je pripremljeno uz AI pomoć. Dokumentacija alata
+provjerena je 26. listopada 2026. Izvorni tekst ostaje dostupan u
+povijesti repozitorija.

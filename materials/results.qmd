@@ -1,7 +1,10 @@
 ---
 title: "Referentni rezultati"
-subtitle: "Izračuni iz spremljene kopije podataka"
+subtitle: "Dodatni primjer sa svih 120 mjeseci"
 ---
+
+Ovdje je prikazana cijela analiza za samostalno istraživanje. Kratki
+primjeri sa stranice drugog dana koriste samo nekoliko mjeseci iz ovog skupa.
 
 ## Dvije serije na odvojenim osima
 

@@ -48,21 +48,21 @@ website:
       - href: slides/day2.qmd
         text: Dan 2
       - href: materials/exercises/index.qmd
-        text: Vježbe
+        text: Primjeri
       - href: booklet/index.qmd
         text: Priručnik
-      - text: Materijali
+      - text: Za dalje
         menu:
           - href: data/dictionary.qmd
             text: Podaci
           - href: materials/sources.qmd
             text: Izvori
           - href: materials/results.qmd
-            text: Referentni rezultati
+            text: Cijela analiza
           - href: materials/rubric.qmd
-            text: Osvrt na rad
+            text: Završni razgovor
           - href: admin/instructor.qmd
-            text: Rad u grupi
+            text: Kako voditi radionicu
   page-footer:
     left: "Ekonomski institut, Zagreb · Materijali radionice"
     right:

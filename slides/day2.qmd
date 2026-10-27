@@ -1,149 +1,32 @@
 ---
 title: "Od podataka do zaključka"
-subtitle: "Dan 2 · Četiri povezane teme za istraživanje"
+subtitle: "Razgovor · Jedan primjer · Vaš pokušaj"
 ---
 
-::: {.chapter-kicker}
-02 / Analiza i pisanje
-:::
-
-Sada plan pretvaramo u analizu. Otvorit ćemo podatke, dopuniti skriptu,
-ispraviti pogrešan postupak i napisati što rezultati pokazuju.
-
-Koristimo isti primjer kao prvoga dana, Hrvatsku od siječnja 2015. do
-prosinca 2024. U paketu su izvorni podaci, pripremljeni CSV i primjeri
-rješenja. Nakon preuzimanja osnovne izračune možete isprobati izvan mreže
-u osnovnom R-u.
-
-Svaka tema vodi na odgovarajuću vježbu i poglavlje priručnika. Krenite od
-plana iz vježbe 1.4 ili otvorite dio na kojem želite raditi.
+Nastavljamo istim ritmom. Pogledamo primjer, objasnimo ga i isprobamo
+malu promjenu. Za današnji rad dovoljne su brojke i kratki primjeri na ovoj
+stranici te AI razgovor. Kod čitamo i mijenjamo u razgovoru.
+Ako već koristite R, iste kratke primjere možete pokrenuti u konzoli.
 
 ## 2.1 Upoznajte i provjerite podatke {#blok-21}
 
-[Priručnik 2.1](../booklet/day2.qmd#poglavlje-21) · [Vježba 2.1](../materials/exercises/index.qmd#v21)
-
-Jedan redak predstavlja jedan mjesec. Retke povezujemo prema ključu `month`.
-Očekujemo 120 različitih, uzastopnih mjeseci. Provjerite raspon datuma,
-duplikate, nedostajuće vrijednosti i jedinice prije izračuna. Ako nešto ne
-odgovara [rječniku podataka](../data/dictionary.qmd), zaustavite postupak i
-istražite izvor. Automatsko brisanje redaka ili interpoliranje može promijeniti
-uzorak i značenje podataka.
-
-::: {.concept-box}
-**Dvije varijable, dvije jedinice.** `hicp_yoy_pct` jest godišnja promjena
-ukupnog HICP-a u %. `expectations_balance` jest sezonski neprilagođen saldo
-anketnih odgovora o budućem kretanju cijena, izražen u bodovima salda.
-Obje serije bilježimo za isti mjesec ankete odnosno mjerenja cijena.
-Time opisujemo njihovo istodobno kretanje. Za provjeru prognoze trebalo bi
-uskladiti očekivanja s odgovarajućim kasnijim kretanjem cijena.
-:::
-
-Stopa i saldo mogu biti nula ili negativni. U ovom zadatku zadržavamo
-njihove izvorne vrijednosti i već izračunanu godišnju stopu HICP-a.
-Ako kasnije analiziramo promjene, promjena godišnje stope mjeri se u
-postotnim bodovima. Transformacija mora odgovarati pitanju i biti dokumentirana.
-
-[Vježba 2.1, upoznajte i provjerite podatke](../materials/exercises/index.qmd#v21).
+{{< include ../materials/activities/_21.qmd >}}
 
 ## 2.2 Dopunite i objasnite kod {#blok-22}
 
-[Priručnik 2.2](../booklet/day2.qmd#poglavlje-22) · [Vježba 2.2](../materials/exercises/index.qmd#v22)
-
-Otvorite projekt u Positronu ili RStudiju i datoteku `code/starter.R`. Skripta koristi
-osnovni R. Prvo predvidite što će pojedini dio učiniti, zatim ga pokrenite
-i provjerite izlaz. Dovoljno je objasniti učitavanje CSV-a, odabir redaka,
-izračun prosjeka i oznake na grafu. Cijeli zadatak možete riješiti u istom razvojnom okruženju.
-
-::: {.prompt-box}
-**Upit za malu, provjerljivu izmjenu**
-
-Imam mjesečne podatke i ovaj kod. Dodaj godišnji prosjek bez promjene jedinica
-i bez brisanja nedostajućih vrijednosti. Objasni svaku novu naredbu. Predloži
-provjeru broja mjeseci u svakoj godini. Izvorni CSV sačuvaj nepromijenjen.
-:::
-
-Asistent u pregledniku može predložiti isti kod kao asistent u uređivaču.
-Copilot i agentski alati su izborni. RStudio također podržava
-[Copilot](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html).
-AI pomoć stoga možete koristiti u oba okruženja. Positronova proširenja
-dolaze iz [podržanih registara](https://positron.posit.co/extensions.html),
-a dostupnost pojedinog proširenja možete provjeriti prije instalacije.
-
-Agent može čitati i mijenjati datoteke te pokretati naredbe.
-Znanstvenu valjanost postupka provjeravate vi. Prije pokretanja pogledajte koje
-datoteke dira i zatražite objašnjenje izmjene. Ključeve i osobne podatke
-čuvajte izvan materijala dostupnih agentu. Terminalni agent još je jedna mogućnost za rad s projektom.
-
-[Vježba 2.2, dopunite i objasnite kod](../materials/exercises/index.qmd#v22).
+{{< include ../materials/activities/_22.qmd >}}
 
 ## 2.3 Ponovite analizu od početka {#blok-23}
 
-[Priručnik 2.3](../booklet/day2.qmd#poglavlje-23) · [Vježba 2.3](../materials/exercises/index.qmd#v23)
-
-Da bi netko mogao ponoviti analizu, trebaju mu podaci, kod, popis
-programa i paketa te upute kojim redom pokrenuti skripte. Spremite skriptu, zatvorite prethodnu R sesiju i pokrenite je
-ponovno iz korijena projekta. Referentni postupak izričito provjerava
-jedinstvenost mjeseci, uzorak, nedostajuće vrijednosti i rezultate.
-
-Usporedite dva grafa s odvojenim osima. Zajednička vremenska os olakšava
-čitanje. Visinu svake linije tumačite prema jedinici označenoj na njezinoj osi.
-Dvostruka os na jednom grafu može vizualno pojačati sličnost proizvoljnim
-odabirom raspona. Korelacija također može ovisiti o podrazdoblju, trendovima
-i zajedničkim šokovima. Zato je opis kretanja primjereniji od tvrdnje da je
-jedna varijabla uzrokovala drugu.
-
-### Ako želite istražiti dalje
-
-Opcionalni OLS primjer uključuje konstantu i unaprijed naveden smjer regresije.
-HAC standardne pogreške služe zaključivanju uz određene oblike vremenske
-ovisnosti i heteroskedastičnosti. Endogenost, izbor varijabli i dizajn istraživanja treba zasebno
-obrazložiti. HAC standardna pogreška može biti veća ili manja od uobičajene. Postavke i ograničenja nalaze se uz skriptu, prema
-[dokumentaciji za Newey–West](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html).
-
-P-vrijednost opisuje koliko bi opaženi ili ekstremniji rezultat bio
-neobičan pod nul-hipotezom i pretpostavkama modela. Pri tumačenju zajedno razmotrite procijenjeni koeficijent, njegovu
-nesigurnost i pretpostavke modela.
-Pogledajte [izjavu ASA-e](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
-Model birajte prema pitanju, svojstvima serije i rezultatima provjera,
-uključujući stacionarnost. Panel-metode traže više jedinica promatranih
-kroz vrijeme.
-
-Analizu možete ponoviti iz bilježnice ili skripte ako su svi koraci
-zapisani i mogu se pokrenuti od početka. U [vježbi 2.3](../materials/exercises/index.qmd#v23)
-možete isprobati popravak koda i ponovno pokretanje spremljene skripte.
+{{< include ../materials/activities/_23.qmd >}}
 
 ## 2.4 Napišite i uredite zaključak {#blok-24}
 
-[Priručnik 2.4](../booklet/day2.qmd#poglavlje-24) · [Vježba 2.4](../materials/exercises/index.qmd#v24)
+{{< include ../materials/activities/_24.qmd >}}
 
-Najprije sastavite kratak odlomak iz vlastitog grafa i tablice. Navedite
-zemlju, razdoblje, jedinice, jedan provjeren broj i ograničenje. AI može
-predložiti jasniji izraz. Svaku novu tvrdnju ili brojku usporedite s izvorima
-i svojim izračunom. Sačuvajte tekst prije i nakon uređivanja.
+## Ako želite čitati dalje
 
-::: {.prompt-box}
-**Upit za uređivanje rezultata**
-
-Uredi jasnoću ovoga odlomka. Sačuvaj sve brojke, jedinice, nazive varijabli,
-izvore i stupanj sigurnosti. Koristi samo priložene rezultate i literaturu. Ispod teksta
-navedi svaku promjenu značenja koju predlažeš da zasebno provjerim.
-:::
-
-Nakon uređivanja usporedite broj po broj i tvrdnju po tvrdnju. Za hrvatski jezik ručno provjerite značenje i terminologiju.
-CLASSLA služi jezičnoj obradi poput lematizacije i označavanja vrsta riječi.
-Za lekturu i provjeru znanstvenih tvrdnji zasebno pročitajte cijeli tekst
-([opis projekta](https://github.com/clarinsi/classla)).
-
-U svojem tekstu opišite kretanje kvalitativnog salda. Za procjenu
-usidrenosti očekivanja treba odrediti definiciju, vremenski horizont i
-odgovarajuću mjeru. Preporuke ekonomske politike zahtijevaju dodatne dokaze
-o učincima predloženih mjera.
-
-[Vježba 2.4, napišite i uredite zaključak](../materials/exercises/index.qmd#v24).
-
-## Zaokružite primjer
-
-Pitanje, izvore, skriptu i zaključak možete povezati u mali izvještaj.
-Dodajte graf ili tablicu koja vam najbolje pomaže objasniti što ste pronašli.
-[Pitanja za osvrt](../materials/rubric.qmd) mogu vam pomoći odlučiti što biste
-još doradili ili isprobali na vlastitoj temi.
+[Priručnik za drugi dan](../booklet/day2.qmd) objašnjava teme detaljnije.
+Brojke su preuzete iz [hrvatskih podataka radionice](../data/dictionary.qmd),
+spremljenih 26. listopada 2026. [Cijela analiza](../materials/results.qmd)
+dostupna je za daljnje istraživanje.

@@ -10,11 +10,12 @@ toc: false
 EIZ / čitanje nakon radionice
 :::
 
-## Čitanje i vježbe za oba dana
+## Dodatno čitanje uz oba dana
 
 Priručnik u osam poglavlja objašnjava kako tražiti izvore, analizirati
 podatke i pisati rezultate. Primjeri prate hrvatske podatke iz radionice.
-Tekst se temelji na izvornom materijalu, uz ažurirane upute za alate.
+Svako poglavlje počinje kratkim primjerom iz radionice, a zatim ulazi
+u šira objašnjenja. Tekst se temelji na izvornom materijalu.
 
 [Preuzmite cijeli priručnik (PDF)](../downloads/EIZ-prirucnik.pdf){.btn-workshop}
 :::
@@ -31,8 +32,8 @@ i pripremiti izvediv plan analize.
 ::: {.step-link}
 ## 02 / Od podataka do zaključka
 
-Kako provjeriti podatke, dopuniti kod, ponoviti cijelu analizu
-iz spremljene skripte i napisati zaključak.
+Od čitanja male tablice i jednostavnog računa do objašnjenja
+cijele analize za samostalni nastavak.
 
 [Čitajte drugi dio](day2.qmd)
 :::
@@ -68,6 +69,6 @@ Isti broj i naslov pratite na stranici dana, u priručniku i u vježbama.
   panel modeli ostaju jasno označeni nastavci s dodatnim preduvjetima.
 
 Za brzi pregled otvorite [kratki prvi dan](../slides/day1.qmd),
-[kratki drugi dan](../slides/day2.qmd) i [radne listove](../materials/exercises/index.qmd).
+[kratki drugi dan](../slides/day2.qmd) i [sve kratke primjere](../materials/exercises/index.qmd).
 Za provjeru brojeva otvorite [rječnik podataka](../data/dictionary.qmd)
 i [referentne rezultate](../materials/results.qmd).

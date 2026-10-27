@@ -2,6 +2,12 @@
 
 [Dan 1, tema 1.2](../slides/day1.qmd#blok-12) · [Vježba 1.2](../materials/exercises/index.qmd#v12)
 
+### Kratki primjer iz radionice
+
+Pogledamo AI odgovor o učestalosti objave inflacijskih podataka i usporedimo ga s Eurostatovom stranicom. Zatim na istoj stranici pronalazimo godišnju i mjesečnu stopu promjene.
+
+Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+
 ### Kako početi pregled literature
 
 Pri traženju literature za seminarski rad lako je otvoriti više radova
@@ -79,7 +85,7 @@ Koristan je za razumijevanje razlike između kvalitativnih i kvantitativnih
 mjera. Koristite ga za objašnjenje mjera. Brojčane rezultate za Hrvatsku
 od 2015. do 2024. provjerite u podacima i skriptama radionice.
 
-### Od pronađenog rada do dokaznog zapisa
+### Za dulji projekt / bilješke o izvorima
 
 Za svaki od tri izvora napišite kratak zapis. Navedite tvrdnju koju
 potvrđuje, autora, naslov i godinu te poveznicu i mjesto u tekstu.
@@ -134,19 +140,11 @@ zabilježite koje ste izvore provjerili.
 
 Filtri izvora i nazivi načina pretraživanja mogu se mijenjati. Za svaki
 rad provjerite status recenzije kod izdavača. Za sustavni pregled unaprijed
-opišite baze, pojmove za pretragu i pravila odabira radova. Za ovu radionicu radimo ograničenu, dokumentiranu
-početnu pretragu.
+opišite baze, pojmove za pretragu i pravila odabira radova. Na radionici provjeravamo jednu tvrdnju na službenoj stranici.
+Opsežniju pretragu možete razviti kasnije.
 
 ### Ako želite nastaviti
 
-Odaberite pitanje iz radionice ili vlastitu temu. Sastavite tri upita s
-rastućom preciznošću, izdvojite pet kandidata i detaljno provjerite tri.
-Za svaki ispunite dokazni zapis. Zapišite i jedan odbačeni izvor te razlog
-odbijanja. Moguće teme su očekivanja i inflacija, digitalizacija poduzeća,
-nejednakost ili učinci fiskalnih mjera. Pitanje postavite tako da odgovor
-odredite na temelju prikupljenih dokaza.
-
-Usporedite početni AI sažetak s vlastitim bilješkama. Koju ste tvrdnju
-suzili? Koji je izvor bio relevantan, ali nedostupan? Što još nedostaje?
-Uz završni popis obrazložite zašto ste odabrali baš te izvore. Ako nemate pristup AI pretrazi, isti postupak
-provedite ručno s početnim izvorima radionice.
+Isprobajte isti način provjere na temi koja vas zanima. Pronađite jedan
+izvor i usporedite ga s AI odgovorom. Ako odlučite razviti dulji pregled
+literature, prethodni odjeljci mogu pomoći pri organizaciji izvora.

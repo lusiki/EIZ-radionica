@@ -2,32 +2,25 @@
 
 [Dan 2, tema 2.3](../slides/day2.qmd#blok-23) · [Vježba 2.3](../materials/exercises/index.qmd#v23)
 
-### Od provjerene izmjene do cijele analize
+### Kratki primjer iz radionice
 
-U vježbi 2.2 dopunili ste skriptu i provjerili jedan izračun. Sada provjerite
-cijeli postupak. U istom projektu otvorite `code/flawed_example.R`.
-Pročitajte ga i zabilježite korake koji mijenjaju uzorak ili značenje mjere.
-Usporedite ih sa svojim planom i rječnikom podataka.
+Pokažemo račun od triju vrijednosti do njihova prosjeka. Za 2022. dobivamo 19,1 / 3, približno 6,37 %. Zatim isti postupak isprobamo s vrijednostima 0,6, 0,8 i 1,1 iz 2019. i provjerimo rezultat 0,83 %.
 
-Sastavite ispravnu skriptu koja učitava svih 120 mjeseci, čuva jedinice
-i izrađuje godišnju tablicu te odvojene vremenske grafove. Početnici mogu
-početi jednim dobro označenim grafom. Uz svaki ispravak napišite što se
-mijenja u analizi.
+Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
 
-### Pokrenite spremljenu skriptu u novoj sesiji
+### Od tri broja do ponovljivog postupka
 
-Spremite skriptu i pokrenite novu R sesiju u korijenu projekta.
-Izvedite naredbe redom od početka. Provjerite broj mjeseci, godišnju tablicu
-i oznake na grafovima. Jednu vrijednost usporedite s referentnim rezultatima.
+U kratkom primjeru svi brojevi i cijeli račun stanu u jednu poruku.
+Zato lako vidimo je li zbroj točan i dijelimo li s tri.
+Pokazani račun možete ponoviti kalkulatorom.
 
-Ako izvođenje stane, pronađite korak koji treba dopuniti, spremite izmjenu
-i ponovno pokrenite cijelu skriptu. Sačuvajte bilješke o pogreškama, ispravnu
-skriptu i rezultate dobivene u novoj sesiji. Iz njih ćete u vježbi 2.4
-napisati zaključak.
+U većem projektu istu svrhu imaju spremljeni podaci i kod. Ako kasnije
+isprobate cijelu analizu, nova R sesija pomaže provjeriti može li se sve
+pokrenuti od početka. U paketu je i pogrešna skripta za dodatno istraživanje.
 
 ### Pročitajte grafove i sažetke
 
-Dvije serije imaju različite jedinice. U radionici ih prikazujemo u
+Dvije serije imaju različite jedinice. U proširenoj analizi prikazujemo ih u
 odvojenim panelima sa zajedničkom vremenskom osi. Čitatelj vidi kada se
 promjene događaju, ali ih ne zamjenjuje za brojčano usporedive veličine.
 Dvije neovisno skalirane y-osi mogu proizvesti privid preklapanja linija
@@ -61,7 +54,7 @@ i način obnove okruženja. [renv](https://rstudio.github.io/renv/articles/renv.
 pomaže upravljanju R paketima. Zasebno zabilježite potrebne sistemske
 biblioteke, podatke i vanjske usluge.
 
-Za ovaj osnovni primjer dovoljne su javne spremljene datoteke i osnovni
+Za priloženu analizu cijelog skupa dovoljne su spremljene datoteke i osnovni
 R. Složeniji projekti mogu tražiti izolirano okruženje
 i automatizirane provjere. Razina infrastrukture treba odgovarati
 stvarnim ovisnostima i riziku gubitka postupka.
@@ -182,7 +175,7 @@ Preostale ovisnosti navedite u uputama uz predanu analizu.
 
 ### Dodatno čitanje / regresija i HAC
 
-Osnovni zadatak završava opisnim rezultatima. U naprednom dijelu
+Cijela referentna analiza počinje opisnim rezultatima. U dodatnom primjeru
 možete razmotriti OLS regresiju. Jednostavan model s konstantom glasi
 
 $$y_t = \alpha + \beta x_t + u_t.$$

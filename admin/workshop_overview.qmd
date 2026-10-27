@@ -1,38 +1,32 @@
 ---
 title: "Put kroz radionicu"
-subtitle: "Dva dana, osam tema i jedan primjer"
+subtitle: "Razgovor, primjer i mali pokušaj"
 ---
 
-Kroz radionicu pratimo inflaciju i očekivanja potrošača u Hrvatskoj.
-Prvi dio pomaže postaviti pitanje i upoznati izvore. Drugi dio vodi od
-podataka do vlastitog zaključka. Možete proći sve redom ili se zadržati
-na temi koja vas zanima.
+Svaka tema ima isti slijed. Razgovaramo o jednom pitanju, pogledamo
+jedan primjer i isprobamo sličan zadatak. Upiti, tekst i brojke već su
+na stranici dana. Radimo u jednom AI razgovoru.
 
-## Dan 1 · Pitanje, izvori i plan
+## Prvi dan
 
-| Tema | Što možete isprobati |
+| Tema | Jedan pokušaj |
 |---|---|
-| [1.1 Postavite istraživačko pitanje](../slides/day1.qmd#blok-11) | Pretvorite široku temu u pitanje koje možete istražiti. |
-| [1.2 Pronađite i provjerite izvore](../slides/day1.qmd#blok-12) | Otvorite izvore i sačuvajte korisne tvrdnje. |
-| [1.3 Provjerite i uredite sažetak](../slides/day1.qmd#blok-13) | Usporedite sažetak s izvorima i popravite pogreške. |
-| [1.4 Pripremite plan analize](../slides/day1.qmd#blok-14) | Skicirajte kako ćete povezati pitanje i podatke. |
+| [1.1 Postavite istraživačko pitanje](../slides/day1.qmd#blok-11) | Promijenite godinu u upitu i pogledajte pitanje. |
+| [1.2 Pronađite i provjerite izvore](../slides/day1.qmd#blok-12) | Pronađite podatak na Eurostatovoj stranici. |
+| [1.3 Provjerite i uredite sažetak](../slides/day1.qmd#blok-13) | Ispravite jednu pogrešnu rečenicu. |
+| [1.4 Pripremite plan analize](../slides/day1.qmd#blok-14) | Zatražite kratak plan za jedno pitanje. |
 
-## Dan 2 · Podaci, kod i zaključak
+## Drugi dan
 
-| Tema | Što možete isprobati |
+| Tema | Jedan pokušaj |
 |---|---|
-| [2.1 Upoznajte i provjerite podatke](../slides/day2.qmd#blok-21) | Otvorite CSV i upoznajte mjere i mjesece u njemu. |
-| [2.2 Dopunite i objasnite kod](../slides/day2.qmd#blok-22) | Dodajte mali izračun i pogledajte kako radi. |
-| [2.3 Ponovite analizu od početka](../slides/day2.qmd#blok-23) | Popravite skriptu i ponovno izradite tablicu i graf. |
-| [2.4 Napišite i uredite zaključak](../slides/day2.qmd#blok-24) | Opišite rezultat i isprobajte jasniju formulaciju. |
+| [2.1 Upoznajte i provjerite podatke](../slides/day2.qmd#blok-21) | Objasnite jedan redak male tablice. |
+| [2.2 Dopunite i objasnite kod](../slides/day2.qmd#blok-22) | Zamijenite prosjek najvećom vrijednošću. |
+| [2.3 Ponovite analizu od početka](../slides/day2.qmd#blok-23) | Provjerite prosjek triju brojeva. |
+| [2.4 Napišite i uredite zaključak](../slides/day2.qmd#blok-24) | Uredite jednu rečenicu o rezultatu. |
 
-## Otvorite ono što vam treba
+[Svi primjeri na jednoj stranici](../materials/exercises/index.qmd) ·
+[Kako voditi razgovor](instructor.qmd)
 
-Stranice dana daju kratak pregled. [Vježbe](../materials/exercises/index.qmd)
-nude konkretne primjere za isprobavanje, a [priručnik](../booklet/index.qmd)
-šira objašnjenja. Isti broj i naslov povezuju sva tri materijala.
-
-Za početak otvorite [upute za pripremu](prerequisites.qmd).
-Ako radite s drugima, pogledajte [ideje za zajednički rad](instructor.qmd).
-Na kraju se možete vratiti na [pitanja za osvrt](../materials/rubric.qmd)
-i odabrati što želite dalje istražiti.
+[Priručnik](../booklet/index.qmd) nudi detaljnije objašnjenje svake teme
+za one koji žele nastaviti čitati.

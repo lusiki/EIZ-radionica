@@ -2,6 +2,12 @@
 
 [Dan 1, tema 1.4](../slides/day1.qmd#blok-14) · [Vježba 1.4](../materials/exercises/index.qmd#v14)
 
+### Kratki primjer iz radionice
+
+Tražimo plan u tri jednostavna koraka za opis inflacije. Zatim suzimo pitanje na usporedbu siječnja i ožujka i pogledamo kako se plan promijenio.
+
+Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+
 ### Povežite izvore u obrazloženje
 
 Nakon pretrage imate izvore, provjerene tvrdnje i otvorena pitanja.
@@ -123,10 +129,6 @@ metodološki odjeljak rada.
 
 ### Plan za sljedeći korak
 
-Skupite pitanje, bilješke o izvorima i plan u jednu mapu. Dodajte otvorena
-pitanja i naziv skripte koju želite isprobati. Uz zamišljenu tablicu ili
-graf napišite što bi vam pomogli objasniti.
-
-Možete razmijeniti nacrt s nekim ili zatražiti AI komentar. Pogledajte
-koje su tvrdnje dobro potkrijepljene i gdje bi pomoglo dodatno objašnjenje.
-U drugom dijelu radionice plan ćete isprobati u skripti.
+U radionici je plan kratak odgovor u AI razgovoru. Ako kasnije razvijete
+vlastiti projekt, možete mu dodati izvore, podatke i odabrane prikaze.
+Uz zamišljenu tablicu ili graf objasnite što vam pomaže saznati.

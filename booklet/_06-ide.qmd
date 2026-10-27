@@ -2,6 +2,12 @@
 
 [Dan 2, tema 2.2](../slides/day2.qmd#blok-22) · [Vježba 2.2](../materials/exercises/index.qmd#v22)
 
+### Kratki primjer iz radionice
+
+U AI razgovoru pogledamo dva retka R koda. Funkcija mean računa prosjek vrijednosti 5,5, 6,3 i 7,3. U vlastitom pokušaju zatražimo najveću vrijednost i pogledamo promjenu u max. Rezultat usporedimo s brojevima na stranici.
+
+Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+
 ### Mali koraci olakšavaju učenje
 
 Agent može obaviti zadatak kada mu jasno kažete što treba napraviti.
@@ -16,9 +22,9 @@ Pročitajte njegov prijedlog prije prihvaćanja i pregledajte rezultat
 nakon izvršavanja. Ako ne znate što funkcija
 radi, tražite objašnjenje na malom primjeru i usporedite ga s dokumentacijom.
 
-### Izbor okruženja
+### Za daljnji rad / izbor okruženja
 
-RStudio i Positron mogu poslužiti za ovu radionicu. RStudio ima
+RStudio i Positron mogu poslužiti za daljnji rad s kodom. RStudio ima
 [dokumentiranu integraciju Copilota](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html),
 pa Copilot možete koristiti i u tom okruženju. RStudio razdvaja rad sučelja i R sesije. Pri izboru editora
 provjerite njegove mogućnosti, a istraživačku metodu birajte prema pitanju
@@ -26,9 +32,8 @@ i podacima.
 
 Positron je okruženje za rad s R-om i Pythonom. Njegova
 [dokumentacija proširenja](https://positron.posit.co/extensions.html)
-objašnjava način instalacije i ograničenja kompatibilnosti. Za svako proširenje iz VS Codea provjerite podršku u Positronu. Za ovu
-radionicu važni su otvaranje projektne mape, odabir R-a, čitanje skripte,
-izvršavanje i pregled izlaza. AI dodatak ostaje izborna pomoć.
+objašnjava način instalacije i ograničenja kompatibilnosti. Za svako proširenje iz VS Codea provjerite podršku u Positronu. Za rad s punim projektom
+korisni su otvaranje mape, odabir R-a, čitanje skripte, izvršavanje i pregled izlaza. AI dodatak ostaje izborna pomoć.
 
 Prema
 [Positovoj dokumentaciji](https://positron.posit.co/assistant), Posit Assistant
@@ -58,12 +63,12 @@ dopuštenja i izvršenih naredbi važniji je od opće etikete „IDE” ili
 „agent”. Terminalski alat može omogućiti detaljnu provjeru, a pomoćnik
 u editoru može izvoditi opsežne radnje.
 
-### Demonstracija na istim podacima
+### Dodatni primjer / cijeli skup u R-u
 
 Otvorite korijen preuzetog projekta. Sljedeći mali primjer koristi
 osnovni R i iste podatke kao službene skripte. Svrha mu je pokazati
-što čitate i provjeravate. Završni postupak radionice ostaje zapisan
-u datotekama u mapi `code`.
+što čitate i provjeravate pri radu s cijelim skupom. Taj prošireni postupak
+nalazi se u datotekama u mapi `code`.
 
 ```r
 d <- read.csv("data/processed/croatia_inflation.csv")
@@ -104,16 +109,11 @@ U našem slučaju odgovarajuća je oznaka „saldo očekivanih promjena cijena�
 Navedite i da HICP predstavlja godišnju stopu promjene, kako čitatelj ne
 bi pretpostavio mjesečnu promjenu.
 
-### Isprobajte u vježbi 2.2
+### Od kratkog koda do cijele skripte
 
-U početnoj skripti pronađite retke koji odabiru 2022. i računaju prosjek
-HICP-a. Objasnite što svaki redak radi. Zatim dodajte prosjek salda za
-istu godinu i tablicu godišnjih prosjeka. Za svaku godinu provjerite
-dvanaest mjeseci, a jedan prosjek potvrdite zasebnim odabirom redaka.
-
-Uz izmjenu napišite kratak komentar i zabilježite način provjere.
-Spremite skriptu za blok 2.3, u kojem ćete cijelu analizu pokrenuti
-u novoj sesiji.
+U kratkom primjeru mijenjamo mean u max i gledamo što nova naredba radi.
+Istu naviku možete prenijeti na dulju skriptu. Odaberite jedan mali dio,
+zatražite objašnjenje i usporedite rezultat s podacima koje koristi.
 
 ### Kako pronaći uzrok pogreške
 
@@ -149,12 +149,6 @@ isprobajte malu izmjenu koda i pogledajte što ona mijenja.
 
 ### Ako želite nastaviti
 
-U `code/starter.R` odaberite jedan mali zadatak. Primjerice, poboljšajte
-oznaku grafa ili dodajte broj opažanja uz sažetak. Zatražite prijedlog,
-pročitajte ga i napišite jednu rečenicu o tome što se mijenja. Pokrenite
-skriptu i usporedite rezultat prije i poslije. Ako se zbog promjene oznake
-promijenio broj opažanja ili izračunata vrijednost, istražite zašto.
-
-Za samostalni nastavak zapišite jedan prihvaćen i jedan odbijen AI
-prijedlog. Obrazložite oba izbora i zamolite kolegu da pokrene spremljenu skriptu.
-Provjerite može li iz nje razumjeti postupak bez vaših usmenih dopuna.
+U R konzoli možete pokrenuti dva retka iz kratkog primjera i isprobati
+drugu funkciju. Usporedite dobiveni broj s vlastitim računom. Kad poželite
+raditi s cijelim skupom, početna skripta u paketu pokazuje sljedeće korake.

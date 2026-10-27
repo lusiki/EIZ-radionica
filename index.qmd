@@ -14,79 +14,70 @@ Ekonomski institut, Zagreb / praktična radionica
 
 # Istraživanje uz AI
 
-Kako AI može pomoći u istraživanju? Isprobajte na primjeru inflacije
-u Hrvatskoj, od prvog pitanja i traženja izvora do analize i pisanja.
-Krenite redom ili odaberite temu koja vas zanima.
+Razgovaramo o jednoj ideji, pogledamo primjer i odmah ga isprobamo.
+Kroz kratke upite, nekoliko brojki i jednostavne rečenice upoznajemo
+kako AI može pomoći u istraživanju.
 
-[Počnite ovdje](admin/prerequisites.qmd){.btn-workshop}
-[Otvorite vježbe](materials/exercises/index.qmd){.btn-workshop .secondary}
+[Otvorite prvi dan](slides/day1.qmd){.btn-workshop}
+[Otvorite drugi dan](slides/day2.qmd){.btn-workshop .secondary}
 :::
 <div class="hero-art" aria-hidden="true"><span class="disc">AI</span><span class="axis"></span><span class="dome"></span></div>
 :::
 
 ::: {.eyebrow}
-{{< var workshop.duration >}} / hrvatski jezik / osnovni R
+{{< var workshop.duration >}} / hrvatski jezik / primjeri u pregledniku
 :::
 
-## Kako pratiti radionicu
+## Kako izgleda radionica
 
-Stranice **Dan 1** i **Dan 2** daju kratak pregled tema. **Vježbe** nude
-primjere koje možete sami isprobati, a **priručnik** šira objašnjenja.
-Isti broj i naslov povezuju sva tri materijala. Plan koji skicirate
-u prvom dijelu možete provesti u drugom.
+Svaka tema ima tri dijela. **Razgovor** otvara jedno pitanje.
+**Primjer** pokazuje upit, tekst ili brojke. **Isprobajte** daje jedan
+mali zadatak, primjerice promjenu godine u upitu ili jedne naredbe u kodu.
 
-[Pregled svih osam tema](booklet/index.qmd#osam-povezanih-blokova)
+Sve za taj dan nalazi se na jednoj stranici. Uz nju otvorite AI razgovor
+koji inače koristite. Odgovore uspoređujemo zajedno.
 
-## Što ćete napraviti
-
-Pratit ćete ostvarenu inflaciju i očekivanja potrošača u Hrvatskoj kroz
-{{< var case.rows >}} mjeseci. Provjerit ćete izvore i AI sažetak,
-pokrenuti analizu i opisati rezultate i njihova ograničenja. Osnovni dio
-možete proći besplatnim alatima i priloženim materijalima.
+[Što otvoriti za početak](admin/prerequisites.qmd) ·
+[Svi primjeri na jednoj stranici](materials/exercises/index.qmd)
 
 ::: {.step-links}
 ::: {.step-link}
-## 01 / Od pitanja do izvora
+## 01 / Pitanje, izvor i jasna rečenica
 
-Počnite od pitanja, pronađite izvore i usporedite ih s AI odgovorom.
-Iz tih bilježaka sastavite jednostavan plan analize.
+Postavite jedno pitanje, provjerite izvor, ispravite rečenicu i
+zatražite kratak plan.
 
-[Materijal za prvi dan](slides/day1.qmd)
+[Prvi dan](slides/day1.qmd)
 :::
 ::: {.step-link}
-## 02 / Od podataka do zaključka
+## 02 / Tri retka podataka i mali izračun
 
-Upoznajte podatke, isprobajte malu izmjenu koda i uredite skriptu.
-Pogledajte rezultate i napišite što vam govore.
+Objasnite redak tablice, promijenite jednu naredbu, provjerite prosjek
+i uredite rečenicu o rezultatu.
 
-[Materijal za drugi dan](slides/day2.qmd)
+[Drugi dan](slides/day2.qmd)
 :::
 :::
 
-## Jedan slučaj, dvije različite mjere
+## Jedan poznat primjer
 
-Ostvarena inflacija mjeri promjenu cijena. Anketni saldo opisuje odgovore
-potrošača o budućim promjenama cijena. Usporedit ćemo kako se te dvije mjere
-mijenjaju kroz vrijeme. Za zaključak o uzroku trebalo bi provesti dodatno istraživanje.
+Koristimo podatke o inflaciji i očekivanjima potrošača u Hrvatskoj.
+Za zajednički rad izdvajamo nekoliko mjeseci. Brojke su prikazane uz
+zadatak, pa odmah možemo razgovarati o tome što znače.
 
-[Upoznajte podatke](data/dictionary.qmd) ·
-[Put kroz radionicu](admin/workshop_overview.qmd) ·
-[Preuzmite radni paket](downloads/eiz-workshop.zip)
+[Pregled svih tema](admin/workshop_overview.qmd) ·
+[Kako voditi radionicu](admin/instructor.qmd)
 
-## Vaš mali istraživački primjer
+## Ako želite istražiti više
 
-Pitanje, izvore, skriptu i zaključak možete skupiti u kratki izvještaj.
-Dodajte graf ili tablicu koja najbolje pokazuje što ste pronašli.
-[Pitanja za osvrt](materials/rubric.qmd) mogu vam pomoći odabrati što dalje doraditi.
-
-## Za one koji žele pročitati više
-
-Priručnik u osam poglavlja podrobnije objašnjava teme obaju dana.
-U njemu su primjeri upita i dodatne vježbe za samostalni rad, uz
-ažurirani tekst izvorne radionice.
+Priručnik donosi dulja objašnjenja, dodatne primjere alata i postupak
+cijele analize. Otvorite ga kad vas neka tema posebno zainteresira.
 
 [Čitajte priručnik](booklet/index.qmd) ·
-[Preuzmite cijeli PDF](downloads/EIZ-prirucnik.pdf)
+[Preuzmite PDF](downloads/EIZ-prirucnik.pdf)
+
+[Cijela analiza](materials/results.qmd), [podaci](data/dictionary.qmd)
+i [radni paket](downloads/eiz-workshop.zip) dostupni su za samostalni nastavak.
 
 ::: {.concept-box}
 Sadržaj je revidiran {{< var workshop.revision >}}

@@ -1,0 +1,28 @@
+**Razgovor.** Možemo li iz dva retka koda razumjeti što se računa?
+
+**Primjer.** Kopirajte ovaj R kod u AI razgovor i dodajte „Objasni svaki redak.”
+
+```r
+inflacija <- c(5.5, 6.3, 7.3)
+mean(inflacija)
+```
+
+Prvi redak sadrži tri godišnje stope iz tablice. Drugi računa njihov
+prosjek, približno **6,37 %**. U kodu decimalni broj pišemo s točkom.
+Ovdje računamo prosjek triju mjesečnih godišnjih stopa.
+
+**Isprobajte.** Zatražite od AI-ja da kod promijeni tako da pokaže najveću
+vrijednost. Pogledajte koja se riječ promijenila i usporedite rezultat
+s najvećim brojem u tablici.
+
+<details>
+<summary>Pogledajte rješenje</summary>
+
+```r
+inflacija <- c(5.5, 6.3, 7.3)
+max(inflacija)
+```
+
+`max` daje **7,3 %**.
+
+</details>

@@ -1,4 +1,7 @@
-# Izvođenje
+# Dodatni rad u R-u
+
+Ove upute služe samostalnom nastavku s cijelim skupom podataka.
+Kratki primjeri radionice nalaze se na stranicama dana.
 
 Sve naredbe pokreću se iz korijena repozitorija.
 
@@ -9,7 +12,7 @@ source("code/starter.R", encoding = "UTF-8")
 ```
 
 `.Rprofile` ne uključuje renv automatski, pa osnovna skripta radi i bez
-paketa. Sačuvajte vlastite izmjene u submissions/.
+paketa. Za daljnji rad možete sačuvati vlastitu kopiju skripte.
 
 ## Ponovite cijeli referentni postupak
 

@@ -1,11 +1,7 @@
-# Brzi podsjetnik
+# Podsjetnik za radionicu
 
-1. Napišite što želite istražiti prije odabira alata.
-2. Otvorite izvor i pronađite točan odlomak.
-3. Provjerite uzorak, ključ i jedinice.
-4. Objasnite izmjenu prije pokretanja koda.
-5. Pokrenite od početka i usporedite izlaz.
-6. Provjerite svaku brojku i tvrdnju nakon jezičnog uređivanja.
-7. Sačuvajte koristan AI prijedlog i svoju provjeru.
+Otvorite stranicu dana i AI razgovor.
+Razgovarajte o pitanju, pogledajte primjer i isprobajte malu promjenu.
+Usporedite što ste dobili s tekstom, izvorom ili brojkama prikazanim na stranici.
 
-Poveznice, ../sources.qmd, ../../data/dictionary.qmd, ../rubric.qmd.
+Svi primjeri su u ../exercises/index.qmd.

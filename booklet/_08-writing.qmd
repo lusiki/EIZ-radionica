@@ -2,6 +2,12 @@
 
 [Dan 2, tema 2.4](../slides/day2.qmd#blok-24) · [Vježba 2.4](../materials/exercises/index.qmd#v24)
 
+### Kratki primjer iz radionice
+
+Pokažemo kako AI pojednostavljuje jednu rečenicu o inflaciji. Zatim svatko sastavi i uredi sličnu rečenicu za 2019. Usporedimo brojke, razdoblje i značenje.
+
+Dulja objašnjenja u nastavku služe dodatnom čitanju i samostalnom istraživanju.
+
 ### Pisanje je dio istraživanja
 
 Zamislite da ste prikupili podatke, provjerili skriptu i izradili graf.
@@ -99,7 +105,7 @@ decimalne oznake, datume, padeže i kratice. Svaku mjeru dosljedno imenujte prem
 percepciju, očekivanje i pouzdanje. Nakon jezične izmjene ponovno pročitajte značenje, jer
 gramatički glađa rečenica može sadržajno biti manje precizna.
 
-### Primjer revizije na rezultatima radionice
+### Dodatni primjer / tekst o cijeloj analizi
 
 Sljedeća je rečenica **namjerno pogrešan početni nacrt**.
 
@@ -143,11 +149,8 @@ cijena, salda i postotka, opažanja i ispitanika, korelacije i učinka,
 standardne pogreške i reziduala. Ako isti naziv koristite za različite mjere, čitatelj neće moći
 pratiti vaš zaključak.
 
-### Zaokružite svoj primjer
+### Isprobajte na vlastitoj rečenici
 
-Napišite kratak odlomak o jednom rezultatu. Povežite pitanje, podatke,
-postupak i zanimljiv broj. Dodajte što biste još željeli istražiti.
-Zatražite komentar i usporedite prijedloge s izvorima i svojim izračunom.
-
-Pitanje, izvore, podatke, skriptu i zaključak sačuvajte u jednoj mapi.
-Možete je podijeliti s nekim ili nastaviti istraživanje kad se pojavi nova ideja.
+U radionici uređujemo jednu rečenicu i provjeravamo što je ostalo isto.
+Taj mali postupak možete ponoviti kad god neki svoj tekst želite učiniti jasnijim.
+Za dulji rad koristite objašnjenja o strukturi, izvorima i argumentima iz ovog poglavlja.

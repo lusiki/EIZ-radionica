@@ -1,0 +1,14 @@
+**Razgovor.** Kad AI navede neku činjenicu, kako možemo provjeriti odakle dolazi?
+
+**Primjer.** Pošaljite ovaj upit.
+
+> Koliko često Eurostat objavljuje podatke o inflaciji mjerene HICP-om?
+> Odgovori jednom rečenicom i navedi službeni izvor.
+
+Otvorite [Eurostatovo objašnjenje HICP-a](https://ec.europa.eu/eurostat/web/hicp/information-data).
+U dijelu **Data release** piše da se podaci o inflaciji objavljuju
+mjesečno. Usporedite to s AI odgovorom.
+
+**Isprobajte.** Na istoj stranici, u dijelu **Indices and rates of change**,
+pronađite godišnju i mjesečnu stopu promjene. Recite koje dvije riječi
+u engleskom tekstu razlikuju te stope.

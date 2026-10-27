@@ -1,0 +1,15 @@
+**Razgovor.** Kako biste rezultat objasnili nekome tko upravo prvi put vidi ove brojke?
+
+**Primjer.** U AI razgovoru zatražite jednostavniju verziju ove rečenice.
+
+> Napiši jednostavnije uz iste brojke i značenje.
+> „U promatranom razdoblju zabilježeno je povećanje godišnje stope
+> HICP-a u Hrvatskoj s 5,5 % u siječnju na 7,3 % u ožujku 2022.”
+
+Jedna verzija glasi „Godišnja stopa inflacije u Hrvatskoj porasla je
+s 5,5 % u siječnju na 7,3 % u ožujku 2022.” Usporedite brojke,
+razdoblje i značenje prije i poslije uređivanja.
+
+**Isprobajte.** Sastavite jednu rečenicu za 2019. godinu, kada su stope
+iznosile 0,6 % u siječnju i 1,1 % u ožujku. Pošaljite je AI-ju i
+zatražite jasniju verziju. Odaberite onu koju vam je lakše razumjeti.

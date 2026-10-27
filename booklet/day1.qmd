@@ -9,9 +9,9 @@ toc-title: "Sadržaj prvog dijela"
 [O priručniku](index.qmd) · [Cijeli PDF](../downloads/EIZ-prirucnik.pdf) ·
 [Kratki pregled prvog dana](../slides/day1.qmd)
 
-Čitajte od početne ideje prema provjerenim izvorima i planu. Primjeri
-upita su predlošci za prilagodbu. Odgovori alata mogu se razlikovati,
-pa svaki provjerite prema izvorima i zahtjevima zadatka. Dokumentacija alata provjerena je 26. listopada 2026.
+Svako poglavlje najprije podsjeća na kratki primjer iz radionice,
+a zatim objašnjava temu detaljnije. Dulje upite i postupke možete
+isprobati kasnije na vlastitom istraživanju. Dokumentacija alata provjerena je 26. listopada 2026.
 
 {{< include _01-foundations.qmd >}}
 

@@ -1,61 +1,31 @@
 ---
-title: "Pripremite radno okruženje"
-subtitle: "Preuzmite primjer i pokrenite prvu skriptu"
+title: "Spremni za početak"
+subtitle: "Otvorite stranicu dana i jedan AI razgovor"
 ---
 
-## Za početak
+## Što otvoriti
 
-Preuzmite [radni paket](../downloads/eiz-workshop.zip) i raspakirajte ga
-u lokalnu mapu. Instalirajte [R](https://cran.r-project.org/) i otvorite
-projekt u [Positronu](https://positron.posit.co/download.html) ili RStudiju.
-Oba okruženja mogu pokrenuti iste skripte. Referentni postupak provjeren je
-s R-om 4.6.0.
+Otvorite [prvi dan](../slides/day1.qmd) ili [drugi dan](../slides/day2.qmd)
+i AI razgovor koji inače koristite. Sve što treba za primjere nalazi se
+na stranici dana, upiti, kratki tekstovi, tablica i kod.
 
-Za prve primjere dovoljni su R i preuzeti materijali. AI pomoć možete
-uključiti kad želite isprobati prijedlog koda ili drugačije objašnjenje.
+Možete raditi sami ili podijeliti ekran s osobom pokraj sebe. Ako AI alat
+trenutno nije dostupan, koristite prikazane odgovore i usporedite vlastite prijedloge.
 
-## Isprobajte prvu skriptu
+## Kako ćemo raditi
 
-U R konzoli provjerite da ste u mapi koja sadrži `code/` i `data/`.
-Pokrenite.
+Prvo razgovaramo o jednom pitanju. Zatim zajedno pogledamo jedan primjer.
+Nakon toga svatko isproba sličan mali zadatak i usporedimo što smo dobili.
 
-```r
-getwd()
-source("code/starter.R", encoding = "UTF-8")
-```
+Za prvi dan biramo pitanje, provjeravamo izvor, popravljamo rečenicu i
+tražimo kratak plan. Drugi dan čitamo tri retka tablice, mijenjamo jednu
+naredbu, provjeravamo prosjek i uređujemo rečenicu o rezultatu.
 
-Treba se ispisati 120 redaka, 120 različitih mjeseci i 0 nedostajućih
-vrijednosti. Ako se datoteka ne pronalazi, otvorite korijensku mapu paketa.
-U skripti zadržite putanje koje polaze od projektne mape. Za ovaj korak dovoljan je
-osnovni R, bez dodatnih paketa. Oznake TODO pokazuju gdje možete dopuniti primjer.
+[Otvorite sve primjere na jednoj stranici](../materials/exercises/index.qmd){.btn-workshop}
 
-::: {.concept-box}
-Ako nemate internet ili pristup AI servisu, koristite podatke i primjere
-iz paketa, pripremljeni sažetak i pogrešan kod. Za provjeru izvora otvorite povezane dokumente i sačuvajte ih za čitanje
-izvan mreže. Ako neki izvor još niste pročitali, zabilježite to uz poveznicu.
-:::
+## Za kasnije istraživanje
 
-## Za obnovu cijelog referentnog postupka
-
-Ako želite ponovno izraditi sve referentne rezultate, pokrenite sljedeće
-naredbe u korijenskoj mapi. Za prvu instalaciju paketa potreban je internet.
-
-```r
-install.packages("renv", repos = "https://cloud.r-project.org")
-renv::restore(prompt = FALSE)
-renv::load()
-source("code/run_all.R", encoding = "UTF-8")
-```
-
-`renv.lock` bilježi pakete i verziju R-a. R i potrebne sistemske biblioteke instalirajte zasebno. Za izradu web-stranica dodatno treba Quarto (provjeren 1.9.38).
-Nakon obnove paketa analiza radi iz spremljenih izvora bez mrežnog pristupa.
-
-Na Windowsu s pogrešnom varijablom locale skripta za pregled postavlja UTF-8
-samo za svoj proces. Ako sami pokrećete R i dobijete upozorenje o lokalizaciji,
-provjerite da `l10n_info()[["UTF-8"]]` vraća `TRUE` prije učitavanja hrvatskog teksta.
-
-## Kamo dalje
-
-[Dan 1](../slides/day1.qmd) · [Dan 2](../slides/day2.qmd) ·
-[Radni listovi](../materials/exercises/index.qmd) ·
-[Rječnik podataka](../data/dictionary.qmd)
+[Priručnik](../booklet/index.qmd) donosi šira objašnjenja.
+[Cijeli skup podataka](../data/dictionary.qmd) i
+[radni paket](../downloads/eiz-workshop.zip) dostupni su ako poželite
+provesti potpunu analizu u R-u. Upute za taj postupak nalaze se u paketu.

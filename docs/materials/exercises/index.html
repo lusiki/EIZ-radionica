@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Isprobajte na jednom primjeru – AI u istraživanju</title>
+<title>Svi primjeri na jednoj stranici – AI u istraživanju</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -106,17 +141,17 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../../materials/exercises/index.html" aria-current="page"> 
-<span class="menu-text">Vježbe</span></a>
+<span class="menu-text">Primjeri</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../booklet/index.html"> 
 <span class="menu-text">Priručnik</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-materijali" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Materijali</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-za-dalje" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Za dalje</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-materijali">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-za-dalje">    
         <li>
     <a class="dropdown-item" href="../../data/dictionary.html">
  <span class="dropdown-text">Podaci</span></a>
@@ -127,15 +162,15 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../materials/results.html">
- <span class="dropdown-text">Referentni rezultati</span></a>
+ <span class="dropdown-text">Cijela analiza</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../materials/rubric.html">
- <span class="dropdown-text">Osvrt na rad</span></a>
+ <span class="dropdown-text">Završni razgovor</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../admin/instructor.html">
- <span class="dropdown-text">Rad u grupi</span></a>
+ <span class="dropdown-text">Kako voditi radionicu</span></a>
   </li>  
     </ul>
   </li>
@@ -171,8 +206,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Isprobajte na jednom primjeru</h1>
-<p class="subtitle lead">Osam vježbi koje povezuju izvore, podatke i pisanje</p>
+<h1 class="title">Svi primjeri na jednoj stranici</h1>
+<p class="subtitle lead">Razgovor · Jedan primjer · Vaš pokušaj</p>
 </div>
 
 
@@ -189,70 +224,127 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Krenite redom ili otvorite ono što vas trenutno zanima. Sve vježbe koriste iste podatke za Hrvatsku, pa se lako možete vratiti na raniji korak. Možete raditi sami ili usporediti ideje s nekim drugim.</p>
-<p>Svoje bilješke i izmjene spremajte u <code>submissions/</code>. Uz svaki zadatak nalaze se povezano objašnjenje i poglavlje priručnika. <a href="../../materials/solutions.html">Rješenja</a> mogu pomoći kada zapnete ili želite usporediti postupak.</p>
+<p>Ovo su isti primjeri kao na stranicama obaju dana. Uz svaku temu je jedno pitanje za razgovor, gotov primjer i mali zadatak koji možete odmah isprobati. Otvorite jedan AI razgovor i koristite upite, tekst i brojke s ove stranice. Odgovore uspoređujemo u razgovoru.</p>
 <section id="v11" class="level2">
 <h2 class="anchored" data-anchor-id="v11">1.1 Postavite istraživačko pitanje</h2>
-<p><a href="../../slides/day1.html#blok-11">Dan 1, tema 1.1</a> · <a href="../../booklet/day1.html#poglavlje-11">Priručnik 1.1</a></p>
-<p>Počnite od pitanja o kretanju inflacije i očekivanja u Hrvatskoj od 2015. do 2024. U <a href="../../data/dictionary.html">rječniku podataka</a> pogledajte što mjere dvije varijable i u kojim su jedinicama.</p>
-<p>Napišite pitanje vlastitim riječima. Ako želite, zatražite i AI prijedlog, pa usporedite dvije verzije. Pokušajte zamisliti graf ili izračun koji bi vam pomogao odgovoriti na pitanje.</p>
-<p><a href="../templates/research-plan.md">Predložak plana</a> može poslužiti za prve bilješke.</p>
-<p><strong>Za razmišljanje.</strong> Što biste trebali dodatno istražiti da vas zanima uzrokuju li očekivanja promjenu inflacije?</p>
+<p><strong>Razgovor.</strong> Što biste htjeli saznati o inflaciji? Kako od široke teme dobiti pitanje na koje možemo odgovoriti?</p>
+<p><strong>Primjer.</strong> U AI razgovor pošaljite ovaj upit.</p>
+<blockquote class="blockquote">
+<p>Tema je inflacija u Hrvatskoj. Predloži jedno jednostavno istraživačko pitanje za razdoblje od siječnja do ožujka 2022.</p>
+</blockquote>
+<p>Jedan mogući odgovor glasi „Kako se godišnja stopa inflacije u Hrvatskoj mijenjala od siječnja do ožujka 2022.?” Usporedite temu i pitanje. Pitanje sada ima zemlju, razdoblje i ono što želimo pogledati.</p>
+<p><strong>Isprobajte.</strong> Pošaljite isti upit za 2019. godinu. Pročitajte pitanje koje dobijete i recite je li jasno što biste istraživali.</p>
 </section>
 <section id="v12" class="level2">
 <h2 class="anchored" data-anchor-id="v12">1.2 Pronađite i provjerite izvore</h2>
-<p><a href="../../slides/day1.html#blok-12">Dan 1, tema 1.2</a> · <a href="../../booklet/day1.html#poglavlje-12">Priručnik 1.2</a></p>
-<p>Otvorite <a href="../../materials/sources.html">tri početna izvora</a>. U njima potražite objašnjenje HICP-a, anketnog salda i načina na koji se te mjere mogu uspoređivati. AI pretraživanje može vam pomoći pronaći još literature.</p>
-<p>Uz svaki pročitani izvor zapišite jednu korisnu tvrdnju i mjesto na kojem je objašnjena. Dodajte svoj kratki sažetak i granice primjene. Tako ćete se lakše vratiti na izvor kad počnete pisati.</p>
-<p>Ako vam odgovara, koristite <a href="../templates/evidence-log.md">predložak bilješke o izvoru</a>. U paru možete otvoriti bilješku onog drugog i usporediti je s izvornim tekstom.</p>
-<p><strong>Za razmišljanje.</strong> Može li točan naslov rada pratiti preširoku tvrdnju? Koji dio izvora pomaže odrediti što možemo zaključiti?</p>
+<p><strong>Razgovor.</strong> Kad AI navede neku činjenicu, kako možemo provjeriti odakle dolazi?</p>
+<p><strong>Primjer.</strong> Pošaljite ovaj upit.</p>
+<blockquote class="blockquote">
+<p>Koliko često Eurostat objavljuje podatke o inflaciji mjerene HICP-om? Odgovori jednom rečenicom i navedi službeni izvor.</p>
+</blockquote>
+<p>Otvorite <a href="https://ec.europa.eu/eurostat/web/hicp/information-data">Eurostatovo objašnjenje HICP-a</a>. U dijelu <strong>Data release</strong> piše da se podaci o inflaciji objavljuju mjesečno. Usporedite to s AI odgovorom.</p>
+<p><strong>Isprobajte.</strong> Na istoj stranici, u dijelu <strong>Indices and rates of change</strong>, pronađite godišnju i mjesečnu stopu promjene. Recite koje dvije riječi u engleskom tekstu razlikuju te stope.</p>
 </section>
 <section id="v13" class="level2">
 <h2 class="anchored" data-anchor-id="v13">1.3 Provjerite i uredite sažetak</h2>
-<p><a href="../../slides/day1.html#blok-13">Dan 1, tema 1.3</a> · <a href="../../booklet/day1.html#poglavlje-13">Priručnik 1.3</a></p>
-<p>Pročitajte <a href="../examples/flawed-summary.md">pripremljeni sažetak</a>. U njega su namjerno unesene pogreške. Pogledajte što se dogodilo s jedinicama, uzorkom i zaključkom.</p>
-<p>Usporedite sumnjive rečenice s izvorima iz prethodne vježbe. Uz svaku zapišite što biste promijenili i zašto. Zatim sastavite kratak ispravljeni odlomak. Sačuvajte obje verzije da možete vidjeti razliku.</p>
-<p><strong>Za razmišljanje.</strong> Koje bi vam objašnjenje još trebalo da razumijete kako je analiza provedena?</p>
+<p><strong>Razgovor.</strong> Kako jedna promijenjena riječ može promijeniti značenje broja?</p>
+<p><strong>Primjer.</strong> Godišnja stopa uspoređuje cijene s istim mjesecom prethodne godine. Pošaljite ovaj namjerno pogrešan primjer AI-ju.</p>
+<blockquote class="blockquote">
+<p>Godišnja stopa HICP-a u ožujku 2022. bila je 7,3 %. Ispravi rečenicu „Cijene su u ožujku porasle 7,3 % u odnosu na veljaču.”</p>
+</blockquote>
+<p>Ispravak glasi „Cijene mjerene HICP-om u ožujku 2022. bile su 7,3 % više nego u ožujku 2021.” Pogledajte koji je dio usporedbe promijenjen.</p>
+<p><strong>Isprobajte.</strong> Zatražite ispravak ove druge rečenice.</p>
+<blockquote class="blockquote">
+<p>Saldo očekivanja iznosi 55,5 bodova i sažima odgovore ankete. Ispravi rečenicu „Potrošači očekuju inflaciju od 55,5 %.”</p>
+</blockquote>
+<p>Usporedite dobivenu rečenicu s opisom salda u upitu.</p>
 </section>
 <section id="v14" class="level2">
 <h2 class="anchored" data-anchor-id="v14">1.4 Pripremite plan analize</h2>
-<p><a href="../../slides/day1.html#blok-14">Dan 1, tema 1.4</a> · <a href="../../booklet/day1.html#poglavlje-14">Priručnik 1.4</a></p>
-<p>Skupite pitanje i bilješke iz prethodnih vježbi. U <a href="../templates/research-plan.md">predložak plana</a> upišite što želite usporediti, koje podatke koristite i koje biste prikaze htjeli dobiti.</p>
-<p>Za naš primjer polazimo od 120 mjeseci, izvornih jedinica, godišnjih prosjeka i odvojenih vremenskih grafova. Zabilježite kako ćete provjeriti podatke i što ćete pogledati ako naiđete na prazninu ili ponovljen mjesec.</p>
-<p>Plan može biti nekoliko jasnih bilježaka. Sačuvajte ga uz podatke i vratite mu se kad počnete raditi u R-u.</p>
-<p><strong>Za razmišljanje.</strong> Koji bi vas nalaz naveo da dopunite plan? Kako biste objasnili tu promjenu?</p>
+<p><strong>Razgovor.</strong> Što bismo prvo napravili kad pred sobom imamo tri broja?</p>
+<p><strong>Primjer.</strong> Pošaljite ovaj upit.</p>
+<blockquote class="blockquote">
+<p>Imam godišnje stope inflacije u Hrvatskoj za siječanj, veljaču i ožujak 2022. Predloži tri jednostavna koraka za opis njihova kretanja.</p>
+</blockquote>
+<p>Jedan plan može biti „Pogledati vrijednosti, izračunati njihov prosjek i opisati promjenu.” Zajedno prođite kroz ta tri koraka.</p>
+<p><strong>Isprobajte.</strong> Zatražite plan za uže pitanje „Kako se stopa inflacije promijenila između siječnja i ožujka 2022.?” Usporedite što se u planu promijenilo.</p>
 </section>
 <section id="v21" class="level2">
 <h2 class="anchored" data-anchor-id="v21">2.1 Upoznajte i provjerite podatke</h2>
-<p><a href="../../slides/day2.html#blok-21">Dan 2, tema 2.1</a> · <a href="../../booklet/day2.html#poglavlje-21">Priručnik 2.1</a></p>
-<p>Otvorite <a href="../../data/processed/croatia_inflation.csv">CSV</a> i <a href="../../code/starter.R">početnu skriptu</a>. Pogledajte prve retke i povežite stupce s opisima u rječniku podataka.</p>
-<p>Provjerite broj i jedinstvenost mjeseci, raspon datuma, praznine i raspon obiju mjera. Naš primjer sadrži 120 mjeseci, od 2015-01 do 2024-12, s potpunim brojčanim vrijednostima.</p>
-<p>U <a href="../templates/data-audit.md">predložak bilježaka</a> možete spremiti naredbe i njihove rezultate. Nule i negativne vrijednosti protumačite prema definiciji svake mjere.</p>
-<p><strong>Za razmišljanje.</strong> Što znači prazna oznaka statusa, a što prazna brojčana vrijednost? U kojim biste stupcima provjerili tu razliku?</p>
+<p><strong>Razgovor.</strong> Što znači jedan redak ove tablice? U kojim su jedinicama dva broja?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Mjesec</th>
+<th style="text-align: right;">Godišnja stopa HICP-a, %</th>
+<th style="text-align: right;">Saldo očekivanja, bodovi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Siječanj 2022.</td>
+<td style="text-align: right;">5,5</td>
+<td style="text-align: right;">48,1</td>
+</tr>
+<tr class="even">
+<td>Veljača 2022.</td>
+<td style="text-align: right;">6,3</td>
+<td style="text-align: right;">53,0</td>
+</tr>
+<tr class="odd">
+<td>Ožujak 2022.</td>
+<td style="text-align: right;">7,3</td>
+<td style="text-align: right;">55,5</td>
+</tr>
+</tbody>
+</table>
+<p>To su tri mjeseca iz podataka radionice za Hrvatsku. Godišnja stopa uspoređuje cijene s istim mjesecom prethodne godine. Saldo sažima odgovore potrošača o budućem kretanju cijena.</p>
+<p><strong>Primjer.</strong> Pročitajte prvi redak naglas. U siječnju 2022. godišnja stopa HICP-a iznosi 5,5 %, a saldo očekivanja 48,1 bod. Uz svaki broj izgovorite jedinicu.</p>
+<p><strong>Isprobajte.</strong> Na isti način objasnite redak za ožujak. Možete ga objasniti osobi pokraj sebe ili zatražiti AI objašnjenje i usporediti ga s tablicom.</p>
 </section>
 <section id="v22" class="level2">
 <h2 class="anchored" data-anchor-id="v22">2.2 Dopunite i objasnite kod</h2>
-<p><a href="../../slides/day2.html#blok-22">Dan 2, tema 2.2</a> · <a href="../../booklet/day2.html#poglavlje-22">Priručnik 2.2</a></p>
-<p>U početnoj skripti pronađite izračun za 2022. Pokrenite ga i pogledajte koji su redci uključeni. Zatim dodajte prosjek salda za istu godinu i tablicu godišnjih prosjeka.</p>
-<p>Možete zatražiti AI prijedlog ili se osloniti na primjere koda u priručniku. Pročitajte dopunu, pokrenite je i usporedite rezultat s odabranim recima. Za svaku godinu očekujemo 12 mjeseci.</p>
-<p>Uz spremljenu skriptu dodajte kratku bilješku o tome što ste promijenili. <a href="../templates/ai-use-log.md">Zapis rada s AI-jem</a> može pomoći sačuvati koristan prijedlog i način provjere.</p>
-<p><strong>Za razmišljanje.</strong> Što nova naredba računa i u kojoj je jedinici rezultat?</p>
+<p><strong>Razgovor.</strong> Možemo li iz dva retka koda razumjeti što se računa?</p>
+<p><strong>Primjer.</strong> Kopirajte ovaj R kod u AI razgovor i dodajte „Objasni svaki redak.”</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>inflacija <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.5</span>, <span class="fl">6.3</span>, <span class="fl">7.3</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(inflacija)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Prvi redak sadrži tri godišnje stope iz tablice. Drugi računa njihov prosjek, približno <strong>6,37 %</strong>. U kodu decimalni broj pišemo s točkom. Ovdje računamo prosjek triju mjesečnih godišnjih stopa.</p>
+<p><strong>Isprobajte.</strong> Zatražite od AI-ja da kod promijeni tako da pokaže najveću vrijednost. Pogledajte koja se riječ promijenila i usporedite rezultat s najvećim brojem u tablici.</p>
+<details>
+<summary>
+Pogledajte rješenje
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>inflacija <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.5</span>, <span class="fl">6.3</span>, <span class="fl">7.3</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(inflacija)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>max</code> daje <strong>7,3 %</strong>.</p>
+</details>
 </section>
 <section id="v23" class="level2">
 <h2 class="anchored" data-anchor-id="v23">2.3 Ponovite analizu od početka</h2>
-<p><a href="../../slides/day2.html#blok-23">Dan 2, tema 2.3</a> · <a href="../../booklet/day2.html#poglavlje-23">Priručnik 2.3</a></p>
-<p>Otvorite <a href="../../code/flawed_example.R">namjerno pogrešnu skriptu</a>. Prvo je pročitajte i potražite korake koji mijenjaju uzorak ili značenje mjere. Uz njih zapišite što biste napravili drukčije.</p>
-<p>U svojoj skripti učitajte svih 120 mjeseci, sačuvajte jedinice i izradite godišnju tablicu. Počnite jednim vremenskim grafom, pa dodajte drugu mjeru u zaseban prikaz.</p>
-<p>Spremite skriptu, pokrenite novu R sesiju i izvedite je od početka. Usporedite jedan broj s <a href="../../materials/results.html">referentnim rezultatima</a>. Ako zapnete, pogledajte <a href="../../materials/solutions.html#popravak">primjer rješenja</a>.</p>
-<p><strong>Za razmišljanje.</strong> Kako bi se sažetak promijenio kad biste izostavili mjesec najveće inflacije?</p>
+<p><strong>Razgovor.</strong> Kako bismo sami provjerili prosjek koji je AI izračunao?</p>
+<p><strong>Primjer.</strong> Pošaljite sve podatke i postupak u jednoj poruci.</p>
+<blockquote class="blockquote">
+<p>Godišnje stope HICP-a u Hrvatskoj za siječanj, veljaču i ožujak 2022. iznose 5,5 %, 6,3 % i 7,3 %. Izračunaj njihov aritmetički prosjek. Pokaži zbroj i dijeljenje.</p>
+</blockquote>
+<p>Provjerite račun na ekranu ili kalkulatorom. Zbroj je <strong>19,1</strong>, a <strong>19,1 / 3 = 6,3667</strong>, odnosno približno <strong>6,37 %</strong>.</p>
+<p><strong>Isprobajte.</strong> Ponovite isti postupak za siječanj, veljaču i ožujak 2019. Vrijednosti su <strong>0,6 %, 0,8 % i 1,1 %</strong>. Usporedite svoj račun s AI odgovorom.</p>
+<details>
+<summary>
+Pogledajte rješenje
+</summary>
+<p>Zbroj je <strong>2,5</strong>. Dijeljenjem s tri dobivamo <strong>0,8333</strong>, odnosno približno <strong>0,83 %</strong>.</p>
+</details>
 </section>
 <section id="v24" class="level2">
 <h2 class="anchored" data-anchor-id="v24">2.4 Napišite i uredite zaključak</h2>
-<p><a href="../../slides/day2.html#blok-24">Dan 2, tema 2.4</a> · <a href="../../booklet/day2.html#poglavlje-24">Priručnik 2.4</a></p>
-<p>Otvorite svoj graf ili tablicu i napišite kratak odlomak. Objasnite što gledate, izdvojite zanimljiv broj i navedite što biste još željeli istražiti.</p>
-<p>Zamolite kolegu ili AI za prijedlog jasnijeg teksta. Usporedite novu verziju s početnom, posebno brojke, jedinice i značenje tvrdnji. Sačuvajte obje verzije da vidite koje su izmjene pomogle.</p>
-<p>Pitanje, izvore, skriptu i zaključak možete povezati u mali izvještaj. <a href="../../materials/rubric.html">Pitanja za osvrt</a> pomoći će vam proći kroz ono što ste napravili.</p>
-<p><strong>Za razmišljanje.</strong> Koji biste dio ovog postupka htjeli isprobati na vlastitoj temi?</p>
+<p><strong>Razgovor.</strong> Kako biste rezultat objasnili nekome tko upravo prvi put vidi ove brojke?</p>
+<p><strong>Primjer.</strong> U AI razgovoru zatražite jednostavniju verziju ove rečenice.</p>
+<blockquote class="blockquote">
+<p>Napiši jednostavnije uz iste brojke i značenje. „U promatranom razdoblju zabilježeno je povećanje godišnje stope HICP-a u Hrvatskoj s 5,5 % u siječnju na 7,3 % u ožujku 2022.”</p>
+</blockquote>
+<p>Jedna verzija glasi „Godišnja stopa inflacije u Hrvatskoj porasla je s 5,5 % u siječnju na 7,3 % u ožujku 2022.” Usporedite brojke, razdoblje i značenje prije i poslije uređivanja.</p>
+<p><strong>Isprobajte.</strong> Sastavite jednu rečenicu za 2019. godinu, kada su stope iznosile 0,6 % u siječnju i 1,1 % u ožujku. Pošaljite je AI-ju i zatražite jasniju verziju. Odaberite onu koju vam je lakše razumjeti.</p>
+<p>Brojke dolaze iz <a href="../../data/dictionary.html">podataka radionice</a> za Hrvatsku, spremljenih 26. listopada 2026. Za dodatna objašnjenja otvorite <a href="../../booklet/index.html">priručnik</a>.</p>
 
 
 </section>

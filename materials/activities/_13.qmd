@@ -1,0 +1,17 @@
+**Razgovor.** Kako jedna promijenjena riječ može promijeniti značenje broja?
+
+**Primjer.** Godišnja stopa uspoređuje cijene s istim mjesecom prethodne
+godine. Pošaljite ovaj namjerno pogrešan primjer AI-ju.
+
+> Godišnja stopa HICP-a u ožujku 2022. bila je 7,3 %.
+> Ispravi rečenicu „Cijene su u ožujku porasle 7,3 % u odnosu na veljaču.”
+
+Ispravak glasi „Cijene mjerene HICP-om u ožujku 2022. bile su 7,3 % više
+nego u ožujku 2021.” Pogledajte koji je dio usporedbe promijenjen.
+
+**Isprobajte.** Zatražite ispravak ove druge rečenice.
+
+> Saldo očekivanja iznosi 55,5 bodova i sažima odgovore ankete.
+> Ispravi rečenicu „Potrošači očekuju inflaciju od 55,5 %.”
+
+Usporedite dobivenu rečenicu s opisom salda u upitu.

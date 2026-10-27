@@ -1,0 +1,13 @@
+# Raw API checksums must survive Windows and Unix checkouts unchanged.
+data/raw/*.json -text
+data/raw/manifest.json text eol=lf
+# Preserve generated bootstrap and third-party licence text verbatim.
+renv/activate.R whitespace=-blank-at-eol
+styles/fonts/*.txt whitespace=-blank-at-eol
+*.R text eol=lf
+*.qmd text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.scss text eol=lf
+*.css text eol=lf
+renv.lock text eol=lf

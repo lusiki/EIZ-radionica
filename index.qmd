@@ -1,0 +1,85 @@
+---
+title: "Upotreba AI alata u studentskom istraživanju"
+title-block-style: none
+body-classes: workshop-home
+toc: false
+page-layout: full
+---
+
+::: {.hero}
+::: {.hero-copy}
+::: {.eyebrow}
+Ekonomski institut, Zagreb / praktična radionica
+:::
+
+# Istraživanje uz AI. Provjera vlastitim znanjem.
+
+Od prvog pitanja do rezultata koji možete objasniti i ponovno izračunati.
+Jedan hrvatski primjer, osam vježbi i jasan trag od izvora do zaključka.
+
+[Počnite ovdje](admin/prerequisites.qmd){.btn-workshop}
+[Otvorite vježbe](materials/exercises/index.qmd){.btn-workshop .secondary}
+:::
+<div class="hero-art" aria-hidden="true"><span class="disc">AI</span><span class="axis"></span><span class="dome"></span></div>
+:::
+
+::: {.eyebrow}
+{{< var workshop.duration >}} / hrvatski jezik / osnovni R
+:::
+
+## Što ćete napraviti
+
+Pratit ćete ostvarenu inflaciju i očekivanja potrošača u Hrvatskoj kroz
+{{< var case.rows >}} mjeseci. Pronaći ćete dokaz, provjeriti AI sažetak,
+pokrenuti analizu i napisati kratak rezultat s ograničenjima. U osnovnom
+dijelu nisu potrebni plaćeni AI alati.
+
+::: {.step-links}
+::: {.step-link}
+## 01 / Od pitanja do izvora
+
+Naučite razlikovati uvjerljiv odgovor od potvrđene tvrdnje. Završite dan
+s tri provjerena izvora i planom analize.
+
+[Materijal za prvi dan →](slides/day1.qmd)
+:::
+::: {.step-link}
+## 02 / Od podataka do zaključka
+
+Pročitajte podatke, objasnite izmjenu koda i pronađite namjernu pogrešku.
+Predajte rezultat koji se može ponovno izračunati.
+
+[Materijal za drugi dan →](slides/day2.qmd)
+:::
+:::
+
+## Jedan slučaj, dvije različite mjere
+
+Ostvarena inflacija mjeri promjenu cijena. Anketni saldo opisuje odgovore
+potrošača o budućim promjenama cijena. Njihovo zajedničko kretanje otvara
+istraživačko pitanje; samo po sebi ne dokazuje uzročnost.
+
+[Upoznajte podatke](data/dictionary.qmd) ·
+[Pogledajte raspored](admin/workshop_overview.qmd) ·
+[Preuzmite radni paket](downloads/eiz-workshop.zip)
+
+## Završni rad
+
+Jedno pitanje, tri provjerena izvora, skripta, graf ili tablica, približno
+200 riječi i zapis uporabe AI-ja.
+[Provjerite kriterije predaje](materials/rubric.qmd).
+
+## Za one koji žele pročitati više
+
+Prošireni tekst izvornih dvaju dana sada je dostupan kao revidirani
+priručnik: osam poglavlja s objašnjenjima, primjerima upita i dodatnim
+vježbama za samostalni rad.
+
+[Čitajte priručnik](booklet/index.qmd) ·
+[Preuzmite cijeli PDF](downloads/EIZ-prirucnik.pdf)
+
+::: {.concept-box}
+**Materijali radionice.** Sadržaj je revidiran {{< var workshop.revision >}}
+Termin sljedeće izvedbe i kontakt potvrđuje organizator. Datum revizije nije
+datum događaja.
+:::

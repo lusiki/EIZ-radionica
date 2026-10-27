@@ -1,8 +1,11 @@
-# Cheatsheets
+# Brzi podsjetnik
 
-Brzi vodiči i referentni materijali.
+1. Pitanje prije alata.
+2. Otvorite izvor i pronađite točan odlomak.
+3. Provjerite uzorak, ključ i jedinice.
+4. Objasnite izmjenu prije pokretanja koda.
+5. Pokrenite od početka i usporedite izlaz.
+6. Provjerite svaku brojku i tvrdnju nakon jezičnog uređivanja.
+7. Zabilježite uporabu AI-ja ili da ga niste koristili.
 
-## Planirani sadržaj
-
-- `prompt_patterns.md` - Obrasci za učinkovite promptove
-- `tool_comparison.md` - Usporedba AI alata
+Poveznice: ../sources.qmd, ../../data/dictionary.qmd, ../rubric.qmd.

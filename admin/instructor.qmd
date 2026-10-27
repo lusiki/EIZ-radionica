@@ -1,0 +1,63 @@
+---
+title: "Priprema za nastavnike"
+subtitle: "Izvedba, provjere i odluke prije nove radionice"
+---
+
+## Pripremite jedan put
+
+Podržani put jest Positron + R + zamrznuti paket. U prvih deset minuta
+praktičnog dijela pokažite otvaranje mape, konzolu, izvršavanje odabranog
+retka i novu sesiju. Početnicima dajte starter skriptu; iskusniji mogu
+napisati vlastitu. Nemojte trošiti vrijeme osnovnog dijela na prijelaz među
+terminalnim agentom, drugim IDE-om i bilježnicom.
+
+AI se može prikazati u pregledniku. Izvedite jednu malu izmjenu koda i
+pokažite provjeru. Copilot i Claude Code su izborni primjeri za nastavnika;
+nema obvezne pretplate ili API ključa za polaznike. Pripremljeni pogrešni
+tekst i kod imaju istu nastavnu svrhu ako servis zakaže.
+
+## Provjere prije susreta
+
+1. Potvrdite ciljanu skupinu, datum, kontakt i pravila ustanove.
+2. Isprobajte otvaranje sva tri izvora. Za rad bez mreže pripremite dopuštene
+   kopije; ako nema izvornika, vježba ne smije glumiti obavljenu provjeru.
+3. Obnovite renv i pokrenite `code/run_all.R` iz nove R sesije.
+4. Pokrenite `scripts/build.ps1` na Windowsu ili odgovarajuće naredbe iz README-ja.
+5. Otvorite paket u odvojenoj mapi i provjerite početničku skriptu.
+6. Pogledajte naslovnicu, tekst, tablice i navigaciju na telefonu.
+7. Zamolite dva ili tri predstavnika ciljane skupine da prođu starter i jednu
+   vježbu. Zabilježite vrijeme i mjesta zapinjanja, ne samo zadovoljstvo.
+
+## Pomoć tijekom rada
+
+Ako polaznik ne može objasniti generirani kod, smanjite zadatak na jedan
+odabir redaka i jedan prosjek. U paru mijenjajte uloge autora i provjeravatelja.
+Osnovni izlaz vježbe 2.3 može biti godišnja tablica i jedan dobro označen graf;
+drugi graf je nastavak za brže polaznike. Pripremljene izlaze koristite za
+provjeru i nastavak rasprave, ali ih nemojte bilježiti kao samostalnu izvedbu.
+
+U zadnjih deset minuta svakog bloka usporedite dva studentska izlaza i
+zatražite razlog jedne odluke. Zajednički pregled pogreške vrijedi više od
+dodavanja još jednog alata u raspored.
+
+## Napredni dio nakon radionice
+
+Opcionalni HAC primjer nalazi se u `code/optional_hac.R`. Primjeren je tek
+kada polaznik razumije regresiju, vremensku ovisnost i ograničenja inferencije.
+Panel, sustavno istraživanje specifikacija i prognoziranje s vremenskom
+validacijom zasebni su nastavci, bez obećanja da stanu u ovaj raspored.
+
+Medijski indeks iz izvornog materijala može postati drugi slučaj tek uz
+stvarni korpus, definiciju indeksa, provjeru prava uporabe, kod i referentne
+rezultate. Ne zamjenjujte ga izmišljenim serijama označenima kao HNB podaci.
+
+## Status ove revizije
+
+Programski i vizualni pregledi nisu pilot s polaznicima. Prazan termin i
+nepotvrđen kontakt namjerno nisu popunjeni nagađanjem. Stari HTML/PDF izvozi
+i stare najave ostaju povijesni materijal izvan novog weba i radnog paketa.
+Čitateljski materijali nisu projekcijski slajdovi; raspored i vježbe služe
+vođenju susreta. Kratki prezentacijski sažeci mogu se razviti nakon pilota.
+
+[Dnevni raspored](workshop_overview.qmd) · [Rješenja](../materials/solutions.qmd) ·
+[Rubrika](../materials/rubric.qmd)

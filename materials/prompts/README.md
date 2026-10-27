@@ -1,10 +1,5 @@
-# Prompts
+# Upiti
 
-Primjeri promptova za različite AI alate.
-
-## Planirani sadržaj
-
-- `perplexity.md` - Promptovi za Perplexity (pretraživanje literature)
-- `gemini.md` - Promptovi za Gemini Deep Research
-- `claude.md` - Promptovi za Claude (strukturiranje, pisanje)
-- `coding.md` - Promptovi za kodiranje (Claude Code, Copilot)
+Provjerljivi upiti ugrađeni su uz aktivnosti u ../../slides/day1.qmd
+i ../../slides/day2.qmd. Ondje su jedini izvor teksta, uz objašnjenje da
+dobar upit nije jamstvo točnosti. Zapis uporabe je ../templates/ai-use-log.md.

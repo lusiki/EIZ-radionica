@@ -1,21 +1,24 @@
-# Data
+# Zamrznuti nastavni slučaj
 
-Uzorci podataka za demonstracije i vježbe.
+Hrvatska, 2015-01–2024-12; 120 mjeseci. Preuzeto 26. listopada 2026.
+Dva javna izvora: Eurostat prc_hicp_minr (ukupni HICP, RCH_A, ECOICOP v2)
+i ei_bsco_m (DG ECFIN, BS-PT-NY, BAL, NSA). Podaci su povijesne serije
+prema trenutačno dostupnoj reviziji, ne povijesna izdanja za prognoziranje.
 
-## Planirani dataseti
+- raw/: izvorni JSON-stat odgovori i manifest s upitima, vremenom i kontrolnim zbrojevima.
+- processed/croatia_inflation.csv: zajednički ključ month, bez imputacije.
+- reference/: zamrznuti numerički rezultati za provjeru skripti.
+- dictionary.qmd: značenje stupaca, jedinice, obrada i ograničenja.
 
-| Dataset | Opis | Izvor |
-|---------|------|-------|
-| `sample_macro.csv` | Makroekonomski pokazatelji EU zemalja | Eurostat |
+Izvori:
+[HICP](https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en),
+[anketa](https://ec.europa.eu/eurostat/databrowser/view/ei_bsco_m/default/table?lang=en).
+© European Union, Eurostat / European Commission DG ECFIN, pristupljeno
+26. listopada 2026. Ovaj je paket prilagođen za nastavu: odabrani su mjeseci
+i zemlja, spojene serije i izračunani sažetci. Eurostat nije odgovoran za
+ovu obradu i tumačenje.
+[Uvjeti ponovne uporabe](https://ec.europa.eu/eurostat/help/copyright-notice).
+Poštujte posebne napomene izvornog izvora; ne pretpostavljajte da paket
+dodjeljuje opću licencu svim tuđim sadržajima.
 
-## Ideje za dodatne podatke
-
-- **Makroekonomski panel** - BDP, inflacija, nezaposlenost za EU zemlje
-- **Survey mikrodata** - EU-SILC ili slični podaci o kućanstvima
-- **Vremenske serije** - Hrvatski ekonomski pokazatelji (HNB, DZS)
-- **Tekstualni podaci** - ECB monetary policy statements za sentiment analizu
-
-## Napomena
-
-Za veće datasete, koristite `.gitignore` za isključivanje iz verzioniranja.
-Samo uzorci podataka trebaju biti uključeni u repozitorij.
+Mogući HNB/medijski korpus nije uključen niti simuliran kao stvarni podatak.

@@ -1,0 +1,135 @@
+---
+title: "Rješenja i bilješke za provjeru"
+subtitle: "Otvorite nakon vlastitog pokušaja"
+---
+
+## 1.1 Pitanje i pravila
+
+Prihvatljiv primjer: „Kako su se u Hrvatskoj od 2015. do 2024. kretali
+godišnja stopa HICP-a i kvalitativni saldo očekivanja cijena?”
+Pitanje je opisno. Dobar popis provjera uključuje otvaranje izvora, provjeru
+podudarnosti tvrdnje i dokaza te provjeru jedinica i uzorka.
+Ne postoji univerzalno rješenje za pravila ustanove: potreban je stvarni dokument
+ili potvrda nastavnika, a ne AI pretpostavka.
+
+## 1.2 Dokazi
+
+Za HICP treba identificirati godišnju promjenu, a ne razinu indeksa. Za
+anketu treba identificirati pitanje o budućih 12 mjeseci i jedinicu BAL.
+U članku Meylera i Reiche odjeljak 2 i bilješka 6 podupiru razlikovanje
+kvalitativnog salda i kvantitativnih očekivanja. Podaci o europodručju iz
+tog članka ne potvrđuju automatski naš hrvatski rezultat.
+
+Dobar zapis navodi lokator i jednu vlastitu rečenicu o dosegu tvrdnje.
+Sam URL bez provjere teksta nije potpuni zapis.
+
+## 1.3 Pogrešan sažetak
+
+Problemi su: jedna zemlja pogrešno nazvana panelom; saldo pretvoren u
+postotnu prognozu; već izračunana stopa ponovno transformirana bez cilja;
+logaritmiranje mogućih nula i negativnih vrijednosti; uzročnost izvedena iz
+sličnosti linija; prenošenje rezultata drugog uzorka; citat prihvaćen bez provjere.
+
+Mogući ispravak:
+
+> Promatramo mjesečne podatke za Hrvatsku od 2015. do 2024. Jedna serija
+> prikazuje godišnju stopu promjene ukupnog HICP-a, a druga kvalitativni saldo
+> očekivanja potrošača o kretanju cijena. Saldo se ne može izravno čitati kao
+> očekivana stopa inflacije. Prije analize provjeravamo potpunost mjeseci i
+> izvorne jedinice, bez automatskog logaritmiranja ili brisanja opažanja.
+> Zajedničko kretanje opisujemo odvojenim grafovima i godišnjim sažetcima.
+> Takav postupak ne identificira uzrok. Članak o europodručju pomaže razumjeti
+> mjerenje, ali nije dokaz rezultata za Hrvatsku. Za konačne tvrdnje trebaju
+> provjereni izvori i stvarno izvršena analiza.
+
+## 1.4 Plan
+
+Očekuje se HR, 120 mjeseci, ključ month, RCH_A i BAL/NSA, audit prije
+izračuna, zaustavljanje pri neočekivanom nedostatku, odvojeni grafovi i
+godišnji sažetci. Moguće je drugačije opisno pitanje ako je izvedivo i
+obrazloženo. Regresija nije uvjet uspjeha.
+
+## 2.1 Audit
+
+120 redaka i 120 različitih mjeseci, 2015-01 do 2024-12, 0 nedostajućih
+vrijednosti. HICP: od −1,5 do 12,9 %. Saldo: od −8,0 do 56,7 bodova.
+Nule i negativne stope onemogućuju bezuvjetan logaritamski postupak.
+Prazna oznaka statusa znači da API nije naveo oznaku, ne da nedostaje vrijednost.
+
+## 2.2 Primjer izmjene
+
+```r
+d$year <- as.integer(substr(d$month, 1, 4))
+stopifnot(all(table(d$year) == 12))
+mean(d$expectations_balance[d$year == 2022])
+aggregate(d[c("hicp_yoy_pct", "expectations_balance")],
+          list(year = d$year), mean)
+```
+
+Prosjek salda za 2022. jest 46,6167 bodova, a prosjek mjesečnih godišnjih
+stopa HICP-a 10,6333 %. To su opisni prosjeci unutar definiranog uzorka.
+Ne nazivajte saldo od 46,6167 prosječnom očekivanom inflacijom od 46,6167 %.
+
+## 2.3 Popravak
+
+Vratite prvi mjesec. Uklonite pogrešno preimenovanje i dijeljenje salda sa
+100, logaritmiranje i filtriranje nevaljanih vrijednosti. Zamijenite
+neopravdanu regresiju bez konstante opisnim postupkom i izbrišite uzročni
+zaključak. [Referentna skripta](../code/02_analysis.R) daje sve izlaze.
+
+Za početnički prikaz u osnovnom R-u:
+
+```r
+op <- par(mfrow = c(2, 1))
+month <- as.Date(paste0(d$month, "-01"))
+plot(month, d$hicp_yoy_pct, type = "l",
+     xlab = "Mjesec", ylab = "HICP, godisnja promjena (%)")
+plot(month, d$expectations_balance, type = "l", lty = 2,
+     xlab = "Mjesec", ylab = "Saldo ocekivanja (bodovi), NSA")
+par(op)
+```
+
+Korelacija cijelog uzorka je 0,6985; podrazdoblja 2015.–2019. i 2020.–2024.
+daju 0,8279 i 0,5342. Razlika pokazuje osjetljivost opisne mjere na razdoblje,
+a ne dokaz promjene uzročnog učinka. Čisti izračun provjerava
+`code/check.R`; skripta dodatno namjerno kvari ulaze kako bi provjerila zaštitne uvjete.
+
+## 2.4 Primjer tumačenja
+
+U [referentnim rezultatima](results.qmd) nalaze se provjerene brojke. Dobro
+tumačenje navodi uzorak i različite jedinice, opisuje jedan nalaz i ograničenje.
+Nije potrebno tvrditi da su očekivanja uzrokovala inflaciju, bila usidrena
+ili da model može predvidjeti budućnost. Navođenje alata bez opisa provjere
+nije dovoljan zapis uporabe.
+
+Pri vrednovanju prihvatite različite formulacije koje su točne; ne tražite
+prepisivanje ovog rješenja.
+
+### Primjer završnog odlomka
+
+Usporedili smo ostvarenu inflaciju i očekivanja potrošača o kretanju cijena
+u Hrvatskoj od siječnja 2015. do prosinca 2024. Analiza obuhvaća 120 mjesečnih
+opažanja iz Eurostatovih tablica. Ostvarenu inflaciju mjerimo godišnjom
+stopom promjene ukupnog HICP-a. Očekivanja predstavljamo sezonski
+neprilagođenim kvalitativnim saldom ankete DG ECFIN-a. Saldo nije prosječna
+očekivana stopa inflacije pa se razine dviju mjera ne mogu izravno uspoređivati.
+
+Prosjek dvanaest mjesečnih godišnjih stopa HICP-a u 2022. iznosio je 10,63 %,
+a prosjek salda očekivanja 46,62 boda. U 2019. odgovarajući prosjeci bili su
+0,80 % i 15,25 bodova. Obje su mjere, dakle, imale viši godišnji prosjek u
+2022. Istodobna korelacija u cijelom uzorku iznosi približno 0,6985.
+Za 2015.–2019. iznosi 0,8279, a za 2020.–2024. 0,5342, što pokazuje da
+opis povezanosti ovisi o odabranom razdoblju.
+
+Ovi nalazi opisuju zajedničko kretanje i ne identificiraju uzročni učinak
+očekivanja na cijene. Na obje serije mogu utjecati zajednički šokovi, a
+vremenska ovisnost i sezonalnost nisu uklonjene samim računanjem korelacije.
+Usporedba istog mjeseca također nije provjera uspješnosti prognoze za
+sljedećih dvanaest mjeseci. Za takvu bi provjeru trebalo unaprijed definirati
+vremensko poravnanje i postupak evaluacije. Koristimo povijesne vrijednosti
+dostupne 26. listopada 2026., koje se mogu razlikovati od ranijih izdanja
+podataka. Skripta i zamrznuti izvori omogućuju ponavljanje ovih opisnih
+izračuna, uz zadržavanje istog uzorka i jedinica.
+
+Uz odlomak polaznik prilaže vlastite dokazne zapise i stvarni zapis uporabe
+AI-ja; ne preuzima tuđu izjavu o načinu nastanka rada.

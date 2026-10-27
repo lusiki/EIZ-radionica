@@ -1,0 +1,49 @@
+---
+title: "Izvori koje možete provjeriti"
+subtitle: "Početni skup za tri dokazna zapisa"
+---
+
+Ovo su kandidati za provjeru, a ne unaprijed ispunjen dokazni zapis.
+Otvorite izvor i pronađite odjeljak koji podupire vašu tvrdnju.
+
+## Tri početna izvora
+
+1. **Eurostat — Information on data: HICP.**
+   [Opis mjera i obuhvata](https://ec.europa.eu/eurostat/web/hicp/information-data).
+   Provjerite razliku između indeksa i stope promjene.
+   [Naša tablica](https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en)
+   koristi novu klasifikaciju ECOICOP v2; odabir i vrijeme preuzimanja su
+   u [manifestu](../data/raw/manifest.json).
+2. **Europska komisija, DG ECFIN — Methodological concepts.**
+   [Metodologija anketa](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en).
+   Pronađite Consumer Survey, CONS_006 i objašnjenje salda.
+   [Tablica ankete](https://ec.europa.eu/eurostat/databrowser/view/ei_bsco_m/default/table?lang=en)
+   sadrži više pitanja: naša je šifra `BS-PT-NY`.
+3. **Aidan Meyler i Lovisa Reiche (2021). Making sense of consumers'
+   inflation perceptions and expectations – the role of (un)certainty.**
+   [ECB Economic Bulletin, 2/2021](https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html).
+   Odjeljak 2 i bilješka 6 razlikuju kvalitativne i kvantitativne mjere.
+   Članak je koristan za konceptualno ograničenje; nije dokaz našeg hrvatskog
+   rezultata za 2015.–2024. To je istraživački članak središnje banke, a sam
+   naziv publikacije ne čini ga recenziranim časopisnim radom.
+
+## Dodatni metodološki izvori
+
+- [ASA: izjava o p-vrijednostima](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
+  Za napredni dio o statističkom zaključivanju.
+- [sandwich: NeweyWest](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html).
+  Dokumentacija implementacije i postavki; nije dokaz primjerenosti našeg modela.
+- [renv: uvod](https://rstudio.github.io/renv/articles/renv.html).
+  Obnova projektnog okruženja i granice reproducibilnosti.
+- [Pravila ponovne uporabe Eurostatovih podataka](https://ec.europa.eu/eurostat/help/copyright-notice).
+  U ovom nastavnom paketu navodimo izvor i označujemo vlastitu obradu.
+
+## Dokumentacija izbornih alata
+
+[RStudio i Copilot](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html) ·
+[Positron proširenja](https://positron.posit.co/extensions.html) ·
+[CLASSLA](https://github.com/clarinsi/classla).
+
+Provjera poveznica i značenja: 26. listopada 2026. Dostupnost funkcija i
+uvjeti pristupa mogu se promijeniti. Nastavni ishodi ne ovise o komercijalnoj
+funkciji pojedinog alata.

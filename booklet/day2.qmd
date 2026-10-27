@@ -1,0 +1,26 @@
+---
+title: "Kodiranje i pisanje"
+subtitle: "Priručnik · Drugi dio · Četiri poglavlja za samostalno čitanje"
+body-classes: booklet
+toc-depth: 3
+toc-title: "Sadržaj drugog dijela"
+---
+
+[O priručniku](index.qmd) · [Cijeli PDF](../downloads/EIZ-prirucnik.pdf) ·
+[Kratki materijal za nastavu](../slides/day2.qmd)
+
+Nastavite s istim pitanjem i podacima. Osnovni postupak ostaje opisna
+analiza; regresija, paneli i medijski korpus objašnjeni su kao napredni
+nastavci s dodatnim zahtjevima. Primjeri koda izvode se iz korijena projekta.
+
+{{< include _05-agents.qmd >}}
+
+{{< include _06-ide.qmd >}}
+
+{{< include _07-notebooks.qmd >}}
+
+{{< include _08-writing.qmd >}}
+
+::: {.booklet-next}
+[Otvorite kriterije završne predaje →](../materials/rubric.qmd)
+:::

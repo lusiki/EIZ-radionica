@@ -1,0 +1,26 @@
+---
+title: "Istraživanje i strukturiranje"
+subtitle: "Priručnik · Prvi dio · Četiri poglavlja za samostalno čitanje"
+body-classes: booklet
+toc-depth: 3
+toc-title: "Sadržaj prvog dijela"
+---
+
+[O priručniku](index.qmd) · [Cijeli PDF](../downloads/EIZ-prirucnik.pdf) ·
+[Kratki materijal za nastavu](../slides/day1.qmd)
+
+Čitajte od početne ideje prema provjerenim izvorima i planu. Primjeri
+upita su predlošci za prilagodbu; prikazani odgovori nisu obećanje kako će
+se pojedini alat ponašati. Dokumentacija alata provjerena je 26. listopada 2026.
+
+{{< include _01-foundations.qmd >}}
+
+{{< include _02-search.qmd >}}
+
+{{< include _03-deep-research.qmd >}}
+
+{{< include _04-structure.qmd >}}
+
+::: {.booklet-next}
+[Nastavite na drugi dio: kodiranje i pisanje →](day2.qmd)
+:::

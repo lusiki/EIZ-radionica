@@ -1,0 +1,188 @@
+---
+title: "Osam vježbi, jedan istraživački trag"
+subtitle: "Svaki blok: 10 minuta demonstracije · 25 minuta rada · 10 minuta provjere"
+---
+
+Spremite svoje datoteke u `submissions/`. Radite samostalno ili u paru, uz
+izmjenu uloga: jedna osoba predlaže, druga provjerava. Nakon prve polovice
+vježbe zamijenite uloge. [Rješenja](../solutions.qmd) otvorite nakon pokušaja.
+
+## 1.1 Pitanje i granice uporabe {#v11}
+
+::: {.exercise-meta}
+Cilj: razlikovati istraživačko pitanje, dostupni dokaz i dopuštenu uporabu AI-ja.
+:::
+
+**Ulaz:** [čitateljski materijal](../../slides/day1.qmd#blok-11),
+[rječnik podataka](../../data/dictionary.qmd) i
+[predložak plana](../templates/research-plan.md).
+
+**Rad, 25 minuta.** Prvih 5 minuta napišite pitanje o Hrvatskoj 2015.–2024.
+U sljedećih 10 minuta označite koje dvije varijable trebate i što svaka mjeri.
+Posljednjih 10 minuta sastavite tri provjere prije prihvaćanja AI odgovora
+te navedite koje pravilo kolegija trebate provjeriti. Ne izmišljajte odgovor
+ustanove ako ga nemate.
+
+**Predaja:** jedno pitanje, dvije pravilno označene varijable i popis provjera.
+
+**Provjera:** pitanje je opisno i može se odgovoriti dostupnim podacima;
+saldo se ne naziva stopom inflacije; pravila ustanove nisu zamijenjena mišljenjem modela.
+
+**Rasprava, 10 minuta:** što bi nedostajalo kada bismo pitanje promijenili
+u „uzrokuju li očekivanja inflaciju”?
+
+## 1.2 Tri zapisa o dokazima {#v12}
+
+::: {.exercise-meta}
+Cilj: provjeriti postojanje izvora, potporu tvrdnji i primjenjivost.
+:::
+
+**Ulaz:** [tri početna izvora](../sources.qmd) i
+[predložak dokaznog zapisa](../templates/evidence-log.md).
+
+**Rad, 25 minuta.** U prvih 5 minuta raspodijelite izvore. Tijekom sljedećih
+15 minuta u svakome pronađite točan odjeljak: HICP mjeru, značenje anketnog
+salda i ograničenje usporedbe očekivanja s inflacijom. Posljednjih 5 minuta
+međusobno provjerite tri zapisa. AI smije predložiti izvor, ali izvor morate otvoriti.
+
+**Predaja:** tri zapisa s autorom ili ustanovom, naslovom, poveznicom,
+odjeljkom, vlastitom parafrazom, ograničenjem i statusom provjere.
+
+**Provjera:** odlomak stvarno podupire zapisanu tvrdnju; članak o europodručju
+nije predstavljen kao dokaz hrvatskog rezultata 2015.–2024.
+
+**Rasprava, 10 minuta:** može li točan bibliografski podatak pratiti pogrešnu tvrdnju?
+Ako izvor niste mogli otvoriti, jasno označite neprovjeren status.
+
+## 1.3 Popravite sažetak {#v13}
+
+::: {.exercise-meta}
+Cilj: prepoznati promjenu jedinice, uzročnu tvrdnju i izostavljeno ograničenje.
+:::
+
+**Ulaz:** [namjerno pogrešan sažetak](../examples/flawed-summary.md),
+izvori iz prethodne vježbe i rječnik podataka.
+
+**Rad, 25 minuta.** Prvih 5 minuta označite sumnjive tvrdnje. Sljedećih
+10 minuta svaku provjerite uz izvor. U zadnjih 10 minuta napišite ispravljeni
+odlomak od 80–120 riječi i dvije rečenice o onome što je sažetak prešutio.
+
+**Predaja:** anotirani izvorni tekst i vlastiti ispravak. Koristite oznake
+„pogrešno”, „nepotkrijepljeno” i „izostavljeno”.
+
+**Provjera:** najmanje četiri različita problema imaju obrazloženje. Izmjena
+stila bez ispravka značenja nije dovoljna.
+
+**Rasprava, 10 minuta:** kako biste provjerili isti tekst da nema očito pogrešnih brojki?
+
+## 1.4 Plan analize prije izvođenja {#v14}
+
+::: {.exercise-meta}
+Cilj: povezati pitanje s uzorkom, obradom, prikazima i granicama tumačenja.
+:::
+
+**Ulaz:** [predložak plana](../templates/research-plan.md), tri dokaza i
+[rječnik podataka](../../data/dictionary.qmd).
+
+**Rad, 25 minuta.** U prvih 10 minuta navedite fiksni uzorak, ključ i jedinice.
+Sljedećih 10 minuta odaberite dva odvojena vremenska grafa i godišnje sažetke,
+uz postupak za nedostajuće vrijednosti. Posljednjih 5 minuta napišite dvije
+tvrdnje koje analiza neće moći potvrditi. Koristite vlastite riječi.
+
+**Predaja:** plan do jedne stranice, spremljen prije gledanja rezultata.
+
+**Provjera:** 120 mjeseci; nema automatskog logaritmiranja, interpolacije ili
+panel-metode; ne mijenja se uzorak zato što rezultat nije očekivan.
+
+**Rasprava, 10 minuta:** što je promjena plana zbog pogreške, a što biranje analize
+zato što daje poželjan rezultat? Zapišite razlog svake naknadne promjene.
+
+## 2.1 Audit podataka {#v21}
+
+::: {.exercise-meta}
+Cilj: provjeriti strukturu i značenje ulaza prije analize.
+:::
+
+**Ulaz:** [CSV](../../data/processed/croatia_inflation.csv),
+[starter.R](../../code/starter.R), [predložak audita](../templates/data-audit.md).
+
+**Rad, 25 minuta.** Prvih 5 minuta otvorite projekt i pokrenite početak
+skripte. Sljedećih 10 minuta provjerite broj i jedinstvenost mjeseci,
+nedostajuće vrijednosti i raspon obiju mjera. Zadnjih 10 minuta objasnite
+jedinice i zašto `log()` nije dopušten automatski primijeniti na svaki stupac.
+
+**Predaja:** ispunjeni audit s naredbama i rezultatima.
+
+**Provjera:** 120 redaka i različitih mjeseci, 2015-01 do 2024-12, nema
+nedostajućih vrijednosti; negativna vrijednost sama po sebi nije greška.
+
+**Rasprava, 10 minuta:** koja se odluka mora donijeti prije brisanja nedostajućeg
+opažanja? Prazna oznaka statusa izvora ne znači nedostajuću brojčanu vrijednost.
+
+## 2.2 Jedna izmjena koju možete objasniti {#v22}
+
+::: {.exercise-meta}
+Cilj: upotrijebiti AI ili primjer kao pomoć, uz samostalnu provjeru koda.
+:::
+
+**Ulaz:** starter skripta i [predložak zapisa uporabe AI-ja](../templates/ai-use-log.md).
+
+**Rad, 25 minuta.** Prvih 5 minuta objasnite postojeći izračun za 2022.
+Sljedećih 15 minuta dodajte prosjek očekivanja za 2022. i tablicu godišnjih
+prosjeka. Posljednjih 5 minuta provjerite 12 mjeseci po godini i barem jednu
+vrijednost izravnim odabirom redaka. Možete tražiti prijedlog od AI-ja ili
+raditi prema referentnoj sintaksi u uputama nastavnika.
+
+**Predaja:** skripta s kratkim komentarom uz izmjenu i zapis o provjeri.
+
+**Provjera:** objašnjavate svaku dodanu naredbu, ne mijenjate ulazni CSV,
+prosjek salda ne nazivate očekivanom stopom inflacije.
+
+**Rasprava, 10 minuta:** može li kod biti sintaktički ispravan i mjeriti pogrešnu stvar?
+
+## 2.3 Popravak i čisto izvođenje {#v23}
+
+::: {.exercise-meta}
+Cilj: otkriti metodološku pogrešku, ne samo poruku o grešci u programu.
+:::
+
+**Ulaz:** [namjerno pogrešna skripta](../../code/flawed_example.R) i
+[referentni izlazi](../results.qmd).
+
+**Rad, 25 minuta.** Prvih 10 minuta označite najmanje četiri problema bez
+pokretanja koda. U sljedećih 10 minuta napravite vlastitu ispravnu skriptu:
+učitajte svih 120 mjeseci, zadržite jedinice, izradite godišnji sažetak i
+dva odvojena vremenska prikaza. Posljednjih 5 minuta pokrenite je iz nove
+sesije i usporedite jedan broj s referencom. Za početnike je dovoljan godišnji
+sažetak i jedan ispravno označen graf.
+
+**Predaja:** popis pogrešaka, ispravna skripta i ponovljeni izlaz iz čiste sesije.
+
+**Provjera:** nema prešutnog gubitka redaka, logaritmiranja negativne stope,
+izmišljene jedinice ili zaključka o uzroku. Grafovi imaju različito označene jedinice.
+
+**Rasprava, 10 minuta:** što bi se promijenilo da izbrišemo samo jedan mjesec
+najveće inflacije? Zašto sama visoka korelacija nije dovoljan odgovor?
+
+## 2.4 Provjereni rezultat i predaja {#v24}
+
+::: {.exercise-meta}
+Cilj: napisati zaključak čije se tvrdnje mogu povezati s izvorima i izlazima.
+:::
+
+**Ulaz:** vaš plan, dokazni zapisi, skripta, graf ili tablica i
+[rubrika](../rubric.qmd).
+
+**Rad, 25 minuta.** Prvih 10 minuta napišite približno 200 riječi o slučaju.
+Sljedećih 10 minuta dopustite kolegi ili AI-ju da predloži jasniji tekst.
+Sačuvajte obje verzije i usporedite sve brojke, jedinice, izvore i tvrdnje.
+Posljednjih 5 minuta dovršite zapis uporabe i provjerite datoteke za predaju.
+
+**Predaja:** pitanje, tri dokaza, skripta, graf ili tablica, obje verzije
+teksta i zapis uporabe AI-ja. Ako nije bilo AI-ja, zapišite „AI nije korišten”.
+
+**Provjera:** barem jedna brojka odgovara izlazu, razdoblje i jedinice su
+navedeni, postoji ograničenje i nema tvrdnje koju analiza ne podupire.
+
+**Rasprava, 10 minuta:** koji biste dodatni podatak ili dizajn trebali za
+sljedeće, zahtjevnije istraživačko pitanje?

@@ -1,8 +1,8 @@
-# Čitateljski materijali
+# Kratki pregledi obaju dana
 
-day1.qmd i day2.qmd su revidirani izvori koje gradi korijenski Quarto projekt.
-Naziv mape zadržan je radi kontinuiteta. Ovo su čitateljski materijali,
-ne projekcijski slajdovi. Otvorite _site/slides/day1.html i day2.html nakon builda.
+day1.qmd i day2.qmd vode kroz osam tema radionice. Uz objašnjenja su
+poveznice na vježbe i opširnija poglavlja priručnika. Nakon gradnje
+otvorite _site/slides/day1.html ili _site/slides/day2.html.
 
-Stari HTML/PDF u ovoj mapi ostaju povijesni izvozi i nisu dio nove distribucije.
-Kratki prezentacijski sažeci mogu se oblikovati nakon pilota tempa.
+Naziv mape čuva postojeće poveznice. Stari HTML i PDF izvozi ostaju
+povijesni materijal. Aktualnu stranicu i paket čine revidirani QMD izvori.

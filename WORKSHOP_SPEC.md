@@ -1,55 +1,50 @@
-# EIZ: specifikacija revidirane radionice
+# Istraživanje uz AI
 
-Radna verzija za pregled, 26. listopada 2026. Datum revizije nije datum događaja.
-Novi termin, točnu ciljanu skupinu, kontakt i pravila ustanove potvrđuje organizator.
+Pregled materijala, 27. listopada 2026.
 
-## Cilj i opseg
+## Jedan primjer kroz osam tema
 
-Studenti ekonomije s osnovnom računalnom pismenošću trebaju moći provjeriti
-izvor, razlikovati mjere, objasniti malu izmjenu R koda i napisati rezultat
-čije su brojke i granice provjerene. Jedan javni hrvatski slučaj prati svih
-osam blokova. Raspored: 2 x 210 minuta = 420 minuta; svaki dan 4 x 45,
-15 minuta stanke i 15 minuta završetka. Svaki blok 10 demo + 25 rad + 10 pregled.
+Radionica povezuje traženje izvora, planiranje, analizu i pisanje.
+Pratimo ostvarenu inflaciju i kvalitativni saldo očekivanja cijena u
+Hrvatskoj od 2015. do 2024. Materijale možete koristiti redom,
+samostalno ili u grupi, vlastitim tempom.
 
-## Ishodi po blokovima
-
-| Blok | Rezultat |
+| Tema | Primjer rada |
 |---|---|
-| 1.1 | Pitanje i provjere uporabe AI-ja |
-| 1.2 | Tri dokazna zapisa s lokatorima i ograničenjima |
-| 1.3 | Anotirani i ispravljeni sažetak |
-| 1.4 | Plan analize prije gledanja rezultata |
-| 2.1 | Audit 120 mjesečnih opažanja |
-| 2.2 | Objašnjiva i provjerena izmjena koda |
-| 2.3 | Popravljena analiza iz nove sesije |
-| 2.4 | Završni rad i zapis uporabe AI-ja |
+| 1.1 Postavite istraživačko pitanje | Pitanje o dvjema mjerama |
+| 1.2 Pronađite i provjerite izvore | Bilješke o izvorima i njihovim tvrdnjama |
+| 1.3 Provjerite i uredite sažetak | Početni sažetak i vlastiti ispravak |
+| 1.4 Pripremite plan analize | Skica postupka i prikaza |
+| 2.1 Upoznajte i provjerite podatke | Pregled 120 mjesečnih opažanja |
+| 2.2 Dopunite i objasnite kod | Mala dopuna R skripte |
+| 2.3 Ponovite analizu od početka | Tablica i graf iz spremljene skripte |
+| 2.4 Napišite i uredite zaključak | Odlomak povezan s dobivenim rezultatom |
 
-## Metodološke odluke
+Stranice dana daju kratke preglede, priručnik donosi objašnjenja,
+a vježbe primjere za isprobavanje. Naslovi i poveznice prate isti redoslijed.
+Osvrt na rad čine pitanja koja pomažu odlučiti što dalje doraditi.
 
-HICP godišnja promjena i kvalitativni saldo očekivanja nisu ista jedinica.
-Uzorak HR, 2015-01–2024-12, NSA anketa. Nema imputacije, automatskih logova,
-promjene uzorka radi rezultata ili panela s jednom zemljom. Opisna jezgra
-koristi odvojene vremenske prikaze i godišnje sažetke. Korelacija nije
-uzročni učinak. OLS/HAC je zaseban izborni dodatak, s konstantom i navedenim
-postavkama i ograničenjima.
+## Podaci i metode
 
-## Tehnički put
+Uzorak sadrži 120 mjeseci za Hrvatsku, od 2015-01 do 2024-12.
+Godišnju promjenu HICP-a izražavamo u postocima, a sezonski neprilagođen
+anketni saldo u bodovima salda. Zadržavamo izvorne jedinice i sva opažanja.
 
-Polaznici: Positron + R; starter radi bez dodatnih paketa ili AI računa.
-Nastavnici: renv zaključavanje za pripremu podataka i referentne izlaze;
-Quarto za lokalni web. Izvorne JSON datoteke i manifest čuvaju podrijetlo.
-Pripremljeni primjeri zamjenjuju žive demonstracije kad servis nije dostupan.
+Osnovna analiza koristi odvojene vremenske grafove i godišnje prosjeke.
+Korelacija opisuje istodobnu linearnu povezanost. Pitanja o uzroku ili
+prognoznoj točnosti traže zaseban postupak. OLS/HAC je dodatni primjer,
+s konstantom, navedenim postavkama i objašnjenim ograničenjima.
 
-## Vrednovanje i objava
+## Alati i datoteke
 
-Završni paket: pitanje, tri izvora, skripta, graf ili tablica, oko 200 riječi
-i zapis uporabe. Pet dimenzija po 0–2 boda. Predloženi prag treba provjeriti
-pilotom. Zadovoljstvo ne zamjenjuje provjeru izvedbe.
+Početna skripta radi u osnovnom R-u, u Positronu ili RStudiju.
+Pripremljeni podaci, tekst i pogrešna skripta omogućuju rad izvan mreže.
+AI pomoć možete isprobati dostupnim alatom.
 
-Ova grana ne objavljuje sadržaj. Nema Actions/Pages deploymenta ni push-a
-u postupku gradnje. Nakon autorova pregleda slijedi pilot, eventualna
-dorada i tek zasebno odobrena odluka o objavi. Povijesne najave, financiranje
-i kontakti ne prepisuju se kao potvrđeni podaci nove izvedbe.
+Za obnovu svih referentnih rezultata služe skripte i renv.lock.
+Izvorni JSON i manifest bilježe podrijetlo podataka. Quarto i PDF skripta
+grade web i priručnik iz zajedničkih izvora. Upute za gradnju i objavu
+nalaze se u README.md.
 
-Detalji: admin/corrections.md, admin/instructor.qmd, materials/exercises/index.qmd,
-materials/rubric.qmd i README.md.
+Povezani materijali su admin/workshop_overview.qmd,
+materials/exercises/index.qmd i materials/rubric.qmd.

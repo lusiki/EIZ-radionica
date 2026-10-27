@@ -1,38 +1,31 @@
 ## Kako čitati ovaj priručnik {#kako-citati}
 
-Priručnik je namijenjen čitanju uz radionicu ili samostalnom radu.
-Osam poglavlja prati teme obaju dana, s objašnjenjima, primjerima upita
-i pitanjima za vježbu. Temelji se na izvornom tekstu radionice, uz
-ispravljene tvrdnje i ažurirana objašnjenja alata. Izvorni tekst ostaje
-dostupan u povijesti repozitorija.
+Priručnik prati mali istraživački projekt, od početnog pitanja do
+rezultata i teksta. Možete ga čitati redom ili otvoriti temu koja vam
+upravo treba. Uz objašnjenja su primjeri upita, koda i ideje za vlastiti pokušaj.
 
-Izvorne materijale napisao je Luka Šikić, UNICATH. To su tekstovi „Dan 1, Istraživanje
-i strukturiranje” i „Dan 2, Kodiranje i pisanje” iz repozitorija
-EIZ-radionica. Sadržaj je revidiran 26. listopada 2026.
-Organizator zasebno određuje datum održavanja radionice. Prerađeno izdanje
-pripremljeno je uz AI pomoć, uz dokumentirane izvore i provjeru analitičkog postupka.
+Prvi dan povezuje pitanje, izvore, sažetak i plan. Drugoga dana otvaramo
+podatke, dopunjavamo skriptu, ponavljamo analizu i pišemo zaključak.
+Plan iz vježbe 1.4 povezuje oba dijela.
 
-Prvi dan vodi od istraživačkog pitanja preko izvora i sažetka do plana
-analize. Drugoga dana provjeravate podatke, dopunjujete kod, ponavljate
-analizu i pišete zaključak. Plan iz vježbe 1.4 povezuje oba dana.
+Brojevi i naslovi jednaki su na stranicama dana, u priručniku i u vježbama.
+Uz svako poglavlje nalaze se poveznice na kraće objašnjenje i pripadajući
+zadatak. Dodatno čitanje možete otvoriti kad poželite proširiti primjer.
 
-Svaki broj označava isti zadatak na stranici dana, u ovom priručniku i
-u vježbama. Primjerice, blok 2.3, poglavlje 2.3 i vježba 2.3 zajedno
-vode kroz ponovno izvođenje analize. Na početku svakog poglavlja piše
-što nastavnik pokazuje, što studenti rade i što trebaju predati.
+Svi brojčani primjeri koriste istu spremljenu kopiju hrvatskih podataka
+za 2015.–2024., preuzetu 26. listopada 2026. Podaci, skripte i referentni
+izlazi dostupni su u radnom paketu, pa možete sami provjeriti izračune.
 
-Stranice dana služe vođenju nastave, vježbe daju detaljne upute za rad,
-a priručnik objašnjava postupke i primjere. Svaki blok traje 45 minuta,
-uz 10 minuta demonstracije, 25 minuta rada i 10 minuta zajedničke provjere.
-Dodatno čitanje i zadaci za samostalni rad nastavljaju se nakon radionice.
+Alati su primjeri mogućih načina rada. Odaberite onaj koji vam je
+dostupan i odgovara zadatku. Osnovni primjer možete proći besplatnim
+alatima i priloženim materijalima.
 
-Numerički primjeri koriste zamrznuti hrvatski skup za 2015.–2024.,
-preuzet 26. listopada 2026. Podaci u nastavnom paketu, skripte i
-referentni izlazi omogućuju provjeru brojeva. Nazivi alata ilustriraju
-načine rada. Dostupnost funkcija provjerena je prema službenoj
-dokumentaciji na datum revizije. Računi, sučelja i uvjeti mogu se
-promijeniti. Osnovne zadatke možete riješiti besplatnim alatima i priloženim materijalima.
+Izvorne materijale napisao je Luka Šikić, UNICATH. Priručnik se temelji
+na njegovim tekstovima za oba dana radionice, uz ažurirana objašnjenja,
+izvore i provjeru analize. Izdanje je pripremljeno uz AI pomoć.
+Dokumentacija alata provjerena je 26. listopada 2026., a izvorni tekst
+ostaje dostupan u povijesti repozitorija.
 
-Uz čitanje držite otvorene rječnik podataka, početnu skriptu i vlastite
-bilješke. Zapišite izvor svake tvrdnje koju preuzimate u svoj rad te
-pokušajte sami objasniti i ponoviti opisane postupke.
+Uz čitanje možete držati otvorene rječnik podataka, početnu skriptu
+i vlastite bilješke. Kad vas neka tvrdnja ili broj zainteresiraju,
+slijedite ih do izvora ili izračuna.

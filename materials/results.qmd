@@ -1,6 +1,6 @@
 ---
 title: "Referentni rezultati"
-subtitle: "Izračunani iz zamrznutih izvora · bez uzročnog tumačenja"
+subtitle: "Izračuni iz spremljene kopije podataka"
 ---
 
 ## Dvije serije na odvojenim osima
@@ -12,7 +12,7 @@ i bez boje. Uspoređujte kretanje kroz vrijeme. Visinu svake linije tumačite pr
 ![Mjesečna stopa HICP-a i saldo očekivanja cijena u Hrvatskoj, 2015.–2024., na odvojenim osima i s različitim vrstama linija.](../results/inflation_expectations.svg)
 
 Podaci su iz Eurostata i DG ECFIN-a, preuzeti 26. listopada 2026. Vlastita obrada.
-Eurostat nije odgovoran za ovu nastavnu obradu i tumačenje.
+Eurostat nije odgovoran za ovu obradu i tumačenje.
 
 ## Provjerite brojke
 

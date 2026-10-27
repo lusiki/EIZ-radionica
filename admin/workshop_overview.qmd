@@ -1,31 +1,38 @@
 ---
-title: "Raspored radionice"
-subtitle: "Dva susreta po 3 sata i 30 minuta"
+title: "Put kroz radionicu"
+subtitle: "Dva dana, osam tema i jedan primjer"
 ---
 
-Svaki radni blok traje 45 minuta, 10 minuta demonstracije, 25 minuta
-samostalnog rada ili rada u paru i 10 minuta zajedničke provjere.
-Ukupno je predviđeno 200 minuta aktivnog rada polaznika. Vrijeme je izraženo
-od početka susreta. Termin nove izvedbe potvrđuje organizator.
+Kroz radionicu pratimo inflaciju i očekivanja potrošača u Hrvatskoj.
+Prvi dio pomaže postaviti pitanje i upoznati izvore. Drugi dio vodi od
+podataka do vlastitog zaključka. Možete proći sve redom ili se zadržati
+na temi koja vas zanima.
 
-| Vrijeme | Dan 1 | Dan 2 |
-|---|---|---|
-| 00:00–00:45 | [1.1 Postavite istraživačko pitanje](../slides/day1.qmd#blok-11) | [2.1 Upoznajte i provjerite podatke](../slides/day2.qmd#blok-21) |
-| 00:45–01:30 | [1.2 Pronađite i provjerite izvore](../slides/day1.qmd#blok-12) | [2.2 Dopunite i objasnite kod](../slides/day2.qmd#blok-22) |
-| 01:30–01:45 | Stanka | Stanka |
-| 01:45–02:30 | [1.3 Provjerite i uredite sažetak](../slides/day1.qmd#blok-13) | [2.3 Ponovite analizu od početka](../slides/day2.qmd#blok-23) |
-| 02:30–03:15 | [1.4 Pripremite plan analize](../slides/day1.qmd#blok-14) | [2.4 Napišite i uredite zaključak](../slides/day2.qmd#blok-24) |
-| 03:15–03:30 | Priprema plana i datoteka za drugi dan | Predaja i završna rasprava |
+## Dan 1 · Pitanje, izvori i plan
 
-Svaki naslov otvara blok s uputama za demonstraciju i rad studenata te
-poveznicama na istoimeno poglavlje priručnika i vježbu. Plan iz bloka 1.4
-polazište je za drugi dan.
+| Tema | Što možete isprobati |
+|---|---|
+| [1.1 Postavite istraživačko pitanje](../slides/day1.qmd#blok-11) | Pretvorite široku temu u pitanje koje možete istražiti. |
+| [1.2 Pronađite i provjerite izvore](../slides/day1.qmd#blok-12) | Otvorite izvore i sačuvajte korisne tvrdnje. |
+| [1.3 Provjerite i uredite sažetak](../slides/day1.qmd#blok-13) | Usporedite sažetak s izvorima i popravite pogreške. |
+| [1.4 Pripremite plan analize](../slides/day1.qmd#blok-14) | Skicirajte kako ćete povezati pitanje i podatke. |
 
-[Radni listovi](../materials/exercises/index.qmd) sadrže upute, ulaze,
-očekivane izlaze i pitanja za raspravu. [Rubrika](../materials/rubric.qmd)
-vrednuje završni rad, a [upute za nastavnika](instructor.qmd) opisuju pripremu
-i rad s polaznicima različitog predznanja.
+## Dan 2 · Podaci, kod i zaključak
 
-Radionica je na hrvatskom jeziku i namijenjena studentima ekonomije s
-osnovnom računalnom pismenošću. Točnu skupinu, datum, prostor i kontakt za
-novu izvedbu treba potvrditi prije objave poziva.
+| Tema | Što možete isprobati |
+|---|---|
+| [2.1 Upoznajte i provjerite podatke](../slides/day2.qmd#blok-21) | Otvorite CSV i upoznajte mjere i mjesece u njemu. |
+| [2.2 Dopunite i objasnite kod](../slides/day2.qmd#blok-22) | Dodajte mali izračun i pogledajte kako radi. |
+| [2.3 Ponovite analizu od početka](../slides/day2.qmd#blok-23) | Popravite skriptu i ponovno izradite tablicu i graf. |
+| [2.4 Napišite i uredite zaključak](../slides/day2.qmd#blok-24) | Opišite rezultat i isprobajte jasniju formulaciju. |
+
+## Otvorite ono što vam treba
+
+Stranice dana daju kratak pregled. [Vježbe](../materials/exercises/index.qmd)
+nude konkretne primjere za isprobavanje, a [priručnik](../booklet/index.qmd)
+šira objašnjenja. Isti broj i naslov povezuju sva tri materijala.
+
+Za početak otvorite [upute za pripremu](prerequisites.qmd).
+Ako radite s drugima, pogledajte [ideje za zajednički rad](instructor.qmd).
+Na kraju se možete vratiti na [pitanja za osvrt](../materials/rubric.qmd)
+i odabrati što želite dalje istražiti.

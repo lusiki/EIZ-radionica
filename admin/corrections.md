@@ -26,6 +26,7 @@ Primarni izvori, [HICP](https://ec.europa.eu/eurostat/web/hicp/information-data)
 [anketni saldo](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en).
 Za serije i datum preuzimanja mjerodavan je `data/raw/manifest.json`.
 
-Prije nove izvedbe nastavnik potvrđuje datum, ciljanu skupinu, kontakt i
-pravila ustanove. Otvara izvore. Pokreće testove. Provodi pilot.
-Ovaj zapis potvrđuje uređivačke odluke, ne potvrđuje da je pilot održan.
+Ovaj dnevnik čuva odluke iz prve revizije. Urednička dorada od
+27. listopada 2026. uklanja fiksni raspored, podjelu uloga i bodovanje iz
+aktivnih materijala. Praktični primjeri, provjere izvora i objašnjenja metoda
+ostaju povezani kroz oba dana, vježbe i priručnik.

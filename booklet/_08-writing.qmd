@@ -1,16 +1,6 @@
 ## 2.4 Napišite i uredite zaključak {#poglavlje-24}
 
-**Nastavnik pokazuje · 10 minuta.** Iz grafa ili tablice sastavite kratak odlomak. Zatražite jasniju formulaciju od AI-ja pa usporedite brojke, jedinice i tvrdnje prije i poslije uređivanja.
-
-**Studenti rade · 25 minuta.** Napišite približno 200 riječi, zatražite komentar kolege ili AI-ja i pregledajte izmjene. Dovršite zapis uporabe AI-ja i složite završni rad.
-
-**Zajednička provjera · 10 minuta.** Pročitajte jedan odlomak i povežite svaku brojku s tablicom ili grafom.
-
-**Rezultat bloka.** Pitanje, tri izvora, skripta, graf ili tablica, obje verzije teksta i zapis uporabe AI-ja.
-
-[Blok 2.4 u nastavi](../slides/day2.qmd#blok-24) · [Vježba 2.4 i predaja](../materials/exercises/index.qmd#v24)
-
-**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
+[Dan 2, tema 2.4](../slides/day2.qmd#blok-24) · [Vježba 2.4](../materials/exercises/index.qmd#v24)
 
 ### Pisanje je dio istraživanja
 
@@ -30,23 +20,18 @@ opisuje pomoć pri razvoju ideja i komentiranju rada, pisanju,
 prikupljanju literature, analizi podataka, programiranju i matematičkim izvodima. Taj popis pomaže odrediti za koji biste zadatak tražili pomoć.
 Svaki preuzeti prijedlog provjerite prema zahtjevima svojeg rada.
 
-### Opseg pomoći i pravila zadatka
+### Kako koristiti pomoć pri pisanju
 
-Pravopisna korekcija, komentar strukture, prerada odlomka i pisanje novog
-teksta različito zadiru u autorov rad. Prihvatljivost određuju pravila
-kolegija, ustanove i namjene teksta. U ovoj radionici polazimo od vašeg
-pitanja, provjerenih izvora i vlastite interpretacije, a AI može predložiti
-komentare ili izmjene koje pregledavate.
+Krenite od svojeg pitanja, pročitanih izvora i vlastitog tumačenja rezultata.
+Zatim odaberite gdje bi vam komentar pomogao. Možete tražiti jasniju
+rečenicu, bolji redoslijed odlomaka ili objašnjenje dijela koji je teško pratiti.
 
-Pravila ispita provjerite i za gramatičku pomoć. Kada je uporaba AI-ja
-dopuštena, opišite konkretan zadatak i opseg pomoći. Autor
-odgovara za završne tvrdnje, citate i prikaz analize, bez obzira na to
-tko je predložio pojedinu formulaciju.
+Usporedite prijedlog s početnom verzijom i pogledajte što se promijenilo.
+Posebno provjerite brojke, izvore i značenje tvrdnji. Kratka bilješka o
+prihvaćenim izmjenama olakšat će vam povratak na raniju verziju.
 
-Kada tuđu misao prepričate vlastitim riječima, sačuvajte njezino
-značenje i navedite izvor.
-Najprije pročitajte rad i utvrdite što tvrdi, zatim vlastitim riječima
-objasnite njegovu relevantnost.
+Kada tuđu misao prepričate vlastitim riječima, sačuvajte njezino značenje
+i navedite izvor. Objasnite kako vam taj rad pomaže odgovoriti na pitanje.
 
 ### Šest obrazaca koje možete prilagoditi
 
@@ -82,10 +67,9 @@ i zaključnu tvrdnju. Ako uvod najavljuje uzročni učinak medija, a provedena
 je samo opisna usporedba inflacije i salda, problem se rješava promjenom
 pitanja i zaključka ili novim istraživanjem. Uskladite formulaciju zaključka s onim što provedeni postupak može pokazati.
 
-6\. Radni predložak. Kada pravila dopuštaju, model može pomoći
+6\. Radni predložak. Model može pomoći
 organizirati vaše točke u nacrt. Nepoznate podatke označite, primjerice
-`[unesi rezultat iz provjerene tablice]`. Takve oznake zamijenite podacima iz provjerenog izračuna. Za završnu predaju
-svaku rečenicu trebate razumjeti i moći povezati s dokazom.
+`[unesi rezultat iz provjerene tablice]`. Takve oznake zamijenite podacima iz provjerenog izračuna. Zatim pročitajte nacrt i povežite njegove tvrdnje s izvorima i rezultatima.
 
 Možete zatražiti i da vam model postavlja
 pitanja jedno po jedno prije predlaganja metodološkog odlomka. Primjerice,
@@ -134,7 +118,7 @@ ograničite zaključak na opisnu povezanost. Završni odlomak možete napisati o
 > Za procjenu uzročnog učinka ili prognozne točnosti potreban je zaseban
 > istraživački postupak.
 
-Broj u ovom odlomku odnosi se na zamrznutu nastavnu verziju i može se
+Broj u ovom odlomku odnosi se na spremljenu verziju podataka i može se
 provjeriti skriptom. Kada se
 promijene podaci, razdoblje ili postupak, ponovno izračunajte i prepišite
 odgovarajući dio. Novi broj preuzmite iz ponovno pokrenute skripte.
@@ -159,21 +143,11 @@ cijena, salda i postotka, opažanja i ispitanika, korelacije i učinka,
 standardne pogreške i reziduala. Ako isti naziv koristite za različite mjere, čitatelj neće moći
 pratiti vaš zaključak.
 
-### Završna vježba i procjena vlastitog rada
+### Zaokružite svoj primjer
 
-Napišite približno 200 riječi o jednom rezultatu radionice. Uključite
-pitanje, podatke i razdoblje, postupak, provjerenu brojku i ograničenje.
-Zatim zatražite komentar po četiri prolaza, prihvatite samo obrazložene
-prijedloge i sačuvajte zapis AI pomoći. Provjerite da svaki citat postoji
-i da svaka brojka odgovara spremljenom izlazu.
+Napišite kratak odlomak o jednom rezultatu. Povežite pitanje, podatke,
+postupak i zanimljiv broj. Dodajte što biste još željeli istražiti.
+Zatražite komentar i usporedite prijedloge s izvorima i svojim izračunom.
 
-Za procjenu vlastitog rada zapišite možete li objasniti analizu, koje
-ste pogreške pronašli, što druga osoba može ponoviti i koliko vam
-je vremena trebalo do provjerenog rezultata. Broj upita ili generiranih
-stranica sam ne odgovara na ta pitanja. Ova pitanja služe samoprocjeni
-u radionici. Za mjerenje sposobnosti ili osobina potreban je zasebno provjeren upitnik.
-
-Na kraju spremite pitanje, dokazne zapise, plan, podatke, skriptu,
-izlaz i vlastitu interpretaciju u jednu mapu. Iz nje treba biti jasno
-kako ste došli do zaključka. Isti postupak provjere možete koristiti
-u sljedećem seminarskom radu, čak i ako radite s drugim alatom.
+Pitanje, izvore, podatke, skriptu i zaključak sačuvajte u jednoj mapi.
+Možete je podijeliti s nekim ili nastaviti istraživanje kad se pojavi nova ideja.

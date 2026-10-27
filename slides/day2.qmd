@@ -1,40 +1,26 @@
 ---
-title: "Od podataka do obranjivog zaključka"
-subtitle: "Dan 2 · Četiri bloka s demonstracijama, vježbama i poglavljima"
+title: "Od podataka do zaključka"
+subtitle: "Dan 2 · Četiri povezane teme za istraživanje"
 ---
 
 ::: {.chapter-kicker}
 02 / Analiza i pisanje
 :::
 
-Danas ćete provjeriti ulazne podatke, izmijeniti dio skripte i popraviti
-namjerno pogrešan postupak. Zatim ćete napisati zaključak iz dobivenog
-rezultata. Pri provjeri koda gledajte što računa, skripta se može izvršiti
-bez pogreške, a ipak dati pogrešnu analizu.
+Sada plan pretvaramo u analizu. Otvorit ćemo podatke, dopuniti skriptu,
+ispraviti pogrešan postupak i napisati što rezultati pokazuju.
 
-Koristimo isti slučaj kao prvoga dana, Hrvatsku od siječnja 2015. do prosinca
-2024. U paketu su izvorni odgovori službenog API-ja, pripremljeni CSV i
-referentna rješenja. Nakon preuzimanja paketa osnovne zadatke možete riješiti izvan mreže
+Koristimo isti primjer kao prvoga dana, Hrvatsku od siječnja 2015. do
+prosinca 2024. U paketu su izvorni podaci, pripremljeni CSV i primjeri
+rješenja. Nakon preuzimanja osnovne izračune možete isprobati izvan mreže
 u osnovnom R-u.
 
-Drugoga dana provodite plan iz vježbe 1.4 i pišete zaključak.
-Brojevi i naslovi blokova jednaki su u nastavi, priručniku i vježbama.
-Za svaki blok slijedite demonstraciju, rad studenata i zajedničku provjeru.
-Poveznice uz blok vode ravno na pripadajuće poglavlje i zadatak.
+Svaka tema vodi na odgovarajuću vježbu i poglavlje priručnika. Krenite od
+plana iz vježbe 1.4 ili otvorite dio na kojem želite raditi.
 
 ## 2.1 Upoznajte i provjerite podatke {#blok-21}
 
-::: {.concept-box}
-**Nastavnik pokazuje · 10 minuta.** Otvorite projekt u Positronu i učitajte CSV pomoću početne skripte. Pokažite jedan redak, rječnik podataka i provjeru broja i raspona mjeseci.
-
-**Studenti rade · 25 minuta.** Provjerite 120 različitih mjeseci, praznine, raspon vrijednosti i jedinice. Zapišite naredbe i rezultate u predložak za provjeru podataka.
-
-**Zajednička provjera · 10 minuta.** Objasnite značenje jedne vrijednosti i pokažite odgovarajuću provjeru u skripti.
-
-**Rezultat bloka.** Ispunjena provjera podataka.
-
 [Priručnik 2.1](../booklet/day2.qmd#poglavlje-21) · [Vježba 2.1](../materials/exercises/index.qmd#v21)
-:::
 
 Jedan redak predstavlja jedan mjesec. Retke povezujemo prema ključu `month`.
 Očekujemo 120 različitih, uzastopnih mjeseci. Provjerite raspon datuma,
@@ -61,19 +47,9 @@ postotnim bodovima. Transformacija mora odgovarati pitanju i biti dokumentirana.
 
 ## 2.2 Dopunite i objasnite kod {#blok-22}
 
-::: {.concept-box}
-**Nastavnik pokazuje · 10 minuta.** Pokrenite postojeći izračun iz početne skripte. Zatražite malu dopunu od AI-ja i na odabranim recima pokažite kako provjeravate prijedlog.
-
-**Studenti rade · 25 minuta.** Dodajte prosjek salda za 2022. i tablicu godišnjih prosjeka. Provjerite 12 mjeseci po godini i objasnite svaku novu naredbu.
-
-**Zajednička provjera · 10 minuta.** Usporedite jedan izračun s ručno odabranim recima i objasnite njegovu jedinicu.
-
-**Rezultat bloka.** Dopunjena skripta s objašnjenjem i zapisom provjere.
-
 [Priručnik 2.2](../booklet/day2.qmd#poglavlje-22) · [Vježba 2.2](../materials/exercises/index.qmd#v22)
-:::
 
-Otvorite projekt u Positronu i datoteku `code/starter.R`. Skripta koristi
+Otvorite projekt u Positronu ili RStudiju i datoteku `code/starter.R`. Skripta koristi
 osnovni R. Prvo predvidite što će pojedini dio učiniti, zatim ga pokrenite
 i provjerite izlaz. Dovoljno je objasniti učitavanje CSV-a, odabir redaka,
 izračun prosjeka i oznake na grafu. Cijeli zadatak možete riješiti u istom razvojnom okruženju.
@@ -91,29 +67,18 @@ Copilot i agentski alati su izborni. RStudio također podržava
 [Copilot](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html).
 AI pomoć stoga možete koristiti u oba okruženja. Positronova proširenja
 dolaze iz [podržanih registara](https://positron.posit.co/extensions.html),
-a dostupnost pojedinog proširenja treba provjeriti prije nastave.
+a dostupnost pojedinog proširenja možete provjeriti prije instalacije.
 
 Agent može čitati i mijenjati datoteke te pokretati naredbe.
 Znanstvenu valjanost postupka provjeravate vi. Prije pokretanja pogledajte koje
 datoteke dira i zatražite objašnjenje izmjene. Ključeve i osobne podatke
-čuvajte izvan materijala dostupnih agentu. Terminalni agent može biti
-kratka izborna demonstracija nastavnika.
+čuvajte izvan materijala dostupnih agentu. Terminalni agent još je jedna mogućnost za rad s projektom.
 
 [Vježba 2.2, dopunite i objasnite kod](../materials/exercises/index.qmd#v22).
 
 ## 2.3 Ponovite analizu od početka {#blok-23}
 
-::: {.concept-box}
-**Nastavnik pokazuje · 10 minuta.** Otvorite pripremljenu pogrešnu skriptu i objasnite jedan problem u postupku. Na kratkom ispravnom primjeru pokažite spremanje, novu R sesiju i ponovno izvođenje.
-
-**Studenti rade · 25 minuta.** Pronađite najmanje četiri problema i sastavite ispravnu skriptu. Izradite godišnju tablicu i graf, pokrenite sve od početka i usporedite jedan broj s referentnim rezultatom.
-
-**Zajednička provjera · 10 minuta.** Pokažite rezultat iz nove sesije i objasnite jedan ispravljeni korak.
-
-**Rezultat bloka.** Popis pogrešaka, ispravna skripta i ponovno dobiveni rezultati.
-
 [Priručnik 2.3](../booklet/day2.qmd#poglavlje-23) · [Vježba 2.3](../materials/exercises/index.qmd#v23)
-:::
 
 Da bi netko mogao ponoviti analizu, trebaju mu podaci, kod, popis
 programa i paketa te upute kojim redom pokrenuti skripte. Spremite skriptu, zatvorite prethodnu R sesiju i pokrenite je
@@ -127,7 +92,7 @@ odabirom raspona. Korelacija također može ovisiti o podrazdoblju, trendovima
 i zajedničkim šokovima. Zato je opis kretanja primjereniji od tvrdnje da je
 jedna varijabla uzrokovala drugu.
 
-### Što ostaje za napredni rad
+### Ako želite istražiti dalje
 
 Opcionalni OLS primjer uključuje konstantu i unaprijed naveden smjer regresije.
 HAC standardne pogreške služe zaključivanju uz određene oblike vremenske
@@ -144,27 +109,17 @@ uključujući stacionarnost. Panel-metode traže više jedinica promatranih
 kroz vrijeme.
 
 Analizu možete ponoviti iz bilježnice ili skripte ako su svi koraci
-zapisani i mogu se pokrenuti od početka. U osnovnom dijelu svi radimo u skripti. [Vježba 2.3](../materials/exercises/index.qmd#v23)
-traži popravak namjerno pogrešnog koda, a zatim čisto ponovno izvođenje.
+zapisani i mogu se pokrenuti od početka. U [vježbi 2.3](../materials/exercises/index.qmd#v23)
+možete isprobati popravak koda i ponovno pokretanje spremljene skripte.
 
 ## 2.4 Napišite i uredite zaključak {#blok-24}
 
-::: {.concept-box}
-**Nastavnik pokazuje · 10 minuta.** Iz grafa ili tablice sastavite kratak odlomak. Zatražite jasniju formulaciju od AI-ja pa usporedite brojke, jedinice i tvrdnje prije i poslije uređivanja.
-
-**Studenti rade · 25 minuta.** Napišite približno 200 riječi, zatražite komentar kolege ili AI-ja i pregledajte izmjene. Dovršite zapis uporabe AI-ja i složite završni rad.
-
-**Zajednička provjera · 10 minuta.** Pročitajte jedan odlomak i povežite svaku brojku s tablicom ili grafom.
-
-**Rezultat bloka.** Pitanje, tri izvora, skripta, graf ili tablica, obje verzije teksta i zapis uporabe AI-ja.
-
 [Priručnik 2.4](../booklet/day2.qmd#poglavlje-24) · [Vježba 2.4](../materials/exercises/index.qmd#v24)
-:::
 
 Najprije sastavite kratak odlomak iz vlastitog grafa i tablice. Navedite
 zemlju, razdoblje, jedinice, jedan provjeren broj i ograničenje. AI može
-predložiti jasniji izraz, ali ne smije bez provjere dodati rezultat, izvor
-ili uzročnu tvrdnju. Sačuvajte tekst prije i nakon uređivanja.
+predložiti jasniji izraz. Svaku novu tvrdnju ili brojku usporedite s izvorima
+i svojim izračunom. Sačuvajte tekst prije i nakon uređivanja.
 
 ::: {.prompt-box}
 **Upit za uređivanje rezultata**
@@ -179,16 +134,16 @@ CLASSLA služi jezičnoj obradi poput lematizacije i označavanja vrsta riječi.
 Za lekturu i provjeru znanstvenih tvrdnji zasebno pročitajte cijeli tekst
 ([opis projekta](https://github.com/clarinsi/classla)).
 
-U završnom radu opišite kretanje kvalitativnog salda. Za procjenu
+U svojem tekstu opišite kretanje kvalitativnog salda. Za procjenu
 usidrenosti očekivanja treba odrediti definiciju, vremenski horizont i
 odgovarajuću mjeru. Preporuke ekonomske politike zahtijevaju dodatne dokaze
 o učincima predloženih mjera.
 
 [Vježba 2.4, napišite i uredite zaključak](../materials/exercises/index.qmd#v24).
 
-## Predaja
+## Zaokružite primjer
 
-Predajte pitanje, tri zapisa o izvorima, skriptu koja se izvršava od početka,
-jedan graf ili tablicu, tekst od približno 200 riječi i zapis uporabe AI-ja.
-[Rubrika](../materials/rubric.qmd) pokazuje kako se vrednuju dokaz, metoda,
-ponovljivost postupka, tumačenje i jasno navođenje načina rada.
+Pitanje, izvore, skriptu i zaključak možete povezati u mali izvještaj.
+Dodajte graf ili tablicu koja vam najbolje pomaže objasniti što ste pronašli.
+[Pitanja za osvrt](../materials/rubric.qmd) mogu vam pomoći odlučiti što biste
+još doradili ili isprobali na vlastitoj temi.

@@ -1,16 +1,6 @@
 ## 2.1 Upoznajte i provjerite podatke {#poglavlje-21}
 
-**Nastavnik pokazuje · 10 minuta.** Otvorite projekt u Positronu i učitajte CSV pomoću početne skripte. Pokažite jedan redak, rječnik podataka i provjeru broja i raspona mjeseci.
-
-**Studenti rade · 25 minuta.** Provjerite 120 različitih mjeseci, praznine, raspon vrijednosti i jedinice. Zapišite naredbe i rezultate u predložak za provjeru podataka.
-
-**Zajednička provjera · 10 minuta.** Objasnite značenje jedne vrijednosti i pokažite odgovarajuću provjeru u skripti.
-
-**Rezultat bloka.** Ispunjena provjera podataka.
-
-[Blok 2.1 u nastavi](../slides/day2.qmd#blok-21) · [Vježba 2.1 i predaja](../materials/exercises/index.qmd#v21)
-
-**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
+[Dan 2, tema 2.1](../slides/day2.qmd#blok-21) · [Vježba 2.1](../materials/exercises/index.qmd#v21)
 
 ### Od plana do prvog retka podataka
 
@@ -35,7 +25,7 @@ prosinca 2024. Provjerite ima li dvostrukih zapisa, praznina i neočekivanih
 vrijednosti. Usporedite nekoliko vrijednosti s izvornim JSON datotekama.
 U datoteci s podacima o preuzimanju, manifestu, navedeni su upiti
 korišteni za preuzimanje i kontrolni zbrojevi za provjeru promjena datoteka.
-Za nastavu čuvamo istu kopiju podataka. Tako naknadne službene izmjene
+U svim primjerima koristimo istu spremljenu kopiju podataka. Tako naknadne službene izmjene
 ne mijenjaju rezultate radionice.
 
 Vi određujete što očekujete od podataka i provjeravate to naredbama u skripti.
@@ -61,7 +51,7 @@ u izvornim jedinicama. U modelu s logaritmiranim varijablama tumačenje
 koeficijenta ovisi o obliku jednadžbe. Za spajanje dnevnih i mjesečnih
 podataka unaprijed odredite pravilo svođenja na istu vremensku razinu.
 
-### Završite vježbu 2.1
+### Isprobajte u vježbi 2.1
 
 U predložak za provjeru podataka upišite broj redaka i različitih mjeseci,
 prvi i posljednji mjesec, broj nedostajućih vrijednosti te raspon i jedinicu
@@ -78,7 +68,7 @@ Claude Code je primjer agenta koji može izravno raditi na projektu. Ako mu okru
 datoteka i izvršiti analizu. To štedi ručno prepisivanje. Prije rada odredite što agent smije
 mijenjati, a nakon rada pregledajte promjene.
 
-Zamislite istraživačkog suradnika kojemu predajete radnu mapu. Treba mu
+Zamislite istraživačkog suradnika s kojim dijelite radnu mapu. Treba mu
 reći što se smije mijenjati, koje datoteke predstavljaju izvorne podatke
 i kako izgleda prihvatljiv rezultat. „Analiziraj ovo” ostavlja previše
 prostora za proizvoljan izbor uzorka i metode. „Provjeri mjesece i jedinice,
@@ -100,12 +90,12 @@ materijal. Radni postupak određujte vlastitim uputama agentu.
 Rad u zasebnoj grani omogućuje pregled izmjena prije njihova prihvaćanja.
 Pristup računalu ograničite zasebnim dopuštenjima. Ako koristite
 podagente, odredite gdje svaki radi i pregledajte njihove izmjene.
-Za studentski zadatak često je dovoljno zadavati male uzastopne korake
+Za početak je praktično zadavati male uzastopne korake
 i pregledati kod nakon svakog od njih.
 
 Primjer početnog zaduženja.
 
-> Radi unutar ovog nastavnog projekta. Najprije pročitaj rječnik podataka
+> Radi unutar ovog projekta. Najprije pročitaj rječnik podataka
 > i postojeće skripte. Izvorne datoteke u data/raw ostavi nepromijenjene.
 > Provjeri broj mjeseci, datumski raspon, duplikate, nedostajuće vrijednosti
 > i jedinice. Prikaži plan i nalaze provjere. Zadrži sva opažanja i početno
@@ -117,7 +107,7 @@ Pregledajte razliku izmjena, pročitajte ključne retke i pokrenite postupak
 od početka. Usporedite barem jedan rezultat neovisnim izračunom. Pročitajte što su testovi provjerili i zasebno ocijenite ekonomsko
 tumačenje rezultata.
 
-### Za samostalni rad nakon radionice
+### Ako želite nastaviti
 
 Zadajte agentu iste provjere koje ste već proveli u skripti.
 Usporedite njegove naredbe i rezultate s vlastitim zapisom.

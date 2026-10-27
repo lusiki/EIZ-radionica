@@ -5,7 +5,7 @@ subtitle: "Hrvatska · mjesečno · siječanj 2015. – prosinac 2024."
 
 [Preuzmite CSV](processed/croatia_inflation.csv).
 Jedan redak predstavlja jedan mjesec, ukupno 120 redaka bez nedostajućih
-vrijednosti. Podaci su preuzeti 26. listopada 2026. i zamrznuti za nastavu.
+vrijednosti. Podaci su preuzeti 26. listopada 2026. i spremljeni uz primjere.
 Povijesne vrijednosti mogu biti revidirane. Koristimo povijesne vrijednosti dostupne na datum preuzimanja.
 
 ## Rječnik

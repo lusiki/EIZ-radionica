@@ -6,6 +6,6 @@
 4. Objasnite izmjenu prije pokretanja koda.
 5. Pokrenite od početka i usporedite izlaz.
 6. Provjerite svaku brojku i tvrdnju nakon jezičnog uređivanja.
-7. Zabilježite uporabu AI-ja ili da ga niste koristili.
+7. Sačuvajte koristan AI prijedlog i svoju provjeru.
 
 Poveznice, ../sources.qmd, ../../data/dictionary.qmd, ../rubric.qmd.

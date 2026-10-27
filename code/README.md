@@ -2,7 +2,7 @@
 
 Sve naredbe pokreću se iz korijena repozitorija.
 
-## Za polaznike / osnovni R, bez mreže
+## Isprobajte početnu skriptu
 
 ```r
 source("code/starter.R", encoding = "UTF-8")
@@ -11,7 +11,7 @@ source("code/starter.R", encoding = "UTF-8")
 `.Rprofile` ne uključuje renv automatski, pa osnovna skripta radi i bez
 paketa. Sačuvajte vlastite izmjene u submissions/.
 
-## Za nastavnike / cijeli referentni postupak
+## Ponovite cijeli referentni postupak
 
 Jednokratno instalirajte renv i obnovite zaključano okruženje.
 

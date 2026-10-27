@@ -1,4 +1,4 @@
-# Provjera podataka
+# Bilješke o podacima
 
 - Putanja i izvor.
 - Datum preuzimanja izvora.
@@ -12,4 +12,4 @@
 - Izvorne oznake statusa.
 - Jesu li nule ili negativne vrijednosti mogući i zašto?
 - Naredbe kojima sam provjerio rezultate.
-- Zaključak, nastaviti / zaustaviti i istražiti, uz razlog.
+- Što sam uočio i što još želim provjeriti?

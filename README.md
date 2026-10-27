@@ -1,13 +1,12 @@
-# Upotreba AI alata u studentskom istraživanju
+# Istraživanje uz AI
 
 **[Otvorite glavnu stranicu radionice](https://lusiki.github.io/EIZ-radionica/).**
-Sadržaj revidiran 26. listopada 2026.. Nova paleta i objava 27. listopada 2026.
-Datum sljedeće izvedbe nije potvrđen.
+Materijali uređeni 27. listopada 2026. Dokumentacija alata provjerena 26. listopada 2026.
 
 Radionica na hrvatskom jeziku povezuje provjeru izvora, istraživački plan,
 analizu i pisanje kroz jedan slučaj, ostvarenu inflaciju i kvalitativni
-saldo očekivanja cijena u Hrvatskoj, 2015.–2024. Radionica traje sedam sati u osam blokova,
-s ukupno 200 minuta predviđenog aktivnog rada polaznika.
+saldo očekivanja cijena u Hrvatskoj, 2015.–2024. Osam povezanih tema
+možete proći redom ili istraživati vlastitim tempom, sami ili s drugima.
 
 ## Lokalni pregled
 
@@ -49,31 +48,31 @@ source("code/run_all.R", encoding = "UTF-8")
 Pakiranje ZIP-a automatizirano je PowerShell skriptom za Windows.
 Na drugim sustavima referentni R postupak i `quarto render` mogu se izvesti
 zasebno. Lokalni ZIP treba pripremiti prije provjere poveznice za preuzimanje.
-Za polaznički rad
-bez punog builda dovoljan je `source("code/starter.R", encoding = "UTF-8")`.
+Za isprobavanje osnovnih primjera
+dovoljan je `source("code/starter.R", encoding = "UTF-8")`.
 
 ## Kako su materijali povezani
 
-Svaki od osam blokova ima isti broj i naslov na stranici dana, u priručniku
-i u vježbama. Stranice dana opisuju demonstraciju, studentski rad i zajedničku
-provjeru. Priručnik objašnjava postupak, a vježba navodi ulaze, korake i predaju.
+Svaka od osam tema ima isti broj i naslov na stranici dana, u priručniku
+i u vježbama. Stranice dana daju kratke preglede, priručnik šira objašnjenja,
+a vježbe konkretne primjere za isprobavanje.
 Plan iz vježbe 1.4 povezuje oba dana. Pregled poveznica je u
 [priručniku](booklet/index.qmd#osam-povezanih-blokova).
 
 ## Materijali
 
-- [Početak](admin/prerequisites.qmd), [raspored](admin/workshop_overview.qmd)
-- [Dan 1](slides/day1.qmd), [Dan 2](slides/day2.qmd), čitateljski materijali
+- [Početak](admin/prerequisites.qmd), [put kroz radionicu](admin/workshop_overview.qmd)
+- [Dan 1](slides/day1.qmd), [Dan 2](slides/day2.qmd), kratki pregledi
 - [Prošireni priručnik](booklet/index.qmd), revidirani izvorni tekst u osam
   poglavlja, dva dijela za web i cjelovit PDF u `downloads/EIZ-prirucnik.pdf`
 - [Osam vježbi](materials/exercises/index.qmd), [rješenja](materials/solutions.qmd)
 - [Rječnik podataka](data/dictionary.qmd), [izvori](materials/sources.qmd)
-- [Rubrika](materials/rubric.qmd), [upute za nastavnika](admin/instructor.qmd)
+- [Osvrt na rad](materials/rubric.qmd), [ideje za zajednički rad](admin/instructor.qmd)
 - [Ispravci](admin/corrections.md), [dizajn](DESIGN.md)
 
 Provjere ove revizije zapisane su u [compatibility.md](admin/compatibility.md).
 Dodatna provjera s Pythonovom standardnom bibliotekom.
-`python scripts/check_release.py` (nakon gradnje). Ona ne zamjenjuje pilot.
+`python scripts/check_release.py` (nakon gradnje).
 
 Radni ZIP nastaje u downloads/eiz-workshop.zip. Sadrži izvore, podatke,
 skripte, upute i novi PDF priručnik. Ne sadrži .git, osobne postavke,
@@ -86,10 +85,9 @@ Postojeći HTML/PDF izvozi u slides/ i admin/ te stare najave nisu revidirani
 izvozi ove grane i nisu dio novog weba ili paketa. Izvorni sadržaj je u
 povijesti Gita, početni commit d942375. Koristite _site/ za pregled revizije.
 
-Organizator treba potvrditi datum, kontakt, točnu skupinu i pravila uporabe
-AI-ja te provesti pilot s predstavnicima polaznika. Pilot još nije održan. HNB/medijski primjer ostaje izvan jezgre dok nema
-dokumentiranog korpusa i postupka. Nakon pilota može se prilagoditi tempo i pripremiti kratke
-prezentacijske sažetke.
+Primjer komunikacije HNB-a i medija može se razviti u zaseban projekt
+uz prikupljanje korpusa i opis postupka. Za organiziranu izvedbu datum,
+prostor i kontakt objavljuju se zasebno.
 
 Izvorni repozitorij navodi financiranje iz Nacionalnog plana oporavka i
 otpornosti 2021.–2026. (NextGenerationEU). Taj povijesni podatak nije potvrda

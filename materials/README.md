@@ -1,10 +1,12 @@
-# Nastavni paket
+# Materijali za radionicu
 
-exercises/index.qmd, osam potpunih radnih listova.
-solutions.qmd, odgovori i kriteriji prihvatljivog rješenja.
-templates/, plan, dokazni zapisi, audit, zapis uporabe AI-ja.
-examples/, ilustrativni pogrešan sažetak, jasno označen.
-sources.qmd, početni izvori. Rubric.qmd, vrednovanje. Results.qmd, stvarni izlazi.
+- exercises/index.qmd povezuje osam vježbi s kratkim pregledima i priručnikom.
+- solutions.qmd donosi primjere rješenja.
+- templates/ sadrži predloške za plan i bilješke o izvorima, podacima i AI pomoći.
+- examples/ sadrži jasno označen sažetak s namjernim pogreškama.
+- sources.qmd vodi na početne izvore.
+- rubric.qmd nudi pitanja za osvrt na vlastiti rad.
+- results.qmd prikazuje referentne rezultate.
 
-Zadaci su povezani s jednim zamrznutim skupom podataka. Rad bez AI računa
-koristi iste ulaze i ishode. Nije potrebno instalirati sve demonstrirane alate.
+Sve vježbe koriste istu spremljenu kopiju podataka. Možete ih isprobati
+s priloženim materijalima i osnovnim R-om, a AI pomoć uključiti po želji.

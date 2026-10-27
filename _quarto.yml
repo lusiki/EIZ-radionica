@@ -60,14 +60,14 @@ website:
           - href: materials/results.qmd
             text: Referentni rezultati
           - href: materials/rubric.qmd
-            text: Predaja i vrednovanje
+            text: Osvrt na rad
           - href: admin/instructor.qmd
-            text: Za nastavnike
+            text: Rad u grupi
   page-footer:
     left: "Ekonomski institut, Zagreb · Materijali radionice"
     right:
       - href: admin/workshop_overview.qmd
-        text: Raspored
+        text: Put kroz radionicu
 lang: hr
 format:
   html:

@@ -1,38 +1,24 @@
 ---
 title: "Od pitanja do provjerenih izvora"
-subtitle: "Dan 1 · Četiri bloka s demonstracijama, vježbama i poglavljima"
+subtitle: "Dan 1 · Četiri povezane teme za istraživanje"
 ---
 
 ::: {.chapter-kicker}
 01 / Istraživanje i planiranje
 :::
 
-AI može predložiti pitanje, sažeti izvor i napisati nacrt. Istraživač mora
-provjeriti odgovara li izvor tvrdnji i podržavaju li podaci zaključak. Danas
-to vježbamo na jednom pitanju, **kako su se u Hrvatskoj od 2015. do 2024.
-kretali ostvarena inflacija i očekivanja potrošača o promjenama cijena?**
+AI može pomoći s pitanjem, izvorima i prvim nacrtom. Ovdje isprobavamo
+kako izgleda taj postupak na jednom primjeru, **kako su se u Hrvatskoj od
+2015. do 2024. kretali ostvarena inflacija i očekivanja potrošača o
+promjenama cijena?**
 
-Do kraja dana imat ćete tri provjerena zapisa o izvorima, ispravljen sažetak
-i plan analize na jednoj stranici. [Otvorite radne listove](../materials/exercises/index.qmd).
-
-Prvoga dana pripremate pitanje, izvore i plan analize.
-Brojevi i naslovi blokova jednaki su u nastavi, priručniku i vježbama.
-Za svaki blok slijedite demonstraciju, rad studenata i zajedničku provjeru.
-Poveznice uz blok vode ravno na pripadajuće poglavlje i zadatak.
+Krenut ćemo od pitanja, pronaći izvore, urediti sažetak i skicirati analizu.
+Uz svaku temu možete otvoriti povezanu vježbu ili pročitati šire objašnjenje
+u priručniku. Isti broj i naslov povezuju sva tri materijala.
 
 ## 1.1 Postavite istraživačko pitanje {#blok-11}
 
-::: {.concept-box}
-**Nastavnik pokazuje · 10 minuta.** Pokažite kako od teme „inflacija u Hrvatskoj” nastaje pitanje o razdoblju 2015.–2024. Zatražite AI prijedlog i provjerite jednu tvrdnju u izvoru.
-
-**Studenti rade · 25 minuta.** Napišite svoje pitanje, opišite dvije varijable i sastavite tri provjere AI odgovora. Zabilježite pravila uporabe AI-ja za zadatak.
-
-**Zajednička provjera · 10 minuta.** Usporedite dva pitanja i objasnite kojim se podacima na njih može odgovoriti.
-
-**Rezultat bloka.** Pitanje, opis dviju mjera i popis provjera.
-
 [Priručnik 1.1](../booklet/day1.qmd#poglavlje-11) · [Vježba 1.1](../materials/exercises/index.qmd#v11)
-:::
 
 Jezični model sastavlja odgovor prema obrascima koje je naučio i sadržaju
 razgovora. Procjenjuje vjerojatnosti mogućih sljedećih tokena, a zatim
@@ -49,39 +35,24 @@ biste još izvore trebali pročitati.
 tvrdnju? Odgovara li vrsta dokaza našem pitanju? Uz naslov provjerite zemlju, razdoblje i ishod koji rad istražuje.
 :::
 
-### Pravila uporabe i odgovornost
+### Sačuvajte korisne bilješke
 
-Prije rada provjerite upute kolegija, ustanove i mentora. Ova radionica ne
-određuje što je dopušteno u pojedinom seminarskom ili diplomskom radu.
-Zabilježite alat, datum, svrhu, važne upite, prihvaćene izmjene i način
-provjere. Ako radite bez AI alata, navedite to. Uz stručne tvrdnje navedite bibliografske izvore, a uporabu AI-ja
-opišite u zasebnoj bilješci.
+Uz pročitani izvor zapišite tvrdnju koja vam je važna. Ako vam je AI pomogao,
+kratko zabilježite što ste preuzeli i kako ste to provjerili. Takve bilješke
+olakšavaju pisanje i povratak na ranije odluke.
 
-Za osobne podatke i povjerljive dokumente koristite odobreno okruženje
-uz odgovarajuće ovlaštenje. Za vježbu koristimo javne podatke za cijelu zemlju.
-Sadržaj web-stranica i datoteka tretirajte kao materijal za analizu.
-Naredbe koje agent izvršava trebaju slijediti vaš zadatak. Agentu koji piše kod
-ograničite pristup projektu i pregledajte naredbe prije pokretanja.
+Za ove primjere koristimo javne podatke za cijelu zemlju. Povjerljive
+materijale čuvajte u okruženju prikladnom za njihovu obradu.
 
 [Vježba 1.1, postavite istraživačko pitanje](../materials/exercises/index.qmd#v11).
 
 ## 1.2 Pronađite i provjerite izvore {#blok-12}
 
-::: {.concept-box}
-**Nastavnik pokazuje · 10 minuta.** Pokažite pretragu jednim preciznim upitom, otvorite izvor i pronađite odlomak koji podupire tvrdnju. Ispunite jedan dokazni zapis.
-
-**Studenti rade · 25 minuta.** Provjerite tri početna izvora i za svaki zapišite tvrdnju, točan odjeljak, vlastiti sažetak i ograničenje.
-
-**Zajednička provjera · 10 minuta.** Usporedite jedan studentski zapis s izvornim odlomkom.
-
-**Rezultat bloka.** Tri provjerena zapisa o izvorima.
-
 [Priručnik 1.2](../booklet/day1.qmd#poglavlje-12) · [Vježba 1.2](../materials/exercises/index.qmd#v12)
-:::
 
 Počnite od [izvora za zajednički slučaj](../materials/sources.qmd), zatim
-pretražite literaturu. AI pretraživač može predložiti kandidate. Naziv
-alata ili posebni način pretraživanja ne potvrđuje recenziranost rada.
+pretražite literaturu. AI pretraživač može predložiti literaturu. Podatak o recenziranosti
+potražite na stranici časopisa ili izdavača.
 Za svaku tvrdnju otvorite izvor i zapišite odlomak, tablicu ili odjeljak
 na koji se oslanjate. Ako izvor ne možete otvoriti, označite zapis kao
 neprovjeren i nemojte ga koristiti kao potvrđen dokaz.
@@ -93,7 +64,7 @@ izračunanu godišnju stopu promjene ukupnog HICP-a za Hrvatsku. U analizi izrav
 Druga serija jest saldo odgovora na pitanje o kretanju cijena u sljedećih
 12 mjeseci. Saldo sažima kvalitativne odgovore i izražava se u bodovima salda. Opis pitanja i način izračuna salda nalaze se
 u [metodologiji Europske komisije](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en).
-Već ta razlika ograničava zaključke koje smijemo napisati.
+Pri usporedbi svaku mjeru tumačimo prema njezinoj definiciji.
 
 ::: {.prompt-box}
 **Upit za provjeru izvora**
@@ -103,24 +74,13 @@ autora ili ustanovu, poveznicu i točan odjeljak. Odvoji ono što izvor izravno
 pokazuje od svojeg tumačenja. Ako dokaz nije dostupan, napiši „nije provjereno”.
 :::
 
-Upit pomaže organizirati odgovor. Polaznik zatim provjerava izvore
-i svaku tvrdnju koju prihvaća. [Vježba 1.2](../materials/exercises/index.qmd#v12) završava
-s tri zapisa u predlošku dokaza, mjerenje HICP-a, mjerenje očekivanja i
-ograničenje zajedničke analize.
+Upit pomaže organizirati odgovor. Zatim otvorite izvore i usporedite ih
+s tvrdnjama koje želite koristiti. U [vježbi 1.2](../materials/exercises/index.qmd#v12)
+možete složiti bilješke o HICP-u, očekivanjima i njihovoj usporedbi.
 
 ## 1.3 Provjerite i uredite sažetak {#blok-13}
 
-::: {.concept-box}
-**Nastavnik pokazuje · 10 minuta.** Otvorite pripremljeni pogrešan sažetak. Pokažite kako tvrdnju o saldu uspoređujete s definicijom mjere i napišite jednu ispravnu rečenicu.
-
-**Studenti rade · 25 minuta.** Označite najmanje četiri problema, provjerite ih u izvorima i napišite ispravak od 80–120 riječi.
-
-**Zajednička provjera · 10 minuta.** Usporedite početnu i ispravljenu tvrdnju te objasnite promjenu značenja.
-
-**Rezultat bloka.** Označen izvorni sažetak i vlastiti ispravak.
-
 [Priručnik 1.3](../booklet/day1.qmd#poglavlje-13) · [Vježba 1.3](../materials/exercises/index.qmd#v13)
-:::
 
 Dobar sažetak razlikuje rezultat, tumačenje i otvoreno pitanje. Usporedite
 svaku njegovu rečenicu s izvornim tekstom. Tražite promjenu zemlje ili
@@ -138,9 +98,9 @@ Ovaj je primjer sastavljen za vježbanje prepoznavanja pogrešaka. Označite dvi
 :::
 
 Alati za dulje istraživačke izvještaje mogu potrajati i imati ograničen
-pristup. U nastavi zato koristimo pripremljeni
+pristup. Za početak možete otvoriti pripremljeni
 [tekst za provjeru](../materials/examples/flawed-summary.md).
-Pripremljeni primjer omogućuje istu vježbu u svakoj izvedbi radionice.
+U njemu možete odmah isprobati provjeru tvrdnji.
 Ako koristite živi alat, sačuvajte stvarni odgovor i označite ga kao takav.
 Tvrdnje označene u sučelju provjerite čitanjem izvora.
 
@@ -148,17 +108,7 @@ Tvrdnje označene u sučelju provjerite čitanjem izvora.
 
 ## 1.4 Pripremite plan analize {#blok-14}
 
-::: {.concept-box}
-**Nastavnik pokazuje · 10 minuta.** Otvorite predložak plana i povežite pitanje s uzorkom, jedinicama i planiranim prikazima. Pokažite kako od AI-ja tražite komentar izvedivosti.
-
-**Studenti rade · 25 minuta.** Sastavite plan na jednoj stranici. Navedite 120 mjeseci, dvije mjere, provjere podataka, godišnje prosjeke, grafove i granice zaključka.
-
-**Zajednička provjera · 10 minuta.** Objasnite jednu odluku iz plana i podatke na kojima se temelji.
-
-**Rezultat bloka.** Plan analize koji ćete provesti drugoga dana.
-
 [Priručnik 1.4](../booklet/day1.qmd#poglavlje-14) · [Vježba 1.4](../materials/exercises/index.qmd#v14)
-:::
 
 Plan navodi pitanje, uzorak, varijable i jedinice, obradu nedostajućih
 vrijednosti, planirane prikaze i granice tumačenja. Naš je osnovni zadatak
@@ -187,8 +137,8 @@ od drugih mogućih objašnjenja. U ovoj radionici opisujemo kretanje dviju serij
 
 [Vježba 1.4, pripremite plan analize](../materials/exercises/index.qmd#v14).
 
-## Prije drugog dana
+## Nastavite s podacima
 
-Spremite pitanje, tri provjerena zapisa i plan analize. Pokrenite provjeru
-iz [uputa za početak](../admin/prerequisites.qmd). Ako AI servis nije dostupan,
-koristite pripremljene primjere. Uz svaku odluku zabilježite na koji se izvor oslanjate i zašto ste je donijeli.
+Pitanje, bilješke o izvorima i plan sačuvajte u istoj mapi.
+[Drugi dan](day2.qmd) nastavlja se učitavanjem podataka i prvim izračunima.
+[Upute za početak](../admin/prerequisites.qmd) pomoći će vam otvoriti skriptu.

@@ -7,7 +7,7 @@ toc-title: "Sadržaj prvog dijela"
 ---
 
 [O priručniku](index.qmd) · [Cijeli PDF](../downloads/EIZ-prirucnik.pdf) ·
-[Plan nastave za 1. dan](../slides/day1.qmd)
+[Kratki pregled prvog dana](../slides/day1.qmd)
 
 Čitajte od početne ideje prema provjerenim izvorima i planu. Primjeri
 upita su predlošci za prilagodbu. Odgovori alata mogu se razlikovati,

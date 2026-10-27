@@ -1,21 +1,20 @@
 ---
 title: "Pripremite radno okruženje"
-subtitle: "Jedan podržani put, s primjerima za rad bez AI računa"
+subtitle: "Preuzmite primjer i pokrenite prvu skriptu"
 ---
 
-## Prije dolaska
+## Za početak
 
-Preuzmite [radni paket](../downloads/eiz-workshop.zip), raspakirajte ga u
-običnu lokalnu mapu i otvorite tu mapu u [Positronu](https://positron.posit.co/download.html).
-Instalirajte [R](https://cran.r-project.org/). Referentni postupak provjeren je
-s R-om 4.6.0. Osnovna računalna pismenost dovoljna je uz vođeni početak.
-Regresija je obrađena u izbornom naprednom dijelu.
+Preuzmite [radni paket](../downloads/eiz-workshop.zip) i raspakirajte ga
+u lokalnu mapu. Instalirajte [R](https://cran.r-project.org/) i otvorite
+projekt u [Positronu](https://positron.posit.co/download.html) ili RStudiju.
+Oba okruženja mogu pokrenuti iste skripte. Referentni postupak provjeren je
+s R-om 4.6.0.
 
-Positron služi kao zajedničko sučelje. Ako već koristite RStudio, možete
-pokretati iste R skripte. Tijekom demonstracije pratimo Positron. Za sudjelovanje su dovoljni R i nastavni paket. Dostupne AI alate
-možete koristiti prema pravilima kolegija, uz provjeru izlaza.
+Za prve primjere dovoljni su R i preuzeti materijali. AI pomoć možete
+uključiti kad želite isprobati prijedlog koda ili drugačije objašnjenje.
 
-## Provjera za polaznike
+## Isprobajte prvu skriptu
 
 U R konzoli provjerite da ste u mapi koja sadrži `code/` i `data/`.
 Pokrenite.
@@ -28,19 +27,18 @@ source("code/starter.R", encoding = "UTF-8")
 Treba se ispisati 120 redaka, 120 različitih mjeseci i 0 nedostajućih
 vrijednosti. Ako se datoteka ne pronalazi, otvorite korijensku mapu paketa.
 U skripti zadržite putanje koje polaze od projektne mape. Za ovaj korak dovoljan je
-osnovni R, bez dodatnih paketa. Zadatke označene TODO rješavat ćete tijekom radionice.
+osnovni R, bez dodatnih paketa. Oznake TODO pokazuju gdje možete dopuniti primjer.
 
 ::: {.concept-box}
 Ako nemate internet ili pristup AI servisu, koristite podatke i primjere
-iz paketa, pripremljeni sažetak i pogrešan kod. Za vježbu provjere izvora
-nastavnik treba unaprijed osigurati pristup izvornim dokumentima. Bez njih
-zapis ostaje označen kao neprovjeren.
+iz paketa, pripremljeni sažetak i pogrešan kod. Za provjeru izvora otvorite povezane dokumente i sačuvajte ih za čitanje
+izvan mreže. Ako neki izvor još niste pročitali, zabilježite to uz poveznicu.
 :::
 
 ## Za obnovu cijelog referentnog postupka
 
-Ovaj dio namijenjen je nastavniku i polaznicima koji žele obnoviti sve
-izlaze. Jednokratno treba internet za pakete. U korijenskoj mapi.
+Ako želite ponovno izraditi sve referentne rezultate, pokrenite sljedeće
+naredbe u korijenskoj mapi. Za prvu instalaciju paketa potreban je internet.
 
 ```r
 install.packages("renv", repos = "https://cloud.r-project.org")

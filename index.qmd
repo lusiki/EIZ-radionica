@@ -1,5 +1,5 @@
 ---
-title: "Upotreba AI alata u studentskom istraživanju"
+title: "Istraživanje uz AI"
 title-block-style: none
 body-classes: workshop-home
 toc: false
@@ -14,9 +14,9 @@ Ekonomski institut, Zagreb / praktična radionica
 
 # Istraživanje uz AI
 
-Na primjeru inflacije u Hrvatskoj proći ćete osam vježbi, od traženja
-izvora do analize i pisanja. Svaki rezultat trebate znati objasniti
-i ponovno izračunati.
+Kako AI može pomoći u istraživanju? Isprobajte na primjeru inflacije
+u Hrvatskoj, od prvog pitanja i traženja izvora do analize i pisanja.
+Krenite redom ili odaberite temu koja vas zanima.
 
 [Počnite ovdje](admin/prerequisites.qmd){.btn-workshop}
 [Otvorite vježbe](materials/exercises/index.qmd){.btn-workshop .secondary}
@@ -30,12 +30,12 @@ i ponovno izračunati.
 
 ## Kako pratiti radionicu
 
-Stranice **Dan 1** i **Dan 2** vode kroz nastavu. Uz svaki blok piše
-što nastavnik pokazuje i što studenti rade. **Vježbe** daju korake i predaju,
-a **priručnik** donosi šira objašnjenja. Isti broj i naslov povezuju sva
-tri materijala. Plan s kraja prvoga dana provodite drugoga dana.
+Stranice **Dan 1** i **Dan 2** daju kratak pregled tema. **Vježbe** nude
+primjere koje možete sami isprobati, a **priručnik** šira objašnjenja.
+Isti broj i naslov povezuju sva tri materijala. Plan koji skicirate
+u prvom dijelu možete provesti u drugom.
 
-[Pregled svih osam blokova](booklet/index.qmd#osam-povezanih-blokova)
+[Pregled svih osam tema](booklet/index.qmd#osam-povezanih-blokova)
 
 ## Što ćete napraviti
 
@@ -48,16 +48,16 @@ možete proći besplatnim alatima i priloženim materijalima.
 ::: {.step-link}
 ## 01 / Od pitanja do izvora
 
-Provjerit ćete jesu li tvrdnje u AI odgovoru točne. Do kraja dana
-imat ćete tri provjerena izvora i plan analize.
+Počnite od pitanja, pronađite izvore i usporedite ih s AI odgovorom.
+Iz tih bilježaka sastavite jednostavan plan analize.
 
 [Materijal za prvi dan](slides/day1.qmd)
 :::
 ::: {.step-link}
 ## 02 / Od podataka do zaključka
 
-Pročitajte podatke, objasnite izmjenu koda i pronađite namjernu pogrešku.
-Predajte rezultat koji se može ponovno izračunati.
+Upoznajte podatke, isprobajte malu izmjenu koda i uredite skriptu.
+Pogledajte rezultate i napišite što vam govore.
 
 [Materijal za drugi dan](slides/day2.qmd)
 :::
@@ -70,15 +70,14 @@ potrošača o budućim promjenama cijena. Usporedit ćemo kako se te dvije mjere
 mijenjaju kroz vrijeme. Za zaključak o uzroku trebalo bi provesti dodatno istraživanje.
 
 [Upoznajte podatke](data/dictionary.qmd) ·
-[Pogledajte raspored](admin/workshop_overview.qmd) ·
+[Put kroz radionicu](admin/workshop_overview.qmd) ·
 [Preuzmite radni paket](downloads/eiz-workshop.zip)
 
-## Završni rad
+## Vaš mali istraživački primjer
 
-Predajte istraživačko pitanje, tri provjerena izvora i skriptu. Priložite
-graf ili tablicu te približno 200 riječi o rezultatu. Navedite jeste li
-koristili AI i kako ste provjerili njegove prijedloge.
-[Provjerite kriterije predaje](materials/rubric.qmd).
+Pitanje, izvore, skriptu i zaključak možete skupiti u kratki izvještaj.
+Dodajte graf ili tablicu koja najbolje pokazuje što ste pronašli.
+[Pitanja za osvrt](materials/rubric.qmd) mogu vam pomoći odabrati što dalje doraditi.
 
 ## Za one koji žele pročitati više
 
@@ -91,5 +90,4 @@ ažurirani tekst izvorne radionice.
 
 ::: {.concept-box}
 Sadržaj je revidiran {{< var workshop.revision >}}
-Termin sljedeće izvedbe i kontakt potvrđuje organizator. Datum revizije odnosi se na sadržaj materijala.
 :::

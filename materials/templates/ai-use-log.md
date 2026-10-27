@@ -1,12 +1,12 @@
-# Zapis uporabe AI-ja
+# Bilješka o radu s AI-jem
 
-Ako niste koristili AI, navedite to i opišite ručnu provjeru.
+Kratak podsjetnik koji može pomoći kad se vratite na projekt.
 
-| Datum | Alat i model ako je vidljiv | Svrha / upit | Prihvaćena izmjena | Odbačeni dio | Neovisna provjera |
-|---|---|---|---|---|---|
+- Datum i alat.
+- Što sam tražio?
+- Koji sam prijedlog prihvatio ili preradio?
+- Kako sam provjerio rezultat?
+- Gdje sam spremio korisni odgovor ili izmjenu?
 
-- Pravilo kolegija/ustanove koje sam provjerio.
-- Koje sam podatke podijelio.
-- Gdje su sačuvani izvorni odgovor i moja izmjena.
-- Usporedba teksta prije/poslije, brojke, jedinice, izvori, stupanj sigurnosti.
-- Kratka izjava o uporabi za završni tekst.
+Ako ste radili bez AI-ja, ovdje možete zabilježiti vlastiti postupak
+ili koristan komentar kolege.

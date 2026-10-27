@@ -166,11 +166,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../materials/rubric.html">
- <span class="dropdown-text">Predaja i vrednovanje</span></a>
+ <span class="dropdown-text">Osvrt na rad</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../admin/instructor.html">
- <span class="dropdown-text">Za nastavnike</span></a>
+ <span class="dropdown-text">Rad u grupi</span></a>
   </li>  
     </ul>
   </li>
@@ -190,8 +190,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Na ovoj stranici</h2>
    
   <ul class="collapse">
-  <li><a href="#prije-dolaska" id="toc-prije-dolaska" class="nav-link active" data-scroll-target="#prije-dolaska">Prije dolaska</a></li>
-  <li><a href="#provjera-za-polaznike" id="toc-provjera-za-polaznike" class="nav-link" data-scroll-target="#provjera-za-polaznike">Provjera za polaznike</a></li>
+  <li><a href="#za-početak" id="toc-za-početak" class="nav-link active" data-scroll-target="#za-početak">Za početak</a></li>
+  <li><a href="#isprobajte-prvu-skriptu" id="toc-isprobajte-prvu-skriptu" class="nav-link" data-scroll-target="#isprobajte-prvu-skriptu">Isprobajte prvu skriptu</a></li>
   <li><a href="#za-obnovu-cijelog-referentnog-postupka" id="toc-za-obnovu-cijelog-referentnog-postupka" class="nav-link" data-scroll-target="#za-obnovu-cijelog-referentnog-postupka">Za obnovu cijelog referentnog postupka</a></li>
   <li><a href="#kamo-dalje" id="toc-kamo-dalje" class="nav-link" data-scroll-target="#kamo-dalje">Kamo dalje</a></li>
   </ul>
@@ -203,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Pripremite radno okruženje</h1>
-<p class="subtitle lead">Jedan podržani put, s primjerima za rad bez AI računa</p>
+<p class="subtitle lead">Preuzmite primjer i pokrenite prvu skriptu</p>
 </div>
 
 
@@ -220,24 +220,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="prije-dolaska" class="level2">
-<h2 class="anchored" data-anchor-id="prije-dolaska">Prije dolaska</h2>
-<p>Preuzmite <a href="../downloads/eiz-workshop.zip">radni paket</a>, raspakirajte ga u običnu lokalnu mapu i otvorite tu mapu u <a href="https://positron.posit.co/download.html">Positronu</a>. Instalirajte <a href="https://cran.r-project.org/">R</a>. Referentni postupak provjeren je s R-om 4.6.0. Osnovna računalna pismenost dovoljna je uz vođeni početak. Regresija je obrađena u izbornom naprednom dijelu.</p>
-<p>Positron služi kao zajedničko sučelje. Ako već koristite RStudio, možete pokretati iste R skripte. Tijekom demonstracije pratimo Positron. Za sudjelovanje su dovoljni R i nastavni paket. Dostupne AI alate možete koristiti prema pravilima kolegija, uz provjeru izlaza.</p>
+<section id="za-početak" class="level2">
+<h2 class="anchored" data-anchor-id="za-početak">Za početak</h2>
+<p>Preuzmite <a href="../downloads/eiz-workshop.zip">radni paket</a> i raspakirajte ga u lokalnu mapu. Instalirajte <a href="https://cran.r-project.org/">R</a> i otvorite projekt u <a href="https://positron.posit.co/download.html">Positronu</a> ili RStudiju. Oba okruženja mogu pokrenuti iste skripte. Referentni postupak provjeren je s R-om 4.6.0.</p>
+<p>Za prve primjere dovoljni su R i preuzeti materijali. AI pomoć možete uključiti kad želite isprobati prijedlog koda ili drugačije objašnjenje.</p>
 </section>
-<section id="provjera-za-polaznike" class="level2">
-<h2 class="anchored" data-anchor-id="provjera-za-polaznike">Provjera za polaznike</h2>
+<section id="isprobajte-prvu-skriptu" class="level2">
+<h2 class="anchored" data-anchor-id="isprobajte-prvu-skriptu">Isprobajte prvu skriptu</h2>
 <p>U R konzoli provjerite da ste u mapi koja sadrži <code>code/</code> i <code>data/</code>. Pokrenite.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"code/starter.R"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Treba se ispisati 120 redaka, 120 različitih mjeseci i 0 nedostajućih vrijednosti. Ako se datoteka ne pronalazi, otvorite korijensku mapu paketa. U skripti zadržite putanje koje polaze od projektne mape. Za ovaj korak dovoljan je osnovni R, bez dodatnih paketa. Zadatke označene TODO rješavat ćete tijekom radionice.</p>
+<p>Treba se ispisati 120 redaka, 120 različitih mjeseci i 0 nedostajućih vrijednosti. Ako se datoteka ne pronalazi, otvorite korijensku mapu paketa. U skripti zadržite putanje koje polaze od projektne mape. Za ovaj korak dovoljan je osnovni R, bez dodatnih paketa. Oznake TODO pokazuju gdje možete dopuniti primjer.</p>
 <div class="concept-box">
-<p>Ako nemate internet ili pristup AI servisu, koristite podatke i primjere iz paketa, pripremljeni sažetak i pogrešan kod. Za vježbu provjere izvora nastavnik treba unaprijed osigurati pristup izvornim dokumentima. Bez njih zapis ostaje označen kao neprovjeren.</p>
+<p>Ako nemate internet ili pristup AI servisu, koristite podatke i primjere iz paketa, pripremljeni sažetak i pogrešan kod. Za provjeru izvora otvorite povezane dokumente i sačuvajte ih za čitanje izvan mreže. Ako neki izvor još niste pročitali, zabilježite to uz poveznicu.</p>
 </div>
 </section>
 <section id="za-obnovu-cijelog-referentnog-postupka" class="level2">
 <h2 class="anchored" data-anchor-id="za-obnovu-cijelog-referentnog-postupka">Za obnovu cijelog referentnog postupka</h2>
-<p>Ovaj dio namijenjen je nastavniku i polaznicima koji žele obnoviti sve izlaze. Jednokratno treba internet za pakete. U korijenskoj mapi.</p>
+<p>Ako želite ponovno izraditi sve referentne rezultate, pokrenite sljedeće naredbe u korijenskoj mapi. Za prvu instalaciju paketa potreban je internet.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"renv"</span>, <span class="at">repos =</span> <span class="st">"https://cloud.r-project.org"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">restore</span>(<span class="at">prompt =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">load</span>()</span>
@@ -671,7 +671,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
     <a class="nav-link" href="../admin/workshop_overview.html">
-<p>Raspored</p>
+<p>Put kroz radionicu</p>
 </a>
   </li>  
 </ul>

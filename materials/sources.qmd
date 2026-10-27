@@ -1,10 +1,10 @@
 ---
 title: "Izvori koje možete provjeriti"
-subtitle: "Početni skup za tri dokazna zapisa"
+subtitle: "Polazište za čitanje i vlastite bilješke"
 ---
 
 Počnite od ovih izvora. U svakome pronađite odjeljak koji podupire
-vašu tvrdnju i unesite ga u vlastiti dokazni zapis.
+vašu tvrdnju i sačuvajte ga uz svoje bilješke.
 
 ## Tri početna izvora
 
@@ -23,9 +23,9 @@ vašu tvrdnju i unesite ga u vlastiti dokazni zapis.
    inflation perceptions and expectations – the role of (un)certainty.**
    [ECB Economic Bulletin, 2/2021](https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html).
    Odjeljak 2 i bilješka 6 razlikuju kvalitativne i kvantitativne mjere.
-   Članak pomaže razjasniti što se pojedinom mjerom može zaključiti. Nije dokaz našeg hrvatskog
-   rezultata za 2015.–2024. To je istraživački članak središnje banke, a sam
-   naziv publikacije ne čini ga recenziranim časopisnim radom.
+   Članak pomaže razumjeti mjere na primjeru europodručja. Hrvatski
+   rezultat za 2015.–2024. provjeravamo u podacima radionice. Riječ je
+   o istraživačkom članku središnje banke. Podatak o recenziji potražite kod izdavača.
 
 ## Dodatni metodološki izvori
 
@@ -36,7 +36,7 @@ vašu tvrdnju i unesite ga u vlastiti dokazni zapis.
 - [renv, uvod](https://rstudio.github.io/renv/articles/renv.html).
   Obnova projektnog okruženja i granice ponovljivosti postupka.
 - [Pravila ponovne uporabe Eurostatovih podataka](https://ec.europa.eu/eurostat/help/copyright-notice).
-  U ovom nastavnom paketu navodimo izvor i označujemo vlastitu obradu.
+  U ovom paketu navodimo izvor i označujemo vlastitu obradu.
 
 ## Dokumentacija izbornih alata
 

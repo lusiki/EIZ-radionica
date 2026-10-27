@@ -1,8 +1,11 @@
-# Administracija
+# Početak i pregled radionice
 
-Aktivni materijali, prerequisites.qmd, workshop_overview.qmd i instructor.qmd.
-corrections.md prati činjenične i metodološke ispravke. compatibility.md
-razlikuje izvršene provjere od neprovjerenih integracija.
+prerequisites.qmd pomaže pripremiti R i otvoriti prvu skriptu.
+workshop_overview.qmd povezuje svih osam tema.
+instructor.qmd donosi ideje za rad u paru ili grupi.
 
-Stari HTML izvozi i old_announcements/ su povijesni. Ne ulaze u novi build.
-Datum nove izvedbe, publiku, kontakt i financiranje potvrđuje organizator.
+corrections.md bilježi ranije činjenične i metodološke ispravke.
+compatibility.md opisuje izvršene provjere i integracije.
+
+Stari HTML izvozi i old_announcements/ čuvaju povijest radionice.
+Aktualni web i radni paket grade se iz revidiranih izvora.

@@ -1,6 +1,6 @@
 # Namjerno pogrešan sažetak za vježbu 1.3
 
-Ovo je ilustrativni nastavni tekst, nije stvarni izlaz imenovanog AI modela.
+Ovaj je tekst posebno sastavljen za vježbu prepoznavanja pogrešaka.
 Broj 20 u njemu je izmišljen za primjer. Nije rezultat priloženih podataka.
 
 > Analizirali smo uravnoteženi panel Hrvatske od 2015. do 2024. Saldo

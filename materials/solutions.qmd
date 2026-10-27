@@ -1,16 +1,14 @@
 ---
-title: "Rješenja i bilješke za provjeru"
-subtitle: "Otvorite nakon vlastitog pokušaja"
+title: "Primjeri rješenja"
+subtitle: "Usporedite svoj postupak s ovim primjerima"
 ---
 
 ## 1.1 Postavite istraživačko pitanje {#pitanje-i-pravila}
 
-Prihvatljiv primjer, „Kako su se u Hrvatskoj od 2015. do 2024. kretali
+Jedan primjer pitanja glasi „Kako su se u Hrvatskoj od 2015. do 2024. kretali
 godišnja stopa HICP-a i kvalitativni saldo očekivanja cijena?”
 Pitanje je opisno. Dobar popis provjera uključuje otvaranje izvora, provjeru
 podudarnosti tvrdnje i dokaza te provjeru jedinica i uzorka.
-Za pravila ustanove priložite odgovarajući dokument ili potvrdu nastavnika.
-Pravila potvrdite kod nastavnika ili u dokumentima ustanove.
 
 ## 1.2 Pronađite i provjerite izvore {#dokazi}
 
@@ -44,9 +42,9 @@ Mogući ispravak.
 
 ## 1.4 Pripremite plan analize {#plan}
 
-Očekuje se HR, 120 mjeseci, ključ month, RCH_A i BAL/NSA, provjera podataka prije
-izračuna, zaustavljanje pri neočekivanom nedostatku, odvojeni grafovi i
-godišnji sažetci. Moguće je drugačije opisno pitanje ako je izvedivo i
+Naš plan koristi Hrvatsku, 120 mjeseci, ključ month i mjere RCH_A i BAL/NSA.
+Uključuje provjeru podataka, odvojene grafove i godišnje sažetke.
+Neočekivane praznine prvo bismo istražili u izvoru. Moguće je drugačije opisno pitanje ako je izvedivo i
 obrazloženo. Opisna analiza dovoljna je za osnovni zadatak.
 
 ## 2.1 Upoznajte i provjerite podatke {#audit}
@@ -102,7 +100,8 @@ Za procjenu uzročnosti, usidrenosti očekivanja ili točnosti prognoze
 potrebni su zasebno postavljeno pitanje, prikladne mjere i postupak provjere.
 U zapisu uporabe navedite alat, zadatak i način provjere prihvaćenih prijedloga.
 
-Pri vrednovanju prihvatite točna rješenja napisana vlastitim riječima.
+Svoj zaključak možete napisati drukčije. Usporedite značenje tvrdnji
+i provjerite brojeve na kojima se temelje.
 
 ### Primjer završnog odlomka
 
@@ -130,5 +129,5 @@ dostupne 26. listopada 2026., koje se mogu razlikovati od ranijih izdanja
 podataka. Skripta i zamrznuti izvori omogućuju ponavljanje ovih opisnih
 izračuna, uz zadržavanje istog uzorka i jedinica.
 
-Uz odlomak polaznik prilaže vlastite dokazne zapise i stvarni zapis uporabe
-AI-ja. U izjavi opisuje kako je sam radio.
+Uz svoj odlomak sačuvajte izvore, skriptu i korisne bilješke o radu.
+Tako se možete vratiti na izračun ili nastaviti istraživanje.

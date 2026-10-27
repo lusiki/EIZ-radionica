@@ -1,16 +1,6 @@
 ## 2.2 Dopunite i objasnite kod {#poglavlje-22}
 
-**Nastavnik pokazuje · 10 minuta.** Pokrenite postojeći izračun iz početne skripte. Zatražite malu dopunu od AI-ja i na odabranim recima pokažite kako provjeravate prijedlog.
-
-**Studenti rade · 25 minuta.** Dodajte prosjek salda za 2022. i tablicu godišnjih prosjeka. Provjerite 12 mjeseci po godini i objasnite svaku novu naredbu.
-
-**Zajednička provjera · 10 minuta.** Usporedite jedan izračun s ručno odabranim recima i objasnite njegovu jedinicu.
-
-**Rezultat bloka.** Dopunjena skripta s objašnjenjem i zapisom provjere.
-
-[Blok 2.2 u nastavi](../slides/day2.qmd#blok-22) · [Vježba 2.2 i predaja](../materials/exercises/index.qmd#v22)
-
-**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
+[Dan 2, tema 2.2](../slides/day2.qmd#blok-22) · [Vježba 2.2](../materials/exercises/index.qmd#v22)
 
 ### Mali koraci olakšavaju učenje
 
@@ -114,7 +104,7 @@ U našem slučaju odgovarajuća je oznaka „saldo očekivanih promjena cijena�
 Navedite i da HICP predstavlja godišnju stopu promjene, kako čitatelj ne
 bi pretpostavio mjesečnu promjenu.
 
-### Završite vježbu 2.2
+### Isprobajte u vježbi 2.2
 
 U početnoj skripti pronađite retke koji odabiru 2022. i računaju prosjek
 HICP-a. Objasnite što svaki redak radi. Zatim dodajte prosjek salda za
@@ -153,11 +143,11 @@ p-vrijednosti. Način uzorkovanja, pretpostavke o neopaženim razlikama i
 struktura zavisnosti određuju koje su procjene i standardne pogreške
 prikladne.
 
-Za takvu analizu treba više vremena od petnaestominutne početničke
-vježbe, uz mentorovu pomoć i prikladne podatke. U osnovnoj radionici
-zadržite se na maloj izmjeni koda koju možete sami objasniti.
+Takva analiza traži prikladne podatke i poznavanje panel-modela.
+Možete joj se vratiti nakon što upoznate osnovni postupak. Za početak
+isprobajte malu izmjenu koda i pogledajte što ona mijenja.
 
-### Za samostalni rad nakon radionice
+### Ako želite nastaviti
 
 U `code/starter.R` odaberite jedan mali zadatak. Primjerice, poboljšajte
 oznaku grafa ili dodajte broj opažanja uz sažetak. Zatražite prijedlog,

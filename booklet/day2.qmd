@@ -1,5 +1,5 @@
 ---
-title: "Od podataka do obranjivog zaključka"
+title: "Od podataka do zaključka"
 subtitle: "Priručnik · Drugi dio · Četiri poglavlja za samostalno čitanje"
 body-classes: booklet
 toc-depth: 3
@@ -7,11 +7,11 @@ toc-title: "Sadržaj drugog dijela"
 ---
 
 [O priručniku](index.qmd) · [Cijeli PDF](../downloads/EIZ-prirucnik.pdf) ·
-[Plan nastave za 2. dan](../slides/day2.qmd)
+[Kratki pregled drugog dana](../slides/day2.qmd)
 
 Otvorite plan iz vježbe 1.4. Poglavlja 2.1–2.4 prate provjeru podataka,
-dopunu koda, ponovno izvođenje analize i pisanje zaključka. U nastavi
-radite u istoj R skripti. Agenti, bilježnice i napredne metode obrađeni su
+dopunu koda, ponovno izvođenje analize i pisanje zaključka. Sve te korake
+možete isprobati u istoj R skripti. Agenti, bilježnice i napredne metode obrađeni su
 u dijelovima za dodatno čitanje. Primjeri koda izvode se iz korijena projekta.
 
 {{< include _05-agents.qmd >}}
@@ -23,5 +23,5 @@ u dijelovima za dodatno čitanje. Primjeri koda izvode se iz korijena projekta.
 {{< include _08-writing.qmd >}}
 
 ::: {.booklet-next}
-[Otvorite kriterije završne predaje →](../materials/rubric.qmd)
+[Pogledajte pitanja za osvrt →](../materials/rubric.qmd)
 :::

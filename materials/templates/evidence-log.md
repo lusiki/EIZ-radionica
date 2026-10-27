@@ -1,16 +1,11 @@
-# Dokazni zapis
+# Bilješka o izvoru
 
-Kopirajte ovaj predložak za svaki od tri izvora.
+Kopirajte za svaki izvor kojem se želite vratiti.
 
-- Tvrdnja koju provjeravam.
-- Autor ili ustanova.
-- Naslov i godina.
-- URL / DOI.
-- Datum otvaranja.
-- Točan odjeljak, stranica ili tablica.
-- Vlastita parafraza dokaza.
-- Što izvor ne potvrđuje (zemlja, vrijeme, mjera, uzročnost).
-- Vrsta izvora (službena metodologija, podatkovna tablica, istraživački članak...).
-- Status, provjereno / djelomično / nije provjereno
-- Kako sam došao do izvora (ručno / AI prijedlog).
-- Neovisna provjera kolege.
+- Tvrdnja ili pitanje koje me zanima.
+- Autor ili ustanova, naslov i godina.
+- Poveznica i datum otvaranja.
+- Odjeljak, stranica ili tablica.
+- Kratak sažetak vlastitim riječima.
+- Na koju se zemlju, razdoblje i mjeru odnosi?
+- Što sam uspio provjeriti, a što još ostaje otvoreno?

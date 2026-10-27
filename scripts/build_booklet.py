@@ -133,8 +133,8 @@ class Cover(Flowable):
         c.setFont("Literata", 13)
         c.drawString(0, h-258, "Prošireni tekst obaju dana radionice")
         c.setFont("Jost", 11)
-        c.drawString(0, h-284, "Izvorni materijal: Luka Šikić, UNICATH")
-        c.drawString(0, h-302, "Revidirano izdanje / 26. listopada 2026.")
+        c.drawString(0, h-284, "Izvorni materijal / Luka Šikić, UNICATH")
+        c.drawString(0, h-302, "Revidirano izdanje / 27. listopada 2026.")
         # Zvono geometry: baseline, dome, disc and vertical axis.
         x, y, radius = w-118, 126, 100
         c.setFillColor(NAVY)
@@ -165,19 +165,19 @@ class ReaderDoc(BaseDocTemplate):
 
     def beforeDocument(self):
         self.outline_counter = 0
-        self.canv.setTitle("AI u studentskom istraživanju - priručnik")
-        self.canv.setAuthor("Izvorni materijal: Luka Šikić, UNICATH")
-        self.canv.setSubject("Revidirani tekst dvaju dana radionice; sadržaj 26.10.2026.; paleta 27.10.2026.")
+        self.canv.setTitle("Istraživanje uz AI - priručnik")
+        self.canv.setAuthor("Izvorni materijal / Luka Šikić, UNICATH")
+        self.canv.setSubject("Izdanje 27.10.2026. / dokumentacija provjerena 26.10.2026.")
         self.canv.setCreator("EIZ booklet builder / ReportLab; shared Quarto chapter sources")
 
     def decorate(self, c, doc):
         if doc.page == 1: return
         c.saveState(); c.setFillColor(INK); c.setStrokeColor(INK)
         c.setFont("Jost", 8.5)
-        c.drawString(self.leftMargin, A4[1]-15*mm, "EIZ / AI U STUDENTSKOM ISTRAŽIVANJU")
+        c.drawString(self.leftMargin, A4[1]-15*mm, "EIZ / ISTRAŽIVANJE UZ AI")
         c.setLineWidth(.5)
         c.line(self.leftMargin, A4[1]-18*mm, A4[0]-self.rightMargin, A4[1]-18*mm)
-        c.drawString(self.leftMargin, 13*mm, "Izdanje / 26. listopada 2026.")
+        c.drawString(self.leftMargin, 13*mm, "Izdanje / 27. listopada 2026.")
         c.drawRightString(A4[0]-self.rightMargin, 13*mm, str(doc.page))
         c.restoreState()
 
@@ -219,7 +219,7 @@ def build():
     if not quarto: raise RuntimeError("Quarto is required for its bundled Pandoc")
     sections = [INTRO.read_text(encoding="utf-8"), "# Prvi dan / od pitanja do provjerenih izvora\n"]
     sections.extend(p.read_text(encoding="utf-8") for p in CHAPTERS[:4])
-    sections.append("# Drugi dan / od podataka do obranjivog zaključka\n")
+    sections.append("# Drugi dan / od podataka do zaključka\n")
     sections.extend(p.read_text(encoding="utf-8") for p in CHAPTERS[4:])
     manuscript = "\n\n".join(sections)
     result = subprocess.run([quarto, "pandoc", "--from", "markdown", "--to", "json"],
@@ -271,7 +271,7 @@ def build():
     doc.multiBuild(story)
     sources = [INTRO, *CHAPTERS]
     manifest = {
-        "revision": "2026-10-26", "pdf": OUT.name,
+        "revision": "2026-10-27", "pdf": OUT.name,
         "source_files": {str(p.relative_to(ROOT)).replace("\\", "/"):
                          hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},
         "word_count": len(re.findall(r"\S+", manuscript)),

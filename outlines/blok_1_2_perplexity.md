@@ -1,11 +1,11 @@
-# 1.2 Tri provjerena izvora
+# 1.2 Pronađite i provjerite izvore
 
-Aktivni plan, [radni list](../materials/exercises/index.qmd#v12).
-Čitateljski materijal, [dan 1](../slides/day1.qmd).
+[Kratki pregled](../slides/day1.qmd#blok-12) ·
+[Priručnik](../booklet/day1.qmd#poglavlje-12) ·
+[Vježba](../materials/exercises/index.qmd#v12)
 
-45 minuta, 10 demonstracija, 25 rad polaznika, 10 zajednička provjera.
-Ulazi, predaja, kriteriji i pitanja za raspravu nalaze se na radnom listu.
-Ondje je jedini aktivni izvor uputa. [Rješenja](../materials/solutions.qmd).
+Otvorite vježbu za konkretan primjer, a priručnik za šire objašnjenje.
+[Primjeri rješenja](../materials/solutions.qmd) mogu pomoći kad zapnete
+ili želite usporediti postupak.
 
-Naziv datoteke zadržan je radi starih poveznica. Blok više nije organiziran
-oko pojedinog proizvoda. Izvorni plan dostupan je u povijesti Gita.
+Naziv datoteke čuva stare poveznice. Izvorni plan nalazi se u povijesti Gita.

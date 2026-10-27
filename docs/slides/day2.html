@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Od podataka do obranjivog zaključka – AI u istraživanju</title>
+<title>Od podataka do zaključka – AI u istraživanju</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -131,11 +131,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../materials/rubric.html">
- <span class="dropdown-text">Predaja i vrednovanje</span></a>
+ <span class="dropdown-text">Osvrt na rad</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../admin/instructor.html">
- <span class="dropdown-text">Za nastavnike</span></a>
+ <span class="dropdown-text">Rad u grupi</span></a>
   </li>  
     </ul>
   </li>
@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#blok-22" id="toc-blok-22" class="nav-link" data-scroll-target="#blok-22">2.2 Dopunite i objasnite kod</a></li>
   <li><a href="#blok-23" id="toc-blok-23" class="nav-link" data-scroll-target="#blok-23">2.3 Ponovite analizu od početka</a></li>
   <li><a href="#blok-24" id="toc-blok-24" class="nav-link" data-scroll-target="#blok-24">2.4 Napišite i uredite zaključak</a></li>
-  <li><a href="#predaja" id="toc-predaja" class="nav-link" data-scroll-target="#predaja">Predaja</a></li>
+  <li><a href="#zaokružite-primjer" id="toc-zaokružite-primjer" class="nav-link" data-scroll-target="#zaokružite-primjer">Zaokružite primjer</a></li>
   </ul>
 </nav>
     </div>
@@ -168,8 +168,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Od podataka do obranjivog zaključka</h1>
-<p class="subtitle lead">Dan 2 · Četiri bloka s demonstracijama, vježbama i poglavljima</p>
+<h1 class="title">Od podataka do zaključka</h1>
+<p class="subtitle lead">Dan 2 · Četiri povezane teme za istraživanje</p>
 </div>
 
 
@@ -189,18 +189,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="chapter-kicker">
 <p>02 / Analiza i pisanje</p>
 </div>
-<p>Danas ćete provjeriti ulazne podatke, izmijeniti dio skripte i popraviti namjerno pogrešan postupak. Zatim ćete napisati zaključak iz dobivenog rezultata. Pri provjeri koda gledajte što računa, skripta se može izvršiti bez pogreške, a ipak dati pogrešnu analizu.</p>
-<p>Koristimo isti slučaj kao prvoga dana, Hrvatsku od siječnja 2015. do prosinca 2024. U paketu su izvorni odgovori službenog API-ja, pripremljeni CSV i referentna rješenja. Nakon preuzimanja paketa osnovne zadatke možete riješiti izvan mreže u osnovnom R-u.</p>
-<p>Drugoga dana provodite plan iz vježbe 1.4 i pišete zaključak. Brojevi i naslovi blokova jednaki su u nastavi, priručniku i vježbama. Za svaki blok slijedite demonstraciju, rad studenata i zajedničku provjeru. Poveznice uz blok vode ravno na pripadajuće poglavlje i zadatak.</p>
+<p>Sada plan pretvaramo u analizu. Otvorit ćemo podatke, dopuniti skriptu, ispraviti pogrešan postupak i napisati što rezultati pokazuju.</p>
+<p>Koristimo isti primjer kao prvoga dana, Hrvatsku od siječnja 2015. do prosinca 2024. U paketu su izvorni podaci, pripremljeni CSV i primjeri rješenja. Nakon preuzimanja osnovne izračune možete isprobati izvan mreže u osnovnom R-u.</p>
+<p>Svaka tema vodi na odgovarajuću vježbu i poglavlje priručnika. Krenite od plana iz vježbe 1.4 ili otvorite dio na kojem želite raditi.</p>
 <section id="blok-21" class="level2">
 <h2 class="anchored" data-anchor-id="blok-21">2.1 Upoznajte i provjerite podatke</h2>
-<div class="concept-box">
-<p><strong>Nastavnik pokazuje · 10 minuta.</strong> Otvorite projekt u Positronu i učitajte CSV pomoću početne skripte. Pokažite jedan redak, rječnik podataka i provjeru broja i raspona mjeseci.</p>
-<p><strong>Studenti rade · 25 minuta.</strong> Provjerite 120 različitih mjeseci, praznine, raspon vrijednosti i jedinice. Zapišite naredbe i rezultate u predložak za provjeru podataka.</p>
-<p><strong>Zajednička provjera · 10 minuta.</strong> Objasnite značenje jedne vrijednosti i pokažite odgovarajuću provjeru u skripti.</p>
-<p><strong>Rezultat bloka.</strong> Ispunjena provjera podataka.</p>
 <p><a href="../booklet/day2.html#poglavlje-21">Priručnik 2.1</a> · <a href="../materials/exercises/index.html#v21">Vježba 2.1</a></p>
-</div>
 <p>Jedan redak predstavlja jedan mjesec. Retke povezujemo prema ključu <code>month</code>. Očekujemo 120 različitih, uzastopnih mjeseci. Provjerite raspon datuma, duplikate, nedostajuće vrijednosti i jedinice prije izračuna. Ako nešto ne odgovara <a href="../data/dictionary.html">rječniku podataka</a>, zaustavite postupak i istražite izvor. Automatsko brisanje redaka ili interpoliranje može promijeniti uzorak i značenje podataka.</p>
 <div class="concept-box">
 <p><strong>Dvije varijable, dvije jedinice.</strong> <code>hicp_yoy_pct</code> jest godišnja promjena ukupnog HICP-a u %. <code>expectations_balance</code> jest sezonski neprilagođen saldo anketnih odgovora o budućem kretanju cijena, izražen u bodovima salda. Obje serije bilježimo za isti mjesec ankete odnosno mjerenja cijena. Time opisujemo njihovo istodobno kretanje. Za provjeru prognoze trebalo bi uskladiti očekivanja s odgovarajućim kasnijim kretanjem cijena.</p>
@@ -210,61 +204,43 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="blok-22" class="level2">
 <h2 class="anchored" data-anchor-id="blok-22">2.2 Dopunite i objasnite kod</h2>
-<div class="concept-box">
-<p><strong>Nastavnik pokazuje · 10 minuta.</strong> Pokrenite postojeći izračun iz početne skripte. Zatražite malu dopunu od AI-ja i na odabranim recima pokažite kako provjeravate prijedlog.</p>
-<p><strong>Studenti rade · 25 minuta.</strong> Dodajte prosjek salda za 2022. i tablicu godišnjih prosjeka. Provjerite 12 mjeseci po godini i objasnite svaku novu naredbu.</p>
-<p><strong>Zajednička provjera · 10 minuta.</strong> Usporedite jedan izračun s ručno odabranim recima i objasnite njegovu jedinicu.</p>
-<p><strong>Rezultat bloka.</strong> Dopunjena skripta s objašnjenjem i zapisom provjere.</p>
 <p><a href="../booklet/day2.html#poglavlje-22">Priručnik 2.2</a> · <a href="../materials/exercises/index.html#v22">Vježba 2.2</a></p>
-</div>
-<p>Otvorite projekt u Positronu i datoteku <code>code/starter.R</code>. Skripta koristi osnovni R. Prvo predvidite što će pojedini dio učiniti, zatim ga pokrenite i provjerite izlaz. Dovoljno je objasniti učitavanje CSV-a, odabir redaka, izračun prosjeka i oznake na grafu. Cijeli zadatak možete riješiti u istom razvojnom okruženju.</p>
+<p>Otvorite projekt u Positronu ili RStudiju i datoteku <code>code/starter.R</code>. Skripta koristi osnovni R. Prvo predvidite što će pojedini dio učiniti, zatim ga pokrenite i provjerite izlaz. Dovoljno je objasniti učitavanje CSV-a, odabir redaka, izračun prosjeka i oznake na grafu. Cijeli zadatak možete riješiti u istom razvojnom okruženju.</p>
 <div class="prompt-box">
 <p><strong>Upit za malu, provjerljivu izmjenu</strong></p>
 <p>Imam mjesečne podatke i ovaj kod. Dodaj godišnji prosjek bez promjene jedinica i bez brisanja nedostajućih vrijednosti. Objasni svaku novu naredbu. Predloži provjeru broja mjeseci u svakoj godini. Izvorni CSV sačuvaj nepromijenjen.</p>
 </div>
-<p>Asistent u pregledniku može predložiti isti kod kao asistent u uređivaču. Copilot i agentski alati su izborni. RStudio također podržava <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">Copilot</a>. AI pomoć stoga možete koristiti u oba okruženja. Positronova proširenja dolaze iz <a href="https://positron.posit.co/extensions.html">podržanih registara</a>, a dostupnost pojedinog proširenja treba provjeriti prije nastave.</p>
-<p>Agent može čitati i mijenjati datoteke te pokretati naredbe. Znanstvenu valjanost postupka provjeravate vi. Prije pokretanja pogledajte koje datoteke dira i zatražite objašnjenje izmjene. Ključeve i osobne podatke čuvajte izvan materijala dostupnih agentu. Terminalni agent može biti kratka izborna demonstracija nastavnika.</p>
+<p>Asistent u pregledniku može predložiti isti kod kao asistent u uređivaču. Copilot i agentski alati su izborni. RStudio također podržava <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">Copilot</a>. AI pomoć stoga možete koristiti u oba okruženja. Positronova proširenja dolaze iz <a href="https://positron.posit.co/extensions.html">podržanih registara</a>, a dostupnost pojedinog proširenja možete provjeriti prije instalacije.</p>
+<p>Agent može čitati i mijenjati datoteke te pokretati naredbe. Znanstvenu valjanost postupka provjeravate vi. Prije pokretanja pogledajte koje datoteke dira i zatražite objašnjenje izmjene. Ključeve i osobne podatke čuvajte izvan materijala dostupnih agentu. Terminalni agent još je jedna mogućnost za rad s projektom.</p>
 <p><a href="../materials/exercises/index.html#v22">Vježba 2.2, dopunite i objasnite kod</a>.</p>
 </section>
 <section id="blok-23" class="level2">
 <h2 class="anchored" data-anchor-id="blok-23">2.3 Ponovite analizu od početka</h2>
-<div class="concept-box">
-<p><strong>Nastavnik pokazuje · 10 minuta.</strong> Otvorite pripremljenu pogrešnu skriptu i objasnite jedan problem u postupku. Na kratkom ispravnom primjeru pokažite spremanje, novu R sesiju i ponovno izvođenje.</p>
-<p><strong>Studenti rade · 25 minuta.</strong> Pronađite najmanje četiri problema i sastavite ispravnu skriptu. Izradite godišnju tablicu i graf, pokrenite sve od početka i usporedite jedan broj s referentnim rezultatom.</p>
-<p><strong>Zajednička provjera · 10 minuta.</strong> Pokažite rezultat iz nove sesije i objasnite jedan ispravljeni korak.</p>
-<p><strong>Rezultat bloka.</strong> Popis pogrešaka, ispravna skripta i ponovno dobiveni rezultati.</p>
 <p><a href="../booklet/day2.html#poglavlje-23">Priručnik 2.3</a> · <a href="../materials/exercises/index.html#v23">Vježba 2.3</a></p>
-</div>
 <p>Da bi netko mogao ponoviti analizu, trebaju mu podaci, kod, popis programa i paketa te upute kojim redom pokrenuti skripte. Spremite skriptu, zatvorite prethodnu R sesiju i pokrenite je ponovno iz korijena projekta. Referentni postupak izričito provjerava jedinstvenost mjeseci, uzorak, nedostajuće vrijednosti i rezultate.</p>
 <p>Usporedite dva grafa s odvojenim osima. Zajednička vremenska os olakšava čitanje. Visinu svake linije tumačite prema jedinici označenoj na njezinoj osi. Dvostruka os na jednom grafu može vizualno pojačati sličnost proizvoljnim odabirom raspona. Korelacija također može ovisiti o podrazdoblju, trendovima i zajedničkim šokovima. Zato je opis kretanja primjereniji od tvrdnje da je jedna varijabla uzrokovala drugu.</p>
-<section id="što-ostaje-za-napredni-rad" class="level3">
-<h3 class="anchored" data-anchor-id="što-ostaje-za-napredni-rad">Što ostaje za napredni rad</h3>
+<section id="ako-želite-istražiti-dalje" class="level3">
+<h3 class="anchored" data-anchor-id="ako-želite-istražiti-dalje">Ako želite istražiti dalje</h3>
 <p>Opcionalni OLS primjer uključuje konstantu i unaprijed naveden smjer regresije. HAC standardne pogreške služe zaključivanju uz određene oblike vremenske ovisnosti i heteroskedastičnosti. Endogenost, izbor varijabli i dizajn istraživanja treba zasebno obrazložiti. HAC standardna pogreška može biti veća ili manja od uobičajene. Postavke i ograničenja nalaze se uz skriptu, prema <a href="https://sandwich.r-forge.r-project.org/reference/NeweyWest.html">dokumentaciji za Newey–West</a>.</p>
 <p>P-vrijednost opisuje koliko bi opaženi ili ekstremniji rezultat bio neobičan pod nul-hipotezom i pretpostavkama modela. Pri tumačenju zajedno razmotrite procijenjeni koeficijent, njegovu nesigurnost i pretpostavke modela. Pogledajte <a href="https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf">izjavu ASA-e</a>. Model birajte prema pitanju, svojstvima serije i rezultatima provjera, uključujući stacionarnost. Panel-metode traže više jedinica promatranih kroz vrijeme.</p>
-<p>Analizu možete ponoviti iz bilježnice ili skripte ako su svi koraci zapisani i mogu se pokrenuti od početka. U osnovnom dijelu svi radimo u skripti. <a href="../materials/exercises/index.html#v23">Vježba 2.3</a> traži popravak namjerno pogrešnog koda, a zatim čisto ponovno izvođenje.</p>
+<p>Analizu možete ponoviti iz bilježnice ili skripte ako su svi koraci zapisani i mogu se pokrenuti od početka. U <a href="../materials/exercises/index.html#v23">vježbi 2.3</a> možete isprobati popravak koda i ponovno pokretanje spremljene skripte.</p>
 </section>
 </section>
 <section id="blok-24" class="level2">
 <h2 class="anchored" data-anchor-id="blok-24">2.4 Napišite i uredite zaključak</h2>
-<div class="concept-box">
-<p><strong>Nastavnik pokazuje · 10 minuta.</strong> Iz grafa ili tablice sastavite kratak odlomak. Zatražite jasniju formulaciju od AI-ja pa usporedite brojke, jedinice i tvrdnje prije i poslije uređivanja.</p>
-<p><strong>Studenti rade · 25 minuta.</strong> Napišite približno 200 riječi, zatražite komentar kolege ili AI-ja i pregledajte izmjene. Dovršite zapis uporabe AI-ja i složite završni rad.</p>
-<p><strong>Zajednička provjera · 10 minuta.</strong> Pročitajte jedan odlomak i povežite svaku brojku s tablicom ili grafom.</p>
-<p><strong>Rezultat bloka.</strong> Pitanje, tri izvora, skripta, graf ili tablica, obje verzije teksta i zapis uporabe AI-ja.</p>
 <p><a href="../booklet/day2.html#poglavlje-24">Priručnik 2.4</a> · <a href="../materials/exercises/index.html#v24">Vježba 2.4</a></p>
-</div>
-<p>Najprije sastavite kratak odlomak iz vlastitog grafa i tablice. Navedite zemlju, razdoblje, jedinice, jedan provjeren broj i ograničenje. AI može predložiti jasniji izraz, ali ne smije bez provjere dodati rezultat, izvor ili uzročnu tvrdnju. Sačuvajte tekst prije i nakon uređivanja.</p>
+<p>Najprije sastavite kratak odlomak iz vlastitog grafa i tablice. Navedite zemlju, razdoblje, jedinice, jedan provjeren broj i ograničenje. AI može predložiti jasniji izraz. Svaku novu tvrdnju ili brojku usporedite s izvorima i svojim izračunom. Sačuvajte tekst prije i nakon uređivanja.</p>
 <div class="prompt-box">
 <p><strong>Upit za uređivanje rezultata</strong></p>
 <p>Uredi jasnoću ovoga odlomka. Sačuvaj sve brojke, jedinice, nazive varijabli, izvore i stupanj sigurnosti. Koristi samo priložene rezultate i literaturu. Ispod teksta navedi svaku promjenu značenja koju predlažeš da zasebno provjerim.</p>
 </div>
 <p>Nakon uređivanja usporedite broj po broj i tvrdnju po tvrdnju. Za hrvatski jezik ručno provjerite značenje i terminologiju. CLASSLA služi jezičnoj obradi poput lematizacije i označavanja vrsta riječi. Za lekturu i provjeru znanstvenih tvrdnji zasebno pročitajte cijeli tekst (<a href="https://github.com/clarinsi/classla">opis projekta</a>).</p>
-<p>U završnom radu opišite kretanje kvalitativnog salda. Za procjenu usidrenosti očekivanja treba odrediti definiciju, vremenski horizont i odgovarajuću mjeru. Preporuke ekonomske politike zahtijevaju dodatne dokaze o učincima predloženih mjera.</p>
+<p>U svojem tekstu opišite kretanje kvalitativnog salda. Za procjenu usidrenosti očekivanja treba odrediti definiciju, vremenski horizont i odgovarajuću mjeru. Preporuke ekonomske politike zahtijevaju dodatne dokaze o učincima predloženih mjera.</p>
 <p><a href="../materials/exercises/index.html#v24">Vježba 2.4, napišite i uredite zaključak</a>.</p>
 </section>
-<section id="predaja" class="level2">
-<h2 class="anchored" data-anchor-id="predaja">Predaja</h2>
-<p>Predajte pitanje, tri zapisa o izvorima, skriptu koja se izvršava od početka, jedan graf ili tablicu, tekst od približno 200 riječi i zapis uporabe AI-ja. <a href="../materials/rubric.html">Rubrika</a> pokazuje kako se vrednuju dokaz, metoda, ponovljivost postupka, tumačenje i jasno navođenje načina rada.</p>
+<section id="zaokružite-primjer" class="level2">
+<h2 class="anchored" data-anchor-id="zaokružite-primjer">Zaokružite primjer</h2>
+<p>Pitanje, izvore, skriptu i zaključak možete povezati u mali izvještaj. Dodajte graf ili tablicu koja vam najbolje pomaže objasniti što ste pronašli. <a href="../materials/rubric.html">Pitanja za osvrt</a> mogu vam pomoći odlučiti što biste još doradili ili isprobali na vlastitoj temi.</p>
 
 
 </section>
@@ -688,7 +664,7 @@ ul.task-list li input[type="checkbox"] {
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
     <a class="nav-link" href="../admin/workshop_overview.html">
-<p>Raspored</p>
+<p>Put kroz radionicu</p>
 </a>
   </li>  
 </ul>

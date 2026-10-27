@@ -1,21 +1,11 @@
 ## 1.1 Postavite istraživačko pitanje {#poglavlje-11}
 
-**Nastavnik pokazuje · 10 minuta.** Pokažite kako od teme „inflacija u Hrvatskoj” nastaje pitanje o razdoblju 2015.–2024. Zatražite AI prijedlog i provjerite jednu tvrdnju u izvoru.
-
-**Studenti rade · 25 minuta.** Napišite svoje pitanje, opišite dvije varijable i sastavite tri provjere AI odgovora. Zabilježite pravila uporabe AI-ja za zadatak.
-
-**Zajednička provjera · 10 minuta.** Usporedite dva pitanja i objasnite kojim se podacima na njih može odgovoriti.
-
-**Rezultat bloka.** Pitanje, opis dviju mjera i popis provjera.
-
-[Blok 1.1 u nastavi](../slides/day1.qmd#blok-11) · [Vježba 1.1 i predaja](../materials/exercises/index.qmd#v11)
-
-**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
+[Dan 1, tema 1.1](../slides/day1.qmd#blok-11) · [Vježba 1.1](../materials/exercises/index.qmd#v11)
 
 ### Od prazne stranice do istraživačkog pitanja
 
-Zamislite da trebate napisati seminarski rad. Imate temu, nekoliko otvorenih
-kartica i bilješke iz predavanja, ali još ne znate kojim pitanjem započeti.
+Zamislite da želite istražiti neku temu. Imate nekoliko otvorenih kartica
+i bilješke, ali još tražite pitanje od kojeg ćete krenuti.
 Traženje literature, povezivanje pojmova i organiziranje bilježaka oduzimaju
 vrijeme prije nego što uopće počnete analizirati podatke. AI može pomoći u
 svakom od tih koraka, no njegov prijedlog treba provjeriti. Je li pitanje
@@ -114,8 +104,8 @@ Službena dokumentacija sada opisuje pretraživanje i istraživačke postupke
 u više aplikacija, uključujući [ChatGPT](https://learn.chatgpt.com/docs/web-search),
 [Gemini](https://support.google.com/gemini/answer/15719111?hl=en) i
 [Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects).
-Pristup ovisi o računu, planu i postavkama ustanove. Prije nastave
-provjerite funkciju koju ćete koristiti, njezinu cijenu i ograničenja
+Pristup ovisi o računu, planu i postavkama ustanove. Prije uporabe
+provjerite funkciju koja vas zanima, njezinu cijenu i ograničenja
 uporabe.
 
 Za usporedbu dvaju dostupnih alata pripremite isti mali zadatak, isti
@@ -123,31 +113,21 @@ odlomak, tri ista izvora i isto pitanje. Usporedite točnost, mogućnost provjer
 razumljivost i vrijeme potrebno za provjeru. Prednost dajte odgovoru čije tvrdnje možete potvrditi u navedenim izvorima. Ako alat ne može otvoriti izvor, bilješka
 „nemam pristup punom tekstu” korisnija je od uvjerljivog nagađanja.
 
-### Pošten rad i odgovornost
+### Bilješke koje će vam koristiti
 
-Podjela uporabe AI-ja na zelenu, žutu i crvenu zonu može pomoći u
-razgovoru o riziku. Što smijete koristiti određuju pravila kolegija. Ispravak pravopisa
-manje mijenja vaš rad nego pisanje cijelog obrazloženja. Za svaki zadatak
-provjerite dopušten opseg pomoći i navedite kako ste je koristili kada je to traženo.
+Uz važnu tvrdnju sačuvajte izvor i mjesto na kojem je objašnjena.
+Kad vam AI pomogne, zabilježite koristan prijedlog i kako ste ga provjerili.
+To može biti nekoliko rečenica koje će vam kasnije pomoći obnoviti postupak.
 
-Manji rizik imaju prijedlog ključnih riječi, objašnjenje poruke o pogrešci
-i komentar jasnoće vašeg odlomka. Veću pažnju traže sažimanje nepročitanog
-rada, izbor metode, prerada argumenta i pisanje koda uz AI koji mijenja
-podatke. Pošten istraživački rad koristi stvarne izvore, prikazuje
-provedenu analizu i jasno navodi primljenu pomoć u skladu s pravilima zadatka.
+Primjerice, „AI je predložio oznake osi. Usporedio/la sam ih s rječnikom
+podataka i promijenio/la oznaku očekivanja iz postotka u saldo.”
+[Predložak bilješke](../materials/templates/ai-use-log.md) može poslužiti
+kao podsjetnik.
 
-Za identifikacijske podatke ispitanika, povjerljive intervjue i
-neobjavljene materijale koristite uslugu koju je ustanova odobrila za tu
-vrstu podataka. Prije unosa pribavite odgovarajuće dopuštenje. Na ovoj
-radionici koristimo javne službene podatke za cijelu zemlju.
+Za radionicu koristimo javne podatke za cijelu zemlju. Osobne podatke i
+povjerljive materijale čuvajte u okruženju prikladnom za njihovu obradu.
 
-U zapis uporabe unesite datum, alat i zadatak. Dodajte što ste prihvatili
-i kako ste to provjerili. Primjerice, „AI je predložio oznake osi.
-Usporedio/la sam ih s rječnikom podataka i promijenio/la oznaku očekivanja
-iz postotka u saldo.” Uz tvrdnju o podacima ili rezultatima navedite izvor.
-Bilješka o uporabi alata objašnjava kako ste radili.
-
-### Za samostalni rad nakon radionice
+### Ako želite nastaviti
 
 Napišite jedno pitanje o inflaciji i unaprijed odredite što bi bio provjerljiv
 odgovor. Zatim zatražite prijedlog od dostupnog asistenta. Posebno označite tvrdnje koje trebaju izvor, prijedloge postupka

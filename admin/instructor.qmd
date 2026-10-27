@@ -1,84 +1,50 @@
 ---
-title: "Priprema za nastavnike"
-subtitle: "Izvedba, provjere i odluke prije nove radionice"
+title: "Ideje za zajednički rad"
+subtitle: "Kako primjere isprobati u paru ili maloj grupi"
 ---
 
-## Kako voditi oba dana
+## Krenite od zajedničkog pitanja {#kako-voditi-oba-dana}
 
-Otvorite stranicu dana i slijedite četiri bloka redom. Na početku svakog
-bloka pročitajte što pokazujete u prvih 10 minuta, što studenti rade
-sljedećih 25 minuta i što zajedno provjeravate na kraju. Naslov i broj
-bloka jednaki su u priručniku i vježbama.
+Otvorite primjer s hrvatskim podacima i dogovorite što vas zanima.
+Možete proći oba dana redom ili se zadržati na jednoj temi.
+Priručnik donosi šira objašnjenja, a vježbe daju polazište za vlastiti pokušaj.
 
-Za pripremu pročitajte odgovarajuće poglavlje priručnika. U učionici
-otvorite vježbu istog broja, koja navodi ulazne datoteke, korake i predaju.
-Za prvi dan pripremite pitanje, pretragu izvora, ispravak jednog sažetka
-i primjer plana. Za drugi pripremite učitavanje podataka, malu dopunu
-koda, ponovno pokretanje skripte i uređivanje zaključka.
+Korisno je najprije zajedno proći jedan mali primjer. Netko može
+pokazati pretragu izvora, drugi objasniti dopunu koda, a treći pročitati
+odlomak i predložiti jasniji izraz.
 
-Prvi dan završite spremanjem plana iz vježbe 1.4. Drugi dan počnite
-otvaranjem tog plana uz podatke. Tijekom dana studenti provode njegove
-korake i iz rezultata pišu završni odlomak. Za osnovni dio koristite
-Positron i R. Agenti, bilježnice i napredne metode služe dodatnom čitanju
-i kasnijoj demonstraciji.
+[Dan 1](../slides/day1.qmd) · [Dan 2](../slides/day2.qmd) ·
+[Pregled osam tema](../booklet/index.qmd#osam-povezanih-blokova)
 
-[Prvi dan](../slides/day1.qmd) · [Drugi dan](../slides/day2.qmd) ·
-[Pregled svih osam blokova](../booklet/index.qmd#osam-povezanih-blokova)
+## Pripremite mapu i alate {#pripremite-radno-okruženje}
 
-## Pripremite radno okruženje
+Preuzmite isti radni paket i otvorite početnu skriptu u Positronu ili
+RStudiju. Za osnovni primjer dovoljan je R. AI pomoć možete koristiti
+iz preglednika ili dostupnog dodatka.
 
-Za demonstracije koristite Positron, R i zamrznuti nastavni paket. U prvih deset minuta
-praktičnog dijela pokažite otvaranje mape, konzolu, izvršavanje odabranog
-retka i novu sesiju. Početnicima dajte starter skriptu. Iskusniji mogu
-napisati vlastitu. Osnovni dio provedite u jednom okruženju, a druga okruženja pokažite
-u izbornom nastavku.
+Prije zajedničkog rada isprobajte učitavanje podataka i otvorite početne
+izvore. Uz njih pripremite sažetak i skriptu s namjernim pogreškama.
+Ti primjeri mogu poslužiti i dok je AI alat nedostupan.
 
-AI se može prikazati u pregledniku. Izvedite jednu malu izmjenu koda i
-pokažite provjeru. Copilot i Claude Code su izborni primjeri za nastavnika.
-Nema obvezne pretplate ili API ključa za polaznike. Pripremljeni pogrešni
-tekst i kod imaju istu nastavnu svrhu ako servis zakaže.
+## Uspoređujte pokušaje {#pomoć-tijekom-rada}
 
-## Provjere prije susreta
+U paru možete mijenjati uloge. Jedna osoba predlaže pitanje, upit ili
+naredbu, a druga pogleda izvor ili ponovi izračun. Zatim zamijenite mjesta.
 
-1. Potvrdite ciljanu skupinu, datum, kontakt i pravila ustanove.
-2. Isprobajte otvaranje sva tri izvora. Za rad bez mreže pripremite dopuštene
-   kopije. Ako izvornik nije dostupan, zapis označite kao neprovjeren.
-3. Obnovite renv i pokrenite `code/run_all.R` iz nove R sesije.
-4. Pokrenite `scripts/build.ps1` na Windowsu ili odgovarajuće naredbe iz README-ja.
-5. Otvorite paket u odvojenoj mapi i provjerite početničku skriptu.
-6. Pogledajte naslovnicu, tekst, tablice i navigaciju na telefonu.
-7. Zamolite dva ili tri predstavnika ciljane skupine da prođu starter i jednu
-   vježbu. Uz zadovoljstvo zabilježite vrijeme rada i mjesta zapinjanja.
+Ako kod postane previše složen, vratite se na jednu godinu i jedan
+prosjek. Za početak je dovoljan dobro označen graf. Iz istog postupka
+kasnije možete napraviti drugi prikaz.
 
-## Pomoć tijekom rada
+Vrijedi zastati kod zanimljive razlike između dvaju odgovora.
+Pitajte se što ju je proizvelo i kojim biste je izvorom ili izračunom razjasnili.
 
-Ako polaznik ne može objasniti kod koji je predložio AI, smanjite zadatak na jedan
-odabir redaka i jedan prosjek. U paru mijenjajte uloge autora i provjeravatelja.
-Osnovni izlaz vježbe 2.3 može biti godišnja tablica i jedan dobro označen graf.
-Drugi graf je nastavak za brže polaznike. Pripremljene izlaze koristite za
-provjeru i nastavak rasprave, a u bilješkama označite da je polaznik koristio pripremljeno rješenje.
+## Kad poželite dalje {#napredni-dio-nakon-radionice}
 
-U zadnjih deset minuta svakog bloka usporedite dva studentska izlaza i
-zatražite razlog jedne odluke. Odvojite vrijeme da polaznici objasne pronađenu pogrešku i način ispravka.
+Za nastavak možete isprobati agenta, bilježnicu ili regresijski primjer
+iz `code/optional_hac.R`. Regresijski dio pretpostavlja poznavanje
+vremenske ovisnosti i statističkog zaključivanja.
 
-## Napredni dio nakon radionice
+Istraživanje medijskih tekstova traži vlastitu zbirku, definiciju mjere
+i način provjere rezultata. To može postati novi zajednički projekt.
 
-Opcionalni HAC primjer nalazi se u `code/optional_hac.R`. Primjeren je tek
-kada polaznik razumije regresiju, vremensku ovisnost i ograničenja statističkog zaključivanja.
-Za panel-analizu, sustavno istraživanje specifikacija ili prognoziranje
-s provjerom točnosti na kasnijim podacima planirajte zaseban susret.
-
-Medijski indeks iz izvornog materijala može postati drugi slučaj tek uz
-stvarni korpus, definiciju indeksa, provjeru prava uporabe, kod i referentne
-rezultate. Za taj slučaj koristite provjerene podatke s jasno navedenim izvorom.
-
-## Status ove revizije
-
-Materijali su programski i vizualno provjereni. Pilot s polaznicima još
-treba provesti. Termin i kontakt za novu izvedbu treba potvrditi. Stari HTML/PDF izvozi
-i stare najave ostaju povijesni materijal izvan novog weba i radnog paketa.
-Čitateljski materijali služe samostalnom čitanju i radu uz vježbe. Raspored i vježbe služe
-vođenju susreta. Kratki prezentacijski sažeci mogu se razviti nakon pilota.
-
-[Dnevni raspored](workshop_overview.qmd) · [Rješenja](../materials/solutions.qmd) ·
-[Rubrika](../materials/rubric.qmd)
+[Rješenja](../materials/solutions.qmd) · [Osvrt na rad](../materials/rubric.qmd)

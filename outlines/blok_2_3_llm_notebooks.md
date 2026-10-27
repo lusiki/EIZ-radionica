@@ -1,11 +1,11 @@
-# 2.3 Popravak i čisto izvođenje
+# 2.3 Ponovite analizu od početka
 
-Aktivni plan, [radni list](../materials/exercises/index.qmd#v23).
-Čitateljski materijal, [dan 2](../slides/day2.qmd).
+[Kratki pregled](../slides/day2.qmd#blok-23) ·
+[Priručnik](../booklet/day2.qmd#poglavlje-23) ·
+[Vježba](../materials/exercises/index.qmd#v23)
 
-45 minuta, 10 demonstracija, 25 rad polaznika, 10 zajednička provjera.
-Ulazi, predaja, kriteriji i pitanja za raspravu nalaze se na radnom listu.
-Ondje je jedini aktivni izvor uputa. [Rješenja](../materials/solutions.qmd).
+Otvorite vježbu za konkretan primjer, a priručnik za šire objašnjenje.
+[Primjeri rješenja](../materials/solutions.qmd) mogu pomoći kad zapnete
+ili želite usporediti postupak.
 
-Naziv datoteke zadržan je radi starih poveznica. Blok više nije organiziran
-oko pojedinog proizvoda. Izvorni plan dostupan je u povijesti Gita.
+Naziv datoteke čuva stare poveznice. Izvorni plan nalazi se u povijesti Gita.

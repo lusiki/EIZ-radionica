@@ -7,9 +7,8 @@ an unchanged historical facsimile. The source is commit
 The historical source remains in Git. The original HTML/PDF exports are
 untouched. No new event date, institutional approval or licence is asserted.
 
-The reader preserves all eight original topic blocks and their main
-teaching sequences. It restores the reading depth separately from the
-short classroom guides. Repetition, promotional language, unsupported
+The reader connects eight topics with the short day guides and practical
+exercises. It provides the extended explanations behind each example. Repetition, promotional language, unsupported
 statistics and outdated UI recipes were condensed or replaced. Original
 examples with unverified findings were changed into hypothetical research
 extensions or connected to the frozen Croatian teaching dataset.
@@ -36,7 +35,7 @@ the chapter files, PDF builder, font licences and the generated PDF.
 `scripts/build.ps1` builds the PDF before packaging and rendering the site.
 Set `EIZ_PYTHON` to a Python executable with `reportlab` installed if it is
 not on PATH. On this workstation the build can also discover the bundled
-Codex Python runtime. Student analysis does not require Python or ReportLab.
+Codex Python runtime. The basic R examples run independently of Python and ReportLab.
 To rebuild only the PDF, run `python scripts/build_booklet.py` from the root.
 
 `scripts/check_booklet.py` checks chapter coverage in the PDF, metadata,
@@ -58,9 +57,8 @@ corpus. No such verified corpus is bundled. Those numerical claims are
 not revived. No synthetic media observations replace them. The printed
 correlations refer only to the frozen official 2015–2024 teaching data.
 
-The optional reading exercises do not add to classroom timing, assessment
-requirements or the eight core worksheets. Student-facing revision notes
-are on `index.qmd`. This file records the editorial mapping for maintainers.
+The optional reading exercises offer further ways to explore the examples.
+Revision notes for readers are on `index.qmd`. This file records the editorial mapping for maintainers.
 
 ## Prose edit, 27 October 2026
 
@@ -72,3 +70,11 @@ prose remains neutral. Methodological distinctions and cautions are retained.
 Code, quoted examples, link targets and YAML metadata were checked against
 the previous commit and left unchanged. The documentation verification
 date above still refers to the factual review, not this language edit.
+
+## Workshop tone, 27 October 2026
+
+The day guides, exercises and shared reader now use an open workshop format.
+Repeated teacher/student roles, fixed timings, word counts and grading
+criteria were replaced with practical suggestions and questions for reflection.
+The eight headings, crosslinks, source verification and numerical examples
+remain connected. Both HTML and PDF are rebuilt from these sources.

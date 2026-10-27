@@ -1,23 +1,13 @@
 ## 2.3 Ponovite analizu od početka {#poglavlje-23}
 
-**Nastavnik pokazuje · 10 minuta.** Otvorite pripremljenu pogrešnu skriptu i objasnite jedan problem u postupku. Na kratkom ispravnom primjeru pokažite spremanje, novu R sesiju i ponovno izvođenje.
-
-**Studenti rade · 25 minuta.** Pronađite najmanje četiri problema i sastavite ispravnu skriptu. Izradite godišnju tablicu i graf, pokrenite sve od početka i usporedite jedan broj s referentnim rezultatom.
-
-**Zajednička provjera · 10 minuta.** Pokažite rezultat iz nove sesije i objasnite jedan ispravljeni korak.
-
-**Rezultat bloka.** Popis pogrešaka, ispravna skripta i ponovno dobiveni rezultati.
-
-[Blok 2.3 u nastavi](../slides/day2.qmd#blok-23) · [Vježba 2.3 i predaja](../materials/exercises/index.qmd#v23)
-
-**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
+[Dan 2, tema 2.3](../slides/day2.qmd#blok-23) · [Vježba 2.3](../materials/exercises/index.qmd#v23)
 
 ### Od provjerene izmjene do cijele analize
 
 U vježbi 2.2 dopunili ste skriptu i provjerili jedan izračun. Sada provjerite
 cijeli postupak. U istom projektu otvorite `code/flawed_example.R`.
-Pročitajte ga i zabilježite najmanje četiri problema, uz pravilo iz plana
-ili rječnika podataka koje svaki korak treba poštovati.
+Pročitajte ga i zabilježite korake koji mijenjaju uzorak ili značenje mjere.
+Usporedite ih sa svojim planom i rječnikom podataka.
 
 Sastavite ispravnu skriptu koja učitava svih 120 mjeseci, čuva jedinice
 i izrađuje godišnju tablicu te odvojene vremenske grafove. Početnici mogu
@@ -31,7 +21,7 @@ Izvedite naredbe redom od početka. Provjerite broj mjeseci, godišnju tablicu
 i oznake na grafovima. Jednu vrijednost usporedite s referentnim rezultatima.
 
 Ako izvođenje stane, pronađite korak koji treba dopuniti, spremite izmjenu
-i ponovno pokrenite cijelu skriptu. Predajte popis pogrešaka, ispravnu
+i ponovno pokrenite cijelu skriptu. Sačuvajte bilješke o pogreškama, ispravnu
 skriptu i rezultate dobivene u novoj sesiji. Iz njih ćete u vježbi 2.4
 napisati zaključak.
 
@@ -155,12 +145,12 @@ podatke i započeti zaseban projekt.
 
 Preuzmite skriptu ili bilježnicu, potrebne ulazne podatke ako to dopuštaju
 uvjeti uporabe, tablicu rezultata i graf. Dodajte opis koraka, verzije
-važnih paketa i bilješku o AI pomoći. Predajte datoteke iz kojih druga osoba može provjeriti brojeve
+važnih paketa i bilješku o AI pomoći. Sačuvajte datoteke iz kojih druga osoba može provjeriti brojeve
 i ponoviti postupak s drukčijim pretpostavkama.
 
 Iz razgovora sačuvajte odluke i zapise potrebne za provjeru rada.
-Pri spremanju vodite računa o pravilima kolegija i zaštiti podataka.
-Razgovori mogu sadržavati osobne podatke i sadržaj koji vam više ne treba. Primjer
+U zajedničku mapu spremite dijelove razgovora važne za analizu.
+Osobne podatke čuvajte zasebno. Primjer
 korisne bilješke, „Model je predložio interpolaciju. Odbijena je jer
 zamrznuti skup nema praznina i takva transformacija nije dio plana.”
 
@@ -178,7 +168,7 @@ možete li objasniti svaku transformaciju, gdje se sprema kod i može li
 ga druga osoba pokrenuti? Ako ste brže dobili graf, a ne možete doći
 do koda, dobitak može nestati pri pisanju završnog rada.
 
-### Za samostalni rad nakon radionice
+### Ako želite nastaviti
 
 Napišite kratak pregled podataka s pet pitanja iz ovog poglavlja.
 Spremite prihvaćeni kod, ponovno pokrenite okruženje i izvedite ga od
@@ -197,7 +187,7 @@ možete razmotriti OLS regresiju. Jednostavan model s konstantom glasi
 
 $$y_t = \alpha + \beta x_t + u_t.$$
 
-U nastavnom dodatku $y_t$ je ostvarena inflacija, a $x_t$ saldo očekivanja
+U dodatnom primjeru $y_t$ je ostvarena inflacija, a $x_t$ saldo očekivanja
 u istom mjesecu. Koeficijent opisuje linearnu povezanost u tom modelu.
 Anketno pitanje gleda unaprijed, a ova regresija uspoređuje vrijednosti
 iz istog mjeseca. Za prognozu treba uskladiti cilj, horizont i dostupnost

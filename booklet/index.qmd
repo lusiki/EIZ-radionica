@@ -29,7 +29,7 @@ i pripremiti izvediv plan analize.
 [Čitajte prvi dio](day1.qmd)
 :::
 ::: {.step-link}
-## 02 / Od podataka do obranjivog zaključka
+## 02 / Od podataka do zaključka
 
 Kako provjeriti podatke, dopuniti kod, ponoviti cijelu analizu
 iz spremljene skripte i napisati zaključak.
@@ -38,11 +38,11 @@ iz spremljene skripte i napisati zaključak.
 :::
 :::
 
-## Osam povezanih blokova
+## Osam povezanih tema {#osam-povezanih-blokova}
 
 Isti broj i naslov pratite na stranici dana, u priručniku i u vježbama.
 
-| Blok u nastavi | Priručnik | Zadatak |
+| Tema | Priručnik | Isprobajte |
 |---|---|---|
 | [1.1 Postavite istraživačko pitanje](../slides/day1.qmd#blok-11) | [Poglavlje 1.1](day1.qmd#poglavlje-11) | [Vježba 1.1](../materials/exercises/index.qmd#v11) |
 | [1.2 Pronađite i provjerite izvore](../slides/day1.qmd#blok-12) | [Poglavlje 1.2](day1.qmd#poglavlje-12) | [Vježba 1.2](../materials/exercises/index.qmd#v12) |
@@ -64,10 +64,10 @@ Isti broj i naslov pratite na stranici dana, u priručniku i u vježbama.
   dokumenata. Uklonjene su zastarjele rang-liste i obećanja o kvotama.
 - Razjašnjeni su anketni saldo, vremenske serije, korelacija, uzročnost,
   prognoza, p-vrijednosti i granice HAC standardnih pogrešaka.
-- Demonstracije koriste isti hrvatski skup. Medijski korpus i napredni
+- Primjeri koriste iste hrvatske podatke. Medijski korpus i napredni
   panel modeli ostaju jasno označeni nastavci s dodatnim preduvjetima.
 
-Za rad u učionici koristite [kratki prvi dan](../slides/day1.qmd),
+Za brzi pregled otvorite [kratki prvi dan](../slides/day1.qmd),
 [kratki drugi dan](../slides/day2.qmd) i [radne listove](../materials/exercises/index.qmd).
 Za provjeru brojeva otvorite [rječnik podataka](../data/dictionary.qmd)
 i [referentne rezultate](../materials/results.qmd).

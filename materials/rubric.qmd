@@ -1,35 +1,34 @@
 ---
-title: "Predaja i vrednovanje"
-subtitle: "Kriteriji za provjeru istraživačkog rada"
+title: "Pogledajte što ste dobili"
+subtitle: "Nekoliko pitanja za osvrt na vlastiti rad"
 ---
 
-Predajte jednu mapu s pitanjem i planom, tri dokazna zapisa, R skriptom,
-grafom ili tablicom, tekstom od približno 200 riječi i zapisom uporabe AI-ja.
-Sačuvajte tekst prije i nakon jezičnog uređivanja. Za podatke je dovoljno navesti da koristite nastavni paket.
+Kad povežete pitanje, izvore, kod i kratak zaključak, imate mali
+istraživački primjer kojem se možete vratiti ili ga podijeliti s nekim.
 
-## Rubrika
+## Prođite kroz rezultat {#rubrika}
 
-Svaka dimenzija nosi od 0 do 2 boda, ukupno 10. Za radionicu predlažemo
-prag od 8 bodova, uz najmanje 1 bod u svakoj dimenziji. Taj prag treba
-provjeriti u pilotu s polaznicima. Ocjenjivanje na kolegiju određuje
-nastavnik prema pravilima kolegija.
+Otvorite svoje bilješke, skriptu i graf. Pokušajte objasniti kako ste
+od početnog pitanja došli do završnog odlomka.
 
-| Dimenzija | 0 bodova | 1 bod | 2 boda |
-|---|---|---|---|
-| Dokazi | Izvori nisu provjereni ili ne podupiru tvrdnje | Postoji provjera uz nepotpune oznake stranica ili odjeljaka ili ograničenja | Tri izvora, točni odjeljci, odgovarajuće tvrdnje i granice |
-| Metoda | Pogrešan uzorak, jedinica ili nerazjašnjena transformacija | Većina odluka je primjerena, jedna nije objašnjena | Pitanje, uzorak, jedinice i obrada potpuno su usklađeni |
-| Ponovljivost postupka | Skripta se ne može pokrenuti od početka | Izvršava se uz ručni nedokumentirani korak | Nova sesija daje navedeni rezultat iz priloženih podataka |
-| Tumačenje | Izmišljeni broj ili neosnovana uzročna tvrdnja | Točan opis uz nedovoljno ograničenje | Brojke se slažu s izlazima. Navedene su granice zaključka |
-| Način rada | Nije moguće razlučiti podrijetlo teksta/koda | Opća izjava bez konkretne provjere | Zabilježeni alat ili rad bez AI-ja, izmjene i neovisna provjera |
+- Koji izvor podupire važnu tvrdnju i gdje se nalazi taj dio teksta?
+- Što mjere stopa HICP-a i anketni saldo?
+- Dobivate li iste rezultate kad skriptu pokrenete u novoj sesiji?
+- Možete li broj iz odlomka pronaći u tablici ili grafu?
+- Što vam rezultat govori, a što biste htjeli dodatno istražiti?
+- Koji vam je AI prijedlog pomogao i kako ste ga provjerili?
 
-## Završna samoprovjera
+## Isprobajte s nekim drugim {#završna-samoprovjera}
 
-- Može li kolega pronaći odlomak koji podupire svaku važnu tvrdnju?
-- Razlikujem li stopu inflacije od anketnog salda?
-- Radi li skripta iz nove sesije bez ručnog popravljanja podataka?
-- Slaže li se svaka brojka u tekstu s tablicom ili grafom?
-- Jesam li opisao ograničenja analize?
-- Je li jasno što sam prihvatio od AI-ja i kako sam to provjerio?
+Dajte kolegi svoju skriptu i bilješke. Pogledajte može li pratiti
+postupak i pronaći rezultat koji opisujete. Njegova pitanja često pokažu
+gdje bi koristilo dodati objašnjenje.
 
-Povratna informacija o zadovoljstvu radionicom korisna je za organizaciju,
-a razumijevanje gradiva procjenjujemo pregledom predanih radova.
+## Sačuvajte ono što će vam koristiti
+
+Pitanje, izvore, skriptu, tablicu ili graf i zaključak držite u istoj
+radnoj mapi. Kratka bilješka o korištenom alatu i važnim izmjenama
+olakšat će nastavak rada.
+
+[Primjer rješenja](solutions.qmd) · [Referentni rezultati](results.qmd) ·
+[Povratak na vježbe](exercises/index.qmd)

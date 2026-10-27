@@ -1,16 +1,6 @@
 ## 1.3 Provjerite i uredite sažetak {#poglavlje-13}
 
-**Nastavnik pokazuje · 10 minuta.** Otvorite pripremljeni pogrešan sažetak. Pokažite kako tvrdnju o saldu uspoređujete s definicijom mjere i napišite jednu ispravnu rečenicu.
-
-**Studenti rade · 25 minuta.** Označite najmanje četiri problema, provjerite ih u izvorima i napišite ispravak od 80–120 riječi.
-
-**Zajednička provjera · 10 minuta.** Usporedite početnu i ispravljenu tvrdnju te objasnite promjenu značenja.
-
-**Rezultat bloka.** Označen izvorni sažetak i vlastiti ispravak.
-
-[Blok 1.3 u nastavi](../slides/day1.qmd#blok-13) · [Vježba 1.3 i predaja](../materials/exercises/index.qmd#v13)
-
-**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
+[Dan 1, tema 1.3](../slides/day1.qmd#blok-13) · [Vježba 1.3](../materials/exercises/index.qmd#v13)
 
 ### Od izvora do ispravljenog sažetka
 
@@ -19,9 +9,8 @@ Za svaku rečenicu utvrdite što tvrdi, na koji se izvor oslanja i koju
 mjeru opisuje. Primjerice, saldo od 20 izražen je u bodovima salda.
 Tu definiciju unesite u ispravljenu rečenicu.
 
-Označite najmanje četiri problema. Uz svaki zapišite razlog i izvor,
-zatim napišite ispravak od 80–120 riječi. Dodajte dvije rečenice o
-izostavljenim objašnjenjima. Provjerene formulacije i otvorena pitanja
+Označite probleme koje uočite. Uz svaki zapišite razlog i izvor,
+zatim sastavite kratak ispravak. Dodajte što biste još htjeli razumjeti. Provjerene formulacije i otvorena pitanja
 iskoristit ćete u planu analize iz vježbe 1.4.
 
 ### Dodatno čitanje / pregled više izvora uz Gemini Deep Research
@@ -123,7 +112,7 @@ ali svaka tvrdnja u završnom pregledu treba imati mjesto u vašem dokaznom
 zapisu. Kada pišete, uspoređujte radove po doprinosu pitanju umjesto da
 prepričavate jedan za drugim.
 
-### Povezivanje s nastavnim skupom
+### Povezivanje s našim podacima
 
 Za osnovni zadatak proučite
 HICP i anketni saldo, odredite opisno pitanje i odlučite što ćete
@@ -136,7 +125,7 @@ korelaciju vrijednosti iz istog mjeseca. Panel-model, analiza medijskih tekstova
 mogu biti zasebni nastavci istraživanja. Za svako proširenje prije kodiranja odredite koji dodatni podaci
 i metodološko obrazloženje nedostaju.
 
-### Za samostalni rad nakon radionice
+### Ako želite nastaviti
 
 Sastavite plan za vlastito pitanje i napišite što bi vas navelo da ga
 promijenite. Ako imate pristup istraživačkom načinu rada, pokrenite ga.
@@ -144,6 +133,6 @@ Dok čekate, provjerite jedan već pronađeni izvor. Odvojite dovoljno
 vremena za čitanje i provjeru izvora.
 
 Kada izvješće stigne, provjerite tri ključne tvrdnje, zabilježite jednu
-prazninu i napišite vlastiti sažetak na jednoj stranici. Razdvojite
+prazninu i napišite vlastiti kratki sažetak. Razdvojite
 potvrđeno, vjerojatno i zasad nepoznato. Ako nemate pristup alatu, napravite
 isti plan i sažetak iz tri početna izvora radionice. Uz sažetak sačuvajte bilješke iz kojih je vidljivo na što se oslanjate.

@@ -87,7 +87,7 @@ obavlja polaznik. [Vježba 1.2](../materials/exercises/index.qmd#v12) završava
 s tri zapisa u predlošku dokaza: mjerenje HICP-a, mjerenje očekivanja i
 ograničenje zajedničke analize.
 
-## 1.3 Sažetak koji preživi provjeru {#blok-13}
+## 1.3 Provjera sažetka {#blok-13}
 
 Dobar sažetak razlikuje rezultat, tumačenje i otvoreno pitanje. Usporedite
 svaku njegovu rečenicu s izvornim tekstom. Tražite promjenu zemlje ili
@@ -121,10 +121,10 @@ vrijednosti, planirane prikaze i granice tumačenja. Naš je osnovni zadatak
 opisni: dvije vremenske serije prikazujemo na odvojenim osima te računamo
 godišnje sažetke. Korelacija je dodatni opis istodobnog kretanja.
 
-Nećemo izmišljati nedostajući medijski indeks niti anketni saldo preimenovati
-u očekivanu stopu inflacije. Izvorni primjer o medijima i HNB-u može se vratiti
-kao napredni slučaj kada su dostupni korpus, pravo uporabe, definicija indeksa
-i kod za njegovu izradu. Hrvatska u više mjeseci čini vremensku seriju;
+Za istraživanje medija i komunikacije HNB-a trebali biste pribaviti korpus,
+provjeriti pravo uporabe te definirati indeks i napisati kod za njegovu
+izradu. To je mogući napredni zadatak. U ovom paketu imamo anketni saldo,
+koji se ne smije preimenovati u očekivanu stopu inflacije. Hrvatska u više mjeseci čini vremensku seriju;
 panel bi zahtijevao i više jedinica promatranja.
 
 ::: {.prompt-box}
@@ -139,7 +139,7 @@ Puko traženje da AI „opravda Newey–West” potiče potvrđivanje već odabr
 metode. Najprije odredite cilj, zatim pretpostavke i postupak. Pitanje o
 predviđanju zahtijevalo bi vremensko razdvajanje treninga i evaluacije te
 usporedbu s osnovnom prognozom. Pitanje o uzroku traži dodatnu strategiju
-identifikacije. Ni jedno ne rješavamo samo crtanjem dviju linija.
+identifikacije. Naša opisna usporedba dviju serija ne odgovara na ta pitanja.
 
 [Vježba 1.4: plan analize](../materials/exercises/index.qmd#v14).
 
@@ -147,5 +147,4 @@ identifikacije. Ni jedno ne rješavamo samo crtanjem dviju linija.
 
 Spremite pitanje, tri provjerena zapisa i plan analize. Pokrenite provjeru
 iz [uputa za početak](../admin/prerequisites.qmd). Ako AI servis nije dostupan,
-koristite pripremljene primjere. Cilj je isti: pokazati trag od izvora do
-odluke koju možete objasniti.
+koristite pripremljene primjere. Uz svaku odluku zabilježite na koji se izvor oslanjate i zašto ste je donijeli.

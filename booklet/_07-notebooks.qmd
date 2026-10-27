@@ -20,48 +20,45 @@ bilježnice. Pristup ovisi o računu i dostupnosti funkcije. Za učenje
 je važnije razumjeti što je izvršeno nego pamtiti koji se model nalazi
 u pozadini pojedinog proizvoda.
 
-Bilježnica nije nužno samo privremena skica. Može biti kvalitetan završni
-istraživački dokument ako uključuje sav potreban kod, opis ulaza i
-okruženja te se može izvršiti pravilnim redom. Suprotno tome, ni skripta
-u repozitoriju nije automatski reproducibilna. Presudni su sadržaj i
-provjeren postupak, a ne naziv formata.
+Bilježnicu možete predati kao završni istraživački dokument ako sadrži
+sav potreban kod, opis ulaza i okruženja te se može izvršiti pravilnim
+redom. Iste uvjete treba zadovoljiti i skripta u repozitoriju.
+Reproducibilnost provjeravate ponovnim izvođenjem spremljenog postupka.
 
 ### Pet pitanja za eksploraciju
 
-U izvornom materijalu demonstracija je naglo prelazila na američke
-podatke o komunikaciji središnje banke. Ovdje nastavljamo s istih 120
-hrvatskih mjeseci kako biste mogli usporediti različite načine rada
-bez istodobnog učenja novog skupa podataka.
+Koristite istih 120 mjeseci za Hrvatsku. Tako možete usporediti rad
+u bilježnici s radom u skripti na već poznatim podacima.
 
-**Prvo pitanje: što je učitano?** Prikažite broj opažanja, nazive i tipove
+Prvo pitanje: što je učitano? Prikažite broj opažanja, nazive i tipove
 stupaca, nekoliko redaka te vremenski raspon. Usporedite odgovor modela
 sa stvarnom tablicom. Ako model saldo nazove „očekivanom inflacijom u
 postocima”, ispravite definiciju prije bilo kakvog grafa.
 
-**Drugo pitanje: kako se mjere kreću kroz vrijeme?** Zatražite dva panela
+Drugo pitanje: kako se mjere kreću kroz vrijeme? Zatražite dva panela
 sa zajedničkom vremenskom osi. Jasno navedite jedinice i razdoblje.
 Provjerite da kronološki redoslijed nije zamijenjen abecednim ili
 redoslijedom nastanka objekata. U ovom skupu tekstualni format YYYY-MM
 omogućuje kronološko sortiranje, ali to nije svojstvo svakog formata datuma.
 
-**Treće pitanje: kakav je raspon i raspodjela?** Sažetak i histogram
+Treće pitanje: kakav je raspon i raspodjela? Sažetak i histogram
 otkrivaju različite stvari. Histogram prikazuje raspodjelu, ali skriva
 vremenski slijed; vremenski graf čuva slijed, ali slabije pokazuje koliko
 je često pojedina vrijednost zastupljena. Koristite ih za različita
 pitanja. Minima i maksima ne proglašavajte pogreškama bez provjere izvora.
 
-**Četvrto pitanje: koliko je sažetak osjetljiv na razdoblje?** Izračunajte
+Četvrto pitanje: koliko je sažetak osjetljiv na razdoblje? Izračunajte
 korelaciju za cijeli uzorak i dva unaprijed navedena podrazdoblja.
 Objasnite da se uspoređuju isti mjeseci dviju serija. Ako želite ispitati
 vremenski odmak, napišite koju varijablu pomičete, u kojem smjeru i zašto.
 Nemojte iskušavati odmake dok ne dobijete najveći koeficijent i prikazati
 ga kao jedini rezultat.
 
-**Peto pitanje: što je sljedeće istraživačko pitanje?** Eksploracija može
+Peto pitanje: što je sljedeće istraživačko pitanje? Eksploracija može
 otvoriti hipotezu o razlikama između razdoblja, ali ne daje automatski
 njezinu potvrdu. Zapišite kada je ideja nastala i kakvi su dodatni podaci
-ili dizajn potrebni. AI prijedlog da dodate medijski ton nije rezultat
-postojeće tablice, nego mogući novi projekt.
+ili dizajn potrebni. Za AI prijedlog da dodate medijski ton morali biste prikupiti nove
+podatke i započeti zaseban projekt.
 
 ### Skriveno stanje: zašto dokument radi samo vama
 
@@ -72,16 +69,14 @@ Na ekranu tada vidite uredan niz rezultata koji ne odgovara redoslijedu
 koda u spremljenom dokumentu. To je problem skrivenog stanja.
 
 AI ga može dodatno zamagliti ako kaže da je „ponovno izračunao sve”,
-a izmijeni samo jednu ćeliju. Rješenje je konkretno: spremite dokument,
+a izmijeni samo jednu ćeliju. Spremite dokument,
 ponovno pokrenite jezgru i izvršite sve ćelije od početka. Provjerite
 rezultate i spremite ih nakon uspješnog izvođenja. Ako postupak ne radi,
 pronađite nedostajući korak umjesto da se oslonite na staru sliku.
 
 Isti problem postoji u interaktivnoj R konzoli. Objekt iz jučerašnje
-sesije može omogućiti današnjoj nepotpunoj skripti da radi. Zato radionica
-traži pokretanje spremljenog postupka od početka. Uspješno ponovno
-izvođenje s poznatim ulazom uvjerljivije je od dugog razgovora o tome
-što je navodno napravljeno.
+sesije može omogućiti današnjoj nepotpunoj skripti da radi. Zato spremljeni postupak pokrenite od početka s poznatim ulaznim
+podacima i provjerite dobivene rezultate.
 
 ### Reproducirati analizu nije isto što i ponoviti prompt
 
@@ -98,9 +93,8 @@ i način obnove okruženja. [renv](https://rstudio.github.io/renv/articles/renv.
 pomaže upravljanju R paketima, ali sama zaključana lista paketa ne jamči
 prisutnost svih sistemskih biblioteka, podataka ili vanjskih usluga.
 
-Ne trebate automatski uvoditi Docker i složenu infrastrukturu u svaki
-studentski zadatak. U ovom osnovnom primjeru dovoljne su javne spremljene
-datoteke i osnovni R. Složeniji projekti mogu tražiti izolirano okruženje
+Za ovaj osnovni primjer dovoljne su javne spremljene datoteke i osnovni
+R; Docker nije potreban. Složeniji projekti mogu tražiti izolirano okruženje
 i automatizirane provjere. Razina infrastrukture treba odgovarati
 stvarnim ovisnostima i riziku gubitka postupka.
 
@@ -112,17 +106,17 @@ važnih paketa i bilješku o AI pomoći. Nemojte kao jedini dokaz predati
 snimku ekrana razgovora. Ona ne omogućuje provjeru brojeva ni promjenu
 pretpostavki.
 
-Spremanje svih razgovora bez razlike također nije cilj. Mogu sadržavati
-osobne podatke ili nepotreban sadržaj. Sačuvajte relevantne odluke i
-potreban dokazni trag, uz pravila kolegija i zaštitu podataka. Primjer
+Iz razgovora sačuvajte odluke i zapise potrebne za provjeru rada.
+Pri spremanju vodite računa o pravilima kolegija i zaštiti podataka:
+razgovori mogu sadržavati osobne podatke i sadržaj koji vam više ne treba. Primjer
 korisne bilješke: „Model je predložio interpolaciju; odbijena je jer
 zamrznuti skup nema praznina i takva transformacija nije dio plana.”
 
 ### Usporedite tri načina rada
 
-Agent je praktičan za dobro ograničen zadatak nad više datoteka. Editor
-je praktičan kada želite pratiti i učiti male promjene. Bilježnica je
-praktična kada pitanja, kod i komentari trebaju stajati zajedno. Sve
+Agentu možete zadati ograničen posao nad više datoteka. U editoru je
+lakše pratiti male promjene koda dok učite, dok bilježnica drži pitanje,
+kod i komentar na jednom mjestu. Sve
 tri mogućnosti mogu biti transparentne ili nepregledne, ovisno o načinu
 uporabe. Ni jedna nema zajamčenu razinu kontrole ili reproducibilnosti.
 
@@ -142,5 +136,4 @@ Zabilježite što mu je nedostajalo.
 
 Vježba završava kratkim odgovorom na dva pitanja: što se može ponoviti
 iz spremljenih datoteka i što još ovisi o vama ili vanjskoj usluzi?
-Time spremate analizu za pisanje, gdje čitatelju treba pokazati i nalaz
-i način na koji ste do njega došli.
+Preostale ovisnosti navedite u uputama uz predanu analizu.

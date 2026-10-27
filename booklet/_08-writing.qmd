@@ -5,22 +5,19 @@
 Zamislite da ste prikupili podatke, provjerili skriptu i izradili graf.
 Sjednete pisati i shvatite da ne znate objasniti što ste otkrili. Odlomak
 zvuči kao dnevnik naredbi, zaključak obećava više nego što analiza daje,
-a čitatelj ne vidi vezu između pitanja i rezultata. Upravo zato pisanje
-nije samo posljednji korak. Ono vas prisiljava razlikovati što znate,
-što pretpostavljate i što još ne možete tvrditi.
+a čitatelj ne vidi vezu između pitanja i rezultata. Pri pisanju se zato vraćate na analizu: što ste utvrdili, što
+pretpostavljate i što još ne možete tvrditi?
 
 AI može pomoći kao čitatelj nacrta: označiti nejasan pojam, predložiti
-redoslijed i upozoriti na rečenicu bez potpore. To je korist koju zadržavamo
-iz izvornog materijala. Ne trebamo je opravdavati nepotvrđenim postotkom
-uštede vremena ili tvrdnjom da svaki alat jednako dobro uređuje svaki
-jezik. Mjerite poboljšanje na vlastitom tekstu i uključite vrijeme provjere.
+redoslijed i upozoriti na rečenicu bez potpore. Procijenite pomažu li komentari vašem tekstu i koliko vam vremena
+treba da ih provjerite. Kvaliteta jezičnog uređivanja može se razlikovati
+među alatima i jezicima.
 
 Korinekov [pregled primjena u ekonomskim istraživanjima](https://www.aeaweb.org/articles?id=10.1257/jel.20231736)
 razlikuje ideaciju i povratne informacije, pisanje, pozadinsko istraživanje,
-analizu podataka, programiranje i matematičke derivacije. To je koristan
-popis zadataka za razmišljanje o podjeli rada. Nije dokaz trajne rang-liste
-ljudskih i strojnih sposobnosti, niti opće dopuštenje da bilo koji zadatak
-prepustite modelu bez provjere.
+analizu podataka, programiranje i matematičke derivacije. Taj popis pomaže odrediti za koji biste zadatak tražili pomoć.
+Ne rangira trajno ljudske i strojne sposobnosti, a svaki preuzeti
+prijedlog i dalje treba provjeriti.
 
 ### Opseg pomoći i pravila zadatka
 
@@ -44,7 +41,7 @@ objasnite njegovu relevantnost.
 
 ### Šest obrazaca koje možete prilagoditi
 
-**1. Jasnoća i stil.** Dajte vlastiti odlomak i zatražite uklanjanje
+1\. Jasnoća i stil. Dajte vlastiti odlomak i zatražite uklanjanje
 nepotrebnih riječi, objašnjenje nejasnih izraza i popis promjena. Izričito
 zadržite brojke, jedinice i razinu sigurnosti. „HNB je često u medijima”
 ne smije postati „empirijski podaci pokazuju pozitivnu korelaciju” ako
@@ -54,30 +51,30 @@ takvu analizu niste proveli.
 > Sačuvaj jedinice i razliku između povezanosti i uzročnosti. Najprije
 > navedi probleme, zatim predloži izmjene i objasni svaku bitnu promjenu.
 
-**2. Kritika argumenta.** Tražite logičke praznine, skrivene pretpostavke
+2\. Kritika argumenta. Tražite logičke praznine, skrivene pretpostavke
 i moguće alternativno objašnjenje. Ako odlomak povezuje očekivanja i
 inflaciju, model može upozoriti na zajedničke šokove ili obrnuti smjer
 povezanosti. Vi provjeravate jesu li prigovori relevantni za konkretan
 dizajn. Ne trebate prihvatiti svaki prigovor samo zato što je strogo napisan.
 
-**3. Prijelaz između odlomaka.** Dajte dva susjedna odlomka i zatražite
+3\. Prijelaz između odlomaka. Dajte dva susjedna odlomka i zatražite
 rečenicu koja objašnjava njihovu vezu. Dobar prijelaz čitatelju govori
 zašto nakon definicije mjere slijedi određeni izračun. Ako ta veza nije
 opravdana, možda treba promijeniti redoslijed ili ukloniti odlomak, a ne
 samo dodati veznu frazu.
 
-**4. Parafraza i atribucija.** Priložite provjereni odlomak i bibliografske
+4\. Parafraza i atribucija. Priložite provjereni odlomak i bibliografske
 podatke. Zatražite prijedlog parafraze koji čuva granice nalaza te
 usporedite ga s izvornikom. Stil citiranja prilagodite uputama rada;
 model ne smije dopuniti nedostajuću godinu, naslov ili DOI nagađanjem.
 
-**5. Usklađenost uvoda i zaključka.** Usporedite pitanje, obećani postupak
+5\. Usklađenost uvoda i zaključka. Usporedite pitanje, obećani postupak
 i zaključnu tvrdnju. Ako uvod najavljuje uzročni učinak medija, a provedena
 je samo opisna usporedba inflacije i salda, problem se rješava promjenom
 pitanja i zaključka ili novim istraživanjem. Dodavanje riječi „možda” ne
 ispravlja neusklađen dizajn.
 
-**6. Radni predložak.** Kada pravila dopuštaju, model može pomoći
+6\. Radni predložak. Kada pravila dopuštaju, model može pomoći
 organizirati vaše točke u nacrt. Nepoznate podatke označite, primjerice
 `[unesi rezultat iz provjerene tablice]`. Predložak nije gotov tekst i
 takve oznake moraju nestati tek nakon stvarne provjere. Za završnu predaju
@@ -91,25 +88,25 @@ sve potrebno, pa vlastiti kontrolni popis i dalje ima smisla.
 
 ### Četiri prolaza kroz tekst
 
-**Prvi prolaz: evaluacija bez prepisivanja.** Pročitajte odlomak s obzirom
+Prvi prolaz: evaluacija bez prepisivanja. Pročitajte odlomak s obzirom
 na pitanje, dokaz, jasnoću i granice zaključka. Zatražite konkretna mjesta
 koja treba popraviti. Ocjena „7 od 10” bez obrazloženja malo pomaže;
 korisniji je komentar „iz ove rečenice nije jasno da je očekivanje mjereno
 kvalitativnim saldom”.
 
-**Drugi prolaz: struktura.** Posložite problem, mjere, postupak, nalaz i
+Drugi prolaz: struktura. Posložite problem, mjere, postupak, nalaz i
 ograničenje. Definirajte pojam prije nego što ga tumačite. Tablicu ili
 graf uvedite rečenicom koja objašnjava što čitatelj treba gledati, a
 nakon prikaza objasnite relevantan nalaz. Nemojte opisivati sve brojeve
 redom ako ne služe pitanju.
 
-**Treći prolaz: usklađivanje snage tvrdnji.** Zamijenite „dokazuje” s
+Treći prolaz: usklađivanje snage tvrdnji. Zamijenite „dokazuje” s
 formulacijom koja točno odgovara dizajnu, a ne s neodređenom ogradom.
 „U uzorku postoji pozitivna linearna povezanost” preciznije je od
 „rezultati sugeriraju statistički značajan utjecaj” kada niste proveli
 odgovarajući test ni identificirali uzročni učinak.
 
-**Četvrti prolaz: jezik i dosljednost.** Provjerite nazive mjera,
+Četvrti prolaz: jezik i dosljednost. Provjerite nazive mjera,
 decimalne oznake, datume, padeže i kratice. Isti konstrukt ne treba
 naizmjenično nazivati percepcijom, očekivanjem i pouzdanjem ako to nisu
 iste varijable. Nakon jezične izmjene ponovno pročitajte značenje, jer
@@ -133,22 +130,21 @@ ograničite zaključak na opisnu povezanost. Završna verzija može glasiti:
 > dviju mjera u istom mjesecu. Saldo nije brojčana prognoza inflacije,
 > a ova usporedba ne identificira uzročni učinak ni prognoznu točnost.
 
-Ovo nije unaprijed zadani zaključak za svaki budući skup. Broj pripada
-zamrznutoj nastavnoj verziji i može se provjeriti skriptom. Kada se
+Broj u ovom odlomku odnosi se na zamrznutu nastavnu verziju i može se
+provjeriti skriptom. Kada se
 promijene podaci, razdoblje ili postupak, ponovno izračunajte i prepišite
 odgovarajući dio. AI ne treba „osvježiti” broj prema sjećanju.
 
 Za temu HNB-ove komunikacije primjeren zaključak u ovom trenutku glasi
 da je riječ o nastavku koji traži dodatne podatke. Ne pišemo da je
-komunikacija usidrila očekivanja, jer to nismo testirali. Dobro istraživanje
-može završiti jasno utvrđenom granicom onoga što podaci dopuštaju.
+komunikacija usidrila očekivanja, jer to nismo testirali. Za tu tvrdnju trebali bismo drukčije podatke i istraživački dizajn.
 
 ### Hrvatski jezik i terminologija
 
 Provjerite stručni naziv u relevantnoj literaturi i dosljedno ga koristite.
 Opći jezični model može pomoći u formulaciji, ali ne jamči pravilno
 padežno slaganje ni stručnu prikladnost. Posebno pregledajte duge rečenice
-u kojima se zajedno pojavljuju nekoliko konstrukata i ograda.
+u kojima se zajedno pojavljuje nekoliko konstrukata i ograda.
 
 [CLASSLA](https://github.com/clarinsi/classla) je skup alata za obradu
 jezika, uključujući jezično označavanje i lematizaciju. To je korisno za
@@ -158,8 +154,8 @@ potvrdu da su sve rečenice gramatički i sadržajno ispravne.
 
 U vlastitom malom pojmovniku zadržite razliku između inflacije i razine
 cijena, salda i postotka, opažanja i ispitanika, korelacije i učinka,
-standardne pogreške i reziduala. Takva dosljednost često više poboljšava
-akademski stil od zamjene običnih riječi složenijima.
+standardne pogreške i reziduala. Ako isti naziv koristite za različite mjere, čitatelj neće moći
+pratiti vaš zaključak.
 
 ### Završna vježba i procjena vlastitog rada
 
@@ -169,13 +165,13 @@ Zatim zatražite komentar po četiri prolaza, prihvatite samo obrazložene
 prijedloge i sačuvajte zapis AI pomoći. Provjerite da svaki citat postoji
 i da svaka brojka odgovara spremljenom izlazu.
 
-Uspjeh ne mjerite brojem promptova, redaka koda ili generiranih stranica.
-Pitajte se možete li objasniti analizu, koliko ste pogrešaka pronašli,
-što druga osoba može reproducirati i koliko je vremena trebalo do
-provjerenog rezultata. To je praktična samoprocjena za radionicu,
-a ne standardizirana psihometrijska skala.
+Za procjenu vlastitog rada zapišite možete li objasniti analizu, koje
+ste pogreške pronašli, što druga osoba može reproducirati i koliko vam
+je vremena trebalo do provjerenog rezultata. Broj upita ili generiranih
+stranica sam ne odgovara na ta pitanja. Ova pitanja služe samoprocjeni
+u radionici; nisu standardizirana psihometrijska skala.
 
-Na kraju dvaju dana trebate imati povezan trag: pitanje, dokazne zapise,
-plan, podatke, skriptu, izlaz i vlastitu interpretaciju. Alati se mogu
-promijeniti. Navika razlikovanja prijedloga od provjerenog zaključka
-ostaje primjenjiva na sljedeći seminarski rad i na ozbiljniji projekt.
+Na kraju spremite pitanje, dokazne zapise, plan, podatke, skriptu,
+izlaz i vlastitu interpretaciju u jednu mapu. Iz nje treba biti jasno
+kako ste došli do zaključka. Isti postupak provjere možete koristiti
+u sljedećem seminarskom radu, čak i ako radite s drugim alatom.

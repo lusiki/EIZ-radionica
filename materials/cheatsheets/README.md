@@ -1,6 +1,6 @@
 # Brzi podsjetnik
 
-1. Pitanje prije alata.
+1. Napišite što želite istražiti prije odabira alata.
 2. Otvorite izvor i pronađite točan odlomak.
 3. Provjerite uzorak, ključ i jedinice.
 4. Objasnite izmjenu prije pokretanja koda.

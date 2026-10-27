@@ -10,9 +10,10 @@ slati ako se referirate na zamrznuti paket.
 
 ## Rubrika
 
-Svaka dimenzija nosi 0–2 boda; ukupno 10. Ovo je nastavna rubrika, a nije
-odluka o ocjeni kolegija. Kao radni prag uspjeha predlaže se 8 bodova, uz
-najmanje 1 bod u svakoj dimenziji. Prag treba provjeriti u pilotu.
+Svaka dimenzija nosi od 0 do 2 boda, ukupno 10. Za radionicu predlažemo
+prag od 8 bodova, uz najmanje 1 bod u svakoj dimenziji. Taj prag treba
+provjeriti u pilotu s polaznicima. Ocjenjivanje na kolegiju određuje
+nastavnik prema pravilima kolegija.
 
 | Dimenzija | 0 bodova | 1 bod | 2 boda |
 |---|---|---|---|

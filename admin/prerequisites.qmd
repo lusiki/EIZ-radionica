@@ -32,8 +32,8 @@ nemojte prepisivati apsolutne putanje u skriptu. Za ovaj korak dovoljan je
 osnovni R, bez dodatnih paketa. Ne morate odmah riješiti zadatke označene TODO.
 
 ::: {.concept-box}
-**Ako nema interneta ili AI servisa.** Podaci i primjeri već su u paketu.
-Upotrijebite pripremljeni sažetak i pogrešan kod. Za vježbu provjere izvora
+Ako nemate internet ili pristup AI servisu, koristite podatke i primjere
+iz paketa: pripremljeni sažetak i pogrešan kod. Za vježbu provjere izvora
 nastavnik treba unaprijed osigurati pristup izvornim dokumentima; bez njih
 zapis ostaje označen kao neprovjeren.
 :::
@@ -51,7 +51,7 @@ source("code/run_all.R", encoding = "UTF-8")
 ```
 
 `renv.lock` bilježi pakete i verziju R-a. Ne instalira sam R ni sistemske
-biblioteke. Za gradnju weba dodatno treba Quarto (provjeren 1.9.38).
+biblioteke. Za izradu web-stranica dodatno treba Quarto (provjeren 1.9.38).
 Nakon obnove paketa analiza radi iz spremljenih izvora bez mrežnog pristupa.
 
 Na Windowsu s pogrešnom varijablom locale skripta za pregled postavlja UTF-8

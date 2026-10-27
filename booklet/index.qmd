@@ -10,10 +10,11 @@ toc: false
 EIZ / čitanje nakon radionice
 :::
 
-## Više od kratkih uputa
+## Čitanje i vježbe za oba dana
 
-Osam poglavlja o izvorima, analizi i pisanju. Temelj je izvorni tekst
-radionice, ažuriran za današnje alate i povezan s provjerljivim primjerom.
+Priručnik u osam poglavlja objašnjava kako tražiti izvore, analizirati
+podatke i pisati rezultate. Primjeri prate hrvatske podatke iz radionice.
+Tekst se temelji na izvornom materijalu, uz ažurirane upute za alate.
 
 [Preuzmite cijeli priručnik (PDF)](../downloads/EIZ-prirucnik.pdf){.btn-workshop}
 :::
@@ -25,7 +26,7 @@ radionice, ažuriran za današnje alate i povezan s provjerljivim primjerom.
 Kako modeli oblikuju odgovor, kako provjeriti literaturu, pripremiti
 dubinsko istraživanje i pretvoriti bilješke u izvediv plan.
 
-[Čitajte prvi dio →](day1.qmd)
+[Čitajte prvi dio](day1.qmd)
 :::
 ::: {.step-link}
 ## 02 / Kodiranje i pisanje
@@ -33,7 +34,7 @@ dubinsko istraživanje i pretvoriti bilješke u izvediv plan.
 Kako surađivati s agentom, pratiti kod u editoru, sačuvati reproducibilan
 postupak i napisati zaključak koji odgovara dokazima.
 
-[Čitajte drugi dio →](day2.qmd)
+[Čitajte drugi dio](day2.qmd)
 :::
 :::
 

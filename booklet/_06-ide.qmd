@@ -9,19 +9,19 @@ okruženje, odnosno IDE, okuplja editor, konzolu i prikaz rezultata. AI
 asistent u njemu može dopuniti kod ili objasniti pogrešku dok vi pratite
 što se izvršava.
 
-Izvorna analogija pomoćnika koji dodaje alat dok vi radite ostaje korisna.
-Prijedlog treba pročitati prije prihvaćanja, a rezultat nakon izvršavanja.
-Pritiskanje tipke za prihvaćanje nije provjera. Ako ne znate što funkcija
+Asistent je ovdje poput pomoćnika koji vam dodaje alat dok radite.
+Pročitajte njegov prijedlog prije prihvaćanja i pregledajte rezultat
+nakon izvršavanja. Ako ne znate što funkcija
 radi, tražite objašnjenje na malom primjeru i usporedite ga s dokumentacijom.
 
-### Ispravljena usporedba okruženja
+### Izbor okruženja
 
 RStudio i Positron mogu poslužiti za ovu radionicu. RStudio ima
 [dokumentiranu integraciju Copilota](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html),
-pa stara tvrdnja da ga ne podržava nije točna. Nema potrebe objašnjavati
-izbor editora netočnom pričom da su cijelo sučelje RStudija i svi njegovi
-procesi jedan R proces. Odvojite pitanje mogućnosti alata od pitanja
-istraživačke metode.
+pa Copilot možete koristiti i u tom okruženju. RStudijevo sučelje i
+njegovi procesi ne svode se na jedan R proces. Pri izboru editora
+provjerite njegove mogućnosti, a istraživačku metodu birajte prema pitanju
+i podacima.
 
 Positron je okruženje za rad s R-om i Pythonom. Njegova
 [dokumentacija proširenja](https://positron.posit.co/extensions.html)
@@ -30,7 +30,7 @@ pretpostaviti da svako proširenje za VS Code radi na isti način. Za ovu
 radionicu važni su otvaranje projektne mape, odabir R-a, čitanje skripte,
 izvršavanje i pregled izlaza. AI dodatak ostaje izborna pomoć.
 
-Konkretna novost provjerena za ovo izdanje: prema
+Prema
 [Positovoj dokumentaciji](https://positron.posit.co/assistant), Posit Assistant
 od verzije Positrona 2026.07 zamjenjuje prethodni Positron Assistant i
 Databot. Stare upute o sučelju mogu se odnositi na stariji proizvod.
@@ -39,24 +39,23 @@ da se dostupni modeli, naredbe i dozvole podudaraju u svakoj instalaciji.
 
 Izbor se može svesti na praktična pitanja: u kojem okruženju znate
 otvoriti projekt, kako vidite izvršeni kod, možete li ponovno pokrenuti
-sve od početka i gdje završavaju izlazne datoteke? Promjena editora sama
-po sebi ne povećava valjanost analize. Dobra radna navika prenosiva je
-između okruženja.
+sve od početka i gdje završavaju izlazne datoteke? U svakom okruženju ostaju iste provjere podataka i postupka; sama
+promjena editora ne čini analizu valjanijom.
 
 ### Tri vrste pomoći koje treba razlikovati
 
-**Linijsko dopunjavanje** predlaže nastavak uz kursor. Korisno je za
+Linijsko dopunjavanje predlaže nastavak uz kursor. Korisno je za
 ponavljajuću sintaksu i male funkcije. Provjerite nazive stupaca, argumente
 i smjer filtra. Prijedlog koji je sintaktički točan može koristiti
 varijablu iz nekog drugog projekta ili pretpostaviti pogrešnu jedinicu.
 
-**Razgovor o kodu** služi objašnjenjima i usmjerenim pitanjima. Umjesto
+Razgovor o kodu služi objašnjenjima i usmjerenim pitanjima. Umjesto
 „popravi sve” navedite poruku o pogrešci, relevantan dio skripte i
 očekivani ishod. Tražite objašnjenje uzroka, a zatim najmanju promjenu
 koja ga rješava. Nemojte izostaviti upozorenje samo zato što se graf ipak
 prikazao.
 
-**Uređivanje i agentsko izvršavanje** mogu zahvatiti više datoteka.
+Uređivanje i agentsko izvršavanje mogu zahvatiti više datoteka.
 Njihova dostupnost ovisi o proizvodu i integraciji. Pregled izmjena,
 dopuštenja i izvršenih naredbi važniji je od opće etikete „IDE” ili
 „agent”. Terminalski alat može omogućiti detaljnu provjeru, a pomoćnik
@@ -110,7 +109,7 @@ U našem slučaju odgovarajuća je oznaka „saldo očekivanih promjena cijena�
 Navedite i da HICP predstavlja godišnju stopu promjene, kako čitatelj ne
 bi pretpostavio mjesečnu promjenu.
 
-### Dijagnosticiranje umjesto nasumičnog popravljanja
+### Kako pronaći uzrok pogreške
 
 Kada kod ne radi, prvo pročitajte poruku i utvrdite u kojem koraku nastaje
 problem. Nedostajuća datoteka često je problem radnog direktorija.
@@ -139,10 +138,9 @@ p-vrijednosti. Način uzorkovanja, pretpostavke o neopaženim razlikama i
 struktura zavisnosti određuju koje su procjene i standardne pogreške
 prikladne.
 
-Takva analiza nije završni korak petnaestominutne početničke vježbe.
-Zadržavamo je kao mogući nastavak, uz mentorovu pomoć i prikladne podatke.
-U osnovnoj radionici važnije je razumjeti malu izmjenu postojećeg koda
-nego prihvatiti veliki model koji ne možete objasniti.
+Za takvu analizu treba više vremena od petnaestominutne početničke
+vježbe, uz mentorovu pomoć i prikladne podatke. U osnovnoj radionici
+zadržite se na maloj izmjeni koda koju možete sami objasniti.
 
 ### Vježba: promjena koju možete objasniti
 
@@ -153,6 +151,5 @@ skriptu i usporedite rezultat prije i poslije. Ako se zbog promjene oznake
 promijenio broj opažanja ili izračunata vrijednost, istražite zašto.
 
 Za samostalni nastavak zapišite jedan prihvaćen i jedan odbijen AI
-prijedlog. Obrazložite oba izbora. Takva bilješka pokazuje učenje bolje
-od broja generiranih redaka. Ishod rada u editoru je skripta čiji postupak
-razumijete i koju druga osoba može pokrenuti.
+prijedlog. Obrazložite oba izbora i zamolite kolegu da pokrene spremljenu skriptu.
+Provjerite može li iz nje razumjeti postupak bez vaših usmenih dopuna.

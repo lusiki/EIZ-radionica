@@ -6,8 +6,8 @@ Datum sljedeće izvedbe nije potvrđen.
 
 Radionica na hrvatskom jeziku povezuje provjeru izvora, istraživački plan,
 analizu i pisanje kroz jedan slučaj: ostvarenu inflaciju i kvalitativni
-saldo očekivanja cijena u Hrvatskoj, 2015.–2024. Osam blokova, sedam sati,
-200 minuta predviđenog aktivnog rada.
+saldo očekivanja cijena u Hrvatskoj, 2015.–2024. Radionica traje sedam sati u osam blokova,
+s ukupno 200 minuta predviđenog aktivnog rada polaznika.
 
 ## Lokalni pregled
 
@@ -79,10 +79,9 @@ izvozi ove grane i nisu dio novog weba ili paketa. Izvorni sadržaj je u
 povijesti Gita, početni commit d942375. Koristite _site/ za pregled revizije.
 
 Organizator treba potvrditi datum, kontakt, točnu skupinu i pravila uporabe
-AI-ja te provesti pilot s predstavnicima polaznika. Ova revizija ne tvrdi da
-je pilot održan. HNB/medijski primjer ostaje izvan jezgre dok nema
-dokumentiranog korpusa i postupka. Novi prezentacijski sažeci mogu slijediti
-nakon provjere tempa.
+AI-ja te provesti pilot s predstavnicima polaznika. Pilot još nije održan. HNB/medijski primjer ostaje izvan jezgre dok nema
+dokumentiranog korpusa i postupka. Nakon pilota može se prilagoditi tempo i pripremiti kratke
+prezentacijske sažetke.
 
 Izvorni repozitorij navodi financiranje iz Nacionalnog plana oporavka i
 otpornosti 2021.–2026. (NextGenerationEU); taj povijesni podatak nije potvrda

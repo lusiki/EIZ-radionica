@@ -7,9 +7,10 @@ subtitle: "Dan 2 · Čitateljski materijal uz četiri radna bloka"
 02 / Analiza i pisanje
 :::
 
-Kod koji se izvršio bez pogreške još nije potvrđena analiza. Danas provjeravamo
-ulazne podatke, mijenjamo mali dio skripte, popravljamo namjerno pogrešan
-postupak i pišemo zaključak koji odgovara stvarno dobivenom rezultatu.
+Danas ćete provjeriti ulazne podatke, izmijeniti dio skripte i popraviti
+namjerno pogrešan postupak. Zatim ćete napisati zaključak iz dobivenog
+rezultata. Pri provjeri koda gledajte što računa: skripta se može izvršiti
+bez pogreške, a ipak dati pogrešnu analizu.
 
 Koristimo isti slučaj kao prvoga dana: Hrvatsku od siječnja 2015. do prosinca
 2024. U paketu su izvorni odgovori službenog API-ja, pripremljeni CSV i
@@ -64,12 +65,12 @@ provjeru broja mjeseci u svakoj godini. Ne mijenjaj izvorni CSV.
 Asistent u pregledniku može predložiti isti kod kao asistent u uređivaču.
 Copilot i agentski alati su izborni. RStudio također podržava
 [Copilot](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html);
-Positron se ne bira zato što je jedini IDE s tom mogućnošću. Njegova proširenja
+AI pomoć stoga možete koristiti u oba okruženja. Positronova proširenja
 dolaze iz [podržanih registara](https://positron.posit.co/extensions.html),
 a dostupnost pojedinog proširenja treba provjeriti prije nastave.
 
-Agent može čitati i mijenjati datoteke te pokretati naredbe. To ne znači da
-samostalno potvrđuje znanstvenu valjanost. Prije pokretanja pogledajte koje
+Agent može čitati i mijenjati datoteke te pokretati naredbe.
+Znanstvenu valjanost postupka provjeravate vi. Prije pokretanja pogledajte koje
 datoteke dira i zatražite objašnjenje izmjene. Nemojte dijeliti ključeve ili
 osobne podatke. Terminalni agent u ovoj radionici može biti kratka
 demonstracija nastavnika, a nije preduvjet za polaznike.
@@ -107,8 +108,7 @@ Test stacionarnosti nije automatski prekidač koji bira model. Panel-metode
 nisu primjenjive samo zato što imamo više mjeseci jedne zemlje.
 
 Bilježnica i skripta mogu biti reproducibilne ako je dokumentiran cijeli
-postupak i ako se izvršavaju od početka. U osnovnom dijelu koristimo skriptu
-da bismo imali jedan podržani put. [Vježba 2.3](../materials/exercises/index.qmd#v23)
+postupak i ako se izvršavaju od početka. U osnovnom dijelu svi radimo u skripti. [Vježba 2.3](../materials/exercises/index.qmd#v23)
 traži popravak namjerno pogrešnog koda, a zatim čisto ponovno izvođenje.
 
 ## 2.4 Napišite samo ono što ste provjerili {#blok-24}

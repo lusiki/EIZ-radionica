@@ -2,21 +2,17 @@
 
 ### Imate izvore, ali još nemate argument
 
-Ako ste pratili prethodna poglavlja, sada imate popis izvora, provjerene
-tvrdnje i bilješke o otvorenim pitanjima. To je više materijala nego na
-početku, ali pojavljuje se novi problem: imate fragmente, ne priču. Imate
-informacije, ali još ne znate redoslijed kojim ih treba objasniti čitatelju.
+Nakon pretrage imate izvore, provjerene tvrdnje i otvorena pitanja.
+Sada treba odlučiti kojim ćete ih redoslijedom objasniti čitatelju
+i kako se zajedno odnose na vaše istraživačko pitanje.
 
-Upravo je to koristan zadatak za razgovornog asistenta. Claude ovdje ostaje
-primjer alata kojemu dajete vlastite materijale i od kojega tražite
-organizaciju, pitanja i kritičke komentare. Ista se vještina može vježbati
-u drugom dostupnom sustavu ili s kolegom. Vrijednost nije u tvrdnji da je
-jedan proizvod najbolji za hrvatski jezik, nego u jasnoći razgovora koji
-vodite o svom istraživanju.
+Claudeu možete dati vlastite materijale i zatražiti prijedlog strukture
+te komentare na nejasna mjesta. Isti zadatak možete proći s kolegom
+ili drugim dostupnim asistentom. U oba slučaja trebate jasno objasniti
+što istražujete i kakvu pomoć tražite.
 
-Zamislite razgovor s mentorom. Ne dolazite samo s molbom „pomozi mi”, nego
-objašnjavate pitanje, raspoložive podatke i mjesto na kojem ste zapeli.
-Asistentu također treba dati te informacije. Razlika je u tome što odgovor
+Kao u razgovoru s mentorom, navedite pitanje, raspoložive podatke i
+mjesto na kojem ste zapeli. Razlika je u tome što odgovor
 modela morate provjeriti i kada zvuči kao siguran stručni savjet.
 
 ### Pripremite materijale prije razgovora
@@ -43,7 +39,7 @@ dugog opisa zamišljene osobnosti stručnjaka.
 
 ### Pet načela za koristan upit
 
-**1. Dajte kontekst i jasno zaduženje.** Umjesto „pomozi mi s radom” napišite:
+1\. Dajte kontekst i jasno zaduženje. Umjesto „pomozi mi s radom” napišite:
 
 > Pripremam kratki studentski izvještaj o ostvarenoj inflaciji i saldu
 > očekivanih promjena cijena u Hrvatskoj od 2015. do 2024. Imam 120
@@ -55,7 +51,7 @@ Uputa „budi kritički recenzent” može pomoći objasniti vrstu komentara, al
 ne pretvara model u recenzenta s provjerenim kompetencijama. Kontekst,
 materijali i kriteriji provjere čine glavninu korisne upute.
 
-**2. Odredite format i opseg.** Ako želite nacrt, tražite nacrt, a ne cijeli
+2\. Odredite format i opseg. Ako želite nacrt, tražite nacrt, a ne cijeli
 rad. Ako želite usporedbu izvora, zatražite teme, slaganja, razlike i
 ograničenja. Primjer:
 
@@ -63,19 +59,18 @@ ograničenja. Primjer:
 > Za svaki napiši svrhu, dokaz koji je potreban i pitanje na koje još
 > moram odgovoriti. Nemoj pisati nalaze prije nego što dobiješ izlaz analize.
 
-**3. Dajte primjer željenog rezultata.** Jedan dobro napisan odlomak ili
+3\. Dajte primjer željenog rezultata. Jedan dobro napisan odlomak ili
 jedan dovršen dokazni zapis često je korisniji od mnoštva stilskih
 pridjeva. Primjer mora sadržavati istinite podatke ili jasno označena
 mjesta za unos. U suprotnom će se i pogreška iz primjera proširiti na ostatak.
 
-**4. Tražite kritiku, a ne potvrdu.** Izvorni prompt koji je tražio
-obrazloženje već odabrane Newey-West korekcije previše je usmjeravao odgovor.
-Bolji upit pita je li metoda uopće potrebna, koje pretpostavke zahtijeva i
-što ne rješava. Jednako vrijedi za pitanje o istraživačkoj praznini:
+4\. Zatražite procjenu metode. Upit koji traži opravdanje već odabrane
+Newey-West korekcije usmjerava odgovor prema potvrdi vašeg izbora.
+Pitajte je li metoda potrebna, koje pretpostavke zahtijeva i što ne rješava. Jednako vrijedi za pitanje o istraživačkoj praznini:
 neka model razlikuje prazninu u vašim bilješkama od tvrdnje da nešto nitko
 još nije istražio.
 
-**5. Poboljšavajte pojedinačne dijelove.** Nakon prvog nacrta izaberite
+5\. Poboljšavajte pojedinačne dijelove. Nakon prvog nacrta izaberite
 jedan problem. „Pojasni zašto saldo nije postotna prognoza” preciznije je
 od „učini tekst akademskijim”. Sačuvajte inačice i odbacite prijedlog koji
 mijenja značenje. Više iteracija nije samo po sebi dokaz više kvalitete.
@@ -96,13 +91,11 @@ U drugom koraku zatražite analizu praznina:
 
 Koristan odgovor može upozoriti na različite jedinice i vremenski horizont
 ankete. Prijedlog da analizirate medijski sentiment zahtijeva novi korpus,
-pravilo mjerenja i provjeru kvalitete. Nije mala dopuna postojećem planu.
-Razlikovanje tih razina štiti vas od nacrta koji obećava znatno više nego
-što se može napraviti.
+pravilo mjerenja i provjeru kvalitete. Za taj posao treba zasebno planirati vrijeme i podatke.
 
 U trećem koraku odredite redoslijed argumenta. Najprije objasnite pitanje
 i mjere, zatim provjeru podataka, vizualni prikaz i sažetke, a na kraju
-interpretaciju i ograničenja. Svaki odjeljak treba imati posao koji obavlja.
+interpretaciju i ograničenja. Uz svaki odjeljak napišite što ćete u njemu objasniti.
 Naslov „Metodologija” bez informacije što je izračunato nije dovoljan plan.
 
 U četvrtom koraku popravite najslabije mjesto. Ako nacrt zaključuje da
@@ -113,10 +106,9 @@ studentski zadatak kada su mjere i ograničenja dobro objašnjeni.
 
 ### Hipoteze, teorija i rezultat ne nastaju istim putem
 
-Model može predložiti hipoteze. Istraživač provjerava jesu li jasne,
-zanimljive, povezane s teorijom i mjerljive dostupnim podacima. Nije
-potrebno tvrditi da AI ne može predložiti originalnu ideju da bismo
-razumjeli zašto konačna odgovornost ostaje na autoru.
+Model može predložiti hipotezu, pa i originalnu ideju. Vi provjeravate
+je li jasno postavljena, povezana s teorijom i mjerljiva dostupnim
+podacima te odlučujete vrijedi li je istražiti.
 
 Hipoteza nastala nakon gledanja grafa dio je eksploracije. Nemojte je
 naknadno prikazati kao unaprijed postavljenu potvrđujuću hipotezu. Ako
@@ -134,11 +126,9 @@ ni vi ni model niste vidjeli nije kritičko čitanje.
 Završite prvi dan s pitanjem, trima provjerenim izvorima i planom na jednoj
 stranici. Uz plan dodajte popis otvorenih pitanja i naziv prve skripte
 koju ćete pokrenuti. Za svaku planiranu tablicu ili sliku napišite koju
-rečenicu treba pomoći objasniti. Time stvarate vezu između čitanja,
-analize i pisanja.
+rečenicu treba pomoći objasniti. Tako ćete lakše uočiti prikaz koji ne pomaže odgovoriti na pitanje.
 
 Kao samostalnu vježbu zamijenite nacrt s kolegom. Neka označi jednu tvrdnju
 bez dokaza, jedan nejasan pojam i jedan korak koji se ne može izvesti
 raspoloživim podacima. AI može predložiti istu vrstu pitanja, ali vi trebate
-znati odgovoriti bez ponovnog prepuštanja razgovora modelu. To je najbolja
-priprema za drugi dan, kada će svaki izbor postati dio konkretnog postupka.
+znati odgovoriti bez ponovnog prepuštanja razgovora modelu. Drugoga dana te odluke treba provesti u skripti.

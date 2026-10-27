@@ -2,7 +2,7 @@
 
 Sve naredbe pokreću se iz korijena repozitorija.
 
-## Polaznik — osnovni R, bez mreže
+## Za polaznike: osnovni R, bez mreže
 
 ```r
 source("code/starter.R", encoding = "UTF-8")
@@ -11,7 +11,7 @@ source("code/starter.R", encoding = "UTF-8")
 `.Rprofile` ne uključuje renv automatski, pa osnovna skripta radi i bez
 paketa. Sačuvajte vlastite izmjene u submissions/.
 
-## Nastavnik — cijeli referentni postupak
+## Za nastavnike: cijeli referentni postupak
 
 Jednokratno instalirajte renv i obnovite zaključano okruženje:
 
@@ -33,10 +33,10 @@ podrazdoblja imaju po 60 opažanja; nisu testovi uzročnosti.
 
 optional_hac.R izvan je jezgre. Model s konstantom, smjer regresije,
 12 pomaka i isključeno prewhitening navedeni su unaprijed. Intervali su
-asimpotski i uvjetni na pretpostavke; primjer ne dokazuje stacionarnost,
+asimptotski i uvjetni na pretpostavke; primjer ne dokazuje stacionarnost,
 egzogenost ili prediktivnu vrijednost.
 
-## Novi izvorni podaci — samo svjesna revizija
+## Ažuriranje izvornih podataka
 
 ```r
 # U terminalu: Rscript --vanilla code/fetch_data.R work/new-snapshot

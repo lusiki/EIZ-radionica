@@ -1,4 +1,6 @@
-# Dokazni zapis — kopirajte za svaki od tri izvora
+# Dokazni zapis
+
+Kopirajte ovaj predložak za svaki od tri izvora.
 
 - Tvrdnja koju provjeravam:
 - Autor ili ustanova:

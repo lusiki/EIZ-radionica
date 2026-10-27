@@ -1,4 +1,6 @@
-# Plan analize — najviše jedna stranica
+# Plan analize
+
+Plan treba stati na jednu stranicu.
 
 1. Pitanje i opisni cilj:
 2. Zemlja, razdoblje i broj mjeseci:

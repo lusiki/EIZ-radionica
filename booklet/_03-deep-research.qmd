@@ -2,24 +2,21 @@
 
 ### Kada jedan odgovor nije dovoljan
 
-Što ako ste na početku istraživanja i trebate razumjeti cijelo područje?
-Kratak odgovor može vam pomoći pronaći pojam ili rad. Za usporedbu
-teorijskih objašnjenja, vrsta podataka i otvorenih pitanja treba vam
-organiziraniji pregled. Tu je koristan istraživački način rada koji
-planira više pretraga, prikuplja izvore i predlaže njihovu sintezu.
+Kratak odgovor može pomoći pri traženju pojma ili pojedinog rada.
+Za usporedbu teorijskih objašnjenja i podataka iz više studija treba
+pripremiti pregled literature. Istraživački način rada u AI alatu može
+planirati više pretraga, prikupiti izvore i predložiti njihovu sintezu.
 
-Izvorni materijal uspoređivao je brz upit s pitanjem lokalnom vodiču, a
-dubinsko istraživanje s naručivanjem opširnog izvješća. Analogija je korisna
-za razlikovanje zadataka, ali je ne treba pretvoriti u trajnu podjelu
-proizvoda. Isti alat može nuditi oba načina. Opširnije izvješće nije
-automatski potpunije ili točnije; može samo uvjerljivije prikriti praznine.
+Razlika je slična onoj između kratkog pitanja vodiču i naručivanja
+opširnog izvješća. Isti alat može nuditi oba načina rada. Duljina izvješća
+ne govori koliko je ono potpuno ili točno; praznine mogu ostati i u
+vrlo razrađenom tekstu.
 
-U ovom poglavlju zadržavamo Gemini Deep Research kao demonstracijski
-primjer. Prema [Googleovim uputama](https://support.google.com/gemini/answer/15719111?hl=en),
+Postupak ćemo pokazati na primjeru Gemini Deep Researcha. Prema [Googleovim uputama](https://support.google.com/gemini/answer/15719111?hl=en),
 možete odabrati izvore, priložiti materijale i urediti predloženi plan prije
 pokretanja istraživanja. Dostupnost povezanih izvora ovisi o računu i
-postavkama. Taj izbor je važniji od pamćenja položaja gumba koji se može
-promijeniti do sljedeće izvedbe radionice.
+postavkama. Sučelje se može promijeniti do sljedeće radionice, pa provjerite upute
+za račun na kojem radite.
 
 ### Istraživački plan je vaš dokument
 
@@ -29,13 +26,12 @@ zemlje, razdoblje objavljivanja, populaciju i jezike. Ako tražite noviju
 literaturu, dopustite zasebno navođenje starijih teorijskih radova kako
 vremenski filtar ne bi uklonio temeljne pojmove.
 
-Slab početni zahtjev iz izvornog teksta glasi:
+Zahtjev može biti preširok:
 
 > Napiši pregled literature o inflaciji.
 
 On ne kaže trebate li udžbeničko objašnjenje, pregled prognoziranja ili
-raspravu o očekivanjima. Sljedeći primjer zadržava izvorni interes za medije,
-ali bolje odvaja ono što tražimo od onoga što već znamo:
+raspravu o očekivanjima. Za temu medijskog izvještavanja zahtjev možemo precizirati ovako:
 
 > Pripremi plan pregleda empirijske literature o medijskom izvještavanju
 > i inflacijskim očekivanjima kućanstava u europskim zemljama. Glavni
@@ -48,10 +44,10 @@ ali bolje odvaja ono što tražimo od onoga što već znamo:
 > zaključak. Ako podatak ne možeš provjeriti, označi ga kao nepoznat.
 > Najprije pokaži plan; nemoj pretpostaviti da imamo medijski korpus.
 
-Pogledajte kako zahtjev određuje rezultat. Ne traži određeni zaključak
-ni „dokaz” željene hipoteze. Ne dopušta da nepoznat uzorak bude popunjen
-izmišljenim brojem. Od agenta traži strukturu usporedivih zapisa, a ne
-samo elegantan pregled. I dalje morate provjeriti pridržava li se tih uputa.
+Upit traži usporedive zapise o radovima i izričito označavanje nepoznatih
+podataka. Zaključak ostavlja otvorenim. U odgovoru provjerite je li alat
+poštovao te zahtjeve ili je, primjerice, dodao broj opažanja koji nije
+naveden u izvoru.
 
 Pregledajte predloženi plan prije izvršavanja. Ako se većina prostora
 troši na povijest središnjih banaka, a vi trebate usporediti mjere očekivanja,
@@ -61,27 +57,27 @@ zaustavite taj korak i razjasnite što bi trebalo prikupiti.
 
 ### Što može nedostajati u dugom izvješću
 
-Prvo ograničenje jest **pristup izvorima**. Alat može pronaći naslov ili
+Alat može pronaći naslov ili
 sažetak, ali ne i tekst iza pretplate. Može koristiti javnu radnu verziju
 umjesto kasnije objavljene verzije. Institucionalni pristup koji imate u
 svom pregledniku ne prenosi se automatski na alat. Za važan rad sami
 provjerite verziju dokumenta i dostupnost metodoloških dodataka.
 
-Drugo ograničenje jest **dubina metodološkog čitanja**. Rečenica „autori
+Rečenica „autori
 koriste regresijsku analizu” ne govori kako je izabran uzorak, koje su
 varijable uključene ili što omogućuje uzročnu interpretaciju. Tražite
 konkretnu specifikaciju i argument autora, zatim pročitajte odgovarajući
 odjeljak. Ako izvješće navodi samo naziv metode, to je polazna bilješka,
 a ne završena kritička evaluacija.
 
-Treće ograničenje jest **obuhvat pretrage**. Odsutnost hrvatskog rada iz
+Odsutnost hrvatskog rada iz
 izvješća ne znači da takav rad ne postoji. Mogu nedostajati drugi jezici,
 radovi bez javnog punog teksta ili termini drukčiji od onih u upitu.
 Pregled koji priprema AI nije samim time sustavni pregled literature.
 Istraživačku prazninu treba dokazivati pregledom relevantnog polja,
 a ne samo prazninom u jednom generiranom odgovoru.
 
-Četvrto ograničenje jest **pridržavanje zadatka**. Dugi postupak može završiti
+Dugi postupak može završiti
 izvješćem koje krši dio kriterija: drugi vremenski raspon, druga populacija
 ili niz općenitih zaključaka bez pojedinačnih izvora. Usporedite rezultat
 s početnim planom. Ta je provjera jednostavna ako ste kriterije prethodno
@@ -97,9 +93,8 @@ citata nisu potvrda da je sadržaj potkrijepljen.
 
 Ne oslanjajte se na boju teksta, oznaku pouzdanosti ili gumb za automatsku
 provjeru kao na certifikat točnosti. Čak i kada takva pomoć postoji,
-istraživačko je pitanje šire: podupire li navedeni odlomak baš ovu tvrdnju,
-za ovu populaciju i ovu vrstu zaključka? U ovom izdanju zato zamjenjujemo
-stare upute o zelenim i narančastim oznakama izravnim otvaranjem izvora.
+otvorite izvor i provjerite podupire li navedeni odlomak baš ovu tvrdnju,
+za promatranu populaciju i vrstu zaključka.
 
 Napravite jednostavnu evidenciju nalaza: zadržati, provjeriti, suziti ili
 izostaviti. Primjerice, dobru definiciju mjere možete zadržati uz izvor;
@@ -124,8 +119,8 @@ mjeri, koje su njezine granice i kakvu usporedbu vremenskih serija dopušta.
 Nakon čitanja metodologije možete odlučiti prikazati dvije odvojene serije
 sa zajedničkom vremenskom osi, izračunati godišnje sažetke i opisati
 suvremenu korelaciju. Ne trebate odmah dodati panel model, sentiment
-medija ili predviđanje inflacije. Svako proširenje traži nove podatke i
-novi argument. Dobar pregled pomaže vidjeti te zahtjeve prije kodiranja.
+medija ili predviđanje inflacije. Za svako proširenje prije kodiranja odredite koji dodatni podaci
+i metodološko obrazloženje nedostaju.
 
 ### Vježba: od plana do provjerene stranice
 
@@ -138,5 +133,4 @@ važnija je kvaliteta provjere od brzine odgovora.
 Kada izvješće stigne, provjerite tri ključne tvrdnje, zabilježite jednu
 prazninu i napišite vlastiti sažetak na jednoj stranici. Razdvojite
 potvrđeno, vjerojatno i zasad nepoznato. Ako nemate pristup alatu, napravite
-isti plan i sažetak iz tri početna izvora radionice. Ishod je isti:
-organizirano znanje čiju potporu možete pokazati.
+isti plan i sažetak iz tri početna izvora radionice. Uz sažetak sačuvajte bilješke iz kojih je vidljivo na što se oslanjate.

@@ -8,11 +8,9 @@ biti dopunjavanje retka, razgovor o skripti ili agent koji čita datoteke,
 predlaže izmjene i pokreće naredbe. Te mogućnosti nisu strogo odvojene
 generacije tehnologije; često postoje unutar iste aplikacije.
 
-Claude Code ostaje primjer agentskog pristupa iz izvornog materijala.
-Važna promjena u načinu rada jest da alat može iz prijedloga prijeći na
-radnju. Ako mu okruženje i dopuštenja to omogućuju, može urediti nekoliko
-datoteka i izvršiti analizu. Time se smanjuje ručno prepisivanje, ali se
-povećava važnost jasno zadanog opsega i provjere promjena.
+Claude Code je primjer agenta koji može izravno raditi na projektu. Ako mu okruženje i dopuštenja to omogućuju, može urediti nekoliko
+datoteka i izvršiti analizu. To štedi ručno prepisivanje. Prije rada odredite što agent smije
+mijenjati, a nakon rada pregledajte promjene.
 
 Zamislite istraživačkog suradnika kojemu predajete radnu mapu. Treba mu
 reći što se smije mijenjati, koje datoteke predstavljaju izvorne podatke
@@ -95,8 +93,7 @@ Dvije serije imaju različite jedinice. U radionici ih prikazujemo u
 odvojenim panelima sa zajedničkom vremenskom osi. Čitatelj vidi kada se
 promjene događaju, ali ih ne zamjenjuje za brojčano usporedive veličine.
 Dvije neovisno skalirane y-osi mogu proizvesti privid preklapanja linija
-ovisno o odabranom rasponu. Tehnička sposobnost izrade takvog grafa nije
-razlog da ga koristimo.
+ovisno o odabranom rasponu. Zato za ovaj zadatak koristimo odvojene prikaze.
 
 Pogledajte razdoblja ubrzanja, usporavanja i promjena raspona. Opisujte
 ono što slika pokazuje, a moguća objašnjenja navedite kao pitanja za
@@ -113,9 +110,8 @@ Nije test razlike korelacija niti dokaz promjene uzročnog mehanizma.
 
 ### Korak 4: što regresija i HAC mogu pokazati
 
-Osnovni zadatak završava opisnim rezultatima. Za napredne čitatelje
-zadržavamo izvorno objašnjenje OLS-a, ali uz važne korekcije. Jednostavan
-model s konstantom može se napisati kao
+Osnovni zadatak završava opisnim rezultatima. U naprednom dijelu
+možete razmotriti OLS regresiju. Jednostavan model s konstantom glasi
 
 $$y_t = \alpha + \beta x_t + u_t.$$
 
@@ -151,11 +147,10 @@ Prikladnost dizajna prethodi tumačenju p-vrijednosti.
 
 ### Korak 5: osjetljivost i granice proširenja
 
-Izvorni tekst uvodio je multiverzum modela i specifikacijsku krivulju.
-Zadržavamo ideju da se rezultat ne bi trebao oslanjati na jednu proizvoljnu
-odluku. Ipak, skup specifikacija mora sadržavati obrazložive alternative,
-a ne sve kombinacije koje računalo može generirati. Stotine loše
-postavljenih modela ne proizvode valjan zaključak.
+Multiverzum modela i specifikacijska krivulja služe ispitivanju koliko
+rezultat ovisi o analitičkim odlukama. Uspoređujte specifikacije koje
+možete metodološki obrazložiti. Dodavanje svih kombinacija koje računalo
+može generirati uključilo bi i modele neprikladne za vaše pitanje.
 
 Prije pregleda rezultata zapišite koje ćete odluke usporediti i zašto.
 Primjerice, možete opisno usporediti ista razdoblja kao u referentnim
@@ -167,9 +162,8 @@ ili najmanjom p-vrijednošću.
 Za medijski nastavak trebali biste pribaviti korpus s podrijetlom i
 uvjetima uporabe, definirati uključivanje članaka, ukloniti duplikate po
 opisanom pravilu te provjeriti mjerenje pažnje ili tona. Ručno označen
-uzorak može pomoći evaluaciji klasifikacije. To je zaseban projekt;
-u izvornim materijalima spominjani broj članaka ovdje ne predstavljamo
-kao potvrđen skup podataka.
+uzorak može pomoći evaluaciji klasifikacije. To je zaseban projekt. Broj članaka spomenut u starom materijalu
+nije potvrđen dostupnim skupom podataka.
 
 ### Kako provjeriti rad agenta
 

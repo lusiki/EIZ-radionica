@@ -12,10 +12,11 @@ page-layout: full
 Ekonomski institut, Zagreb / praktična radionica
 :::
 
-# Istraživanje uz AI. Provjera vlastitim znanjem.
+# Istraživanje uz AI
 
-Od prvog pitanja do rezultata koji možete objasniti i ponovno izračunati.
-Jedan hrvatski primjer, osam vježbi i jasan trag od izvora do zaključka.
+Na primjeru inflacije u Hrvatskoj proći ćete osam vježbi: od traženja
+izvora do analize i pisanja. Svaki rezultat trebate znati objasniti
+i ponovno izračunati.
 
 [Počnite ovdje](admin/prerequisites.qmd){.btn-workshop}
 [Otvorite vježbe](materials/exercises/index.qmd){.btn-workshop .secondary}
@@ -30,8 +31,8 @@ Jedan hrvatski primjer, osam vježbi i jasan trag od izvora do zaključka.
 ## Što ćete napraviti
 
 Pratit ćete ostvarenu inflaciju i očekivanja potrošača u Hrvatskoj kroz
-{{< var case.rows >}} mjeseci. Pronaći ćete dokaz, provjeriti AI sažetak,
-pokrenuti analizu i napisati kratak rezultat s ograničenjima. U osnovnom
+{{< var case.rows >}} mjeseci. Provjerit ćete izvore i AI sažetak,
+pokrenuti analizu i napisati što ste utvrdili i gdje su granice zaključka. U osnovnom
 dijelu nisu potrebni plaćeni AI alati.
 
 ::: {.step-links}
@@ -41,7 +42,7 @@ dijelu nisu potrebni plaćeni AI alati.
 Naučite razlikovati uvjerljiv odgovor od potvrđene tvrdnje. Završite dan
 s tri provjerena izvora i planom analize.
 
-[Materijal za prvi dan →](slides/day1.qmd)
+[Materijal za prvi dan](slides/day1.qmd)
 :::
 ::: {.step-link}
 ## 02 / Od podataka do zaključka
@@ -49,7 +50,7 @@ s tri provjerena izvora i planom analize.
 Pročitajte podatke, objasnite izmjenu koda i pronađite namjernu pogrešku.
 Predajte rezultat koji se može ponovno izračunati.
 
-[Materijal za drugi dan →](slides/day2.qmd)
+[Materijal za drugi dan](slides/day2.qmd)
 :::
 :::
 
@@ -71,15 +72,15 @@ Jedno pitanje, tri provjerena izvora, skripta, graf ili tablica, približno
 
 ## Za one koji žele pročitati više
 
-Prošireni tekst izvornih dvaju dana sada je dostupan kao revidirani
-priručnik: osam poglavlja s objašnjenjima, primjerima upita i dodatnim
-vježbama za samostalni rad.
+Priručnik u osam poglavlja podrobnije objašnjava teme obaju dana.
+U njemu su primjeri upita i dodatne vježbe za samostalni rad, uz
+ažurirani tekst izvorne radionice.
 
 [Čitajte priručnik](booklet/index.qmd) ·
 [Preuzmite cijeli PDF](downloads/EIZ-prirucnik.pdf)
 
 ::: {.concept-box}
-**Materijali radionice.** Sadržaj je revidiran {{< var workshop.revision >}}
+Sadržaj je revidiran {{< var workshop.revision >}}
 Termin sljedeće izvedbe i kontakt potvrđuje organizator. Datum revizije nije
 datum događaja.
 :::

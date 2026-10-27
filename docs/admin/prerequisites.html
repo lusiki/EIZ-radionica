@@ -232,7 +232,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"code/starter.R"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Treba se ispisati 120 redaka, 120 različitih mjeseci i 0 nedostajućih vrijednosti. Ako se datoteka ne pronalazi, otvorite korijensku mapu paketa; nemojte prepisivati apsolutne putanje u skriptu. Za ovaj korak dovoljan je osnovni R, bez dodatnih paketa. Ne morate odmah riješiti zadatke označene TODO.</p>
 <div class="concept-box">
-<p><strong>Ako nema interneta ili AI servisa.</strong> Podaci i primjeri već su u paketu. Upotrijebite pripremljeni sažetak i pogrešan kod. Za vježbu provjere izvora nastavnik treba unaprijed osigurati pristup izvornim dokumentima; bez njih zapis ostaje označen kao neprovjeren.</p>
+<p>Ako nemate internet ili pristup AI servisu, koristite podatke i primjere iz paketa: pripremljeni sažetak i pogrešan kod. Za vježbu provjere izvora nastavnik treba unaprijed osigurati pristup izvornim dokumentima; bez njih zapis ostaje označen kao neprovjeren.</p>
 </div>
 </section>
 <section id="za-obnovu-cijelog-referentnog-postupka" class="level2">
@@ -242,7 +242,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">restore</span>(<span class="at">prompt =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">load</span>()</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"code/run_all.R"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>renv.lock</code> bilježi pakete i verziju R-a. Ne instalira sam R ni sistemske biblioteke. Za gradnju weba dodatno treba Quarto (provjeren 1.9.38). Nakon obnove paketa analiza radi iz spremljenih izvora bez mrežnog pristupa.</p>
+<p><code>renv.lock</code> bilježi pakete i verziju R-a. Ne instalira sam R ni sistemske biblioteke. Za izradu web-stranica dodatno treba Quarto (provjeren 1.9.38). Nakon obnove paketa analiza radi iz spremljenih izvora bez mrežnog pristupa.</p>
 <p>Na Windowsu s pogrešnom varijablom locale skripta za pregled postavlja UTF-8 samo za svoj proces. Ako sami pokrećete R i dobijete upozorenje o lokalizaciji, provjerite da <code>l10n_info()[["UTF-8"]]</code> vraća <code>TRUE</code> prije učitavanja hrvatskog teksta.</p>
 </section>
 <section id="kamo-dalje" class="level2">

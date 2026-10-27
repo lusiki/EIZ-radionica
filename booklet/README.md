@@ -61,3 +61,14 @@ correlations refer only to the frozen official 2015–2024 teaching data.
 The optional reading exercises do not add to classroom timing, assessment
 requirements or the eight core worksheets. Student-facing revision notes
 are on `index.qmd`; this file records the editorial mapping for maintainers.
+
+## Prose edit, 27 October 2026
+
+The workshop pages and reader were edited using
+[Humanizer 3.1.0](https://github.com/blader/humanizer/blob/main/SKILL.md).
+The pass removed repeated closers, revision commentary inside lessons,
+unnecessary contrasts and decorative paragraph labels. Croatian teaching
+prose remains neutral; methodological distinctions and cautions are retained.
+Code, quoted examples, link targets and YAML metadata were checked against
+the previous commit and left unchanged. The documentation verification
+date above still refers to the factual review, not this language edit.

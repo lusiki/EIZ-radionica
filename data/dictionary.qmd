@@ -53,7 +53,8 @@ drugi službeni pokazatelj godišnje inflacije.
 
 ## Granice zaključka
 
-Ovo je jedna zemlja kroz vrijeme, bez panela i bez individualnih odgovora.
+Podaci prate jednu zemlju kroz vrijeme. Ne sadrže panel više zemalja
+ni individualne odgovore ispitanika.
 Istodobna usporedba ne mjeri uspješnost prognoze za 12 mjeseci unaprijed.
 Na kretanje obiju serija mogu utjecati zajednički šokovi. Opisni rezultati
 ne identificiraju uzročnost niti sami potvrđuju usidrenost očekivanja.

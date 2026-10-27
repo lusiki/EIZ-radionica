@@ -3,8 +3,8 @@ title: "Izvori koje možete provjeriti"
 subtitle: "Početni skup za tri dokazna zapisa"
 ---
 
-Ovo su kandidati za provjeru, a ne unaprijed ispunjen dokazni zapis.
-Otvorite izvor i pronađite odjeljak koji podupire vašu tvrdnju.
+Počnite od ovih izvora. U svakome pronađite odjeljak koji podupire
+vašu tvrdnju i unesite ga u vlastiti dokazni zapis.
 
 ## Tri početna izvora
 
@@ -23,7 +23,7 @@ Otvorite izvor i pronađite odjeljak koji podupire vašu tvrdnju.
    inflation perceptions and expectations – the role of (un)certainty.**
    [ECB Economic Bulletin, 2/2021](https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html).
    Odjeljak 2 i bilješka 6 razlikuju kvalitativne i kvantitativne mjere.
-   Članak je koristan za konceptualno ograničenje; nije dokaz našeg hrvatskog
+   Članak pomaže razjasniti što se pojedinom mjerom može zaključiti; nije dokaz našeg hrvatskog
    rezultata za 2015.–2024. To je istraživački članak središnje banke, a sam
    naziv publikacije ne čini ga recenziranim časopisnim radom.
 

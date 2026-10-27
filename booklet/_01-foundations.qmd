@@ -6,14 +6,13 @@ Zamislite da trebate napisati seminarski rad. Imate temu, nekoliko otvorenih
 kartica i bilješke iz predavanja, ali još ne znate kojim pitanjem započeti.
 Traženje literature, povezivanje pojmova i organiziranje bilježaka oduzimaju
 vrijeme prije nego što uopće počnete analizirati podatke. AI može pomoći u
-svakom od tih koraka. Korist nastaje kada njegov prijedlog pretvorite u nešto
-što možete provjeriti: pitanje s jasnim opsegom, izvor s poznatim autorom,
-skriptu koja se može pokrenuti ili odlomak čije tvrdnje odgovaraju dokazima.
+svakom od tih koraka, no njegov prijedlog treba provjeriti. Je li pitanje
+dovoljno određeno? Možete li pronaći autora i izvor? Izvršava li se skripta
+i podupiru li dokazi tvrdnje u odlomku?
 
-U izvornom tekstu radionice taj je put prikazan kroz Perplexity, Gemini i
-Claude, a zatim kroz programske asistente i bilježnice. Zadržavamo taj slijed
-jer odgovara istraživačkom procesu. Nazivi proizvoda služe kao primjeri;
-njihove se mogućnosti preklapaju. Ne morate imati račun u svakom alatu da
+Za pretraživanje i planiranje koristit ćemo primjere iz Perplexityja,
+Geminija i Claudea, a za analizu programske asistente i bilježnice.
+Mogućnosti tih proizvoda preklapaju se. Ne morate imati račun u svakom alatu da
 biste naučili pronaći dokaz ili objasniti rezultat.
 
 Radionicu povezuje hrvatski primjer. Promatramo mjesečnu ostvarenu inflaciju
@@ -55,23 +54,23 @@ ili tablicu na koju se pitanje odnosi.
 
 Temperatura, kada je dostupna, utječe na način uzorkovanja. Ni niska
 temperatura ni način rada s duljim računanjem nisu potvrda istinitosti.
-Korisniku je korisnije provjeriti citat i rezultat nego nagađati što se
-dogodilo u unutarnjem postupku modela. Prikaz plana ili objašnjenja također
+Provjerite citat i rezultat; iz odgovora ne možete pouzdano rekonstruirati
+unutarnji postupak modela. Prikaz plana ili objašnjenja također
 nije potpuni zapis svih internih operacija.
 
 ### Tri vrste uvjerljive pogreške
 
-**Izmišljena referenca** može sadržavati stvarno prezime autora, uvjerljiv
+Izmišljena referenca može sadržavati stvarno prezime autora, uvjerljiv
 naslov i nepostojeći DOI. Ako je citat sastavljen uredno, lakše ga je
 zamijeniti s provjerenim izvorom. Postojanje rada provjerite kod izdavača
 ili u bibliografskoj bazi, a zatim pročitajte dio koji navodno podupire tvrdnju.
 
-**Pogrešno protumačen broj** može potjecati iz stvarne tablice. Primjerice,
+Pogrešno protumačen broj može potjecati iz stvarne tablice. Primjerice,
 vrijednost salda očekivanja 40 ne znači da potrošači očekuju inflaciju od
 40 posto. To je druga mjera, s drugom konstrukcijom i jedinicom. Provjera
 aritmetike bez provjere definicije varijable nije dovoljna.
 
-**Kod koji radi pogrešnu stvar** može se izvršiti bez upozorenja. Spajanje
+Kod koji radi pogrešnu stvar može se izvršiti bez upozorenja. Spajanje
 dviju tablica prema rednom broju retka umjesto prema mjesecu može povezati
 različite datume. Automatsko uklanjanje praznina može promijeniti uzorak.
 Zato uz izlaznu tablicu provjeravamo ulaz, broj opažanja i pravilo obrade.
@@ -94,9 +93,9 @@ Službena dokumentacija sada opisuje pretraživanje i istraživačke postupke
 u više aplikacija, uključujući [ChatGPT](https://learn.chatgpt.com/docs/web-search),
 [Gemini](https://support.google.com/gemini/answer/15719111?hl=en) i
 [Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects).
-Pristup ovisi o računu, planu i postavkama ustanove. U ovom izdanju ne
-navodimo rang-listu „najboljih modela”, cijene ni zajamčene dnevne kvote.
-Prije nastave provjerite funkciju koju ćete stvarno koristiti.
+Pristup ovisi o računu, planu i postavkama ustanove. Prije nastave
+provjerite funkciju koju ćete koristiti, njezinu cijenu i ograničenja
+uporabe.
 
 Za usporedbu dvaju dostupnih alata pripremite isti mali zadatak: isti
 odlomak, tri ista izvora i isto pitanje. Usporedite točnost, sljedivost,
@@ -106,8 +105,8 @@ nisu sami po sebi bolji rezultat. Ako alat ne može otvoriti izvor, bilješka
 
 ### Integritet i odgovornost
 
-Izvorna podjela na zelenu, žutu i crvenu zonu može pomoći u razgovoru o
-riziku, ali nije zamjena za pravila kolegija. Pravopisna pomoć obično
+Podjela uporabe AI-ja na zelenu, žutu i crvenu zonu može pomoći u
+razgovoru o riziku. Dopuštenost pojedine uporabe ipak određuju pravila kolegija. Pravopisna pomoć obično
 mijenja manje istraživačkog sadržaja od izrade cijelog argumenta. Ipak,
 ni jednu od tih uporaba ne proglašavamo univerzalno dopuštenom. Provjerite
 upute zadatka i navedite opseg pomoći kada je to traženo.

@@ -20,8 +20,8 @@ Cilj: razlikovati istraživačko pitanje, dostupni dokaz i dopuštenu uporabu AI
 **Rad, 25 minuta.** Prvih 5 minuta napišite pitanje o Hrvatskoj 2015.–2024.
 U sljedećih 10 minuta označite koje dvije varijable trebate i što svaka mjeri.
 Posljednjih 10 minuta sastavite tri provjere prije prihvaćanja AI odgovora
-te navedite koje pravilo kolegija trebate provjeriti. Ne izmišljajte odgovor
-ustanove ako ga nemate.
+te navedite koje pravilo kolegija trebate provjeriti. Ako odgovor ustanove još nemate,
+zabilježite da ga trebate zatražiti.
 
 **Predaja:** jedno pitanje, dvije pravilno označene varijable i popis provjera.
 
@@ -130,7 +130,7 @@ Cilj: upotrijebiti AI ili primjer kao pomoć, uz samostalnu provjeru koda.
 **Rad, 25 minuta.** Prvih 5 minuta objasnite postojeći izračun za 2022.
 Sljedećih 15 minuta dodajte prosjek očekivanja za 2022. i tablicu godišnjih
 prosjeka. Posljednjih 5 minuta provjerite 12 mjeseci po godini i barem jednu
-vrijednost izravnim odabirom redaka. Možete tražiti prijedlog od AI-ja ili
+vrijednost tako da sami odaberete pripadajuće retke. Možete tražiti prijedlog od AI-ja ili
 raditi prema referentnoj sintaksi u uputama nastavnika.
 
 **Predaja:** skripta s kratkim komentarom uz izmjenu i zapis o provjeri.
@@ -143,7 +143,7 @@ prosjek salda ne nazivate očekivanom stopom inflacije.
 ## 2.3 Popravak i čisto izvođenje {#v23}
 
 ::: {.exercise-meta}
-Cilj: otkriti metodološku pogrešku, ne samo poruku o grešci u programu.
+Cilj: prepoznati pogrešan analitički postupak i kada program ne javlja grešku.
 :::
 
 **Ulaz:** [namjerno pogrešna skripta](../../code/flawed_example.R) i

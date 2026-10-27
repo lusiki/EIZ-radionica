@@ -1,6 +1,6 @@
 ## 1.3 Dubinsko istraživanje s Gemini Deep Research {#poglavlje-13}
 
-### Kada jedan odgovor nije dovoljan
+### Kako pripremiti pregled više izvora
 
 Kratak odgovor može pomoći pri traženju pojma ili pojedinog rada.
 Za usporedbu teorijskih objašnjenja i podataka iz više studija treba
@@ -8,9 +8,8 @@ pripremiti pregled literature. Istraživački način rada u AI alatu može
 planirati više pretraga, prikupiti izvore i predložiti njihov zajednički sažetak.
 
 Razlika je slična onoj između kratkog pitanja vodiču i naručivanja
-opširnog izvješća. Isti alat može nuditi oba načina rada. Duljina izvješća
-ne govori koliko je ono potpuno ili točno. Praznine mogu ostati i u
-vrlo razrađenom tekstu.
+opširnog izvješća. Isti alat može nuditi oba načina rada. Kvalitetu izvješća procijenite prema pokrivenosti teme i točnosti
+tvrdnji u odnosu na izvore.
 
 Postupak ćemo pokazati na primjeru Gemini Deep Researcha. Prema [Googleovim uputama](https://support.google.com/gemini/answer/15719111?hl=en),
 možete odabrati izvore, priložiti materijale i urediti predloženi plan prije
@@ -42,7 +41,7 @@ raspravu o očekivanjima. Za temu medijskog izvještavanja zahtjev možemo preci
 > Za svaki rad navedi izvor, uzorak, razdoblje, mjere, metodu i glavni
 > nalaz. Označi imaš li puni tekst. Razlikuj korelaciju, prognozu i uzročni
 > zaključak. Ako podatak ne možeš provjeriti, označi ga kao nepoznat.
-> Najprije pokaži plan. Nemoj pretpostaviti da imamo zbirku medijskih tekstova.
+> Najprije pokaži plan. Prikupljanje medijskih tekstova predvidi kao zaseban zadatak.
 
 Upit traži usporedive zapise o radovima i izričito označavanje nepoznatih
 podataka. Zaključak ostavlja otvorenim. U odgovoru provjerite je li alat
@@ -57,25 +56,20 @@ zaustavite taj korak i razjasnite što bi trebalo prikupiti.
 
 ### Što može nedostajati u dugom izvješću
 
-Alat može pronaći naslov ili
-sažetak, ali ne i tekst iza pretplate. Može koristiti javnu radnu verziju
-umjesto kasnije objavljene verzije. Institucionalni pristup koji imate u
-svom pregledniku ne prenosi se automatski na alat. Za važan rad sami
+Pristup alata ponekad je ograničen na naslov ili sažetak rada. Može koristiti javnu radnu verziju
+umjesto kasnije objavljene verzije. Zasebno provjerite pristup alata punom tekstu, čak i kada ga
+možete otvoriti kroz ustanovu u svom pregledniku. Za važan rad sami
 provjerite verziju dokumenta i dostupnost metodoloških dodataka.
 
-Rečenica „autori
-koriste regresijsku analizu” ne govori kako je izabran uzorak, koje su
-varijable uključene ili što omogućuje uzročnu interpretaciju. Tražite
-točan opis modela i obrazloženje autora, zatim pročitajte odgovarajući
-odjeljak. Ako izvješće navodi samo naziv metode, to je polazna bilješka,
+Uz bilješku da autori koriste regresijsku analizu zapišite kako su
+odabrali uzorak, koje su varijable uključili i na čemu temelje tumačenje
+rezultata. Pročitajte opis modela i obrazloženje u izvornom radu. Ako izvješće navodi samo naziv metode, to je polazna bilješka,
 koju još treba provjeriti i dopuniti.
 
-Odsutnost hrvatskog rada iz
-izvješća ne znači da takav rad ne postoji. Mogu nedostajati drugi jezici,
-radovi bez javnog punog teksta ili termini drukčiji od onih u upitu.
-Pregled koji priprema AI nije samim time sustavni pregled literature.
-Istraživačku prazninu treba dokazivati pregledom relevantnog polja,
-a ne samo prazninom u jednom odgovoru AI-ja.
+Obuhvat izvješća provjerite dodatnim pretragama na hrvatskom i drugim
+relevantnim jezicima. Uključite drukčije pojmove i radove dostupne kroz
+ustanovu. Tvrdnju o istraživačkoj praznini potkrijepite pregledom
+relevantne literature uz jasno navedena pravila pretrage i odabira.
 
 Dugi postupak može završiti
 izvješćem koje krši dio kriterija, drugi vremenski raspon, druga populacija
@@ -87,14 +81,10 @@ zapisali. Mnogo je teža ako ih tek naknadno prilagođavate dobivenom tekstu.
 
 Prvo pročitajte naslove i zaključak. Zatim izdvojite tri tvrdnje koje su
 najvažnije za vaše pitanje. Za svaku otvorite izvor i provedite trostruku
-provjeru iz prethodnog poglavlja. To je početna revizija, ne zamjena za
-provjeru svih tvrdnji koje ćete preuzeti u svoj rad. Broj izvora i izgled
-citata nisu potvrda da je sadržaj potkrijepljen.
-
-Ne oslanjajte se na boju teksta, oznaku pouzdanosti ili gumb za automatsku
-provjeru kao na certifikat točnosti. Čak i kada takva pomoć postoji,
-otvorite izvor i provjerite podupire li navedeni odlomak baš ovu tvrdnju,
-za promatranu populaciju i vrstu zaključka.
+provjeru iz prethodnog poglavlja. Zatim na isti način provjerite sve
+ostale tvrdnje koje ćete preuzeti u svoj rad. U izvornom tekstu pronađite
+odlomak koji podupire svaku tvrdnju. Provjerite odnosi li se na navedenu
+populaciju i dopušta li takav zaključak.
 
 Napravite jednostavnu evidenciju nalaza, zadržati, provjeriti, suziti ili
 izostaviti. Primjerice, dobru definiciju mjere možete zadržati uz izvor.
@@ -111,24 +101,23 @@ prepričavate jedan za drugim.
 
 ### Povezivanje s nastavnim skupom
 
-Za osnovni zadatak ne trebate cijelo istraživanje medija. Trebate razumjeti
-HICP i anketni saldo, ograničiti opisno pitanje i odrediti što ćete
+Za osnovni zadatak proučite
+HICP i anketni saldo, odredite opisno pitanje i odlučite što ćete
 prikazati. U početnom pregledu objasnite što svaka mjera znači, koja su njezina
 ograničenja i kako možete usporediti dvije serije.
 
 Nakon čitanja metodologije možete odlučiti prikazati dvije odvojene serije
 sa zajedničkom vremenskom osi, izračunati godišnje sažetke i opisati
-korelaciju vrijednosti iz istog mjeseca. Ne trebate odmah dodati panel model, sentiment
-medija ili predviđanje inflacije. Za svako proširenje prije kodiranja odredite koji dodatni podaci
+korelaciju vrijednosti iz istog mjeseca. Panel-model, analiza medijskih tekstova i predviđanje inflacije
+mogu biti zasebni nastavci istraživanja. Za svako proširenje prije kodiranja odredite koji dodatni podaci
 i metodološko obrazloženje nedostaju.
 
 ### Vježba / od plana do provjerene stranice
 
 Sastavite plan za vlastito pitanje i napišite što bi vas navelo da ga
 promijenite. Ako imate pristup istraživačkom načinu rada, pokrenite ga.
-Dok čekate, provjerite jedan već pronađeni izvor. Nije potrebno završiti
-cijeli postupak u unaprijed zadanih petnaest minuta. Za samostalno čitanje
-važnija je kvaliteta provjere od brzine odgovora.
+Dok čekate, provjerite jedan već pronađeni izvor. Odvojite dovoljno
+vremena za čitanje i provjeru izvora.
 
 Kada izvješće stigne, provjerite tri ključne tvrdnje, zabilježite jednu
 prazninu i napišite vlastiti sažetak na jednoj stranici. Razdvojite

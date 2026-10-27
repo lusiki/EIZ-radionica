@@ -1,12 +1,11 @@
 ---
 title: "Predaja i vrednovanje"
-subtitle: "Provjeravamo istraživački rad, ne broj upotrijebljenih alata"
+subtitle: "Kriteriji za provjeru istraživačkog rada"
 ---
 
 Predajte jednu mapu s pitanjem i planom, tri dokazna zapisa, R skriptom,
 grafom ili tablicom, tekstom od približno 200 riječi i zapisom uporabe AI-ja.
-Sačuvajte tekst prije i nakon jezičnog uređivanja. Podatke ne morate ponovno
-slati ako navedete da koristite podatke iz nastavnog paketa.
+Sačuvajte tekst prije i nakon jezičnog uređivanja. Za podatke je dovoljno navesti da koristite nastavni paket.
 
 ## Rubrika
 
@@ -29,8 +28,8 @@ nastavnik prema pravilima kolegija.
 - Razlikujem li stopu inflacije od anketnog salda?
 - Radi li skripta iz nove sesije bez ručnog popravljanja podataka?
 - Slaže li se svaka brojka u tekstu s tablicom ili grafom?
-- Jesam li opisao što analiza ne može pokazati?
+- Jesam li opisao ograničenja analize?
 - Je li jasno što sam prihvatio od AI-ja i kako sam to provjerio?
 
 Povratna informacija o zadovoljstvu radionicom korisna je za organizaciju,
-ali ne zamjenjuje pregled ovih rezultata.
+a razumijevanje gradiva procjenjujemo pregledom predanih radova.

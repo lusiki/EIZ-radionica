@@ -1,6 +1,6 @@
 ## 1.4 Od bilješki do nacrta rada s Claudeom {#poglavlje-14}
 
-### Imate izvore, ali još nemate argument
+### Povežite izvore u obrazloženje
 
 Nakon pretrage imate izvore, provjerene tvrdnje i otvorena pitanja.
 Sada treba odlučiti kojim ćete ih redoslijedom objasniti čitatelju
@@ -27,15 +27,13 @@ Claude [Projects](https://support.claude.com/en/articles/9517075-what-are-projec
 omogućuje organiziranje materijala i projektnih uputa. Dokumentacija
 [projektnog dohvaćanja](https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects)
 opisuje korištenje relevantnih dijelova datoteka kada sadržaj nadilazi
-raspoloživi kontekst. To nije isto što i čitanje svih priloženih dokumenata
-u cijelosti pri svakom odgovoru. Za ključnu tvrdnju navedite točan dokument
+raspoloživi kontekst. Odgovor se tada oslanja na odabrane dijelove projektnih dokumenata. Za ključnu tvrdnju navedite točan dokument
 i zatražite mjesto na kojem se temelji odgovor.
 
 U projektnim uputama zatražite da alat piše hrvatski, razlikuje podatke
-od pretpostavki i označi gdje nema dokaza. Dodajte da ne navodi izvore
-koje nije otvorio.
-Takve upute usmjeravaju rad. Ne mijenjaju ono što je model naučio tijekom treniranja i ne jamče
-da će svaki odgovor biti točan. Korisnije su provjerljive granice od
+od pretpostavki i označi gdje nema dokaza. Zatražite da navodi izvore koje je otvorio.
+Takve upute usmjeravaju odgovor u razgovoru. Svaki prihvaćeni
+prijedlog zatim provjerite prema svojim izvorima i podacima. Korisnije su provjerljive granice od
 dugog opisa zamišljene osobnosti stručnjaka.
 
 ### Pet načela za koristan upit
@@ -48,17 +46,16 @@ dugog opisa zamišljene osobnosti stručnjaka.
 > opisne analize. Nemam medijske podatke ni istraživački dizajn za
 > procjenu uzročnog učinka. Najprije navedi nejasnoće u mom planu.
 
-Uputa „budi kritički recenzent” može pomoći objasniti vrstu komentara, ali
-ne pretvara model u recenzenta s provjerenim kompetencijama. Kontekst,
+Uputa „budi kritički recenzent” određuje vrstu komentara koju tražite.
+Njihovu stručnu utemeljenost provjeravate vi. Kontekst,
 materijali i kriteriji provjere čine glavninu korisne upute.
 
-2\. Odredite format i opseg. Ako želite nacrt, tražite nacrt, a ne cijeli
-rad. Ako želite usporedbu izvora, zatražite teme, slaganja, razlike i
+2\. Odredite format i opseg. Za nacrt zatražite odjeljke i kratko objašnjenje njihove svrhe. Ako želite usporedbu izvora, zatražite teme, slaganja, razlike i
 ograničenja. Evo jednog primjera upita.
 
 > Predloži pet odjeljaka, pitanje, podaci, postupak, rezultati i ograničenja.
 > Za svaki napiši svrhu, dokaz koji je potreban i pitanje na koje još
-> moram odgovoriti. Nemoj pisati nalaze prije nego što dobiješ izlaz analize.
+> moram odgovoriti. Nalaze napiši nakon što ti pošaljem izlaz analize.
 
 3\. Dajte primjer željenog rezultata. Jedan dobro napisan odlomak ili
 jedan dovršen dokazni zapis često je korisniji od mnoštva stilskih
@@ -67,14 +64,14 @@ mjesta za unos. U suprotnom će se i pogreška iz primjera proširiti na ostatak
 
 4\. Zatražite procjenu metode. Upit koji traži opravdanje već odabrane
 Newey-West korekcije usmjerava odgovor prema potvrdi vašeg izbora.
-Pitajte je li metoda potrebna, koje pretpostavke zahtijeva i što ne rješava. Jednako vrijedi za pitanje o istraživačkoj praznini.
+Pitajte čemu metoda služi, koje pretpostavke zahtijeva i što treba zasebno provjeriti. Jednako vrijedi za pitanje o istraživačkoj praznini.
 Neka model razlikuje prazninu u vašim bilješkama od tvrdnje da nešto nitko
 još nije istražio.
 
 5\. Poboljšavajte pojedinačne dijelove. Nakon prvog nacrta izaberite
-jedan problem. „Pojasni zašto saldo nije postotna prognoza” preciznije je
+jedan problem. „Objasni kako se računa i tumači saldo” preciznije je
 od „učini tekst akademskijim”. Sačuvajte verzije i odbacite prijedlog koji
-mijenja značenje. Više iteracija nije samo po sebi dokaz više kvalitete.
+mijenja značenje. Svaku novu verziju usporedite s prethodnom prema jasnoći i točnosti.
 
 ### Demonstracija / četiri koraka do izvedivog plana
 
@@ -82,13 +79,13 @@ U prvom koraku prikupite bilješke. Za naš primjer možete zapisati sljedeće.
 „Imam mjesečni HICP, godišnju stopu promjene. Imam kvalitativni saldo
 očekivanja. Podaci pokrivaju Hrvatsku 2015.–2024. Želim usporediti
 kretanja. Nisam siguran/na kako opisati odnos.” Uključite definicije iz
-rječnika, a ne samo nazive stupaca.
+rječnika uz nazive stupaca.
 
 U drugom koraku pitajte što nedostaje u planu.
 
 > Razdvoji što već mogu istražiti ovim podacima, što trebam dodatno
 > provjeriti u metodologiji i što zahtijeva nove podatke. Za svaku
-> preporuku objasni vezu s mojim pitanjem. Ne dodaj varijable koje nemam.
+> preporuku objasni vezu s mojim pitanjem. Analizu ograniči na priložene varijable.
 
 Koristan odgovor može upozoriti na različite jedinice i vremenski horizont
 ankete. Prijedlog da analizirate medijski sentiment zahtijeva novu zbirku tekstova,
@@ -97,7 +94,7 @@ pravilo mjerenja i provjeru kvalitete. Za taj posao treba zasebno planirati vrij
 U trećem koraku odredite redoslijed argumenta. Najprije objasnite pitanje
 i mjere, zatim provjeru podataka, vizualni prikaz i sažetke, a na kraju
 interpretaciju i ograničenja. Uz svaki odjeljak napišite što ćete u njemu objasniti.
-Naslov „Metodologija” bez informacije što je izračunato nije dovoljan plan.
+U odjeljku o metodama navedite što ćete izračunati i kako.
 
 U četvrtom koraku popravite najslabije mjesto. Ako nacrt zaključuje da
 mediji oblikuju očekivanja, vratite ga na ono što podaci sadrže. Ako
@@ -105,22 +102,22 @@ predviđa regresiju zato što rad „mora biti ozbiljan”, pitajte na koje
 pitanje ta regresija odgovara. Opisna analiza može biti dovršen i vrijedan
 studentski zadatak kada su mjere i ograničenja dobro objašnjeni.
 
-### Hipoteze, teorija i rezultat ne nastaju istim putem
+### Kako povezati hipotezu s analizom
 
 Model može predložiti hipotezu, pa i originalnu ideju. Vi provjeravate
 je li jasno postavljena, povezana s teorijom i mjerljiva dostupnim
 podacima te odlučujete vrijedi li je istražiti.
 
 Ako vam ideja za hipotezu dođe nakon gledanja grafa, zapišite to.
-Nemojte tvrditi da ste je postavili prije analize. Za provjeru prognoze
+Opišite je kao ideju nastalu tijekom pregleda podataka. Za provjeru prognoze
 unaprijed odredite što predviđate, koliko unaprijed i na kojem ćete
 razdoblju provjeriti točnost. Za zaključak o uzroku morate objasniti
 kako ćete razlikovati učinak koji vas zanima od drugih mogućih objašnjenja.
 
 Za kritiku izvora možete zatražiti procjenu jasnoće pitanja, podataka,
 metode i granica zaključka. Ako modelu dajete samo sažetak, neka i komentar
-bude ograničen na sažetak. Zaključivanje o detaljima specifikacije koje
-ni vi ni model niste vidjeli nije kritičko čitanje.
+bude ograničen na sažetak. Za procjenu pojedinosti modela pročitajte
+metodološki odjeljak rada.
 
 ### Nacrt koji možete braniti
 

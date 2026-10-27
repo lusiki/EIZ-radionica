@@ -9,11 +9,10 @@ Preuzmite [radni paket](../downloads/eiz-workshop.zip), raspakirajte ga u
 običnu lokalnu mapu i otvorite tu mapu u [Positronu](https://positron.posit.co/download.html).
 Instalirajte [R](https://cran.r-project.org/). Referentni postupak provjeren je
 s R-om 4.6.0. Osnovna računalna pismenost dovoljna je uz vođeni početak.
-Predznanje regresije nije potrebno.
+Regresija je obrađena u izbornom naprednom dijelu.
 
 Positron služi kao zajedničko sučelje. Ako već koristite RStudio, možete
-pokretati iste R skripte. Tijekom demonstracije pratimo Positron. Za sudjelovanje
-nisu obvezni Copilot, Claude Code, API ključ ili pretplata. Dostupne AI alate
+pokretati iste R skripte. Tijekom demonstracije pratimo Positron. Za sudjelovanje su dovoljni R i nastavni paket. Dostupne AI alate
 možete koristiti prema pravilima kolegija, uz provjeru izlaza.
 
 ## Provjera za polaznike
@@ -28,8 +27,8 @@ source("code/starter.R", encoding = "UTF-8")
 
 Treba se ispisati 120 redaka, 120 različitih mjeseci i 0 nedostajućih
 vrijednosti. Ako se datoteka ne pronalazi, otvorite korijensku mapu paketa.
-Nemojte prepisivati apsolutne putanje u skriptu. Za ovaj korak dovoljan je
-osnovni R, bez dodatnih paketa. Ne morate odmah riješiti zadatke označene TODO.
+U skripti zadržite putanje koje polaze od projektne mape. Za ovaj korak dovoljan je
+osnovni R, bez dodatnih paketa. Zadatke označene TODO rješavat ćete tijekom radionice.
 
 ::: {.concept-box}
 Ako nemate internet ili pristup AI servisu, koristite podatke i primjere
@@ -50,8 +49,7 @@ renv::load()
 source("code/run_all.R", encoding = "UTF-8")
 ```
 
-`renv.lock` bilježi pakete i verziju R-a. Ne instalira sam R ni sistemske
-biblioteke. Za izradu web-stranica dodatno treba Quarto (provjeren 1.9.38).
+`renv.lock` bilježi pakete i verziju R-a. R i potrebne sistemske biblioteke instalirajte zasebno. Za izradu web-stranica dodatno treba Quarto (provjeren 1.9.38).
 Nakon obnove paketa analiza radi iz spremljenih izvora bez mrežnog pristupa.
 
 Na Windowsu s pogrešnom varijablom locale skripta za pregled postavlja UTF-8

@@ -6,8 +6,7 @@ subtitle: "Hrvatska · mjesečno · siječanj 2015. – prosinac 2024."
 [Preuzmite CSV](processed/croatia_inflation.csv).
 Jedan redak predstavlja jedan mjesec, ukupno 120 redaka bez nedostajućih
 vrijednosti. Podaci su preuzeti 26. listopada 2026. i zamrznuti za nastavu.
-Povijesne vrijednosti mogu biti revidirane. Ovo nisu izdanja dostupna u
-svakom pojedinom povijesnom mjesecu.
+Povijesne vrijednosti mogu biti revidirane. Koristimo povijesne vrijednosti dostupne na datum preuzimanja.
 
 ## Rječnik
 
@@ -27,14 +26,13 @@ svakom pojedinom povijesnom mjesecu.
 
 HICP dolazi iz Eurostatove tablice `prc_hicp_minr`, `freq=M`, `geo=HR`,
 `coicop18=TOTAL`, `unit=RCH_A`. To je tablica prema ECOICOP v2.
-Ne spajamo je sa starom `prc_hicp_manr` bez provjere klasifikacije.
+Prije spajanja sa starom tablicom `prc_hicp_manr` provjerite klasifikaciju.
 
 Očekivanja dolaze iz `ei_bsco_m`, izvor DG ECFIN.
 `freq=M`, `geo=HR`, `indic=BS-PT-NY`, `s_adj=NSA`, `unit=BAL`.
 Odabrana je neprilagođena serija kako bi postupak bio izravan i dokumentiran.
 Sezonalnost ostaje moguće ograničenje. Pitanje o sljedećih 12 mjeseci jest
-kvalitativno i uspoređuje buduće kretanje s proteklim razdobljem. Saldo ne
-predstavlja prosjek kvantitativnih prognoza inflacije.
+kvalitativno i uspoređuje buduće kretanje s proteklim razdobljem. Saldo sažima raspodjelu kvalitativnih odgovora u bodovima salda.
 
 [Metapodaci snimke i točni API upiti](raw/manifest.json) ·
 [HICP JSON](raw/hicp.json) · [Anketni JSON](raw/expectations.json)
@@ -42,22 +40,19 @@ predstavlja prosjek kvantitativnih prognoza inflacije.
 ## Što obrada radi
 
 Skripta provjerava kontrolne zbrojeve izvornih datoteka, dimenzije i šifre,
-odabire fiksni raspon mjeseci i spaja serije po jednakom ključu. Ne imputira,
-ne briše valjana opažanja, ne zaglađuje i ne logaritmira. Izvorne oznake
+odabire fiksni raspon mjeseci i spaja serije po jednakom ključu. Čuva valjana opažanja i njihove izvorne vrijednosti. Izvorne oznake
 statusa čuva u CSV-u.
 
 Godišnja tablica sadrži aritmetički prosjek dvanaest mjesečnih godišnjih stopa
-i prosjek dvanaest mjesečnih salda. Prosjek godišnjih stopa nije iznova
-izračunana promjena godišnjeg prosjeka indeksa. Ne treba ga predstavljati kao
-drugi službeni pokazatelj godišnje inflacije.
+i prosjek dvanaest mjesečnih salda. Taj prosjek sažima mjesečne godišnje stope. Za promjenu godišnjeg prosjeka
+indeksa trebao bi zaseban izračun iz razina indeksa.
 
 ## Granice zaključka
 
-Podaci prate jednu zemlju kroz vrijeme. Ne sadrže panel više zemalja
-ni individualne odgovore ispitanika.
-Istodobna usporedba ne mjeri uspješnost prognoze za 12 mjeseci unaprijed.
-Na kretanje obiju serija mogu utjecati zajednički šokovi. Opisni rezultati
-ne identificiraju uzročnost niti sami potvrđuju usidrenost očekivanja.
+Podaci prate skupne mjere za Hrvatsku kroz vrijeme. Uspoređujemo njihove
+vrijednosti iz istog mjeseca. Na obje serije mogu utjecati zajednički
+šokovi. Za provjeru prognoze, uzročnog učinka ili usidrenosti očekivanja
+treba odrediti zasebno pitanje, odgovarajuće podatke i postupak.
 
 [Referentni izlazi](../materials/results.qmd) ·
 [Metodološki izvori](../materials/sources.qmd)

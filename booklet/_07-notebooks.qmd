@@ -8,7 +8,7 @@ biti i istraživački dnevnik i radno okruženje. Računalne bilježnice spajaju
 tekst, kod i rezultate. AI pomoć može dodati razgovorno sučelje za pisanje
 i objašnjavanje koda.
 
-Ipak, ne predstavljaju sva razgovorna sučelja istu vrstu dokumenta.
+Razgovorna sučelja mogu spremati rad u različitim oblicima.
 Chat koji prikazuje graf, interaktivni prikaz izrađen u razgovoru i
 Jupyter bilježnica nemaju nužno isti način spremanja koda i izvođenja.
 Prije analize provjerite možete li vidjeti izvršeni kod, preuzeti podatke
@@ -37,26 +37,23 @@ postocima”, ispravite definiciju prije bilo kakvog grafa.
 
 Drugo pitanje, kako se mjere kreću kroz vrijeme? Zatražite dva panela
 sa zajedničkom vremenskom osi. Jasno navedite jedinice i razdoblje.
-Provjerite da kronološki redoslijed nije zamijenjen abecednim ili
-redoslijedom nastanka objekata. U ovom skupu tekstualni format YYYY-MM
-omogućuje kronološko sortiranje, ali to nije svojstvo svakog formata datuma.
+Provjerite jesu li mjeseci poredani od najranijeg prema najkasnijem. U ovom skupu tekstualni format YYYY-MM
+omogućuje kronološko sortiranje, a za druge formate provjerite pravilo sortiranja.
 
 Treće pitanje, kakav je raspon i raspodjela? Sažetak i histogram
 otkrivaju različite stvari. Histogram prikazuje raspodjelu, ali skriva
 vremenski slijed. Vremenski graf čuva slijed, ali slabije pokazuje koliko
 je često pojedina vrijednost zastupljena. Koristite ih za različita
-pitanja. Minima i maksima ne proglašavajte pogreškama bez provjere izvora.
+pitanja. Najmanje i najveće vrijednosti usporedite s izvornim podacima.
 
 Četvrto pitanje, koliko je sažetak osjetljiv na razdoblje? Izračunajte
 korelaciju za cijeli uzorak i dva unaprijed navedena podrazdoblja.
 Objasnite da se uspoređuju isti mjeseci dviju serija. Ako želite ispitati
 vremenski odmak, napišite koju varijablu pomičete, u kojem smjeru i zašto.
-Nemojte iskušavati odmake dok ne dobijete najveći koeficijent i prikazati
-ga kao jedini rezultat.
+Unaprijed odredite odmake i prikažite rezultate za sve odabrane odmake.
 
-Peto pitanje, što je sljedeće istraživačko pitanje? Početni pregled podataka može
-otvoriti hipotezu o razlikama između razdoblja, ali ne daje automatski
-njezinu potvrdu. Zapišite kada je ideja nastala i kakvi su dodatni podaci
+Peto pitanje, što je sljedeće istraživačko pitanje? Početni pregled podataka može potaknuti hipotezu o razlikama između
+razdoblja. Za njezinu provjeru pripremite zaseban plan analize. Zapišite kada je ideja nastala i kakvi su dodatni podaci
 ili dizajn potrebni. Za AI prijedlog da dodate medijski ton morali biste prikupiti nove
 podatke i započeti zaseban projekt.
 
@@ -83,18 +80,18 @@ podacima i provjerite dobivene rezultate.
 Ako sutra pošaljete isti upit modelu, može nastati drukčiji kod. Model,
 postavke, dostupni alati ili izvori također se mogu promijeniti. Za
 reprodukciju našeg numeričkog rezultata zato čuvamo **prihvaćeni kod i
-ulazne podatke**, a ne očekujemo da model ponovno napiše istu analizu.
-Zapis upita objašnjava nastanak rada, ali nije zamjena za skriptu.
+ulazne podatke**. Iz njih ponovno pokrećemo analizu, a zapis upita
+čuvamo kao objašnjenje nastanka rada.
 
 Za slučajne postupke treba navesti sjeme generatora i relevantne
 postavke. Za vanjske izvore treba sačuvati datum dohvata i, kada je
 dopušteno, korištenu kopiju. Za softverske ovisnosti treba opisati verzije
 i način obnove okruženja. [renv](https://rstudio.github.io/renv/articles/renv.html)
-pomaže upravljanju R paketima, ali sama zaključana lista paketa ne jamči
-prisutnost svih sistemskih biblioteka, podataka ili vanjskih usluga.
+pomaže upravljanju R paketima. Zasebno zabilježite potrebne sistemske
+biblioteke, podatke i vanjske usluge.
 
 Za ovaj osnovni primjer dovoljne su javne spremljene datoteke i osnovni
-R. Docker nije potreban. Složeniji projekti mogu tražiti izolirano okruženje
+R. Složeniji projekti mogu tražiti izolirano okruženje
 i automatizirane provjere. Razina infrastrukture treba odgovarati
 stvarnim ovisnostima i riziku gubitka postupka.
 
@@ -102,9 +99,8 @@ stvarnim ovisnostima i riziku gubitka postupka.
 
 Preuzmite skriptu ili bilježnicu, potrebne ulazne podatke ako to dopuštaju
 uvjeti uporabe, tablicu rezultata i graf. Dodajte opis koraka, verzije
-važnih paketa i bilješku o AI pomoći. Nemojte kao jedini dokaz predati
-snimku ekrana razgovora. Ona ne omogućuje provjeru brojeva ni promjenu
-pretpostavki.
+važnih paketa i bilješku o AI pomoći. Predajte datoteke iz kojih druga osoba može provjeriti brojeve
+i ponoviti postupak s drukčijim pretpostavkama.
 
 Iz razgovora sačuvajte odluke i zapise potrebne za provjeru rada.
 Pri spremanju vodite računa o pravilima kolegija i zaštiti podataka.
@@ -116,7 +112,7 @@ zamrznuti skup nema praznina i takva transformacija nije dio plana.”
 
 Agentu možete zadati ograničen posao nad više datoteka. U editoru je
 lakše pratiti male promjene koda dok učite, dok bilježnica drži pitanje,
-kod i komentar na jednom mjestu. Sve
+kod i komentar na jednom mjestu. Sva
 tri načina rada mogu biti pregledna ako čuvate kod i bilježite odluke.
 U svakom trebate provjeriti može li se analiza ponovno pokrenuti.
 

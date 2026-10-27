@@ -10,8 +10,8 @@ toc-title: "Sadržaj prvog dijela"
 [Kratki materijal za nastavu](../slides/day1.qmd)
 
 Čitajte od početne ideje prema provjerenim izvorima i planu. Primjeri
-upita su predlošci za prilagodbu. Prikazani odgovori nisu obećanje kako će
-se pojedini alat ponašati. Dokumentacija alata provjerena je 26. listopada 2026.
+upita su predlošci za prilagodbu. Odgovori alata mogu se razlikovati,
+pa svaki provjerite prema izvorima i zahtjevima zadatka. Dokumentacija alata provjerena je 26. listopada 2026.
 
 {{< include _01-foundations.qmd >}}
 

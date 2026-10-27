@@ -32,8 +32,8 @@ i ponovno izračunati.
 
 Pratit ćete ostvarenu inflaciju i očekivanja potrošača u Hrvatskoj kroz
 {{< var case.rows >}} mjeseci. Provjerit ćete izvore i AI sažetak,
-pokrenuti analizu i napisati što rezultati pokazuju, a što iz njih ne možete zaključiti. U osnovnom
-dijelu nisu potrebni plaćeni AI alati.
+pokrenuti analizu i opisati rezultate i njihova ograničenja. Osnovni dio
+možete proći besplatnim alatima i priloženim materijalima.
 
 ::: {.step-links}
 ::: {.step-link}
@@ -58,7 +58,7 @@ Predajte rezultat koji se može ponovno izračunati.
 
 Ostvarena inflacija mjeri promjenu cijena. Anketni saldo opisuje odgovore
 potrošača o budućim promjenama cijena. Usporedit ćemo kako se te dvije mjere
-mijenjaju kroz vrijeme. Slično kretanje ne dokazuje da jedna uzrokuje drugu.
+mijenjaju kroz vrijeme. Za zaključak o uzroku trebalo bi provesti dodatno istraživanje.
 
 [Upoznajte podatke](data/dictionary.qmd) ·
 [Pogledajte raspored](admin/workshop_overview.qmd) ·
@@ -82,6 +82,5 @@ ažurirani tekst izvorne radionice.
 
 ::: {.concept-box}
 Sadržaj je revidiran {{< var workshop.revision >}}
-Termin sljedeće izvedbe i kontakt potvrđuje organizator. Datum revizije nije
-datum događaja.
+Termin sljedeće izvedbe i kontakt potvrđuje organizator. Datum revizije odnosi se na sadržaj materijala.
 :::

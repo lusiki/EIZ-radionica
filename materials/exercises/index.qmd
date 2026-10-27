@@ -26,7 +26,7 @@ zabilježite da ga trebate zatražiti.
 **Predaja.** Jedno pitanje, dvije pravilno označene varijable i popis provjera.
 
 **Provjera.** Pitanje je opisno i može se odgovoriti dostupnim podacima.
-Saldo se ne naziva stopom inflacije. Pravila ustanove nisu zamijenjena mišljenjem modela.
+Saldo je izražen u bodovima salda. Pravila uporabe preuzeta su iz uputa ustanove.
 
 **Rasprava, 10 minuta.** Što bi nedostajalo kada bismo pitanje promijenili
 u „uzrokuju li očekivanja inflaciju”?
@@ -48,8 +48,8 @@ međusobno provjerite tri zapisa. AI smije predložiti izvor, ali izvor morate o
 **Predaja.** Tri zapisa s autorom ili ustanovom, naslovom, poveznicom,
 odjeljkom, vlastitom parafrazom, ograničenjem i statusom provjere.
 
-**Provjera.** Odlomak stvarno podupire zapisanu tvrdnju. Članak o europodručju
-nije predstavljen kao dokaz hrvatskog rezultata 2015.–2024.
+**Provjera.** Odlomak stvarno podupire zapisanu tvrdnju. Članak o europodručju koristi se za objašnjenje mjera, a hrvatski
+rezultat za 2015.–2024. provjerava se u nastavnim podacima.
 
 **Rasprava, 10 minuta.** Može li točan bibliografski podatak pratiti pogrešnu tvrdnju?
 Ako izvor niste mogli otvoriti, jasno označite neprovjeren status.
@@ -70,8 +70,7 @@ odlomak od 80–120 riječi i dvije rečenice o onome što je sažetak prešutio
 **Predaja.** Anotirani izvorni tekst i vlastiti ispravak. Koristite oznake
 „pogrešno”, „nepotkrijepljeno” i „izostavljeno”.
 
-**Provjera.** Najmanje četiri različita problema imaju obrazloženje. Izmjena
-stila bez ispravka značenja nije dovoljna.
+**Provjera.** Najmanje četiri različita problema imaju obrazloženje. Ispravak obuhvaća značenje svake označene tvrdnje.
 
 **Rasprava, 10 minuta.** Kako biste provjerili isti tekst da nema očito pogrešnih brojki?
 
@@ -92,7 +91,7 @@ tvrdnje koje analiza neće moći potvrditi. Koristite vlastite riječi.
 **Predaja.** Plan do jedne stranice, spremljen prije gledanja rezultata.
 
 **Provjera.** 120 mjeseci. Nema automatskog logaritmiranja, interpolacije ili
-panel-metode. Ne mijenja se uzorak zato što rezultat nije očekivan.
+panel-metode. Uzorak ostaje onaj koji je određen planom analize.
 
 **Rasprava, 10 minuta.** Što je promjena plana zbog pogreške, a što biranje analize
 zato što daje poželjan rezultat? Zapišite razlog svake naknadne promjene.
@@ -109,15 +108,15 @@ Cilj je provjeriti strukturu i značenje ulaza prije analize.
 **Rad, 25 minuta.** Prvih 5 minuta otvorite projekt i pokrenite početak
 skripte. Sljedećih 10 minuta provjerite broj i jedinstvenost mjeseci,
 nedostajuće vrijednosti i raspon obiju mjera. Zadnjih 10 minuta objasnite
-jedinice i zašto `log()` nije dopušten automatski primijeniti na svaki stupac.
+jedinice i za koje je vrijednosti `log()` definiran.
 
 **Predaja.** Ispunjena provjera podataka s naredbama i rezultatima.
 
 **Provjera.** 120 redaka i različitih mjeseci, 2015-01 do 2024-12, nema
-nedostajućih vrijednosti. Negativna vrijednost sama po sebi nije greška.
+nedostajućih vrijednosti. Negativne vrijednosti tumače se prema definiciji mjere.
 
 **Rasprava, 10 minuta.** Koja se odluka mora donijeti prije brisanja nedostajućeg
-opažanja? Prazna oznaka statusa izvora ne znači nedostajuću brojčanu vrijednost.
+opažanja? Status izvora i brojčanu vrijednost provjerite u zasebnim stupcima.
 
 ## 2.2 Jedna izmjena koju možete objasniti {#v22}
 
@@ -135,15 +134,15 @@ raditi prema referentnoj sintaksi u uputama nastavnika.
 
 **Predaja.** Skripta s kratkim komentarom uz izmjenu i zapis o provjeri.
 
-**Provjera.** Objašnjavate svaku dodanu naredbu, ne mijenjate ulazni CSV,
-prosjek salda ne nazivate očekivanom stopom inflacije.
+**Provjera.** Objašnjavate svaku dodanu naredbu, čuvate izvorni CSV
+i prosjek salda izražavate u bodovima salda.
 
 **Rasprava, 10 minuta.** Može li kod biti napisan bez programskih grešaka i mjeriti pogrešnu stvar?
 
 ## 2.3 Popravak i čisto izvođenje {#v23}
 
 ::: {.exercise-meta}
-Cilj je prepoznati pogrešan analitički postupak i kada program ne javlja grešku.
+Cilj je provjeriti što kod računa i odgovara li postupak istraživačkom pitanju.
 :::
 
 **Ulaz.** [namjerno pogrešna skripta](../../code/flawed_example.R) i
@@ -162,7 +161,7 @@ sažetak i jedan ispravno označen graf.
 izmišljene jedinice ili zaključka o uzroku. Grafovi imaju različito označene jedinice.
 
 **Rasprava, 10 minuta.** Što bi se promijenilo da izbrišemo samo jedan mjesec
-najveće inflacije? Zašto sama visoka korelacija nije dovoljan odgovor?
+najveće inflacije? Što korelacija pokazuje i koje su dodatne provjere potrebne?
 
 ## 2.4 Provjereni rezultat i predaja {#v24}
 
@@ -182,7 +181,7 @@ Posljednjih 5 minuta dovršite zapis uporabe i provjerite datoteke za predaju.
 teksta i zapis uporabe AI-ja. Ako nije bilo AI-ja, zapišite „AI nije korišten”.
 
 **Provjera.** Barem jedna brojka odgovara izlazu, razdoblje i jedinice su
-navedeni, postoji ograničenje i nema tvrdnje koju analiza ne podupire.
+navedeni, ograničenja su objašnjena i tvrdnje odgovaraju provedenoj analizi.
 
 **Rasprava, 10 minuta.** Koji biste dodatni podatak ili dizajn trebali za
 sljedeće, zahtjevnije istraživačko pitanje?

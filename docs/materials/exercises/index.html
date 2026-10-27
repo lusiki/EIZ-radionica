@@ -198,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Ulaz.</strong> <a href="../../slides/day1.html#blok-11">čitateljski materijal</a>, <a href="../../data/dictionary.html">rječnik podataka</a> i <a href="../templates/research-plan.md">predložak plana</a>.</p>
 <p><strong>Rad, 25 minuta.</strong> Prvih 5 minuta napišite pitanje o Hrvatskoj 2015.–2024. U sljedećih 10 minuta označite koje dvije varijable trebate i što svaka mjeri. Posljednjih 10 minuta sastavite tri provjere prije prihvaćanja AI odgovora te navedite koje pravilo kolegija trebate provjeriti. Ako odgovor ustanove još nemate, zabilježite da ga trebate zatražiti.</p>
 <p><strong>Predaja.</strong> Jedno pitanje, dvije pravilno označene varijable i popis provjera.</p>
-<p><strong>Provjera.</strong> Pitanje je opisno i može se odgovoriti dostupnim podacima. Saldo se ne naziva stopom inflacije. Pravila ustanove nisu zamijenjena mišljenjem modela.</p>
+<p><strong>Provjera.</strong> Pitanje je opisno i može se odgovoriti dostupnim podacima. Saldo je izražen u bodovima salda. Pravila uporabe preuzeta su iz uputa ustanove.</p>
 <p><strong>Rasprava, 10 minuta.</strong> Što bi nedostajalo kada bismo pitanje promijenili u „uzrokuju li očekivanja inflaciju”?</p>
 </section>
 <section id="v12" class="level2">
@@ -209,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Ulaz.</strong> <a href="../../materials/sources.html">tri početna izvora</a> i <a href="../templates/evidence-log.md">predložak dokaznog zapisa</a>.</p>
 <p><strong>Rad, 25 minuta.</strong> U prvih 5 minuta raspodijelite izvore. Tijekom sljedećih 15 minuta u svakome pronađite točan odjeljak, HICP mjeru, značenje anketnog salda i ograničenje usporedbe očekivanja s inflacijom. Posljednjih 5 minuta međusobno provjerite tri zapisa. AI smije predložiti izvor, ali izvor morate otvoriti.</p>
 <p><strong>Predaja.</strong> Tri zapisa s autorom ili ustanovom, naslovom, poveznicom, odjeljkom, vlastitom parafrazom, ograničenjem i statusom provjere.</p>
-<p><strong>Provjera.</strong> Odlomak stvarno podupire zapisanu tvrdnju. Članak o europodručju nije predstavljen kao dokaz hrvatskog rezultata 2015.–2024.</p>
+<p><strong>Provjera.</strong> Odlomak stvarno podupire zapisanu tvrdnju. Članak o europodručju koristi se za objašnjenje mjera, a hrvatski rezultat za 2015.–2024. provjerava se u nastavnim podacima.</p>
 <p><strong>Rasprava, 10 minuta.</strong> Može li točan bibliografski podatak pratiti pogrešnu tvrdnju? Ako izvor niste mogli otvoriti, jasno označite neprovjeren status.</p>
 </section>
 <section id="v13" class="level2">
@@ -220,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Ulaz.</strong> <a href="../examples/flawed-summary.md">namjerno pogrešan sažetak</a>, izvori iz prethodne vježbe i rječnik podataka.</p>
 <p><strong>Rad, 25 minuta.</strong> Prvih 5 minuta označite sumnjive tvrdnje. Sljedećih 10 minuta svaku provjerite uz izvor. U zadnjih 10 minuta napišite ispravljeni odlomak od 80–120 riječi i dvije rečenice o onome što je sažetak prešutio.</p>
 <p><strong>Predaja.</strong> Anotirani izvorni tekst i vlastiti ispravak. Koristite oznake „pogrešno”, „nepotkrijepljeno” i „izostavljeno”.</p>
-<p><strong>Provjera.</strong> Najmanje četiri različita problema imaju obrazloženje. Izmjena stila bez ispravka značenja nije dovoljna.</p>
+<p><strong>Provjera.</strong> Najmanje četiri različita problema imaju obrazloženje. Ispravak obuhvaća značenje svake označene tvrdnje.</p>
 <p><strong>Rasprava, 10 minuta.</strong> Kako biste provjerili isti tekst da nema očito pogrešnih brojki?</p>
 </section>
 <section id="v14" class="level2">
@@ -231,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Ulaz.</strong> <a href="../templates/research-plan.md">predložak plana</a>, tri dokaza i <a href="../../data/dictionary.html">rječnik podataka</a>.</p>
 <p><strong>Rad, 25 minuta.</strong> U prvih 10 minuta navedite fiksni uzorak, ključ i jedinice. Sljedećih 10 minuta odaberite dva odvojena vremenska grafa i godišnje sažetke, uz postupak za nedostajuće vrijednosti. Posljednjih 5 minuta napišite dvije tvrdnje koje analiza neće moći potvrditi. Koristite vlastite riječi.</p>
 <p><strong>Predaja.</strong> Plan do jedne stranice, spremljen prije gledanja rezultata.</p>
-<p><strong>Provjera.</strong> 120 mjeseci. Nema automatskog logaritmiranja, interpolacije ili panel-metode. Ne mijenja se uzorak zato što rezultat nije očekivan.</p>
+<p><strong>Provjera.</strong> 120 mjeseci. Nema automatskog logaritmiranja, interpolacije ili panel-metode. Uzorak ostaje onaj koji je određen planom analize.</p>
 <p><strong>Rasprava, 10 minuta.</strong> Što je promjena plana zbog pogreške, a što biranje analize zato što daje poželjan rezultat? Zapišite razlog svake naknadne promjene.</p>
 </section>
 <section id="v21" class="level2">
@@ -240,10 +240,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Cilj je provjeriti strukturu i značenje ulaza prije analize.</p>
 </div>
 <p><strong>Ulaz.</strong> <a href="../../data/processed/croatia_inflation.csv">CSV</a>, <a href="../../code/starter.R">starter.R</a>, <a href="../templates/data-audit.md">predložak za provjeru podataka</a>.</p>
-<p><strong>Rad, 25 minuta.</strong> Prvih 5 minuta otvorite projekt i pokrenite početak skripte. Sljedećih 10 minuta provjerite broj i jedinstvenost mjeseci, nedostajuće vrijednosti i raspon obiju mjera. Zadnjih 10 minuta objasnite jedinice i zašto <code>log()</code> nije dopušten automatski primijeniti na svaki stupac.</p>
+<p><strong>Rad, 25 minuta.</strong> Prvih 5 minuta otvorite projekt i pokrenite početak skripte. Sljedećih 10 minuta provjerite broj i jedinstvenost mjeseci, nedostajuće vrijednosti i raspon obiju mjera. Zadnjih 10 minuta objasnite jedinice i za koje je vrijednosti <code>log()</code> definiran.</p>
 <p><strong>Predaja.</strong> Ispunjena provjera podataka s naredbama i rezultatima.</p>
-<p><strong>Provjera.</strong> 120 redaka i različitih mjeseci, 2015-01 do 2024-12, nema nedostajućih vrijednosti. Negativna vrijednost sama po sebi nije greška.</p>
-<p><strong>Rasprava, 10 minuta.</strong> Koja se odluka mora donijeti prije brisanja nedostajućeg opažanja? Prazna oznaka statusa izvora ne znači nedostajuću brojčanu vrijednost.</p>
+<p><strong>Provjera.</strong> 120 redaka i različitih mjeseci, 2015-01 do 2024-12, nema nedostajućih vrijednosti. Negativne vrijednosti tumače se prema definiciji mjere.</p>
+<p><strong>Rasprava, 10 minuta.</strong> Koja se odluka mora donijeti prije brisanja nedostajućeg opažanja? Status izvora i brojčanu vrijednost provjerite u zasebnim stupcima.</p>
 </section>
 <section id="v22" class="level2">
 <h2 class="anchored" data-anchor-id="v22">2.2 Jedna izmjena koju možete objasniti</h2>
@@ -253,19 +253,19 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Ulaz.</strong> Starter skripta i <a href="../templates/ai-use-log.md">predložak zapisa uporabe AI-ja</a>.</p>
 <p><strong>Rad, 25 minuta.</strong> Prvih 5 minuta objasnite postojeći izračun za 2022. Sljedećih 15 minuta dodajte prosjek očekivanja za 2022. i tablicu godišnjih prosjeka. Posljednjih 5 minuta provjerite 12 mjeseci po godini i barem jednu vrijednost tako da sami odaberete pripadajuće retke. Možete tražiti prijedlog od AI-ja ili raditi prema referentnoj sintaksi u uputama nastavnika.</p>
 <p><strong>Predaja.</strong> Skripta s kratkim komentarom uz izmjenu i zapis o provjeri.</p>
-<p><strong>Provjera.</strong> Objašnjavate svaku dodanu naredbu, ne mijenjate ulazni CSV, prosjek salda ne nazivate očekivanom stopom inflacije.</p>
+<p><strong>Provjera.</strong> Objašnjavate svaku dodanu naredbu, čuvate izvorni CSV i prosjek salda izražavate u bodovima salda.</p>
 <p><strong>Rasprava, 10 minuta.</strong> Može li kod biti napisan bez programskih grešaka i mjeriti pogrešnu stvar?</p>
 </section>
 <section id="v23" class="level2">
 <h2 class="anchored" data-anchor-id="v23">2.3 Popravak i čisto izvođenje</h2>
 <div class="exercise-meta">
-<p>Cilj je prepoznati pogrešan analitički postupak i kada program ne javlja grešku.</p>
+<p>Cilj je provjeriti što kod računa i odgovara li postupak istraživačkom pitanju.</p>
 </div>
 <p><strong>Ulaz.</strong> <a href="../../code/flawed_example.R">namjerno pogrešna skripta</a> i <a href="../../materials/results.html">referentni izlazi</a>.</p>
 <p><strong>Rad, 25 minuta.</strong> Prvih 10 minuta označite najmanje četiri problema bez pokretanja koda. U sljedećih 10 minuta napravite vlastitu ispravnu skriptu. Učitajte svih 120 mjeseci, zadržite jedinice, izradite godišnji sažetak i dva odvojena vremenska prikaza. Posljednjih 5 minuta pokrenite je iz nove sesije i usporedite jedan broj s referencom. Za početnike je dovoljan godišnji sažetak i jedan ispravno označen graf.</p>
 <p><strong>Predaja.</strong> Popis pogrešaka, ispravna skripta i ponovljeni izlaz iz čiste sesije.</p>
 <p><strong>Provjera.</strong> Nema prešutnog gubitka redaka, logaritmiranja negativne stope, izmišljene jedinice ili zaključka o uzroku. Grafovi imaju različito označene jedinice.</p>
-<p><strong>Rasprava, 10 minuta.</strong> Što bi se promijenilo da izbrišemo samo jedan mjesec najveće inflacije? Zašto sama visoka korelacija nije dovoljan odgovor?</p>
+<p><strong>Rasprava, 10 minuta.</strong> Što bi se promijenilo da izbrišemo samo jedan mjesec najveće inflacije? Što korelacija pokazuje i koje su dodatne provjere potrebne?</p>
 </section>
 <section id="v24" class="level2">
 <h2 class="anchored" data-anchor-id="v24">2.4 Provjereni rezultat i predaja</h2>
@@ -275,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Ulaz.</strong> Vaš plan, dokazni zapisi, skripta, graf ili tablica i <a href="../../materials/rubric.html">rubrika</a>.</p>
 <p><strong>Rad, 25 minuta.</strong> Prvih 10 minuta napišite približno 200 riječi o slučaju. Sljedećih 10 minuta dopustite kolegi ili AI-ju da predloži jasniji tekst. Sačuvajte obje verzije i usporedite sve brojke, jedinice, izvore i tvrdnje. Posljednjih 5 minuta dovršite zapis uporabe i provjerite datoteke za predaju.</p>
 <p><strong>Predaja.</strong> Pitanje, tri dokaza, skripta, graf ili tablica, obje verzije teksta i zapis uporabe AI-ja. Ako nije bilo AI-ja, zapišite „AI nije korišten”.</p>
-<p><strong>Provjera.</strong> Barem jedna brojka odgovara izlazu, razdoblje i jedinice su navedeni, postoji ograničenje i nema tvrdnje koju analiza ne podupire.</p>
+<p><strong>Provjera.</strong> Barem jedna brojka odgovara izlazu, razdoblje i jedinice su navedeni, ograničenja su objašnjena i tvrdnje odgovaraju provedenoj analizi.</p>
 <p><strong>Rasprava, 10 minuta.</strong> Koji biste dodatni podatak ili dizajn trebali za sljedeće, zahtjevnije istraživačko pitanje?</p>
 
 

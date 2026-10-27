@@ -7,8 +7,7 @@ subtitle: "Izračunani iz zamrznutih izvora · bez uzročnog tumačenja"
 
 Graf prikazuje 120 mjesečnih opažanja. Svaka ploha ima vlastitu jedinicu,
 a vremenska je os zajednička. Različite vrste linija ostaju raspoznatljive
-i bez boje. Uspoređujte kretanje kroz vrijeme. Visine linija između ploha nisu
-izravno usporedive jer su jedinice različite.
+i bez boje. Uspoređujte kretanje kroz vrijeme. Visinu svake linije tumačite prema jedinici označenoj na njezinoj osi.
 
 ![Mjesečna stopa HICP-a i saldo očekivanja cijena u Hrvatskoj, 2015.–2024., na odvojenim osima i s različitim vrstama linija.](../results/inflation_expectations.svg)
 
@@ -21,7 +20,8 @@ Eurostat nije odgovoran za ovu nastavnu obradu i tumačenje.
 
 Godišnji prikaz koristi aritmetički prosjek mjesečnih godišnjih stopa i
 aritmetički prosjek mjesečnih salda. Svaka godina ima 12 opažanja.
-Ne zamjenjujte prvi prosjek promjenom godišnjeg prosjeka izvornog indeksa.
+Za promjenu godišnjeg prosjeka indeksa potreban je zaseban izračun
+iz vrijednosti indeksa.
 
 [Potpuna godišnja tablica](../results/annual_summary.csv) ·
 [Provjera podataka](../results/audit.csv) ·
@@ -31,9 +31,8 @@ Ne zamjenjujte prvi prosjek promjenom godišnjeg prosjeka izvornog indeksa.
 
 U ovom uzorku obje mjere imaju veći godišnji prosjek 2022. nego 2019.
 Razlika opisuje te dvije godine. Jedna mjera jest stopa
-promjene cijena, a druga kvalitativni saldo. Njihove se razine ne mogu
-izravno uspoređivati. Istodobna korelacija ne potvrđuje da su očekivanja
-uzrokovala inflaciju. Zajednički šokovi, vremenska ovisnost i izbor
+promjene cijena, a druga kvalitativni saldo. Svaku razinu tumačite u njezinoj jedinici. Korelacija opisuje linearnu
+povezanost, a uzročni učinak zahtijeva zaseban istraživački postupak. Zajednički šokovi, vremenska ovisnost i izbor
 razdoblja ostaju ograničenja.
 
 Rezultate obnavlja `code/run_all.R`, a brojke se uspoređuju sa zamrznutim

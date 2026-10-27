@@ -32,7 +32,7 @@ vašu tvrdnju i unesite ga u vlastiti dokazni zapis.
 - [ASA, izjava o p-vrijednostima](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
   Za napredni dio o statističkom zaključivanju.
 - [sandwich, NeweyWest](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html).
-  Upute za funkciju i njezine postavke. Nije dokaz primjerenosti našeg modela.
+  Upute za funkciju i njezine postavke. Primjerenost modela procijenite prema pitanju i podacima.
 - [renv, uvod](https://rstudio.github.io/renv/articles/renv.html).
   Obnova projektnog okruženja i granice ponovljivosti postupka.
 - [Pravila ponovne uporabe Eurostatovih podataka](https://ec.europa.eu/eurostat/help/copyright-notice).
@@ -45,5 +45,4 @@ vašu tvrdnju i unesite ga u vlastiti dokazni zapis.
 [CLASSLA](https://github.com/clarinsi/classla).
 
 Provjera poveznica i značenja, 26. listopada 2026. Dostupnost funkcija i
-uvjeti pristupa mogu se promijeniti. Nastavni ishodi ne ovise o komercijalnoj
-funkciji pojedinog alata.
+uvjeti pristupa mogu se promijeniti. Osnovne zadatke možete riješiti priloženim materijalima i besplatnim alatima.

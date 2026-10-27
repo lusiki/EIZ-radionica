@@ -18,15 +18,13 @@ radi, tražite objašnjenje na malom primjeru i usporedite ga s dokumentacijom.
 
 RStudio i Positron mogu poslužiti za ovu radionicu. RStudio ima
 [dokumentiranu integraciju Copilota](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html),
-pa Copilot možete koristiti i u tom okruženju. RStudijevo sučelje i
-njegovi procesi ne svode se na jedan R proces. Pri izboru editora
+pa Copilot možete koristiti i u tom okruženju. RStudio razdvaja rad sučelja i R sesije. Pri izboru editora
 provjerite njegove mogućnosti, a istraživačku metodu birajte prema pitanju
 i podacima.
 
 Positron je okruženje za rad s R-om i Pythonom. Njegova
 [dokumentacija proširenja](https://positron.posit.co/extensions.html)
-objašnjava način instalacije i ograničenja kompatibilnosti. Ne treba
-pretpostaviti da svako proširenje za VS Code radi na isti način. Za ovu
+objašnjava način instalacije i ograničenja kompatibilnosti. Za svako proširenje iz VS Codea provjerite podršku u Positronu. Za ovu
 radionicu važni su otvaranje projektne mape, odabir R-a, čitanje skripte,
 izvršavanje i pregled izlaza. AI dodatak ostaje izborna pomoć.
 
@@ -34,13 +32,11 @@ Prema
 [Positovoj dokumentaciji](https://positron.posit.co/assistant), Posit Assistant
 od verzije Positrona 2026.07 zamjenjuje prethodni Positron Assistant i
 Databot. Stare upute o sučelju mogu se odnositi na stariji proizvod.
-Provjerite instaliranu verziju i odgovarajuće upute. Ne pretpostavljajte
-da se dostupni modeli, naredbe i dozvole podudaraju u svakoj instalaciji.
+Provjerite instaliranu verziju i odgovarajuće upute. Dostupne modele, naredbe i dozvole provjerite u svojoj instalaciji.
 
 Odaberite okruženje u kojem znate otvoriti projekt, pregledati kod
 i pronaći spremljene rezultate. Provjerite možete li sve pokrenuti
-od početka. U svakom okruženju ostaju iste provjere podataka i postupka. Sama
-promjena editora ne čini analizu valjanijom.
+od početka. U svakom okruženju ostaju iste provjere podataka i postupka. Valjanost analize procijenite prema podacima i primijenjenoj metodi.
 
 ### Tri vrste pomoći koje treba razlikovati
 
@@ -52,8 +48,7 @@ varijablu iz nekog drugog projekta ili pretpostaviti pogrešnu jedinicu.
 Razgovor o kodu služi objašnjenjima i usmjerenim pitanjima. Umjesto
 „popravi sve” navedite poruku o pogrešci, relevantan dio skripte i
 očekivani rezultat. Tražite objašnjenje uzroka, a zatim najmanju promjenu
-koja ga rješava. Nemojte izostaviti upozorenje samo zato što se graf ipak
-prikazao.
+koja ga rješava. Pročitajte i upozorenja koja prate uspješno prikazan graf.
 
 Uređivanje i agentsko izvršavanje mogu zahvatiti više datoteka.
 Njihova dostupnost ovisi o proizvodu i integraciji. Pregled izmjena,
@@ -76,8 +71,8 @@ head(d)
 ```
 
 Pitajte asistenta što provjerava `stopifnot`, a što još ne provjerava.
-Primjer potvrđuje broj redaka i jedinstvenost mjeseca, ali ne i potpunost
-kalendara ili definiciju varijabli. Usporedite ga s opsežnijom provjerom
+Primjer potvrđuje broj redaka i jedinstvenost mjeseca. Zasebno
+provjerite potpunost kalendara i definicije varijabli. Usporedite ga s opsežnijom provjerom
 u projektu. Dobro objašnjenje navodi i ograničenje vlastitog koda.
 
 Zatim izračunajte jednostavan sažetak.
@@ -88,19 +83,17 @@ colSums(is.na(d))
 ```
 
 U ovoj tablici prazna polja `hicp_flag` i `expectations_flag` znače da
-nema dodatne oznake statusa podatka. Nisu isto što i nedostajuća vrijednost
-inflacije ili salda. Zato popis iz `colSums` čitajte zajedno s rječnikom
+nema dodatne oznake statusa podatka. Brojčane vrijednosti inflacije i salda provjerite u njihovim stupcima. Zato popis iz `colSums` čitajte zajedno s rječnikom
 podataka. Automatsko uklanjanje svakog retka koji ima bilo koje prazno
 polje uklonilo bi i valjana opažanja.
 
 Zahtjev „napravi profesionalnu tablicu” prerano usmjerava pažnju na izgled.
 Prvo provjerite mjere, broj opažanja i nedostajuće vrijednosti. Naknadno
-možete urediti naslove i broj decimala. Uredna tablica ne uklanja problem
-ako su u istoj koloni pomiješane stope i indeksi.
+možete urediti naslove i broj decimala. U svakom stupcu zadržite jednu jasno definiranu mjeru i jedinicu.
 
 Za godišnji prosjek napišite pravilo prije koda, grupiramo prema godini,
 očekujemo dvanaest mjeseci i računamo prosjek mjesečnih godišnjih stopa.
-To nije nova mjera godišnje promjene prosječnog indeksa. Asistent neka
+Taj prosjek sažima dvanaest mjesečnih godišnjih stopa. Asistent neka
 objasni svaki argument i provjeri `n_months` prije sažimanja.
 
 Za vizualizaciju zatražite dva panela sa zajedničkom osi vremena, jasnim
@@ -114,20 +107,19 @@ bi pretpostavio mjesečnu promjenu.
 Kada kod ne radi, prvo pročitajte poruku i utvrdite u kojem koraku nastaje
 problem. Nedostajuća datoteka često je problem radnog direktorija.
 Nepostojeći stupac može značiti pogrešno ime ili drukčiji način učitavanja.
-Ne popravljajte taj simptom preimenovanjem svega što model predloži bez
-usporedbe s rječnikom podataka.
+Nazive stupaca usporedite s rječnikom podataka prije preimenovanja.
 
 Koristan upit glasi.
 
 > Ova naredba javlja sljedeću pogrešku, [poruka]. Radim iz korijena
 > projekta, a ulazna datoteka ima ove nazive stupaca, [nazivi]. Objasni
-> vjerojatan uzrok i predloži najmanju izmjenu. Nemoj mijenjati definicije
-> varijabli ni izostavljati opažanja da bi kod prošao.
+> vjerojatan uzrok i predloži najmanju izmjenu. Sačuvaj definicije
+> varijabli i sva opažanja.
 
 Provjerite rješenje u čistoj sesiji. Objekt koji je ostao od ranijeg
 pokretanja može prikriti nedostajući korak. Spremite skriptu, ponovno
 pokrenite R i izvodite je od početka. Taj postupak vrijedi i u RStudiju
-i u Positronu. Nije svojstvo samo jednog editora.
+i u Positronu. Koristite ga u okruženju u kojem radite.
 
 ### Što treba pripremiti za naprednu analizu
 

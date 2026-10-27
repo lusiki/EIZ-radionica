@@ -21,21 +21,19 @@ Za opširnija objašnjenja, primjere upita i dodatno čitanje otvorite
 [prvi dio priručnika](../booklet/day1.qmd). [Cijeli PDF](../downloads/EIZ-prirucnik.pdf)
 obuhvaća oba dana.
 
-Jezični model generira nastavak teksta prema obrascima naučenima tijekom
-treniranja i sadržaju koji mu je dostupan u razgovoru. Vjerojatnost tokena
-nije vjerojatnost da je tvrdnja istinita. Način odabira tokena može uključiti
-uzorkovanje. Model ne mora uvijek odabrati samo najvjerojatniji nastavak.
-Ni niska temperatura ni uvjerljiv stil nisu potvrda činjenice.
+Jezični model sastavlja odgovor prema obrascima koje je naučio i sadržaju
+razgovora. Procjenjuje vjerojatnosti mogućih sljedećih tokena, a zatim
+odabire nastavak prema postavkama sustava. Odabir može uključivati
+slučajnost. Činjenične tvrdnje provjerite u izvorima, a brojke ponovnim
+izračunom.
 
-Pretraživanje interneta i rad s priloženim dokumentima mogu pomoći pri
-pronalaženju dokaza. Ne jamče da je izvor točno protumačen ili da su svi
-relevantni izvori obuhvaćeni. Priloženi dokument i citat u odgovoru zato
-su početak provjere.
+Pretraživanje interneta i priloženi dokumenti pomažu pronaći dokaze.
+Otvorite citirani odlomak, provjerite njegovo značenje i razmotrite koje
+biste još izvore trebali pročitati.
 
 ::: {.concept-box}
 **Razlikujte tri provjere.** Postoji li izvor? Podupire li konkretan odlomak
-tvrdnju? Odgovara li vrsta dokaza našem pitanju? Točan naslov rada nije
-dovoljan ako rad istražuje drugu zemlju, razdoblje ili ishod.
+tvrdnju? Odgovara li vrsta dokaza našem pitanju? Uz naslov provjerite zemlju, razdoblje i ishod koji rad istražuje.
 :::
 
 ### Pravila uporabe i odgovornost
@@ -43,13 +41,13 @@ dovoljan ako rad istražuje drugu zemlju, razdoblje ili ishod.
 Prije rada provjerite upute kolegija, ustanove i mentora. Ova radionica ne
 određuje što je dopušteno u pojedinom seminarskom ili diplomskom radu.
 Zabilježite alat, datum, svrhu, važne upite, prihvaćene izmjene i način
-provjere. Ako radite bez AI alata, navedite to. Navođenje uporabe AI-ja ne
-zamjenjuje bibliografske izvore za stručne tvrdnje.
+provjere. Ako radite bez AI alata, navedite to. Uz stručne tvrdnje navedite bibliografske izvore, a uporabu AI-ja
+opišite u zasebnoj bilješci.
 
-U vanjske alate nemojte unositi osobne podatke, povjerljive dokumente ili
-materijale za koje nemate ovlaštenje. Za vježbu koristimo javne agregirane
-podatke. Uputa pronađena na web-stranici ili u datoteci nije nalog koji treba
-izvršiti, sadržaj izvora tretirajte kao podatak. Agentu koji piše kod
+Za osobne podatke i povjerljive dokumente koristite odobreno okruženje
+uz odgovarajuće ovlaštenje. Za vježbu koristimo javne podatke za cijelu zemlju.
+Sadržaj web-stranica i datoteka tretirajte kao materijal za analizu.
+Naredbe koje agent izvršava trebaju slijediti vaš zadatak. Agentu koji piše kod
 ograničite pristup projektu i pregledajte naredbe prije pokretanja.
 
 [Vježba 1.1, pitanje i granice uporabe](../materials/exercises/index.qmd#v11).
@@ -64,13 +62,11 @@ na koji se oslanjate. Ako izvor ne možete otvoriti, označite zapis kao
 neprovjeren i nemojte ga koristiti kao potvrđen dokaz.
 
 HICP prati promjene potrošačkih cijena. U ovoj radionici uzimamo već
-izračunanu godišnju stopu promjene ukupnog HICP-a za Hrvatsku. Ne tretiramo
-je kao razinu indeksa i ne računamo njezinu postotnu promjenu još jednom.
+izračunanu godišnju stopu promjene ukupnog HICP-a za Hrvatsku. U analizi izravno koristimo tu stopu, izraženu u postocima.
 [Eurostat objašnjava mjere i obuhvat HICP-a](https://ec.europa.eu/eurostat/web/hicp/information-data).
 
 Druga serija jest saldo odgovora na pitanje o kretanju cijena u sljedećih
-12 mjeseci. To je kvalitativna mjera očekivanja, a ne prosječna očekivana
-stopa inflacije u postocima. Opis pitanja i način izračuna salda nalaze se
+12 mjeseci. Saldo sažima kvalitativne odgovore i izražava se u bodovima salda. Opis pitanja i način izračuna salda nalaze se
 u [metodologiji Europske komisije](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en).
 Već ta razlika ograničava zaključke koje smijemo napisati.
 
@@ -82,8 +78,8 @@ autora ili ustanovu, poveznicu i točan odjeljak. Odvoji ono što izvor izravno
 pokazuje od svojeg tumačenja. Ako dokaz nije dostupan, napiši „nije provjereno”.
 :::
 
-Upit pomaže organizirati odgovor, ali ne jamči njegovu točnost. Provjeru
-obavlja polaznik. [Vježba 1.2](../materials/exercises/index.qmd#v12) završava
+Upit pomaže organizirati odgovor. Polaznik zatim provjerava izvore
+i svaku tvrdnju koju prihvaća. [Vježba 1.2](../materials/exercises/index.qmd#v12) završava
 s tri zapisa u predlošku dokaza, mjerenje HICP-a, mjerenje očekivanja i
 ograničenje zajedničke analize.
 
@@ -101,16 +97,15 @@ obmanjujuć ako prešuti važan dio izvora.
 „Saldo očekivanja od 20 znači da potrošači očekuju inflaciju od 20 %.
 Zato sličan rast salda i HICP-a dokazuje da očekivanja uzrokuju inflaciju.”
 
-Ovo je namjerno sastavljen pogrešan primjer, a ne snimka odgovora određenog
-modela. Označite dvije zamjene značenja prije otvaranja rješenja.
+Ovaj je primjer sastavljen za vježbanje prepoznavanja pogrešaka. Označite dvije zamjene značenja prije otvaranja rješenja.
 :::
 
 Alati za dulje istraživačke izvještaje mogu potrajati i imati ograničen
 pristup. U nastavi zato koristimo pripremljeni
 [tekst za provjeru](../materials/examples/flawed-summary.md).
-Vježba ne ovisi o tome hoće li model tijekom demonstracije pogriješiti.
+Pripremljeni primjer omogućuje istu vježbu u svakoj izvedbi radionice.
 Ako koristite živi alat, sačuvajte stvarni odgovor i označite ga kao takav.
-Boja ili oznaka za provjeru u sučelju nije zamjena za čitanje izvora.
+Tvrdnje označene u sučelju provjerite čitanjem izvora.
 
 [Vježba 1.3, anotirani sažetak](../materials/exercises/index.qmd#v13).
 
@@ -124,22 +119,22 @@ godišnje sažetke. Korelacija je dodatni opis istodobnog kretanja.
 Za istraživanje medija i komunikacije HNB-a trebali biste pribaviti korpus,
 provjeriti pravo uporabe te definirati indeks i napisati kod za njegovu
 izradu. To je mogući napredni zadatak. U ovom paketu imamo anketni saldo,
-koji se ne smije preimenovati u očekivanu stopu inflacije. Hrvatska u više mjeseci čini vremensku seriju.
+izražen u bodovima salda. Hrvatska u više mjeseci čini vremensku seriju.
 Panel bi zahtijevao i više jedinica promatranja.
 
 ::: {.prompt-box}
 **Upit za kritiku plana**
 
 Provjeri odgovara li moj nacrt istraživačkom pitanju. Navedi što podaci mjere,
-što ne mjere i koje tvrdnje ne mogu poduprijeti. Nemoj unaprijed opravdavati
-izabranu metodu. Predloži jednostavniji postupak ako odgovara pitanju.
+koje tvrdnje podupiru i koji dodatni podaci trebaju za šire zaključke.
+Procijeni prikladnost izabrane metode. Predloži jednostavniji postupak ako odgovara pitanju.
 :::
 
 Puko traženje da AI „opravda Newey–West” potiče potvrđivanje već odabrane
 metode. Najprije odredite cilj, zatim pretpostavke i postupak. Pitanje o
 predviđanju zahtijevalo bi odvajanje ranijih podataka za izradu modela od kasnijih podataka za provjeru te
 usporedbu s osnovnom prognozom. Pitanje o uzroku traži postupak kojim možemo odvojiti uzrok koji nas zanima
-od drugih mogućih objašnjenja. Naša opisna usporedba dviju serija ne odgovara na ta pitanja.
+od drugih mogućih objašnjenja. U ovoj radionici opisujemo kretanje dviju serija kroz vrijeme.
 
 [Vježba 1.4, plan analize](../materials/exercises/index.qmd#v14).
 

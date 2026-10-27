@@ -185,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="processed/croatia_inflation.csv">Preuzmite CSV</a>. Jedan redak predstavlja jedan mjesec, ukupno 120 redaka bez nedostajućih vrijednosti. Podaci su preuzeti 26. listopada 2026. i zamrznuti za nastavu. Povijesne vrijednosti mogu biti revidirane. Ovo nisu izdanja dostupna u svakom pojedinom povijesnom mjesecu.</p>
+<p><a href="processed/croatia_inflation.csv">Preuzmite CSV</a>. Jedan redak predstavlja jedan mjesec, ukupno 120 redaka bez nedostajućih vrijednosti. Podaci su preuzeti 26. listopada 2026. i zamrznuti za nastavu. Povijesne vrijednosti mogu biti revidirane. Koristimo povijesne vrijednosti dostupne na datum preuzimanja.</p>
 <section id="rječnik" class="level2">
 <h2 class="anchored" data-anchor-id="rječnik">Rječnik</h2>
 <table class="caption-top table">
@@ -241,18 +241,18 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="izvori-i-odabir" class="level2">
 <h2 class="anchored" data-anchor-id="izvori-i-odabir">Izvori i odabir</h2>
-<p>HICP dolazi iz Eurostatove tablice <code>prc_hicp_minr</code>, <code>freq=M</code>, <code>geo=HR</code>, <code>coicop18=TOTAL</code>, <code>unit=RCH_A</code>. To je tablica prema ECOICOP v2. Ne spajamo je sa starom <code>prc_hicp_manr</code> bez provjere klasifikacije.</p>
-<p>Očekivanja dolaze iz <code>ei_bsco_m</code>, izvor DG ECFIN. <code>freq=M</code>, <code>geo=HR</code>, <code>indic=BS-PT-NY</code>, <code>s_adj=NSA</code>, <code>unit=BAL</code>. Odabrana je neprilagođena serija kako bi postupak bio izravan i dokumentiran. Sezonalnost ostaje moguće ograničenje. Pitanje o sljedećih 12 mjeseci jest kvalitativno i uspoređuje buduće kretanje s proteklim razdobljem. Saldo ne predstavlja prosjek kvantitativnih prognoza inflacije.</p>
+<p>HICP dolazi iz Eurostatove tablice <code>prc_hicp_minr</code>, <code>freq=M</code>, <code>geo=HR</code>, <code>coicop18=TOTAL</code>, <code>unit=RCH_A</code>. To je tablica prema ECOICOP v2. Prije spajanja sa starom tablicom <code>prc_hicp_manr</code> provjerite klasifikaciju.</p>
+<p>Očekivanja dolaze iz <code>ei_bsco_m</code>, izvor DG ECFIN. <code>freq=M</code>, <code>geo=HR</code>, <code>indic=BS-PT-NY</code>, <code>s_adj=NSA</code>, <code>unit=BAL</code>. Odabrana je neprilagođena serija kako bi postupak bio izravan i dokumentiran. Sezonalnost ostaje moguće ograničenje. Pitanje o sljedećih 12 mjeseci jest kvalitativno i uspoređuje buduće kretanje s proteklim razdobljem. Saldo sažima raspodjelu kvalitativnih odgovora u bodovima salda.</p>
 <p><a href="raw/manifest.json">Metapodaci snimke i točni API upiti</a> · <a href="raw/hicp.json">HICP JSON</a> · <a href="raw/expectations.json">Anketni JSON</a></p>
 </section>
 <section id="što-obrada-radi" class="level2">
 <h2 class="anchored" data-anchor-id="što-obrada-radi">Što obrada radi</h2>
-<p>Skripta provjerava kontrolne zbrojeve izvornih datoteka, dimenzije i šifre, odabire fiksni raspon mjeseci i spaja serije po jednakom ključu. Ne imputira, ne briše valjana opažanja, ne zaglađuje i ne logaritmira. Izvorne oznake statusa čuva u CSV-u.</p>
-<p>Godišnja tablica sadrži aritmetički prosjek dvanaest mjesečnih godišnjih stopa i prosjek dvanaest mjesečnih salda. Prosjek godišnjih stopa nije iznova izračunana promjena godišnjeg prosjeka indeksa. Ne treba ga predstavljati kao drugi službeni pokazatelj godišnje inflacije.</p>
+<p>Skripta provjerava kontrolne zbrojeve izvornih datoteka, dimenzije i šifre, odabire fiksni raspon mjeseci i spaja serije po jednakom ključu. Čuva valjana opažanja i njihove izvorne vrijednosti. Izvorne oznake statusa čuva u CSV-u.</p>
+<p>Godišnja tablica sadrži aritmetički prosjek dvanaest mjesečnih godišnjih stopa i prosjek dvanaest mjesečnih salda. Taj prosjek sažima mjesečne godišnje stope. Za promjenu godišnjeg prosjeka indeksa trebao bi zaseban izračun iz razina indeksa.</p>
 </section>
 <section id="granice-zaključka" class="level2">
 <h2 class="anchored" data-anchor-id="granice-zaključka">Granice zaključka</h2>
-<p>Podaci prate jednu zemlju kroz vrijeme. Ne sadrže panel više zemalja ni individualne odgovore ispitanika. Istodobna usporedba ne mjeri uspješnost prognoze za 12 mjeseci unaprijed. Na kretanje obiju serija mogu utjecati zajednički šokovi. Opisni rezultati ne identificiraju uzročnost niti sami potvrđuju usidrenost očekivanja.</p>
+<p>Podaci prate skupne mjere za Hrvatsku kroz vrijeme. Uspoređujemo njihove vrijednosti iz istog mjeseca. Na obje serije mogu utjecati zajednički šokovi. Za provjeru prognoze, uzročnog učinka ili usidrenosti očekivanja treba odrediti zasebno pitanje, odgovarajuće podatke i postupak.</p>
 <p><a href="../materials/results.html">Referentni izlazi</a> · <a href="../materials/sources.html">Metodološki izvori</a></p>
 
 

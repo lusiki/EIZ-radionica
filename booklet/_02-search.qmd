@@ -16,9 +16,8 @@ tvrdnjom ili zanemariti izvor do kojeg nije uspio doći.
 
 Perplexity je jedan primjer takvog rada. Web pretraživanje s izvorima
 nude i drugi razgovorni sustavi. Dohvaćanje sadržaja i njegovo korištenje pri
-pisanju odgovora često se naziva RAG. Dohvaćeni dokumenti mogu
-poboljšati utemeljenost odgovora, ali sam postupak ne jamči potpunost,
-točnost citata ni kvalitetu uključenih studija.
+pisanju odgovora često se naziva RAG. Dohvaćeni dokumenti daju modelu izvore za odgovor. Zatim provjerite
+obuhvat pretrage, citate i kvalitetu uključenih studija.
 
 ### Tri upita koji postupno razjašnjavaju temu
 
@@ -26,8 +25,8 @@ Počnimo kratkim, neodređenim upitom.
 
 > Inflacija Hrvatska.
 
-Ovakav upit ne govori tražite li najnoviji statistički podatak, objašnjenje
-pojma ili empirijsku literaturu. Mješavina vijesti, službenih podataka i
+Ovakav upit može voditi prema najnovijem podatku, objašnjenju pojma
+ili istraživačkoj literaturi. Odredite što od toga trebate. Mješavina vijesti, službenih podataka i
 općih objašnjenja može biti korisna za orijentaciju, ali teško ju je
 pretvoriti u pregled literature bez dodatnog usmjeravanja.
 
@@ -37,9 +36,8 @@ Sljedeći korak određuje predmet interesa.
 > u europskim zemljama? Pronađi istraživanja i za svako navedi autora,
 > naslov, godinu i poveznicu na izvor. Odvoji radove od novinskih prikaza.
 
-Sada je jasnije da vas zanima percepcija, a ne samo promjena indeksa cijena.
-Ipak, percepcija prošlih promjena i očekivanje budućih promjena nisu isti
-pojam. U nastavku razgovora razjasnite koji pojam želite proučavati.
+Sada tražite istraživanja o tome kako kućanstva doživljavaju inflaciju.
+Percepcija se odnosi na prošle promjene, a očekivanja na buduće. U nastavku razgovora razjasnite koji pojam želite proučavati.
 Upit precizirajte prema onome što želite istražiti.
 
 > Find empirical studies on media coverage and households' inflation
@@ -47,7 +45,7 @@ Upit precizirajte prema onome što želite istražiti.
 > Separate studies of perceptions from studies of expectations. For each
 > candidate, report the exact title, authors, publication type, data,
 > method and source URL. State whether you accessed the full text or
-> only an abstract. Do not infer findings from the title.
+> only an abstract. Describe findings supported by the text you accessed.
 
 Engleski pojmovi mogu olakšati pretraživanje međunarodne literature, ali
 pretragu treba dopuniti hrvatskim izrazima i lokalnim izvorima. Preuski
@@ -58,8 +56,7 @@ empirijsku literaturu i teorijske početne radove možete tražiti odvojeno.
 
 Prva provjera je postojanje. Otvorite stranicu rada kod izdavača,
 institucionalni repozitorij ili bibliografski zapis. Usporedite naslov,
-autore, godinu i identifikator. DOI koji se otvara nije dovoljan ako vodi
-na drugi članak. Ako ne možete doći do punog teksta, to označite umjesto
+autore, godinu i identifikator. Provjerite vodi li DOI na članak koji je naveden u odgovoru. Ako ne možete doći do punog teksta, to označite umjesto
 da prepričavate zaključke koje niste pročitali.
 
 Druga provjera je potpora tvrdnji. Pronađite odjeljak, tablicu ili
@@ -70,17 +67,15 @@ govori o svim kućanstvima. Zabilježite te granice uz sam izvor.
 
 Treća provjera je vrsta i kvaliteta izvora. Recenzirani članak, radni
 materijal središnje banke, metodološki priručnik i novinski tekst imaju
-različite namjene. Institucionalni ugled ne znači da je svaki dokument
-recenzirani znanstveni rad. Ni recenzija sama po sebi ne potvrđuje da je
-metoda prikladna za vaše pitanje. Procijenite podatke, dizajn, ograničenja
+različite namjene. Kod izdavača provjerite je li dokument prošao recenziju.
+Prikladnost njegove metode procijenite prema vlastitom pitanju. Procijenite podatke, dizajn, ograničenja
 i relevantnost.
 
 Primjer za naš slučaj jest članak Meylera i Reiche o percepcijama i
 očekivanjima u [ECB Economic Bulletinu](https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html).
 Koristan je za razumijevanje razlike između kvalitativnih i kvantitativnih
-mjera. Ne potvrđuje numerički rezultat naše hrvatske analize za cijelo
-razdoblje 2015.–2024. Izvor može objasniti definiciju mjere, a da pritom ne potvrđuje
-rezultat vašeg izračuna.
+mjera. Koristite ga za objašnjenje mjera. Brojčane rezultate za Hrvatsku
+od 2015. do 2024. provjerite u podacima i skriptama radionice.
 
 ### Od pronađenog rada do dokaznog zapisa
 
@@ -91,30 +86,28 @@ otvoriti kada budete pisali. Sam popis referenci bez tih bilježaka lako
 postaje zbirka naslova koje više ne povezujete s argumentom.
 
 Razmislite o rečenici „potrošači očekuju rast inflacije”. Prvo provjerite
-što točno pita anketa. Pitanje o promjenama cijena u sljedećih dvanaest
-mjeseci u odnosu na proteklih dvanaest mjeseci nije zahtjev za brojčanom
-prognozom godišnje stope inflacije. Dokazni zapis treba sačuvati tu razliku,
-inače će se pogreška prenositi iz pregleda literature u analizu i zaključak.
+što točno pita anketa. Ispitanici uspoređuju očekivano kretanje cijena u
+sljedećih dvanaest mjeseci s proteklih dvanaest mjeseci. Biraju ponuđenu
+kategoriju odgovora. U dokazni zapis unesite formulaciju pitanja i način
+izračuna salda kako biste ga pravilno tumačili u analizi i zaključku.
 
 Ponovljeno pojavljivanje istog autora u rezultatima može biti trag za
-daljnje čitanje. Nije dokaz važnosti samo po sebi, pretraživač može više
-puta pronaći isti popularni izvor ili njegove novinske prikaze. Pratite
+daljnje čitanje. Provjerite radi li se o različitim radovima ili o
+ponovljenim poveznicama na isti rad i njegove novinske prikaze. Pratite
 reference unatrag i novije citate unaprijed. Vodite bilješku o korištenim
 pojmovima, datumu pretrage i kriterijima odabira.
 
 ### Obrasci za nastavak pretraživanja
 
 Za metodološki pregled pitajte koje se metode koriste za konkretno
-pitanje i što omogućuje njihovu interpretaciju. Nemojte unaprijed tražiti
-usporedbu OLS-a, IV-a, DiD-a i RDD-a ako još ne znate kakvi podaci postoje.
-Bolje je zatražiti odnos između pitanja, dizajna i pretpostavki u svakom
-pronađenom radu.
+pitanje i što omogućuje njihovu interpretaciju. Najprije proučite dostupne
+podatke, a zatim usporedite prikladne metode. Za svaki pronađeni rad
+zatražite objašnjenje veze između pitanja, dizajna i pretpostavki.
 
 Za teorijski okvir tražite definiciju mehanizma, njegove pretpostavke i
 predviđanja koja bi se mogla razlikovati od alternativnih objašnjenja.
 Pojmovi poput racionalne nepažnje i sporog usvajanja informacija mogu biti
-korisni za temu očekivanja. Nije dovoljno samo uvrstiti njihova imena u uvod.
-Potrebno je pročitati izvor i objasniti što bi teorija značila za vaše mjere.
+korisni za temu očekivanja. Pročitajte izvor i objasnite što bi pojedina teorija značila za vaše mjere.
 
 Za pregled podataka zatražite instituciju, šifru skupa, jedinicu,
 frekvenciju, obuhvat i uvjete pristupa. Za provjeru tvrdnje tražite i
@@ -126,22 +119,20 @@ dokaze koji joj ne idu u prilog. Na primjer.
 
 Ako naiđete na nepoznatu kraticu, pronađite njezinu definiciju u radu,
 pravilo izračuna i izvor podataka. Primjer je IAG iz starog nastavnog
-materijala, u ovom paketu nema potvrđene definicije tog indeksa, pa ga
-ne možemo uključiti u analizu niti mu pripisati značenje iz drugog područja.
+materijala. Za njegovo uključivanje u analizu najprije treba potvrditi
+definiciju, način izračuna i izvor podataka.
 
 ### Organizacija i pristup
 
 Perplexityjevi [Spaces](https://hub-prod.perplexity.ai/hub/faq/what-are-spaces)
 služe organiziranju razgovora i materijala po temama. Za nastavni zadatak
 korisno je odvojiti provjerene bilješke od početnih odgovora. Zajednički
-prostor olakšava suradnju, ali ne čini izvor provjerenim i ne zamjenjuje
-vlastitu spremljenu bibliografiju.
+prostor olakšava suradnju. Uz njega vodite vlastitu bibliografiju i
+zabilježite koje ste izvore provjerili.
 
-Filtri izvora i nazivi načina pretraživanja mogu se mijenjati. Oznaka
-„academic” nije jamstvo da je svaki rezultat recenziran. Jednako tako,
-Google Scholar ili specijalizirana baza ne jamče iscrpnost samo zato što
-ste ih otvorili. Za sustavni pregled potreban je unaprijed opisan postupak
-pretrage i odabira. Za ovu radionicu radimo ograničenu, dokumentiranu
+Filtri izvora i nazivi načina pretraživanja mogu se mijenjati. Za svaki
+rad provjerite status recenzije kod izdavača. Za sustavni pregled unaprijed
+opišite baze, pojmove za pretragu i pravila odabira radova. Za ovu radionicu radimo ograničenu, dokumentiranu
 početnu pretragu.
 
 ### Vježba za samostalno čitanje
@@ -150,8 +141,8 @@ Odaberite pitanje iz radionice ili vlastitu temu. Sastavite tri upita s
 rastućom preciznošću, izdvojite pet kandidata i detaljno provjerite tri.
 Za svaki ispunite dokazni zapis. Zapišite i jedan odbačeni izvor te razlog
 odbijanja. Moguće teme su očekivanja i inflacija, digitalizacija poduzeća,
-nejednakost ili učinci fiskalnih mjera. Nijedna od njih unaprijed ne
-pretpostavlja smjer rezultata.
+nejednakost ili učinci fiskalnih mjera. Pitanje postavite tako da odgovor
+odredite na temelju prikupljenih dokaza.
 
 Usporedite početni AI sažetak s vlastitim bilješkama. Koju ste tvrdnju
 suzili? Koji je izvor bio relevantan, ali nedostupan? Što još nedostaje?

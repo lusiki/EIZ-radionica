@@ -8,8 +8,8 @@ subtitle: "Izvedba, provjere i odluke prije nove radionice"
 Za demonstracije koristite Positron, R i zamrznuti nastavni paket. U prvih deset minuta
 praktičnog dijela pokažite otvaranje mape, konzolu, izvršavanje odabranog
 retka i novu sesiju. Početnicima dajte starter skriptu. Iskusniji mogu
-napisati vlastitu. Nemojte trošiti vrijeme osnovnog dijela na prijelaz među
-terminalnim agentom, drugim IDE-om i bilježnicom.
+napisati vlastitu. Osnovni dio provedite u jednom okruženju, a druga okruženja pokažite
+u izbornom nastavku.
 
 AI se može prikazati u pregledniku. Izvedite jednu malu izmjenu koda i
 pokažite provjeru. Copilot i Claude Code su izborni primjeri za nastavnika.
@@ -26,7 +26,7 @@ tekst i kod imaju istu nastavnu svrhu ako servis zakaže.
 5. Otvorite paket u odvojenoj mapi i provjerite početničku skriptu.
 6. Pogledajte naslovnicu, tekst, tablice i navigaciju na telefonu.
 7. Zamolite dva ili tri predstavnika ciljane skupine da prođu starter i jednu
-   vježbu. Zabilježite vrijeme i mjesta zapinjanja, ne samo zadovoljstvo.
+   vježbu. Uz zadovoljstvo zabilježite vrijeme rada i mjesta zapinjanja.
 
 ## Pomoć tijekom rada
 
@@ -34,7 +34,7 @@ Ako polaznik ne može objasniti kod koji je predložio AI, smanjite zadatak na j
 odabir redaka i jedan prosjek. U paru mijenjajte uloge autora i provjeravatelja.
 Osnovni izlaz vježbe 2.3 može biti godišnja tablica i jedan dobro označen graf.
 Drugi graf je nastavak za brže polaznike. Pripremljene izlaze koristite za
-provjeru i nastavak rasprave, ali ih nemojte bilježiti kao samostalnu izvedbu.
+provjeru i nastavak rasprave, a u bilješkama označite da je polaznik koristio pripremljeno rješenje.
 
 U zadnjih deset minuta svakog bloka usporedite dva studentska izlaza i
 zatražite razlog jedne odluke. Odvojite vrijeme da polaznici objasne pronađenu pogrešku i način ispravka.
@@ -48,14 +48,14 @@ s provjerom točnosti na kasnijim podacima planirajte zaseban susret.
 
 Medijski indeks iz izvornog materijala može postati drugi slučaj tek uz
 stvarni korpus, definiciju indeksa, provjeru prava uporabe, kod i referentne
-rezultate. Ne zamjenjujte ga izmišljenim serijama označenima kao HNB podaci.
+rezultate. Za taj slučaj koristite provjerene podatke s jasno navedenim izvorom.
 
 ## Status ove revizije
 
 Materijali su programski i vizualno provjereni. Pilot s polaznicima još
 treba provesti. Termin i kontakt za novu izvedbu treba potvrditi. Stari HTML/PDF izvozi
 i stare najave ostaju povijesni materijal izvan novog weba i radnog paketa.
-Čitateljski materijali nisu projekcijski slajdovi. Raspored i vježbe služe
+Čitateljski materijali služe samostalnom čitanju i radu uz vježbe. Raspored i vježbe služe
 vođenju susreta. Kratki prezentacijski sažeci mogu se razviti nakon pilota.
 
 [Dnevni raspored](workshop_overview.qmd) · [Rješenja](../materials/solutions.qmd) ·

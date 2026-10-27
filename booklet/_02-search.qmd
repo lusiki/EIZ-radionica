@@ -5,7 +5,7 @@
 Pri traženju literature za seminarski rad lako je otvoriti više radova
 nego što ih stignete pažljivo pročitati. Dio rezultata nije dostupan bez
 pretplate, dio se ne odnosi na temu, a bilješke se brzo pomiješaju.
-AI pretraživanje može pomoći u početnom snalaženju: predložiti pojmove,
+AI pretraživanje može pomoći u početnom snalaženju, predložiti pojmove,
 sažeti pronađene stranice i povezati tvrdnje s izvorima.
 
 U knjižnici vas katalog usmjerava prema policama. AI pretraživač uz
@@ -14,7 +14,7 @@ koristan samo ako možete ustanoviti što je stvarno pročitano. Asistent
 može zamijeniti sažetak rada s cijelim radom, povezati citat s preširokom
 tvrdnjom ili zanemariti izvor do kojeg nije uspio doći.
 
-Perplexity je jedan primjer takvog rada; web pretraživanje s izvorima
+Perplexity je jedan primjer takvog rada. Web pretraživanje s izvorima
 nude i drugi razgovorni sustavi. Dohvaćanje sadržaja i njegovo korištenje pri
 generiranju odgovora često se opisuje pojmom RAG. Dohvaćeni dokumenti mogu
 poboljšati utemeljenost odgovora, ali sam postupak ne jamči potpunost,
@@ -22,7 +22,7 @@ točnost citata ni kvalitetu uključenih studija.
 
 ### Tri upita koji postupno razjašnjavaju temu
 
-Počnimo kratkim, neodređenim upitom:
+Počnimo kratkim, neodređenim upitom.
 
 > Inflacija Hrvatska.
 
@@ -31,7 +31,7 @@ pojma ili empirijsku literaturu. Mješavina vijesti, službenih podataka i
 općih objašnjenja može biti korisna za orijentaciju, ali teško ju je
 pretvoriti u pregled literature bez dodatnog usmjeravanja.
 
-Sljedeći korak određuje predmet interesa:
+Sljedeći korak određuje predmet interesa.
 
 > Koji čimbenici mogu biti povezani s percepcijom inflacije kod kućanstava
 > u europskim zemljama? Pronađi istraživanja i za svako navedi autora,
@@ -84,7 +84,7 @@ podupirati vlastiti empirijski nalaz.
 
 ### Od pronađenog rada do dokaznog zapisa
 
-Za svaki od tri izvora potrebna radionici napišite kratak zapis: tvrdnja
+Za svaki od tri izvora potrebna radionici napišite kratak zapis, tvrdnja
 koju izvor podupire, puni bibliografski podaci, poveznica, mjesto u tekstu,
 vaš sažetak i jedno ograničenje. Tako nastaje pregled koji možete ponovno
 otvoriti kada budete pisali. Sam popis referenci bez tih bilježaka lako
@@ -97,7 +97,7 @@ prognozom godišnje stope inflacije. Dokazni zapis treba sačuvati tu razliku,
 inače će se pogreška prenositi iz pregleda literature u analizu i zaključak.
 
 Ponovljeno pojavljivanje istog autora u rezultatima može biti trag za
-daljnje čitanje. Nije dokaz važnosti samo po sebi: pretraživač može više
+daljnje čitanje. Nije dokaz važnosti samo po sebi, pretraživač može više
 puta pronaći isti popularni izvor ili njegove novinske prikaze. Pratite
 reference unatrag i novije citate unaprijed. Vodite bilješku o korištenim
 pojmovima, datumu pretrage i kriterijima odabira.
@@ -113,12 +113,12 @@ pronađenom radu.
 Za teorijski okvir tražite definiciju mehanizma, njegove pretpostavke i
 predviđanja koja bi se mogla razlikovati od alternativnih objašnjenja.
 Pojmovi poput racionalne nepažnje i sporog usvajanja informacija mogu biti
-korisni za temu očekivanja. Nije dovoljno samo uvrstiti njihova imena u uvod;
-potrebno je pročitati izvor i objasniti što bi teorija značila za vaše mjere.
+korisni za temu očekivanja. Nije dovoljno samo uvrstiti njihova imena u uvod.
+Potrebno je pročitati izvor i objasniti što bi teorija značila za vaše mjere.
 
 Za pregled podataka zatražite instituciju, šifru skupa, jedinicu,
 frekvenciju, obuhvat i uvjete pristupa. Za provjeru tvrdnje tražite i
-dokaze koji joj ne idu u prilog. Na primjer:
+dokaze koji joj ne idu u prilog. Na primjer.
 
 > Koji nalazi ograničavaju tvrdnju da intenzivnije medijsko izvještavanje
 > povećava inflacijska očekivanja? Razlikuj opisnu povezanost od učinka
@@ -126,7 +126,7 @@ dokaze koji joj ne idu u prilog. Na primjer:
 
 Ako naiđete na nepoznatu kraticu, pronađite njezinu definiciju u radu,
 pravilo izračuna i izvor podataka. Primjer je IAG iz starog nastavnog
-materijala: u ovom paketu nema potvrđene definicije tog indeksa, pa ga
+materijala, u ovom paketu nema potvrđene definicije tog indeksa, pa ga
 ne možemo uključiti u analizu niti mu pripisati značenje iz drugog područja.
 
 ### Organizacija i pristup
@@ -150,7 +150,7 @@ Odaberite pitanje iz radionice ili vlastitu temu. Sastavite tri upita s
 rastućom preciznošću, izdvojite pet kandidata i detaljno provjerite tri.
 Za svaki ispunite dokazni zapis. Zapišite i jedan odbačeni izvor te razlog
 odbijanja. Moguće teme su očekivanja i inflacija, digitalizacija poduzeća,
-nejednakost ili učinci fiskalnih mjera; nijedna od njih unaprijed ne
+nejednakost ili učinci fiskalnih mjera. Nijedna od njih unaprijed ne
 pretpostavlja smjer rezultata.
 
 Usporedite početni AI sažetak s vlastitim bilješkama. Koju ste tvrdnju

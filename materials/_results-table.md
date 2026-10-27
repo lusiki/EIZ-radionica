@@ -1,4 +1,4 @@
-| Godina | HICP: prosjek mjesečnih godišnjih stopa (%) | Saldo: godišnji prosjek (bodovi) |
+| Godina | HICP, prosjek mjesečnih godišnjih stopa (%) | Saldo, godišnji prosjek (bodovi) |
 |---|---:|---:|
 | 2015 | -0.25 | 1.62 |
 | 2016 | -0.64 | 0.39 |
@@ -11,4 +11,4 @@
 | 2023 | 8.47 | 19.80 |
 | 2024 | 4.04 | 15.14 |
 
-Istodobna korelacija cijelog uzorka (n = 120): **0.6985**.
+Istodobna korelacija cijelog uzorka (n = 120), **0.6985**.

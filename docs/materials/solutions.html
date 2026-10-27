@@ -226,7 +226,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="pitanje-i-pravila" class="level2">
 <h2 class="anchored" data-anchor-id="pitanje-i-pravila">1.1 Pitanje i pravila</h2>
-<p>Prihvatljiv primjer: „Kako su se u Hrvatskoj od 2015. do 2024. kretali godišnja stopa HICP-a i kvalitativni saldo očekivanja cijena?” Pitanje je opisno. Dobar popis provjera uključuje otvaranje izvora, provjeru podudarnosti tvrdnje i dokaza te provjeru jedinica i uzorka. Za pravila ustanove priložite odgovarajući dokument ili potvrdu nastavnika. Odgovor AI-ja nije potvrda tih pravila.</p>
+<p>Prihvatljiv primjer, „Kako su se u Hrvatskoj od 2015. do 2024. kretali godišnja stopa HICP-a i kvalitativni saldo očekivanja cijena?” Pitanje je opisno. Dobar popis provjera uključuje otvaranje izvora, provjeru podudarnosti tvrdnje i dokaza te provjeru jedinica i uzorka. Za pravila ustanove priložite odgovarajući dokument ili potvrdu nastavnika. Odgovor AI-ja nije potvrda tih pravila.</p>
 </section>
 <section id="dokazi" class="level2">
 <h2 class="anchored" data-anchor-id="dokazi">1.2 Dokazi</h2>
@@ -235,8 +235,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="pogrešan-sažetak" class="level2">
 <h2 class="anchored" data-anchor-id="pogrešan-sažetak">1.3 Pogrešan sažetak</h2>
-<p>Problemi su: jedna zemlja pogrešno nazvana panelom; saldo pretvoren u postotnu prognozu; već izračunana stopa ponovno transformirana bez cilja; logaritmiranje mogućih nula i negativnih vrijednosti; uzročnost izvedena iz sličnosti linija; prenošenje rezultata drugog uzorka; citat prihvaćen bez provjere.</p>
-<p>Mogući ispravak:</p>
+<p>Problemi su, jedna zemlja pogrešno nazvana panelom. Saldo pretvoren u postotnu prognozu. Već izračunana stopa ponovno transformirana bez cilja. Logaritmiranje mogućih nula i negativnih vrijednosti. Uzročnost izvedena iz sličnosti linija. Prenošenje rezultata drugog uzorka. Citat prihvaćen bez provjere.</p>
+<p>Mogući ispravak.</p>
 <blockquote class="blockquote">
 <p>Promatramo mjesečne podatke za Hrvatsku od 2015. do 2024. Jedna serija prikazuje godišnju stopu promjene ukupnog HICP-a, a druga kvalitativni saldo očekivanja potrošača o kretanju cijena. Saldo se ne može izravno čitati kao očekivana stopa inflacije. Prije analize provjeravamo potpunost mjeseci i izvorne jedinice, bez automatskog logaritmiranja ili brisanja opažanja. Zajedničko kretanje opisujemo odvojenim grafovima i godišnjim sažetcima. Takav postupak ne identificira uzrok. Članak o europodručju pomaže razumjeti mjerenje, ali nije dokaz rezultata za Hrvatsku. Za konačne tvrdnje trebaju provjereni izvori i stvarno izvršena analiza.</p>
 </blockquote>
@@ -247,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="audit" class="level2">
 <h2 class="anchored" data-anchor-id="audit">2.1 Audit</h2>
-<p>120 redaka i 120 različitih mjeseci, 2015-01 do 2024-12, 0 nedostajućih vrijednosti. HICP: od −1,5 do 12,9 %. Saldo: od −8,0 do 56,7 bodova. Nule i negativne stope onemogućuju bezuvjetan logaritamski postupak. Prazna oznaka statusa znači da API nije naveo oznaku, ne da nedostaje vrijednost.</p>
+<p>120 redaka i 120 različitih mjeseci, 2015-01 do 2024-12, 0 nedostajućih vrijednosti. HICP, od −1,5 do 12,9 %. Saldo, od −8,0 do 56,7 bodova. Nule i negativne stope onemogućuju bezuvjetan logaritamski postupak. Prazna oznaka statusa znači da API nije naveo oznaku, ne da nedostaje vrijednost.</p>
 </section>
 <section id="primjer-izmjene" class="level2">
 <h2 class="anchored" data-anchor-id="primjer-izmjene">2.2 Primjer izmjene</h2>
@@ -261,7 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="popravak" class="level2">
 <h2 class="anchored" data-anchor-id="popravak">2.3 Popravak</h2>
 <p>Vratite prvi mjesec. Uklonite pogrešno preimenovanje i dijeljenje salda sa 100, logaritmiranje i filtriranje nevaljanih vrijednosti. Zamijenite neopravdanu regresiju bez konstante opisnim postupkom i izbrišite uzročni zaključak. <a href="../code/02_analysis.R">Referentna skripta</a> daje sve izlaze.</p>
-<p>Za početnički prikaz u osnovnom R-u:</p>
+<p>Za početnički prikaz u osnovnom R-u.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>op <span class="ot">&lt;-</span> <span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">1</span>))</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>month <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="fu">paste0</span>(d<span class="sc">$</span>month, <span class="st">"-01"</span>))</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(month, d<span class="sc">$</span>hicp_yoy_pct, <span class="at">type =</span> <span class="st">"l"</span>,</span>
@@ -269,18 +269,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(month, d<span class="sc">$</span>expectations_balance, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">lty =</span> <span class="dv">2</span>,</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Mjesec"</span>, <span class="at">ylab =</span> <span class="st">"Saldo ocekivanja (bodovi), NSA"</span>)</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(op)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Korelacija cijelog uzorka je 0,6985; podrazdoblja 2015.–2019. i 2020.–2024. daju 0,8279 i 0,5342. Razlika pokazuje osjetljivost opisne mjere na razdoblje, a ne dokaz promjene uzročnog učinka. Čisti izračun provjerava <code>code/check.R</code>; skripta dodatno namjerno kvari ulaze kako bi provjerila zaštitne uvjete.</p>
+<p>Korelacija cijelog uzorka je 0,6985. Podrazdoblja 2015.–2019. i 2020.–2024. daju 0,8279 i 0,5342. Razlika pokazuje osjetljivost opisne mjere na razdoblje, a ne dokaz promjene uzročnog učinka. Čisti izračun provjerava <code>code/check.R</code>. Skripta dodatno namjerno kvari ulaze kako bi provjerila zaštitne uvjete.</p>
 </section>
 <section id="primjer-tumačenja" class="level2">
 <h2 class="anchored" data-anchor-id="primjer-tumačenja">2.4 Primjer tumačenja</h2>
 <p>U <a href="../materials/results.html">referentnim rezultatima</a> nalaze se provjerene brojke. Dobro tumačenje navodi uzorak i različite jedinice, opisuje jedan nalaz i ograničenje. Ova analiza ne pokazuje jesu li očekivanja uzrokovala inflaciju ili bila usidrena, niti provjerava može li model predviđati. Navođenje alata bez opisa provjere nije dovoljan zapis uporabe.</p>
-<p>Pri vrednovanju prihvatite različite formulacije koje su točne; ne tražite prepisivanje ovog rješenja.</p>
+<p>Pri vrednovanju prihvatite različite formulacije koje su točne. Ne tražite prepisivanje ovog rješenja.</p>
 <section id="primjer-završnog-odlomka" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-završnog-odlomka">Primjer završnog odlomka</h3>
 <p>Usporedili smo ostvarenu inflaciju i očekivanja potrošača o kretanju cijena u Hrvatskoj od siječnja 2015. do prosinca 2024. Analiza obuhvaća 120 mjesečnih opažanja iz Eurostatovih tablica. Ostvarenu inflaciju mjerimo godišnjom stopom promjene ukupnog HICP-a. Očekivanja predstavljamo sezonski neprilagođenim kvalitativnim saldom ankete DG ECFIN-a. Saldo nije prosječna očekivana stopa inflacije pa se razine dviju mjera ne mogu izravno uspoređivati.</p>
 <p>Prosjek dvanaest mjesečnih godišnjih stopa HICP-a u 2022. iznosio je 10,63 %, a prosjek salda očekivanja 46,62 boda. U 2019. odgovarajući prosjeci bili su 0,80 % i 15,25 bodova. Obje su mjere, dakle, imale viši godišnji prosjek u 2022. Istodobna korelacija u cijelom uzorku iznosi približno 0,6985. Za 2015.–2019. iznosi 0,8279, a za 2020.–2024. 0,5342, što pokazuje da opis povezanosti ovisi o odabranom razdoblju.</p>
 <p>Ovi nalazi opisuju zajedničko kretanje i ne identificiraju uzročni učinak očekivanja na cijene. Na obje serije mogu utjecati zajednički šokovi, a vremenska ovisnost i sezonalnost nisu uklonjene samim računanjem korelacije. Usporedba istog mjeseca također nije provjera uspješnosti prognoze za sljedećih dvanaest mjeseci. Za takvu bi provjeru trebalo unaprijed definirati vremensko poravnanje i postupak evaluacije. Koristimo povijesne vrijednosti dostupne 26. listopada 2026., koje se mogu razlikovati od ranijih izdanja podataka. Skripta i zamrznuti izvori omogućuju ponavljanje ovih opisnih izračuna, uz zadržavanje istog uzorka i jedinica.</p>
-<p>Uz odlomak polaznik prilaže vlastite dokazne zapise i stvarni zapis uporabe AI-ja; ne preuzima tuđu izjavu o načinu nastanka rada.</p>
+<p>Uz odlomak polaznik prilaže vlastite dokazne zapise i stvarni zapis uporabe AI-ja. Ne preuzima tuđu izjavu o načinu nastanka rada.</p>
 
 
 </section>

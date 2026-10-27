@@ -14,7 +14,7 @@ Ekonomski institut, Zagreb / praktična radionica
 
 # Istraživanje uz AI
 
-Na primjeru inflacije u Hrvatskoj proći ćete osam vježbi: od traženja
+Na primjeru inflacije u Hrvatskoj proći ćete osam vježbi, od traženja
 izvora do analize i pisanja. Svaki rezultat trebate znati objasniti
 i ponovno izračunati.
 
@@ -58,7 +58,7 @@ Predajte rezultat koji se može ponovno izračunati.
 
 Ostvarena inflacija mjeri promjenu cijena. Anketni saldo opisuje odgovore
 potrošača o budućim promjenama cijena. Njihovo zajedničko kretanje otvara
-istraživačko pitanje; samo po sebi ne dokazuje uzročnost.
+istraživačko pitanje. Samo po sebi ne dokazuje uzročnost.
 
 [Upoznajte podatke](data/dictionary.qmd) ·
 [Pogledajte raspored](admin/workshop_overview.qmd) ·

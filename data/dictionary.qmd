@@ -4,36 +4,36 @@ subtitle: "Hrvatska · mjesečno · siječanj 2015. – prosinac 2024."
 ---
 
 [Preuzmite CSV](processed/croatia_inflation.csv).
-Jedan redak predstavlja jedan mjesec: ukupno 120 redaka bez nedostajućih
+Jedan redak predstavlja jedan mjesec, ukupno 120 redaka bez nedostajućih
 vrijednosti. Podaci su preuzeti 26. listopada 2026. i zamrznuti za nastavu.
-Povijesne vrijednosti mogu biti revidirane; ovo nisu izdanja dostupna u
+Povijesne vrijednosti mogu biti revidirane. Ovo nisu izdanja dostupna u
 svakom pojedinom povijesnom mjesecu.
 
 ## Rječnik
 
 | Stupac | Značenje i jedinica |
 |---|---|
-| `month` | Mjesec, YYYY-MM; jedinstveni ključ |
+| `month` | Mjesec, YYYY-MM. Jedinstveni ključ |
 | `country` | HR, Hrvatska |
 | `hicp_yoy_pct` | Godišnja promjena ukupnog HICP-a, % |
 | `expectations_balance` | Kvalitativni saldo očekivanja kretanja cijena u sljedećih 12 mjeseci, bodovi salda |
 | `hicp_unit` | RCH_A, izvorna šifra jedinice |
 | `expectations_unit` | BAL, izvorna šifra jedinice |
 | `survey_adjustment` | NSA, bez sezonskog prilagođavanja |
-| `hicp_flag` | Izvorna oznaka statusa opažanja; prazno ako nije navedena |
-| `expectations_flag` | Izvorna oznaka statusa opažanja; prazno ako nije navedena |
+| `hicp_flag` | Izvorna oznaka statusa opažanja. Prazno ako nije navedena |
+| `expectations_flag` | Izvorna oznaka statusa opažanja. Prazno ako nije navedena |
 
 ## Izvori i odabir
 
-HICP dolazi iz Eurostatove tablice `prc_hicp_minr`: `freq=M`, `geo=HR`,
+HICP dolazi iz Eurostatove tablice `prc_hicp_minr`, `freq=M`, `geo=HR`,
 `coicop18=TOTAL`, `unit=RCH_A`. To je tablica prema ECOICOP v2.
 Ne spajamo je sa starom `prc_hicp_manr` bez provjere klasifikacije.
 
-Očekivanja dolaze iz `ei_bsco_m`, izvor DG ECFIN:
+Očekivanja dolaze iz `ei_bsco_m`, izvor DG ECFIN.
 `freq=M`, `geo=HR`, `indic=BS-PT-NY`, `s_adj=NSA`, `unit=BAL`.
 Odabrana je neprilagođena serija kako bi postupak bio izravan i dokumentiran.
 Sezonalnost ostaje moguće ograničenje. Pitanje o sljedećih 12 mjeseci jest
-kvalitativno i uspoređuje buduće kretanje s proteklim razdobljem; saldo ne
+kvalitativno i uspoređuje buduće kretanje s proteklim razdobljem. Saldo ne
 predstavlja prosjek kvantitativnih prognoza inflacije.
 
 [Metapodaci snimke i točni API upiti](raw/manifest.json) ·
@@ -48,7 +48,7 @@ statusa čuva u CSV-u.
 
 Godišnja tablica sadrži aritmetički prosjek dvanaest mjesečnih godišnjih stopa
 i prosjek dvanaest mjesečnih salda. Prosjek godišnjih stopa nije iznova
-izračunana promjena godišnjeg prosjeka indeksa; ne treba ga predstavljati kao
+izračunana promjena godišnjeg prosjeka indeksa. Ne treba ga predstavljati kao
 drugi službeni pokazatelj godišnje inflacije.
 
 ## Granice zaključka

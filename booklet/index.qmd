@@ -46,7 +46,7 @@ postupak i napisati zaključak koji odgovara dokazima.
   protokol provjere izvora i postupak uređivanja teksta.
 - Usporedbe alata temelje se na mogućnostima i provjerenoj dokumentaciji.
   Dodane su promjene u Posit Assistantu i objašnjenje dohvaćanja projektnih
-  dokumenata; uklonjene su zastarjele rang-liste i obećanja o kvotama.
+  dokumenata. Uklonjene su zastarjele rang-liste i obećanja o kvotama.
 - Razjašnjeni su anketni saldo, vremenske serije, korelacija, uzročnost,
   prognoza, p-vrijednosti i granice HAC standardnih pogrešaka.
 - Demonstracije koriste isti hrvatski skup. Medijski korpus i napredni

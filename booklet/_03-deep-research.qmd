@@ -9,7 +9,7 @@ planirati više pretraga, prikupiti izvore i predložiti njihovu sintezu.
 
 Razlika je slična onoj između kratkog pitanja vodiču i naručivanja
 opširnog izvješća. Isti alat može nuditi oba načina rada. Duljina izvješća
-ne govori koliko je ono potpuno ili točno; praznine mogu ostati i u
+ne govori koliko je ono potpuno ili točno. Praznine mogu ostati i u
 vrlo razrađenom tekstu.
 
 Postupak ćemo pokazati na primjeru Gemini Deep Researcha. Prema [Googleovim uputama](https://support.google.com/gemini/answer/15719111?hl=en),
@@ -21,28 +21,28 @@ za račun na kojem radite.
 ### Istraživački plan je vaš dokument
 
 Prije pokretanja napišite što trebate znati. Razdvojite definicije,
-empirijske nalaze, metodološka pitanja i podatke. Zatim odredite obuhvat:
-zemlje, razdoblje objavljivanja, populaciju i jezike. Ako tražite noviju
+empirijske nalaze, metodološka pitanja i podatke. Zatim odredite obuhvat.
+Zemlje, razdoblje objavljivanja, populaciju i jezike. Ako tražite noviju
 literaturu, dopustite zasebno navođenje starijih teorijskih radova kako
 vremenski filtar ne bi uklonio temeljne pojmove.
 
-Zahtjev može biti preširok:
+Zahtjev može biti preširok.
 
 > Napiši pregled literature o inflaciji.
 
 On ne kaže trebate li udžbeničko objašnjenje, pregled prognoziranja ili
-raspravu o očekivanjima. Za temu medijskog izvještavanja zahtjev možemo precizirati ovako:
+raspravu o očekivanjima. Za temu medijskog izvještavanja zahtjev možemo precizirati ovako.
 
 > Pripremi plan pregleda empirijske literature o medijskom izvještavanju
 > i inflacijskim očekivanjima kućanstava u europskim zemljama. Glavni
-> obuhvat su radovi objavljeni od 2010. nadalje; temeljne teorijske radove
+> obuhvat su radovi objavljeni od 2010. nadalje. Temeljne teorijske radove
 > navedi zasebno. Organiziraj pregled prema mjerenju očekivanja, mjerenju
 > medijske pažnje, istraživačkom dizajnu i ograničenjima.
 >
 > Za svaki rad navedi izvor, uzorak, razdoblje, mjere, metodu i glavni
 > nalaz. Označi imaš li puni tekst. Razlikuj korelaciju, prognozu i uzročni
 > zaključak. Ako podatak ne možeš provjeriti, označi ga kao nepoznat.
-> Najprije pokaži plan; nemoj pretpostaviti da imamo medijski korpus.
+> Najprije pokaži plan. Nemoj pretpostaviti da imamo medijski korpus.
 
 Upit traži usporedive zapise o radovima i izričito označavanje nepoznatih
 podataka. Zaključak ostavlja otvorenim. U odgovoru provjerite je li alat
@@ -78,10 +78,10 @@ Istraživačku prazninu treba dokazivati pregledom relevantnog polja,
 a ne samo prazninom u jednom generiranom odgovoru.
 
 Dugi postupak može završiti
-izvješćem koje krši dio kriterija: drugi vremenski raspon, druga populacija
+izvješćem koje krši dio kriterija, drugi vremenski raspon, druga populacija
 ili niz općenitih zaključaka bez pojedinačnih izvora. Usporedite rezultat
 s početnim planom. Ta je provjera jednostavna ako ste kriterije prethodno
-zapisali; mnogo je teža ako ih tek naknadno prilagođavate dobivenom tekstu.
+zapisali. Mnogo je teža ako ih tek naknadno prilagođavate dobivenom tekstu.
 
 ### Kako provjeriti i preraditi izvješće
 
@@ -96,9 +96,9 @@ provjeru kao na certifikat točnosti. Čak i kada takva pomoć postoji,
 otvorite izvor i provjerite podupire li navedeni odlomak baš ovu tvrdnju,
 za promatranu populaciju i vrstu zaključka.
 
-Napravite jednostavnu evidenciju nalaza: zadržati, provjeriti, suziti ili
-izostaviti. Primjerice, dobru definiciju mjere možete zadržati uz izvor;
-tvrdnju o „svim europskim kućanstvima” suziti na uzorak studije; broj bez
+Napravite jednostavnu evidenciju nalaza, zadržati, provjeriti, suziti ili
+izostaviti. Primjerice, dobru definiciju mjere možete zadržati uz izvor.
+Tvrdnju o „svim europskim kućanstvima” suziti na uzorak studije. Broj bez
 izvora izostaviti. Ako se dva izvora razlikuju, nemojte ih automatski
 izjednačiti u kompromisnu tvrdnju. Razlika može proizlaziti iz pitanja,
 mjere, razdoblja ili istraživačkog dizajna.
@@ -113,7 +113,7 @@ prepričavate jedan za drugim.
 
 Za osnovni zadatak ne trebate cijelo istraživanje medija. Trebate razumjeti
 HICP i anketni saldo, ograničiti opisno pitanje i odrediti što ćete
-prikazati. Korisna početna sinteza odgovara na tri pitanja: što svaka mjera
+prikazati. Korisna početna sinteza odgovara na tri pitanja, što svaka mjera
 mjeri, koje su njezine granice i kakvu usporedbu vremenskih serija dopušta.
 
 Nakon čitanja metodologije možete odlučiti prikazati dvije odvojene serije
@@ -122,11 +122,11 @@ suvremenu korelaciju. Ne trebate odmah dodati panel model, sentiment
 medija ili predviđanje inflacije. Za svako proširenje prije kodiranja odredite koji dodatni podaci
 i metodološko obrazloženje nedostaju.
 
-### Vježba: od plana do provjerene stranice
+### Vježba / od plana do provjerene stranice
 
 Sastavite plan za vlastito pitanje i napišite što bi vas navelo da ga
-promijenite. Ako imate pristup istraživačkom načinu rada, pokrenite ga;
-dok čekate, provjerite jedan već pronađeni izvor. Nije potrebno završiti
+promijenite. Ako imate pristup istraživačkom načinu rada, pokrenite ga.
+Dok čekate, provjerite jedan već pronađeni izvor. Nije potrebno završiti
 cijeli postupak u unaprijed zadanih petnaest minuta. Za samostalno čitanje
 važnija je kvaliteta provjere od brzine odgovora.
 

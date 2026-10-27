@@ -5,7 +5,7 @@
 Zamislite bilježnicu u kojoj zapisujete pitanje, odmah ispod njega
 izvodite izračun, a zatim dodajete graf i komentar. Takav dokument može
 biti i istraživački dnevnik i radno okruženje. Računalne bilježnice spajaju
-tekst, kod i rezultate; AI pomoć može dodati razgovorno sučelje za pisanje
+tekst, kod i rezultate. AI pomoć može dodati razgovorno sučelje za pisanje
 i objašnjavanje koda.
 
 Ipak, ne predstavljaju sva razgovorna sučelja istu vrstu dokumenta.
@@ -30,37 +30,37 @@ Reproducibilnost provjeravate ponovnim izvođenjem spremljenog postupka.
 Koristite istih 120 mjeseci za Hrvatsku. Tako možete usporediti rad
 u bilježnici s radom u skripti na već poznatim podacima.
 
-Prvo pitanje: što je učitano? Prikažite broj opažanja, nazive i tipove
+Prvo pitanje, što je učitano? Prikažite broj opažanja, nazive i tipove
 stupaca, nekoliko redaka te vremenski raspon. Usporedite odgovor modela
 sa stvarnom tablicom. Ako model saldo nazove „očekivanom inflacijom u
 postocima”, ispravite definiciju prije bilo kakvog grafa.
 
-Drugo pitanje: kako se mjere kreću kroz vrijeme? Zatražite dva panela
+Drugo pitanje, kako se mjere kreću kroz vrijeme? Zatražite dva panela
 sa zajedničkom vremenskom osi. Jasno navedite jedinice i razdoblje.
 Provjerite da kronološki redoslijed nije zamijenjen abecednim ili
 redoslijedom nastanka objekata. U ovom skupu tekstualni format YYYY-MM
 omogućuje kronološko sortiranje, ali to nije svojstvo svakog formata datuma.
 
-Treće pitanje: kakav je raspon i raspodjela? Sažetak i histogram
+Treće pitanje, kakav je raspon i raspodjela? Sažetak i histogram
 otkrivaju različite stvari. Histogram prikazuje raspodjelu, ali skriva
-vremenski slijed; vremenski graf čuva slijed, ali slabije pokazuje koliko
+vremenski slijed. Vremenski graf čuva slijed, ali slabije pokazuje koliko
 je često pojedina vrijednost zastupljena. Koristite ih za različita
 pitanja. Minima i maksima ne proglašavajte pogreškama bez provjere izvora.
 
-Četvrto pitanje: koliko je sažetak osjetljiv na razdoblje? Izračunajte
+Četvrto pitanje, koliko je sažetak osjetljiv na razdoblje? Izračunajte
 korelaciju za cijeli uzorak i dva unaprijed navedena podrazdoblja.
 Objasnite da se uspoređuju isti mjeseci dviju serija. Ako želite ispitati
 vremenski odmak, napišite koju varijablu pomičete, u kojem smjeru i zašto.
 Nemojte iskušavati odmake dok ne dobijete najveći koeficijent i prikazati
 ga kao jedini rezultat.
 
-Peto pitanje: što je sljedeće istraživačko pitanje? Eksploracija može
+Peto pitanje, što je sljedeće istraživačko pitanje? Eksploracija može
 otvoriti hipotezu o razlikama između razdoblja, ali ne daje automatski
 njezinu potvrdu. Zapišite kada je ideja nastala i kakvi su dodatni podaci
 ili dizajn potrebni. Za AI prijedlog da dodate medijski ton morali biste prikupiti nove
 podatke i započeti zaseban projekt.
 
-### Skriveno stanje: zašto dokument radi samo vama
+### Skriveno stanje / zašto dokument radi samo vama
 
 Bilježnica može sadržavati ćeliju koja koristi objekt stvoren ranije,
 ali čija je izrada poslije izbrisana. Možete izvršiti ćelije redoslijedom
@@ -94,7 +94,7 @@ pomaže upravljanju R paketima, ali sama zaključana lista paketa ne jamči
 prisutnost svih sistemskih biblioteka, podataka ili vanjskih usluga.
 
 Za ovaj osnovni primjer dovoljne su javne spremljene datoteke i osnovni
-R; Docker nije potreban. Složeniji projekti mogu tražiti izolirano okruženje
+R. Docker nije potreban. Složeniji projekti mogu tražiti izolirano okruženje
 i automatizirane provjere. Razina infrastrukture treba odgovarati
 stvarnim ovisnostima i riziku gubitka postupka.
 
@@ -107,9 +107,9 @@ snimku ekrana razgovora. Ona ne omogućuje provjeru brojeva ni promjenu
 pretpostavki.
 
 Iz razgovora sačuvajte odluke i zapise potrebne za provjeru rada.
-Pri spremanju vodite računa o pravilima kolegija i zaštiti podataka:
-razgovori mogu sadržavati osobne podatke i sadržaj koji vam više ne treba. Primjer
-korisne bilješke: „Model je predložio interpolaciju; odbijena je jer
+Pri spremanju vodite računa o pravilima kolegija i zaštiti podataka.
+Razgovori mogu sadržavati osobne podatke i sadržaj koji vam više ne treba. Primjer
+korisne bilješke, „Model je predložio interpolaciju. Odbijena je jer
 zamrznuti skup nema praznina i takva transformacija nije dio plana.”
 
 ### Usporedite tri načina rada
@@ -121,12 +121,12 @@ tri mogućnosti mogu biti transparentne ili nepregledne, ovisno o načinu
 uporabe. Ni jedna nema zajamčenu razinu kontrole ili reproducibilnosti.
 
 Umjesto rangiranja proizvoda, usporedite isti mali zadatak u dvama
-okruženjima: koliko vam treba vremena do **provjerenog** rezultata,
+okruženjima, koliko vam treba vremena do **provjerenog** rezultata,
 možete li objasniti svaku transformaciju, gdje se sprema kod i može li
 ga druga osoba pokrenuti? Ako ste brže dobili graf, a ne možete doći
 do koda, dobitak može nestati pri pisanju završnog rada.
 
-### Vježba: ponovno izvođenje bez razgovora
+### Vježba / ponovno izvođenje bez razgovora
 
 Napravite kratak eksplorativni dokument s pet pitanja iz ovog poglavlja.
 Spremite prihvaćeni kod, ponovno pokrenite okruženje i izvedite ga od
@@ -134,6 +134,6 @@ početka. Usporedite broj mjeseci i korelaciju s referentnim datotekama.
 Zatim dajte kolegi postupak bez svoje otvorene sesije i usmenih dopuna.
 Zabilježite što mu je nedostajalo.
 
-Vježba završava kratkim odgovorom na dva pitanja: što se može ponoviti
+Vježba završava kratkim odgovorom na dva pitanja, što se može ponoviti
 iz spremljenih datoteka i što još ovisi o vama ili vanjskoj usluzi?
 Preostale ovisnosti navedite u uputama uz predanu analizu.

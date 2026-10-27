@@ -7,20 +7,20 @@ subtitle: "Izvedba, provjere i odluke prije nove radionice"
 
 Za demonstracije koristite Positron, R i zamrznuti nastavni paket. U prvih deset minuta
 praktičnog dijela pokažite otvaranje mape, konzolu, izvršavanje odabranog
-retka i novu sesiju. Početnicima dajte starter skriptu; iskusniji mogu
+retka i novu sesiju. Početnicima dajte starter skriptu. Iskusniji mogu
 napisati vlastitu. Nemojte trošiti vrijeme osnovnog dijela na prijelaz među
 terminalnim agentom, drugim IDE-om i bilježnicom.
 
 AI se može prikazati u pregledniku. Izvedite jednu malu izmjenu koda i
-pokažite provjeru. Copilot i Claude Code su izborni primjeri za nastavnika;
-nema obvezne pretplate ili API ključa za polaznike. Pripremljeni pogrešni
+pokažite provjeru. Copilot i Claude Code su izborni primjeri za nastavnika.
+Nema obvezne pretplate ili API ključa za polaznike. Pripremljeni pogrešni
 tekst i kod imaju istu nastavnu svrhu ako servis zakaže.
 
 ## Provjere prije susreta
 
 1. Potvrdite ciljanu skupinu, datum, kontakt i pravila ustanove.
 2. Isprobajte otvaranje sva tri izvora. Za rad bez mreže pripremite dopuštene
-   kopije; ako izvornik nije dostupan, zapis označite kao neprovjeren.
+   kopije. Ako izvornik nije dostupan, zapis označite kao neprovjeren.
 3. Obnovite renv i pokrenite `code/run_all.R` iz nove R sesije.
 4. Pokrenite `scripts/build.ps1` na Windowsu ili odgovarajuće naredbe iz README-ja.
 5. Otvorite paket u odvojenoj mapi i provjerite početničku skriptu.
@@ -32,8 +32,8 @@ tekst i kod imaju istu nastavnu svrhu ako servis zakaže.
 
 Ako polaznik ne može objasniti generirani kod, smanjite zadatak na jedan
 odabir redaka i jedan prosjek. U paru mijenjajte uloge autora i provjeravatelja.
-Osnovni izlaz vježbe 2.3 može biti godišnja tablica i jedan dobro označen graf;
-drugi graf je nastavak za brže polaznike. Pripremljene izlaze koristite za
+Osnovni izlaz vježbe 2.3 može biti godišnja tablica i jedan dobro označen graf.
+Drugi graf je nastavak za brže polaznike. Pripremljene izlaze koristite za
 provjeru i nastavak rasprave, ali ih nemojte bilježiti kao samostalnu izvedbu.
 
 U zadnjih deset minuta svakog bloka usporedite dva studentska izlaza i
@@ -52,10 +52,10 @@ rezultate. Ne zamjenjujte ga izmišljenim serijama označenima kao HNB podaci.
 
 ## Status ove revizije
 
-Materijali su programski i vizualno provjereni; pilot s polaznicima još
+Materijali su programski i vizualno provjereni. Pilot s polaznicima još
 treba provesti. Termin i kontakt za novu izvedbu treba potvrditi. Stari HTML/PDF izvozi
 i stare najave ostaju povijesni materijal izvan novog weba i radnog paketa.
-Čitateljski materijali nisu projekcijski slajdovi; raspored i vježbe služe
+Čitateljski materijali nisu projekcijski slajdovi. Raspored i vježbe služe
 vođenju susreta. Kratki prezentacijski sažeci mogu se razviti nakon pilota.
 
 [Dnevni raspored](workshop_overview.qmd) · [Rješenja](../materials/solutions.qmd) ·

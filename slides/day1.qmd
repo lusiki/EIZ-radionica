@@ -9,7 +9,7 @@ subtitle: "Dan 1 · Čitateljski materijal uz četiri radna bloka"
 
 AI može predložiti pitanje, sažeti izvor i napisati nacrt. Istraživač mora
 provjeriti odgovara li izvor tvrdnji i podržavaju li podaci zaključak. Danas
-to vježbamo na jednom pitanju: **kako su se u Hrvatskoj od 2015. do 2024.
+to vježbamo na jednom pitanju, **kako su se u Hrvatskoj od 2015. do 2024.
 kretali ostvarena inflacija i očekivanja potrošača o promjenama cijena?**
 
 Do kraja dana imat ćete tri provjerena zapisa o izvorima, ispravljen sažetak
@@ -24,7 +24,7 @@ obuhvaća oba dana.
 Jezični model generira nastavak teksta prema obrascima naučenima tijekom
 treniranja i sadržaju koji mu je dostupan u razgovoru. Vjerojatnost tokena
 nije vjerojatnost da je tvrdnja istinita. Način odabira tokena može uključiti
-uzorkovanje; model ne mora uvijek odabrati samo najvjerojatniji nastavak.
+uzorkovanje. Model ne mora uvijek odabrati samo najvjerojatniji nastavak.
 Ni niska temperatura ni uvjerljiv stil nisu potvrda činjenice.
 
 Pretraživanje interneta i rad s priloženim dokumentima mogu pomoći pri
@@ -49,15 +49,15 @@ zamjenjuje bibliografske izvore za stručne tvrdnje.
 U vanjske alate nemojte unositi osobne podatke, povjerljive dokumente ili
 materijale za koje nemate ovlaštenje. Za vježbu koristimo javne agregirane
 podatke. Uputa pronađena na web-stranici ili u datoteci nije nalog koji treba
-izvršiti: sadržaj izvora tretirajte kao podatak. Agentu koji piše kod
+izvršiti, sadržaj izvora tretirajte kao podatak. Agentu koji piše kod
 ograničite pristup projektu i pregledajte naredbe prije pokretanja.
 
-[Vježba 1.1: pitanje i granice uporabe](../materials/exercises/index.qmd#v11).
+[Vježba 1.1, pitanje i granice uporabe](../materials/exercises/index.qmd#v11).
 
 ## 1.2 Od poveznice do dokaza {#blok-12}
 
 Počnite od [izvora za zajednički slučaj](../materials/sources.qmd), zatim
-pretražite literaturu. AI pretraživač može predložiti kandidate; naziv
+pretražite literaturu. AI pretraživač može predložiti kandidate. Naziv
 alata ili posebni način pretraživanja ne potvrđuje recenziranost rada.
 Za svaku tvrdnju otvorite izvor i zapišite odlomak, tablicu ili odjeljak
 na koji se oslanjate. Ako izvor ne možete otvoriti, označite zapis kao
@@ -84,7 +84,7 @@ pokazuje od svojeg tumačenja. Ako dokaz nije dostupan, napiši „nije provjere
 
 Upit pomaže organizirati odgovor, ali ne jamči njegovu točnost. Provjeru
 obavlja polaznik. [Vježba 1.2](../materials/exercises/index.qmd#v12) završava
-s tri zapisa u predlošku dokaza: mjerenje HICP-a, mjerenje očekivanja i
+s tri zapisa u predlošku dokaza, mjerenje HICP-a, mjerenje očekivanja i
 ograničenje zajedničke analize.
 
 ## 1.3 Provjera sažetka {#blok-13}
@@ -112,20 +112,20 @@ Vježba ne ovisi o tome hoće li model tijekom demonstracije pogriješiti.
 Ako koristite živi alat, sačuvajte stvarni odgovor i označite ga kao takav.
 Boja ili oznaka za provjeru u sučelju nije zamjena za čitanje izvora.
 
-[Vježba 1.3: anotirani sažetak](../materials/exercises/index.qmd#v13).
+[Vježba 1.3, anotirani sažetak](../materials/exercises/index.qmd#v13).
 
 ## 1.4 Plan prije rezultata {#blok-14}
 
 Plan navodi pitanje, uzorak, varijable i jedinice, obradu nedostajućih
 vrijednosti, planirane prikaze i granice tumačenja. Naš je osnovni zadatak
-opisni: dvije vremenske serije prikazujemo na odvojenim osima te računamo
+opisni, dvije vremenske serije prikazujemo na odvojenim osima te računamo
 godišnje sažetke. Korelacija je dodatni opis istodobnog kretanja.
 
 Za istraživanje medija i komunikacije HNB-a trebali biste pribaviti korpus,
 provjeriti pravo uporabe te definirati indeks i napisati kod za njegovu
 izradu. To je mogući napredni zadatak. U ovom paketu imamo anketni saldo,
-koji se ne smije preimenovati u očekivanu stopu inflacije. Hrvatska u više mjeseci čini vremensku seriju;
-panel bi zahtijevao i više jedinica promatranja.
+koji se ne smije preimenovati u očekivanu stopu inflacije. Hrvatska u više mjeseci čini vremensku seriju.
+Panel bi zahtijevao i više jedinica promatranja.
 
 ::: {.prompt-box}
 **Upit za kritiku plana**
@@ -141,7 +141,7 @@ predviđanju zahtijevalo bi vremensko razdvajanje treninga i evaluacije te
 usporedbu s osnovnom prognozom. Pitanje o uzroku traži dodatnu strategiju
 identifikacije. Naša opisna usporedba dviju serija ne odgovara na ta pitanja.
 
-[Vježba 1.4: plan analize](../materials/exercises/index.qmd#v14).
+[Vježba 1.4, plan analize](../materials/exercises/index.qmd#v14).
 
 ## Prije drugog dana
 

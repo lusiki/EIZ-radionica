@@ -5,10 +5,10 @@
 Zamislite da ste prikupili podatke, provjerili skriptu i izradili graf.
 Sjednete pisati i shvatite da ne znate objasniti što ste otkrili. Odlomak
 zvuči kao dnevnik naredbi, zaključak obećava više nego što analiza daje,
-a čitatelj ne vidi vezu između pitanja i rezultata. Pri pisanju se zato vraćate na analizu: što ste utvrdili, što
+a čitatelj ne vidi vezu između pitanja i rezultata. Pri pisanju se zato vraćate na analizu, što ste utvrdili, što
 pretpostavljate i što još ne možete tvrditi?
 
-AI može pomoći kao čitatelj nacrta: označiti nejasan pojam, predložiti
+AI može pomoći kao čitatelj nacrta, označiti nejasan pojam, predložiti
 redoslijed i upozoriti na rečenicu bez potpore. Procijenite pomažu li komentari vašem tekstu i koliko vam vremena
 treba da ih provjerite. Kvaliteta jezičnog uređivanja može se razlikovati
 među alatima i jezicima.
@@ -65,8 +65,8 @@ samo dodati veznu frazu.
 
 4\. Parafraza i atribucija. Priložite provjereni odlomak i bibliografske
 podatke. Zatražite prijedlog parafraze koji čuva granice nalaza te
-usporedite ga s izvornikom. Stil citiranja prilagodite uputama rada;
-model ne smije dopuniti nedostajuću godinu, naslov ili DOI nagađanjem.
+usporedite ga s izvornikom. Stil citiranja prilagodite uputama rada.
+Model ne smije dopuniti nedostajuću godinu, naslov ili DOI nagađanjem.
 
 5\. Usklađenost uvoda i zaključka. Usporedite pitanje, obećani postupak
 i zaključnu tvrdnju. Ako uvod najavljuje uzročni učinak medija, a provedena
@@ -80,7 +80,7 @@ organizirati vaše točke u nacrt. Nepoznate podatke označite, primjerice
 takve oznake moraju nestati tek nakon stvarne provjere. Za završnu predaju
 svaku rečenicu trebate razumjeti i moći povezati s dokazom.
 
-Obrnuti razgovor također je koristan: zatražite da vam model postavlja
+Obrnuti razgovor također je koristan, zatražite da vam model postavlja
 pitanja jedno po jedno prije predlaganja metodološkog odlomka. Primjerice,
 koje su jedinice, koji je uzorak i kako ste postupili s prazninama?
 To može otkriti odluku koju niste zapisali. Ne jamči da će model pitati
@@ -88,25 +88,25 @@ sve potrebno, pa vlastiti kontrolni popis i dalje ima smisla.
 
 ### Četiri prolaza kroz tekst
 
-Prvi prolaz: evaluacija bez prepisivanja. Pročitajte odlomak s obzirom
+Prvi prolaz, evaluacija bez prepisivanja. Pročitajte odlomak s obzirom
 na pitanje, dokaz, jasnoću i granice zaključka. Zatražite konkretna mjesta
-koja treba popraviti. Ocjena „7 od 10” bez obrazloženja malo pomaže;
-korisniji je komentar „iz ove rečenice nije jasno da je očekivanje mjereno
+koja treba popraviti. Ocjena „7 od 10” bez obrazloženja malo pomaže.
+Korisniji je komentar „iz ove rečenice nije jasno da je očekivanje mjereno
 kvalitativnim saldom”.
 
-Drugi prolaz: struktura. Posložite problem, mjere, postupak, nalaz i
+Drugi prolaz, struktura. Posložite problem, mjere, postupak, nalaz i
 ograničenje. Definirajte pojam prije nego što ga tumačite. Tablicu ili
 graf uvedite rečenicom koja objašnjava što čitatelj treba gledati, a
 nakon prikaza objasnite relevantan nalaz. Nemojte opisivati sve brojeve
 redom ako ne služe pitanju.
 
-Treći prolaz: usklađivanje snage tvrdnji. Zamijenite „dokazuje” s
+Treći prolaz, usklađivanje snage tvrdnji. Zamijenite „dokazuje” s
 formulacijom koja točno odgovara dizajnu, a ne s neodređenom ogradom.
 „U uzorku postoji pozitivna linearna povezanost” preciznije je od
 „rezultati sugeriraju statistički značajan utjecaj” kada niste proveli
 odgovarajući test ni identificirali uzročni učinak.
 
-Četvrti prolaz: jezik i dosljednost. Provjerite nazive mjera,
+Četvrti prolaz, jezik i dosljednost. Provjerite nazive mjera,
 decimalne oznake, datume, padeže i kratice. Isti konstrukt ne treba
 naizmjenično nazivati percepcijom, očekivanjem i pouzdanjem ako to nisu
 iste varijable. Nakon jezične izmjene ponovno pročitajte značenje, jer
@@ -114,15 +114,15 @@ gramatički glađa rečenica može sadržajno biti manje precizna.
 
 ### Primjer revizije na rezultatima radionice
 
-Sljedeća je rečenica **namjerno pogrešan početni nacrt**:
+Sljedeća je rečenica **namjerno pogrešan početni nacrt**.
 
 > Naša analiza dokazuje da očekivanja uzrokuju inflaciju, jer je korelacija
 > 0,70. Potrošači su zato uspješno predvidjeli rast cijena.
 
-U prvom prolazu označite tri problema: korelacija ne identificira uzrok,
+U prvom prolazu označite tri problema, korelacija ne identificira uzrok,
 mjere su nedovoljno opisane i usporedba istog mjeseca nije evaluacija
 prognoze. U drugom prolazu navedite uzorak i dvije mjere. U trećem
-ograničite zaključak na opisnu povezanost. Završna verzija može glasiti:
+ograničite zaključak na opisnu povezanost. Završna verzija može glasiti.
 
 > U hrvatskom mjesečnom uzorku za 2015.–2024. Pearsonova korelacija između
 > godišnje stope promjene HICP-a i salda očekivanih promjena cijena iznosi
@@ -169,7 +169,7 @@ Za procjenu vlastitog rada zapišite možete li objasniti analizu, koje
 ste pogreške pronašli, što druga osoba može reproducirati i koliko vam
 je vremena trebalo do provjerenog rezultata. Broj upita ili generiranih
 stranica sam ne odgovara na ta pitanja. Ova pitanja služe samoprocjeni
-u radionici; nisu standardizirana psihometrijska skala.
+u radionici. Nisu standardizirana psihometrijska skala.
 
 Na kraju spremite pitanje, dokazne zapise, plan, podatke, skriptu,
 izlaz i vlastitu interpretaciju u jednu mapu. Iz nje treba biti jasno

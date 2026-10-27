@@ -8,4 +8,4 @@
 6. Provjerite svaku brojku i tvrdnju nakon jezičnog uređivanja.
 7. Zabilježite uporabu AI-ja ili da ga niste koristili.
 
-Poveznice: ../sources.qmd, ../../data/dictionary.qmd, ../rubric.qmd.
+Poveznice, ../sources.qmd, ../../data/dictionary.qmd, ../rubric.qmd.

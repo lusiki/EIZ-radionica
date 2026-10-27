@@ -12,7 +12,7 @@ izravno usporedive jer su jedinice različite.
 
 ![Mjesečna stopa HICP-a i saldo očekivanja cijena u Hrvatskoj, 2015.–2024., na odvojenim osima i s različitim vrstama linija.](../results/inflation_expectations.svg)
 
-Izvor: Eurostat / DG ECFIN, snimka 26. listopada 2026.; vlastita obrada.
+Izvor, Eurostat / DG ECFIN, snimka 26. listopada 2026.. Vlastita obrada.
 Eurostat nije odgovoran za ovu nastavnu obradu i tumačenje.
 
 ## Provjerite brojke
@@ -31,7 +31,7 @@ Ne zamjenjujte prvi prosjek promjenom godišnjeg prosjeka izvornog indeksa.
 
 U ovom uzorku obje mjere imaju veći godišnji prosjek 2022. nego 2019.
 Razlika opisuje te dvije godine. Jedna mjera jest stopa
-promjene cijena, a druga kvalitativni saldo; njihove se razine ne mogu
+promjene cijena, a druga kvalitativni saldo. Njihove se razine ne mogu
 izravno uspoređivati. Istodobna korelacija ne potvrđuje da su očekivanja
 uzrokovala inflaciju. Zajednički šokovi, vremenska ovisnost i izbor
 razdoblja ostaju ograničenja.

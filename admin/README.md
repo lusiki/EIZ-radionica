@@ -1,6 +1,6 @@
 # Administracija
 
-Aktivni materijali: prerequisites.qmd, workshop_overview.qmd i instructor.qmd.
+Aktivni materijali, prerequisites.qmd, workshop_overview.qmd i instructor.qmd.
 corrections.md prati činjenične i metodološke ispravke. compatibility.md
 razlikuje izvršene provjere od neprovjerenih integracija.
 

@@ -17,7 +17,7 @@ biste naučili pronaći dokaz ili objasniti rezultat.
 
 Radionicu povezuje hrvatski primjer. Promatramo mjesečnu ostvarenu inflaciju
 i anketni pokazatelj očekivanih promjena cijena od 2015. do 2024. To je
-namjerno ograničen zadatak: dvije mjere, 120 mjeseci i postupak koji možete
+namjerno ograničen zadatak, dvije mjere, 120 mjeseci i postupak koji možete
 ponovno izvesti. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje
 motivacija za nastavak istraživanja. Ovaj paket ne sadrži medijski korpus
 ni indeks medijske pažnje i ne prikazuje rezultate takvog istraživanja.
@@ -26,12 +26,12 @@ ni indeks medijske pažnje i ne prikazuje rezultate takvog istraživanja.
 
 Veliki jezični model tijekom treniranja uči obrasce u podacima. U razgovoru
 koristi naučene parametre i dostupan kontekst kako bi oblikovao nastavak
-teksta. Tekst obrađuje u tokenima: dijelovima riječi, riječima ili drugim
+teksta. Tekst obrađuje u tokenima, dijelovima riječi, riječima ili drugim
 jedinicama. Broj tokena po riječi ovisi o jeziku i tokenizatoru, pa jednu
 procjenu za engleski ne treba primijeniti na hrvatski seminarski rad.
 
 Pojednostavljeno, model procjenjuje raspodjelu
-$P(t_k \mid t_1, \ldots, t_{k-1}; \theta)$: vjerojatnosti mogućih sljedećih
+$P(t_k \mid t_1, \ldots, t_{k-1}; \theta)$, vjerojatnosti mogućih sljedećih
 tokena uz prethodni kontekst i naučene parametre. Način odabira nastavka može
 uključiti uzorkovanje. **Vjerojatnost tokena nije vjerojatnost da je tvrdnja
 istinita.** Model može proizvesti vrlo uvjerljivu rečenicu čiji se sadržaj
@@ -41,7 +41,7 @@ Korisna je analogija s dobro načitanim suradnikom koji brzo predlaže
 formulacije. Ipak, analogija ima granice. Model nema provjerljivo osobno
 iskustvo istraživanja koje opisuje. S druge strane, aplikacija s pristupom
 alatima može stvarno otvoriti dokument, pretražiti web ili izvršiti kod.
-Zato treba razlikovati tri situacije: odgovor iz naučenih obrazaca, odgovor
+Zato treba razlikovati tri situacije, odgovor iz naučenih obrazaca, odgovor
 uz dohvaćene izvore i rezultat izvršenog izračuna. U svakom slučaju tražite
 trag koji odgovara vrsti tvrdnje.
 
@@ -54,7 +54,7 @@ ili tablicu na koju se pitanje odnosi.
 
 Temperatura, kada je dostupna, utječe na način uzorkovanja. Ni niska
 temperatura ni način rada s duljim računanjem nisu potvrda istinitosti.
-Provjerite citat i rezultat; iz odgovora ne možete pouzdano rekonstruirati
+Provjerite citat i rezultat. Iz odgovora ne možete pouzdano rekonstruirati
 unutarnji postupak modela. Prikaz plana ili objašnjenja također
 nije potpuni zapis svih internih operacija.
 
@@ -97,7 +97,7 @@ Pristup ovisi o računu, planu i postavkama ustanove. Prije nastave
 provjerite funkciju koju ćete koristiti, njezinu cijenu i ograničenja
 uporabe.
 
-Za usporedbu dvaju dostupnih alata pripremite isti mali zadatak: isti
+Za usporedbu dvaju dostupnih alata pripremite isti mali zadatak, isti
 odlomak, tri ista izvora i isto pitanje. Usporedite točnost, sljedivost,
 razumljivost i vrijeme potrebno za provjeru. Dulji odgovor ili više citata
 nisu sami po sebi bolji rezultat. Ako alat ne može otvoriti izvor, bilješka
@@ -123,17 +123,17 @@ neobjavljene materijale u vanjsku uslugu bez odgovarajućeg dopuštenja.
 Plaćeni račun sam po sebi nije potvrda prikladnosti za te podatke. Za ovu
 radionicu dovoljan je javni skup službenih agregiranih podataka.
 
-Zapis uporabe može biti jednostavan: datum, alat, zadatak, prihvaćeni
-prijedlog i način provjere. Primjerice: „AI je predložio oznake osi;
-usporedio/la sam ih s rječnikom podataka i promijenio/la oznaku očekivanja
-iz postotka u saldo.” Citiranje empirijske tvrdnje vodi na njezin izvor;
-bilješka o uporabi alata objašnjava kako ste radili.
+Zapis uporabe može biti jednostavan, datum, alat, zadatak, prihvaćeni
+prijedlog i način provjere. Primjerice, „AI je predložio oznake osi.
+Usporedio/la sam ih s rječnikom podataka i promijenio/la oznaku očekivanja
+iz postotka u saldo.” Citiranje empirijske tvrdnje vodi na njezin izvor.
+Bilješka o uporabi alata objašnjava kako ste radili.
 
 ### Pokušajte sami
 
 Napišite jedno pitanje o inflaciji i unaprijed odredite što bi bio provjerljiv
 odgovor. Zatim zatražite prijedlog od dostupnog asistenta. Razdvojite rečenice
-u tri skupine: tvrdnje koje trebaju izvor, prijedloge istraživačkog postupka
+u tri skupine, tvrdnje koje trebaju izvor, prijedloge istraživačkog postupka
 i pitanja na koja još nema odgovora. Provjerite jednu tvrdnju u izvornom
 dokumentu i jednu brojku u podacima. Na kraju vlastitim riječima objasnite
 što vam je model olakšao i koju ste odluku ipak morali donijeti sami.

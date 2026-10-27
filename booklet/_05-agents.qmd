@@ -6,7 +6,7 @@ Prvoga dana istraživačko ste pitanje povezali s izvorima i podacima.
 Drugoga dana taj plan treba pretvoriti u postupak. Programska pomoć može
 biti dopunjavanje retka, razgovor o skripti ili agent koji čita datoteke,
 predlaže izmjene i pokreće naredbe. Te mogućnosti nisu strogo odvojene
-generacije tehnologije; često postoje unutar iste aplikacije.
+generacije tehnologije. Često postoje unutar iste aplikacije.
 
 Claude Code je primjer agenta koji može izravno raditi na projektu. Ako mu okruženje i dopuštenja to omogućuju, može urediti nekoliko
 datoteka i izvršiti analizu. To štedi ručno prepisivanje. Prije rada odredite što agent smije
@@ -31,7 +31,7 @@ Povezivanje s dodatnim alatima, primjerice putem MCP-a, može proširiti
 što agent može čitati ili izvršiti. To ne znači da automatski ima pristup
 svakoj bazi ili pravo na sve radnje. Prije rada provjerite dostupne
 funkcije i dopuštenja. Tekst s weba ili iz učitane datoteke istraživački je
-materijal; upute skrivene u njemu ne trebaju određivati vaš radni postupak.
+materijal. Upute skrivene u njemu ne trebaju određivati vaš radni postupak.
 
 Rad u zasebnoj grani omogućuje pregled izmjena prije njihova prihvaćanja.
 Sama grana nije sigurnosna izolacija računala. Podagenti, kada su dostupni,
@@ -39,7 +39,7 @@ također ne znače da je svaka izmjena automatski odvojena i provjerena.
 Za studentski zadatak često je dovoljno zadavati male uzastopne korake
 i pregledati kod nakon svakog od njih.
 
-Primjer početnog zaduženja:
+Primjer početnog zaduženja.
 
 > Radi unutar ovog nastavnog projekta. Najprije pročitaj rječnik podataka
 > i postojeće skripte. Izvorne datoteke u data/raw ostavi nepromijenjene.
@@ -47,7 +47,7 @@ Primjer početnog zaduženja:
 > i jedinice. Prikaži plan i nalaze provjere. Nemoj brisati opažanja,
 > interpolirati podatke ni mijenjati istraživačko pitanje bez obrazloženja.
 
-### Korak 1: upoznajte ulazne podatke
+### Korak 1 / upoznajte ulazne podatke
 
 Jedan redak naše tablice predstavlja mjesec u Hrvatskoj. Ključ `month`
 povezuje mjesece, `hicp_yoy_pct` predstavlja godišnju stopu promjene HICP-a,
@@ -64,11 +64,11 @@ kopija omogućuje da kasnija revizija službenih podataka ne promijeni
 neprimjetno rezultat ove nastavne verzije.
 
 Agent može napisati te provjere, ali vi određujete što očekujete i zašto.
-Broj redaka sam po sebi nije dovoljan: 120 redaka može sadržavati jedan
+Broj redaka sam po sebi nije dovoljan, 120 redaka može sadržavati jedan
 ponovljen i jedan izostavljen mjesec. Isto vrijedi za graf koji izgleda
 glatko i uvjerljivo, a počiva na pogrešno spojenim datumima.
 
-### Korak 2: priprema bez prikrivenih odluka
+### Korak 2 / priprema bez prikrivenih odluka
 
 „Očisti podatke” preširok je zadatak. Nedostajuća vrijednost nije nula.
 Ekstremna inflacija tijekom gospodarskog šoka nije automatski pogreška.
@@ -83,11 +83,11 @@ Ta razlika određuje koje je modele uopće smisleno razmatrati.
 Ne primjenjujte logaritam na saldo koji može biti negativan ili na stopu
 koja može biti nula ili negativna bez jasnog teorijskog i matematičkog
 razloga. Ni nakon logaritmiranja neke varijable svaki koeficijent ne
-postaje elastičnost; interpretacija ovisi o specifikaciji. Jednako tako,
+postaje elastičnost. Interpretacija ovisi o specifikaciji. Jednako tako,
 spajanje dnevnih i mjesečnih podataka zahtijeva smisleno pravilo agregacije,
 a ne automatsku interpolaciju koju je alat ponudio.
 
-### Korak 3: slika prije modela
+### Korak 3 / slika prije modela
 
 Dvije serije imaju različite jedinice. U radionici ih prikazujemo u
 odvojenim panelima sa zajedničkom vremenskom osi. Čitatelj vidi kada se
@@ -102,13 +102,13 @@ vizualnog dojma, niti smjer uzročnosti na temelju toga koja linija ranije
 raste. Za to trebaju dodatni postupci i pretpostavke.
 
 Pearsonova korelacija sažima linearnu povezanost parova opažanja. U
-zamrznutom uzorku cijelog razdoblja iznosi približno 0,6985; u dijelu
+zamrznutom uzorku cijelog razdoblja iznosi približno 0,6985. U dijelu
 2015.–2019. približno 0,8279, a u dijelu 2020.–2024. približno 0,5342.
 Te su vrijednosti reproducirane u `results/correlations.csv`. Razlika
 među podrazdobljima pokazuje da sažetak ovisi o promatranom razdoblju.
 Nije test razlike korelacija niti dokaz promjene uzročnog mehanizma.
 
-### Korak 4: što regresija i HAC mogu pokazati
+### Korak 4 / što regresija i HAC mogu pokazati
 
 Osnovni zadatak završava opisnim rezultatima. U naprednom dijelu
 možete razmotriti OLS regresiju. Jednostavan model s konstantom glasi
@@ -124,7 +124,7 @@ informacija u trenutku predviđanja.
 
 Konvencionalne standardne pogreške OLS-a počivaju na pretpostavkama o
 greškama. Kod heteroskedastičnosti ili serijske korelacije mogu biti
-neprimjerene; nije zajamčeno da su uvijek preniske. HAC procjena
+neprimjerene. Nije zajamčeno da su uvijek preniske. HAC procjena
 kovarijacijske matrice, primjerice Newey-West, mijenja procjenu
 nesigurnosti uz odgovarajuće uvjete. **Ne mijenja same OLS koeficijente**
 i ne ispravlja endogenost, izostavljene varijable, loše mjerenje ili
@@ -132,20 +132,20 @@ lažnu regresiju povezanu s nestacionarnošću.
 
 U [`sandwich::NeweyWest`](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html)
 važni su odabir odmaka, prethodno izbjeljivanje i korekcija za veličinu
-uzorka. Naš dodatak navodi postavke izričito: `lag = 12`,
+uzorka. Naš dodatak navodi postavke izričito, `lag = 12`,
 `prewhite = FALSE`, `adjust = TRUE`. Dvanaest je nastavna specifikacija
 za mjesečne podatke, a ne univerzalno optimalan odabir. Procjena i
 interpretacija traže pregled dinamike i osjetljivosti na razumne postavke.
 
 P-vrijednost se odnosi na kompatibilnost rezultata s nul-hipotezom i
-pretpostavkama modela: pod tim uvjetima izražava vjerojatnost statistike
+pretpostavkama modela, pod tim uvjetima izražava vjerojatnost statistike
 barem toliko ekstremne koliko je opažena. **Nije vjerojatnost da je
 nul-hipoteza istinita**, ni veličina učinka, ni vjerojatnost da je nalaz
 nastao „slučajno”. [ASA-ina izjava](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf)
 objašnjava zašto znanstveni zaključak ne treba svesti na prelazak praga.
 Prikladnost dizajna prethodi tumačenju p-vrijednosti.
 
-### Korak 5: osjetljivost i granice proširenja
+### Korak 5 / osjetljivost i granice proširenja
 
 Multiverzum modela i specifikacijska krivulja služe ispitivanju koliko
 rezultat ovisi o analitičkim odlukama. Uspoređujte specifikacije koje
@@ -169,7 +169,7 @@ nije potvrđen dostupnim skupom podataka.
 
 Pregledajte razliku izmjena, pročitajte ključne retke i pokrenite postupak
 od početka. Usporedite barem jedan rezultat neovisnim izračunom. Ne
-zadovoljavajte se rečenicom agenta da su „svi testovi prošli”: pogledajte
+zadovoljavajte se rečenicom agenta da su „svi testovi prošli”, pogledajte
 što je provjereno. Provjera sintakse ne potvrđuje ekonomsku interpretaciju.
 
 Kao vježbu napišite precizno zaduženje za izradu godišnjeg sažetka.

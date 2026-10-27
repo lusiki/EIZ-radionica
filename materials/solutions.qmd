@@ -5,7 +5,7 @@ subtitle: "Otvorite nakon vlastitog pokušaja"
 
 ## 1.1 Pitanje i pravila
 
-Prihvatljiv primjer: „Kako su se u Hrvatskoj od 2015. do 2024. kretali
+Prihvatljiv primjer, „Kako su se u Hrvatskoj od 2015. do 2024. kretali
 godišnja stopa HICP-a i kvalitativni saldo očekivanja cijena?”
 Pitanje je opisno. Dobar popis provjera uključuje otvaranje izvora, provjeru
 podudarnosti tvrdnje i dokaza te provjeru jedinica i uzorka.
@@ -26,12 +26,12 @@ Sam URL bez provjere teksta nije potpuni zapis.
 
 ## 1.3 Pogrešan sažetak
 
-Problemi su: jedna zemlja pogrešno nazvana panelom; saldo pretvoren u
-postotnu prognozu; već izračunana stopa ponovno transformirana bez cilja;
-logaritmiranje mogućih nula i negativnih vrijednosti; uzročnost izvedena iz
-sličnosti linija; prenošenje rezultata drugog uzorka; citat prihvaćen bez provjere.
+Problemi su, jedna zemlja pogrešno nazvana panelom. Saldo pretvoren u
+postotnu prognozu. Već izračunana stopa ponovno transformirana bez cilja.
+Logaritmiranje mogućih nula i negativnih vrijednosti. Uzročnost izvedena iz
+sličnosti linija. Prenošenje rezultata drugog uzorka. Citat prihvaćen bez provjere.
 
-Mogući ispravak:
+Mogući ispravak.
 
 > Promatramo mjesečne podatke za Hrvatsku od 2015. do 2024. Jedna serija
 > prikazuje godišnju stopu promjene ukupnog HICP-a, a druga kvalitativni saldo
@@ -53,7 +53,7 @@ obrazloženo. Regresija nije uvjet uspjeha.
 ## 2.1 Audit
 
 120 redaka i 120 različitih mjeseci, 2015-01 do 2024-12, 0 nedostajućih
-vrijednosti. HICP: od −1,5 do 12,9 %. Saldo: od −8,0 do 56,7 bodova.
+vrijednosti. HICP, od −1,5 do 12,9 %. Saldo, od −8,0 do 56,7 bodova.
 Nule i negativne stope onemogućuju bezuvjetan logaritamski postupak.
 Prazna oznaka statusa znači da API nije naveo oznaku, ne da nedostaje vrijednost.
 
@@ -78,7 +78,7 @@ Vratite prvi mjesec. Uklonite pogrešno preimenovanje i dijeljenje salda sa
 neopravdanu regresiju bez konstante opisnim postupkom i izbrišite uzročni
 zaključak. [Referentna skripta](../code/02_analysis.R) daje sve izlaze.
 
-Za početnički prikaz u osnovnom R-u:
+Za početnički prikaz u osnovnom R-u.
 
 ```r
 op <- par(mfrow = c(2, 1))
@@ -90,10 +90,10 @@ plot(month, d$expectations_balance, type = "l", lty = 2,
 par(op)
 ```
 
-Korelacija cijelog uzorka je 0,6985; podrazdoblja 2015.–2019. i 2020.–2024.
+Korelacija cijelog uzorka je 0,6985. Podrazdoblja 2015.–2019. i 2020.–2024.
 daju 0,8279 i 0,5342. Razlika pokazuje osjetljivost opisne mjere na razdoblje,
 a ne dokaz promjene uzročnog učinka. Čisti izračun provjerava
-`code/check.R`; skripta dodatno namjerno kvari ulaze kako bi provjerila zaštitne uvjete.
+`code/check.R`. Skripta dodatno namjerno kvari ulaze kako bi provjerila zaštitne uvjete.
 
 ## 2.4 Primjer tumačenja
 
@@ -103,7 +103,7 @@ Ova analiza ne pokazuje jesu li očekivanja uzrokovala inflaciju ili bila
 usidrena, niti provjerava može li model predviđati. Navođenje alata bez opisa provjere
 nije dovoljan zapis uporabe.
 
-Pri vrednovanju prihvatite različite formulacije koje su točne; ne tražite
+Pri vrednovanju prihvatite različite formulacije koje su točne. Ne tražite
 prepisivanje ovog rješenja.
 
 ### Primjer završnog odlomka
@@ -133,4 +133,4 @@ podataka. Skripta i zamrznuti izvori omogućuju ponavljanje ovih opisnih
 izračuna, uz zadržavanje istog uzorka i jedinica.
 
 Uz odlomak polaznik prilaže vlastite dokazne zapise i stvarni zapis uporabe
-AI-ja; ne preuzima tuđu izjavu o načinu nastanka rada.
+AI-ja. Ne preuzima tuđu izjavu o načinu nastanka rada.

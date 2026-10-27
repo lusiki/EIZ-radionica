@@ -185,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="processed/croatia_inflation.csv">Preuzmite CSV</a>. Jedan redak predstavlja jedan mjesec: ukupno 120 redaka bez nedostajućih vrijednosti. Podaci su preuzeti 26. listopada 2026. i zamrznuti za nastavu. Povijesne vrijednosti mogu biti revidirane; ovo nisu izdanja dostupna u svakom pojedinom povijesnom mjesecu.</p>
+<p><a href="processed/croatia_inflation.csv">Preuzmite CSV</a>. Jedan redak predstavlja jedan mjesec, ukupno 120 redaka bez nedostajućih vrijednosti. Podaci su preuzeti 26. listopada 2026. i zamrznuti za nastavu. Povijesne vrijednosti mogu biti revidirane. Ovo nisu izdanja dostupna u svakom pojedinom povijesnom mjesecu.</p>
 <section id="rječnik" class="level2">
 <h2 class="anchored" data-anchor-id="rječnik">Rječnik</h2>
 <table class="caption-top table">
@@ -202,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><code>month</code></td>
-<td>Mjesec, YYYY-MM; jedinstveni ključ</td>
+<td>Mjesec, YYYY-MM. Jedinstveni ključ</td>
 </tr>
 <tr class="even">
 <td><code>country</code></td>
@@ -230,25 +230,25 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td><code>hicp_flag</code></td>
-<td>Izvorna oznaka statusa opažanja; prazno ako nije navedena</td>
+<td>Izvorna oznaka statusa opažanja. Prazno ako nije navedena</td>
 </tr>
 <tr class="odd">
 <td><code>expectations_flag</code></td>
-<td>Izvorna oznaka statusa opažanja; prazno ako nije navedena</td>
+<td>Izvorna oznaka statusa opažanja. Prazno ako nije navedena</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="izvori-i-odabir" class="level2">
 <h2 class="anchored" data-anchor-id="izvori-i-odabir">Izvori i odabir</h2>
-<p>HICP dolazi iz Eurostatove tablice <code>prc_hicp_minr</code>: <code>freq=M</code>, <code>geo=HR</code>, <code>coicop18=TOTAL</code>, <code>unit=RCH_A</code>. To je tablica prema ECOICOP v2. Ne spajamo je sa starom <code>prc_hicp_manr</code> bez provjere klasifikacije.</p>
-<p>Očekivanja dolaze iz <code>ei_bsco_m</code>, izvor DG ECFIN: <code>freq=M</code>, <code>geo=HR</code>, <code>indic=BS-PT-NY</code>, <code>s_adj=NSA</code>, <code>unit=BAL</code>. Odabrana je neprilagođena serija kako bi postupak bio izravan i dokumentiran. Sezonalnost ostaje moguće ograničenje. Pitanje o sljedećih 12 mjeseci jest kvalitativno i uspoređuje buduće kretanje s proteklim razdobljem; saldo ne predstavlja prosjek kvantitativnih prognoza inflacije.</p>
+<p>HICP dolazi iz Eurostatove tablice <code>prc_hicp_minr</code>, <code>freq=M</code>, <code>geo=HR</code>, <code>coicop18=TOTAL</code>, <code>unit=RCH_A</code>. To je tablica prema ECOICOP v2. Ne spajamo je sa starom <code>prc_hicp_manr</code> bez provjere klasifikacije.</p>
+<p>Očekivanja dolaze iz <code>ei_bsco_m</code>, izvor DG ECFIN. <code>freq=M</code>, <code>geo=HR</code>, <code>indic=BS-PT-NY</code>, <code>s_adj=NSA</code>, <code>unit=BAL</code>. Odabrana je neprilagođena serija kako bi postupak bio izravan i dokumentiran. Sezonalnost ostaje moguće ograničenje. Pitanje o sljedećih 12 mjeseci jest kvalitativno i uspoređuje buduće kretanje s proteklim razdobljem. Saldo ne predstavlja prosjek kvantitativnih prognoza inflacije.</p>
 <p><a href="raw/manifest.json">Metapodaci snimke i točni API upiti</a> · <a href="raw/hicp.json">HICP JSON</a> · <a href="raw/expectations.json">Anketni JSON</a></p>
 </section>
 <section id="što-obrada-radi" class="level2">
 <h2 class="anchored" data-anchor-id="što-obrada-radi">Što obrada radi</h2>
 <p>Skripta provjerava kontrolne zbrojeve izvornih datoteka, dimenzije i šifre, odabire fiksni raspon mjeseci i spaja serije po jednakom ključu. Ne imputira, ne briše valjana opažanja, ne zaglađuje i ne logaritmira. Izvorne oznake statusa čuva u CSV-u.</p>
-<p>Godišnja tablica sadrži aritmetički prosjek dvanaest mjesečnih godišnjih stopa i prosjek dvanaest mjesečnih salda. Prosjek godišnjih stopa nije iznova izračunana promjena godišnjeg prosjeka indeksa; ne treba ga predstavljati kao drugi službeni pokazatelj godišnje inflacije.</p>
+<p>Godišnja tablica sadrži aritmetički prosjek dvanaest mjesečnih godišnjih stopa i prosjek dvanaest mjesečnih salda. Prosjek godišnjih stopa nije iznova izračunana promjena godišnjeg prosjeka indeksa. Ne treba ga predstavljati kao drugi službeni pokazatelj godišnje inflacije.</p>
 </section>
 <section id="granice-zaključka" class="level2">
 <h2 class="anchored" data-anchor-id="granice-zaključka">Granice zaključka</h2>

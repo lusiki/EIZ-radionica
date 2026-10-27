@@ -9,10 +9,10 @@ subtitle: "Dan 2 · Čitateljski materijal uz četiri radna bloka"
 
 Danas ćete provjeriti ulazne podatke, izmijeniti dio skripte i popraviti
 namjerno pogrešan postupak. Zatim ćete napisati zaključak iz dobivenog
-rezultata. Pri provjeri koda gledajte što računa: skripta se može izvršiti
+rezultata. Pri provjeri koda gledajte što računa, skripta se može izvršiti
 bez pogreške, a ipak dati pogrešnu analizu.
 
-Koristimo isti slučaj kao prvoga dana: Hrvatsku od siječnja 2015. do prosinca
+Koristimo isti slučaj kao prvoga dana, Hrvatsku od siječnja 2015. do prosinca
 2024. U paketu su izvorni odgovori službenog API-ja, pripremljeni CSV i
 referentna rješenja. Za osnovne zadatke nakon preuzimanja paketa ne trebaju
 internet, AI račun ni instalacija dodatnih R paketa.
@@ -35,16 +35,16 @@ uzorak i značenje podataka.
 ukupnog HICP-a u %. `expectations_balance` jest sezonski neprilagođen saldo
 anketnih odgovora o budućem kretanju cijena, izražen u bodovima salda.
 Saldo nije broj postotaka očekivane inflacije. Obje serije bilježimo za isti
-mjesec ankete odnosno mjerenja cijena; time ne provjeravamo prognozu za 12
+mjesec ankete odnosno mjerenja cijena. Time ne provjeravamo prognozu za 12
 mjeseci unaprijed.
 :::
 
-Ne logaritmiramo automatski: stopa i saldo mogu biti nula ili negativni.
+Ne logaritmiramo automatski, stopa i saldo mogu biti nula ili negativni.
 Ne pretvaramo već izračunanu stopu HICP-a u još jednu stopu rasta.
 Ako kasnije analiziramo promjene, promjena godišnje stope mjeri se u
 postotnim bodovima. Transformacija mora odgovarati pitanju i biti dokumentirana.
 
-[Vježba 2.1: audit podataka](../materials/exercises/index.qmd#v21).
+[Vježba 2.1, audit podataka](../materials/exercises/index.qmd#v21).
 
 ## 2.2 Kod koji možete objasniti {#blok-22}
 
@@ -64,7 +64,7 @@ provjeru broja mjeseci u svakoj godini. Ne mijenjaj izvorni CSV.
 
 Asistent u pregledniku može predložiti isti kod kao asistent u uređivaču.
 Copilot i agentski alati su izborni. RStudio također podržava
-[Copilot](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html);
+[Copilot](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html).
 AI pomoć stoga možete koristiti u oba okruženja. Positronova proširenja
 dolaze iz [podržanih registara](https://positron.posit.co/extensions.html),
 a dostupnost pojedinog proširenja treba provjeriti prije nastave.
@@ -75,7 +75,7 @@ datoteke dira i zatražite objašnjenje izmjene. Nemojte dijeliti ključeve ili
 osobne podatke. Terminalni agent u ovoj radionici može biti kratka
 demonstracija nastavnika, a nije preduvjet za polaznike.
 
-[Vježba 2.2: jedna obrazložena izmjena](../materials/exercises/index.qmd#v22).
+[Vježba 2.2, jedna obrazložena izmjena](../materials/exercises/index.qmd#v22).
 
 ## 2.3 Provjerite postupak iz čistog početka {#blok-23}
 
@@ -95,7 +95,7 @@ jedna varijabla uzrokovala drugu.
 
 Opcionalni OLS primjer uključuje konstantu i unaprijed naveden smjer regresije.
 HAC standardne pogreške služe zaključivanju uz određene oblike vremenske
-ovisnosti i heteroskedastičnosti; ne popravljaju endogenost, loš izbor varijabli
+ovisnosti i heteroskedastičnosti. Ne popravljaju endogenost, loš izbor varijabli
 ili nevaljan dizajn istraživanja. Ne jamče ni da će standardna pogreška uvijek
 biti veća. Postavke i ograničenja nalaze se uz skriptu, prema
 [dokumentaciji za Newey–West](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html).
@@ -128,8 +128,8 @@ navedi svaku promjenu značenja koju predlažeš da zasebno provjerim.
 
 Ni ova uputa ne sprječava svaku pogrešku. Usporedite broj po broj i tvrdnju
 po tvrdnju. Za hrvatski jezik ručno provjerite značenje i terminologiju.
-CLASSLA služi jezičnoj obradi poput lematizacije i označavanja vrsta riječi;
-nije zamjena za lekturu ili provjeru znanstvenih tvrdnji
+CLASSLA služi jezičnoj obradi poput lematizacije i označavanja vrsta riječi.
+Nije zamjena za lekturu ili provjeru znanstvenih tvrdnji
 ([opis projekta](https://github.com/clarinsi/classla)).
 
 U završnom radu ne pišite da su „očekivanja usidrena” samo zato što ste
@@ -137,7 +137,7 @@ prikazali kvalitativni saldo. Za takvu tvrdnju trebala bi odgovarajuća
 definicija, horizont i dokaz. Ne pretvarajte opisni zaključak u preporuku
 ekonomske politike koju analiza ne podupire.
 
-[Vježba 2.4: zaključak i zapis uporabe AI-ja](../materials/exercises/index.qmd#v24).
+[Vježba 2.4, zaključak i zapis uporabe AI-ja](../materials/exercises/index.qmd#v24).
 
 ## Predaja
 

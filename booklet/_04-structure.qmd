@@ -17,7 +17,7 @@ modela morate provjeriti i kada zvuči kao siguran stručni savjet.
 
 ### Pripremite materijale prije razgovora
 
-Odvojite tri vrste sadržaja: provjerene bilješke, vlastite pretpostavke i
+Odvojite tri vrste sadržaja, provjerene bilješke, vlastite pretpostavke i
 otvorena pitanja. Uz izvor navedite naziv datoteke i mjesto relevantnog
 odlomka. Uz broj navedite jedinicu, razdoblje i skriptu ili tablicu iz koje
 potječe. Ako je rečenica samo radna ideja, označite je tako da model ne bi
@@ -31,15 +31,15 @@ raspoloživi kontekst. To nije isto što i čitanje svih priloženih dokumenata
 u cijelosti pri svakom odgovoru. Za ključnu tvrdnju navedite točan dokument
 i zatražite mjesto na kojem se temelji odgovor.
 
-Projektne upute mogu biti kratke: piši hrvatski, razlikuj podatak od
+Projektne upute mogu biti kratke, piši hrvatski, razlikuj podatak od
 pretpostavke, ne dodaj izvore koje nisi otvorio i označi nedostatak dokaza.
-Takve upute usmjeravaju rad; ne mijenjaju naučene težine modela i ne jamče
+Takve upute usmjeravaju rad. Ne mijenjaju naučene težine modela i ne jamče
 da će svaki odgovor biti točan. Korisnije su provjerljive granice od
 dugog opisa zamišljene osobnosti stručnjaka.
 
 ### Pet načela za koristan upit
 
-1\. Dajte kontekst i jasno zaduženje. Umjesto „pomozi mi s radom” napišite:
+1\. Dajte kontekst i jasno zaduženje. Umjesto „pomozi mi s radom” napišite.
 
 > Pripremam kratki studentski izvještaj o ostvarenoj inflaciji i saldu
 > očekivanih promjena cijena u Hrvatskoj od 2015. do 2024. Imam 120
@@ -53,9 +53,9 @@ materijali i kriteriji provjere čine glavninu korisne upute.
 
 2\. Odredite format i opseg. Ako želite nacrt, tražite nacrt, a ne cijeli
 rad. Ako želite usporedbu izvora, zatražite teme, slaganja, razlike i
-ograničenja. Primjer:
+ograničenja. Primjer.
 
-> Predloži pet odjeljaka: pitanje, podaci, postupak, rezultati i ograničenja.
+> Predloži pet odjeljaka, pitanje, podaci, postupak, rezultati i ograničenja.
 > Za svaki napiši svrhu, dokaz koji je potreban i pitanje na koje još
 > moram odgovoriti. Nemoj pisati nalaze prije nego što dobiješ izlaz analize.
 
@@ -66,8 +66,8 @@ mjesta za unos. U suprotnom će se i pogreška iz primjera proširiti na ostatak
 
 4\. Zatražite procjenu metode. Upit koji traži opravdanje već odabrane
 Newey-West korekcije usmjerava odgovor prema potvrdi vašeg izbora.
-Pitajte je li metoda potrebna, koje pretpostavke zahtijeva i što ne rješava. Jednako vrijedi za pitanje o istraživačkoj praznini:
-neka model razlikuje prazninu u vašim bilješkama od tvrdnje da nešto nitko
+Pitajte je li metoda potrebna, koje pretpostavke zahtijeva i što ne rješava. Jednako vrijedi za pitanje o istraživačkoj praznini.
+Neka model razlikuje prazninu u vašim bilješkama od tvrdnje da nešto nitko
 još nije istražio.
 
 5\. Poboljšavajte pojedinačne dijelove. Nakon prvog nacrta izaberite
@@ -75,15 +75,15 @@ jedan problem. „Pojasni zašto saldo nije postotna prognoza” preciznije je
 od „učini tekst akademskijim”. Sačuvajte inačice i odbacite prijedlog koji
 mijenja značenje. Više iteracija nije samo po sebi dokaz više kvalitete.
 
-### Demonstracija: četiri koraka do izvedivog plana
+### Demonstracija / četiri koraka do izvedivog plana
 
-U prvom koraku prikupite bilješke. U našem primjeru one mogu glasiti:
-„Imam mjesečni HICP, godišnju stopu promjene; imam kvalitativni saldo
-očekivanja; podaci pokrivaju Hrvatsku 2015.–2024.; želim usporediti
-kretanja; nisam siguran/na kako opisati odnos.” Uključite definicije iz
+U prvom koraku prikupite bilješke. U našem primjeru one mogu glasiti.
+„Imam mjesečni HICP, godišnju stopu promjene. Imam kvalitativni saldo
+očekivanja. Podaci pokrivaju Hrvatsku 2015.–2024.. Želim usporediti
+kretanja. Nisam siguran/na kako opisati odnos.” Uključite definicije iz
 rječnika, a ne samo nazive stupaca.
 
-U drugom koraku zatražite analizu praznina:
+U drugom koraku zatražite analizu praznina.
 
 > Razdvoji što već mogu istražiti ovim podacima, što trebam dodatno
 > provjeriti u metodologiji i što zahtijeva nove podatke. Za svaku

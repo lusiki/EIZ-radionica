@@ -10,7 +10,7 @@ toc-title: "Sadržaj prvog dijela"
 [Kratki materijal za nastavu](../slides/day1.qmd)
 
 Čitajte od početne ideje prema provjerenim izvorima i planu. Primjeri
-upita su predlošci za prilagodbu; prikazani odgovori nisu obećanje kako će
+upita su predlošci za prilagodbu. Prikazani odgovori nisu obećanje kako će
 se pojedini alat ponašati. Dokumentacija alata provjerena je 26. listopada 2026.
 
 {{< include _01-foundations.qmd >}}
@@ -22,5 +22,5 @@ se pojedini alat ponašati. Dokumentacija alata provjerena je 26. listopada 2026
 {{< include _04-structure.qmd >}}
 
 ::: {.booklet-next}
-[Nastavite na drugi dio: kodiranje i pisanje →](day2.qmd)
+[Nastavite na drugi dio, kodiranje i pisanje →](day2.qmd)
 :::

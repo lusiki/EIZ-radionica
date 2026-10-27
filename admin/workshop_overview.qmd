@@ -3,10 +3,10 @@ title: "Raspored radionice"
 subtitle: "Dva susreta po 3 sata i 30 minuta"
 ---
 
-Svaki radni blok traje 45 minuta: 10 minuta demonstracije, 25 minuta
+Svaki radni blok traje 45 minuta, 10 minuta demonstracije, 25 minuta
 samostalnog rada ili rada u paru i 10 minuta zajedničke provjere.
 Ukupno je predviđeno 200 minuta aktivnog rada polaznika. Vrijeme je izraženo
-od početka susreta; termin nove izvedbe potvrđuje organizator.
+od početka susreta. Termin nove izvedbe potvrđuje organizator.
 
 | Vrijeme | Dan 1 | Dan 2 |
 |---|---|---|

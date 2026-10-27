@@ -16,17 +16,16 @@ kretanju cijena i predložite naziv okomite osi grafa.
 
 ### Pretraživanje koje prati pitanje
 
-Prvi rezultati pretrage često miješaju vijesti, službene podatke i
-istraživačke radove. Svaka od tih vrsta izvora može pomoći, ali na drukčiji
-način. Vijest otvara aktualnu temu, metodologija određuje značenje mjere,
-a istraživački rad razvija i ispituje objašnjenje. Prije pretrage odlučite
-što vam upravo nedostaje za vaše pitanje.
+Pretraga o inflaciji vratit će vijesti, službene podatke i istraživačke
+radove. Vijest može upozoriti na zanimljivu promjenu, metodologija
+objasniti mjeru, a istraživački rad ponuditi i ispitati neko objašnjenje.
+Prije pretrage odredite što vam od toga nedostaje.
 
-AI pretraživanje može predložiti pojmove i približiti sadržaj pronađenih
-izvora. Perplexity i drugi sustavi s web pretraživanjem mogu poslužiti
-za takvu početnu orijentaciju. Zatražite poveznice kojima se možete
-vratiti tijekom čitanja. Kada odgovor govori o radu dostupnom samo
-u sažetku, njegove pojedinosti ostaju otvorene za daljnje čitanje.
+AI pretraživanje može predložiti pojmove i sažeti pronađene izvore.
+Perplexity i slični alati mogu poslužiti za prvi pregled teme. Zatražite
+poveznice kako biste mogli otvoriti rad koji vas zanima. Ako je alatu
+dostupan samo sažetak, ne može iz njega pouzdano opisati sve pojedinosti
+provedenog istraživanja.
 
 Početni upit može biti vrlo kratak.
 
@@ -40,11 +39,25 @@ istraživanja očekivanja. Precizniji upit određuje odnos koji vas zanima.
 > odabrani rad ukratko objasni pitanje, podatke i glavni doprinos temi
 > te navedi poveznicu na izvor. Naznači čitaš li puni tekst ili sažetak.
 
-Za međunarodnu literaturu često pomaže engleski izraz inflation
-expectations. Hrvatski pojmovi i lokalni izvori važni su za kontekst
-Hrvatske. Pretražujte i pojedine mehanizme: osobno iskustvo kupnje,
-informacije iz medija ili povjerenje u institucije. Tako opća tema
-postupno dobiva istraživački sadržaj.
+U međunarodnoj literaturi tražite izraz inflation expectations,
+a hrvatskim pojmovima dopunite pretragu lokalnih izvora. Zatim je
+suzite na ono što bi moglo oblikovati očekivanja: iskustvo kupnje,
+informacije iz medija ili povjerenje u institucije. Pronađeni radovi
+tada će biti bliži pitanju koje pokušavate postaviti.
+
+### Što pretraga nije mogla pročitati
+
+U dodatku [What can be read](https://www.lukasikic.info/ai/supplements/coverage)
+Šikić razlikuje zapis o radu od dostupnosti njegova punog teksta.
+Njegova je zbirka odabrani pregled, ali otvara važno pitanje za svaku
+pretragu: utječe li dostupnost na sliku literature koju dobivamo?
+Lako dostupan vodič može zauzeti više mjesta u AI sažetku od rada
+kojemu alat vidi samo naslov.
+
+Odaberite jedan važan rad i potražite autorsku verziju ili pristup
+preko knjižnice. Zatim usporedite što ste o njemu znali prije i nakon
+čitanja. Ako neki izvor nedostaje iz odgovora, to još ne znači da
+o toj temi nema istraživanja.
 
 ### Što zapravo pitamo potrošače
 
@@ -68,21 +81,20 @@ Različite jedinice kasnije će odrediti kako oblikujemo grafove.
 > predloži jasnu oznaku osi i jednu rečenicu kojom bih je predstavio
 > osobi koja prvi put vidi graf.
 
-U razgovoru pokušajte odgovoriti što može značiti rast salda. Govori
-li on o većem očekivanom ubrzanju cijena, o promjeni udjela odgovora
-ili o točno određenoj budućoj stopi? Vratite se formulaciji pitanja
-kada se tumačenja raziđu. To je primjer kako čitanje izvora izravno
-mijenja analizu.
+Što bi značio rast salda u našoj tablici? Odgovorite uz formulaciju
+anketnog pitanja. Govori li o promjeni raspodjele odgovora, o većem
+očekivanom ubrzanju cijena ili o točno određenoj budućoj stopi? Ako se
+tumačenja raziđu, ponovno pročitajte ponuđene kategorije odgovora.
 
-### Izvor kao dio objašnjenja
+### Zašto nam treba baš taj izvor
 
 Članak Meylera i Reiche u
 [ECB Economic Bulletinu](https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html)
 pomaže razumjeti kvalitativne i kvantitativne mjere percepcija i
-očekivanja. Taj je doprinos drukčiji od izračuna korelacije za našu
-tablicu. Kad uključujete rad u vlastiti tekst, objasnite čemu služi
-u argumentu: određuje pojam, predlaže mehanizam ili donosi nalaz iz
-određenog istraživanja.
+očekivanja. Koristimo ga da objasnimo što mjerimo. Korelaciju za
+hrvatski primjer računamo iz svoje tablice. Kad navodite izvor,
+recite čemu vam služi: objašnjava li pojam, predlaže mogući uzrok
+ili donosi nalaz koji uspoređujete sa svojim?
 
 Ako dvije studije dolaze do različitih zaključaka, usporedite njihova
 pitanja i okolnosti. Jedna može ispitivati kratku informacijsku
@@ -90,7 +102,7 @@ intervenciju, a druga dugoročna kretanja u anketi. Ta razlika može
 objasniti neslaganje bolje od pokušaja da njihove nalaze spojite
 u jednu opću tvrdnju.
 
-Za raspravu odaberite jedan rad koji mijenja vaše početno razumijevanje
-teme. Objasnite što biste bez njega pogrešno pretpostavili. Time
-pretraga dobiva jasan završetak za trenutačni zadatak, a pitanje
-određuje koji vam je sljedeći izvor doista potreban.
+Odaberite jedan rad zbog kojeg ste promijenili početno mišljenje
+o temi. Objasnite što biste bez njega pogrešno pretpostavili i što
+vam nakon čitanja još nedostaje. To će vam pomoći odlučiti što
+tražiti sljedeće.

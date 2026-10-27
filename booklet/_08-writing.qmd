@@ -16,18 +16,17 @@ otvoreno pitanje. Kolegi obrazložite jednu odluku pri uređivanju.
 
 ### Pisanje razvija razumijevanje
 
-Kada pokušamo objasniti rezultat, često tek tada primijetimo da nam
-neki dio argumenta nije jasan. Možda ne znamo zašto smo odabrali
-razdoblje ili kako prijeći od brojke do ekonomskog značenja.
-Pisanje nas potiče da te veze razradimo. Zbog toga je korisno
-najprije izreći vlastito tumačenje, i kada ono još nije stilski uređeno.
+Pokušajte napisati što vaš graf pokazuje. Možda ćete zapeti na
+jednostavnom pitanju: zašto ste odabrali baš to razdoblje ili što
+ta brojka govori o inflaciji? Takav zastoj otkriva što još treba
+razjasniti. Zato prvo napišite vlastito tumačenje, makar bilo nespretno.
 
 Goldsmith-Pinkham u tekstu
 [Writing & Thinking with AI Assistance](https://paulgp.substack.com/p/writing-and-thinking-with-ai-assistance)
-razlikuje pomoć u rutinskom pisanju od prepuštanja oblikovanja
-argumenta. Kao jedan pristup predlaže komentare na nacrt, nakon
-kojih autor sam odlučuje kako će ga preraditi. To nije opća zabrana
-jezične pomoći, nego način da zadržimo vlastito razmišljanje u radu.
+razlikuje pomoć u rutinskom pisanju od prepuštanja oblikovanja argumenta.
+Predlaže i način rada u kojem asistent komentira nacrt, a autor ga
+zatim sam prerađuje. To ćemo isprobati u završnoj vježbi. Jezičnu
+pomoć možete zatražiti kada ste zadovoljni objašnjenjem nalaza.
 
 Za naš zaključak počnite odgovorom na odabrano pitanje. Ako vas
 zanimaju razlike među razdobljima, istaknite tu usporedbu. Ako ste
@@ -40,18 +39,17 @@ Ne trebate prepričati svaku tablicu koju ste proizveli.
 > Za svaki komentar objasni zašto je važan za moje istraživačko
 > pitanje. Zatim pričekaj moju preradu.
 
-Odaberite komentar koji vam najviše pomaže. Ako vam nije jasno
-zašto bi promjena bila korisna, nastavite razgovor o tom mjestu.
-Možete odbaciti komentar koji ne odgovara pitanju ili sadržaju
-vaše analize. Razlog za odluku važan je dio razgovora o tekstu.
+Odaberite komentar koji vam pomaže popraviti tekst. Ako ne razumijete
+što bi se predloženom promjenom dobilo, zatražite objašnjenje.
+Komentar koji ne odgovara vašem pitanju ili analizi možete odbaciti.
+U oba slučaja pokušajte objasniti svoju odluku.
 
 ### Povežite pitanje, graf i nalaz
 
-Čitatelju najprije recite što uspoređujete. Zatim ga usmjerite na
-odabrani obrazac u grafu ili broj u tablici. Na kraju objasnite
-što taj nalaz govori o pitanju i koje pitanje ostaje otvoreno.
-Takav redoslijed omogućuje da se vaš zaključak razumije i izvan
-razgovora u kojem je analiza nastala.
+Počnite od onoga što ste uspoređivali. Zatim pokažite važan obrazac
+na grafu ili broj iz tablice i objasnite što govori o pitanju.
+Recite i što je ostalo otvoreno. Čitatelj bi trebao moći pratiti
+zaključak bez pristupa cijelom razgovoru s alatom.
 
 Za usporedbu godišnjih sažetaka možemo napisati sljedeći odlomak.
 
@@ -63,35 +61,47 @@ Za usporedbu godišnjih sažetaka možemo napisati sljedeći odlomak.
 > njihova kretanja. Iz te usporedbe još ne možemo odrediti
 > uzrok promjene ni uspješnost predviđanja buduće inflacije.
 
-Ovaj odlomak odgovara na jedno određeno pitanje. Za pitanje o
-povezanosti među razdobljima upotrijebite korelacije iz prethodnog
-poglavlja i objasnite što uspoređuju. Izbor nalaza treba čitatelju
-pokazati zbog čega ste proveli upravo tu analizu.
+Odlomak opisuje promjenu između dviju godina. Ako vas zanima povezanost
+među razdobljima, oslonite se na korelacije iz prethodnog poglavlja
+i objasnite što one uspoređuju. U zaključak uključite rezultate koji
+odgovaraju na vaše pitanje.
 
 ### Jezična pomoć i vlastiti glas
 
-Nakon što ste zadovoljni argumentom, zatražite pomoć pri jasnoći
-i jeziku. Asistent može skratiti predugu rečenicu, predložiti
-razumljiviji redoslijed ili pomoći pri izražavanju na jeziku koji
-vam nije prvi. Korist takve pomoći procijenite prema tome koliko
-jasno prenosi ono što želite reći.
+Kad znate što želite reći, zatražite pomoć s jezikom. Asistent može
+skratiti predugu rečenicu, predložiti bolji redoslijed ili pomoći
+pri pisanju na jeziku koji vam nije prvi. Pročitajte prijedlog
+i procijenite izražava li jasno ono što ste mislili.
 
 > Predloži jezičnu doradu ovog odlomka. Zadrži moje tumačenje,
 > brojke i nazive mjera. Objasni jednu važnu promjenu koju
 > predlažeš. Ako ti sadržaj nije jasan, najprije me pitaj što
 > želim reći na tom mjestu.
 
-U hrvatskom tekstu dosljedno razlikujte inflaciju i razinu cijena,
-saldo i postotak te očekivanja i percepcije. Odaberite formulacije
-koje možete prirodno upotrijebiti i u usmenom objašnjenju. Vrlo
-formalna rečenica može otežati čitanje ako skriva jednostavnu misao.
+Pazite na razliku između inflacije i razine cijena, salda i postotka
+te očekivanja i percepcija. Birajte izraze koje biste upotrijebili
+i kada kolegi usmeno objašnjavate nalaz. Ako rečenicu morate nekoliko
+puta pročitati da biste je razumjeli, pokušajte je pojednostavniti.
 
 Pokažite kolegi završni graf i objasnite glavni nalaz bez čitanja
-cijelog odlomka. Njegovo pitanje može pokazati gdje tekst još
-treba dopunu. Ako ste mijenjali argument nakon komentara AI-ja,
-objasnite što ste promijenili i zašto. Time rasprava o autorstvu
-dobiva konkretan sadržaj: koje ste odluke donijeli i razumijete
-li tekst koji predstavljate?
+odlomka. Njegova pitanja mogu otkriti gdje tekst treba dopuniti.
+Ako ste nakon AI komentara promijenili argument, recite što ste
+promijenili i zašto.
+
+### Što ostaje kad zatvorite razgovor
+
+Liu i suradnici u eksperimentima s razlomcima i razumijevanjem pročitanog
+nalaze slabiji samostalan učinak nakon uklanjanja AI pomoći nego u
+kontrolnoj skupini. Njihov rad
+[AI Assistance Reduces Persistence and Hurts Independent Performance](https://ai-project-website.github.io/AI-assistance-reduces-persistence/)
+ne ispituje pisanje ekonomskih radova ni dugoročno učenje. Ipak, daje
+povod da razdvojimo dovršen zadatak od onoga što smo naučili.
+
+Zatvorite razgovor i uz svoj graf objasnite zašto ste odabrali baš
+tu usporedbu. Zatim odgovorite na novo pitanje kolege, primjerice
+što bi se izgubilo prikazom samo godišnjih prosjeka. Ako zapnete,
+vratite se objašnjenju ili zatražite malu pomoć prije gotovog odgovora.
+Koji biste dio analize sada mogli sami objasniti u novom zadatku?
 
 ### Od zaključka do sljedećeg pitanja
 
@@ -108,7 +118,6 @@ s klasifikacijom alata. Tek kada razumijete tu mjeru, ima smisla
 širiti zbirku i povezivati je s drugim podacima. Odnos koji tada
 pronađete i dalje traži zasebno objašnjenje prije uzročnog zaključka.
 
-Radionicu završite razgovorom o tome što je postalo lakše, koja je
-odluka ostala zahtjevna i koje biste pitanje sada mogli istražiti.
-Ponesite primjer rada koji možete nastaviti razvijati i objasniti
-drugoj osobi.
+Na kraju usporedite iskustva. Što vam je alat olakšao? Oko koje ste
+odluke morali najviše razmišljati? Odaberite jedno pitanje kojem
+biste se htjeli vratiti nakon radionice.

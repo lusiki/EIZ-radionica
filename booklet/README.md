@@ -129,3 +129,27 @@ Writing starts with their own draft, followed by AI comments and their own
 revision, with language assistance available afterwards. Reader openers
 summarize these activities; detailed prompts remain on the day pages.
 Reference scripts stay in the repository, separate from the reading text.
+
+## Reader prose pass, 27 October 2026
+
+The introduction and all eight chapters now use more direct Croatian
+explanations, concrete questions and shorter transitions. Repeated abstract
+conclusions were removed. Reader prose contains no semicolons. The copied
+prompts, numerical examples, link targets and eight-topic structure are
+unchanged. The rebuilt edition has 5,426 source words and 19 pages.
+
+## Short discussion extensions, 27 October 2026
+
+The following extension retains that prose pass and adds one short section
+to each of the eight steps, using Luka Šikić's How Economics Absorbed AI,
+its supplements, and two linked primary studies. The additions cover local
+knowledge, source access, forecasts, portable plans, LLM measurement,
+denominators, testing a checker, and independent understanding. Classroom
+applications are distinguished from findings. The collection is not treated
+as a census, its model is described as a theoretical sketch, and the learning
+experiments are not generalized to long-term economics education.
+
+The instructor page supplies eight matching discussion prompts. Sources
+are linked beside the new passages and on the sources page. Existing
+activity prompts, numerical examples and the eight-step structure remain.
+The extended edition has 6,221 source words and 20 pages.

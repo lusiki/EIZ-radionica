@@ -21,10 +21,10 @@ se razdoblje zaključak odnosi.
 
 ### Što dobar sažetak čuva
 
-Sažetak nam pomaže shvatiti glavnu ideju rada bez ponavljanja svih
-pojedinosti. Njegova je vrijednost u odabiru onoga što ostaje važno
-za razumijevanje. U istraživačkom tekstu to su pitanje, okolnosti
-istraživanja, način dolaska do nalaza i granice zaključka.
+Dobar sažetak omogućuje čitatelju da razumije što je istraživanje
+pitalo, kako je provedeno i što je ustanovilo. Ne mora ponoviti sve
+pojedinosti. Mora zadržati one bez kojih bi nalaz dobio drukčije
+značenje, primjerice na koga se odnosi ili što ostaje neobjašnjeno.
 
 Primjerice, „dvije mjere u istom mjesecu pozitivno su povezane” i
 „potrošači su uspješno predvidjeli inflaciju” govore o različitim
@@ -34,29 +34,42 @@ s odgovarajućim kasnijim ishodom. Ako taj korak izostavimo iz sažetka,
 
 Goldsmith-Pinkham u prijedlogu
 [LLM-Friendly Academic Papers](https://paulgp.com/2026/03/10/llms-txt-for-academic-papers.html)
-zagovara oblikovanje istraživačkih materijala tako da jezični modeli
-lakše prenesu njihove rezultate i ograničenja. Za naš rad iz toga
-možemo uzeti jednostavnu ideju: uz glavni nalaz objasnite što on
-ostavlja otvorenim. Tako se važna ograničenja prenose zajedno s
-tvrdnjom, i u sažetku i u kasnijoj raspravi.
+zagovara istraživačke materijale iz kojih modeli mogu lakše prenijeti
+nalaze i njihova ograničenja. To možemo primijeniti i na svoj odlomak.
+Uz glavni nalaz napišite što iz njega još ne znamo. Čitatelj tako
+dobiva oba dijela objašnjenja na istome mjestu.
 
 > Sažmi ovaj odlomak za sudionika radionice. Zadrži pitanje, uzorak,
 > značenje mjera i glavni nalaz. Objasni što iz tog nalaza još ne
 > možemo zaključiti. Zatim navedi jednu važnu pojedinost koju si
 > izostavio zbog kratkoće i zašto.
 
-Usporedite dvije nastale verzije i odaberite onu koja čitatelju bolje
-pomaže razumjeti istraživanje. Kraći tekst može biti jasniji, ali
-ponekad upravo uklonjena pojedinost određuje smisao rezultata.
-Raspravite koja je informacija nužna za vašu publiku.
+Usporedite izvorni odlomak sa sažetkom. Je li kraća verzija jasnija?
+Je li izostavljena pojedinost koja mijenja smisao? Zadržite ono što
+vašoj publici treba da bi razumjela nalaz, čak i ako sažetak zbog
+toga bude nešto dulji.
+
+### Kad sažetak govori o budućnosti
+
+Šikićev [pregled predviđanja](https://www.lukasikic.info/ai/supplements/predictions)
+uz očekivani događaj navodi rok, procjenu vjerojatnosti i uvjete po kojima
+će se kasnije ocijeniti. Takav zapis pomaže sačuvati razliku između
+onoga što se dogodilo i onoga što autor očekuje. Navedena vjerojatnost
+izražava procjenu autora, a nije izmjeren udio događaja.
+
+Uzmite tvrdnju „AI će promijeniti istraživački rad” i pokušajte reći
+koju biste promjenu mogli opažati, kod koga i do kada. Koji bi nalaz
+govorio protiv vašeg očekivanja? U sažetku tu rečenicu predstavite
+kao predviđanje. Jednako tako, rast salda očekivanja u našoj tablici
+još nije nalaz o tome što se poslije dogodilo s cijenama.
 
 ### Kako povezati više pročitanih radova
 
-Pregled literature traži više od niza pojedinačnih sažetaka. Njime
-pokazujemo kako se objašnjenja nadopunjuju, gdje se razilaze i što
-to znači za naše pitanje. Za temu inflacijskih očekivanja možemo
-usporediti radove prema tome kako mjere očekivanja, kojim se
-informacijama bave i kakav odnos pokušavaju ustanoviti.
+U pregledu literature treba povezati pročitane radove. Gdje se njihova
+objašnjenja slažu, a gdje razilaze? Zašto je to važno za naše pitanje?
+Kod inflacijskih očekivanja radove možemo usporediti prema tome kako
+mjere očekivanja, koje informacije proučavaju i kakav odnos pokušavaju
+ustanoviti.
 
 Istraživački načini rada, poput Deep Researcha, mogu pomoći u
 organiziranju opsežnije pretrage. Prije prikupljanja materijala
@@ -71,11 +84,10 @@ studije povezuju informacije s očekivanjima.
 > informacija i istraživačkih pristupa. Za svaki dio objasni kako
 > bi pomogao razumjeti temu. Najprije razgovarajmo o planu.
 
-Plan možete promijeniti nakon prvih radova. Ako saznate da dio
-literature proučava percepcije, odlučite treba li vam poseban odjeljak
-o razlici između prošlih i budućih cijena. Ako se radovi bave drugim
-zemljama, objasnite koje bi osobine hrvatskog konteksta mogle biti
-važne za prijenos njihova objašnjenja.
+Nakon prvih radova možda ćete promijeniti plan. Ako se dio literature
+bavi percepcijama, razjasnite razliku između prošlih i budućih promjena
+cijena. Ako radovi proučavaju druge zemlje, razmislite što bi u Hrvatskoj
+moglo biti drukčije i zašto bi to utjecalo na zaključak.
 
 ### Od pregleda literature do vlastite ideje
 
@@ -85,14 +97,11 @@ je li inflacija dugo niska ili se upravo naglo mijenja. Takva ideja
 može motivirati opisnu usporedbu razdoblja u našem skupu. Rezultat
 usporedbe potom pomaže odlučiti kakav bi daljnji projekt bio smislen.
 
-Zatražite od AI-ja nekoliko mogućih objašnjenja istog obrasca, a
-zatim odaberite jedno koje možete jasno obrazložiti. Razgovor postaje
-korisniji kada navodite što bi se trebalo vidjeti u podacima ako je
-objašnjenje primjereno. Pritom ostaje otvoreno mogu li isti obrazac
-proizvesti i drugi procesi.
+Zatražite nekoliko mogućih objašnjenja istog obrasca. Za jedno od njih
+pokušajte reći što biste očekivali vidjeti u podacima. Zatim razmotrite
+bi li isti obrazac mogao nastati i zbog nekog drugog razloga. Takva
+usporedba pomaže odrediti koje biste podatke trebali prikupiti.
 
-U našem slučaju literatura pomaže razumjeti zašto uspoređujemo
-ostvarenu inflaciju i anketni saldo. Za procjenu uloge medija trebali
-bismo dodati podatke o izvještavanju. Takvu mogućnost možemo smisleno
-oblikovati već sada, bez pripisivanja medijima rezultata iz tablice
-koja medijske podatke ne sadrži.
+Literatura nam može pomoći osmisliti istraživanje uloge medija.
+Naša tablica, međutim, sadrži samo inflaciju i anketni saldo. Za
+odgovor o medijima trebali bismo prikupiti i podatke o izvještavanju.

@@ -12,11 +12,10 @@ EIZ / čitanje uz radionicu
 
 ## Dodatno čitanje uz oba dana
 
-Priručnik u osam poglavlja objašnjava kako tražiti izvore, analizirati
-podatke i pisati rezultate. Primjeri prate hrvatske podatke iz radionice.
-Svako poglavlje počinje kratkim prikazom aktivnosti sa stranice dana,
-a zatim objašnjava istraživačke odluke koje ona otvara. Zajednički rad koristi svih 120 mjeseci i jedan AI
-razgovor. Tekst se temelji na izvornom materijalu.
+U osam poglavlja prolazimo kroz pitanje, izvore, analizu i pisanje.
+Primjeri koriste hrvatske podatke iz radionice, svih 120 mjeseci
+u jednom AI razgovoru. Svako poglavlje počinje kratkim zadatkom,
+a zatim objašnjava zašto biramo određeni postupak i kako čitati rezultat.
 
 [Preuzmite cijeli priručnik (PDF)](../downloads/EIZ-prirucnik.pdf){.btn-workshop}
 :::

@@ -70,3 +70,27 @@ The numerical reference scripts and data were not changed. The build used
 SkipAnalysis and retained the previously computed results; the independent
 release check recalculates the values used here. No new learner pilot or
 live AI-account test is claimed by this editorial revision.
+
+## Reader prose pass, 27 October 2026
+
+The prose-pass edition had 5,426 source words and 19 PDF pages. The PDF check
+passes for all 192 source blocks, 33 linked targets, 11 bookmarks, source
+hashes, page bounds and numerical examples. A separate text check confirms
+zero semicolons in the extracted PDF and unchanged quoted prompts and link
+targets against the preceding commit. All pages were rendered and visually
+inspected. The existing desktop/mobile browser checks and 15-page release
+check, including portable ZIP paths, pass for this edition.
+
+## Short discussion extensions, 27 October 2026
+
+The extended edition has 6,221 source words and 20 PDF pages. All 216 source
+blocks, 40 linked targets, 11 bookmarks, source hashes, page bounds and
+numerical examples pass the PDF check. Each numbered chapter has one new
+discussion section. Existing prompts and source links are retained.
+The eight matching prompts in the instructor guide link to the reader.
+
+PDF text contains no semicolons or AI-assistance disclaimer. The additions
+use ordinary prose without code. The full PDF was rendered for visual
+review, and the HTML was checked at desktop and mobile widths. The release
+check covers local links and anchors, frozen numerical results, fonts and
+portable ZIP entries. The data and reference computations are unchanged.

@@ -16,10 +16,10 @@ samo jednim brojem.
 
 ### Vratite se cijelom skupu
 
-U prethodnom poglavlju mogli ste izdvojiti 2020.–2024. za lakši pregled.
-Sada ponovno koristimo svih 120 mjeseci kako bismo usporedili ranije
-i kasnije razdoblje. Jasno zadajte početak novog izračuna. Time
-razlikujete prethodno napravljeni prikaz od podataka za novu usporedbu.
+U prethodnom poglavlju možda ste prikazali samo 2020.–2024. Sada nam
+opet treba svih 120 mjeseci kako bismo usporedili ranije i kasnije
+razdoblje. To jasno navedite u novom upitu, da alat ne nastavi računati
+na prethodno izdvojenim podacima.
 
 > Ponovno kreni od cijelog učitanog CSV-a. Prikaži svih dvanaest
 > godišnjih stopa HICP-a za 2022., njihov zbroj i prosjek. Zatim
@@ -28,11 +28,10 @@ razlikujete prethodno napravljeni prikaz od podataka za novu usporedbu.
 > rezultat navedi broj mjeseci. Prikaži tablicu i objašnjenje
 > postupka običnim jezikom, bez programskog koda.
 
-Prosjek za 2022. možemo razumjeti kroz sastavnice: zbroj dvanaest
-vrijednosti podijeljen s dvanaest daje približno 10,63 %.
-Takav mali račun pokazuje kako je nastao jedan rezultat tablice.
-Za složeniji izračun tražimo objašnjenje koje nam omogućuje razumjeti
-što se uspoređuje i kako je odabrano razdoblje.
+Za 2022. zbroj dvanaest vrijednosti dijelimo s dvanaest i dobivamo
+približno 10,63 %. Tako možemo pratiti kako je nastao jedan rezultat
+godišnje tablice. Kod složenijeg izračuna zatražite objašnjenje onoga
+što se uspoređuje i načina na koji su opažanja odabrana.
 
 ### Što korelacija sažima
 
@@ -42,18 +41,16 @@ U našoj spremljenoj verziji podataka iznosi približno **0,6985** za
 2020.–2024. **0,5342**, uz po 60 mjeseci. To su opisni rezultati
 iz [referentne analize](../materials/results.qmd).
 
-Ranije podrazdoblje ima jaču pozitivnu linearnu povezanost prema tom
-pokazatelju. Jedna vrijednost za cijelo desetljeće sažima različite
-obrasce koje vremenski graf može pomoći uočiti. Pogledajte kada se
-serije kreću slično i postoje li dijelovi u kojima im se kretanja
-razlikuju. Broj i graf zajedno daju potpuniji opis.
+Prema ovom pokazatelju povezanost je jača u ranijem podrazdoblju.
+Jedna korelacija za cijelo desetljeće skriva tu razliku. Vratite
+se grafovima i pogledajte kada su se serije kretale slično, a kada
+su se razilazile.
 
-Razlika između dviju korelacija sama po sebi ne pokazuje da se dogodio
-određeni strukturni lom ili da je jedna mjera promijenila drugu.
-Na odnos mogu utjecati zajednički šokovi, vremenska ovisnost i izbor
-razdoblja. Za ispitivanje takvih objašnjenja trebalo bi oblikovati
-zaseban postupak. Ovdje možemo postaviti dobro obrazloženo sljedeće
-pitanje, primjerice zbog čega se povezanost razlikuje.
+Iz same razlike među korelacijama ne možemo zaključiti da se dogodio
+strukturni lom ili da je jedna mjera promijenila drugu. Na rezultat
+mogu utjecati zajednički šokovi, vremenska ovisnost i odabrano razdoblje.
+Za provjeru tih objašnjenja treba zasebna analiza. Zasad možemo
+obrazložiti zašto bi tu razliku vrijedilo dalje istražiti.
 
 ### Kada više izračuna postane novo istraživanje
 
@@ -80,23 +77,36 @@ omogućila zaključiti i zašto su njezine pretpostavke ovdje uvjerljive?
 > podatke ili usporedbe trebamo da bismo ih mogli razlikovati.
 > Poveži prijedloge s onim što smo stvarno vidjeli na grafovima.
 
-### Od gotovog izgleda do razumljivog rezultata
+### Kako provjeriti provjeru
+
+U [skici modela provjere](https://www.lukasikic.info/ai/supplements/model)
+Šikić razmatra i pogreške onoga tko provjerava tuđi rad. To je teorijsko
+polazište, a ne procjena pouzdanosti pojedinog alata. Na radionici ga
+možemo pretvoriti u mali pokus. U kopiji tablice namjerno promijenite
+jedan godišnji prosjek, ostavite druge vrijednosti točnima i zatražite
+provjeru prema izvornom CSV-u.
+
+Je li alat pronašao pogrešku? Je li točan rezultat proglasio pogrešnim?
+Pogledajte je li ponovno izračunao vrijednosti ili samo komentirao
+tablicu. Jedan pokušaj ne mjeri opću pouzdanost, ali pokazuje što
+podrazumijevamo pod provjerom. Za nastavak rada vratite se ispravnoj
+tablici i izvornim podacima.
+
+### Možemo li objasniti dobiveni rezultat?
 
 U svojem [primjeru suradnje na empirijskoj analizi](https://paulgp.substack.com/p/integration-and-collaboration-in)
-Goldsmith-Pinkham opisuje kako je zapis rada naveo analizu koja nije
-bila provedena. Uredan opis postupka zato nije dovoljan da bismo
-znali što je stvarno izračunano. U našoj radionici tražimo konkretan
-izlaz koji možemo povezati s pitanjem, razdobljem i mjerama.
+Goldsmith-Pinkham opisuje slučaj u kojem je zapis rada tvrdio da je
+analiza provedena, iako nije bila. Zato uz objašnjenje postupka treba
+pogledati i stvarni rezultat. U našoj vježbi to znači otvoriti tablicu
+ili graf i povezati ih s pitanjem, mjerama i razdobljem koje smo zadali.
 
-Za istraživačku raspravu odaberite jedan rezultat koji još ne možete
-dobro objasniti. Zadržite se na njemu prije naručivanja novih tablica.
-Možda treba razjasniti vremensku usporedbu, možda nedostaje izračun,
-a možda su nam potrebni drukčiji podaci. Tako smanjujemo dug provjere
-spomenut na početku priručnika, kroz stvarni problem u analizi.
+Odaberite rezultat koji još ne možete dobro objasniti. Što vam točno
+nedostaje? Treba li razjasniti vremensku usporedbu, ponoviti račun
+ili pronaći druge podatke? Riješite to prije nego što zatražite
+novu tablicu. Time smanjujete dug provjere s početka priručnika.
 
-Kada želite sačuvati završeni rad, preuzmite korištene podatke,
-prikaze i tablicu rezultata. Za potpuno ponavljanje računalnog
-postupka potrebna je i datoteka s uputama koje računalo može
-ponovno izvršiti. Zatražite od alata da je pripremi za preuzimanje. Ponovno slanje istog upita može dati drukčiju
-izvedbu. U razgovoru s kolegom objasnite što ste sačuvali i koji
-dio rada on iz toga može ponovno provesti.
+Sačuvajte podatke, odabrane prikaze i tablicu rezultata. Za potpuno
+ponavljanje računalnog postupka treba i datoteka s uputama koje
+računalo može ponovno izvršiti. Zatražite je od alata. Samo ponovno
+slanje istog upita može dati drukčiji postupak. Kolegi koji želi
+ponoviti vaš rad objasnite što ste sačuvali i kako to može upotrijebiti.

@@ -14,26 +14,39 @@ prijedlog pitanja i objasnite kakav bi vam prikaz pomogao odgovoriti na njega.
 
 ### Što se mijenja kada je lakše provesti ideju
 
-Početak istraživanja često izgleda kao niz malih prepreka. Treba pronaći
-prikladne podatke, upoznati njihove oznake, izraditi prvi prikaz i odrediti
-vrijedi li ideju razvijati. AI može olakšati taj početak. Lakše je isprobati
-nekoliko prikaza, razumjeti nepoznat pojam ili razmotriti objašnjenje koje
-nam nije prvo palo na pamet. Time otvaramo prostor za pitanja koja bismo
-prije odgodili jer je početna obrada tražila previše vremena.
+Prije prvog grafa treba pronaći podatke, razumjeti njihove oznake
+i odlučiti što usporediti. Već tu dobra ideja može zapeti. AI može
+olakšati taj posao: objasniti nepoznat pojam, predložiti prikaz ili
+pomoći da isprobamo drukčije objašnjenje. Tako možemo provjeriti
+vrijedi li razvijati i ideju koju bismo prije odgodili zbog opsežne
+početne obrade.
 
 Paul Goldsmith-Pinkham u tekstu
 [Research in the Time of AI](https://paulgp.com/2026/03/16/research-in-time-of-ai.html)
-opisuje kako jeftinija izvedba mijenja raspored istraživačkog rada.
-Kada je lakše sastaviti podatke i proizvesti rezultate, izbor pitanja,
-poznavanje teme i procjena smisla dobivenog odgovora postaju važniji.
-To je koristan okvir za ovu radionicu: alat obavlja dio posla, a mi
-odlučujemo što želimo saznati i kamo usmjeriti sljedeći pokušaj.
+opisuje kako jeftinija izvedba mijenja istraživački rad. Kada je lakše
+pripremiti podatke i dobiti rezultate, više pažnje možemo posvetiti
+izboru pitanja i smislu odgovora. To traži poznavanje teme i dobru
+prosudbu. Na radionici ćemo zato uz svaki rezultat razgovarati o tome
+što smo htjeli saznati i što bismo napravili sljedeće.
 
-Naš skup omogućuje da usporedimo inflaciju i očekivanja kroz desetljeće.
-Možemo istražiti razdoblje ubrzanja cijena, usporediti ranije i kasnije
-godine ili pogledati mijenjaju li se mjere zajedno. Za pitanje o tome
-što je uzrokovalo promjenu trebali bismo razviti poseban istraživački
-dizajn. Važno je prepoznati koje pitanje upravo postavljamo.
+S našim podacima možemo usporediti ranije i kasnije godine, pogledati
+razdoblje ubrzanja cijena ili istražiti kreću li se dvije mjere zajedno.
+Ako želimo objasniti što je uzrokovalo promjenu, morat ćemo osmisliti
+istraživanje koje može razlikovati moguća objašnjenja.
+
+### Što poznavanje teme donosi pitanju
+
+Luka Šikić u pregledu
+[How Economics Absorbed AI](https://www.lukasikic.info/ai/)
+ističe vrijednost poznavanja određenog područja, jezika i izvora podataka.
+To može biti polazište i za vaš izbor teme. U hrvatskom primjeru
+poznavanje lokalnih rasprava o cijenama može vas navesti na pitanje
+koje općeniti upit o inflaciji ne bi otvorio.
+
+Recite koju biste okolnost izdvojili nekome tko slabo poznaje Hrvatsku.
+Što biste zbog nje željeli istražiti? Potom razjasnite imamo li u tablici
+mjeru koja bi pomogla odgovoriti. Poznavanje konteksta pomaže osmisliti
+pitanje, a podaci određuju koliko mu se možemo približiti.
 
 ### Od teme do pitanja na koje možemo odgovoriti
 
@@ -48,17 +61,16 @@ mjere. Iz njega možemo zamisliti prikaz i objasniti što će čitatelj saznati.
 > koji bi prikaz pomogao odgovoriti. Zatim mi postavi jedno pitanje
 > koje će mi pomoći odabrati temu.
 
-Usporedite prijedloge prema tome što vas u njima zanima. Pitanje o 2022.
-godini usmjerava pogled na naglu promjenu, dok usporedba dvaju petogodišnjih
-razdoblja otvara pitanje stabilnosti odnosa. Oba izbora mogu biti korisna.
-Obrazložite zašto vaš izbor zaslužuje pažnju i što bi odgovor dodao
-početnom opisu. Ako još ne možete objasniti njegovu svrhu, nastavite
-razgovor o pitanju prije naručivanja dodatnih rezultata.
+Odaberite prijedlog koji vas zanima. Pitanje o 2022. usmjerava pogled
+na naglu promjenu cijena, dok usporedba dvaju petogodišnjih razdoblja
+ispituje koliko je odnos stabilan. Objasnite što biste odgovorom na
+svoje pitanje dodali početnom opisu. Ako vam to još nije jasno,
+razradite pitanje prije nego što zatražite nove rezultate.
 
-Pitanje se može promijeniti nakon prvog grafa. To je dio istraživanja:
-uočeni obrazac otvara novu mogućnost. U razgovoru razjasnite je li riječ
-o prvotnoj zamisli ili o ideji potaknutoj onim što ste upravo vidjeli.
-Tako razlikujete istraživanje mogućnosti od zasebnog ispitivanja hipoteze.
+Prvi graf može vas navesti na novo pitanje. Recite što vas je na njemu
+iznenadilo i kako je to promijenilo početnu zamisao. Pitanje koje ste
+postavili nakon gledanja podataka treba razlikovati od hipoteze koju
+ste namjeravali ispitati prije analize.
 
 ### Kako razgovaramo s modelom
 
@@ -69,17 +81,16 @@ alata, primjerice pretraživanje, čitanje dokumenta ili izvođenje izračuna.
 Zbog toga je korisno jasno reći kada tražite ideju, kada objašnjenje
 pročitanog izvora, a kada račun iz učitane tablice.
 
-Kontekst je sadržaj na koji se model u tom trenutku može osloniti.
-U dugom razgovoru raniji dijelovi mogu biti sažeti ili izostavljeni.
-Prije novog zadatka kratko ponovite pitanje i važnu odluku, primjerice
-da analizirate cijelo desetljeće ili da saldo izražavate u bodovima.
-To je dovoljno da nastavak ostane povezan s onim što želite istražiti.
+Kontekst je sadržaj koji je modelu trenutačno dostupan. U dugom razgovoru
+raniji dijelovi mogu biti sažeti ili izostavljeni. Prije novog zadatka
+kratko ponovite pitanje i važnu odluku. Primjerice, podsjetite ga da
+analizirate cijelo desetljeće i da je saldo izražen u bodovima. Tako
+smanjujete mogućnost da se nastavak osloni na pogrešnu pretpostavku.
 
-Za ovu radionicu odaberite dostupan alat koji može čitati datoteke i
-izvršavati analizu. Korisnost procijenite na vlastitom zadatku: pomaže li
-vam oblikovati pitanje, razumjeti prikaz i objasniti nalaz? Razgovor
-s kolegama može biti jednako vrijedan kada treba odlučiti je li pitanje
-zanimljivo ili koje bi ga alternativno objašnjenje promijenilo.
+Odaberite dostupan alat koji može čitati datoteke i provoditi izračune.
+Isprobajte ga na svojem pitanju i pogledajte pomaže li vam razumjeti
+rezultat. O tome je li pitanje zanimljivo ili koje ste objašnjenje
+previdjeli razgovarajte i s kolegama.
 
 ### Brzina i razumijevanje
 
@@ -90,7 +101,7 @@ Na radionici ga možemo prepoznati kada već imamo nekoliko tablica,
 a još ne znamo objasniti što sažima prva. Tada je korisnije zadržati
 se na jednom nalazu i razjasniti njegov smisao.
 
-Usporedite vrijeme potrebno da dobijete prvi graf s vremenom potrebnim
-da o njemu napišete jasnu rečenicu. Razlika pokazuje koji dio rada
-alat olakšava, a kojem još trebate posvetiti pažnju. Upravo se kroz
-takve odluke razvija istraživačka prosudba.
+Kad dobijete prvi graf, pokušajte o njemu napisati jednu jasnu rečenicu.
+Ako to ide sporije od izrade grafa, zastanite i razjasnite što vam je
+nejasno. Možda je problem u značenju mjere, a možda još ne znate koji
+je obrazac važan za vaše pitanje.

@@ -14,7 +14,7 @@ sa značenjem HICP-a i anketnog salda.
 **Isprobajte.** Odaberite jedan mjesec i objasnite što njegove vrijednosti
 govore, na koje se vrijeme odnose i što biste o njima htjeli saznati.
 
-### Učitana tablica kao početak razgovora
+### Prvi pogled na tablicu
 
 Nastavite u razgovoru iz prvog dana. Ako počinjete ovdje, preuzmite
 [CSV radionice](../data/processed/croatia_inflation.csv), dodajte ga
@@ -32,34 +32,33 @@ Očekujemo 120 različitih uzastopnih mjeseci od siječnja 2015. do prosinca
 statusa u našoj tablici znače da dodatni status podatka nije naveden.
 U [rječniku podataka](../data/dictionary.qmd) opisani su stupci i jedinice.
 
-Takav pregled pomaže zamisliti što će graf prikazivati. Svaka točka na
-vremenskoj osi predstavlja mjesec za Hrvatsku. Anketni odgovori potrošača
-već su sažeti u pokazatelj. Iz tih redaka zato ne možemo opisivati
-razlike među pojedinim kućanstvima. Za takvo pitanje trebali bismo
-podatke na razini ispitanika.
+Jedan redak odnosi se na jedan mjesec u Hrvatskoj. Anketni odgovori
+potrošača već su sažeti u pokazatelj. Zato iz ove tablice ne možemo
+opisivati razlike među kućanstvima. Za takvo pitanje trebali bismo
+podatke o pojedinim ispitanicima.
 
 ### Dvije mjere, dva vremenska značenja
 
-HICP u ovoj tablici izražen je godišnjom stopom promjene. Vrijednost
-za određeni mjesec uspoređuje cijene s istim mjesecom prethodne godine.
-Saldo očekivanja potječe iz odgovora o budućem kretanju cijena. Mjesečna
-učestalost objave zajednička je objema serijama, ali njihovi vremenski
-horizonti imaju različito značenje.
+HICP je u tablici izražen godišnjom stopom promjene. Podatak za ožujak
+uspoređuje cijene s ožujkom prethodne godine. Saldo očekivanja nastaje
+iz odgovora o budućem kretanju cijena. Obje vrijednosti bilježimo u
+istom retku, ali one govore o različitim vremenskim usporedbama.
 
-To je važno za pitanje koje ćemo postaviti grafu. Usporedba vrijednosti
-iz istog mjeseca govori o tome kako se dvije mjere zajedno kreću.
-Za istraživanje prognozne uspješnosti trebalo bi odrediti koji kasniji
-ishod odgovara očekivanju i što je ispitanicima bilo poznato u trenutku
-odgovora. Na radionici počinjemo istodobnom opisnom usporedbom.
+Usporedbom vrijednosti iz istog mjeseca opisujemo kako se mjere kreću
+zajedno. Ako nas zanima jesu li potrošači dobro predvidjeli buduću
+inflaciju, moramo odrediti koji kasniji ishod odgovara njihovu
+očekivanju. Treba razmotriti i što su mogli znati kada su odgovarali.
+Na radionici počinjemo jednostavnijom usporedbom vrijednosti iz istog
+mjeseca.
 
 > Odaberi ožujak 2022. i objasni obje vrijednosti običnim jezikom.
 > Uz svaku navedi jedinicu i vremensku usporedbu na koju se odnosi.
 > Predloži zatim jedno pitanje na koje nam taj redak sam ne može
 > odgovoriti, ali bi nam pomogao pogled na okolne mjesece.
 
-Razgovor o jednom retku usporava rad upravo ondje gdje nastaje
-razumijevanje. Kada znate objasniti te dvije vrijednosti, lakše je
-čitati cijeli niz i uočiti što u AI-jevu opisu ima smisla.
+Vrijedi se zadržati na tom jednom retku. Kad možete objasniti obje
+vrijednosti, bit će lakše čitati cijeli niz i procijeniti odgovara li
+AI-jev opis onome što podaci mjere.
 
 ### Što podaci trebaju da bi postali korisni
 
@@ -71,10 +70,11 @@ Jedan od problema u njegovu primjeru nastaje zbog promjene identifikatora,
 struktura. Poruka se odnosi i na male tablice: značenje podataka
 određuje koje su usporedbe opravdane.
 
-U našem su skupu opisi i razdoblje već pripremljeni. U drugom projektu
-trebalo bi razjasniti jesu li kroz vrijeme ostali isti obuhvat, pitanje
-ankete i način mjerenja. AI može pomoći pronaći i objasniti takve
-promjene. Njihova važnost proizlazi iz teme koju istražujemo.
+Za naš skup već znamo obuhvat i značenje mjera. U drugom projektu
+trebat će provjeriti jesu li se kroz vrijeme mijenjali uzorak,
+anketno pitanje ili način mjerenja. Takva promjena može utjecati
+na usporedbu čak i kada tablica izgleda uredno. AI može pomoći
+pronaći i objasniti odgovarajuću dokumentaciju.
 
 Zato zadatak „očisti podatke” često traži razgovor prije izvršavanja.
 Visoka vrijednost može biti upravo događaj koji želimo proučiti.
@@ -82,14 +82,28 @@ Nedostajuća vrijednost i nula imaju različito značenje. U ovoj radionici
 zadržavamo izvorne brojčane vrijednosti i cijelo razdoblje, a uži
 odabir koristimo samo za jasno određenu usporedbu ili prikaz.
 
+### Kada AI stvara novu mjeru
+
+Ako bismo kasnije analizirali medijske tekstove, mogli bismo zatražiti
+da AI svaki članak označi prema tonu. Tada njegov odgovor postaje
+istraživačka varijabla. Ludwig, Mullainathan i Rambachan u radu
+[Large Language Models: An Applied Econometric Framework](https://www.nber.org/papers/w33344)
+objašnjavaju zašto takvo mjerenje treba usporediti s validacijskim
+uzorkom. Pogreške u oznakama mogu utjecati na kasnije procjene odnosa.
+
+Za početak odaberite nekoliko tekstova i dogovorite što biste nazvali
+zabrinutim tonom. Usporedite svoje oznake s AI oznakama i razgovarajte
+o neslaganjima. Tih nekoliko primjera služi učenju, a za istraživanje
+treba osmisliti zaseban validacijski uzorak i uzeti pogreške u obzir.
+To bi bio novi projekt. U našem CSV-u takvih oznaka nema.
+
 ### Koliko posla prepustiti asistentu
 
-Asistent može samostalno pripremiti pregled tablice ili niz grafova.
-Veći prostor za odlučivanje znači i više izbora koje kasnije trebamo
-razumjeti. Za učenje je koristan postupak u kojem najprije sami
-izgovorite što očekujete, a zatim pogledate kako je zahtjev izveden.
+Asistentu možete prepustiti pregled tablice ili izradu grafova.
+Prije nego što pokrenete zadatak, pokušajte predvidjeti dio rezultata
+koji možete zaključiti iz opisa podataka.
 
-Prije izrade godišnje tablice, primjerice, objasnite zašto očekujete
-deset redaka i dvanaest mjeseci u svakoj godini. Nakon prikaza možete
-usporediti vlastito očekivanje s rezultatom. Time gradite sposobnost
-usmjeravanja analize, iako račun obavlja alat.
+Koliko redaka treba imati godišnja tablica za deset godina? Koliko
+mjeseci ulazi u svaki prosjek? Kad dobijete rezultat, usporedite ga
+s onim što ste očekivali. Ako se razlikuje, zatražite objašnjenje
+prije nego što nastavite.

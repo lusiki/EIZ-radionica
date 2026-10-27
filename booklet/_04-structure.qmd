@@ -14,17 +14,15 @@ zadržali jedan predloženi korak, a drugi promijenili ili izostavili.
 
 ### Plan kao razgovor o izborima
 
-Plan analize povezuje ono što želimo saznati s onim što ćemo napraviti.
-Ako pitamo kada su mjere najviše rasle, važan je vremenski prikaz.
-Ako pitamo koliko se njihov odnos razlikuje između dvaju razdoblja,
-trebamo usporedive sažetke za oba razdoblja. Svaki korak ima svrhu
-koju možemo objasniti prije nego što vidimo rezultat.
+Planom određujemo kako ćemo odgovoriti na pitanje. Ako nas zanima
+kada su mjere najviše rasle, trebamo vremenski graf. Ako želimo
+usporediti njihov odnos u dva razdoblja, trebamo iste sažetke za oba.
+Prije izračuna trebali bismo moći objasniti čemu svaki korak služi.
 
-AI može predložiti nekoliko putova kroz isto pitanje. Korisno je
-zatražiti obrazloženje izbora: zašto ovaj graf, zašto ovo razdoblje
-i što dodatni izračun donosi? Tako dobijemo razgovor o istraživanju
-koji možemo voditi i s kolegom. Odgovor modela otvara mogućnosti,
-a prihvaćeni plan izražava našu odluku o smjeru rada.
+AI može predložiti nekoliko postupaka. Zatražite da objasni zašto
+predlaže baš taj graf ili razdoblje i što bismo saznali dodatnim
+izračunom. Slična biste pitanja postavili i kolegi. Odaberite plan
+koji odgovara vašem pitanju i koji možete obrazložiti.
 
 > Želim opisati kako se odnos godišnje stope HICP-a i salda očekivanih
 > promjena cijena razlikuje između 2015.–2019. i 2020.–2024.
@@ -32,38 +30,35 @@ a prihvaćeni plan izražava našu odluku o smjeru rada.
 > objasni što ćemo saznati. Ponudi jednu jednostavniju varijantu
 > plana i reci što bismo njome izgubili.
 
-Pri usporedbi planova pitajte donosi li svaki novi izlaz novu informaciju.
-Deset sličnih grafova može otežati izbor glavnog nalaza. Dva pažljivo
-odabrana prikaza mogu otvoriti jasniju raspravu. Opseg prilagodite
-pitanju i vremenu koje imate za tumačenje.
+Prođite kroz predložene rezultate. Donosi li svaki graf nešto novo?
+Ako nekoliko njih pokazuje gotovo isto, odaberite najjasniji.
+Ostavite dovoljno vremena da protumačite ono što ste dobili.
 
 ### Dijelovi istraživanja ovise jedni o drugima
 
 Goldsmith-Pinkham u tekstu
 [AI and the Research O-Ring](https://paulgp.substack.com/p/ai-and-the-research-o-ring)
-koristi ekonomsku analogiju komplementarnih koraka: slabost jednog
-dijela može ograničiti vrijednost cjeline. To nije procijenjeni zakon
-o uspješnosti svakog istraživanja, nego način da razumijemo zašto
-izvrsna izvedba pojedinog zadatka ponekad ne rješava glavni problem.
+uspoređuje istraživanje s procesom čiji koraci ovise jedni o drugima.
+Slabost jednog koraka može umanjiti vrijednost cijelog rada. Ta
+ekonomska analogija dobro opisuje i problem koji se može pojaviti
+u našem primjeru.
 
 U našem primjeru pogrešno razumijevanje salda utjecalo bi na oznaku
 osi, usporedbu s HICP-om i tekst zaključka. Račun može biti točan,
 a tumačenje i dalje pogrešno. Zato planiranje uključuje razgovor
 o mjerama i pitanju, a kasniji rezultati mogu nas vratiti na te odluke.
 
-To objašnjava i zašto istraživački rad nije potpuno linearan. Graf
-može pokazati da se odnos mijenja kroz vrijeme, pa početno pitanje
-o prosječnom odnosu postaje pitanje o razlikama među razdobljima.
-Takav povratak na pitanje može poboljšati istraživanje. Važno je
-moći ispričati kako smo do novog pitanja došli.
+Ponekad nas rezultat vrati na početno pitanje. Ako graf pokaže da se
+odnos mijenja kroz vrijeme, možda će nas više zanimati razlike među
+razdobljima nego prosjek za cijelo desetljeće. Objasnite što vas je
+navelo na tu promjenu i prilagodite joj plan.
 
 ### Zadajte izvediv korak
 
-Dobro zaduženje govori što želimo dobiti i koje izbore još razmatramo.
-Za početak zatražite jedan prikaz ili jednu usporedbu. Nakon što
-razumijete rezultat, lakše ćete odrediti sljedeći korak. Ako alat
-predloži novu metodu, pitajte koje pitanje ona rješava i kakve podatke
-zahtijeva. Metodu biramo prema tome što želimo ustanoviti.
+Za početak zatražite jedan prikaz ili jednu usporedbu. Kad razumijete
+rezultat, odlučite što dalje. Ako alat predloži novu metodu, pitajte
+koje pitanje ona rješava i kakve podatke zahtijeva. Njezin naziv sam
+po sebi nije razlog da je uključite u analizu.
 
 > Za početak prikaži obje mjere kroz svih 120 mjeseci u odvojenim
 > panelima sa zajedničkom vremenskom osi. Objasni što se iz takva
@@ -75,12 +70,25 @@ na usporedbi razdoblja” ili „Objasni najprije kako bi se čitao taj
 prikaz”. Ako odgovor pretpostavlja medijske podatke koje nemamo,
 razdvojite zadatak koji je sada izvediv od zamisli za novi projekt.
 
-Ponavljajuće zadatke s vremenom možete zadavati na sličan način.
-Goldsmith-Pinkham takve postupke razmatra kroz
+Uputu koja vam se pokazala korisnom možete sačuvati i prilagoditi
+sljedećem zadatku. Goldsmith-Pinkham o tome piše kroz
 [ponovno upotrebljive upute, odnosno skills](https://paulgp.substack.com/p/skills-specifying-how-an-agent-should).
-Za radionicu je dovoljan obrazac koji vam pomaže jasno naručiti
-prikaz ili komentar. Njegovu vrijednost pokazuje rezultat rada;
-sama spremljena uputa ne jamči da će zadatak svaki put biti dobro izveden.
+Na radionici to može biti jednostavan upit za izradu prikaza ili
+komentar na tekst. Pri ponovnoj uporabi provjerite odgovara li uputa
+novim podacima i pitanju.
+
+### Plan koji možete prenijeti u drugi alat
+
+U pregledu [How Economics Absorbed AI](https://www.lukasikic.info/ai/)
+Šikić predlaže da postupak opišemo odvojeno od proizvoda u kojem ga
+trenutačno izvodimo. Za našu analizu bitne su odluke o mjerama,
+razdoblju i usporedbi. Nazivi izbornika pomažu dok koristimo jednu
+aplikaciju, ali sami ne objašnjavaju analizu.
+
+Pokušajte kolegi prenijeti plan bez spominjanja naziva alata. Može li
+iz njega razumjeti koje podatke treba, što treba napraviti i kako
+će izgledati rezultat? Dio koji ostane nejasan dopunite prije rada.
+Takav plan možete upotrijebiti i nakon promjene aplikacije.
 
 ### Povežite prvi i drugi dan
 
@@ -89,7 +97,7 @@ i usporedbu koju želi napraviti. Kolega može pitati zašto je baš ta
 usporedba korisna ili predložiti jednostavniji put. Taj razgovor
 često razjasni dio plana koji je u razgovoru s AI-jem ostao neodređen.
 
-U istom AI razgovoru zatražite kratak sažetak dogovorenog smjera.
-Sažetak služi kao početak drugog dana. Ako se sesija prekine, uz
-isti CSV ponovno navedite pitanje i odabranu usporedbu. Time možete
-nastaviti rad i u drugom dostupnom alatu.
+Na kraju razgovora zatražite kratak sažetak pitanja i dogovorene
+usporedbe. Od njega možete krenuti drugi dan. Ako se sesija prekine,
+ponovno dodajte isti CSV i navedite što želite istražiti. Tako rad
+možete nastaviti i u drugom alatu.

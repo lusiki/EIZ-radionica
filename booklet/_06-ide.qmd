@@ -15,11 +15,10 @@ iz tablice.
 
 ### Naručite prikaz koji odgovara pitanju
 
-Graf je način istraživanja: odabirom prikaza određujemo koji će odnos
-postati vidljiv. Za pitanje o kretanju kroz vrijeme želimo zadržati
-redoslijed mjeseci. Za usporedbu godina koristan je sažetak, dok nam
-raspodjela vrijednosti govori nešto drugo. Prije oblikovanja navedite
-što želite da čitatelj primijeti.
+Prije izrade grafa recite što želite vidjeti. Za pitanje o promjenama
+kroz vrijeme treba sačuvati redoslijed mjeseci. Za usporedbu godina
+može pomoći godišnji sažetak. Prikaz biramo prema pitanju koje nas
+zanima.
 
 Naše dvije serije imaju različite jedinice. Prikazat ćemo ih u dva
 panela, jedan iznad drugoga, sa zajedničkom vremenskom osi. Tako
@@ -32,18 +31,17 @@ možemo usporediti trenutke promjene uz zasebnu skalu svake mjere.
 > s datumom preuzimanja 26. listopada 2026. Prikaži grafove i kratko
 > objasni njihov sadržaj, bez programskog koda.
 
-Najprije pogledajte graf bez AI-jeva objašnjenja. Odaberite promjenu
-koju biste pokazali drugoj osobi. Je li riječ o razdoblju rasta,
-naglom vrhuncu ili vremenu u kojem se dvije serije kreću drukčije?
-Zatim usporedite svoje opažanje s ponuđenim opisom. Različit izbor
-naglaska može otvoriti korisnu raspravu o pitanju.
+Pogledajte graf prije nego što pročitate AI-jevo objašnjenje. Što vam
+prvo privlači pažnju: nagli vrhunac, dulje razdoblje rasta ili dio
+u kojem se serije razilaze? Zatim pročitajte ponuđeni opis. Ako je
+alat istaknuo nešto drugo, razmislite koji je obrazac važniji za
+vaše pitanje.
 
 ### Što dobivamo godišnjom tablicom
 
-Mjesečni graf čuva dinamiku, a godišnji prosjek daje pregled na višoj
-vremenskoj razini. Tablica može olakšati usporedbu 2021. i 2022., ali
-ne pokazuje u kojem se mjesecu promjena dogodila. Zato ta dva prikaza
-koristimo zajedno.
+Godišnja tablica olakšava usporedbu 2021. i 2022. Za pitanje kada je
+promjena počela i koliko je trajala treba se vratiti mjesečnom grafu.
+Zato ćemo pripremiti oba prikaza.
 
 > Napravi tablicu godišnjih prosjeka za obje mjere. Uz svaku godinu
 > navedi broj mjeseci koji ulaze u prosjek. Prosjek HICP-a nazovi
@@ -58,10 +56,9 @@ Godišnji prosjek stopa u ovoj tablici treba razlikovati od godišnje
 promjene prosjeka samog indeksa cijena. Tu drugu veličinu računali
 bismo iz razina indeksa.
 
-Razgovarajte o tome koliko bi se zaključak promijenio kada biste
-vidjeli samo godišnju tablicu. Možete prepoznati veliku razliku među
-godinama, ali za opis nastanka i trajanja promjene treba pogledati
-mjesece. Isti podaci dopuštaju različite korisne sažetke.
+Zamislite da imate samo godišnju tablicu. Koji biste dio priče mogli
+ispričati, a za što bi vam nedostajali mjeseci? Vratite se grafu
+i pronađite promjenu koju godišnji prosjek skriva.
 
 ### Promijenite jednu stvar i objasnite učinak
 
@@ -80,17 +77,28 @@ ali izbor početka i kraja utječe na dojam. Ako uspoređujete nekoliko
 grafova iste mjere, razgovarajte i o rasponu okomite osi. Jednaka
 skala olakšava procjenu veličine razlika između prikaza.
 
-### Izvedba koja ostavlja prostor za razmišljanje
+### Udio čega?
 
-Goldsmith-Pinkhamova demonstracija
+Šikićev [opis metode](https://www.lukasikic.info/ai/supplements/method)
+pokazuje kako širenje zbirke može promijeniti udjele u njoj. To je
+koristan primjer za čitanje grafova. Zamislite da prikupljate medijske
+tekstove o inflaciji. Njihov broj može rasti, a udio padati ako ukupan
+broj prikupljenih tekstova raste još brže. Promjena može nastati i
+zato što ste uključili novi portal.
+
+Za takav graf pitajte: zanima li nas količina izvještavanja ili mjesto
+inflacije među svim temama? Uz udio treba znati što ulazi u nazivnik.
+U našoj godišnjoj tablici srodno je pitanje koliko mjeseci ulazi u
+svaki prosjek. Jednaki stupci ne jamče da sažimaju jednak obuhvat.
+
+### Što graf govori čitatelju
+
+Goldsmith-Pinkham u demonstraciji
 [From an Empty Folder to a Figure](https://paulgp.substack.com/p/from-an-empty-folder-to-a-figure)
-pokazuje kako AI može pomoći da početna ideja brzo dobije oblik grafa.
-To je prikaz mogućeg načina rada, a ne procjena vremena potrebnog
-svakom početniku. U našoj su radionici podaci već pripremljeni,
-pa pažnju možemo usmjeriti na izbor prikaza i njegovo tumačenje.
+pokazuje kako uz AI od početne ideje dolazi do grafa. U našem su primjeru
+podaci već pripremljeni. Sada možemo pogledati je li prikaz koji smo
+zatražili doista koristan za pitanje kojim se bavimo.
 
-Na kraju pokažite kolegi jedan graf i objasnite zašto ste ga odabrali.
-Zamolite ga da kaže što prvo primjećuje. Ako se njegov dojam razlikuje
-od onoga što ste željeli prikazati, promijenite naslov, objašnjenje
-ili sam prikaz. Takav razgovor pokazuje koliko je graf uspio prenijeti
-istraživačku ideju.
+Pokažite graf kolegi i pitajte što prvo primjećuje. Ako vidi nešto
+drukčije od onoga što ste željeli istaknuti, razmotrite naslov, oznake
+osi i popratno objašnjenje. Možda treba promijeniti i sam prikaz.

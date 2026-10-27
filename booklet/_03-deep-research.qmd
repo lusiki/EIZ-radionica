@@ -1,6 +1,30 @@
-## 1.3 Dubinsko istraživanje s Gemini Deep Research {#poglavlje-13}
+## 1.3 Provjerite i uredite sažetak {#poglavlje-13}
 
-### Kako pripremiti pregled više izvora
+**Nastavnik pokazuje · 10 minuta.** Otvorite pripremljeni pogrešan sažetak. Pokažite kako tvrdnju o saldu uspoređujete s definicijom mjere i napišite jednu ispravnu rečenicu.
+
+**Studenti rade · 25 minuta.** Označite najmanje četiri problema, provjerite ih u izvorima i napišite ispravak od 80–120 riječi.
+
+**Zajednička provjera · 10 minuta.** Usporedite početnu i ispravljenu tvrdnju te objasnite promjenu značenja.
+
+**Rezultat bloka.** Označen izvorni sažetak i vlastiti ispravak.
+
+[Blok 1.3 u nastavi](../slides/day1.qmd#blok-13) · [Vježba 1.3 i predaja](../materials/exercises/index.qmd#v13)
+
+**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
+
+### Od izvora do ispravljenog sažetka
+
+Otvorite tri zapisa iz vježbe 1.2 i pripremljeni pogrešan sažetak.
+Za svaku rečenicu utvrdite što tvrdi, na koji se izvor oslanja i koju
+mjeru opisuje. Primjerice, saldo od 20 izražen je u bodovima salda.
+Tu definiciju unesite u ispravljenu rečenicu.
+
+Označite najmanje četiri problema. Uz svaki zapišite razlog i izvor,
+zatim napišite ispravak od 80–120 riječi. Dodajte dvije rečenice o
+izostavljenim objašnjenjima. Provjerene formulacije i otvorena pitanja
+iskoristit ćete u planu analize iz vježbe 1.4.
+
+### Dodatno čitanje / pregled više izvora uz Gemini Deep Research
 
 Kratak odgovor može pomoći pri traženju pojma ili pojedinog rada.
 Za usporedbu teorijskih objašnjenja i podataka iz više studija treba
@@ -11,7 +35,7 @@ Razlika je slična onoj između kratkog pitanja vodiču i naručivanja
 opširnog izvješća. Isti alat može nuditi oba načina rada. Kvalitetu izvješća procijenite prema pokrivenosti teme i točnosti
 tvrdnji u odnosu na izvore.
 
-Postupak ćemo pokazati na primjeru Gemini Deep Researcha. Prema [Googleovim uputama](https://support.google.com/gemini/answer/15719111?hl=en),
+Za samostalni nastavak razmotrite primjer Gemini Deep Researcha. Prema [Googleovim uputama](https://support.google.com/gemini/answer/15719111?hl=en),
 možete odabrati izvore, priložiti materijale i urediti predloženi plan prije
 pokretanja istraživanja. Dostupnost povezanih izvora ovisi o računu i
 postavkama. Sučelje se može promijeniti do sljedeće radionice, pa provjerite upute
@@ -112,7 +136,7 @@ korelaciju vrijednosti iz istog mjeseca. Panel-model, analiza medijskih tekstova
 mogu biti zasebni nastavci istraživanja. Za svako proširenje prije kodiranja odredite koji dodatni podaci
 i metodološko obrazloženje nedostaju.
 
-### Vježba / od plana do provjerene stranice
+### Za samostalni rad nakon radionice
 
 Sastavite plan za vlastito pitanje i napišite što bi vas navelo da ga
 promijenite. Ako imate pristup istraživačkom načinu rada, pokrenite ga.

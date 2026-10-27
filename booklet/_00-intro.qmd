@@ -12,11 +12,19 @@ EIZ-radionica. Sadržaj je revidiran 26. listopada 2026.
 Organizator zasebno određuje datum održavanja radionice. Prerađeno izdanje
 pripremljeno je uz AI pomoć, uz dokumentirane izvore i provjeru analitičkog postupka.
 
-Prvi dio vodi od razumijevanja jezičnih modela preko provjere izvora do
-plana rada. Drugi povezuje agentsku pomoć, rad u editoru i bilježnicama
-s analizom i pisanjem. Možete čitati redom ili otvoriti poglavlje koje
-odgovara zadatku na kojem radite. Vježbe na kraju poglavlja služe
-samostalnom produbljivanju. Obvezne predaje opisane su u osam radnih blokova radionice.
+Prvi dan vodi od istraživačkog pitanja preko izvora i sažetka do plana
+analize. Drugoga dana provjeravate podatke, dopunjujete kod, ponavljate
+analizu i pišete zaključak. Plan iz vježbe 1.4 povezuje oba dana.
+
+Svaki broj označava isti zadatak na stranici dana, u ovom priručniku i
+u vježbama. Primjerice, blok 2.3, poglavlje 2.3 i vježba 2.3 zajedno
+vode kroz ponovno izvođenje analize. Na početku svakog poglavlja piše
+što nastavnik pokazuje, što studenti rade i što trebaju predati.
+
+Stranice dana služe vođenju nastave, vježbe daju detaljne upute za rad,
+a priručnik objašnjava postupke i primjere. Svaki blok traje 45 minuta,
+uz 10 minuta demonstracije, 25 minuta rada i 10 minuta zajedničke provjere.
+Dodatno čitanje i zadaci za samostalni rad nastavljaju se nakon radionice.
 
 Numerički primjeri koriste zamrznuti hrvatski skup za 2015.–2024.,
 preuzet 26. listopada 2026. Podaci u nastavnom paketu, skripte i

@@ -1,4 +1,16 @@
-## 1.1 Kako razumjeti AI asistenta {#poglavlje-11}
+## 1.1 Postavite istraživačko pitanje {#poglavlje-11}
+
+**Nastavnik pokazuje · 10 minuta.** Pokažite kako od teme „inflacija u Hrvatskoj” nastaje pitanje o razdoblju 2015.–2024. Zatražite AI prijedlog i provjerite jednu tvrdnju u izvoru.
+
+**Studenti rade · 25 minuta.** Napišite svoje pitanje, opišite dvije varijable i sastavite tri provjere AI odgovora. Zabilježite pravila uporabe AI-ja za zadatak.
+
+**Zajednička provjera · 10 minuta.** Usporedite dva pitanja i objasnite kojim se podacima na njih može odgovoriti.
+
+**Rezultat bloka.** Pitanje, opis dviju mjera i popis provjera.
+
+[Blok 1.1 u nastavi](../slides/day1.qmd#blok-11) · [Vježba 1.1 i predaja](../materials/exercises/index.qmd#v11)
+
+**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
 
 ### Od prazne stranice do istraživačkog pitanja
 
@@ -11,7 +23,8 @@ dovoljno određeno? Možete li pronaći autora i izvor? Izvršava li se skripta
 i podupiru li dokazi tvrdnje u odlomku?
 
 Za pretraživanje i planiranje koristit ćemo primjere iz Perplexityja,
-Geminija i Claudea, a za analizu programske asistente i bilježnice.
+Geminija i Claudea. Analizu provodimo u R skripti, a programske asistente
+i bilježnice razmatramo kao dodatne mogućnosti.
 Mogućnosti tih proizvoda preklapaju se. Odaberite dostupan alat i uvježbajte pronalaženje dokaza i objašnjavanje
 rezultata.
 
@@ -21,6 +34,17 @@ od 2015. do 2024. Imamo dvije mjere i 120 mjeseci. Sve izračune možete
 ponoviti priloženim skriptama. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje
 motivacija za nastavak istraživanja. Za taj nastavak treba prikupiti medijske tekstove i izraditi indeks
 medijske pažnje.
+
+### Odredite što želite saznati
+
+Zajedničko pitanje glasi „Kako su se u Hrvatskoj od 2015. do 2024.
+kretali ostvarena inflacija i očekivanja potrošača o promjenama cijena?”
+U njemu su navedeni zemlja, razdoblje i dvije mjere. Iz tog pitanja
+možete odrediti koje izvore i podatke trebate pronaći.
+
+U vježbi 1.1 napišite svoju formulaciju istog opisnog pitanja.
+Uz nju objasnite što svaka mjera predstavlja. U sljedećem bloku
+potražit ćete izvore koji podupiru te definicije.
 
 ### Kako jezični model oblikuje odgovor
 
@@ -123,7 +147,7 @@ Usporedio/la sam ih s rječnikom podataka i promijenio/la oznaku očekivanja
 iz postotka u saldo.” Uz tvrdnju o podacima ili rezultatima navedite izvor.
 Bilješka o uporabi alata objašnjava kako ste radili.
 
-### Pokušajte sami
+### Za samostalni rad nakon radionice
 
 Napišite jedno pitanje o inflaciji i unaprijed odredite što bi bio provjerljiv
 odgovor. Zatim zatražite prijedlog od dostupnog asistenta. Posebno označite tvrdnje koje trebaju izvor, prijedloge postupka

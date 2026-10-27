@@ -1,4 +1,16 @@
-## 1.2 Pretraživanje literature s Perplexityjem {#poglavlje-12}
+## 1.2 Pronađite i provjerite izvore {#poglavlje-12}
+
+**Nastavnik pokazuje · 10 minuta.** Pokažite pretragu jednim preciznim upitom, otvorite izvor i pronađite odlomak koji podupire tvrdnju. Ispunite jedan dokazni zapis.
+
+**Studenti rade · 25 minuta.** Provjerite tri početna izvora i za svaki zapišite tvrdnju, točan odjeljak, vlastiti sažetak i ograničenje.
+
+**Zajednička provjera · 10 minuta.** Usporedite jedan studentski zapis s izvornim odlomkom.
+
+**Rezultat bloka.** Tri provjerena zapisa o izvorima.
+
+[Blok 1.2 u nastavi](../slides/day1.qmd#blok-12) · [Vježba 1.2 i predaja](../materials/exercises/index.qmd#v12)
+
+**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
 
 ### Kako početi pregled literature
 
@@ -135,7 +147,7 @@ rad provjerite status recenzije kod izdavača. Za sustavni pregled unaprijed
 opišite baze, pojmove za pretragu i pravila odabira radova. Za ovu radionicu radimo ograničenu, dokumentiranu
 početnu pretragu.
 
-### Vježba za samostalno čitanje
+### Za samostalni rad nakon radionice
 
 Odaberite pitanje iz radionice ili vlastitu temu. Sastavite tri upita s
 rastućom preciznošću, izdvojite pet kandidata i detaljno provjerite tri.

@@ -3,6 +3,28 @@ title: "Priprema za nastavnike"
 subtitle: "Izvedba, provjere i odluke prije nove radionice"
 ---
 
+## Kako voditi oba dana
+
+Otvorite stranicu dana i slijedite četiri bloka redom. Na početku svakog
+bloka pročitajte što pokazujete u prvih 10 minuta, što studenti rade
+sljedećih 25 minuta i što zajedno provjeravate na kraju. Naslov i broj
+bloka jednaki su u priručniku i vježbama.
+
+Za pripremu pročitajte odgovarajuće poglavlje priručnika. U učionici
+otvorite vježbu istog broja, koja navodi ulazne datoteke, korake i predaju.
+Za prvi dan pripremite pitanje, pretragu izvora, ispravak jednog sažetka
+i primjer plana. Za drugi pripremite učitavanje podataka, malu dopunu
+koda, ponovno pokretanje skripte i uređivanje zaključka.
+
+Prvi dan završite spremanjem plana iz vježbe 1.4. Drugi dan počnite
+otvaranjem tog plana uz podatke. Tijekom dana studenti provode njegove
+korake i iz rezultata pišu završni odlomak. Za osnovni dio koristite
+Positron i R. Agenti, bilježnice i napredne metode služe dodatnom čitanju
+i kasnijoj demonstraciji.
+
+[Prvi dan](../slides/day1.qmd) · [Drugi dan](../slides/day2.qmd) ·
+[Pregled svih osam blokova](../booklet/index.qmd#osam-povezanih-blokova)
+
 ## Pripremite radno okruženje
 
 Za demonstracije koristite Positron, R i zamrznuti nastavni paket. U prvih deset minuta

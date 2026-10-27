@@ -1,6 +1,6 @@
 ---
 title: "Od pitanja do provjerenih izvora"
-subtitle: "Dan 1 · Čitateljski materijal uz četiri radna bloka"
+subtitle: "Dan 1 · Četiri bloka s demonstracijama, vježbama i poglavljima"
 ---
 
 ::: {.chapter-kicker}
@@ -15,11 +15,24 @@ kretali ostvarena inflacija i očekivanja potrošača o promjenama cijena?**
 Do kraja dana imat ćete tri provjerena zapisa o izvorima, ispravljen sažetak
 i plan analize na jednoj stranici. [Otvorite radne listove](../materials/exercises/index.qmd).
 
-## 1.1 Što model može znati? {#blok-11}
+Prvoga dana pripremate pitanje, izvore i plan analize.
+Brojevi i naslovi blokova jednaki su u nastavi, priručniku i vježbama.
+Za svaki blok slijedite demonstraciju, rad studenata i zajedničku provjeru.
+Poveznice uz blok vode ravno na pripadajuće poglavlje i zadatak.
 
-Za opširnija objašnjenja, primjere upita i dodatno čitanje otvorite
-[prvi dio priručnika](../booklet/day1.qmd). [Cijeli PDF](../downloads/EIZ-prirucnik.pdf)
-obuhvaća oba dana.
+## 1.1 Postavite istraživačko pitanje {#blok-11}
+
+::: {.concept-box}
+**Nastavnik pokazuje · 10 minuta.** Pokažite kako od teme „inflacija u Hrvatskoj” nastaje pitanje o razdoblju 2015.–2024. Zatražite AI prijedlog i provjerite jednu tvrdnju u izvoru.
+
+**Studenti rade · 25 minuta.** Napišite svoje pitanje, opišite dvije varijable i sastavite tri provjere AI odgovora. Zabilježite pravila uporabe AI-ja za zadatak.
+
+**Zajednička provjera · 10 minuta.** Usporedite dva pitanja i objasnite kojim se podacima na njih može odgovoriti.
+
+**Rezultat bloka.** Pitanje, opis dviju mjera i popis provjera.
+
+[Priručnik 1.1](../booklet/day1.qmd#poglavlje-11) · [Vježba 1.1](../materials/exercises/index.qmd#v11)
+:::
 
 Jezični model sastavlja odgovor prema obrascima koje je naučio i sadržaju
 razgovora. Procjenjuje vjerojatnosti mogućih sljedećih tokena, a zatim
@@ -50,9 +63,21 @@ Sadržaj web-stranica i datoteka tretirajte kao materijal za analizu.
 Naredbe koje agent izvršava trebaju slijediti vaš zadatak. Agentu koji piše kod
 ograničite pristup projektu i pregledajte naredbe prije pokretanja.
 
-[Vježba 1.1, pitanje i granice uporabe](../materials/exercises/index.qmd#v11).
+[Vježba 1.1, postavite istraživačko pitanje](../materials/exercises/index.qmd#v11).
 
-## 1.2 Od poveznice do dokaza {#blok-12}
+## 1.2 Pronađite i provjerite izvore {#blok-12}
+
+::: {.concept-box}
+**Nastavnik pokazuje · 10 minuta.** Pokažite pretragu jednim preciznim upitom, otvorite izvor i pronađite odlomak koji podupire tvrdnju. Ispunite jedan dokazni zapis.
+
+**Studenti rade · 25 minuta.** Provjerite tri početna izvora i za svaki zapišite tvrdnju, točan odjeljak, vlastiti sažetak i ograničenje.
+
+**Zajednička provjera · 10 minuta.** Usporedite jedan studentski zapis s izvornim odlomkom.
+
+**Rezultat bloka.** Tri provjerena zapisa o izvorima.
+
+[Priručnik 1.2](../booklet/day1.qmd#poglavlje-12) · [Vježba 1.2](../materials/exercises/index.qmd#v12)
+:::
 
 Počnite od [izvora za zajednički slučaj](../materials/sources.qmd), zatim
 pretražite literaturu. AI pretraživač može predložiti kandidate. Naziv
@@ -83,7 +108,19 @@ i svaku tvrdnju koju prihvaća. [Vježba 1.2](../materials/exercises/index.qmd#v
 s tri zapisa u predlošku dokaza, mjerenje HICP-a, mjerenje očekivanja i
 ograničenje zajedničke analize.
 
-## 1.3 Provjera sažetka {#blok-13}
+## 1.3 Provjerite i uredite sažetak {#blok-13}
+
+::: {.concept-box}
+**Nastavnik pokazuje · 10 minuta.** Otvorite pripremljeni pogrešan sažetak. Pokažite kako tvrdnju o saldu uspoređujete s definicijom mjere i napišite jednu ispravnu rečenicu.
+
+**Studenti rade · 25 minuta.** Označite najmanje četiri problema, provjerite ih u izvorima i napišite ispravak od 80–120 riječi.
+
+**Zajednička provjera · 10 minuta.** Usporedite početnu i ispravljenu tvrdnju te objasnite promjenu značenja.
+
+**Rezultat bloka.** Označen izvorni sažetak i vlastiti ispravak.
+
+[Priručnik 1.3](../booklet/day1.qmd#poglavlje-13) · [Vježba 1.3](../materials/exercises/index.qmd#v13)
+:::
 
 Dobar sažetak razlikuje rezultat, tumačenje i otvoreno pitanje. Usporedite
 svaku njegovu rečenicu s izvornim tekstom. Tražite promjenu zemlje ili
@@ -107,9 +144,21 @@ Pripremljeni primjer omogućuje istu vježbu u svakoj izvedbi radionice.
 Ako koristite živi alat, sačuvajte stvarni odgovor i označite ga kao takav.
 Tvrdnje označene u sučelju provjerite čitanjem izvora.
 
-[Vježba 1.3, anotirani sažetak](../materials/exercises/index.qmd#v13).
+[Vježba 1.3, provjerite i uredite sažetak](../materials/exercises/index.qmd#v13).
 
-## 1.4 Plan prije rezultata {#blok-14}
+## 1.4 Pripremite plan analize {#blok-14}
+
+::: {.concept-box}
+**Nastavnik pokazuje · 10 minuta.** Otvorite predložak plana i povežite pitanje s uzorkom, jedinicama i planiranim prikazima. Pokažite kako od AI-ja tražite komentar izvedivosti.
+
+**Studenti rade · 25 minuta.** Sastavite plan na jednoj stranici. Navedite 120 mjeseci, dvije mjere, provjere podataka, godišnje prosjeke, grafove i granice zaključka.
+
+**Zajednička provjera · 10 minuta.** Objasnite jednu odluku iz plana i podatke na kojima se temelji.
+
+**Rezultat bloka.** Plan analize koji ćete provesti drugoga dana.
+
+[Priručnik 1.4](../booklet/day1.qmd#poglavlje-14) · [Vježba 1.4](../materials/exercises/index.qmd#v14)
+:::
 
 Plan navodi pitanje, uzorak, varijable i jedinice, obradu nedostajućih
 vrijednosti, planirane prikaze i granice tumačenja. Naš je osnovni zadatak
@@ -136,7 +185,7 @@ predviđanju zahtijevalo bi odvajanje ranijih podataka za izradu modela od kasni
 usporedbu s osnovnom prognozom. Pitanje o uzroku traži postupak kojim možemo odvojiti uzrok koji nas zanima
 od drugih mogućih objašnjenja. U ovoj radionici opisujemo kretanje dviju serija kroz vrijeme.
 
-[Vježba 1.4, plan analize](../materials/exercises/index.qmd#v14).
+[Vježba 1.4, pripremite plan analize](../materials/exercises/index.qmd#v14).
 
 ## Prije drugog dana
 

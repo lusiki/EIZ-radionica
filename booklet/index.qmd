@@ -21,22 +21,37 @@ Tekst se temelji na izvornom materijalu, uz ažurirane upute za alate.
 
 ::: {.step-links}
 ::: {.step-link}
-## 01 / Istraživanje i strukturiranje
+## 01 / Od pitanja do provjerenih izvora
 
-Kako modeli oblikuju odgovor, kako provjeriti literaturu, pripremiti
-dubinsko istraživanje i pretvoriti bilješke u izvediv plan.
+Kako postaviti pitanje, pronaći izvore, provjeriti sažetak
+i pripremiti izvediv plan analize.
 
 [Čitajte prvi dio](day1.qmd)
 :::
 ::: {.step-link}
-## 02 / Kodiranje i pisanje
+## 02 / Od podataka do obranjivog zaključka
 
-Kako surađivati s agentom, pratiti kod u editoru, sačuvati ponovljiv
-postupak i napisati zaključak koji odgovara dokazima.
+Kako provjeriti podatke, dopuniti kod, ponoviti cijelu analizu
+iz spremljene skripte i napisati zaključak.
 
 [Čitajte drugi dio](day2.qmd)
 :::
 :::
+
+## Osam povezanih blokova
+
+Isti broj i naslov pratite na stranici dana, u priručniku i u vježbama.
+
+| Blok u nastavi | Priručnik | Zadatak |
+|---|---|---|
+| [1.1 Postavite istraživačko pitanje](../slides/day1.qmd#blok-11) | [Poglavlje 1.1](day1.qmd#poglavlje-11) | [Vježba 1.1](../materials/exercises/index.qmd#v11) |
+| [1.2 Pronađite i provjerite izvore](../slides/day1.qmd#blok-12) | [Poglavlje 1.2](day1.qmd#poglavlje-12) | [Vježba 1.2](../materials/exercises/index.qmd#v12) |
+| [1.3 Provjerite i uredite sažetak](../slides/day1.qmd#blok-13) | [Poglavlje 1.3](day1.qmd#poglavlje-13) | [Vježba 1.3](../materials/exercises/index.qmd#v13) |
+| [1.4 Pripremite plan analize](../slides/day1.qmd#blok-14) | [Poglavlje 1.4](day1.qmd#poglavlje-14) | [Vježba 1.4](../materials/exercises/index.qmd#v14) |
+| [2.1 Upoznajte i provjerite podatke](../slides/day2.qmd#blok-21) | [Poglavlje 2.1](day2.qmd#poglavlje-21) | [Vježba 2.1](../materials/exercises/index.qmd#v21) |
+| [2.2 Dopunite i objasnite kod](../slides/day2.qmd#blok-22) | [Poglavlje 2.2](day2.qmd#poglavlje-22) | [Vježba 2.2](../materials/exercises/index.qmd#v22) |
+| [2.3 Ponovite analizu od početka](../slides/day2.qmd#blok-23) | [Poglavlje 2.3](day2.qmd#poglavlje-23) | [Vježba 2.3](../materials/exercises/index.qmd#v23) |
+| [2.4 Napišite i uredite zaključak](../slides/day2.qmd#blok-24) | [Poglavlje 2.4](day2.qmd#poglavlje-24) | [Vježba 2.4](../materials/exercises/index.qmd#v24) |
 
 {{< include _00-intro.qmd >}}
 

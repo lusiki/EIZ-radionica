@@ -1,6 +1,6 @@
 ---
 title: "Od podataka do obranjivog zaključka"
-subtitle: "Dan 2 · Čitateljski materijal uz četiri radna bloka"
+subtitle: "Dan 2 · Četiri bloka s demonstracijama, vježbama i poglavljima"
 ---
 
 ::: {.chapter-kicker}
@@ -17,11 +17,24 @@ Koristimo isti slučaj kao prvoga dana, Hrvatsku od siječnja 2015. do prosinca
 referentna rješenja. Nakon preuzimanja paketa osnovne zadatke možete riješiti izvan mreže
 u osnovnom R-u.
 
-## 2.1 Upoznajte podatke prije modela {#blok-21}
+Drugoga dana provodite plan iz vježbe 1.4 i pišete zaključak.
+Brojevi i naslovi blokova jednaki su u nastavi, priručniku i vježbama.
+Za svaki blok slijedite demonstraciju, rad studenata i zajedničku provjeru.
+Poveznice uz blok vode ravno na pripadajuće poglavlje i zadatak.
 
-Za opširnija objašnjenja agenata, editora, bilježnica i pisanja otvorite
-[drugi dio priručnika](../booklet/day2.qmd). [Cijeli PDF](../downloads/EIZ-prirucnik.pdf)
-obuhvaća oba dana.
+## 2.1 Upoznajte i provjerite podatke {#blok-21}
+
+::: {.concept-box}
+**Nastavnik pokazuje · 10 minuta.** Otvorite projekt u Positronu i učitajte CSV pomoću početne skripte. Pokažite jedan redak, rječnik podataka i provjeru broja i raspona mjeseci.
+
+**Studenti rade · 25 minuta.** Provjerite 120 različitih mjeseci, praznine, raspon vrijednosti i jedinice. Zapišite naredbe i rezultate u predložak za provjeru podataka.
+
+**Zajednička provjera · 10 minuta.** Objasnite značenje jedne vrijednosti i pokažite odgovarajuću provjeru u skripti.
+
+**Rezultat bloka.** Ispunjena provjera podataka.
+
+[Priručnik 2.1](../booklet/day2.qmd#poglavlje-21) · [Vježba 2.1](../materials/exercises/index.qmd#v21)
+:::
 
 Jedan redak predstavlja jedan mjesec. Retke povezujemo prema ključu `month`.
 Očekujemo 120 različitih, uzastopnih mjeseci. Provjerite raspon datuma,
@@ -44,9 +57,21 @@ njihove izvorne vrijednosti i već izračunanu godišnju stopu HICP-a.
 Ako kasnije analiziramo promjene, promjena godišnje stope mjeri se u
 postotnim bodovima. Transformacija mora odgovarati pitanju i biti dokumentirana.
 
-[Vježba 2.1, provjera podataka](../materials/exercises/index.qmd#v21).
+[Vježba 2.1, upoznajte i provjerite podatke](../materials/exercises/index.qmd#v21).
 
-## 2.2 Kod koji možete objasniti {#blok-22}
+## 2.2 Dopunite i objasnite kod {#blok-22}
+
+::: {.concept-box}
+**Nastavnik pokazuje · 10 minuta.** Pokrenite postojeći izračun iz početne skripte. Zatražite malu dopunu od AI-ja i na odabranim recima pokažite kako provjeravate prijedlog.
+
+**Studenti rade · 25 minuta.** Dodajte prosjek salda za 2022. i tablicu godišnjih prosjeka. Provjerite 12 mjeseci po godini i objasnite svaku novu naredbu.
+
+**Zajednička provjera · 10 minuta.** Usporedite jedan izračun s ručno odabranim recima i objasnite njegovu jedinicu.
+
+**Rezultat bloka.** Dopunjena skripta s objašnjenjem i zapisom provjere.
+
+[Priručnik 2.2](../booklet/day2.qmd#poglavlje-22) · [Vježba 2.2](../materials/exercises/index.qmd#v22)
+:::
 
 Otvorite projekt u Positronu i datoteku `code/starter.R`. Skripta koristi
 osnovni R. Prvo predvidite što će pojedini dio učiniti, zatim ga pokrenite
@@ -74,9 +99,21 @@ datoteke dira i zatražite objašnjenje izmjene. Ključeve i osobne podatke
 čuvajte izvan materijala dostupnih agentu. Terminalni agent može biti
 kratka izborna demonstracija nastavnika.
 
-[Vježba 2.2, jedna obrazložena izmjena](../materials/exercises/index.qmd#v22).
+[Vježba 2.2, dopunite i objasnite kod](../materials/exercises/index.qmd#v22).
 
-## 2.3 Provjerite postupak iz čistog početka {#blok-23}
+## 2.3 Ponovite analizu od početka {#blok-23}
+
+::: {.concept-box}
+**Nastavnik pokazuje · 10 minuta.** Otvorite pripremljenu pogrešnu skriptu i objasnite jedan problem u postupku. Na kratkom ispravnom primjeru pokažite spremanje, novu R sesiju i ponovno izvođenje.
+
+**Studenti rade · 25 minuta.** Pronađite najmanje četiri problema i sastavite ispravnu skriptu. Izradite godišnju tablicu i graf, pokrenite sve od početka i usporedite jedan broj s referentnim rezultatom.
+
+**Zajednička provjera · 10 minuta.** Pokažite rezultat iz nove sesije i objasnite jedan ispravljeni korak.
+
+**Rezultat bloka.** Popis pogrešaka, ispravna skripta i ponovno dobiveni rezultati.
+
+[Priručnik 2.3](../booklet/day2.qmd#poglavlje-23) · [Vježba 2.3](../materials/exercises/index.qmd#v23)
+:::
 
 Da bi netko mogao ponoviti analizu, trebaju mu podaci, kod, popis
 programa i paketa te upute kojim redom pokrenuti skripte. Spremite skriptu, zatvorite prethodnu R sesiju i pokrenite je
@@ -110,7 +147,19 @@ Analizu možete ponoviti iz bilježnice ili skripte ako su svi koraci
 zapisani i mogu se pokrenuti od početka. U osnovnom dijelu svi radimo u skripti. [Vježba 2.3](../materials/exercises/index.qmd#v23)
 traži popravak namjerno pogrešnog koda, a zatim čisto ponovno izvođenje.
 
-## 2.4 Napišite samo ono što ste provjerili {#blok-24}
+## 2.4 Napišite i uredite zaključak {#blok-24}
+
+::: {.concept-box}
+**Nastavnik pokazuje · 10 minuta.** Iz grafa ili tablice sastavite kratak odlomak. Zatražite jasniju formulaciju od AI-ja pa usporedite brojke, jedinice i tvrdnje prije i poslije uređivanja.
+
+**Studenti rade · 25 minuta.** Napišite približno 200 riječi, zatražite komentar kolege ili AI-ja i pregledajte izmjene. Dovršite zapis uporabe AI-ja i složite završni rad.
+
+**Zajednička provjera · 10 minuta.** Pročitajte jedan odlomak i povežite svaku brojku s tablicom ili grafom.
+
+**Rezultat bloka.** Pitanje, tri izvora, skripta, graf ili tablica, obje verzije teksta i zapis uporabe AI-ja.
+
+[Priručnik 2.4](../booklet/day2.qmd#poglavlje-24) · [Vježba 2.4](../materials/exercises/index.qmd#v24)
+:::
 
 Najprije sastavite kratak odlomak iz vlastitog grafa i tablice. Navedite
 zemlju, razdoblje, jedinice, jedan provjeren broj i ograničenje. AI može
@@ -135,7 +184,7 @@ usidrenosti očekivanja treba odrediti definiciju, vremenski horizont i
 odgovarajuću mjeru. Preporuke ekonomske politike zahtijevaju dodatne dokaze
 o učincima predloženih mjera.
 
-[Vježba 2.4, zaključak i zapis uporabe AI-ja](../materials/exercises/index.qmd#v24).
+[Vježba 2.4, napišite i uredite zaključak](../materials/exercises/index.qmd#v24).
 
 ## Predaja
 

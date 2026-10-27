@@ -1,5 +1,5 @@
 ---
-title: "Kodiranje i pisanje"
+title: "Od podataka do obranjivog zaključka"
 subtitle: "Priručnik · Drugi dio · Četiri poglavlja za samostalno čitanje"
 body-classes: booklet
 toc-depth: 3
@@ -7,11 +7,12 @@ toc-title: "Sadržaj drugog dijela"
 ---
 
 [O priručniku](index.qmd) · [Cijeli PDF](../downloads/EIZ-prirucnik.pdf) ·
-[Kratki materijal za nastavu](../slides/day2.qmd)
+[Plan nastave za 2. dan](../slides/day2.qmd)
 
-Nastavite s istim pitanjem i podacima. Osnovni postupak ostaje opisna
-analiza. Regresija, paneli i zbirka medijskih tekstova objašnjeni su kao napredni
-nastavci s dodatnim zahtjevima. Primjeri koda izvode se iz korijena projekta.
+Otvorite plan iz vježbe 1.4. Poglavlja 2.1–2.4 prate provjeru podataka,
+dopunu koda, ponovno izvođenje analize i pisanje zaključka. U nastavi
+radite u istoj R skripti. Agenti, bilježnice i napredne metode obrađeni su
+u dijelovima za dodatno čitanje. Primjeri koda izvode se iz korijena projekta.
 
 {{< include _05-agents.qmd >}}
 

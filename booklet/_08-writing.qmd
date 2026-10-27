@@ -1,4 +1,16 @@
-## 2.4 Pisanje i uređivanje akademskog teksta {#poglavlje-24}
+## 2.4 Napišite i uredite zaključak {#poglavlje-24}
+
+**Nastavnik pokazuje · 10 minuta.** Iz grafa ili tablice sastavite kratak odlomak. Zatražite jasniju formulaciju od AI-ja pa usporedite brojke, jedinice i tvrdnje prije i poslije uređivanja.
+
+**Studenti rade · 25 minuta.** Napišite približno 200 riječi, zatražite komentar kolege ili AI-ja i pregledajte izmjene. Dovršite zapis uporabe AI-ja i složite završni rad.
+
+**Zajednička provjera · 10 minuta.** Pročitajte jedan odlomak i povežite svaku brojku s tablicom ili grafom.
+
+**Rezultat bloka.** Pitanje, tri izvora, skripta, graf ili tablica, obje verzije teksta i zapis uporabe AI-ja.
+
+[Blok 2.4 u nastavi](../slides/day2.qmd#blok-24) · [Vježba 2.4 i predaja](../materials/exercises/index.qmd#v24)
+
+**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
 
 ### Pisanje je dio istraživanja
 

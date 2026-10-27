@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Istraživanje i strukturiranje – AI u istraživanju</title>
+<title>Od pitanja do provjerenih izvora – AI u istraživanju</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -184,16 +184,17 @@ window.Quarto = {
     <h2 id="toc-title">Sadržaj prvog dijela</h2>
    
   <ul>
-  <li><a href="#poglavlje-11" id="toc-poglavlje-11" class="nav-link active" data-scroll-target="#poglavlje-11">1.1 Kako razumjeti AI asistenta</a>
+  <li><a href="#poglavlje-11" id="toc-poglavlje-11" class="nav-link active" data-scroll-target="#poglavlje-11">1.1 Postavite istraživačko pitanje</a>
   <ul class="collapse">
   <li><a href="#od-prazne-stranice-do-istraživačkog-pitanja" id="toc-od-prazne-stranice-do-istraživačkog-pitanja" class="nav-link" data-scroll-target="#od-prazne-stranice-do-istraživačkog-pitanja">Od prazne stranice do istraživačkog pitanja</a></li>
+  <li><a href="#odredite-što-želite-saznati" id="toc-odredite-što-želite-saznati" class="nav-link" data-scroll-target="#odredite-što-želite-saznati">Odredite što želite saznati</a></li>
   <li><a href="#kako-jezični-model-oblikuje-odgovor" id="toc-kako-jezični-model-oblikuje-odgovor" class="nav-link" data-scroll-target="#kako-jezični-model-oblikuje-odgovor">Kako jezični model oblikuje odgovor</a></li>
   <li><a href="#tri-vrste-uvjerljive-pogreške" id="toc-tri-vrste-uvjerljive-pogreške" class="nav-link" data-scroll-target="#tri-vrste-uvjerljive-pogreške">Tri vrste uvjerljive pogreške</a></li>
   <li><a href="#birajte-mogućnost-a-zatim-alat" id="toc-birajte-mogućnost-a-zatim-alat" class="nav-link" data-scroll-target="#birajte-mogućnost-a-zatim-alat">Birajte mogućnost, a zatim alat</a></li>
   <li><a href="#pošten-rad-i-odgovornost" id="toc-pošten-rad-i-odgovornost" class="nav-link" data-scroll-target="#pošten-rad-i-odgovornost">Pošten rad i odgovornost</a></li>
-  <li><a href="#pokušajte-sami" id="toc-pokušajte-sami" class="nav-link" data-scroll-target="#pokušajte-sami">Pokušajte sami</a></li>
+  <li><a href="#za-samostalni-rad-nakon-radionice" id="toc-za-samostalni-rad-nakon-radionice" class="nav-link" data-scroll-target="#za-samostalni-rad-nakon-radionice">Za samostalni rad nakon radionice</a></li>
   </ul></li>
-  <li><a href="#poglavlje-12" id="toc-poglavlje-12" class="nav-link" data-scroll-target="#poglavlje-12">1.2 Pretraživanje literature s Perplexityjem</a>
+  <li><a href="#poglavlje-12" id="toc-poglavlje-12" class="nav-link" data-scroll-target="#poglavlje-12">1.2 Pronađite i provjerite izvore</a>
   <ul class="collapse">
   <li><a href="#kako-početi-pregled-literature" id="toc-kako-početi-pregled-literature" class="nav-link" data-scroll-target="#kako-početi-pregled-literature">Kako početi pregled literature</a></li>
   <li><a href="#tri-upita-koji-postupno-razjašnjavaju-temu" id="toc-tri-upita-koji-postupno-razjašnjavaju-temu" class="nav-link" data-scroll-target="#tri-upita-koji-postupno-razjašnjavaju-temu">Tri upita koji postupno razjašnjavaju temu</a></li>
@@ -201,18 +202,19 @@ window.Quarto = {
   <li><a href="#od-pronađenog-rada-do-dokaznog-zapisa" id="toc-od-pronađenog-rada-do-dokaznog-zapisa" class="nav-link" data-scroll-target="#od-pronađenog-rada-do-dokaznog-zapisa">Od pronađenog rada do dokaznog zapisa</a></li>
   <li><a href="#obrasci-za-nastavak-pretraživanja" id="toc-obrasci-za-nastavak-pretraživanja" class="nav-link" data-scroll-target="#obrasci-za-nastavak-pretraživanja">Obrasci za nastavak pretraživanja</a></li>
   <li><a href="#organizacija-i-pristup" id="toc-organizacija-i-pristup" class="nav-link" data-scroll-target="#organizacija-i-pristup">Organizacija i pristup</a></li>
-  <li><a href="#vježba-za-samostalno-čitanje" id="toc-vježba-za-samostalno-čitanje" class="nav-link" data-scroll-target="#vježba-za-samostalno-čitanje">Vježba za samostalno čitanje</a></li>
+  <li><a href="#za-samostalni-rad-nakon-radionice-1" id="toc-za-samostalni-rad-nakon-radionice-1" class="nav-link" data-scroll-target="#za-samostalni-rad-nakon-radionice-1">Za samostalni rad nakon radionice</a></li>
   </ul></li>
-  <li><a href="#poglavlje-13" id="toc-poglavlje-13" class="nav-link" data-scroll-target="#poglavlje-13">1.3 Dubinsko istraživanje s Gemini Deep Research</a>
+  <li><a href="#poglavlje-13" id="toc-poglavlje-13" class="nav-link" data-scroll-target="#poglavlje-13">1.3 Provjerite i uredite sažetak</a>
   <ul class="collapse">
-  <li><a href="#kako-pripremiti-pregled-više-izvora" id="toc-kako-pripremiti-pregled-više-izvora" class="nav-link" data-scroll-target="#kako-pripremiti-pregled-više-izvora">Kako pripremiti pregled više izvora</a></li>
+  <li><a href="#od-izvora-do-ispravljenog-sažetka" id="toc-od-izvora-do-ispravljenog-sažetka" class="nav-link" data-scroll-target="#od-izvora-do-ispravljenog-sažetka">Od izvora do ispravljenog sažetka</a></li>
+  <li><a href="#dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research" id="toc-dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research" class="nav-link" data-scroll-target="#dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research">Dodatno čitanje / pregled više izvora uz Gemini Deep Research</a></li>
   <li><a href="#istraživački-plan-je-vaš-dokument" id="toc-istraživački-plan-je-vaš-dokument" class="nav-link" data-scroll-target="#istraživački-plan-je-vaš-dokument">Istraživački plan je vaš dokument</a></li>
   <li><a href="#što-može-nedostajati-u-dugom-izvješću" id="toc-što-može-nedostajati-u-dugom-izvješću" class="nav-link" data-scroll-target="#što-može-nedostajati-u-dugom-izvješću">Što može nedostajati u dugom izvješću</a></li>
   <li><a href="#kako-provjeriti-i-preraditi-izvješće" id="toc-kako-provjeriti-i-preraditi-izvješće" class="nav-link" data-scroll-target="#kako-provjeriti-i-preraditi-izvješće">Kako provjeriti i preraditi izvješće</a></li>
   <li><a href="#povezivanje-s-nastavnim-skupom" id="toc-povezivanje-s-nastavnim-skupom" class="nav-link" data-scroll-target="#povezivanje-s-nastavnim-skupom">Povezivanje s nastavnim skupom</a></li>
-  <li><a href="#vježba-od-plana-do-provjerene-stranice" id="toc-vježba-od-plana-do-provjerene-stranice" class="nav-link" data-scroll-target="#vježba-od-plana-do-provjerene-stranice">Vježba / od plana do provjerene stranice</a></li>
+  <li><a href="#za-samostalni-rad-nakon-radionice-2" id="toc-za-samostalni-rad-nakon-radionice-2" class="nav-link" data-scroll-target="#za-samostalni-rad-nakon-radionice-2">Za samostalni rad nakon radionice</a></li>
   </ul></li>
-  <li><a href="#poglavlje-14" id="toc-poglavlje-14" class="nav-link" data-scroll-target="#poglavlje-14">1.4 Od bilješki do nacrta rada s Claudeom</a>
+  <li><a href="#poglavlje-14" id="toc-poglavlje-14" class="nav-link" data-scroll-target="#poglavlje-14">1.4 Pripremite plan analize</a>
   <ul class="collapse">
   <li><a href="#povežite-izvore-u-obrazloženje" id="toc-povežite-izvore-u-obrazloženje" class="nav-link" data-scroll-target="#povežite-izvore-u-obrazloženje">Povežite izvore u obrazloženje</a></li>
   <li><a href="#pripremite-materijale-prije-razgovora" id="toc-pripremite-materijale-prije-razgovora" class="nav-link" data-scroll-target="#pripremite-materijale-prije-razgovora">Pripremite materijale prije razgovora</a></li>
@@ -229,7 +231,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Istraživanje i strukturiranje</h1>
+<h1 class="title">Od pitanja do provjerenih izvora</h1>
 <p class="subtitle lead">Priručnik · Prvi dio · Četiri poglavlja za samostalno čitanje</p>
 </div>
 
@@ -247,15 +249,26 @@ window.Quarto = {
 </header>
 
 
-<p><a href="../booklet/index.html">O priručniku</a> · <a href="../downloads/EIZ-prirucnik.pdf">Cijeli PDF</a> · <a href="../slides/day1.html">Kratki materijal za nastavu</a></p>
+<p><a href="../booklet/index.html">O priručniku</a> · <a href="../downloads/EIZ-prirucnik.pdf">Cijeli PDF</a> · <a href="../slides/day1.html">Plan nastave za 1. dan</a></p>
 <p>Čitajte od početne ideje prema provjerenim izvorima i planu. Primjeri upita su predlošci za prilagodbu. Odgovori alata mogu se razlikovati, pa svaki provjerite prema izvorima i zahtjevima zadatka. Dokumentacija alata provjerena je 26. listopada 2026.</p>
 <section id="poglavlje-11" class="level2">
-<h2 class="anchored" data-anchor-id="poglavlje-11">1.1 Kako razumjeti AI asistenta</h2>
+<h2 class="anchored" data-anchor-id="poglavlje-11">1.1 Postavite istraživačko pitanje</h2>
+<p><strong>Nastavnik pokazuje · 10 minuta.</strong> Pokažite kako od teme „inflacija u Hrvatskoj” nastaje pitanje o razdoblju 2015.–2024. Zatražite AI prijedlog i provjerite jednu tvrdnju u izvoru.</p>
+<p><strong>Studenti rade · 25 minuta.</strong> Napišite svoje pitanje, opišite dvije varijable i sastavite tri provjere AI odgovora. Zabilježite pravila uporabe AI-ja za zadatak.</p>
+<p><strong>Zajednička provjera · 10 minuta.</strong> Usporedite dva pitanja i objasnite kojim se podacima na njih može odgovoriti.</p>
+<p><strong>Rezultat bloka.</strong> Pitanje, opis dviju mjera i popis provjera.</p>
+<p><a href="../slides/day1.html#blok-11">Blok 1.1 u nastavi</a> · <a href="../materials/exercises/index.html#v11">Vježba 1.1 i predaja</a></p>
+<p><strong>Čitanje uz ovaj blok.</strong> Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.</p>
 <section id="od-prazne-stranice-do-istraživačkog-pitanja" class="level3">
 <h3 class="anchored" data-anchor-id="od-prazne-stranice-do-istraživačkog-pitanja">Od prazne stranice do istraživačkog pitanja</h3>
 <p>Zamislite da trebate napisati seminarski rad. Imate temu, nekoliko otvorenih kartica i bilješke iz predavanja, ali još ne znate kojim pitanjem započeti. Traženje literature, povezivanje pojmova i organiziranje bilježaka oduzimaju vrijeme prije nego što uopće počnete analizirati podatke. AI može pomoći u svakom od tih koraka, no njegov prijedlog treba provjeriti. Je li pitanje dovoljno određeno? Možete li pronaći autora i izvor? Izvršava li se skripta i podupiru li dokazi tvrdnje u odlomku?</p>
-<p>Za pretraživanje i planiranje koristit ćemo primjere iz Perplexityja, Geminija i Claudea, a za analizu programske asistente i bilježnice. Mogućnosti tih proizvoda preklapaju se. Odaberite dostupan alat i uvježbajte pronalaženje dokaza i objašnjavanje rezultata.</p>
+<p>Za pretraživanje i planiranje koristit ćemo primjere iz Perplexityja, Geminija i Claudea. Analizu provodimo u R skripti, a programske asistente i bilježnice razmatramo kao dodatne mogućnosti. Mogućnosti tih proizvoda preklapaju se. Odaberite dostupan alat i uvježbajte pronalaženje dokaza i objašnjavanje rezultata.</p>
 <p>Tijekom cijele radionice radimo s istim podacima za Hrvatsku. Pratimo ostvarenu inflaciju i odgovore potrošača o očekivanim promjenama cijena od 2015. do 2024. Imamo dvije mjere i 120 mjeseci. Sve izračune možete ponoviti priloženim skriptama. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje motivacija za nastavak istraživanja. Za taj nastavak treba prikupiti medijske tekstove i izraditi indeks medijske pažnje.</p>
+</section>
+<section id="odredite-što-želite-saznati" class="level3">
+<h3 class="anchored" data-anchor-id="odredite-što-želite-saznati">Odredite što želite saznati</h3>
+<p>Zajedničko pitanje glasi „Kako su se u Hrvatskoj od 2015. do 2024. kretali ostvarena inflacija i očekivanja potrošača o promjenama cijena?” U njemu su navedeni zemlja, razdoblje i dvije mjere. Iz tog pitanja možete odrediti koje izvore i podatke trebate pronaći.</p>
+<p>U vježbi 1.1 napišite svoju formulaciju istog opisnog pitanja. Uz nju objasnite što svaka mjera predstavlja. U sljedećem bloku potražit ćete izvore koji podupiru te definicije.</p>
 </section>
 <section id="kako-jezični-model-oblikuje-odgovor" class="level3">
 <h3 class="anchored" data-anchor-id="kako-jezični-model-oblikuje-odgovor">Kako jezični model oblikuje odgovor</h3>
@@ -285,13 +298,19 @@ window.Quarto = {
 <p>Za identifikacijske podatke ispitanika, povjerljive intervjue i neobjavljene materijale koristite uslugu koju je ustanova odobrila za tu vrstu podataka. Prije unosa pribavite odgovarajuće dopuštenje. Na ovoj radionici koristimo javne službene podatke za cijelu zemlju.</p>
 <p>U zapis uporabe unesite datum, alat i zadatak. Dodajte što ste prihvatili i kako ste to provjerili. Primjerice, „AI je predložio oznake osi. Usporedio/la sam ih s rječnikom podataka i promijenio/la oznaku očekivanja iz postotka u saldo.” Uz tvrdnju o podacima ili rezultatima navedite izvor. Bilješka o uporabi alata objašnjava kako ste radili.</p>
 </section>
-<section id="pokušajte-sami" class="level3">
-<h3 class="anchored" data-anchor-id="pokušajte-sami">Pokušajte sami</h3>
+<section id="za-samostalni-rad-nakon-radionice" class="level3">
+<h3 class="anchored" data-anchor-id="za-samostalni-rad-nakon-radionice">Za samostalni rad nakon radionice</h3>
 <p>Napišite jedno pitanje o inflaciji i unaprijed odredite što bi bio provjerljiv odgovor. Zatim zatražite prijedlog od dostupnog asistenta. Posebno označite tvrdnje koje trebaju izvor, prijedloge postupka i pitanja na koja još nema odgovora. Provjerite jednu tvrdnju u izvornom dokumentu i jednu brojku u podacima. Na kraju vlastitim riječima objasnite što vam je model olakšao i koju ste odluku ipak morali donijeti sami.</p>
 </section>
 </section>
 <section id="poglavlje-12" class="level2">
-<h2 class="anchored" data-anchor-id="poglavlje-12">1.2 Pretraživanje literature s Perplexityjem</h2>
+<h2 class="anchored" data-anchor-id="poglavlje-12">1.2 Pronađite i provjerite izvore</h2>
+<p><strong>Nastavnik pokazuje · 10 minuta.</strong> Pokažite pretragu jednim preciznim upitom, otvorite izvor i pronađite odlomak koji podupire tvrdnju. Ispunite jedan dokazni zapis.</p>
+<p><strong>Studenti rade · 25 minuta.</strong> Provjerite tri početna izvora i za svaki zapišite tvrdnju, točan odjeljak, vlastiti sažetak i ograničenje.</p>
+<p><strong>Zajednička provjera · 10 minuta.</strong> Usporedite jedan studentski zapis s izvornim odlomkom.</p>
+<p><strong>Rezultat bloka.</strong> Tri provjerena zapisa o izvorima.</p>
+<p><a href="../slides/day1.html#blok-12">Blok 1.2 u nastavi</a> · <a href="../materials/exercises/index.html#v12">Vježba 1.2 i predaja</a></p>
+<p><strong>Čitanje uz ovaj blok.</strong> Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.</p>
 <section id="kako-početi-pregled-literature" class="level3">
 <h3 class="anchored" data-anchor-id="kako-početi-pregled-literature">Kako početi pregled literature</h3>
 <p>Pri traženju literature za seminarski rad lako je otvoriti više radova nego što ih stignete pažljivo pročitati. Dio rezultata nije dostupan bez pretplate, dio se ne odnosi na temu, a bilješke se brzo pomiješaju. AI pretraživanje može pomoći u početnom snalaženju, predložiti pojmove, sažeti pronađene stranice i povezati tvrdnje s izvorima.</p>
@@ -343,19 +362,30 @@ window.Quarto = {
 <p>Perplexityjevi <a href="https://hub-prod.perplexity.ai/hub/faq/what-are-spaces">Spaces</a> služe organiziranju razgovora i materijala po temama. Za nastavni zadatak korisno je odvojiti provjerene bilješke od početnih odgovora. Zajednički prostor olakšava suradnju. Uz njega vodite vlastitu bibliografiju i zabilježite koje ste izvore provjerili.</p>
 <p>Filtri izvora i nazivi načina pretraživanja mogu se mijenjati. Za svaki rad provjerite status recenzije kod izdavača. Za sustavni pregled unaprijed opišite baze, pojmove za pretragu i pravila odabira radova. Za ovu radionicu radimo ograničenu, dokumentiranu početnu pretragu.</p>
 </section>
-<section id="vježba-za-samostalno-čitanje" class="level3">
-<h3 class="anchored" data-anchor-id="vježba-za-samostalno-čitanje">Vježba za samostalno čitanje</h3>
+<section id="za-samostalni-rad-nakon-radionice-1" class="level3">
+<h3 class="anchored" data-anchor-id="za-samostalni-rad-nakon-radionice-1">Za samostalni rad nakon radionice</h3>
 <p>Odaberite pitanje iz radionice ili vlastitu temu. Sastavite tri upita s rastućom preciznošću, izdvojite pet kandidata i detaljno provjerite tri. Za svaki ispunite dokazni zapis. Zapišite i jedan odbačeni izvor te razlog odbijanja. Moguće teme su očekivanja i inflacija, digitalizacija poduzeća, nejednakost ili učinci fiskalnih mjera. Pitanje postavite tako da odgovor odredite na temelju prikupljenih dokaza.</p>
 <p>Usporedite početni AI sažetak s vlastitim bilješkama. Koju ste tvrdnju suzili? Koji je izvor bio relevantan, ali nedostupan? Što još nedostaje? Uz završni popis obrazložite zašto ste odabrali baš te izvore. Ako nemate pristup AI pretrazi, isti postupak provedite ručno s početnim izvorima radionice.</p>
 </section>
 </section>
 <section id="poglavlje-13" class="level2">
-<h2 class="anchored" data-anchor-id="poglavlje-13">1.3 Dubinsko istraživanje s Gemini Deep Research</h2>
-<section id="kako-pripremiti-pregled-više-izvora" class="level3">
-<h3 class="anchored" data-anchor-id="kako-pripremiti-pregled-više-izvora">Kako pripremiti pregled više izvora</h3>
+<h2 class="anchored" data-anchor-id="poglavlje-13">1.3 Provjerite i uredite sažetak</h2>
+<p><strong>Nastavnik pokazuje · 10 minuta.</strong> Otvorite pripremljeni pogrešan sažetak. Pokažite kako tvrdnju o saldu uspoređujete s definicijom mjere i napišite jednu ispravnu rečenicu.</p>
+<p><strong>Studenti rade · 25 minuta.</strong> Označite najmanje četiri problema, provjerite ih u izvorima i napišite ispravak od 80–120 riječi.</p>
+<p><strong>Zajednička provjera · 10 minuta.</strong> Usporedite početnu i ispravljenu tvrdnju te objasnite promjenu značenja.</p>
+<p><strong>Rezultat bloka.</strong> Označen izvorni sažetak i vlastiti ispravak.</p>
+<p><a href="../slides/day1.html#blok-13">Blok 1.3 u nastavi</a> · <a href="../materials/exercises/index.html#v13">Vježba 1.3 i predaja</a></p>
+<p><strong>Čitanje uz ovaj blok.</strong> Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.</p>
+<section id="od-izvora-do-ispravljenog-sažetka" class="level3">
+<h3 class="anchored" data-anchor-id="od-izvora-do-ispravljenog-sažetka">Od izvora do ispravljenog sažetka</h3>
+<p>Otvorite tri zapisa iz vježbe 1.2 i pripremljeni pogrešan sažetak. Za svaku rečenicu utvrdite što tvrdi, na koji se izvor oslanja i koju mjeru opisuje. Primjerice, saldo od 20 izražen je u bodovima salda. Tu definiciju unesite u ispravljenu rečenicu.</p>
+<p>Označite najmanje četiri problema. Uz svaki zapišite razlog i izvor, zatim napišite ispravak od 80–120 riječi. Dodajte dvije rečenice o izostavljenim objašnjenjima. Provjerene formulacije i otvorena pitanja iskoristit ćete u planu analize iz vježbe 1.4.</p>
+</section>
+<section id="dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research" class="level3">
+<h3 class="anchored" data-anchor-id="dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research">Dodatno čitanje / pregled više izvora uz Gemini Deep Research</h3>
 <p>Kratak odgovor može pomoći pri traženju pojma ili pojedinog rada. Za usporedbu teorijskih objašnjenja i podataka iz više studija treba pripremiti pregled literature. Istraživački način rada u AI alatu može planirati više pretraga, prikupiti izvore i predložiti njihov zajednički sažetak.</p>
 <p>Razlika je slična onoj između kratkog pitanja vodiču i naručivanja opširnog izvješća. Isti alat može nuditi oba načina rada. Kvalitetu izvješća procijenite prema pokrivenosti teme i točnosti tvrdnji u odnosu na izvore.</p>
-<p>Postupak ćemo pokazati na primjeru Gemini Deep Researcha. Prema <a href="https://support.google.com/gemini/answer/15719111?hl=en">Googleovim uputama</a>, možete odabrati izvore, priložiti materijale i urediti predloženi plan prije pokretanja istraživanja. Dostupnost povezanih izvora ovisi o računu i postavkama. Sučelje se može promijeniti do sljedeće radionice, pa provjerite upute za račun na kojem radite.</p>
+<p>Za samostalni nastavak razmotrite primjer Gemini Deep Researcha. Prema <a href="https://support.google.com/gemini/answer/15719111?hl=en">Googleovim uputama</a>, možete odabrati izvore, priložiti materijale i urediti predloženi plan prije pokretanja istraživanja. Dostupnost povezanih izvora ovisi o računu i postavkama. Sučelje se može promijeniti do sljedeće radionice, pa provjerite upute za račun na kojem radite.</p>
 </section>
 <section id="istraživački-plan-je-vaš-dokument" class="level3">
 <h3 class="anchored" data-anchor-id="istraživački-plan-je-vaš-dokument">Istraživački plan je vaš dokument</h3>
@@ -390,14 +420,20 @@ window.Quarto = {
 <p>Za osnovni zadatak proučite HICP i anketni saldo, odredite opisno pitanje i odlučite što ćete prikazati. U početnom pregledu objasnite što svaka mjera znači, koja su njezina ograničenja i kako možete usporediti dvije serije.</p>
 <p>Nakon čitanja metodologije možete odlučiti prikazati dvije odvojene serije sa zajedničkom vremenskom osi, izračunati godišnje sažetke i opisati korelaciju vrijednosti iz istog mjeseca. Panel-model, analiza medijskih tekstova i predviđanje inflacije mogu biti zasebni nastavci istraživanja. Za svako proširenje prije kodiranja odredite koji dodatni podaci i metodološko obrazloženje nedostaju.</p>
 </section>
-<section id="vježba-od-plana-do-provjerene-stranice" class="level3">
-<h3 class="anchored" data-anchor-id="vježba-od-plana-do-provjerene-stranice">Vježba / od plana do provjerene stranice</h3>
+<section id="za-samostalni-rad-nakon-radionice-2" class="level3">
+<h3 class="anchored" data-anchor-id="za-samostalni-rad-nakon-radionice-2">Za samostalni rad nakon radionice</h3>
 <p>Sastavite plan za vlastito pitanje i napišite što bi vas navelo da ga promijenite. Ako imate pristup istraživačkom načinu rada, pokrenite ga. Dok čekate, provjerite jedan već pronađeni izvor. Odvojite dovoljno vremena za čitanje i provjeru izvora.</p>
 <p>Kada izvješće stigne, provjerite tri ključne tvrdnje, zabilježite jednu prazninu i napišite vlastiti sažetak na jednoj stranici. Razdvojite potvrđeno, vjerojatno i zasad nepoznato. Ako nemate pristup alatu, napravite isti plan i sažetak iz tri početna izvora radionice. Uz sažetak sačuvajte bilješke iz kojih je vidljivo na što se oslanjate.</p>
 </section>
 </section>
 <section id="poglavlje-14" class="level2">
-<h2 class="anchored" data-anchor-id="poglavlje-14">1.4 Od bilješki do nacrta rada s Claudeom</h2>
+<h2 class="anchored" data-anchor-id="poglavlje-14">1.4 Pripremite plan analize</h2>
+<p><strong>Nastavnik pokazuje · 10 minuta.</strong> Otvorite predložak plana i povežite pitanje s uzorkom, jedinicama i planiranim prikazima. Pokažite kako od AI-ja tražite komentar izvedivosti.</p>
+<p><strong>Studenti rade · 25 minuta.</strong> Sastavite plan na jednoj stranici. Navedite 120 mjeseci, dvije mjere, provjere podataka, godišnje prosjeke, grafove i granice zaključka.</p>
+<p><strong>Zajednička provjera · 10 minuta.</strong> Objasnite jednu odluku iz plana i podatke na kojima se temelji.</p>
+<p><strong>Rezultat bloka.</strong> Plan analize koji ćete provesti drugoga dana.</p>
+<p><a href="../slides/day1.html#blok-14">Blok 1.4 u nastavi</a> · <a href="../materials/exercises/index.html#v14">Vježba 1.4 i predaja</a></p>
+<p><strong>Čitanje uz ovaj blok.</strong> Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.</p>
 <section id="povežite-izvore-u-obrazloženje" class="level3">
 <h3 class="anchored" data-anchor-id="povežite-izvore-u-obrazloženje">Povežite izvore u obrazloženje</h3>
 <p>Nakon pretrage imate izvore, provjerene tvrdnje i otvorena pitanja. Sada treba odlučiti kojim ćete ih redoslijedom objasniti čitatelju i kako se zajedno odnose na vaše istraživačko pitanje.</p>

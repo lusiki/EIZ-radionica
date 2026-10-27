@@ -52,6 +52,14 @@ zasebno. Lokalni ZIP treba pripremiti prije provjere poveznice za preuzimanje.
 Za polaznički rad
 bez punog builda dovoljan je `source("code/starter.R", encoding = "UTF-8")`.
 
+## Kako su materijali povezani
+
+Svaki od osam blokova ima isti broj i naslov na stranici dana, u priručniku
+i u vježbama. Stranice dana opisuju demonstraciju, studentski rad i zajedničku
+provjeru. Priručnik objašnjava postupak, a vježba navodi ulaze, korake i predaju.
+Plan iz vježbe 1.4 povezuje oba dana. Pregled poveznica je u
+[priručniku](booklet/index.qmd#osam-povezanih-blokova).
+
 ## Materijali
 
 - [Početak](admin/prerequisites.qmd), [raspored](admin/workshop_overview.qmd)

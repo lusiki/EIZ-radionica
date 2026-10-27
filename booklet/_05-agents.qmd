@@ -1,9 +1,76 @@
-## 2.1 Agentsko kodiranje i provjerljiva analiza {#poglavlje-21}
+## 2.1 Upoznajte i provjerite podatke {#poglavlje-21}
 
-### Od prijedloga koda do izvršavanja zadatka
+**Nastavnik pokazuje · 10 minuta.** Otvorite projekt u Positronu i učitajte CSV pomoću početne skripte. Pokažite jedan redak, rječnik podataka i provjeru broja i raspona mjeseci.
 
-Prvoga dana istraživačko ste pitanje povezali s izvorima i podacima.
-Drugoga dana taj plan treba pretvoriti u postupak. Programska pomoć može
+**Studenti rade · 25 minuta.** Provjerite 120 različitih mjeseci, praznine, raspon vrijednosti i jedinice. Zapišite naredbe i rezultate u predložak za provjeru podataka.
+
+**Zajednička provjera · 10 minuta.** Objasnite značenje jedne vrijednosti i pokažite odgovarajuću provjeru u skripti.
+
+**Rezultat bloka.** Ispunjena provjera podataka.
+
+[Blok 2.1 u nastavi](../slides/day2.qmd#blok-21) · [Vježba 2.1 i predaja](../materials/exercises/index.qmd#v21)
+
+**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
+
+### Od plana do prvog retka podataka
+
+Otvorite plan iz vježbe 1.4, rječnik podataka i `code/starter.R`.
+Prvoga dana odredili ste pitanje i mjere. Sada provjerite sadrži li
+tablica očekivane podatke. U Positronu otvorite mapu projekta, pokrenite
+učitavanje CSV-a i pregledajte prve retke.
+
+U vježbi 2.1 bilježite naredbe i rezultate provjere. Taj zapis prati
+vašu skriptu kroz sljedeće zadatke. Nakon provjere podataka prelazite
+na godišnje prosjeke u poglavlju 2.2.
+
+### Što sadrži naš skup podataka
+
+Jedan redak naše tablice predstavlja mjesec u Hrvatskoj. Ključ `month`
+povezuje mjesece, `hicp_yoy_pct` predstavlja godišnju stopu promjene HICP-a,
+a `expectations_balance` kvalitativni anketni saldo. Oznaka „monthly” opisuje mjesečnu učestalost podataka. Podatak se objavljuje mjesečno, a stopa uspoređuje cijene s istim
+mjesecom prethodne godine.
+
+Prije analize potvrdite 120 uzastopnih mjeseci, od siječnja 2015. do
+prosinca 2024. Provjerite ima li dvostrukih zapisa, praznina i neočekivanih
+vrijednosti. Usporedite nekoliko vrijednosti s izvornim JSON datotekama.
+U datoteci s podacima o preuzimanju, manifestu, navedeni su upiti
+korišteni za preuzimanje i kontrolni zbrojevi za provjeru promjena datoteka.
+Za nastavu čuvamo istu kopiju podataka. Tako naknadne službene izmjene
+ne mijenjaju rezultate radionice.
+
+Vi određujete što očekujete od podataka i provjeravate to naredbama u skripti.
+Uz broj redaka provjerite i mjesece. Tablica od 120 redaka može sadržavati
+ponovljen mjesec uz prazninu za drugi mjesec. Isto vrijedi za graf koji izgleda
+glatko i uvjerljivo, a počiva na pogrešno spojenim datumima.
+
+### Provjerite vrijednosti i jedinice
+
+„Očisti podatke” preširok je zadatak. Prazno polje označava nedostajući podatak, a nula izmjerenu vrijednost.
+Visoka inflacija može biti stvarna posljedica gospodarskog šoka.
+Prije brisanja, zamjene ili transformacije treba razumjeti izvor i napisati
+pravilo. Čuvajte izvorne podatke te promjene provodite u skripti.
+
+Podaci za jednu zemlju kroz vrijeme čine vremensku seriju. Panel čini
+više jedinica, primjerice zemalja, praćenih kroz vrijeme. Naš skup
+sadrži dvije mjere za Hrvatsku.
+Ta razlika određuje koje je modele uopće smisleno razmatrati.
+
+Logaritam je definiran za pozitivne vrijednosti. Naš saldo i stopa mogu
+imati nulte ili negativne vrijednosti, pa ih u osnovnoj analizi koristimo
+u izvornim jedinicama. U modelu s logaritmiranim varijablama tumačenje
+koeficijenta ovisi o obliku jednadžbe. Za spajanje dnevnih i mjesečnih
+podataka unaprijed odredite pravilo svođenja na istu vremensku razinu.
+
+### Završite vježbu 2.1
+
+U predložak za provjeru podataka upišite broj redaka i različitih mjeseci,
+prvi i posljednji mjesec, broj nedostajućih vrijednosti te raspon i jedinicu
+svake mjere. Uz svaki nalaz sačuvajte naredbu kojom ste ga dobili.
+Objasnite jednu nultu ili negativnu vrijednost prema definiciji mjere.
+
+### Dodatno čitanje / provjera podataka uz agenta
+
+Istu provjeru podataka možete zadati programskom asistentu. Programska pomoć može
 biti dopunjavanje retka, razgovor o skripti ili agent koji čita datoteke,
 predlaže izmjene i pokreće naredbe. Ista aplikacija često nudi nekoliko tih mogućnosti.
 
@@ -15,7 +82,7 @@ Zamislite istraživačkog suradnika kojemu predajete radnu mapu. Treba mu
 reći što se smije mijenjati, koje datoteke predstavljaju izvorne podatke
 i kako izgleda prihvatljiv rezultat. „Analiziraj ovo” ostavlja previše
 prostora za proizvoljan izbor uzorka i metode. „Provjeri mjesece i jedinice,
-zatim ponovi postojeći graf” određuje provjerljiv korak.
+zatim prikaži nalaze provjere” određuje provjerljiv korak.
 
 ### Kontekst, upute i dopuštenja
 
@@ -44,128 +111,14 @@ Primjer početnog zaduženja.
 > i jedinice. Prikaži plan i nalaze provjere. Zadrži sva opažanja i početno
 > istraživačko pitanje. Svaku predloženu promjenu zasebno obrazloži.
 
-### Korak 1 / upoznajte ulazne podatke
-
-Jedan redak naše tablice predstavlja mjesec u Hrvatskoj. Ključ `month`
-povezuje mjesece, `hicp_yoy_pct` predstavlja godišnju stopu promjene HICP-a,
-a `expectations_balance` kvalitativni anketni saldo. Oznaka „monthly” opisuje mjesečnu učestalost podataka. Podatak se objavljuje mjesečno, a stopa uspoređuje cijene s istim
-mjesecom prethodne godine.
-
-Prije analize potvrdite 120 uzastopnih mjeseci, od siječnja 2015. do
-prosinca 2024. Provjerite ima li dvostrukih zapisa, praznina i neočekivanih
-vrijednosti. Usporedite nekoliko vrijednosti s izvornim JSON datotekama.
-U datoteci s podacima o preuzimanju, manifestu, navedeni su upiti
-korišteni za preuzimanje i kontrolni zbrojevi za provjeru promjena datoteka.
-Za nastavu čuvamo istu kopiju podataka. Tako naknadne službene izmjene
-ne mijenjaju rezultate radionice.
-
-Agent može napisati te provjere, ali vi određujete što očekujete i zašto.
-Uz broj redaka provjerite i mjesece. Tablica od 120 redaka može sadržavati
-ponovljen mjesec uz prazninu za drugi mjesec. Isto vrijedi za graf koji izgleda
-glatko i uvjerljivo, a počiva na pogrešno spojenim datumima.
-
-### Korak 2 / priprema bez prikrivenih odluka
-
-„Očisti podatke” preširok je zadatak. Prazno polje označava nedostajući podatak, a nula izmjerenu vrijednost.
-Visoka inflacija može biti stvarna posljedica gospodarskog šoka.
-Prije brisanja, zamjene ili transformacije treba razumjeti izvor i napisati
-pravilo. Čuvajte izvorne podatke te promjene provodite u skripti.
-
-Podaci za jednu zemlju kroz vrijeme čine vremensku seriju. Panel čini
-više jedinica, primjerice zemalja, praćenih kroz vrijeme. Naš skup
-sadrži dvije mjere za Hrvatsku.
-Ta razlika određuje koje je modele uopće smisleno razmatrati.
-
-Logaritam je definiran za pozitivne vrijednosti. Naš saldo i stopa mogu
-imati nulte ili negativne vrijednosti, pa ih u osnovnoj analizi koristimo
-u izvornim jedinicama. U modelu s logaritmiranim varijablama tumačenje
-koeficijenta ovisi o obliku jednadžbe. Za spajanje dnevnih i mjesečnih
-podataka unaprijed odredite pravilo svođenja na istu vremensku razinu.
-
-### Korak 3 / slika prije modela
-
-Dvije serije imaju različite jedinice. U radionici ih prikazujemo u
-odvojenim panelima sa zajedničkom vremenskom osi. Čitatelj vidi kada se
-promjene događaju, ali ih ne zamjenjuje za brojčano usporedive veličine.
-Dvije neovisno skalirane y-osi mogu proizvesti privid preklapanja linija
-ovisno o odabranom rasponu. Zato za ovaj zadatak koristimo odvojene prikaze.
-
-Pogledajte razdoblja ubrzanja, usporavanja i promjena raspona. Opisujte
-ono što slika pokazuje, a moguća objašnjenja navedite kao pitanja za
-daljnje istraživanje. Za provjeru strukturnog loma ili smjera uzročnosti
-potrebni su zaseban postupak i jasno navedene pretpostavke.
-
-Pearsonova korelacija sažima linearnu povezanost parova opažanja. U
-zamrznutom uzorku cijelog razdoblja iznosi približno 0,6985. U dijelu
-2015.–2019. približno 0,8279, a u dijelu 2020.–2024. približno 0,5342.
-Te su vrijednosti spremljene u `results/correlations.csv`. Razlika
-među podrazdobljima pokazuje da sažetak ovisi o promatranom razdoblju.
-Za test razlike korelacija ili promjene uzročnog mehanizma trebalo bi
-provesti zasebnu analizu.
-
-### Korak 4 / što regresija i HAC mogu pokazati
-
-Osnovni zadatak završava opisnim rezultatima. U naprednom dijelu
-možete razmotriti OLS regresiju. Jednostavan model s konstantom glasi
-
-$$y_t = \alpha + \beta x_t + u_t.$$
-
-U nastavnom dodatku $y_t$ je ostvarena inflacija, a $x_t$ saldo očekivanja
-u istom mjesecu. Koeficijent opisuje linearnu povezanost u tom modelu.
-Anketno pitanje gleda unaprijed, a ova regresija uspoređuje vrijednosti
-iz istog mjeseca. Za prognozu treba uskladiti cilj, horizont i dostupnost
-informacija u trenutku predviđanja.
-
-Konvencionalne standardne pogreške OLS-a počivaju na pretpostavkama o
-greškama. Kod heteroskedastičnosti ili serijske korelacije mogu biti
-neprimjerene. Odstupanje može ići u oba smjera. HAC procjena
-kovarijacijske matrice, primjerice Newey-West, mijenja procjenu
-nesigurnosti uz odgovarajuće uvjete. OLS koeficijenti ostaju isti. Endogenost, izostavljene varijable,
-kvalitetu mjerenja i nestacionarnost treba zasebno provjeriti i riješiti
-odgovarajućim istraživačkim postupkom.
-
-U [`sandwich::NeweyWest`](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html)
-važni su odabir odmaka, prethodno izbjeljivanje i korekcija za veličinu
-uzorka. Naš dodatak navodi postavke izričito, `lag = 12`,
-`prewhite = FALSE`, `adjust = TRUE`. U ovom primjeru koristimo dvanaest odmaka jer radimo s mjesečnim
-podacima. Broj odmaka prilagodite pitanju i svojstvima serije. Procjena i
-interpretacija traže pregled dinamike i osjetljivosti na razumne postavke.
-
-P-vrijednost se odnosi na kompatibilnost rezultata s nul-hipotezom i
-pretpostavkama modela, pod tim uvjetima izražava vjerojatnost statistike
-barem toliko ekstremne koliko je opažena. Uz p-vrijednost prikažite procjenu učinka, njegovu nesigurnost
-i pretpostavke analize. [ASA-ina izjava](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf)
-objašnjava kako p-vrijednost tumačiti zajedno s ostalim dokazima.
-Prikladnost dizajna prethodi tumačenju p-vrijednosti.
-
-### Korak 5 / osjetljivost i granice proširenja
-
-U naprednom radu možete usporediti više opravdanih načina analize
-i provjeriti koliko se rezultati mijenjaju. Takav se pristup naziva
-multiverzumom modela, a rezultate je moguće prikazati specifikacijskom
-krivuljom. Za svaki uključeni model objasnite zašto odgovara pitanju. Dodavanje svih kombinacija koje računalo
-može generirati uključilo bi i modele neprikladne za vaše pitanje.
-
-Prije pregleda rezultata zapišite koje ćete odluke usporediti i zašto.
-Primjerice, možete opisno usporediti ista razdoblja kao u referentnim
-rezultatima, razmotriti odmake koje opravdava pitanje ili alternativno
-mjerenje kada je dostupno. Prikažite sve planirane rezultate i objasnite
-izostavljene specifikacije. Uključite i rezultate s drukčijim predznakom ili većom p-vrijednošću.
-
-Za medijski nastavak trebali biste pribaviti korpus s podrijetlom i
-uvjetima uporabe, definirati uključivanje članaka, ukloniti duplikate po
-opisanom pravilu te provjeriti mjerenje pažnje ili tona. Ručno označen
-uzorak može pomoći da provjerite koliko dobro alat razvrstava tekstove. To je zaseban projekt. Veličinu zbirke zabilježite nakon prikupljanja
-tekstova i provjere duplikata.
-
 ### Kako provjeriti rad agenta
 
 Pregledajte razliku izmjena, pročitajte ključne retke i pokrenite postupak
 od početka. Usporedite barem jedan rezultat neovisnim izračunom. Pročitajte što su testovi provjerili i zasebno ocijenite ekonomsko
 tumačenje rezultata.
 
-Kao vježbu napišite precizno zaduženje za izradu godišnjeg sažetka.
-Zahtijevajte broj mjeseci u svakoj godini, definiciju prosjeka i izvoz
-rezultata. Objasnite kako se računa prosjek dvanaest mjesečnih godišnjih stopa,
-a kako promjena godišnjeg prosjeka indeksa. Prihvatite
-kod tek kada razumijete tu razliku i možete pratiti broj od ulaza do tablice.
+### Za samostalni rad nakon radionice
+
+Zadajte agentu iste provjere koje ste već proveli u skripti.
+Usporedite njegove naredbe i rezultate s vlastitim zapisom.
+Obrazložite jednu prihvaćenu ili izmijenjenu naredbu.

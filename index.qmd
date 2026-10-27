@@ -28,6 +28,15 @@ i ponovno izračunati.
 {{< var workshop.duration >}} / hrvatski jezik / osnovni R
 :::
 
+## Kako pratiti radionicu
+
+Stranice **Dan 1** i **Dan 2** vode kroz nastavu. Uz svaki blok piše
+što nastavnik pokazuje i što studenti rade. **Vježbe** daju korake i predaju,
+a **priručnik** donosi šira objašnjenja. Isti broj i naslov povezuju sva
+tri materijala. Plan s kraja prvoga dana provodite drugoga dana.
+
+[Pregled svih osam blokova](booklet/index.qmd#osam-povezanih-blokova)
+
 ## Što ćete napraviti
 
 Pratit ćete ostvarenu inflaciju i očekivanja potrošača u Hrvatskoj kroz

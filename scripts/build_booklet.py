@@ -11,6 +11,7 @@ import re
 import shutil
 import subprocess
 from pathlib import Path
+from urllib.parse import urljoin, urlsplit, urlunsplit
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
@@ -26,6 +27,8 @@ from reportlab.platypus import (
 from reportlab.platypus.tableofcontents import TableOfContents
 
 ROOT = Path(__file__).resolve().parents[1]
+SITE_URL = re.search(r'^  site-url: (https://\S+)$',
+                     (ROOT / '_quarto.yml').read_text(encoding='utf-8'), re.M)[1]
 CHAPTERS = sorted((ROOT / "booklet").glob("_0[1-8]-*.qmd"))
 INTRO = ROOT / "booklet/_00-intro.qmd"
 OUT = ROOT / "downloads/EIZ-prirucnik.pdf"
@@ -92,6 +95,13 @@ def rich_text(nodes):
             parts.append(f'<font name="JetBrainsMono" size="8.2">{html.escape(value[1])}</font>')
         elif kind == "Link":
             url = value[2][0]
+            # Shared chapter sources use relative links for local HTML previews.
+            # The downloadable PDF opens the corresponding published page.
+            link_parts = urlsplit(url)
+            if not link_parts.scheme and not link_parts.netloc:
+                path = re.sub(r'\.qmd$', '.html', link_parts.path)
+                url = urljoin(SITE_URL.rstrip('/') + '/booklet/',
+                              urlunsplit(('', '', path, link_parts.query, link_parts.fragment)))
             if not url.startswith("https://"):
                 raise ValueError(f"Print chapter link must be external HTTPS: {url}")
             parts.append(f'<link href="{html.escape(url, quote=True)}" color="{PALETTE["concept"]}">'
@@ -207,9 +217,9 @@ def build():
     if len(CHAPTERS) != 8: raise RuntimeError("Expected exactly eight reader chapters")
     quarto = shutil.which("quarto")
     if not quarto: raise RuntimeError("Quarto is required for its bundled Pandoc")
-    sections = [INTRO.read_text(encoding="utf-8"), "# Prvi dan / istraživanje i planiranje\n"]
+    sections = [INTRO.read_text(encoding="utf-8"), "# Prvi dan / od pitanja do provjerenih izvora\n"]
     sections.extend(p.read_text(encoding="utf-8") for p in CHAPTERS[:4])
-    sections.append("# Drugi dan / kodiranje i pisanje\n")
+    sections.append("# Drugi dan / od podataka do obranjivog zaključka\n")
     sections.extend(p.read_text(encoding="utf-8") for p in CHAPTERS[4:])
     manuscript = "\n\n".join(sections)
     result = subprocess.run([quarto, "pandoc", "--from", "markdown", "--to", "json"],

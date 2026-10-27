@@ -1,4 +1,16 @@
-## 2.2 Rad u editoru / Copilot, RStudio i Positron {#poglavlje-22}
+## 2.2 Dopunite i objasnite kod {#poglavlje-22}
+
+**Nastavnik pokazuje · 10 minuta.** Pokrenite postojeći izračun iz početne skripte. Zatražite malu dopunu od AI-ja i na odabranim recima pokažite kako provjeravate prijedlog.
+
+**Studenti rade · 25 minuta.** Dodajte prosjek salda za 2022. i tablicu godišnjih prosjeka. Provjerite 12 mjeseci po godini i objasnite svaku novu naredbu.
+
+**Zajednička provjera · 10 minuta.** Usporedite jedan izračun s ručno odabranim recima i objasnite njegovu jedinicu.
+
+**Rezultat bloka.** Dopunjena skripta s objašnjenjem i zapisom provjere.
+
+[Blok 2.2 u nastavi](../slides/day2.qmd#blok-22) · [Vježba 2.2 i predaja](../materials/exercises/index.qmd#v22)
+
+**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
 
 ### Mali koraci olakšavaju učenje
 
@@ -102,6 +114,17 @@ U našem slučaju odgovarajuća je oznaka „saldo očekivanih promjena cijena�
 Navedite i da HICP predstavlja godišnju stopu promjene, kako čitatelj ne
 bi pretpostavio mjesečnu promjenu.
 
+### Završite vježbu 2.2
+
+U početnoj skripti pronađite retke koji odabiru 2022. i računaju prosjek
+HICP-a. Objasnite što svaki redak radi. Zatim dodajte prosjek salda za
+istu godinu i tablicu godišnjih prosjeka. Za svaku godinu provjerite
+dvanaest mjeseci, a jedan prosjek potvrdite zasebnim odabirom redaka.
+
+Uz izmjenu napišite kratak komentar i zabilježite način provjere.
+Spremite skriptu za blok 2.3, u kojem ćete cijelu analizu pokrenuti
+u novoj sesiji.
+
 ### Kako pronaći uzrok pogreške
 
 Kada kod ne radi, prvo pročitajte poruku i utvrdite u kojem koraku nastaje
@@ -121,7 +144,7 @@ pokretanja može prikriti nedostajući korak. Spremite skriptu, ponovno
 pokrenite R i izvodite je od početka. Taj postupak vrijedi i u RStudiju
 i u Positronu. Koristite ga u okruženju u kojem radite.
 
-### Što treba pripremiti za naprednu analizu
+### Dodatno čitanje / priprema za naprednu analizu
 
 Proširenje s Hrvatske na više zemalja traži usklađene definicije, obuhvat
 i datume. Tek tada ima smisla razmatrati panel pristup. Izbor fiksnih ili
@@ -134,7 +157,7 @@ Za takvu analizu treba više vremena od petnaestominutne početničke
 vježbe, uz mentorovu pomoć i prikladne podatke. U osnovnoj radionici
 zadržite se na maloj izmjeni koda koju možete sami objasniti.
 
-### Vježba / promjena koju možete objasniti
+### Za samostalni rad nakon radionice
 
 U `code/starter.R` odaberite jedan mali zadatak. Primjerice, poboljšajte
 oznaku grafa ili dodajte broj opažanja uz sažetak. Zatražite prijedlog,

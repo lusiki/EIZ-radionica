@@ -1,4 +1,16 @@
-## 1.4 Od bilješki do nacrta rada s Claudeom {#poglavlje-14}
+## 1.4 Pripremite plan analize {#poglavlje-14}
+
+**Nastavnik pokazuje · 10 minuta.** Otvorite predložak plana i povežite pitanje s uzorkom, jedinicama i planiranim prikazima. Pokažite kako od AI-ja tražite komentar izvedivosti.
+
+**Studenti rade · 25 minuta.** Sastavite plan na jednoj stranici. Navedite 120 mjeseci, dvije mjere, provjere podataka, godišnje prosjeke, grafove i granice zaključka.
+
+**Zajednička provjera · 10 minuta.** Objasnite jednu odluku iz plana i podatke na kojima se temelji.
+
+**Rezultat bloka.** Plan analize koji ćete provesti drugoga dana.
+
+[Blok 1.4 u nastavi](../slides/day1.qmd#blok-14) · [Vježba 1.4 i predaja](../materials/exercises/index.qmd#v14)
+
+**Čitanje uz ovaj blok.** Sljedeća objašnjenja prate zadatak iz nastave. Dijelovi označeni kao dodatno čitanje služe samostalnom nastavku.
 
 ### Povežite izvore u obrazloženje
 

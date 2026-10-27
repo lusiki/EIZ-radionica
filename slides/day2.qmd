@@ -44,7 +44,7 @@ Ne pretvaramo već izračunanu stopu HICP-a u još jednu stopu rasta.
 Ako kasnije analiziramo promjene, promjena godišnje stope mjeri se u
 postotnim bodovima. Transformacija mora odgovarati pitanju i biti dokumentirana.
 
-[Vježba 2.1, audit podataka](../materials/exercises/index.qmd#v21).
+[Vježba 2.1, provjera podataka](../materials/exercises/index.qmd#v21).
 
 ## 2.2 Kod koji možete objasniti {#blok-22}
 
@@ -79,8 +79,8 @@ demonstracija nastavnika, a nije preduvjet za polaznike.
 
 ## 2.3 Provjerite postupak iz čistog početka {#blok-23}
 
-Za reproducibilnost trebaju podaci, kod, opis okruženja i redoslijed
-pokretanja. Spremite skriptu, zatvorite prethodnu R sesiju i pokrenite je
+Da bi netko mogao ponoviti analizu, trebaju mu podaci, kod, popis
+programa i paketa te upute kojim redom pokrenuti skripte. Spremite skriptu, zatvorite prethodnu R sesiju i pokrenite je
 ponovno iz korijena projekta. Referentni postupak izričito provjerava
 jedinstvenost mjeseci, uzorak, nedostajuće vrijednosti i rezultate.
 
@@ -107,8 +107,8 @@ Pogledajte [izjavu ASA-e](https://www.amstat.org/asa/files/pdfs/p-valuestatement
 Test stacionarnosti nije automatski prekidač koji bira model. Panel-metode
 nisu primjenjive samo zato što imamo više mjeseci jedne zemlje.
 
-Bilježnica i skripta mogu biti reproducibilne ako je dokumentiran cijeli
-postupak i ako se izvršavaju od početka. U osnovnom dijelu svi radimo u skripti. [Vježba 2.3](../materials/exercises/index.qmd#v23)
+Analizu možete ponoviti iz bilježnice ili skripte ako su svi koraci
+zapisani i mogu se pokrenuti od početka. U osnovnom dijelu svi radimo u skripti. [Vježba 2.3](../materials/exercises/index.qmd#v23)
 traži popravak namjerno pogrešnog koda, a zatim čisto ponovno izvođenje.
 
 ## 2.4 Napišite samo ono što ste provjerili {#blok-24}
@@ -144,4 +144,4 @@ ekonomske politike koju analiza ne podupire.
 Predajte pitanje, tri zapisa o izvorima, skriptu koja se izvršava od početka,
 jedan graf ili tablicu, tekst od približno 200 riječi i zapis uporabe AI-ja.
 [Rubrika](../materials/rubric.qmd) pokazuje kako se vrednuju dokaz, metoda,
-reproducibilnost, tumačenje i transparentnost.
+ponovljivost postupka, tumačenje i jasno navođenje načina rada.

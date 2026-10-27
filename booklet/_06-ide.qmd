@@ -2,9 +2,9 @@
 
 ### Mali koraci olakšavaju učenje
 
-Agentsko izvršavanje korisno je kada znate koji postupak želite ostvariti.
-Tijekom učenja često je bolje stati nakon malog koraka, pročitati tablicu,
-ispitati jednu varijablu i objasniti jednu transformaciju. Razvojno
+Agent može obaviti zadatak kada mu jasno kažete što treba napraviti.
+Dok učite, radite korak po korak. Učitajte tablicu, pregledajte jednu
+varijablu i objasnite što se promijenilo nakon svake naredbe. Razvojno
 okruženje, odnosno IDE, okuplja editor, konzolu i prikaz rezultata. AI
 asistent u njemu može dopuniti kod ili objasniti pogrešku dok vi pratite
 što se izvršava.
@@ -37,21 +37,21 @@ Databot. Stare upute o sučelju mogu se odnositi na stariji proizvod.
 Provjerite instaliranu verziju i odgovarajuće upute. Ne pretpostavljajte
 da se dostupni modeli, naredbe i dozvole podudaraju u svakoj instalaciji.
 
-Izbor se može svesti na praktična pitanja, u kojem okruženju znate
-otvoriti projekt, kako vidite izvršeni kod, možete li ponovno pokrenuti
-sve od početka i gdje završavaju izlazne datoteke? U svakom okruženju ostaju iste provjere podataka i postupka. Sama
+Odaberite okruženje u kojem znate otvoriti projekt, pregledati kod
+i pronaći spremljene rezultate. Provjerite možete li sve pokrenuti
+od početka. U svakom okruženju ostaju iste provjere podataka i postupka. Sama
 promjena editora ne čini analizu valjanijom.
 
 ### Tri vrste pomoći koje treba razlikovati
 
-Linijsko dopunjavanje predlaže nastavak uz kursor. Korisno je za
-ponavljajuću sintaksu i male funkcije. Provjerite nazive stupaca, argumente
-i smjer filtra. Prijedlog koji je sintaktički točan može koristiti
+Dopunjavanje koda predlaže nastavak retka na mjestu gdje pišete.
+Pomaže pri ponavljanju sličnih naredbi i pisanju malih funkcija. Provjerite nazive stupaca, argumente
+i smjer filtra. Kod koji se pokrene bez pogreške može koristiti
 varijablu iz nekog drugog projekta ili pretpostaviti pogrešnu jedinicu.
 
 Razgovor o kodu služi objašnjenjima i usmjerenim pitanjima. Umjesto
 „popravi sve” navedite poruku o pogrešci, relevantan dio skripte i
-očekivani ishod. Tražite objašnjenje uzroka, a zatim najmanju promjenu
+očekivani rezultat. Tražite objašnjenje uzroka, a zatim najmanju promjenu
 koja ga rješava. Nemojte izostaviti upozorenje samo zato što se graf ipak
 prikazao.
 
@@ -99,7 +99,7 @@ možete urediti naslove i broj decimala. Uredna tablica ne uklanja problem
 ako su u istoj koloni pomiješane stope i indeksi.
 
 Za godišnji prosjek napišite pravilo prije koda, grupiramo prema godini,
-očekujemo dvanaest mjeseci i prosječno računamo mjesečne godišnje stope.
+očekujemo dvanaest mjeseci i računamo prosjek mjesečnih godišnjih stopa.
 To nije nova mjera godišnje promjene prosječnog indeksa. Asistent neka
 objasni svaki argument i provjeri `n_months` prije sažimanja.
 
@@ -129,7 +129,7 @@ pokretanja može prikriti nedostajući korak. Spremite skriptu, ponovno
 pokrenite R i izvodite je od početka. Taj postupak vrijedi i u RStudiju
 i u Positronu. Nije svojstvo samo jednog editora.
 
-### Napredni koraci imaju preduvjete
+### Što treba pripremiti za naprednu analizu
 
 Proširenje s Hrvatske na više zemalja traži usklađene definicije, obuhvat
 i datume. Tek tada ima smisla razmatrati panel pristup. Izbor fiksnih ili

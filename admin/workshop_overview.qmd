@@ -10,7 +10,7 @@ od početka susreta. Termin nove izvedbe potvrđuje organizator.
 
 | Vrijeme | Dan 1 | Dan 2 |
 |---|---|---|
-| 00:00–00:45 | 1.1 Pitanje i granice uporabe AI-ja | 2.1 Audit podataka |
+| 00:00–00:45 | 1.1 Pitanje i granice uporabe AI-ja | 2.1 Provjera podataka |
 | 00:45–01:30 | 1.2 Tri provjerena izvora | 2.2 Objašnjiva izmjena koda |
 | 01:30–01:45 | Stanka | Stanka |
 | 01:45–02:30 | 1.3 Provjera sažetka | 2.3 Popravak i čisto izvođenje |

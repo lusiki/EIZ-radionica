@@ -1,4 +1,4 @@
-# Audit podataka
+# Provjera podataka
 
 - Putanja i izvor.
 - Datum preuzimanja izvora.

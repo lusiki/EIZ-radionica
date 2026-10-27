@@ -1,4 +1,4 @@
-## 2.3 Bilježnice, eksploracija i reproducibilnost {#poglavlje-23}
+## 2.3 Bilježnice, početni pregled podataka i ponovljivost postupka {#poglavlje-23}
 
 ### Istraživački dnevnik koji izvršava kod
 
@@ -23,9 +23,9 @@ u pozadini pojedinog proizvoda.
 Bilježnicu možete predati kao završni istraživački dokument ako sadrži
 sav potreban kod, opis ulaza i okruženja te se može izvršiti pravilnim
 redom. Iste uvjete treba zadovoljiti i skripta u repozitoriju.
-Reproducibilnost provjeravate ponovnim izvođenjem spremljenog postupka.
+Ponovljivost postupka provjeravate ponovnim izvođenjem spremljenog postupka.
 
-### Pet pitanja za eksploraciju
+### Pet pitanja za početni pregled podataka
 
 Koristite istih 120 mjeseci za Hrvatsku. Tako možete usporediti rad
 u bilježnici s radom u skripti na već poznatim podacima.
@@ -54,7 +54,7 @@ vremenski odmak, napišite koju varijablu pomičete, u kojem smjeru i zašto.
 Nemojte iskušavati odmake dok ne dobijete najveći koeficijent i prikazati
 ga kao jedini rezultat.
 
-Peto pitanje, što je sljedeće istraživačko pitanje? Eksploracija može
+Peto pitanje, što je sljedeće istraživačko pitanje? Početni pregled podataka može
 otvoriti hipotezu o razlikama između razdoblja, ali ne daje automatski
 njezinu potvrdu. Zapišite kada je ideja nastala i kakvi su dodatni podaci
 ili dizajn potrebni. Za AI prijedlog da dodate medijski ton morali biste prikupiti nove
@@ -78,7 +78,7 @@ Isti problem postoji u interaktivnoj R konzoli. Objekt iz jučerašnje
 sesije može omogućiti današnjoj nepotpunoj skripti da radi. Zato spremljeni postupak pokrenite od početka s poznatim ulaznim
 podacima i provjerite dobivene rezultate.
 
-### Reproducirati analizu nije isto što i ponoviti prompt
+### Kako ponovno dobiti isti rezultat
 
 Ako sutra pošaljete isti upit modelu, može nastati drukčiji kod. Model,
 postavke, dostupni alati ili izvori također se mogu promijeniti. Za
@@ -117,8 +117,8 @@ zamrznuti skup nema praznina i takva transformacija nije dio plana.”
 Agentu možete zadati ograničen posao nad više datoteka. U editoru je
 lakše pratiti male promjene koda dok učite, dok bilježnica drži pitanje,
 kod i komentar na jednom mjestu. Sve
-tri mogućnosti mogu biti transparentne ili nepregledne, ovisno o načinu
-uporabe. Ni jedna nema zajamčenu razinu kontrole ili reproducibilnosti.
+tri načina rada mogu biti pregledna ako čuvate kod i bilježite odluke.
+U svakom trebate provjeriti može li se analiza ponovno pokrenuti.
 
 Umjesto rangiranja proizvoda, usporedite isti mali zadatak u dvama
 okruženjima, koliko vam treba vremena do **provjerenog** rezultata,
@@ -128,12 +128,12 @@ do koda, dobitak može nestati pri pisanju završnog rada.
 
 ### Vježba / ponovno izvođenje bez razgovora
 
-Napravite kratak eksplorativni dokument s pet pitanja iz ovog poglavlja.
+Napišite kratak pregled podataka s pet pitanja iz ovog poglavlja.
 Spremite prihvaćeni kod, ponovno pokrenite okruženje i izvedite ga od
 početka. Usporedite broj mjeseci i korelaciju s referentnim datotekama.
 Zatim dajte kolegi postupak bez svoje otvorene sesije i usmenih dopuna.
 Zabilježite što mu je nedostajalo.
 
-Vježba završava kratkim odgovorom na dva pitanja, što se može ponoviti
-iz spremljenih datoteka i što još ovisi o vama ili vanjskoj usluzi?
+Na kraju napišite što kolega može ponoviti iz spremljenih datoteka,
+a za što još treba vašu pomoć ili pristup vanjskoj usluzi.
 Preostale ovisnosti navedite u uputama uz predanu analizu.

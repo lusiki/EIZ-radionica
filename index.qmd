@@ -32,15 +32,15 @@ i ponovno izračunati.
 
 Pratit ćete ostvarenu inflaciju i očekivanja potrošača u Hrvatskoj kroz
 {{< var case.rows >}} mjeseci. Provjerit ćete izvore i AI sažetak,
-pokrenuti analizu i napisati što ste utvrdili i gdje su granice zaključka. U osnovnom
+pokrenuti analizu i napisati što rezultati pokazuju, a što iz njih ne možete zaključiti. U osnovnom
 dijelu nisu potrebni plaćeni AI alati.
 
 ::: {.step-links}
 ::: {.step-link}
 ## 01 / Od pitanja do izvora
 
-Naučite razlikovati uvjerljiv odgovor od potvrđene tvrdnje. Završite dan
-s tri provjerena izvora i planom analize.
+Provjerit ćete jesu li tvrdnje u AI odgovoru točne. Do kraja dana
+imat ćete tri provjerena izvora i plan analize.
 
 [Materijal za prvi dan](slides/day1.qmd)
 :::
@@ -57,8 +57,8 @@ Predajte rezultat koji se može ponovno izračunati.
 ## Jedan slučaj, dvije različite mjere
 
 Ostvarena inflacija mjeri promjenu cijena. Anketni saldo opisuje odgovore
-potrošača o budućim promjenama cijena. Njihovo zajedničko kretanje otvara
-istraživačko pitanje. Samo po sebi ne dokazuje uzročnost.
+potrošača o budućim promjenama cijena. Usporedit ćemo kako se te dvije mjere
+mijenjaju kroz vrijeme. Slično kretanje ne dokazuje da jedna uzrokuje drugu.
 
 [Upoznajte podatke](data/dictionary.qmd) ·
 [Pogledajte raspored](admin/workshop_overview.qmd) ·
@@ -66,8 +66,9 @@ istraživačko pitanje. Samo po sebi ne dokazuje uzročnost.
 
 ## Završni rad
 
-Jedno pitanje, tri provjerena izvora, skripta, graf ili tablica, približno
-200 riječi i zapis uporabe AI-ja.
+Predajte istraživačko pitanje, tri provjerena izvora i skriptu. Priložite
+graf ili tablicu te približno 200 riječi o rezultatu. Navedite jeste li
+koristili AI i kako ste provjerili njegove prijedloge.
 [Provjerite kriterije predaje](materials/rubric.qmd).
 
 ## Za one koji žele pročitati više

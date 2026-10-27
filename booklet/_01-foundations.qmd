@@ -15,25 +15,28 @@ Geminija i Claudea, a za analizu programske asistente i bilježnice.
 Mogućnosti tih proizvoda preklapaju se. Ne morate imati račun u svakom alatu da
 biste naučili pronaći dokaz ili objasniti rezultat.
 
-Radionicu povezuje hrvatski primjer. Promatramo mjesečnu ostvarenu inflaciju
-i anketni pokazatelj očekivanih promjena cijena od 2015. do 2024. To je
-namjerno ograničen zadatak, dvije mjere, 120 mjeseci i postupak koji možete
-ponovno izvesti. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje
-motivacija za nastavak istraživanja. Ovaj paket ne sadrži medijski korpus
+Tijekom cijele radionice radimo s istim podacima za Hrvatsku. Pratimo
+ostvarenu inflaciju i odgovore potrošača o očekivanim promjenama cijena
+od 2015. do 2024. Imamo dvije mjere i 120 mjeseci. Sve izračune možete
+ponoviti priloženim skriptama. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje
+motivacija za nastavak istraživanja. Ovaj paket ne sadrži zbirku medijskih tekstova
 ni indeks medijske pažnje i ne prikazuje rezultate takvog istraživanja.
 
 ### Kako jezični model oblikuje odgovor
 
-Veliki jezični model tijekom treniranja uči obrasce u podacima. U razgovoru
-koristi naučene parametre i dostupan kontekst kako bi oblikovao nastavak
-teksta. Tekst obrađuje u tokenima, dijelovima riječi, riječima ili drugim
-jedinicama. Broj tokena po riječi ovisi o jeziku i tokenizatoru, pa jednu
-procjenu za engleski ne treba primijeniti na hrvatski seminarski rad.
+Jezični model tijekom učenja prepoznaje obrasce u podacima. Kada mu
+postavite pitanje, koristi ono što je naučio i sadržaj razgovora kako
+bi sastavio odgovor. Tekst dijeli na manje jedinice koje se zovu tokeni.
+Token može biti dio riječi, cijela riječ ili znak. Broj tokena ovisi
+o jeziku i načinu dijeljenja teksta, pa procjena za engleski ne mora
+vrijediti za hrvatski.
 
-Pojednostavljeno, model procjenjuje raspodjelu
-$P(t_k \mid t_1, \ldots, t_{k-1}; \theta)$, vjerojatnosti mogućih sljedećih
-tokena uz prethodni kontekst i naučene parametre. Način odabira nastavka može
-uključiti uzorkovanje. **Vjerojatnost tokena nije vjerojatnost da je tvrdnja
+Model procjenjuje koji bi tokeni mogli slijediti nakon već napisanog
+teksta. To se može zapisati kao
+$P(t_k \mid t_1, \ldots, t_{k-1}; \theta)$. Oznaka `t_k` predstavlja
+sljedeći token, a grčko slovo theta ono što je model naučio tijekom treniranja.
+Model ne mora uvijek odabrati najvjerojatniji token. Izbor može uključiti
+i slučajnost. **Vjerojatnost tokena nije vjerojatnost da je tvrdnja
 istinita.** Model može proizvesti vrlo uvjerljivu rečenicu čiji se sadržaj
 ne može potvrditi.
 
@@ -41,9 +44,9 @@ Korisna je analogija s dobro načitanim suradnikom koji brzo predlaže
 formulacije. Ipak, analogija ima granice. Model nema provjerljivo osobno
 iskustvo istraživanja koje opisuje. S druge strane, aplikacija s pristupom
 alatima može stvarno otvoriti dokument, pretražiti web ili izvršiti kod.
-Zato treba razlikovati tri situacije, odgovor iz naučenih obrazaca, odgovor
-uz dohvaćene izvore i rezultat izvršenog izračuna. U svakom slučaju tražite
-trag koji odgovara vrsti tvrdnje.
+Provjerite na čemu se odgovor temelji. Model može pisati iz onoga što je
+naučio, koristiti otvorene izvore ili navesti rezultat pokrenutog koda.
+Za tvrdnju iz literature tražite izvor, a za broj podatke i izračun.
 
 Kontekstni prozor određuje koliko sadržaja model može obraditi u pojedinom
 koraku. Dug razgovor, projektna zbirka datoteka i aktivni kontekst nisu
@@ -52,7 +55,8 @@ dokumenata. Učitavanje dvadeset radova zato ne jamči da je svaka rečenica iz
 svakog rada uključena u svaki odgovor. Posebno navedite datoteku, odjeljak
 ili tablicu na koju se pitanje odnosi.
 
-Temperatura, kada je dostupna, utječe na način uzorkovanja. Ni niska
+Postavka temperature, ako je možete mijenjati, utječe na to koliko
+je izbor sljedećeg tokena raznolik. Ni niska
 temperatura ni način rada s duljim računanjem nisu potvrda istinitosti.
 Provjerite citat i rezultat. Iz odgovora ne možete pouzdano rekonstruirati
 unutarnji postupak modela. Prikaz plana ili objašnjenja također
@@ -67,8 +71,8 @@ ili u bibliografskoj bazi, a zatim pročitajte dio koji navodno podupire tvrdnju
 
 Pogrešno protumačen broj može potjecati iz stvarne tablice. Primjerice,
 vrijednost salda očekivanja 40 ne znači da potrošači očekuju inflaciju od
-40 posto. To je druga mjera, s drugom konstrukcijom i jedinicom. Provjera
-aritmetike bez provjere definicije varijable nije dovoljna.
+40 posto. Saldo se računa drukčije i ima drugu jedinicu. Uz račun provjerite
+i što broj zapravo mjeri.
 
 Kod koji radi pogrešnu stvar može se izvršiti bez upozorenja. Spajanje
 dviju tablica prema rednom broju retka umjesto prema mjesecu može povezati
@@ -87,7 +91,7 @@ Za prvo upoznavanje teme koristan je sustav koji pretražuje izvore i daje
 poveznice. Za usporedbu više pročitanih radova koristan je rad s dokumentima.
 Za izračun je potrebno okruženje koje izvršava kod i omogućuje njegov izvoz.
 Za uređivanje teksta potrebni su jasni komentari i mogućnost usporedbe
-inačica. Jedan proizvod može pokrivati nekoliko tih potreba.
+verzija. Jedan proizvod može pokrivati nekoliko tih potreba.
 
 Službena dokumentacija sada opisuje pretraživanje i istraživačke postupke
 u više aplikacija, uključujući [ChatGPT](https://learn.chatgpt.com/docs/web-search),
@@ -98,22 +102,22 @@ provjerite funkciju koju ćete koristiti, njezinu cijenu i ograničenja
 uporabe.
 
 Za usporedbu dvaju dostupnih alata pripremite isti mali zadatak, isti
-odlomak, tri ista izvora i isto pitanje. Usporedite točnost, sljedivost,
+odlomak, tri ista izvora i isto pitanje. Usporedite točnost, mogućnost provjere izvora,
 razumljivost i vrijeme potrebno za provjeru. Dulji odgovor ili više citata
 nisu sami po sebi bolji rezultat. Ako alat ne može otvoriti izvor, bilješka
 „nemam pristup punom tekstu” korisnija je od uvjerljivog nagađanja.
 
-### Integritet i odgovornost
+### Pošten rad i odgovornost
 
 Podjela uporabe AI-ja na zelenu, žutu i crvenu zonu može pomoći u
-razgovoru o riziku. Dopuštenost pojedine uporabe ipak određuju pravila kolegija. Pravopisna pomoć obično
-mijenja manje istraživačkog sadržaja od izrade cijelog argumenta. Ipak,
-ni jednu od tih uporaba ne proglašavamo univerzalno dopuštenom. Provjerite
+razgovoru o riziku. Što smijete koristiti određuju pravila kolegija. Ispravak pravopisa
+manje mijenja vaš rad nego pisanje cijelog obrazloženja. Ipak, ni jedna
+vrsta pomoći nije dopuštena u svakom zadatku. Provjerite
 upute zadatka i navedite opseg pomoći kada je to traženo.
 
 Manji rizik imaju prijedlog ključnih riječi, objašnjenje poruke o pogrešci
 i komentar jasnoće vašeg odlomka. Veću pažnju traže sažimanje nepročitanog
-rada, izbor metode, prerada argumenta i generiranje koda koji mijenja
+rada, izbor metode, prerada argumenta i pisanje koda uz AI koji mijenja
 podatke. Izmišljeni izvori, prikrivanje nedopuštene pomoći i predstavljanje
 neizvedene analize kao vlastitog rezultata nisu prihvatljiv istraživački
 postupak. Izjava o uporabi AI-ja ne ispravlja takve probleme.
@@ -121,19 +125,18 @@ postupak. Izjava o uporabi AI-ja ne ispravlja takve probleme.
 Ne unosite identifikacijske podatke ispitanika, povjerljive intervjue ili
 neobjavljene materijale u vanjsku uslugu bez odgovarajućeg dopuštenja.
 Plaćeni račun sam po sebi nije potvrda prikladnosti za te podatke. Za ovu
-radionicu dovoljan je javni skup službenih agregiranih podataka.
+radionicu dovoljan je javni skup službenih podataka koji prikazuju rezultate za cijelu zemlju.
 
-Zapis uporabe može biti jednostavan, datum, alat, zadatak, prihvaćeni
-prijedlog i način provjere. Primjerice, „AI je predložio oznake osi.
+U zapis uporabe unesite datum, alat i zadatak. Dodajte što ste prihvatili
+i kako ste to provjerili. Primjerice, „AI je predložio oznake osi.
 Usporedio/la sam ih s rječnikom podataka i promijenio/la oznaku očekivanja
-iz postotka u saldo.” Citiranje empirijske tvrdnje vodi na njezin izvor.
+iz postotka u saldo.” Uz tvrdnju o podacima ili rezultatima navedite izvor.
 Bilješka o uporabi alata objašnjava kako ste radili.
 
 ### Pokušajte sami
 
 Napišite jedno pitanje o inflaciji i unaprijed odredite što bi bio provjerljiv
-odgovor. Zatim zatražite prijedlog od dostupnog asistenta. Razdvojite rečenice
-u tri skupine, tvrdnje koje trebaju izvor, prijedloge istraživačkog postupka
+odgovor. Zatim zatražite prijedlog od dostupnog asistenta. Posebno označite tvrdnje koje trebaju izvor, prijedloge postupka
 i pitanja na koja još nema odgovora. Provjerite jednu tvrdnju u izvornom
 dokumentu i jednu brojku u podacima. Na kraju vlastitim riječima objasnite
 što vam je model olakšao i koju ste odluku ipak morali donijeti sami.

@@ -45,7 +45,7 @@ Mogući ispravak.
 
 ## 1.4 Plan
 
-Očekuje se HR, 120 mjeseci, ključ month, RCH_A i BAL/NSA, audit prije
+Očekuje se HR, 120 mjeseci, ključ month, RCH_A i BAL/NSA, provjera podataka prije
 izračuna, zaustavljanje pri neočekivanom nedostatku, odvojeni grafovi i
 godišnji sažetci. Moguće je drugačije opisno pitanje ako je izvedivo i
 obrazloženo. Regresija nije uvjet uspjeha.
@@ -127,7 +127,7 @@ očekivanja na cijene. Na obje serije mogu utjecati zajednički šokovi, a
 vremenska ovisnost i sezonalnost nisu uklonjene samim računanjem korelacije.
 Usporedba istog mjeseca također nije provjera uspješnosti prognoze za
 sljedećih dvanaest mjeseci. Za takvu bi provjeru trebalo unaprijed definirati
-vremensko poravnanje i postupak evaluacije. Koristimo povijesne vrijednosti
+koje mjesece uspoređujemo i kako provjeravamo točnost prognoze. Koristimo povijesne vrijednosti
 dostupne 26. listopada 2026., koje se mogu razlikovati od ranijih izdanja
 podataka. Skripta i zamrznuti izvori omogućuju ponavljanje ovih opisnih
 izračuna, uz zadržavanje istog uzorka i jedinica.

@@ -21,4 +21,5 @@ ovu obradu i tumačenje.
 Poštujte posebne napomene izvornog izvora. Ne pretpostavljajte da paket
 dodjeljuje opću licencu svim tuđim sadržajima.
 
-Mogući HNB/medijski korpus nije uključen niti simuliran kao stvarni podatak.
+Zbirka medijskih tekstova za istraživanje HNB-ove komunikacije nije uključena.
+Nismo je zamijenili izmišljenim podacima.

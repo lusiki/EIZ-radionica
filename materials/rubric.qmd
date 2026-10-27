@@ -6,7 +6,7 @@ subtitle: "Provjeravamo istraživački rad, ne broj upotrijebljenih alata"
 Predajte jednu mapu s pitanjem i planom, tri dokazna zapisa, R skriptom,
 grafom ili tablicom, tekstom od približno 200 riječi i zapisom uporabe AI-ja.
 Sačuvajte tekst prije i nakon jezičnog uređivanja. Podatke ne morate ponovno
-slati ako se referirate na zamrznuti paket.
+slati ako navedete da koristite podatke iz nastavnog paketa.
 
 ## Rubrika
 
@@ -17,11 +17,11 @@ nastavnik prema pravilima kolegija.
 
 | Dimenzija | 0 bodova | 1 bod | 2 boda |
 |---|---|---|---|
-| Dokazi | Izvori nisu provjereni ili ne podupiru tvrdnje | Postoji provjera uz nepotpune lokatore ili ograničenja | Tri izvora, točni odjeljci, odgovarajuće tvrdnje i granice |
+| Dokazi | Izvori nisu provjereni ili ne podupiru tvrdnje | Postoji provjera uz nepotpune oznake stranica ili odjeljaka ili ograničenja | Tri izvora, točni odjeljci, odgovarajuće tvrdnje i granice |
 | Metoda | Pogrešan uzorak, jedinica ili nerazjašnjena transformacija | Većina odluka je primjerena, jedna nije objašnjena | Pitanje, uzorak, jedinice i obrada potpuno su usklađeni |
-| Reproducibilnost | Skripta se ne može pokrenuti od početka | Izvršava se uz ručni nedokumentirani korak | Nova sesija daje navedeni rezultat iz priloženih podataka |
+| Ponovljivost postupka | Skripta se ne može pokrenuti od početka | Izvršava se uz ručni nedokumentirani korak | Nova sesija daje navedeni rezultat iz priloženih podataka |
 | Tumačenje | Izmišljeni broj ili neosnovana uzročna tvrdnja | Točan opis uz nedovoljno ograničenje | Brojke se slažu s izlazima. Navedene su granice zaključka |
-| Transparentnost | Nije moguće razlučiti podrijetlo teksta/koda | Opća izjava bez konkretne provjere | Zabilježeni alat ili rad bez AI-ja, izmjene i neovisna provjera |
+| Način rada | Nije moguće razlučiti podrijetlo teksta/koda | Opća izjava bez konkretne provjere | Zabilježeni alat ili rad bez AI-ja, izmjene i neovisna provjera |
 
 ## Završna samoprovjera
 

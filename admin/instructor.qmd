@@ -30,7 +30,7 @@ tekst i kod imaju istu nastavnu svrhu ako servis zakaže.
 
 ## Pomoć tijekom rada
 
-Ako polaznik ne može objasniti generirani kod, smanjite zadatak na jedan
+Ako polaznik ne može objasniti kod koji je predložio AI, smanjite zadatak na jedan
 odabir redaka i jedan prosjek. U paru mijenjajte uloge autora i provjeravatelja.
 Osnovni izlaz vježbe 2.3 može biti godišnja tablica i jedan dobro označen graf.
 Drugi graf je nastavak za brže polaznike. Pripremljene izlaze koristite za
@@ -42,9 +42,9 @@ zatražite razlog jedne odluke. Odvojite vrijeme da polaznici objasne pronađenu
 ## Napredni dio nakon radionice
 
 Opcionalni HAC primjer nalazi se u `code/optional_hac.R`. Primjeren je tek
-kada polaznik razumije regresiju, vremensku ovisnost i ograničenja inferencije.
+kada polaznik razumije regresiju, vremensku ovisnost i ograničenja statističkog zaključivanja.
 Za panel-analizu, sustavno istraživanje specifikacija ili prognoziranje
-s vremenskom validacijom planirajte zaseban susret.
+s provjerom točnosti na kasnijim podacima planirajte zaseban susret.
 
 Medijski indeks iz izvornog materijala može postati drugi slučaj tek uz
 stvarni korpus, definiciju indeksa, provjeru prava uporabe, kod i referentne

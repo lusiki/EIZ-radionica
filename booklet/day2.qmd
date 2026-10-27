@@ -10,7 +10,7 @@ toc-title: "Sadržaj drugog dijela"
 [Kratki materijal za nastavu](../slides/day2.qmd)
 
 Nastavite s istim pitanjem i podacima. Osnovni postupak ostaje opisna
-analiza. Regresija, paneli i medijski korpus objašnjeni su kao napredni
+analiza. Regresija, paneli i zbirka medijskih tekstova objašnjeni su kao napredni
 nastavci s dodatnim zahtjevima. Primjeri koda izvode se iz korijena projekta.
 
 {{< include _05-agents.qmd >}}

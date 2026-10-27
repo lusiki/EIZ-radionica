@@ -1,4 +1,4 @@
-# 2.1 Audit podataka
+# 2.1 Provjera podataka
 
 Aktivni plan, [radni list](../materials/exercises/index.qmd#v21).
 Čitateljski materijal, [dan 2](../slides/day2.qmd).

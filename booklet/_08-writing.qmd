@@ -14,8 +14,8 @@ treba da ih provjerite. Kvaliteta jezičnog uređivanja može se razlikovati
 među alatima i jezicima.
 
 Korinekov [pregled primjena u ekonomskim istraživanjima](https://www.aeaweb.org/articles?id=10.1257/jel.20231736)
-razlikuje ideaciju i povratne informacije, pisanje, pozadinsko istraživanje,
-analizu podataka, programiranje i matematičke derivacije. Taj popis pomaže odrediti za koji biste zadatak tražili pomoć.
+opisuje pomoć pri razvoju ideja i komentiranju rada, pisanju,
+prikupljanju literature, analizi podataka, programiranju i matematičkim izvodima. Taj popis pomaže odrediti za koji biste zadatak tražili pomoć.
 Ne rangira trajno ljudske i strojne sposobnosti, a svaki preuzeti
 prijedlog i dalje treba provjeriti.
 
@@ -33,7 +33,8 @@ Kada se pomoć smije koristiti, opišite konkretan zadatak i opseg. Autor
 odgovara za završne tvrdnje, citate i prikaz analize, bez obzira na to
 tko je predložio pojedinu formulaciju.
 
-Parafraza treba pokazati razumijevanje izvora i zadržati atribuciju.
+Kada tuđu misao prepričate vlastitim riječima, sačuvajte njezino
+značenje i navedite izvor.
 Zamjena riječi sinonimima ne uklanja potrebu za citiranjem. Ako niste
 pročitali rad, nemojte njegov AI sažetak prikazati kao vlastito kritičko
 čitanje. Najprije utvrdite što rad tvrdi, zatim vlastitim riječima
@@ -63,7 +64,7 @@ zašto nakon definicije mjere slijedi određeni izračun. Ako ta veza nije
 opravdana, možda treba promijeniti redoslijed ili ukloniti odlomak, a ne
 samo dodati veznu frazu.
 
-4\. Parafraza i atribucija. Priložite provjereni odlomak i bibliografske
+4\. Prepričavanje i navođenje izvora. Priložite provjereni odlomak i bibliografske
 podatke. Zatražite prijedlog parafraze koji čuva granice nalaza te
 usporedite ga s izvornikom. Stil citiranja prilagodite uputama rada.
 Model ne smije dopuniti nedostajuću godinu, naslov ili DOI nagađanjem.
@@ -80,7 +81,7 @@ organizirati vaše točke u nacrt. Nepoznate podatke označite, primjerice
 takve oznake moraju nestati tek nakon stvarne provjere. Za završnu predaju
 svaku rečenicu trebate razumjeti i moći povezati s dokazom.
 
-Obrnuti razgovor također je koristan, zatražite da vam model postavlja
+Možete zatražiti i da vam model postavlja
 pitanja jedno po jedno prije predlaganja metodološkog odlomka. Primjerice,
 koje su jedinice, koji je uzorak i kako ste postupili s prazninama?
 To može otkriti odluku koju niste zapisali. Ne jamči da će model pitati
@@ -88,26 +89,26 @@ sve potrebno, pa vlastiti kontrolni popis i dalje ima smisla.
 
 ### Četiri prolaza kroz tekst
 
-Prvi prolaz, evaluacija bez prepisivanja. Pročitajte odlomak s obzirom
+Najprije pročitajte tekst bez prepisivanja. Pročitajte odlomak s obzirom
 na pitanje, dokaz, jasnoću i granice zaključka. Zatražite konkretna mjesta
 koja treba popraviti. Ocjena „7 od 10” bez obrazloženja malo pomaže.
 Korisniji je komentar „iz ove rečenice nije jasno da je očekivanje mjereno
 kvalitativnim saldom”.
 
-Drugi prolaz, struktura. Posložite problem, mjere, postupak, nalaz i
+Zatim provjerite redoslijed objašnjenja. Posložite problem, mjere, postupak, nalaz i
 ograničenje. Definirajte pojam prije nego što ga tumačite. Tablicu ili
 graf uvedite rečenicom koja objašnjava što čitatelj treba gledati, a
 nakon prikaza objasnite relevantan nalaz. Nemojte opisivati sve brojeve
 redom ako ne služe pitanju.
 
-Treći prolaz, usklađivanje snage tvrdnji. Zamijenite „dokazuje” s
+Provjerite i jesu li tvrdnje jače od dokaza. Zamijenite „dokazuje” s
 formulacijom koja točno odgovara dizajnu, a ne s neodređenom ogradom.
 „U uzorku postoji pozitivna linearna povezanost” preciznije je od
 „rezultati sugeriraju statistički značajan utjecaj” kada niste proveli
 odgovarajući test ni identificirali uzročni učinak.
 
-Četvrti prolaz, jezik i dosljednost. Provjerite nazive mjera,
-decimalne oznake, datume, padeže i kratice. Isti konstrukt ne treba
+Na kraju uredite jezik i uskladite nazive. Provjerite nazive mjera,
+decimalne oznake, datume, padeže i kratice. Isti pojam ne treba
 naizmjenično nazivati percepcijom, očekivanjem i pouzdanjem ako to nisu
 iste varijable. Nakon jezične izmjene ponovno pročitajte značenje, jer
 gramatički glađa rečenica može sadržajno biti manje precizna.
@@ -120,9 +121,9 @@ Sljedeća je rečenica **namjerno pogrešan početni nacrt**.
 > 0,70. Potrošači su zato uspješno predvidjeli rast cijena.
 
 U prvom prolazu označite tri problema, korelacija ne identificira uzrok,
-mjere su nedovoljno opisane i usporedba istog mjeseca nije evaluacija
+mjere su nedovoljno opisane i usporedba istog mjeseca ne provjerava točnost
 prognoze. U drugom prolazu navedite uzorak i dvije mjere. U trećem
-ograničite zaključak na opisnu povezanost. Završna verzija može glasiti.
+ograničite zaključak na opisnu povezanost. Završni odlomak možete napisati ovako.
 
 > U hrvatskom mjesečnom uzorku za 2015.–2024. Pearsonova korelacija između
 > godišnje stope promjene HICP-a i salda očekivanih promjena cijena iznosi
@@ -144,7 +145,7 @@ komunikacija usidrila očekivanja, jer to nismo testirali. Za tu tvrdnju trebali
 Provjerite stručni naziv u relevantnoj literaturi i dosljedno ga koristite.
 Opći jezični model može pomoći u formulaciji, ali ne jamči pravilno
 padežno slaganje ni stručnu prikladnost. Posebno pregledajte duge rečenice
-u kojima se zajedno pojavljuje nekoliko konstrukata i ograda.
+koje uvode više pojmova i ograničenja odjednom.
 
 [CLASSLA](https://github.com/clarinsi/classla) je skup alata za obradu
 jezika, uključujući jezično označavanje i lematizaciju. To je korisno za
@@ -166,10 +167,10 @@ prijedloge i sačuvajte zapis AI pomoći. Provjerite da svaki citat postoji
 i da svaka brojka odgovara spremljenom izlazu.
 
 Za procjenu vlastitog rada zapišite možete li objasniti analizu, koje
-ste pogreške pronašli, što druga osoba može reproducirati i koliko vam
+ste pogreške pronašli, što druga osoba može ponoviti i koliko vam
 je vremena trebalo do provjerenog rezultata. Broj upita ili generiranih
 stranica sam ne odgovara na ta pitanja. Ova pitanja služe samoprocjeni
-u radionici. Nisu standardizirana psihometrijska skala.
+u radionici. Nisu provjeren upitnik za mjerenje sposobnosti ili osobina.
 
 Na kraju spremite pitanje, dokazne zapise, plan, podatke, skriptu,
 izlaz i vlastitu interpretaciju u jednu mapu. Iz nje treba biti jasno

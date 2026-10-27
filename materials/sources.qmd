@@ -32,9 +32,9 @@ vašu tvrdnju i unesite ga u vlastiti dokazni zapis.
 - [ASA, izjava o p-vrijednostima](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
   Za napredni dio o statističkom zaključivanju.
 - [sandwich, NeweyWest](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html).
-  Dokumentacija implementacije i postavki. Nije dokaz primjerenosti našeg modela.
+  Upute za funkciju i njezine postavke. Nije dokaz primjerenosti našeg modela.
 - [renv, uvod](https://rstudio.github.io/renv/articles/renv.html).
-  Obnova projektnog okruženja i granice reproducibilnosti.
+  Obnova projektnog okruženja i granice ponovljivosti postupka.
 - [Pravila ponovne uporabe Eurostatovih podataka](https://ec.europa.eu/eurostat/help/copyright-notice).
   U ovom nastavnom paketu navodimo izvor i označujemo vlastitu obradu.
 

@@ -137,9 +137,9 @@ izabranu metodu. Predloži jednostavniji postupak ako odgovara pitanju.
 
 Puko traženje da AI „opravda Newey–West” potiče potvrđivanje već odabrane
 metode. Najprije odredite cilj, zatim pretpostavke i postupak. Pitanje o
-predviđanju zahtijevalo bi vremensko razdvajanje treninga i evaluacije te
-usporedbu s osnovnom prognozom. Pitanje o uzroku traži dodatnu strategiju
-identifikacije. Naša opisna usporedba dviju serija ne odgovara na ta pitanja.
+predviđanju zahtijevalo bi odvajanje ranijih podataka za izradu modela od kasnijih podataka za provjeru te
+usporedbu s osnovnom prognozom. Pitanje o uzroku traži postupak kojim možemo odvojiti uzrok koji nas zanima
+od drugih mogućih objašnjenja. Naša opisna usporedba dviju serija ne odgovara na ta pitanja.
 
 [Vježba 1.4, plan analize](../materials/exercises/index.qmd#v14).
 

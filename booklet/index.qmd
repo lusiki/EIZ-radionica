@@ -31,7 +31,7 @@ dubinsko istraživanje i pretvoriti bilješke u izvediv plan.
 ::: {.step-link}
 ## 02 / Kodiranje i pisanje
 
-Kako surađivati s agentom, pratiti kod u editoru, sačuvati reproducibilan
+Kako surađivati s agentom, pratiti kod u editoru, sačuvati ponovljiv
 postupak i napisati zaključak koji odgovara dokazima.
 
 [Čitajte drugi dio](day2.qmd)
@@ -43,7 +43,7 @@ postupak i napisati zaključak koji odgovara dokazima.
 ## Što je ažurirano
 
 - Sačuvani su slijed osam tema, istraživački scenariji, obrasci upita,
-  protokol provjere izvora i postupak uređivanja teksta.
+  postupak provjere izvora i postupak uređivanja teksta.
 - Usporedbe alata temelje se na mogućnostima i provjerenoj dokumentaciji.
   Dodane su promjene u Posit Assistantu i objašnjenje dohvaćanja projektnih
   dokumenata. Uklonjene su zastarjele rang-liste i obećanja o kvotama.

@@ -17,7 +17,7 @@ Brojevi redaka odnose se na osnovni commit, a ne na prepisane materijale.
 | day2,216, 338–350, 386 | Jedna zemlja nazvana panelom. Automatizirani izbor testova | Vremenska serija. Panel i napredna selekcija modela izvan jezgre. |
 | day2,220, 228–236, 249–266 | Dvostruka os, inflacija umjesto očekivanja, nedostajuća konstanta, pogrešna p-vrijednost, automatski logovi | Odvojene jedinice i osi, opisni cilj, konstanta u dodatku, ispravljena inferencija. [ASA](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf), [sandwich](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html). |
 | day2,281, 294–304 | RStudio nema Copilot. Positron koristi cijeli VS Marketplace | Ispravljeno prema [Positu](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html) i [Positronu](https://positron.posit.co/extensions.html). |
-| day2,380 | Skok s Hrvatske na američki FOMC slučaj | Jedan javno reproducibilan hrvatski slučaj. |
+| day2,380 | Skok s Hrvatske na američki FOMC slučaj | Jedan javno ponovljiv hrvatski slučaj. |
 | day2,446, 485–546 | Generalizacije o pisanju. Prompt jamči točnost. CLASSLA kao lektor. Izmišljeni nalazi | Uvedena usporedba teksta prije/poslije i brojki s izlazom. [CLASSLA](https://github.com/clarinsi/classla). |
 | day2,597. README i admin | Pogrešan repo i nepodudarni kontakti/datumi | Poveznice na ovaj repo. Novi termin i kontakt ne izmišljaju se. |
 | Plan drugog modela | Stari HICP kod, obvezni ADF/logovi, preširok skup alata | Novi prc_hicp_minr (ECOICOP v2). Fiksni uzorak. Opisna jezgra. Inferencija izborna. |

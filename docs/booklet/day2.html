@@ -237,15 +237,15 @@ window.Quarto = {
   <li><a href="#tri-vrste-pomoći-koje-treba-razlikovati" id="toc-tri-vrste-pomoći-koje-treba-razlikovati" class="nav-link" data-scroll-target="#tri-vrste-pomoći-koje-treba-razlikovati">Tri vrste pomoći koje treba razlikovati</a></li>
   <li><a href="#demonstracija-na-istim-podacima" id="toc-demonstracija-na-istim-podacima" class="nav-link" data-scroll-target="#demonstracija-na-istim-podacima">Demonstracija na istim podacima</a></li>
   <li><a href="#kako-pronaći-uzrok-pogreške" id="toc-kako-pronaći-uzrok-pogreške" class="nav-link" data-scroll-target="#kako-pronaći-uzrok-pogreške">Kako pronaći uzrok pogreške</a></li>
-  <li><a href="#napredni-koraci-imaju-preduvjete" id="toc-napredni-koraci-imaju-preduvjete" class="nav-link" data-scroll-target="#napredni-koraci-imaju-preduvjete">Napredni koraci imaju preduvjete</a></li>
+  <li><a href="#što-treba-pripremiti-za-naprednu-analizu" id="toc-što-treba-pripremiti-za-naprednu-analizu" class="nav-link" data-scroll-target="#što-treba-pripremiti-za-naprednu-analizu">Što treba pripremiti za naprednu analizu</a></li>
   <li><a href="#vježba-promjena-koju-možete-objasniti" id="toc-vježba-promjena-koju-možete-objasniti" class="nav-link" data-scroll-target="#vježba-promjena-koju-možete-objasniti">Vježba / promjena koju možete objasniti</a></li>
   </ul></li>
-  <li><a href="#poglavlje-23" id="toc-poglavlje-23" class="nav-link" data-scroll-target="#poglavlje-23">2.3 Bilježnice, eksploracija i reproducibilnost</a>
+  <li><a href="#poglavlje-23" id="toc-poglavlje-23" class="nav-link" data-scroll-target="#poglavlje-23">2.3 Bilježnice, početni pregled podataka i ponovljivost postupka</a>
   <ul class="collapse">
   <li><a href="#istraživački-dnevnik-koji-izvršava-kod" id="toc-istraživački-dnevnik-koji-izvršava-kod" class="nav-link" data-scroll-target="#istraživački-dnevnik-koji-izvršava-kod">Istraživački dnevnik koji izvršava kod</a></li>
-  <li><a href="#pet-pitanja-za-eksploraciju" id="toc-pet-pitanja-za-eksploraciju" class="nav-link" data-scroll-target="#pet-pitanja-za-eksploraciju">Pet pitanja za eksploraciju</a></li>
+  <li><a href="#pet-pitanja-za-početni-pregled-podataka" id="toc-pet-pitanja-za-početni-pregled-podataka" class="nav-link" data-scroll-target="#pet-pitanja-za-početni-pregled-podataka">Pet pitanja za početni pregled podataka</a></li>
   <li><a href="#skriveno-stanje-zašto-dokument-radi-samo-vama" id="toc-skriveno-stanje-zašto-dokument-radi-samo-vama" class="nav-link" data-scroll-target="#skriveno-stanje-zašto-dokument-radi-samo-vama">Skriveno stanje / zašto dokument radi samo vama</a></li>
-  <li><a href="#reproducirati-analizu-nije-isto-što-i-ponoviti-prompt" id="toc-reproducirati-analizu-nije-isto-što-i-ponoviti-prompt" class="nav-link" data-scroll-target="#reproducirati-analizu-nije-isto-što-i-ponoviti-prompt">Reproducirati analizu nije isto što i ponoviti prompt</a></li>
+  <li><a href="#kako-ponovno-dobiti-isti-rezultat" id="toc-kako-ponovno-dobiti-isti-rezultat" class="nav-link" data-scroll-target="#kako-ponovno-dobiti-isti-rezultat">Kako ponovno dobiti isti rezultat</a></li>
   <li><a href="#što-treba-izvesti-iz-razgovornog-okruženja" id="toc-što-treba-izvesti-iz-razgovornog-okruženja" class="nav-link" data-scroll-target="#što-treba-izvesti-iz-razgovornog-okruženja">Što treba izvesti iz razgovornog okruženja</a></li>
   <li><a href="#usporedite-tri-načina-rada" id="toc-usporedite-tri-načina-rada" class="nav-link" data-scroll-target="#usporedite-tri-načina-rada">Usporedite tri načina rada</a></li>
   <li><a href="#vježba-ponovno-izvođenje-bez-razgovora" id="toc-vježba-ponovno-izvođenje-bez-razgovora" class="nav-link" data-scroll-target="#vježba-ponovno-izvođenje-bez-razgovora">Vježba / ponovno izvođenje bez razgovora</a></li>
@@ -287,14 +287,14 @@ window.Quarto = {
 
 
 <p><a href="../booklet/index.html">O priručniku</a> · <a href="../downloads/EIZ-prirucnik.pdf">Cijeli PDF</a> · <a href="../slides/day2.html">Kratki materijal za nastavu</a></p>
-<p>Nastavite s istim pitanjem i podacima. Osnovni postupak ostaje opisna analiza. Regresija, paneli i medijski korpus objašnjeni su kao napredni nastavci s dodatnim zahtjevima. Primjeri koda izvode se iz korijena projekta.</p>
+<p>Nastavite s istim pitanjem i podacima. Osnovni postupak ostaje opisna analiza. Regresija, paneli i zbirka medijskih tekstova objašnjeni su kao napredni nastavci s dodatnim zahtjevima. Primjeri koda izvode se iz korijena projekta.</p>
 <section id="poglavlje-21" class="level2">
 <h2 class="anchored" data-anchor-id="poglavlje-21">2.1 Agentsko kodiranje i provjerljiva analiza</h2>
 <section id="od-prijedloga-koda-do-izvršavanja-zadatka" class="level3">
 <h3 class="anchored" data-anchor-id="od-prijedloga-koda-do-izvršavanja-zadatka">Od prijedloga koda do izvršavanja zadatka</h3>
 <p>Prvoga dana istraživačko ste pitanje povezali s izvorima i podacima. Drugoga dana taj plan treba pretvoriti u postupak. Programska pomoć može biti dopunjavanje retka, razgovor o skripti ili agent koji čita datoteke, predlaže izmjene i pokreće naredbe. Te mogućnosti nisu strogo odvojene generacije tehnologije. Često postoje unutar iste aplikacije.</p>
 <p>Claude Code je primjer agenta koji može izravno raditi na projektu. Ako mu okruženje i dopuštenja to omogućuju, može urediti nekoliko datoteka i izvršiti analizu. To štedi ručno prepisivanje. Prije rada odredite što agent smije mijenjati, a nakon rada pregledajte promjene.</p>
-<p>Zamislite istraživačkog suradnika kojemu predajete radnu mapu. Treba mu reći što se smije mijenjati, koje datoteke predstavljaju izvorne podatke i kako izgleda prihvatljiv rezultat. „Analiziraj ovo” ostavlja previše prostora za proizvoljan izbor uzorka i metode. „Provjeri mjesece i jedinice, zatim reproduciraj postojeći graf” određuje provjerljiv korak.</p>
+<p>Zamislite istraživačkog suradnika kojemu predajete radnu mapu. Treba mu reći što se smije mijenjati, koje datoteke predstavljaju izvorne podatke i kako izgleda prihvatljiv rezultat. „Analiziraj ovo” ostavlja previše prostora za proizvoljan izbor uzorka i metode. „Provjeri mjesece i jedinice, zatim ponovi postojeći graf” određuje provjerljiv korak.</p>
 </section>
 <section id="kontekst-upute-i-dopuštenja" class="level3">
 <h3 class="anchored" data-anchor-id="kontekst-upute-i-dopuštenja">Kontekst, upute i dopuštenja</h3>
@@ -309,7 +309,7 @@ window.Quarto = {
 <section id="korak-1-upoznajte-ulazne-podatke" class="level3">
 <h3 class="anchored" data-anchor-id="korak-1-upoznajte-ulazne-podatke">Korak 1 / upoznajte ulazne podatke</h3>
 <p>Jedan redak naše tablice predstavlja mjesec u Hrvatskoj. Ključ <code>month</code> povezuje mjesece, <code>hicp_yoy_pct</code> predstavlja godišnju stopu promjene HICP-a, a <code>expectations_balance</code> kvalitativni anketni saldo. Naziv „monthly” u opisu frekvencije ne znači da je stopa promjene izračunata prema prethodnom mjesecu. Podatak se objavljuje mjesečno, a stopa uspoređuje cijene s istim mjesecom prethodne godine.</p>
-<p>Prije analize potvrdite 120 uzastopnih mjeseci, od siječnja 2015. do prosinca 2024. Provjerite ima li dvostrukih zapisa, praznina i neočekivanih vrijednosti. Usporedite nekoliko vrijednosti s izvornim JSON datotekama. U manifestu su parametri dohvata i kontrolni sažeci datoteka. Zamrznuta kopija omogućuje da kasnija revizija službenih podataka ne promijeni neprimjetno rezultat ove nastavne verzije.</p>
+<p>Prije analize potvrdite 120 uzastopnih mjeseci, od siječnja 2015. do prosinca 2024. Provjerite ima li dvostrukih zapisa, praznina i neočekivanih vrijednosti. Usporedite nekoliko vrijednosti s izvornim JSON datotekama. U datoteci s podacima o preuzimanju, manifestu, navedeni su upiti korišteni za preuzimanje i kontrolni zbrojevi za provjeru promjena datoteka. Za nastavu čuvamo istu kopiju podataka. Tako naknadne službene izmjene ne mijenjaju rezultate radionice.</p>
 <p>Agent može napisati te provjere, ali vi određujete što očekujete i zašto. Broj redaka sam po sebi nije dovoljan, 120 redaka može sadržavati jedan ponovljen i jedan izostavljen mjesec. Isto vrijedi za graf koji izgleda glatko i uvjerljivo, a počiva na pogrešno spojenim datumima.</p>
 </section>
 <section id="korak-2-priprema-bez-prikrivenih-odluka" class="level3">
@@ -322,7 +322,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="korak-3-slika-prije-modela">Korak 3 / slika prije modela</h3>
 <p>Dvije serije imaju različite jedinice. U radionici ih prikazujemo u odvojenim panelima sa zajedničkom vremenskom osi. Čitatelj vidi kada se promjene događaju, ali ih ne zamjenjuje za brojčano usporedive veličine. Dvije neovisno skalirane y-osi mogu proizvesti privid preklapanja linija ovisno o odabranom rasponu. Zato za ovaj zadatak koristimo odvojene prikaze.</p>
 <p>Pogledajte razdoblja ubrzanja, usporavanja i promjena raspona. Opisujte ono što slika pokazuje, a moguća objašnjenja navedite kao pitanja za daljnje istraživanje. Ne proglašavajte strukturni lom samo na temelju vizualnog dojma, niti smjer uzročnosti na temelju toga koja linija ranije raste. Za to trebaju dodatni postupci i pretpostavke.</p>
-<p>Pearsonova korelacija sažima linearnu povezanost parova opažanja. U zamrznutom uzorku cijelog razdoblja iznosi približno 0,6985. U dijelu 2015.–2019. približno 0,8279, a u dijelu 2020.–2024. približno 0,5342. Te su vrijednosti reproducirane u <code>results/correlations.csv</code>. Razlika među podrazdobljima pokazuje da sažetak ovisi o promatranom razdoblju. Nije test razlike korelacija niti dokaz promjene uzročnog mehanizma.</p>
+<p>Pearsonova korelacija sažima linearnu povezanost parova opažanja. U zamrznutom uzorku cijelog razdoblja iznosi približno 0,6985. U dijelu 2015.–2019. približno 0,8279, a u dijelu 2020.–2024. približno 0,5342. Te su vrijednosti spremljene u <code>results/correlations.csv</code>. Razlika među podrazdobljima pokazuje da sažetak ovisi o promatranom razdoblju. Nije test razlike korelacija niti dokaz promjene uzročnog mehanizma.</p>
 </section>
 <section id="korak-4-što-regresija-i-hac-mogu-pokazati" class="level3">
 <h3 class="anchored" data-anchor-id="korak-4-što-regresija-i-hac-mogu-pokazati">Korak 4 / što regresija i HAC mogu pokazati</h3>
@@ -330,14 +330,14 @@ window.Quarto = {
 <p><span class="math display">\[y_t = \alpha + \beta x_t + u_t.\]</span></p>
 <p>U nastavnom dodatku <span class="math inline">\(y_t\)</span> je ostvarena inflacija, a <span class="math inline">\(x_t\)</span> saldo očekivanja u istom mjesecu. Koeficijent opisuje linearnu povezanost u tom modelu. Anketno pitanje gleda unaprijed, ali njegovo uključivanje u regresiju s ostvarenom inflacijom istog mjeseca ne čini model testom prognozne točnosti. Za prognozu treba uskladiti cilj, horizont i dostupnost informacija u trenutku predviđanja.</p>
 <p>Konvencionalne standardne pogreške OLS-a počivaju na pretpostavkama o greškama. Kod heteroskedastičnosti ili serijske korelacije mogu biti neprimjerene. Nije zajamčeno da su uvijek preniske. HAC procjena kovarijacijske matrice, primjerice Newey-West, mijenja procjenu nesigurnosti uz odgovarajuće uvjete. <strong>Ne mijenja same OLS koeficijente</strong> i ne ispravlja endogenost, izostavljene varijable, loše mjerenje ili lažnu regresiju povezanu s nestacionarnošću.</p>
-<p>U <a href="https://sandwich.r-forge.r-project.org/reference/NeweyWest.html"><code>sandwich::NeweyWest</code></a> važni su odabir odmaka, prethodno izbjeljivanje i korekcija za veličinu uzorka. Naš dodatak navodi postavke izričito, <code>lag = 12</code>, <code>prewhite = FALSE</code>, <code>adjust = TRUE</code>. Dvanaest je nastavna specifikacija za mjesečne podatke, a ne univerzalno optimalan odabir. Procjena i interpretacija traže pregled dinamike i osjetljivosti na razumne postavke.</p>
+<p>U <a href="https://sandwich.r-forge.r-project.org/reference/NeweyWest.html"><code>sandwich::NeweyWest</code></a> važni su odabir odmaka, prethodno izbjeljivanje i korekcija za veličinu uzorka. Naš dodatak navodi postavke izričito, <code>lag = 12</code>, <code>prewhite = FALSE</code>, <code>adjust = TRUE</code>. U ovom primjeru koristimo dvanaest odmaka jer radimo s mjesečnim podacima. To nije najbolji izbor za svaki zadatak. Procjena i interpretacija traže pregled dinamike i osjetljivosti na razumne postavke.</p>
 <p>P-vrijednost se odnosi na kompatibilnost rezultata s nul-hipotezom i pretpostavkama modela, pod tim uvjetima izražava vjerojatnost statistike barem toliko ekstremne koliko je opažena. <strong>Nije vjerojatnost da je nul-hipoteza istinita</strong>, ni veličina učinka, ni vjerojatnost da je nalaz nastao „slučajno”. <a href="https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf">ASA-ina izjava</a> objašnjava zašto znanstveni zaključak ne treba svesti na prelazak praga. Prikladnost dizajna prethodi tumačenju p-vrijednosti.</p>
 </section>
 <section id="korak-5-osjetljivost-i-granice-proširenja" class="level3">
 <h3 class="anchored" data-anchor-id="korak-5-osjetljivost-i-granice-proširenja">Korak 5 / osjetljivost i granice proširenja</h3>
-<p>Multiverzum modela i specifikacijska krivulja služe ispitivanju koliko rezultat ovisi o analitičkim odlukama. Uspoređujte specifikacije koje možete metodološki obrazložiti. Dodavanje svih kombinacija koje računalo može generirati uključilo bi i modele neprikladne za vaše pitanje.</p>
+<p>U naprednom radu možete usporediti više opravdanih načina analize i provjeriti koliko se rezultati mijenjaju. Takav se pristup naziva multiverzumom modela, a rezultate je moguće prikazati specifikacijskom krivuljom. Za svaki uključeni model objasnite zašto odgovara pitanju. Dodavanje svih kombinacija koje računalo može generirati uključilo bi i modele neprikladne za vaše pitanje.</p>
 <p>Prije pregleda rezultata zapišite koje ćete odluke usporediti i zašto. Primjerice, možete opisno usporediti ista razdoblja kao u referentnim rezultatima, razmotriti odmake koje opravdava pitanje ili alternativno mjerenje kada je dostupno. Prikažite sve planirane rezultate i objasnite izostavljene specifikacije. Ne birajte samo onu s povoljnim predznakom ili najmanjom p-vrijednošću.</p>
-<p>Za medijski nastavak trebali biste pribaviti korpus s podrijetlom i uvjetima uporabe, definirati uključivanje članaka, ukloniti duplikate po opisanom pravilu te provjeriti mjerenje pažnje ili tona. Ručno označen uzorak može pomoći evaluaciji klasifikacije. To je zaseban projekt. Broj članaka spomenut u starom materijalu nije potvrđen dostupnim skupom podataka.</p>
+<p>Za medijski nastavak trebali biste pribaviti korpus s podrijetlom i uvjetima uporabe, definirati uključivanje članaka, ukloniti duplikate po opisanom pravilu te provjeriti mjerenje pažnje ili tona. Ručno označen uzorak može pomoći da provjerite koliko dobro alat razvrstava tekstove. To je zaseban projekt. Broj članaka spomenut u starom materijalu nije potvrđen dostupnim skupom podataka.</p>
 </section>
 <section id="kako-provjeriti-rad-agenta" class="level3">
 <h3 class="anchored" data-anchor-id="kako-provjeriti-rad-agenta">Kako provjeriti rad agenta</h3>
@@ -349,7 +349,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="poglavlje-22">2.2 Rad u editoru / Copilot, RStudio i Positron</h2>
 <section id="mali-koraci-olakšavaju-učenje" class="level3">
 <h3 class="anchored" data-anchor-id="mali-koraci-olakšavaju-učenje">Mali koraci olakšavaju učenje</h3>
-<p>Agentsko izvršavanje korisno je kada znate koji postupak želite ostvariti. Tijekom učenja često je bolje stati nakon malog koraka, pročitati tablicu, ispitati jednu varijablu i objasniti jednu transformaciju. Razvojno okruženje, odnosno IDE, okuplja editor, konzolu i prikaz rezultata. AI asistent u njemu može dopuniti kod ili objasniti pogrešku dok vi pratite što se izvršava.</p>
+<p>Agent može obaviti zadatak kada mu jasno kažete što treba napraviti. Dok učite, radite korak po korak. Učitajte tablicu, pregledajte jednu varijablu i objasnite što se promijenilo nakon svake naredbe. Razvojno okruženje, odnosno IDE, okuplja editor, konzolu i prikaz rezultata. AI asistent u njemu može dopuniti kod ili objasniti pogrešku dok vi pratite što se izvršava.</p>
 <p>Asistent je ovdje poput pomoćnika koji vam dodaje alat dok radite. Pročitajte njegov prijedlog prije prihvaćanja i pregledajte rezultat nakon izvršavanja. Ako ne znate što funkcija radi, tražite objašnjenje na malom primjeru i usporedite ga s dokumentacijom.</p>
 </section>
 <section id="izbor-okruženja" class="level3">
@@ -357,12 +357,12 @@ window.Quarto = {
 <p>RStudio i Positron mogu poslužiti za ovu radionicu. RStudio ima <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">dokumentiranu integraciju Copilota</a>, pa Copilot možete koristiti i u tom okruženju. RStudijevo sučelje i njegovi procesi ne svode se na jedan R proces. Pri izboru editora provjerite njegove mogućnosti, a istraživačku metodu birajte prema pitanju i podacima.</p>
 <p>Positron je okruženje za rad s R-om i Pythonom. Njegova <a href="https://positron.posit.co/extensions.html">dokumentacija proširenja</a> objašnjava način instalacije i ograničenja kompatibilnosti. Ne treba pretpostaviti da svako proširenje za VS Code radi na isti način. Za ovu radionicu važni su otvaranje projektne mape, odabir R-a, čitanje skripte, izvršavanje i pregled izlaza. AI dodatak ostaje izborna pomoć.</p>
 <p>Prema <a href="https://positron.posit.co/assistant">Positovoj dokumentaciji</a>, Posit Assistant od verzije Positrona 2026.07 zamjenjuje prethodni Positron Assistant i Databot. Stare upute o sučelju mogu se odnositi na stariji proizvod. Provjerite instaliranu verziju i odgovarajuće upute. Ne pretpostavljajte da se dostupni modeli, naredbe i dozvole podudaraju u svakoj instalaciji.</p>
-<p>Izbor se može svesti na praktična pitanja, u kojem okruženju znate otvoriti projekt, kako vidite izvršeni kod, možete li ponovno pokrenuti sve od početka i gdje završavaju izlazne datoteke? U svakom okruženju ostaju iste provjere podataka i postupka. Sama promjena editora ne čini analizu valjanijom.</p>
+<p>Odaberite okruženje u kojem znate otvoriti projekt, pregledati kod i pronaći spremljene rezultate. Provjerite možete li sve pokrenuti od početka. U svakom okruženju ostaju iste provjere podataka i postupka. Sama promjena editora ne čini analizu valjanijom.</p>
 </section>
 <section id="tri-vrste-pomoći-koje-treba-razlikovati" class="level3">
 <h3 class="anchored" data-anchor-id="tri-vrste-pomoći-koje-treba-razlikovati">Tri vrste pomoći koje treba razlikovati</h3>
-<p>Linijsko dopunjavanje predlaže nastavak uz kursor. Korisno je za ponavljajuću sintaksu i male funkcije. Provjerite nazive stupaca, argumente i smjer filtra. Prijedlog koji je sintaktički točan može koristiti varijablu iz nekog drugog projekta ili pretpostaviti pogrešnu jedinicu.</p>
-<p>Razgovor o kodu služi objašnjenjima i usmjerenim pitanjima. Umjesto „popravi sve” navedite poruku o pogrešci, relevantan dio skripte i očekivani ishod. Tražite objašnjenje uzroka, a zatim najmanju promjenu koja ga rješava. Nemojte izostaviti upozorenje samo zato što se graf ipak prikazao.</p>
+<p>Dopunjavanje koda predlaže nastavak retka na mjestu gdje pišete. Pomaže pri ponavljanju sličnih naredbi i pisanju malih funkcija. Provjerite nazive stupaca, argumente i smjer filtra. Kod koji se pokrene bez pogreške može koristiti varijablu iz nekog drugog projekta ili pretpostaviti pogrešnu jedinicu.</p>
+<p>Razgovor o kodu služi objašnjenjima i usmjerenim pitanjima. Umjesto „popravi sve” navedite poruku o pogrešci, relevantan dio skripte i očekivani rezultat. Tražite objašnjenje uzroka, a zatim najmanju promjenu koja ga rješava. Nemojte izostaviti upozorenje samo zato što se graf ipak prikazao.</p>
 <p>Uređivanje i agentsko izvršavanje mogu zahvatiti više datoteka. Njihova dostupnost ovisi o proizvodu i integraciji. Pregled izmjena, dopuštenja i izvršenih naredbi važniji je od opće etikete „IDE” ili „agent”. Terminalski alat može omogućiti detaljnu provjeru, a pomoćnik u editoru može izvoditi opsežne radnje.</p>
 </section>
 <section id="demonstracija-na-istim-podacima" class="level3">
@@ -378,7 +378,7 @@ window.Quarto = {
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(d))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>U ovoj tablici prazna polja <code>hicp_flag</code> i <code>expectations_flag</code> znače da nema dodatne oznake statusa podatka. Nisu isto što i nedostajuća vrijednost inflacije ili salda. Zato popis iz <code>colSums</code> čitajte zajedno s rječnikom podataka. Automatsko uklanjanje svakog retka koji ima bilo koje prazno polje uklonilo bi i valjana opažanja.</p>
 <p>Zahtjev „napravi profesionalnu tablicu” prerano usmjerava pažnju na izgled. Prvo provjerite mjere, broj opažanja i nedostajuće vrijednosti. Naknadno možete urediti naslove i broj decimala. Uredna tablica ne uklanja problem ako su u istoj koloni pomiješane stope i indeksi.</p>
-<p>Za godišnji prosjek napišite pravilo prije koda, grupiramo prema godini, očekujemo dvanaest mjeseci i prosječno računamo mjesečne godišnje stope. To nije nova mjera godišnje promjene prosječnog indeksa. Asistent neka objasni svaki argument i provjeri <code>n_months</code> prije sažimanja.</p>
+<p>Za godišnji prosjek napišite pravilo prije koda, grupiramo prema godini, očekujemo dvanaest mjeseci i računamo prosjek mjesečnih godišnjih stopa. To nije nova mjera godišnje promjene prosječnog indeksa. Asistent neka objasni svaki argument i provjeri <code>n_months</code> prije sažimanja.</p>
 <p>Za vizualizaciju zatražite dva panela sa zajedničkom osi vremena, jasnim jedinicama i izvorom. Ispravite oznaku ako piše „očekivana inflacija (%)”. U našem slučaju odgovarajuća je oznaka „saldo očekivanih promjena cijena”. Navedite i da HICP predstavlja godišnju stopu promjene, kako čitatelj ne bi pretpostavio mjesečnu promjenu.</p>
 </section>
 <section id="kako-pronaći-uzrok-pogreške" class="level3">
@@ -390,8 +390,8 @@ window.Quarto = {
 </blockquote>
 <p>Provjerite rješenje u čistoj sesiji. Objekt koji je ostao od ranijeg pokretanja može prikriti nedostajući korak. Spremite skriptu, ponovno pokrenite R i izvodite je od početka. Taj postupak vrijedi i u RStudiju i u Positronu. Nije svojstvo samo jednog editora.</p>
 </section>
-<section id="napredni-koraci-imaju-preduvjete" class="level3">
-<h3 class="anchored" data-anchor-id="napredni-koraci-imaju-preduvjete">Napredni koraci imaju preduvjete</h3>
+<section id="što-treba-pripremiti-za-naprednu-analizu" class="level3">
+<h3 class="anchored" data-anchor-id="što-treba-pripremiti-za-naprednu-analizu">Što treba pripremiti za naprednu analizu</h3>
 <p>Proširenje s Hrvatske na više zemalja traži usklađene definicije, obuhvat i datume. Tek tada ima smisla razmatrati panel pristup. Izbor fiksnih ili slučajnih efekata ne treba svesti na automatsko pravilo temeljeno na jednoj p-vrijednosti. Način uzorkovanja, pretpostavke o neopaženim razlikama i struktura zavisnosti određuju koje su procjene i standardne pogreške prikladne.</p>
 <p>Za takvu analizu treba više vremena od petnaestominutne početničke vježbe, uz mentorovu pomoć i prikladne podatke. U osnovnoj radionici zadržite se na maloj izmjeni koda koju možete sami objasniti.</p>
 </section>
@@ -402,22 +402,22 @@ window.Quarto = {
 </section>
 </section>
 <section id="poglavlje-23" class="level2">
-<h2 class="anchored" data-anchor-id="poglavlje-23">2.3 Bilježnice, eksploracija i reproducibilnost</h2>
+<h2 class="anchored" data-anchor-id="poglavlje-23">2.3 Bilježnice, početni pregled podataka i ponovljivost postupka</h2>
 <section id="istraživački-dnevnik-koji-izvršava-kod" class="level3">
 <h3 class="anchored" data-anchor-id="istraživački-dnevnik-koji-izvršava-kod">Istraživački dnevnik koji izvršava kod</h3>
 <p>Zamislite bilježnicu u kojoj zapisujete pitanje, odmah ispod njega izvodite izračun, a zatim dodajete graf i komentar. Takav dokument može biti i istraživački dnevnik i radno okruženje. Računalne bilježnice spajaju tekst, kod i rezultate. AI pomoć može dodati razgovorno sučelje za pisanje i objašnjavanje koda.</p>
 <p>Ipak, ne predstavljaju sva razgovorna sučelja istu vrstu dokumenta. Chat koji prikazuje graf, interaktivni prikaz izrađen u razgovoru i Jupyter bilježnica nemaju nužno isti način spremanja koda i izvođenja. Prije analize provjerite možete li vidjeti izvršeni kod, preuzeti podatke i rezultat te ponovno pokrenuti postupak iz prazne sesije.</p>
 <p>Googleova <a href="https://research.google.com/colaboratory/intl/en-GB/faq.html">dokumentacija Colaba</a> opisuje razgovornu pomoć, izmjene koda i agentske postupke unutar bilježnice. Pristup ovisi o računu i dostupnosti funkcije. Za učenje je važnije razumjeti što je izvršeno nego pamtiti koji se model nalazi u pozadini pojedinog proizvoda.</p>
-<p>Bilježnicu možete predati kao završni istraživački dokument ako sadrži sav potreban kod, opis ulaza i okruženja te se može izvršiti pravilnim redom. Iste uvjete treba zadovoljiti i skripta u repozitoriju. Reproducibilnost provjeravate ponovnim izvođenjem spremljenog postupka.</p>
+<p>Bilježnicu možete predati kao završni istraživački dokument ako sadrži sav potreban kod, opis ulaza i okruženja te se može izvršiti pravilnim redom. Iste uvjete treba zadovoljiti i skripta u repozitoriju. Ponovljivost postupka provjeravate ponovnim izvođenjem spremljenog postupka.</p>
 </section>
-<section id="pet-pitanja-za-eksploraciju" class="level3">
-<h3 class="anchored" data-anchor-id="pet-pitanja-za-eksploraciju">Pet pitanja za eksploraciju</h3>
+<section id="pet-pitanja-za-početni-pregled-podataka" class="level3">
+<h3 class="anchored" data-anchor-id="pet-pitanja-za-početni-pregled-podataka">Pet pitanja za početni pregled podataka</h3>
 <p>Koristite istih 120 mjeseci za Hrvatsku. Tako možete usporediti rad u bilježnici s radom u skripti na već poznatim podacima.</p>
 <p>Prvo pitanje, što je učitano? Prikažite broj opažanja, nazive i tipove stupaca, nekoliko redaka te vremenski raspon. Usporedite odgovor modela sa stvarnom tablicom. Ako model saldo nazove „očekivanom inflacijom u postocima”, ispravite definiciju prije bilo kakvog grafa.</p>
 <p>Drugo pitanje, kako se mjere kreću kroz vrijeme? Zatražite dva panela sa zajedničkom vremenskom osi. Jasno navedite jedinice i razdoblje. Provjerite da kronološki redoslijed nije zamijenjen abecednim ili redoslijedom nastanka objekata. U ovom skupu tekstualni format YYYY-MM omogućuje kronološko sortiranje, ali to nije svojstvo svakog formata datuma.</p>
 <p>Treće pitanje, kakav je raspon i raspodjela? Sažetak i histogram otkrivaju različite stvari. Histogram prikazuje raspodjelu, ali skriva vremenski slijed. Vremenski graf čuva slijed, ali slabije pokazuje koliko je često pojedina vrijednost zastupljena. Koristite ih za različita pitanja. Minima i maksima ne proglašavajte pogreškama bez provjere izvora.</p>
 <p>Četvrto pitanje, koliko je sažetak osjetljiv na razdoblje? Izračunajte korelaciju za cijeli uzorak i dva unaprijed navedena podrazdoblja. Objasnite da se uspoređuju isti mjeseci dviju serija. Ako želite ispitati vremenski odmak, napišite koju varijablu pomičete, u kojem smjeru i zašto. Nemojte iskušavati odmake dok ne dobijete najveći koeficijent i prikazati ga kao jedini rezultat.</p>
-<p>Peto pitanje, što je sljedeće istraživačko pitanje? Eksploracija može otvoriti hipotezu o razlikama između razdoblja, ali ne daje automatski njezinu potvrdu. Zapišite kada je ideja nastala i kakvi su dodatni podaci ili dizajn potrebni. Za AI prijedlog da dodate medijski ton morali biste prikupiti nove podatke i započeti zaseban projekt.</p>
+<p>Peto pitanje, što je sljedeće istraživačko pitanje? Početni pregled podataka može otvoriti hipotezu o razlikama između razdoblja, ali ne daje automatski njezinu potvrdu. Zapišite kada je ideja nastala i kakvi su dodatni podaci ili dizajn potrebni. Za AI prijedlog da dodate medijski ton morali biste prikupiti nove podatke i započeti zaseban projekt.</p>
 </section>
 <section id="skriveno-stanje-zašto-dokument-radi-samo-vama" class="level3">
 <h3 class="anchored" data-anchor-id="skriveno-stanje-zašto-dokument-radi-samo-vama">Skriveno stanje / zašto dokument radi samo vama</h3>
@@ -425,8 +425,8 @@ window.Quarto = {
 <p>AI ga može dodatno zamagliti ako kaže da je „ponovno izračunao sve”, a izmijeni samo jednu ćeliju. Spremite dokument, ponovno pokrenite jezgru i izvršite sve ćelije od početka. Provjerite rezultate i spremite ih nakon uspješnog izvođenja. Ako postupak ne radi, pronađite nedostajući korak umjesto da se oslonite na staru sliku.</p>
 <p>Isti problem postoji u interaktivnoj R konzoli. Objekt iz jučerašnje sesije može omogućiti današnjoj nepotpunoj skripti da radi. Zato spremljeni postupak pokrenite od početka s poznatim ulaznim podacima i provjerite dobivene rezultate.</p>
 </section>
-<section id="reproducirati-analizu-nije-isto-što-i-ponoviti-prompt" class="level3">
-<h3 class="anchored" data-anchor-id="reproducirati-analizu-nije-isto-što-i-ponoviti-prompt">Reproducirati analizu nije isto što i ponoviti prompt</h3>
+<section id="kako-ponovno-dobiti-isti-rezultat" class="level3">
+<h3 class="anchored" data-anchor-id="kako-ponovno-dobiti-isti-rezultat">Kako ponovno dobiti isti rezultat</h3>
 <p>Ako sutra pošaljete isti upit modelu, može nastati drukčiji kod. Model, postavke, dostupni alati ili izvori također se mogu promijeniti. Za reprodukciju našeg numeričkog rezultata zato čuvamo <strong>prihvaćeni kod i ulazne podatke</strong>, a ne očekujemo da model ponovno napiše istu analizu. Zapis upita objašnjava nastanak rada, ali nije zamjena za skriptu.</p>
 <p>Za slučajne postupke treba navesti sjeme generatora i relevantne postavke. Za vanjske izvore treba sačuvati datum dohvata i, kada je dopušteno, korištenu kopiju. Za softverske ovisnosti treba opisati verzije i način obnove okruženja. <a href="https://rstudio.github.io/renv/articles/renv.html">renv</a> pomaže upravljanju R paketima, ali sama zaključana lista paketa ne jamči prisutnost svih sistemskih biblioteka, podataka ili vanjskih usluga.</p>
 <p>Za ovaj osnovni primjer dovoljne su javne spremljene datoteke i osnovni R. Docker nije potreban. Složeniji projekti mogu tražiti izolirano okruženje i automatizirane provjere. Razina infrastrukture treba odgovarati stvarnim ovisnostima i riziku gubitka postupka.</p>
@@ -438,13 +438,13 @@ window.Quarto = {
 </section>
 <section id="usporedite-tri-načina-rada" class="level3">
 <h3 class="anchored" data-anchor-id="usporedite-tri-načina-rada">Usporedite tri načina rada</h3>
-<p>Agentu možete zadati ograničen posao nad više datoteka. U editoru je lakše pratiti male promjene koda dok učite, dok bilježnica drži pitanje, kod i komentar na jednom mjestu. Sve tri mogućnosti mogu biti transparentne ili nepregledne, ovisno o načinu uporabe. Ni jedna nema zajamčenu razinu kontrole ili reproducibilnosti.</p>
+<p>Agentu možete zadati ograničen posao nad više datoteka. U editoru je lakše pratiti male promjene koda dok učite, dok bilježnica drži pitanje, kod i komentar na jednom mjestu. Sve tri načina rada mogu biti pregledna ako čuvate kod i bilježite odluke. U svakom trebate provjeriti može li se analiza ponovno pokrenuti.</p>
 <p>Umjesto rangiranja proizvoda, usporedite isti mali zadatak u dvama okruženjima, koliko vam treba vremena do <strong>provjerenog</strong> rezultata, možete li objasniti svaku transformaciju, gdje se sprema kod i može li ga druga osoba pokrenuti? Ako ste brže dobili graf, a ne možete doći do koda, dobitak može nestati pri pisanju završnog rada.</p>
 </section>
 <section id="vježba-ponovno-izvođenje-bez-razgovora" class="level3">
 <h3 class="anchored" data-anchor-id="vježba-ponovno-izvođenje-bez-razgovora">Vježba / ponovno izvođenje bez razgovora</h3>
-<p>Napravite kratak eksplorativni dokument s pet pitanja iz ovog poglavlja. Spremite prihvaćeni kod, ponovno pokrenite okruženje i izvedite ga od početka. Usporedite broj mjeseci i korelaciju s referentnim datotekama. Zatim dajte kolegi postupak bez svoje otvorene sesije i usmenih dopuna. Zabilježite što mu je nedostajalo.</p>
-<p>Vježba završava kratkim odgovorom na dva pitanja, što se može ponoviti iz spremljenih datoteka i što još ovisi o vama ili vanjskoj usluzi? Preostale ovisnosti navedite u uputama uz predanu analizu.</p>
+<p>Napišite kratak pregled podataka s pet pitanja iz ovog poglavlja. Spremite prihvaćeni kod, ponovno pokrenite okruženje i izvedite ga od početka. Usporedite broj mjeseci i korelaciju s referentnim datotekama. Zatim dajte kolegi postupak bez svoje otvorene sesije i usmenih dopuna. Zabilježite što mu je nedostajalo.</p>
+<p>Na kraju napišite što kolega može ponoviti iz spremljenih datoteka, a za što još treba vašu pomoć ili pristup vanjskoj usluzi. Preostale ovisnosti navedite u uputama uz predanu analizu.</p>
 </section>
 </section>
 <section id="poglavlje-24" class="level2">
@@ -453,13 +453,13 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="pisanje-je-dio-istraživanja">Pisanje je dio istraživanja</h3>
 <p>Zamislite da ste prikupili podatke, provjerili skriptu i izradili graf. Sjednete pisati i shvatite da ne znate objasniti što ste otkrili. Odlomak zvuči kao dnevnik naredbi, zaključak obećava više nego što analiza daje, a čitatelj ne vidi vezu između pitanja i rezultata. Pri pisanju se zato vraćate na analizu, što ste utvrdili, što pretpostavljate i što još ne možete tvrditi?</p>
 <p>AI može pomoći kao čitatelj nacrta, označiti nejasan pojam, predložiti redoslijed i upozoriti na rečenicu bez potpore. Procijenite pomažu li komentari vašem tekstu i koliko vam vremena treba da ih provjerite. Kvaliteta jezičnog uređivanja može se razlikovati među alatima i jezicima.</p>
-<p>Korinekov <a href="https://www.aeaweb.org/articles?id=10.1257/jel.20231736">pregled primjena u ekonomskim istraživanjima</a> razlikuje ideaciju i povratne informacije, pisanje, pozadinsko istraživanje, analizu podataka, programiranje i matematičke derivacije. Taj popis pomaže odrediti za koji biste zadatak tražili pomoć. Ne rangira trajno ljudske i strojne sposobnosti, a svaki preuzeti prijedlog i dalje treba provjeriti.</p>
+<p>Korinekov <a href="https://www.aeaweb.org/articles?id=10.1257/jel.20231736">pregled primjena u ekonomskim istraživanjima</a> opisuje pomoć pri razvoju ideja i komentiranju rada, pisanju, prikupljanju literature, analizi podataka, programiranju i matematičkim izvodima. Taj popis pomaže odrediti za koji biste zadatak tražili pomoć. Ne rangira trajno ljudske i strojne sposobnosti, a svaki preuzeti prijedlog i dalje treba provjeriti.</p>
 </section>
 <section id="opseg-pomoći-i-pravila-zadatka" class="level3">
 <h3 class="anchored" data-anchor-id="opseg-pomoći-i-pravila-zadatka">Opseg pomoći i pravila zadatka</h3>
 <p>Pravopisna korekcija, komentar strukture, prerada odlomka i pisanje novog teksta različito zadiru u autorov rad. Prihvatljivost određuju pravila kolegija, ustanove i namjene teksta. U ovoj radionici polazimo od vašeg pitanja, provjerenih izvora i vlastite interpretacije, a AI može predložiti komentare ili izmjene koje pregledavate.</p>
 <p>Ni gramatička pomoć nije unaprijed dopuštena u svakom ispitu. Ni izjava „koristio/la sam AI” ne čini dopuštenim ono što je pravilima zabranjeno. Kada se pomoć smije koristiti, opišite konkretan zadatak i opseg. Autor odgovara za završne tvrdnje, citate i prikaz analize, bez obzira na to tko je predložio pojedinu formulaciju.</p>
-<p>Parafraza treba pokazati razumijevanje izvora i zadržati atribuciju. Zamjena riječi sinonimima ne uklanja potrebu za citiranjem. Ako niste pročitali rad, nemojte njegov AI sažetak prikazati kao vlastito kritičko čitanje. Najprije utvrdite što rad tvrdi, zatim vlastitim riječima objasnite njegovu relevantnost.</p>
+<p>Kada tuđu misao prepričate vlastitim riječima, sačuvajte njezino značenje i navedite izvor. Zamjena riječi sinonimima ne uklanja potrebu za citiranjem. Ako niste pročitali rad, nemojte njegov AI sažetak prikazati kao vlastito kritičko čitanje. Najprije utvrdite što rad tvrdi, zatim vlastitim riječima objasnite njegovu relevantnost.</p>
 </section>
 <section id="šest-obrazaca-koje-možete-prilagoditi" class="level3">
 <h3 class="anchored" data-anchor-id="šest-obrazaca-koje-možete-prilagoditi">Šest obrazaca koje možete prilagoditi</h3>
@@ -469,17 +469,17 @@ window.Quarto = {
 </blockquote>
 <p>2. Kritika argumenta. Tražite logičke praznine, skrivene pretpostavke i moguće alternativno objašnjenje. Ako odlomak povezuje očekivanja i inflaciju, model može upozoriti na zajedničke šokove ili obrnuti smjer povezanosti. Vi provjeravate jesu li prigovori relevantni za konkretan dizajn. Ne trebate prihvatiti svaki prigovor samo zato što je strogo napisan.</p>
 <p>3. Prijelaz između odlomaka. Dajte dva susjedna odlomka i zatražite rečenicu koja objašnjava njihovu vezu. Dobar prijelaz čitatelju govori zašto nakon definicije mjere slijedi određeni izračun. Ako ta veza nije opravdana, možda treba promijeniti redoslijed ili ukloniti odlomak, a ne samo dodati veznu frazu.</p>
-<p>4. Parafraza i atribucija. Priložite provjereni odlomak i bibliografske podatke. Zatražite prijedlog parafraze koji čuva granice nalaza te usporedite ga s izvornikom. Stil citiranja prilagodite uputama rada. Model ne smije dopuniti nedostajuću godinu, naslov ili DOI nagađanjem.</p>
+<p>4. Prepričavanje i navođenje izvora. Priložite provjereni odlomak i bibliografske podatke. Zatražite prijedlog parafraze koji čuva granice nalaza te usporedite ga s izvornikom. Stil citiranja prilagodite uputama rada. Model ne smije dopuniti nedostajuću godinu, naslov ili DOI nagađanjem.</p>
 <p>5. Usklađenost uvoda i zaključka. Usporedite pitanje, obećani postupak i zaključnu tvrdnju. Ako uvod najavljuje uzročni učinak medija, a provedena je samo opisna usporedba inflacije i salda, problem se rješava promjenom pitanja i zaključka ili novim istraživanjem. Dodavanje riječi „možda” ne ispravlja neusklađen dizajn.</p>
 <p>6. Radni predložak. Kada pravila dopuštaju, model može pomoći organizirati vaše točke u nacrt. Nepoznate podatke označite, primjerice <code>[unesi rezultat iz provjerene tablice]</code>. Predložak nije gotov tekst i takve oznake moraju nestati tek nakon stvarne provjere. Za završnu predaju svaku rečenicu trebate razumjeti i moći povezati s dokazom.</p>
-<p>Obrnuti razgovor također je koristan, zatražite da vam model postavlja pitanja jedno po jedno prije predlaganja metodološkog odlomka. Primjerice, koje su jedinice, koji je uzorak i kako ste postupili s prazninama? To može otkriti odluku koju niste zapisali. Ne jamči da će model pitati sve potrebno, pa vlastiti kontrolni popis i dalje ima smisla.</p>
+<p>Možete zatražiti i da vam model postavlja pitanja jedno po jedno prije predlaganja metodološkog odlomka. Primjerice, koje su jedinice, koji je uzorak i kako ste postupili s prazninama? To može otkriti odluku koju niste zapisali. Ne jamči da će model pitati sve potrebno, pa vlastiti kontrolni popis i dalje ima smisla.</p>
 </section>
 <section id="četiri-prolaza-kroz-tekst" class="level3">
 <h3 class="anchored" data-anchor-id="četiri-prolaza-kroz-tekst">Četiri prolaza kroz tekst</h3>
-<p>Prvi prolaz, evaluacija bez prepisivanja. Pročitajte odlomak s obzirom na pitanje, dokaz, jasnoću i granice zaključka. Zatražite konkretna mjesta koja treba popraviti. Ocjena „7 od 10” bez obrazloženja malo pomaže. Korisniji je komentar „iz ove rečenice nije jasno da je očekivanje mjereno kvalitativnim saldom”.</p>
-<p>Drugi prolaz, struktura. Posložite problem, mjere, postupak, nalaz i ograničenje. Definirajte pojam prije nego što ga tumačite. Tablicu ili graf uvedite rečenicom koja objašnjava što čitatelj treba gledati, a nakon prikaza objasnite relevantan nalaz. Nemojte opisivati sve brojeve redom ako ne služe pitanju.</p>
-<p>Treći prolaz, usklađivanje snage tvrdnji. Zamijenite „dokazuje” s formulacijom koja točno odgovara dizajnu, a ne s neodređenom ogradom. „U uzorku postoji pozitivna linearna povezanost” preciznije je od „rezultati sugeriraju statistički značajan utjecaj” kada niste proveli odgovarajući test ni identificirali uzročni učinak.</p>
-<p>Četvrti prolaz, jezik i dosljednost. Provjerite nazive mjera, decimalne oznake, datume, padeže i kratice. Isti konstrukt ne treba naizmjenično nazivati percepcijom, očekivanjem i pouzdanjem ako to nisu iste varijable. Nakon jezične izmjene ponovno pročitajte značenje, jer gramatički glađa rečenica može sadržajno biti manje precizna.</p>
+<p>Najprije pročitajte tekst bez prepisivanja. Pročitajte odlomak s obzirom na pitanje, dokaz, jasnoću i granice zaključka. Zatražite konkretna mjesta koja treba popraviti. Ocjena „7 od 10” bez obrazloženja malo pomaže. Korisniji je komentar „iz ove rečenice nije jasno da je očekivanje mjereno kvalitativnim saldom”.</p>
+<p>Zatim provjerite redoslijed objašnjenja. Posložite problem, mjere, postupak, nalaz i ograničenje. Definirajte pojam prije nego što ga tumačite. Tablicu ili graf uvedite rečenicom koja objašnjava što čitatelj treba gledati, a nakon prikaza objasnite relevantan nalaz. Nemojte opisivati sve brojeve redom ako ne služe pitanju.</p>
+<p>Provjerite i jesu li tvrdnje jače od dokaza. Zamijenite „dokazuje” s formulacijom koja točno odgovara dizajnu, a ne s neodređenom ogradom. „U uzorku postoji pozitivna linearna povezanost” preciznije je od „rezultati sugeriraju statistički značajan utjecaj” kada niste proveli odgovarajući test ni identificirali uzročni učinak.</p>
+<p>Na kraju uredite jezik i uskladite nazive. Provjerite nazive mjera, decimalne oznake, datume, padeže i kratice. Isti pojam ne treba naizmjenično nazivati percepcijom, očekivanjem i pouzdanjem ako to nisu iste varijable. Nakon jezične izmjene ponovno pročitajte značenje, jer gramatički glađa rečenica može sadržajno biti manje precizna.</p>
 </section>
 <section id="primjer-revizije-na-rezultatima-radionice" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-revizije-na-rezultatima-radionice">Primjer revizije na rezultatima radionice</h3>
@@ -487,7 +487,7 @@ window.Quarto = {
 <blockquote class="blockquote">
 <p>Naša analiza dokazuje da očekivanja uzrokuju inflaciju, jer je korelacija 0,70. Potrošači su zato uspješno predvidjeli rast cijena.</p>
 </blockquote>
-<p>U prvom prolazu označite tri problema, korelacija ne identificira uzrok, mjere su nedovoljno opisane i usporedba istog mjeseca nije evaluacija prognoze. U drugom prolazu navedite uzorak i dvije mjere. U trećem ograničite zaključak na opisnu povezanost. Završna verzija može glasiti.</p>
+<p>U prvom prolazu označite tri problema, korelacija ne identificira uzrok, mjere su nedovoljno opisane i usporedba istog mjeseca ne provjerava točnost prognoze. U drugom prolazu navedite uzorak i dvije mjere. U trećem ograničite zaključak na opisnu povezanost. Završni odlomak možete napisati ovako.</p>
 <blockquote class="blockquote">
 <p>U hrvatskom mjesečnom uzorku za 2015.–2024. Pearsonova korelacija između godišnje stope promjene HICP-a i salda očekivanih promjena cijena iznosi približno 0,6985. Taj rezultat opisuje pozitivnu linearnu povezanost dviju mjera u istom mjesecu. Saldo nije brojčana prognoza inflacije, a ova usporedba ne identificira uzročni učinak ni prognoznu točnost.</p>
 </blockquote>
@@ -496,14 +496,14 @@ window.Quarto = {
 </section>
 <section id="hrvatski-jezik-i-terminologija" class="level3">
 <h3 class="anchored" data-anchor-id="hrvatski-jezik-i-terminologija">Hrvatski jezik i terminologija</h3>
-<p>Provjerite stručni naziv u relevantnoj literaturi i dosljedno ga koristite. Opći jezični model može pomoći u formulaciji, ali ne jamči pravilno padežno slaganje ni stručnu prikladnost. Posebno pregledajte duge rečenice u kojima se zajedno pojavljuje nekoliko konstrukata i ograda.</p>
+<p>Provjerite stručni naziv u relevantnoj literaturi i dosljedno ga koristite. Opći jezični model može pomoći u formulaciji, ali ne jamči pravilno padežno slaganje ni stručnu prikladnost. Posebno pregledajte duge rečenice koje uvode više pojmova i ograničenja odjednom.</p>
 <p><a href="https://github.com/clarinsi/classla">CLASSLA</a> je skup alata za obradu jezika, uključujući jezično označavanje i lematizaciju. To je korisno za istraživanja teksta, ali nije isto što i provjera gramatike cijelog akademskog odlomka. Nemojte rezultat lematizacije predstavljati kao potvrdu da su sve rečenice gramatički i sadržajno ispravne.</p>
 <p>U vlastitom malom pojmovniku zadržite razliku između inflacije i razine cijena, salda i postotka, opažanja i ispitanika, korelacije i učinka, standardne pogreške i reziduala. Ako isti naziv koristite za različite mjere, čitatelj neće moći pratiti vaš zaključak.</p>
 </section>
 <section id="završna-vježba-i-procjena-vlastitog-rada" class="level3">
 <h3 class="anchored" data-anchor-id="završna-vježba-i-procjena-vlastitog-rada">Završna vježba i procjena vlastitog rada</h3>
 <p>Napišite približno 200 riječi o jednom rezultatu radionice. Uključite pitanje, podatke i razdoblje, postupak, provjerenu brojku i ograničenje. Zatim zatražite komentar po četiri prolaza, prihvatite samo obrazložene prijedloge i sačuvajte zapis AI pomoći. Provjerite da svaki citat postoji i da svaka brojka odgovara spremljenom izlazu.</p>
-<p>Za procjenu vlastitog rada zapišite možete li objasniti analizu, koje ste pogreške pronašli, što druga osoba može reproducirati i koliko vam je vremena trebalo do provjerenog rezultata. Broj upita ili generiranih stranica sam ne odgovara na ta pitanja. Ova pitanja služe samoprocjeni u radionici. Nisu standardizirana psihometrijska skala.</p>
+<p>Za procjenu vlastitog rada zapišite možete li objasniti analizu, koje ste pogreške pronašli, što druga osoba može ponoviti i koliko vam je vremena trebalo do provjerenog rezultata. Broj upita ili generiranih stranica sam ne odgovara na ta pitanja. Ova pitanja služe samoprocjeni u radionici. Nisu provjeren upitnik za mjerenje sposobnosti ili osobina.</p>
 <p>Na kraju spremite pitanje, dokazne zapise, plan, podatke, skriptu, izlaz i vlastitu interpretaciju u jednu mapu. Iz nje treba biti jasno kako ste došli do zaključka. Isti postupak provjere možete koristiti u sljedećem seminarskom radu, čak i ako radite s drugim alatom.</p>
 <div class="booklet-next">
 <p><a href="../materials/rubric.html">Otvorite kriterije završne predaje →</a></p>

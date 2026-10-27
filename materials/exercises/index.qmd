@@ -97,21 +97,21 @@ panel-metode. Ne mijenja se uzorak zato što rezultat nije očekivan.
 **Rasprava, 10 minuta.** Što je promjena plana zbog pogreške, a što biranje analize
 zato što daje poželjan rezultat? Zapišite razlog svake naknadne promjene.
 
-## 2.1 Audit podataka {#v21}
+## 2.1 Provjera podataka {#v21}
 
 ::: {.exercise-meta}
 Cilj je provjeriti strukturu i značenje ulaza prije analize.
 :::
 
 **Ulaz.** [CSV](../../data/processed/croatia_inflation.csv),
-[starter.R](../../code/starter.R), [predložak audita](../templates/data-audit.md).
+[starter.R](../../code/starter.R), [predložak za provjeru podataka](../templates/data-audit.md).
 
 **Rad, 25 minuta.** Prvih 5 minuta otvorite projekt i pokrenite početak
 skripte. Sljedećih 10 minuta provjerite broj i jedinstvenost mjeseci,
 nedostajuće vrijednosti i raspon obiju mjera. Zadnjih 10 minuta objasnite
 jedinice i zašto `log()` nije dopušten automatski primijeniti na svaki stupac.
 
-**Predaja.** Ispunjeni audit s naredbama i rezultatima.
+**Predaja.** Ispunjena provjera podataka s naredbama i rezultatima.
 
 **Provjera.** 120 redaka i različitih mjeseci, 2015-01 do 2024-12, nema
 nedostajućih vrijednosti. Negativna vrijednost sama po sebi nije greška.
@@ -138,7 +138,7 @@ raditi prema referentnoj sintaksi u uputama nastavnika.
 **Provjera.** Objašnjavate svaku dodanu naredbu, ne mijenjate ulazni CSV,
 prosjek salda ne nazivate očekivanom stopom inflacije.
 
-**Rasprava, 10 minuta.** Može li kod biti sintaktički ispravan i mjeriti pogrešnu stvar?
+**Rasprava, 10 minuta.** Može li kod biti napisan bez programskih grešaka i mjeriti pogrešnu stvar?
 
 ## 2.3 Popravak i čisto izvođenje {#v23}
 

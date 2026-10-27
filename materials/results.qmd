@@ -12,7 +12,7 @@ izravno usporedive jer su jedinice različite.
 
 ![Mjesečna stopa HICP-a i saldo očekivanja cijena u Hrvatskoj, 2015.–2024., na odvojenim osima i s različitim vrstama linija.](../results/inflation_expectations.svg)
 
-Izvor, Eurostat / DG ECFIN, snimka 26. listopada 2026.. Vlastita obrada.
+Podaci su iz Eurostata i DG ECFIN-a, preuzeti 26. listopada 2026. Vlastita obrada.
 Eurostat nije odgovoran za ovu nastavnu obradu i tumačenje.
 
 ## Provjerite brojke
@@ -24,7 +24,7 @@ aritmetički prosjek mjesečnih salda. Svaka godina ima 12 opažanja.
 Ne zamjenjujte prvi prosjek promjenom godišnjeg prosjeka izvornog indeksa.
 
 [Potpuna godišnja tablica](../results/annual_summary.csv) ·
-[Audit](../results/audit.csv) ·
+[Provjera podataka](../results/audit.csv) ·
 [Korelacije i podrazdoblja](../results/correlations.csv)
 
 ## Kako protumačiti nalaz

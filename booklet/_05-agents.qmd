@@ -16,7 +16,7 @@ Zamislite istraživačkog suradnika kojemu predajete radnu mapu. Treba mu
 reći što se smije mijenjati, koje datoteke predstavljaju izvorne podatke
 i kako izgleda prihvatljiv rezultat. „Analiziraj ovo” ostavlja previše
 prostora za proizvoljan izbor uzorka i metode. „Provjeri mjesece i jedinice,
-zatim reproduciraj postojeći graf” određuje provjerljiv korak.
+zatim ponovi postojeći graf” određuje provjerljiv korak.
 
 ### Kontekst, upute i dopuštenja
 
@@ -59,9 +59,10 @@ mjesecom prethodne godine.
 Prije analize potvrdite 120 uzastopnih mjeseci, od siječnja 2015. do
 prosinca 2024. Provjerite ima li dvostrukih zapisa, praznina i neočekivanih
 vrijednosti. Usporedite nekoliko vrijednosti s izvornim JSON datotekama.
-U manifestu su parametri dohvata i kontrolni sažeci datoteka. Zamrznuta
-kopija omogućuje da kasnija revizija službenih podataka ne promijeni
-neprimjetno rezultat ove nastavne verzije.
+U datoteci s podacima o preuzimanju, manifestu, navedeni su upiti
+korišteni za preuzimanje i kontrolni zbrojevi za provjeru promjena datoteka.
+Za nastavu čuvamo istu kopiju podataka. Tako naknadne službene izmjene
+ne mijenjaju rezultate radionice.
 
 Agent može napisati te provjere, ali vi određujete što očekujete i zašto.
 Broj redaka sam po sebi nije dovoljan, 120 redaka može sadržavati jedan
@@ -104,7 +105,7 @@ raste. Za to trebaju dodatni postupci i pretpostavke.
 Pearsonova korelacija sažima linearnu povezanost parova opažanja. U
 zamrznutom uzorku cijelog razdoblja iznosi približno 0,6985. U dijelu
 2015.–2019. približno 0,8279, a u dijelu 2020.–2024. približno 0,5342.
-Te su vrijednosti reproducirane u `results/correlations.csv`. Razlika
+Te su vrijednosti spremljene u `results/correlations.csv`. Razlika
 među podrazdobljima pokazuje da sažetak ovisi o promatranom razdoblju.
 Nije test razlike korelacija niti dokaz promjene uzročnog mehanizma.
 
@@ -133,8 +134,8 @@ lažnu regresiju povezanu s nestacionarnošću.
 U [`sandwich::NeweyWest`](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html)
 važni su odabir odmaka, prethodno izbjeljivanje i korekcija za veličinu
 uzorka. Naš dodatak navodi postavke izričito, `lag = 12`,
-`prewhite = FALSE`, `adjust = TRUE`. Dvanaest je nastavna specifikacija
-za mjesečne podatke, a ne univerzalno optimalan odabir. Procjena i
+`prewhite = FALSE`, `adjust = TRUE`. U ovom primjeru koristimo dvanaest odmaka jer radimo s mjesečnim
+podacima. To nije najbolji izbor za svaki zadatak. Procjena i
 interpretacija traže pregled dinamike i osjetljivosti na razumne postavke.
 
 P-vrijednost se odnosi na kompatibilnost rezultata s nul-hipotezom i
@@ -147,9 +148,10 @@ Prikladnost dizajna prethodi tumačenju p-vrijednosti.
 
 ### Korak 5 / osjetljivost i granice proširenja
 
-Multiverzum modela i specifikacijska krivulja služe ispitivanju koliko
-rezultat ovisi o analitičkim odlukama. Uspoređujte specifikacije koje
-možete metodološki obrazložiti. Dodavanje svih kombinacija koje računalo
+U naprednom radu možete usporediti više opravdanih načina analize
+i provjeriti koliko se rezultati mijenjaju. Takav se pristup naziva
+multiverzumom modela, a rezultate je moguće prikazati specifikacijskom
+krivuljom. Za svaki uključeni model objasnite zašto odgovara pitanju. Dodavanje svih kombinacija koje računalo
 može generirati uključilo bi i modele neprikladne za vaše pitanje.
 
 Prije pregleda rezultata zapišite koje ćete odluke usporediti i zašto.
@@ -162,7 +164,7 @@ ili najmanjom p-vrijednošću.
 Za medijski nastavak trebali biste pribaviti korpus s podrijetlom i
 uvjetima uporabe, definirati uključivanje članaka, ukloniti duplikate po
 opisanom pravilu te provjeriti mjerenje pažnje ili tona. Ručno označen
-uzorak može pomoći evaluaciji klasifikacije. To je zaseban projekt. Broj članaka spomenut u starom materijalu
+uzorak može pomoći da provjerite koliko dobro alat razvrstava tekstove. To je zaseban projekt. Broj članaka spomenut u starom materijalu
 nije potvrđen dostupnim skupom podataka.
 
 ### Kako provjeriti rad agenta

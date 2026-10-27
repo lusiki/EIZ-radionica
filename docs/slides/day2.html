@@ -199,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Dvije varijable, dvije jedinice.</strong> <code>hicp_yoy_pct</code> jest godišnja promjena ukupnog HICP-a u %. <code>expectations_balance</code> jest sezonski neprilagođen saldo anketnih odgovora o budućem kretanju cijena, izražen u bodovima salda. Saldo nije broj postotaka očekivane inflacije. Obje serije bilježimo za isti mjesec ankete odnosno mjerenja cijena. Time ne provjeravamo prognozu za 12 mjeseci unaprijed.</p>
 </div>
 <p>Ne logaritmiramo automatski, stopa i saldo mogu biti nula ili negativni. Ne pretvaramo već izračunanu stopu HICP-a u još jednu stopu rasta. Ako kasnije analiziramo promjene, promjena godišnje stope mjeri se u postotnim bodovima. Transformacija mora odgovarati pitanju i biti dokumentirana.</p>
-<p><a href="../materials/exercises/index.html#v21">Vježba 2.1, audit podataka</a>.</p>
+<p><a href="../materials/exercises/index.html#v21">Vježba 2.1, provjera podataka</a>.</p>
 </section>
 <section id="blok-22" class="level2">
 <h2 class="anchored" data-anchor-id="blok-22">2.2 Kod koji možete objasniti</h2>
@@ -214,13 +214,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="blok-23" class="level2">
 <h2 class="anchored" data-anchor-id="blok-23">2.3 Provjerite postupak iz čistog početka</h2>
-<p>Za reproducibilnost trebaju podaci, kod, opis okruženja i redoslijed pokretanja. Spremite skriptu, zatvorite prethodnu R sesiju i pokrenite je ponovno iz korijena projekta. Referentni postupak izričito provjerava jedinstvenost mjeseci, uzorak, nedostajuće vrijednosti i rezultate.</p>
+<p>Da bi netko mogao ponoviti analizu, trebaju mu podaci, kod, popis programa i paketa te upute kojim redom pokrenuti skripte. Spremite skriptu, zatvorite prethodnu R sesiju i pokrenite je ponovno iz korijena projekta. Referentni postupak izričito provjerava jedinstvenost mjeseci, uzorak, nedostajuće vrijednosti i rezultate.</p>
 <p>Usporedite dva grafa s odvojenim osima. Zajednička vremenska os olakšava čitanje, ali visine linija nisu izravno usporedive jer se jedinice razlikuju. Dvostruka os na jednom grafu može vizualno pojačati sličnost proizvoljnim odabirom raspona. Korelacija također može ovisiti o podrazdoblju, trendovima i zajedničkim šokovima. Zato je opis kretanja primjereniji od tvrdnje da je jedna varijabla uzrokovala drugu.</p>
 <section id="što-ostaje-za-napredni-rad" class="level3">
 <h3 class="anchored" data-anchor-id="što-ostaje-za-napredni-rad">Što ostaje za napredni rad</h3>
 <p>Opcionalni OLS primjer uključuje konstantu i unaprijed naveden smjer regresije. HAC standardne pogreške služe zaključivanju uz određene oblike vremenske ovisnosti i heteroskedastičnosti. Ne popravljaju endogenost, loš izbor varijabli ili nevaljan dizajn istraživanja. Ne jamče ni da će standardna pogreška uvijek biti veća. Postavke i ograničenja nalaze se uz skriptu, prema <a href="https://sandwich.r-forge.r-project.org/reference/NeweyWest.html">dokumentaciji za Newey–West</a>.</p>
 <p>P-vrijednost opisuje koliko bi opaženi ili ekstremniji rezultat bio neobičan pod nul-hipotezom i pretpostavkama modela. Nije vjerojatnost da je nul-hipoteza istinita niti vjerojatnost da je koeficijent jednak nuli. Pogledajte <a href="https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf">izjavu ASA-e</a>. Test stacionarnosti nije automatski prekidač koji bira model. Panel-metode nisu primjenjive samo zato što imamo više mjeseci jedne zemlje.</p>
-<p>Bilježnica i skripta mogu biti reproducibilne ako je dokumentiran cijeli postupak i ako se izvršavaju od početka. U osnovnom dijelu svi radimo u skripti. <a href="../materials/exercises/index.html#v23">Vježba 2.3</a> traži popravak namjerno pogrešnog koda, a zatim čisto ponovno izvođenje.</p>
+<p>Analizu možete ponoviti iz bilježnice ili skripte ako su svi koraci zapisani i mogu se pokrenuti od početka. U osnovnom dijelu svi radimo u skripti. <a href="../materials/exercises/index.html#v23">Vježba 2.3</a> traži popravak namjerno pogrešnog koda, a zatim čisto ponovno izvođenje.</p>
 </section>
 </section>
 <section id="blok-24" class="level2">
@@ -236,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="predaja" class="level2">
 <h2 class="anchored" data-anchor-id="predaja">Predaja</h2>
-<p>Predajte pitanje, tri zapisa o izvorima, skriptu koja se izvršava od početka, jedan graf ili tablicu, tekst od približno 200 riječi i zapis uporabe AI-ja. <a href="../materials/rubric.html">Rubrika</a> pokazuje kako se vrednuju dokaz, metoda, reproducibilnost, tumačenje i transparentnost.</p>
+<p>Predajte pitanje, tri zapisa o izvorima, skriptu koja se izvršava od početka, jedan graf ili tablicu, tekst od približno 200 riječi i zapis uporabe AI-ja. <a href="../materials/rubric.html">Rubrika</a> pokazuje kako se vrednuju dokaz, metoda, ponovljivost postupka, tumačenje i jasno navođenje načina rada.</p>
 
 
 </section>

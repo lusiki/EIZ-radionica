@@ -59,7 +59,7 @@ nije naveden. Svaka godina ima **12 mjeseci**.
 Provjera datuma razlikuje broj redaka od potpunosti kalendara.
 Značenje stupaca potvrđujemo opisom izvora i jedinicama u CSV-u.
 
-## 2.2 Dopunite i objasnite kod {#primjer-izmjene}
+## 2.2 Izradite i objasnite prikaze {#primjer-izmjene}
 
 Grafovi dijele vremensku os, dok svaki ima svoju jedinicu na okomitoj
 osi. Godišnja tablica ima deset redaka. Za 2022. prosjek mjesečnih

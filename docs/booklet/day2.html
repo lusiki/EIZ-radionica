@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -106,35 +71,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles/fonts.css">
 </head>
@@ -222,51 +158,34 @@ window.Quarto = {
   <li><a href="#poglavlje-21" id="toc-poglavlje-21" class="nav-link active" data-scroll-target="#poglavlje-21">2.1 Upoznajte i provjerite podatke</a>
   <ul class="collapse">
   <li><a href="#primjer-iz-radionice" id="toc-primjer-iz-radionice" class="nav-link" data-scroll-target="#primjer-iz-radionice">Primjer iz radionice</a></li>
-  <li><a href="#pregled-podataka-u-jednom-razgovoru" id="toc-pregled-podataka-u-jednom-razgovoru" class="nav-link" data-scroll-target="#pregled-podataka-u-jednom-razgovoru">Pregled podataka u jednom razgovoru</a></li>
-  <li><a href="#što-sadrži-naš-skup-podataka" id="toc-što-sadrži-naš-skup-podataka" class="nav-link" data-scroll-target="#što-sadrži-naš-skup-podataka">Što sadrži naš skup podataka</a></li>
-  <li><a href="#provjerite-vrijednosti-i-jedinice" id="toc-provjerite-vrijednosti-i-jedinice" class="nav-link" data-scroll-target="#provjerite-vrijednosti-i-jedinice">Provjerite vrijednosti i jedinice</a></li>
-  <li><a href="#povežite-nalaz-provjere-s-analizom" id="toc-povežite-nalaz-provjere-s-analizom" class="nav-link" data-scroll-target="#povežite-nalaz-provjere-s-analizom">Povežite nalaz provjere s analizom</a></li>
-  <li><a href="#dodatno-čitanje-provjera-podataka-uz-agenta" id="toc-dodatno-čitanje-provjera-podataka-uz-agenta" class="nav-link" data-scroll-target="#dodatno-čitanje-provjera-podataka-uz-agenta">Dodatno čitanje / provjera podataka uz agenta</a></li>
-  <li><a href="#kontekst-upute-i-dopuštenja" id="toc-kontekst-upute-i-dopuštenja" class="nav-link" data-scroll-target="#kontekst-upute-i-dopuštenja">Kontekst, upute i dopuštenja</a></li>
-  <li><a href="#kako-provjeriti-rad-agenta" id="toc-kako-provjeriti-rad-agenta" class="nav-link" data-scroll-target="#kako-provjeriti-rad-agenta">Kako provjeriti rad agenta</a></li>
-  <li><a href="#ako-želite-nastaviti" id="toc-ako-želite-nastaviti" class="nav-link" data-scroll-target="#ako-želite-nastaviti">Ako želite nastaviti</a></li>
+  <li><a href="#učitana-tablica-kao-početak-razgovora" id="toc-učitana-tablica-kao-početak-razgovora" class="nav-link" data-scroll-target="#učitana-tablica-kao-početak-razgovora">Učitana tablica kao početak razgovora</a></li>
+  <li><a href="#dvije-mjere-dva-vremenska-značenja" id="toc-dvije-mjere-dva-vremenska-značenja" class="nav-link" data-scroll-target="#dvije-mjere-dva-vremenska-značenja">Dvije mjere, dva vremenska značenja</a></li>
+  <li><a href="#što-podaci-trebaju-da-bi-postali-korisni" id="toc-što-podaci-trebaju-da-bi-postali-korisni" class="nav-link" data-scroll-target="#što-podaci-trebaju-da-bi-postali-korisni">Što podaci trebaju da bi postali korisni</a></li>
+  <li><a href="#koliko-posla-prepustiti-asistentu" id="toc-koliko-posla-prepustiti-asistentu" class="nav-link" data-scroll-target="#koliko-posla-prepustiti-asistentu">Koliko posla prepustiti asistentu</a></li>
   </ul></li>
-  <li><a href="#poglavlje-22" id="toc-poglavlje-22" class="nav-link" data-scroll-target="#poglavlje-22">2.2 Dopunite i objasnite kod</a>
+  <li><a href="#poglavlje-22" id="toc-poglavlje-22" class="nav-link" data-scroll-target="#poglavlje-22">2.2 Izradite i objasnite prikaze</a>
   <ul class="collapse">
   <li><a href="#primjer-iz-radionice-1" id="toc-primjer-iz-radionice-1" class="nav-link" data-scroll-target="#primjer-iz-radionice-1">Primjer iz radionice</a></li>
-  <li><a href="#od-upita-do-izvršene-analize" id="toc-od-upita-do-izvršene-analize" class="nav-link" data-scroll-target="#od-upita-do-izvršene-analize">Od upita do izvršene analize</a></li>
-  <li><a href="#za-daljnji-rad-izbor-okruženja" id="toc-za-daljnji-rad-izbor-okruženja" class="nav-link" data-scroll-target="#za-daljnji-rad-izbor-okruženja">Za daljnji rad / izbor okruženja</a></li>
-  <li><a href="#tri-vrste-pomoći-koje-treba-razlikovati" id="toc-tri-vrste-pomoći-koje-treba-razlikovati" class="nav-link" data-scroll-target="#tri-vrste-pomoći-koje-treba-razlikovati">Tri vrste pomoći koje treba razlikovati</a></li>
-  <li><a href="#dodatni-primjer-cijeli-skup-u-r-u" id="toc-dodatni-primjer-cijeli-skup-u-r-u" class="nav-link" data-scroll-target="#dodatni-primjer-cijeli-skup-u-r-u">Dodatni primjer / cijeli skup u R-u</a></li>
-  <li><a href="#objasnite-promjenu-prikaza" id="toc-objasnite-promjenu-prikaza" class="nav-link" data-scroll-target="#objasnite-promjenu-prikaza">Objasnite promjenu prikaza</a></li>
-  <li><a href="#kako-pronaći-uzrok-pogreške" id="toc-kako-pronaći-uzrok-pogreške" class="nav-link" data-scroll-target="#kako-pronaći-uzrok-pogreške">Kako pronaći uzrok pogreške</a></li>
-  <li><a href="#dodatno-čitanje-priprema-za-naprednu-analizu" id="toc-dodatno-čitanje-priprema-za-naprednu-analizu" class="nav-link" data-scroll-target="#dodatno-čitanje-priprema-za-naprednu-analizu">Dodatno čitanje / priprema za naprednu analizu</a></li>
-  <li><a href="#ako-želite-nastaviti-1" id="toc-ako-želite-nastaviti-1" class="nav-link" data-scroll-target="#ako-želite-nastaviti-1">Ako želite nastaviti</a></li>
+  <li><a href="#naručite-prikaz-koji-odgovara-pitanju" id="toc-naručite-prikaz-koji-odgovara-pitanju" class="nav-link" data-scroll-target="#naručite-prikaz-koji-odgovara-pitanju">Naručite prikaz koji odgovara pitanju</a></li>
+  <li><a href="#što-dobivamo-godišnjom-tablicom" id="toc-što-dobivamo-godišnjom-tablicom" class="nav-link" data-scroll-target="#što-dobivamo-godišnjom-tablicom">Što dobivamo godišnjom tablicom</a></li>
+  <li><a href="#promijenite-jednu-stvar-i-objasnite-učinak" id="toc-promijenite-jednu-stvar-i-objasnite-učinak" class="nav-link" data-scroll-target="#promijenite-jednu-stvar-i-objasnite-učinak">Promijenite jednu stvar i objasnite učinak</a></li>
+  <li><a href="#izvedba-koja-ostavlja-prostor-za-razmišljanje" id="toc-izvedba-koja-ostavlja-prostor-za-razmišljanje" class="nav-link" data-scroll-target="#izvedba-koja-ostavlja-prostor-za-razmišljanje">Izvedba koja ostavlja prostor za razmišljanje</a></li>
   </ul></li>
   <li><a href="#poglavlje-23" id="toc-poglavlje-23" class="nav-link" data-scroll-target="#poglavlje-23">2.3 Ponovite analizu od početka</a>
   <ul class="collapse">
   <li><a href="#primjer-iz-radionice-2" id="toc-primjer-iz-radionice-2" class="nav-link" data-scroll-target="#primjer-iz-radionice-2">Primjer iz radionice</a></li>
-  <li><a href="#provjerite-izračun-prije-tumačenja" id="toc-provjerite-izračun-prije-tumačenja" class="nav-link" data-scroll-target="#provjerite-izračun-prije-tumačenja">Provjerite izračun prije tumačenja</a></li>
-  <li><a href="#pročitajte-grafove-i-sažetke" id="toc-pročitajte-grafove-i-sažetke" class="nav-link" data-scroll-target="#pročitajte-grafove-i-sažetke">Pročitajte grafove i sažetke</a></li>
-  <li><a href="#dodatno-čitanje-kako-sačuvati-ponovljiv-postupak" id="toc-dodatno-čitanje-kako-sačuvati-ponovljiv-postupak" class="nav-link" data-scroll-target="#dodatno-čitanje-kako-sačuvati-ponovljiv-postupak">Dodatno čitanje / kako sačuvati ponovljiv postupak</a></li>
-  <li><a href="#dodatno-čitanje-isti-postupak-u-bilježnici" id="toc-dodatno-čitanje-isti-postupak-u-bilježnici" class="nav-link" data-scroll-target="#dodatno-čitanje-isti-postupak-u-bilježnici">Dodatno čitanje / isti postupak u bilježnici</a></li>
-  <li><a href="#skriveno-stanje-zašto-dokument-radi-samo-vama" id="toc-skriveno-stanje-zašto-dokument-radi-samo-vama" class="nav-link" data-scroll-target="#skriveno-stanje-zašto-dokument-radi-samo-vama">Skriveno stanje / zašto dokument radi samo vama</a></li>
-  <li><a href="#pet-pitanja-za-provjeru-rezultata-u-bilježnici" id="toc-pet-pitanja-za-provjeru-rezultata-u-bilježnici" class="nav-link" data-scroll-target="#pet-pitanja-za-provjeru-rezultata-u-bilježnici">Pet pitanja za provjeru rezultata u bilježnici</a></li>
-  <li><a href="#za-dulji-projekt-što-sačuvati-iz-razgovora" id="toc-za-dulji-projekt-što-sačuvati-iz-razgovora" class="nav-link" data-scroll-target="#za-dulji-projekt-što-sačuvati-iz-razgovora">Za dulji projekt / što sačuvati iz razgovora</a></li>
-  <li><a href="#usporedite-tri-načina-rada" id="toc-usporedite-tri-načina-rada" class="nav-link" data-scroll-target="#usporedite-tri-načina-rada">Usporedite tri načina rada</a></li>
-  <li><a href="#ako-želite-nastaviti-2" id="toc-ako-želite-nastaviti-2" class="nav-link" data-scroll-target="#ako-želite-nastaviti-2">Ako želite nastaviti</a></li>
-  <li><a href="#dodatno-čitanje-regresija-i-hac" id="toc-dodatno-čitanje-regresija-i-hac" class="nav-link" data-scroll-target="#dodatno-čitanje-regresija-i-hac">Dodatno čitanje / regresija i HAC</a></li>
-  <li><a href="#dodatno-čitanje-usporedba-postupaka" id="toc-dodatno-čitanje-usporedba-postupaka" class="nav-link" data-scroll-target="#dodatno-čitanje-usporedba-postupaka">Dodatno čitanje / usporedba postupaka</a></li>
+  <li><a href="#vratite-se-cijelom-skupu" id="toc-vratite-se-cijelom-skupu" class="nav-link" data-scroll-target="#vratite-se-cijelom-skupu">Vratite se cijelom skupu</a></li>
+  <li><a href="#što-korelacija-sažima" id="toc-što-korelacija-sažima" class="nav-link" data-scroll-target="#što-korelacija-sažima">Što korelacija sažima</a></li>
+  <li><a href="#kada-više-izračuna-postane-novo-istraživanje" id="toc-kada-više-izračuna-postane-novo-istraživanje" class="nav-link" data-scroll-target="#kada-više-izračuna-postane-novo-istraživanje">Kada više izračuna postane novo istraživanje</a></li>
+  <li><a href="#od-gotovog-izgleda-do-razumljivog-rezultata" id="toc-od-gotovog-izgleda-do-razumljivog-rezultata" class="nav-link" data-scroll-target="#od-gotovog-izgleda-do-razumljivog-rezultata">Od gotovog izgleda do razumljivog rezultata</a></li>
   </ul></li>
   <li><a href="#poglavlje-24" id="toc-poglavlje-24" class="nav-link" data-scroll-target="#poglavlje-24">2.4 Napišite i uredite zaključak</a>
   <ul class="collapse">
   <li><a href="#primjer-iz-radionice-3" id="toc-primjer-iz-radionice-3" class="nav-link" data-scroll-target="#primjer-iz-radionice-3">Primjer iz radionice</a></li>
-  <li><a href="#pisanje-je-dio-istraživanja" id="toc-pisanje-je-dio-istraživanja" class="nav-link" data-scroll-target="#pisanje-je-dio-istraživanja">Pisanje je dio istraživanja</a></li>
-  <li><a href="#kako-koristiti-pomoć-pri-pisanju" id="toc-kako-koristiti-pomoć-pri-pisanju" class="nav-link" data-scroll-target="#kako-koristiti-pomoć-pri-pisanju">Kako koristiti pomoć pri pisanju</a></li>
-  <li><a href="#šest-obrazaca-koje-možete-prilagoditi" id="toc-šest-obrazaca-koje-možete-prilagoditi" class="nav-link" data-scroll-target="#šest-obrazaca-koje-možete-prilagoditi">Šest obrazaca koje možete prilagoditi</a></li>
-  <li><a href="#četiri-prolaza-kroz-tekst" id="toc-četiri-prolaza-kroz-tekst" class="nav-link" data-scroll-target="#četiri-prolaza-kroz-tekst">Četiri prolaza kroz tekst</a></li>
-  <li><a href="#kako-obrazložiti-nalaz" id="toc-kako-obrazložiti-nalaz" class="nav-link" data-scroll-target="#kako-obrazložiti-nalaz">Kako obrazložiti nalaz</a></li>
-  <li><a href="#hrvatski-jezik-i-terminologija" id="toc-hrvatski-jezik-i-terminologija" class="nav-link" data-scroll-target="#hrvatski-jezik-i-terminologija">Hrvatski jezik i terminologija</a></li>
+  <li><a href="#pisanje-razvija-razumijevanje" id="toc-pisanje-razvija-razumijevanje" class="nav-link" data-scroll-target="#pisanje-razvija-razumijevanje">Pisanje razvija razumijevanje</a></li>
+  <li><a href="#povežite-pitanje-graf-i-nalaz" id="toc-povežite-pitanje-graf-i-nalaz" class="nav-link" data-scroll-target="#povežite-pitanje-graf-i-nalaz">Povežite pitanje, graf i nalaz</a></li>
+  <li><a href="#jezična-pomoć-i-vlastiti-glas" id="toc-jezična-pomoć-i-vlastiti-glas" class="nav-link" data-scroll-target="#jezična-pomoć-i-vlastiti-glas">Jezična pomoć i vlastiti glas</a></li>
+  <li><a href="#od-zaključka-do-sljedećeg-pitanja" id="toc-od-zaključka-do-sljedećeg-pitanja" class="nav-link" data-scroll-target="#od-zaključka-do-sljedećeg-pitanja">Od zaključka do sljedećeg pitanja</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -295,127 +214,85 @@ window.Quarto = {
 
 
 <p><a href="../booklet/index.html">O priručniku</a> · <a href="../downloads/EIZ-prirucnik.pdf">Cijeli PDF</a> · <a href="../slides/day2.html">Kratki pregled drugog dana</a></p>
-<p>Svako poglavlje počinje aktivnošću sa stranice drugog dana. U jednom AI razgovoru analiziramo cijeli skup, izrađujemo grafove, provjeravamo brojke, uspoređujemo razdoblja i pišemo zaključak. Upute za R projekt, agente, bilježnice i napredne metode služe samostalnom nastavku.</p>
+<p>Svako poglavlje počinje kratkim prikazom aktivnosti drugog dana. U jednom AI razgovoru upoznajemo podatke, izrađujemo grafove, uspoređujemo razdoblja i oblikujemo vlastiti zaključak. Upute i upiti napisani su običnim jezikom. Naglasak je na izboru postupka i razumijevanju rezultata.</p>
 <section id="poglavlje-21" class="level2">
 <h2 class="anchored" data-anchor-id="poglavlje-21">2.1 Upoznajte i provjerite podatke</h2>
 <p><a href="../slides/day2.html#blok-21">Dan 2, tema 2.1</a> · <a href="../materials/exercises/index.html#v21">Vježba 2.1</a></p>
 <section id="primjer-iz-radionice" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-iz-radionice">Primjer iz radionice</h3>
-<p><strong>Razgovor.</strong> Što treba provjeriti prije izrade grafa i izračuna?</p>
-<p><strong>Primjer.</strong> Učitanom CSV-u zatražimo pregled prvih i posljednjih redaka, broja opažanja, stupaca, datuma i jedinica. Prikaz usporedimo s cijelom tablicom na stranici dana.</p>
-<p><strong>Isprobajte.</strong> Provjerite jedinstvenost i potpunost mjeseci te praznine u dvjema brojčanim serijama. Očekujemo 120 uzastopnih mjeseci od 2015-01 do 2024-12, bez duplikata i praznina u tim serijama. Prazne oznake statusa čitamo prema njihovu značenju. Pregledajte izvršeni kod i objasnite što nalaz govori o spremnosti podataka za analizu.</p>
+<p><strong>Razgovor.</strong> Što predstavlja jedan redak naše tablice i kako iz njega čitamo dvije mjere?</p>
+<p><strong>Primjer.</strong> Zatražimo kratak opis učitanog skupa i pogledamo nekoliko mjeseci na početku i kraju razdoblja. Povežemo prikazane vrijednosti sa značenjem HICP-a i anketnog salda.</p>
+<p><strong>Isprobajte.</strong> Odaberite jedan mjesec i objasnite što njegove vrijednosti govore, na koje se vrijeme odnose i što biste o njima htjeli saznati.</p>
 </section>
-<section id="pregled-podataka-u-jednom-razgovoru" class="level3">
-<h3 class="anchored" data-anchor-id="pregled-podataka-u-jednom-razgovoru">Pregled podataka u jednom razgovoru</h3>
-<p>Za analizu koristimo učitani CSV sa svih 120 mjeseci. Na stranici dana možete otvoriti cijelu tablicu i usporediti nekoliko redaka s prikazom koji je dao AI. To pomaže provjeriti koristi li stvarne podatke.</p>
-<p>Kod koji alat izvrši možete otvoriti u istom razgovoru. Ako nastavite rad u R-u, početna skripta i rječnik u paketu opisuju isti skup.</p>
-</section>
-<section id="što-sadrži-naš-skup-podataka" class="level3">
-<h3 class="anchored" data-anchor-id="što-sadrži-naš-skup-podataka">Što sadrži naš skup podataka</h3>
-<p>Jedan redak naše tablice predstavlja mjesec u Hrvatskoj. Ključ <code>month</code> povezuje mjesece, <code>hicp_yoy_pct</code> predstavlja godišnju stopu promjene HICP-a, a <code>expectations_balance</code> kvalitativni anketni saldo. Oznaka „monthly” opisuje mjesečnu učestalost podataka. Podatak se objavljuje mjesečno, a stopa uspoređuje cijene s istim mjesecom prethodne godine.</p>
-<p>Prije analize potvrdite 120 uzastopnih mjeseci, od siječnja 2015. do prosinca 2024. Provjerite ima li dvostrukih zapisa, praznina i neočekivanih vrijednosti. Usporedite nekoliko vrijednosti s tablicom na stranici dana. Za detaljniju provjeru podrijetla u paketu su izvorne JSON datoteke i zapis upita korištenih za preuzimanje. U svim primjerima koristimo istu spremljenu kopiju podataka. Tako naknadne službene izmjene ne mijenjaju rezultate radionice.</p>
-<p>Vi određujete što očekujete od podataka i provjeravate to naredbama u skripti. Uz broj redaka provjerite i mjesece. Tablica od 120 redaka može sadržavati ponovljen mjesec uz prazninu za drugi mjesec. Isto vrijedi za graf koji izgleda glatko i uvjerljivo, a počiva na pogrešno spojenim datumima.</p>
-</section>
-<section id="provjerite-vrijednosti-i-jedinice" class="level3">
-<h3 class="anchored" data-anchor-id="provjerite-vrijednosti-i-jedinice">Provjerite vrijednosti i jedinice</h3>
-<p>„Očisti podatke” preširok je zadatak. Prazno polje označava nedostajući podatak, a nula izmjerenu vrijednost. Visoka inflacija može biti stvarna posljedica gospodarskog šoka. Prije brisanja, zamjene ili transformacije treba razumjeti izvor i napisati pravilo. Čuvajte izvorne podatke te promjene provodite u skripti.</p>
-<p>Podaci za jednu zemlju kroz vrijeme čine vremensku seriju. Panel čini više jedinica, primjerice zemalja, praćenih kroz vrijeme. Naš skup sadrži dvije mjere za Hrvatsku. Ta razlika određuje koje je modele uopće smisleno razmatrati.</p>
-<p>Logaritam je definiran za pozitivne vrijednosti. Naš saldo i stopa mogu imati nulte ili negativne vrijednosti, pa ih u osnovnoj analizi koristimo u izvornim jedinicama. U modelu s logaritmiranim varijablama tumačenje koeficijenta ovisi o obliku jednadžbe. Za spajanje dnevnih i mjesečnih podataka unaprijed odredite pravilo svođenja na istu vremensku razinu.</p>
-</section>
-<section id="povežite-nalaz-provjere-s-analizom" class="level3">
-<h3 class="anchored" data-anchor-id="povežite-nalaz-provjere-s-analizom">Povežite nalaz provjere s analizom</h3>
-<p>Broj redaka, raspon mjeseci, praznine i jedinice zajedno govore kakvu tablicu analiziramo. Prazna oznaka statusa može biti očekivana, a prazna brojčana vrijednost traži objašnjenje. Zato provjere čitamo uz definicije stupaca. U našem skupu oba brojčana niza imaju svih 120 vrijednosti.</p>
-</section>
-<section id="dodatno-čitanje-provjera-podataka-uz-agenta" class="level3">
-<h3 class="anchored" data-anchor-id="dodatno-čitanje-provjera-podataka-uz-agenta">Dodatno čitanje / provjera podataka uz agenta</h3>
-<p>Istu provjeru podataka možete zadati programskom asistentu. Programska pomoć može biti dopunjavanje retka, razgovor o skripti ili agent koji čita datoteke, predlaže izmjene i pokreće naredbe. Ista aplikacija često nudi nekoliko tih mogućnosti.</p>
-<p>Claude Code je primjer agenta koji može izravno raditi na projektu. Ako mu okruženje i dopuštenja to omogućuju, može urediti nekoliko datoteka i izvršiti analizu. To štedi ručno prepisivanje. Prije rada odredite što agent smije mijenjati, a nakon rada pregledajte promjene.</p>
-<p>Zamislite istraživačkog suradnika s kojim dijelite radnu mapu. Treba mu reći što se smije mijenjati, koje datoteke predstavljaju izvorne podatke i kako izgleda prihvatljiv rezultat. „Analiziraj ovo” ostavlja previše prostora za proizvoljan izbor uzorka i metode. „Provjeri mjesece i jedinice, zatim prikaži nalaze provjere” određuje provjerljiv korak.</p>
-</section>
-<section id="kontekst-upute-i-dopuštenja" class="level3">
-<h3 class="anchored" data-anchor-id="kontekst-upute-i-dopuštenja">Kontekst, upute i dopuštenja</h3>
-<p>Dokumentacija <a href="https://code.claude.com/docs/en/memory">Claude Code memorije</a> razlikuje projektne upute i automatski spremljene bilješke. Takve datoteke pomažu nastaviti započeti rad. Istraživački dnevnik, spremljene skripte i povijest promjena i dalje su potrebni. Važne odluke spremite u istraživački dnevnik.</p>
-<p>Povezivanje s dodatnim alatima, primjerice putem MCP-a, može proširiti što agent može čitati ili izvršiti. Pristup pojedinim bazama i radnjama ovisi o povezanim uslugama i dodijeljenim pravima. Prije rada provjerite dostupne funkcije i dopuštenja. Tekst s weba ili iz učitane datoteke istraživački je materijal. Radni postupak određujte vlastitim uputama agentu.</p>
-<p>Rad u zasebnoj grani omogućuje pregled izmjena prije njihova prihvaćanja. Pristup računalu ograničite zasebnim dopuštenjima. Ako koristite podagente, odredite gdje svaki radi i pregledajte njihove izmjene. Za početak je praktično zadavati male uzastopne korake i pregledati kod nakon svakog od njih.</p>
-<p>Primjer početnog zaduženja.</p>
+<section id="učitana-tablica-kao-početak-razgovora" class="level3">
+<h3 class="anchored" data-anchor-id="učitana-tablica-kao-početak-razgovora">Učitana tablica kao početak razgovora</h3>
+<p>Nastavite u razgovoru iz prvog dana. Ako počinjete ovdje, preuzmite <a href="../data/processed/croatia_inflation.csv">CSV radionice</a>, dodajte ga u alat koji može izvršavati analizu i navedite pitanje koje ste odabrali. Za prvi pregled dovoljan je kratak zahtjev.</p>
 <blockquote class="blockquote">
-<p>Radi unutar ovog projekta. Najprije pročitaj rječnik podataka i postojeće skripte. Izvorne datoteke u data/raw ostavi nepromijenjene. Provjeri broj mjeseci, datumski raspon, duplikate, nedostajuće vrijednosti i jedinice. Prikaži plan i nalaze provjere. Zadrži sva opažanja i početno istraživačko pitanje. Svaku predloženu promjenu zasebno obrazloži.</p>
+<p>Upoznaj me s učitanom tablicom. Opiši što predstavlja jedan redak, koliko mjeseci obuhvaća i koje dvije mjere analiziramo. Prikaži nekoliko redaka s početka i kraja razdoblja. Reci jesu li mjeseci uzastopni i postoje li praznine u brojčanim serijama. Objašnjenje i rezultate prikaži u razgovoru, bez programskog koda.</p>
 </blockquote>
+<p>Očekujemo 120 različitih uzastopnih mjeseci od siječnja 2015. do prosinca 2024. Obje brojčane serije imaju vrijednost za svaki mjesec. Prazne oznake statusa u našoj tablici znače da dodatni status podatka nije naveden. U <a href="../data/dictionary.html">rječniku podataka</a> opisani su stupci i jedinice.</p>
+<p>Takav pregled pomaže zamisliti što će graf prikazivati. Svaka točka na vremenskoj osi predstavlja mjesec za Hrvatsku. Anketni odgovori potrošača već su sažeti u pokazatelj. Iz tih redaka zato ne možemo opisivati razlike među pojedinim kućanstvima. Za takvo pitanje trebali bismo podatke na razini ispitanika.</p>
 </section>
-<section id="kako-provjeriti-rad-agenta" class="level3">
-<h3 class="anchored" data-anchor-id="kako-provjeriti-rad-agenta">Kako provjeriti rad agenta</h3>
-<p>Pregledajte razliku izmjena, pročitajte ključne retke i pokrenite postupak od početka. Usporedite barem jedan rezultat neovisnim izračunom. Pročitajte što su testovi provjerili i zasebno ocijenite ekonomsko tumačenje rezultata.</p>
+<section id="dvije-mjere-dva-vremenska-značenja" class="level3">
+<h3 class="anchored" data-anchor-id="dvije-mjere-dva-vremenska-značenja">Dvije mjere, dva vremenska značenja</h3>
+<p>HICP u ovoj tablici izražen je godišnjom stopom promjene. Vrijednost za određeni mjesec uspoređuje cijene s istim mjesecom prethodne godine. Saldo očekivanja potječe iz odgovora o budućem kretanju cijena. Mjesečna učestalost objave zajednička je objema serijama, ali njihovi vremenski horizonti imaju različito značenje.</p>
+<p>To je važno za pitanje koje ćemo postaviti grafu. Usporedba vrijednosti iz istog mjeseca govori o tome kako se dvije mjere zajedno kreću. Za istraživanje prognozne uspješnosti trebalo bi odrediti koji kasniji ishod odgovara očekivanju i što je ispitanicima bilo poznato u trenutku odgovora. Na radionici počinjemo istodobnom opisnom usporedbom.</p>
+<blockquote class="blockquote">
+<p>Odaberi ožujak 2022. i objasni obje vrijednosti običnim jezikom. Uz svaku navedi jedinicu i vremensku usporedbu na koju se odnosi. Predloži zatim jedno pitanje na koje nam taj redak sam ne može odgovoriti, ali bi nam pomogao pogled na okolne mjesece.</p>
+</blockquote>
+<p>Razgovor o jednom retku usporava rad upravo ondje gdje nastaje razumijevanje. Kada znate objasniti te dvije vrijednosti, lakše je čitati cijeli niz i uočiti što u AI-jevu opisu ima smisla.</p>
 </section>
-<section id="ako-želite-nastaviti" class="level3">
-<h3 class="anchored" data-anchor-id="ako-želite-nastaviti">Ako želite nastaviti</h3>
-<p>Zadajte agentu iste provjere koje ste već proveli u skripti. Usporedite njegove naredbe i rezultate s vlastitim zapisom. Obrazložite jednu prihvaćenu ili izmijenjenu naredbu.</p>
+<section id="što-podaci-trebaju-da-bi-postali-korisni" class="level3">
+<h3 class="anchored" data-anchor-id="što-podaci-trebaju-da-bi-postali-korisni">Što podaci trebaju da bi postali korisni</h3>
+<p>Goldsmith-Pinkham u demonstraciji <a href="https://paulgp.substack.com/p/large-datasets-and-structured-databases">Large Datasets and Structured Databases</a> pokazuje kako organizirani podaci i njihovi opisi olakšavaju istraživanje. Jedan od problema u njegovu primjeru nastaje zbog promjene identifikatora, što nalikuje stvarnoj promjeni u podacima dok se ne razumije njihova struktura. Poruka se odnosi i na male tablice: značenje podataka određuje koje su usporedbe opravdane.</p>
+<p>U našem su skupu opisi i razdoblje već pripremljeni. U drugom projektu trebalo bi razjasniti jesu li kroz vrijeme ostali isti obuhvat, pitanje ankete i način mjerenja. AI može pomoći pronaći i objasniti takve promjene. Njihova važnost proizlazi iz teme koju istražujemo.</p>
+<p>Zato zadatak „očisti podatke” često traži razgovor prije izvršavanja. Visoka vrijednost može biti upravo događaj koji želimo proučiti. Nedostajuća vrijednost i nula imaju različito značenje. U ovoj radionici zadržavamo izvorne brojčane vrijednosti i cijelo razdoblje, a uži odabir koristimo samo za jasno određenu usporedbu ili prikaz.</p>
+</section>
+<section id="koliko-posla-prepustiti-asistentu" class="level3">
+<h3 class="anchored" data-anchor-id="koliko-posla-prepustiti-asistentu">Koliko posla prepustiti asistentu</h3>
+<p>Asistent može samostalno pripremiti pregled tablice ili niz grafova. Veći prostor za odlučivanje znači i više izbora koje kasnije trebamo razumjeti. Za učenje je koristan postupak u kojem najprije sami izgovorite što očekujete, a zatim pogledate kako je zahtjev izveden.</p>
+<p>Prije izrade godišnje tablice, primjerice, objasnite zašto očekujete deset redaka i dvanaest mjeseci u svakoj godini. Nakon prikaza možete usporediti vlastito očekivanje s rezultatom. Time gradite sposobnost usmjeravanja analize, iako račun obavlja alat.</p>
 </section>
 </section>
 <section id="poglavlje-22" class="level2">
-<h2 class="anchored" data-anchor-id="poglavlje-22">2.2 Dopunite i objasnite kod</h2>
+<h2 class="anchored" data-anchor-id="poglavlje-22">2.2 Izradite i objasnite prikaze</h2>
 <p><a href="../slides/day2.html#blok-22">Dan 2, tema 2.2</a> · <a href="../materials/exercises/index.html#v22">Vježba 2.2</a></p>
 <section id="primjer-iz-radionice-1" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-iz-radionice-1">Primjer iz radionice</h3>
-<p><strong>Razgovor.</strong> Kako usporediti dvije mjere i jasno prikazati njihove različite jedinice?</p>
-<p><strong>Primjer.</strong> AI izvrši kod koji izrađuje dva vremenska grafa sa zajedničkom osi mjeseci i godišnju tablicu prosjeka. Pregledamo dio koda za grupiranje po godini, oznake osi i broj mjeseci. Svaka godina ima 12 opažanja. Za 2022. dobivamo približno 10,63 % za prosjek mjesečnih godišnjih stopa HICP-a i 46,62 boda za prosjek salda.</p>
-<p><strong>Isprobajte.</strong> Prilagodite prikaz svojem pitanju, primjerice izdvojite 2020.–2024. Zadržite cijeli učitani skup za kasnije usporedbe. Objasnite promjenu koda i obrazac koji je sada lakše uočiti. Graf, tablica i kod ostaju u istom AI razgovoru.</p>
+<p><strong>Razgovor.</strong> Kako prikazati dvije mjere da se njihovo kretanje može usporediti?</p>
+<p><strong>Primjer.</strong> Zatražimo dva vremenska grafa sa zajedničkom osi mjeseci i godišnju tablicu prosjeka. Objasnimo što saznajemo iz grafa, a što iz tablice.</p>
+<p><strong>Isprobajte.</strong> Prilagodite prikaz svojem pitanju, primjerice izdvojite 2020.–2024. Objasnite koji se obrazac sada lakše vidi i zašto.</p>
 </section>
-<section id="od-upita-do-izvršene-analize" class="level3">
-<h3 class="anchored" data-anchor-id="od-upita-do-izvršene-analize">Od upita do izvršene analize</h3>
-<p>U razgovornom alatu tražimo da učita CSV, pokrene kod i prikaže rezultat. Tako možemo pratiti vezu između upita, postupka i dobivenog grafa. Pogledajte dio koda koji bira mjesece ili grupira retke po godini. Zatražite objašnjenje i usporedite ga s tablicom rezultata.</p>
-<p>Ako kasnije radite u razvojnom okruženju, odnosno IDE-u, editor, konzola i prikaz rezultata dostupni su na jednom mjestu. Iste provjere vrijede za analizu u pregledniku i za taj način rada.</p>
-<p>Asistent je ovdje poput pomoćnika koji vam dodaje alat dok radite. Pročitajte njegov prijedlog prije prihvaćanja i pregledajte rezultat nakon izvršavanja. Ako ne znate što funkcija radi, tražite objašnjenje na malom primjeru i usporedite ga s dokumentacijom.</p>
-</section>
-<section id="za-daljnji-rad-izbor-okruženja" class="level3">
-<h3 class="anchored" data-anchor-id="za-daljnji-rad-izbor-okruženja">Za daljnji rad / izbor okruženja</h3>
-<p>RStudio i Positron mogu poslužiti za daljnji rad s kodom. RStudio ima <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">dokumentiranu integraciju Copilota</a>, pa Copilot možete koristiti i u tom okruženju. RStudio razdvaja rad sučelja i R sesije. Pri izboru editora provjerite njegove mogućnosti, a istraživačku metodu birajte prema pitanju i podacima.</p>
-<p>Positron je okruženje za rad s R-om i Pythonom. Njegova <a href="https://positron.posit.co/extensions.html">dokumentacija proširenja</a> objašnjava način instalacije i ograničenja kompatibilnosti. Za svako proširenje iz VS Codea provjerite podršku u Positronu. Za rad s punim projektom korisni su otvaranje mape, odabir R-a, čitanje skripte, izvršavanje i pregled izlaza. AI dodatak ostaje izborna pomoć.</p>
-<p>Prema <a href="https://positron.posit.co/assistant">Positovoj dokumentaciji</a>, Posit Assistant od verzije Positrona 2026.07 zamjenjuje prethodni Positron Assistant i Databot. Stare upute o sučelju mogu se odnositi na stariji proizvod. Provjerite instaliranu verziju i odgovarajuće upute. Dostupne modele, naredbe i dozvole provjerite u svojoj instalaciji.</p>
-<p>Odaberite okruženje u kojem znate otvoriti projekt, pregledati kod i pronaći spremljene rezultate. Provjerite možete li sve pokrenuti od početka. U svakom okruženju ostaju iste provjere podataka i postupka. Valjanost analize procijenite prema podacima i primijenjenoj metodi.</p>
-</section>
-<section id="tri-vrste-pomoći-koje-treba-razlikovati" class="level3">
-<h3 class="anchored" data-anchor-id="tri-vrste-pomoći-koje-treba-razlikovati">Tri vrste pomoći koje treba razlikovati</h3>
-<p>Dopunjavanje koda predlaže nastavak retka na mjestu gdje pišete. Pomaže pri ponavljanju sličnih naredbi i pisanju malih funkcija. Provjerite nazive stupaca, argumente i smjer filtra. Kod koji se pokrene bez pogreške može koristiti varijablu iz nekog drugog projekta ili pretpostaviti pogrešnu jedinicu.</p>
-<p>Razgovor o kodu služi objašnjenjima i usmjerenim pitanjima. Umjesto „popravi sve” navedite poruku o pogrešci, relevantan dio skripte i očekivani rezultat. Tražite objašnjenje uzroka, a zatim najmanju promjenu koja ga rješava. Pročitajte i upozorenja koja prate uspješno prikazan graf.</p>
-<p>Uređivanje i agentsko izvršavanje mogu zahvatiti više datoteka. Njihova dostupnost ovisi o proizvodu i integraciji. Pregled izmjena, dopuštenja i izvršenih naredbi važniji je od opće etikete „IDE” ili „agent”. Terminalski alat može omogućiti detaljnu provjeru, a pomoćnik u editoru može izvoditi opsežne radnje.</p>
-</section>
-<section id="dodatni-primjer-cijeli-skup-u-r-u" class="level3">
-<h3 class="anchored" data-anchor-id="dodatni-primjer-cijeli-skup-u-r-u">Dodatni primjer / cijeli skup u R-u</h3>
-<p>Otvorite korijen preuzetog projekta. Sljedeći mali primjer koristi osnovni R i iste podatke kao službene skripte. Svrha mu je pokazati što čitate i provjeravate pri radu s cijelim skupom. Taj prošireni postupak nalazi se u datotekama u mapi <code>code</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/processed/croatia_inflation.csv"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">nrow</span>(d) <span class="sc">==</span> <span class="dv">120</span>L, <span class="sc">!</span><span class="fu">anyDuplicated</span>(d<span class="sc">$</span>month))</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(d)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(d)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Pitajte asistenta što provjerava <code>stopifnot</code>, a što još ne provjerava. Primjer potvrđuje broj redaka i jedinstvenost mjeseca. Zasebno provjerite potpunost kalendara i definicije varijabli. Usporedite ga s opsežnijom provjerom u projektu. Dobro objašnjenje navodi i ograničenje vlastitog koda.</p>
-<p>Zatim izračunajte jednostavan sažetak.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(d[<span class="fu">c</span>(<span class="st">"hicp_yoy_pct"</span>, <span class="st">"expectations_balance"</span>)])</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(d))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>U ovoj tablici prazna polja <code>hicp_flag</code> i <code>expectations_flag</code> znače da nema dodatne oznake statusa podatka. Brojčane vrijednosti inflacije i salda provjerite u njihovim stupcima. Zato popis iz <code>colSums</code> čitajte zajedno s rječnikom podataka. Automatsko uklanjanje svakog retka koji ima bilo koje prazno polje uklonilo bi i valjana opažanja.</p>
-<p>Zahtjev „napravi profesionalnu tablicu” prerano usmjerava pažnju na izgled. Prvo provjerite mjere, broj opažanja i nedostajuće vrijednosti. Naknadno možete urediti naslove i broj decimala. U svakom stupcu zadržite jednu jasno definiranu mjeru i jedinicu.</p>
-<p>Za godišnji prosjek napišite pravilo prije koda, grupiramo prema godini, očekujemo dvanaest mjeseci i računamo prosjek mjesečnih godišnjih stopa. Taj prosjek sažima dvanaest mjesečnih godišnjih stopa. Asistent neka objasni svaki argument i provjeri <code>n_months</code> prije sažimanja.</p>
-<p>Za vizualizaciju zatražite dva panela sa zajedničkom osi vremena, jasnim jedinicama i izvorom. Ispravite oznaku ako piše „očekivana inflacija (%)”. U našem slučaju odgovarajuća je oznaka „saldo očekivanih promjena cijena”. Navedite i da HICP predstavlja godišnju stopu promjene, kako čitatelj ne bi pretpostavio mjesečnu promjenu.</p>
-</section>
-<section id="objasnite-promjenu-prikaza" class="level3">
-<h3 class="anchored" data-anchor-id="objasnite-promjenu-prikaza">Objasnite promjenu prikaza</h3>
-<p>Za prikaz 2020.–2024. kod bira 60 mjeseci. Ostale mjesece čuvamo u izvornom skupu jer nam trebaju za usporedbu razdoblja. Pogledajte odabir datuma u izmijenjenom kodu i usporedite ga s rasponom osi na grafu. Objasnite što je na tom prikazu lakše uočiti i što se vidi tek u cijelom nizu.</p>
-</section>
-<section id="kako-pronaći-uzrok-pogreške" class="level3">
-<h3 class="anchored" data-anchor-id="kako-pronaći-uzrok-pogreške">Kako pronaći uzrok pogreške</h3>
-<p>Kada kod ne radi, prvo pročitajte poruku i utvrdite u kojem koraku nastaje problem. Nedostajuća datoteka često je problem radnog direktorija. Nepostojeći stupac može značiti pogrešno ime ili drukčiji način učitavanja. Nazive stupaca usporedite s rječnikom podataka prije preimenovanja.</p>
-<p>Koristan upit glasi.</p>
+<section id="naručite-prikaz-koji-odgovara-pitanju" class="level3">
+<h3 class="anchored" data-anchor-id="naručite-prikaz-koji-odgovara-pitanju">Naručite prikaz koji odgovara pitanju</h3>
+<p>Graf je način istraživanja: odabirom prikaza određujemo koji će odnos postati vidljiv. Za pitanje o kretanju kroz vrijeme želimo zadržati redoslijed mjeseci. Za usporedbu godina koristan je sažetak, dok nam raspodjela vrijednosti govori nešto drugo. Prije oblikovanja navedite što želite da čitatelj primijeti.</p>
+<p>Naše dvije serije imaju različite jedinice. Prikazat ćemo ih u dva panela, jedan iznad drugoga, sa zajedničkom vremenskom osi. Tako možemo usporediti trenutke promjene uz zasebnu skalu svake mjere.</p>
 <blockquote class="blockquote">
-<p>Ova naredba javlja sljedeću pogrešku, [poruka]. Radim iz korijena projekta, a ulazna datoteka ima ove nazive stupaca, [nazivi]. Objasni vjerojatan uzrok i predloži najmanju izmjenu. Sačuvaj definicije varijabli i sva opažanja.</p>
+<p>Iz učitanog CSV-a izradi dva vremenska grafa za 2015.–2024., jedan iznad drugoga, sa zajedničkom osi mjeseci. Na prvom prikaži godišnju stopu HICP-a u postocima, a na drugom saldo očekivanih promjena cijena u bodovima. Dodaj jasne naslove i izvore Eurostat i DG ECFIN, s datumom preuzimanja 26. listopada 2026. Prikaži grafove i kratko objasni njihov sadržaj, bez programskog koda.</p>
 </blockquote>
-<p>Provjerite rješenje u čistoj sesiji. Objekt koji je ostao od ranijeg pokretanja može prikriti nedostajući korak. Spremite skriptu, ponovno pokrenite R i izvodite je od početka. Taj postupak vrijedi i u RStudiju i u Positronu. Koristite ga u okruženju u kojem radite.</p>
+<p>Najprije pogledajte graf bez AI-jeva objašnjenja. Odaberite promjenu koju biste pokazali drugoj osobi. Je li riječ o razdoblju rasta, naglom vrhuncu ili vremenu u kojem se dvije serije kreću drukčije? Zatim usporedite svoje opažanje s ponuđenim opisom. Različit izbor naglaska može otvoriti korisnu raspravu o pitanju.</p>
 </section>
-<section id="dodatno-čitanje-priprema-za-naprednu-analizu" class="level3">
-<h3 class="anchored" data-anchor-id="dodatno-čitanje-priprema-za-naprednu-analizu">Dodatno čitanje / priprema za naprednu analizu</h3>
-<p>Proširenje s Hrvatske na više zemalja traži usklađene definicije, obuhvat i datume. Tek tada ima smisla razmatrati panel pristup. Izbor fiksnih ili slučajnih efekata ne treba svesti na automatsko pravilo temeljeno na jednoj p-vrijednosti. Način uzorkovanja, pretpostavke o neopaženim razlikama i struktura zavisnosti određuju koje su procjene i standardne pogreške prikladne.</p>
-<p>Takva analiza traži prikladne podatke i poznavanje panel-modela. Možete joj se vratiti nakon što upoznate osnovni postupak. Za početak isprobajte malu izmjenu koda i pogledajte što ona mijenja.</p>
+<section id="što-dobivamo-godišnjom-tablicom" class="level3">
+<h3 class="anchored" data-anchor-id="što-dobivamo-godišnjom-tablicom">Što dobivamo godišnjom tablicom</h3>
+<p>Mjesečni graf čuva dinamiku, a godišnji prosjek daje pregled na višoj vremenskoj razini. Tablica može olakšati usporedbu 2021. i 2022., ali ne pokazuje u kojem se mjesecu promjena dogodila. Zato ta dva prikaza koristimo zajedno.</p>
+<blockquote class="blockquote">
+<p>Napravi tablicu godišnjih prosjeka za obje mjere. Uz svaku godinu navedi broj mjeseci koji ulaze u prosjek. Prosjek HICP-a nazovi prosjekom mjesečnih godišnjih stopa, a saldo izrazi u bodovima. Prikaži dvije decimale. Zatim usporedi 2021. i 2022. i objasni što je godišnje sažimanje sakrilo u odnosu na mjesečni graf.</p>
+</blockquote>
+<p>Za 2021. prosjek mjesečnih godišnjih stopa HICP-a iznosi približno 2,68 %, a prosjek salda 28,26 bodova. Za 2022. odgovarajuće su vrijednosti 10,63 % i 46,62 boda. Svaki prosjek obuhvaća dvanaest mjeseci. Godišnji prosjek stopa u ovoj tablici treba razlikovati od godišnje promjene prosjeka samog indeksa cijena. Tu drugu veličinu računali bismo iz razina indeksa.</p>
+<p>Razgovarajte o tome koliko bi se zaključak promijenio kada biste vidjeli samo godišnju tablicu. Možete prepoznati veliku razliku među godinama, ali za opis nastanka i trajanja promjene treba pogledati mjesece. Isti podaci dopuštaju različite korisne sažetke.</p>
 </section>
-<section id="ako-želite-nastaviti-1" class="level3">
-<h3 class="anchored" data-anchor-id="ako-želite-nastaviti-1">Ako želite nastaviti</h3>
-<p>U R-u možete ponoviti analizu koju ste izveli u razgovoru. Početna skripta u paketu koristi isti skup. Usporedite broj mjeseci, godišnje prosjeke i grafove te objasnite dijelove koda koji ih stvaraju.</p>
+<section id="promijenite-jednu-stvar-i-objasnite-učinak" class="level3">
+<h3 class="anchored" data-anchor-id="promijenite-jednu-stvar-i-objasnite-učinak">Promijenite jednu stvar i objasnite učinak</h3>
+<p>Za vlastiti pokušaj odaberite jednu promjenu prikaza. Možete izdvojiti kasnije razdoblje, jasnije označiti godine ili prilagoditi naslov pitanju koje postavljate. Prije izmjene recite što očekujete da će biti lakše vidjeti. Nakon nje usporedite prikaze.</p>
+<blockquote class="blockquote">
+<p>Izradi dodatnu verziju grafova samo za 2020.–2024. Zadrži iste definicije mjera. Cijeli izvorni skup ostaje dostupan za kasniju usporedbu. Objasni što uži vremenski prikaz ističe i koji se kontekst gubi izostavljanjem ranijih godina.</p>
+</blockquote>
+<p>Izdvojeni prikaz obuhvaća 60 mjeseci. Može olakšati čitanje promjene, ali izbor početka i kraja utječe na dojam. Ako uspoređujete nekoliko grafova iste mjere, razgovarajte i o rasponu okomite osi. Jednaka skala olakšava procjenu veličine razlika između prikaza.</p>
+</section>
+<section id="izvedba-koja-ostavlja-prostor-za-razmišljanje" class="level3">
+<h3 class="anchored" data-anchor-id="izvedba-koja-ostavlja-prostor-za-razmišljanje">Izvedba koja ostavlja prostor za razmišljanje</h3>
+<p>Goldsmith-Pinkhamova demonstracija <a href="https://paulgp.substack.com/p/from-an-empty-folder-to-a-figure">From an Empty Folder to a Figure</a> pokazuje kako AI može pomoći da početna ideja brzo dobije oblik grafa. To je prikaz mogućeg načina rada, a ne procjena vremena potrebnog svakom početniku. U našoj su radionici podaci već pripremljeni, pa pažnju možemo usmjeriti na izbor prikaza i njegovo tumačenje.</p>
+<p>Na kraju pokažite kolegi jedan graf i objasnite zašto ste ga odabrali. Zamolite ga da kaže što prvo primjećuje. Ako se njegov dojam razlikuje od onoga što ste željeli prikazati, promijenite naslov, objašnjenje ili sam prikaz. Takav razgovor pokazuje koliko je graf uspio prenijeti istraživačku ideju.</p>
 </section>
 </section>
 <section id="poglavlje-23" class="level2">
@@ -423,78 +300,38 @@ window.Quarto = {
 <p><a href="../slides/day2.html#blok-23">Dan 2, tema 2.3</a> · <a href="../materials/exercises/index.html#v23">Vježba 2.3</a></p>
 <section id="primjer-iz-radionice-2" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-iz-radionice-2">Primjer iz radionice</h3>
-<p><strong>Razgovor.</strong> Koliko rezultat ovisi o razdoblju i kako možemo provjeriti izračun?</p>
-<p><strong>Primjer.</strong> Iz izvornog CSV-a ponovno izdvojimo svih 12 stopa za 2022. Njihov zbroj je 127,6, a prosjek približno 10,6333 %. Izdvojene retke usporedimo s tablicom podataka i dobiveni prosjek s godišnjim sažetkom.</p>
-<p><strong>Isprobajte.</strong> Ponovno krenite od cijelog CSV-a. Izračunajte istodobnu Pearsonovu korelaciju za svih 120 mjeseci te zasebno za 2015.–2019. i 2020.–2024., po 60 mjeseci. Rezultati su približno 0,6985, 0,8279 i 0,5342. Usporedite ih s grafovima i objasnite što jedna korelacija za cijelo desetljeće sažima, a što se vidi tek po podrazdobljima.</p>
+<p><strong>Razgovor.</strong> Koliko naš opis odnosa ovisi o razdoblju koje promatramo?</p>
+<p><strong>Primjer.</strong> Iz cijelog CSV-a ponovno izdvojimo dvanaest vrijednosti HICP-a za 2022. Njihov zbroj iznosi 127,6, a prosjek približno 10,6333 %. Povežemo taj račun s godišnjom tablicom.</p>
+<p><strong>Isprobajte.</strong> Usporedite korelaciju za cijelo desetljeće i za dva petogodišnja razdoblja. Objasnite što se izgubi kada odnos opišemo samo jednim brojem.</p>
 </section>
-<section id="provjerite-izračun-prije-tumačenja" class="level3">
-<h3 class="anchored" data-anchor-id="provjerite-izračun-prije-tumačenja">Provjerite izračun prije tumačenja</h3>
-<p>Godišnji prosjek provjeravamo iz njegovih sastavnica. U prikazu za 2022. trebaju biti svih 12 mjeseci iz CSV-a. Usporedite vrijednosti s podacima na stranici, zbrojite ih i podijelite s 12. Tako provjeravamo odabir redaka i račun koji je proizveo godišnju tablicu.</p>
-<p>Pri usporedbi podrazdoblja ponovno krećemo od cijelog skupa. Raniji odabir 2020.–2024. za graf ostaje zaseban prikaz. Broj opažanja uz korelaciju pomaže uočiti je li izračun koristio namjeravano razdoblje.</p>
+<section id="vratite-se-cijelom-skupu" class="level3">
+<h3 class="anchored" data-anchor-id="vratite-se-cijelom-skupu">Vratite se cijelom skupu</h3>
+<p>U prethodnom poglavlju mogli ste izdvojiti 2020.–2024. za lakši pregled. Sada ponovno koristimo svih 120 mjeseci kako bismo usporedili ranije i kasnije razdoblje. Jasno zadajte početak novog izračuna. Time razlikujete prethodno napravljeni prikaz od podataka za novu usporedbu.</p>
+<blockquote class="blockquote">
+<p>Ponovno kreni od cijelog učitanog CSV-a. Prikaži svih dvanaest godišnjih stopa HICP-a za 2022., njihov zbroj i prosjek. Zatim izračunaj Pearsonovu korelaciju između dviju mjera iz istog mjeseca za 2015.–2024., 2015.–2019. i 2020.–2024. Uz svaki rezultat navedi broj mjeseci. Prikaži tablicu i objašnjenje postupka običnim jezikom, bez programskog koda.</p>
+</blockquote>
+<p>Prosjek za 2022. možemo razumjeti kroz sastavnice: zbroj dvanaest vrijednosti podijeljen s dvanaest daje približno 10,63 %. Takav mali račun pokazuje kako je nastao jedan rezultat tablice. Za složeniji izračun tražimo objašnjenje koje nam omogućuje razumjeti što se uspoređuje i kako je odabrano razdoblje.</p>
 </section>
-<section id="pročitajte-grafove-i-sažetke" class="level3">
-<h3 class="anchored" data-anchor-id="pročitajte-grafove-i-sažetke">Pročitajte grafove i sažetke</h3>
-<p>Dvije serije imaju različite jedinice. U analizi prikazujemo ih u odvojenim panelima sa zajedničkom vremenskom osi. Čitatelj vidi kada se promjene događaju, ali ih ne zamjenjuje za brojčano usporedive veličine. Dvije neovisno skalirane y-osi mogu proizvesti privid preklapanja linija ovisno o odabranom rasponu. Zato za ovaj zadatak koristimo odvojene prikaze.</p>
-<p>Pogledajte razdoblja ubrzanja, usporavanja i promjena raspona. Opisujte ono što slika pokazuje, a moguća objašnjenja navedite kao pitanja za daljnje istraživanje. Za provjeru strukturnog loma ili smjera uzročnosti potrebni su zaseban postupak i jasno navedene pretpostavke.</p>
-<p>Pearsonova korelacija sažima linearnu povezanost parova opažanja. U zamrznutom uzorku cijelog razdoblja iznosi približno 0,6985. U dijelu 2015.–2019. približno 0,8279, a u dijelu 2020.–2024. približno 0,5342. Te su vrijednosti spremljene u <code>results/correlations.csv</code>. Razlika među podrazdobljima pokazuje da sažetak ovisi o promatranom razdoblju. Za test razlike korelacija ili promjene uzročnog mehanizma trebalo bi provesti zasebnu analizu.</p>
+<section id="što-korelacija-sažima" class="level3">
+<h3 class="anchored" data-anchor-id="što-korelacija-sažima">Što korelacija sažima</h3>
+<p>Pearsonova korelacija opisuje linearnu povezanost parova vrijednosti. U našoj spremljenoj verziji podataka iznosi približno <strong>0,6985</strong> za 2015.–2024., uz 120 mjeseci. Za 2015.–2019. iznosi <strong>0,8279</strong>, a za 2020.–2024. <strong>0,5342</strong>, uz po 60 mjeseci. To su opisni rezultati iz <a href="../materials/results.html">referentne analize</a>.</p>
+<p>Ranije podrazdoblje ima jaču pozitivnu linearnu povezanost prema tom pokazatelju. Jedna vrijednost za cijelo desetljeće sažima različite obrasce koje vremenski graf može pomoći uočiti. Pogledajte kada se serije kreću slično i postoje li dijelovi u kojima im se kretanja razlikuju. Broj i graf zajedno daju potpuniji opis.</p>
+<p>Razlika između dviju korelacija sama po sebi ne pokazuje da se dogodio određeni strukturni lom ili da je jedna mjera promijenila drugu. Na odnos mogu utjecati zajednički šokovi, vremenska ovisnost i izbor razdoblja. Za ispitivanje takvih objašnjenja trebalo bi oblikovati zaseban postupak. Ovdje možemo postaviti dobro obrazloženo sljedeće pitanje, primjerice zbog čega se povezanost razlikuje.</p>
 </section>
-<section id="dodatno-čitanje-kako-sačuvati-ponovljiv-postupak" class="level3">
-<h3 class="anchored" data-anchor-id="dodatno-čitanje-kako-sačuvati-ponovljiv-postupak">Dodatno čitanje / kako sačuvati ponovljiv postupak</h3>
-<p>Ako sutra pošaljete isti upit modelu, može nastati drukčiji kod. Model, postavke, dostupni alati ili izvori također se mogu promijeniti. Za reprodukciju našeg numeričkog rezultata zato čuvamo <strong>prihvaćeni kod i ulazne podatke</strong>. Iz njih ponovno pokrećemo analizu, a zapis upita čuvamo kao objašnjenje nastanka rada.</p>
-<p>Za slučajne postupke treba navesti sjeme generatora i relevantne postavke. Za vanjske izvore treba sačuvati datum dohvata i, kada je dopušteno, korištenu kopiju. Za softverske ovisnosti treba opisati verzije i način obnove okruženja. <a href="https://rstudio.github.io/renv/articles/renv.html">renv</a> pomaže upravljanju R paketima. Zasebno zabilježite potrebne sistemske biblioteke, podatke i vanjske usluge.</p>
-<p>Za priloženu analizu cijelog skupa dovoljne su spremljene datoteke i osnovni R. Složeniji projekti mogu tražiti izolirano okruženje i automatizirane provjere. Razina infrastrukture treba odgovarati stvarnim ovisnostima i riziku gubitka postupka.</p>
+<section id="kada-više-izračuna-postane-novo-istraživanje" class="level3">
+<h3 class="anchored" data-anchor-id="kada-više-izračuna-postane-novo-istraživanje">Kada više izračuna postane novo istraživanje</h3>
+<p>AI nam olakšava naručivanje dodatnih usporedbi. Možemo zatražiti drukčiji početni mjesec, kraći raspon ili pomicanje jedne serije u odnosu na drugu. Svaka od tih odluka mijenja pitanje koje broj sažima. Prije izračuna objasnite zašto vas određena promjena zanima.</p>
+<p>Ako isprobavate različita razdoblja kako biste upoznali podatke, predstavite taj rad kao istraživanje obrazaca. Odabir samo najjače korelacije nakon mnogo pokušaja ne pokazuje da je upravo taj odnos najvažniji. Za prognozu biste trebali odrediti cilj i vremenski horizont te odvojiti razdoblje na kojem procjenjujete uspješnost.</p>
+<p>Goldsmith-Pinkham u raspravi o <a href="https://paulgp.com/2026/03/21/ai-oneshot-papers.html">AI one-shot papers</a> upozorava da automatizirana izvedba može posezati za poznatim metodama koje i dalje zahtijevaju istraživačku prosudbu. Naš je primjer jednostavniji, ali otvara isto pitanje: što bi nam dodatna metoda omogućila zaključiti i zašto su njezine pretpostavke ovdje uvjerljive?</p>
+<blockquote class="blockquote">
+<p>Predloži jedno moguće objašnjenje razlike među podrazdobljima i jedno alternativno objašnjenje. Za svako reci koje dodatne podatke ili usporedbe trebamo da bismo ih mogli razlikovati. Poveži prijedloge s onim što smo stvarno vidjeli na grafovima.</p>
+</blockquote>
 </section>
-<section id="dodatno-čitanje-isti-postupak-u-bilježnici" class="level3">
-<h3 class="anchored" data-anchor-id="dodatno-čitanje-isti-postupak-u-bilježnici">Dodatno čitanje / isti postupak u bilježnici</h3>
-<p>Zamislite bilježnicu u kojoj zapisujete pitanje, odmah ispod njega izvodite izračun, a zatim dodajete graf i komentar. Takav dokument može biti i istraživački dnevnik i radno okruženje. Računalne bilježnice spajaju tekst, kod i rezultate. AI pomoć može dodati razgovorno sučelje za pisanje i objašnjavanje koda.</p>
-<p>Razgovorna sučelja mogu spremati rad u različitim oblicima. Chat koji prikazuje graf, interaktivni prikaz izrađen u razgovoru i Jupyter bilježnica nemaju nužno isti način spremanja koda i izvođenja. Prije analize provjerite možete li vidjeti izvršeni kod, preuzeti podatke i rezultat te ponovno pokrenuti postupak iz prazne sesije.</p>
-<p>Googleova <a href="https://research.google.com/colaboratory/intl/en-GB/faq.html">dokumentacija Colaba</a> opisuje razgovornu pomoć, izmjene koda i agentske postupke unutar bilježnice. Pristup ovisi o računu i dostupnosti funkcije. Za učenje je važnije razumjeti što je izvršeno nego pamtiti koji se model nalazi u pozadini pojedinog proizvoda.</p>
-<p>Bilježnicu možete predati kao završni istraživački dokument ako sadrži sav potreban kod, opis ulaza i okruženja te se može izvršiti pravilnim redom. Iste uvjete treba zadovoljiti i skripta u repozitoriju. Ponovljivost postupka provjeravate ponovnim izvođenjem spremljenog postupka.</p>
-</section>
-<section id="skriveno-stanje-zašto-dokument-radi-samo-vama" class="level3">
-<h3 class="anchored" data-anchor-id="skriveno-stanje-zašto-dokument-radi-samo-vama">Skriveno stanje / zašto dokument radi samo vama</h3>
-<p>Bilježnica može sadržavati ćeliju koja koristi objekt stvoren ranije, ali čija je izrada poslije izbrisana. Možete izvršiti ćelije redoslijedom 3, 1, 4, promijeniti podatke i zaboraviti ponovno pokrenuti graf. Na ekranu tada vidite uredan niz rezultata koji ne odgovara redoslijedu koda u spremljenom dokumentu. To je problem skrivenog stanja.</p>
-<p>AI ga može dodatno zamagliti ako kaže da je „ponovno izračunao sve”, a izmijeni samo jednu ćeliju. Spremite dokument, ponovno pokrenite jezgru i izvršite sve ćelije od početka. Provjerite rezultate i spremite ih nakon uspješnog izvođenja. Ako postupak ne radi, pronađite nedostajući korak umjesto da se oslonite na staru sliku.</p>
-<p>Isti problem postoji u interaktivnoj R konzoli. Objekt iz jučerašnje sesije može omogućiti današnjoj nepotpunoj skripti da radi. Zato spremljeni postupak pokrenite od početka s poznatim ulaznim podacima i provjerite dobivene rezultate.</p>
-</section>
-<section id="pet-pitanja-za-provjeru-rezultata-u-bilježnici" class="level3">
-<h3 class="anchored" data-anchor-id="pet-pitanja-za-provjeru-rezultata-u-bilježnici">Pet pitanja za provjeru rezultata u bilježnici</h3>
-<p>Koristite istih 120 mjeseci za Hrvatsku. Tako možete usporediti rad u bilježnici s radom u skripti na već poznatim podacima.</p>
-<p>Prvo pitanje, što je učitano? Prikažite broj opažanja, nazive i tipove stupaca, nekoliko redaka te vremenski raspon. Usporedite odgovor modela sa stvarnom tablicom. Ako model saldo nazove „očekivanom inflacijom u postocima”, ispravite definiciju prije bilo kakvog grafa.</p>
-<p>Drugo pitanje, kako se mjere kreću kroz vrijeme? Zatražite dva panela sa zajedničkom vremenskom osi. Jasno navedite jedinice i razdoblje. Provjerite jesu li mjeseci poredani od najranijeg prema najkasnijem. U ovom skupu tekstualni format YYYY-MM omogućuje kronološko sortiranje, a za druge formate provjerite pravilo sortiranja.</p>
-<p>Treće pitanje, kakav je raspon i raspodjela? Sažetak i histogram otkrivaju različite stvari. Histogram prikazuje raspodjelu, ali skriva vremenski slijed. Vremenski graf čuva slijed, ali slabije pokazuje koliko je često pojedina vrijednost zastupljena. Koristite ih za različita pitanja. Najmanje i najveće vrijednosti usporedite s izvornim podacima.</p>
-<p>Četvrto pitanje, koliko je sažetak osjetljiv na razdoblje? Izračunajte korelaciju za cijeli uzorak i dva unaprijed navedena podrazdoblja. Objasnite da se uspoređuju isti mjeseci dviju serija. Ako želite ispitati vremenski odmak, napišite koju varijablu pomičete, u kojem smjeru i zašto. Unaprijed odredite odmake i prikažite rezultate za sve odabrane odmake.</p>
-<p>Peto pitanje, što je sljedeće istraživačko pitanje? Početni pregled podataka može potaknuti hipotezu o razlikama između razdoblja. Za njezinu provjeru pripremite zaseban plan analize. Zapišite kada je ideja nastala i kakvi su dodatni podaci ili dizajn potrebni. Za AI prijedlog da dodate medijski ton morali biste prikupiti nove podatke i započeti zaseban projekt.</p>
-</section>
-<section id="za-dulji-projekt-što-sačuvati-iz-razgovora" class="level3">
-<h3 class="anchored" data-anchor-id="za-dulji-projekt-što-sačuvati-iz-razgovora">Za dulji projekt / što sačuvati iz razgovora</h3>
-<p>Preuzmite skriptu ili bilježnicu, potrebne ulazne podatke ako to dopuštaju uvjeti uporabe, tablicu rezultata i graf. Dodajte opis koraka, verzije važnih paketa i bilješku o AI pomoći. Sačuvajte datoteke iz kojih druga osoba može provjeriti brojeve i ponoviti postupak s drukčijim pretpostavkama.</p>
-<p>Iz razgovora sačuvajte odluke i zapise potrebne za provjeru rada. U zajedničku mapu spremite dijelove razgovora važne za analizu. Osobne podatke čuvajte zasebno. Primjer korisne bilješke, „Model je predložio interpolaciju. Odbijena je jer zamrznuti skup nema praznina i takva transformacija nije dio plana.”</p>
-</section>
-<section id="usporedite-tri-načina-rada" class="level3">
-<h3 class="anchored" data-anchor-id="usporedite-tri-načina-rada">Usporedite tri načina rada</h3>
-<p>Agentu možete zadati ograničen posao nad više datoteka. U editoru je lakše pratiti male promjene koda dok učite, dok bilježnica drži pitanje, kod i komentar na jednom mjestu. Sva tri načina rada mogu biti pregledna ako čuvate kod i bilježite odluke. U svakom trebate provjeriti može li se analiza ponovno pokrenuti.</p>
-<p>Umjesto rangiranja proizvoda, usporedite isti mali zadatak u dvama okruženjima, koliko vam treba vremena do <strong>provjerenog</strong> rezultata, možete li objasniti svaku transformaciju, gdje se sprema kod i može li ga druga osoba pokrenuti? Ako ste brže dobili graf, a ne možete doći do koda, dobitak može nestati pri pisanju završnog rada.</p>
-</section>
-<section id="ako-želite-nastaviti-2" class="level3">
-<h3 class="anchored" data-anchor-id="ako-želite-nastaviti-2">Ako želite nastaviti</h3>
-<p>Napišite kratak pregled podataka s pet pitanja iz ovog poglavlja. Spremite prihvaćeni kod, ponovno pokrenite okruženje i izvedite ga od početka. Usporedite broj mjeseci i korelaciju s referentnim datotekama. Zatim dajte kolegi postupak bez svoje otvorene sesije i usmenih dopuna. Zabilježite što mu je nedostajalo.</p>
-<p>Na kraju napišite što kolega može ponoviti iz spremljenih datoteka, a za što još treba vašu pomoć ili pristup vanjskoj usluzi. Preostale ovisnosti navedite u uputama uz predanu analizu.</p>
-</section>
-<section id="dodatno-čitanje-regresija-i-hac" class="level3">
-<h3 class="anchored" data-anchor-id="dodatno-čitanje-regresija-i-hac">Dodatno čitanje / regresija i HAC</h3>
-<p>Cijela referentna analiza počinje opisnim rezultatima. U dodatnom primjeru možete razmotriti OLS regresiju. Jednostavan model s konstantom glasi</p>
-<p><span class="math display">\[y_t = \alpha + \beta x_t + u_t.\]</span></p>
-<p>U dodatnom primjeru <span class="math inline">\(y_t\)</span> je ostvarena inflacija, a <span class="math inline">\(x_t\)</span> saldo očekivanja u istom mjesecu. Koeficijent opisuje linearnu povezanost u tom modelu. Anketno pitanje gleda unaprijed, a ova regresija uspoređuje vrijednosti iz istog mjeseca. Za prognozu treba uskladiti cilj, horizont i dostupnost informacija u trenutku predviđanja.</p>
-<p>Konvencionalne standardne pogreške OLS-a počivaju na pretpostavkama o greškama. Kod heteroskedastičnosti ili serijske korelacije mogu biti neprimjerene. Odstupanje može ići u oba smjera. HAC procjena kovarijacijske matrice, primjerice Newey-West, mijenja procjenu nesigurnosti uz odgovarajuće uvjete. OLS koeficijenti ostaju isti. Endogenost, izostavljene varijable, kvalitetu mjerenja i nestacionarnost treba zasebno provjeriti i riješiti odgovarajućim istraživačkim postupkom.</p>
-<p>U <a href="https://sandwich.r-forge.r-project.org/reference/NeweyWest.html"><code>sandwich::NeweyWest</code></a> važni su odabir odmaka, prethodno izbjeljivanje i korekcija za veličinu uzorka. Naš dodatak navodi postavke izričito, <code>lag = 12</code>, <code>prewhite = FALSE</code>, <code>adjust = TRUE</code>. U ovom primjeru koristimo dvanaest odmaka jer radimo s mjesečnim podacima. Broj odmaka prilagodite pitanju i svojstvima serije. Procjena i interpretacija traže pregled dinamike i osjetljivosti na razumne postavke.</p>
-<p>P-vrijednost se odnosi na kompatibilnost rezultata s nul-hipotezom i pretpostavkama modela, pod tim uvjetima izražava vjerojatnost statistike barem toliko ekstremne koliko je opažena. Uz p-vrijednost prikažite procjenu učinka, njegovu nesigurnost i pretpostavke analize. <a href="https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf">ASA-ina izjava</a> objašnjava kako p-vrijednost tumačiti zajedno s ostalim dokazima. Prikladnost dizajna prethodi tumačenju p-vrijednosti.</p>
-</section>
-<section id="dodatno-čitanje-usporedba-postupaka" class="level3">
-<h3 class="anchored" data-anchor-id="dodatno-čitanje-usporedba-postupaka">Dodatno čitanje / usporedba postupaka</h3>
-<p>U naprednom radu možete usporediti više opravdanih načina analize i provjeriti koliko se rezultati mijenjaju. Takav se pristup naziva multiverzumom modela, a rezultate je moguće prikazati specifikacijskom krivuljom. Za svaki uključeni model objasnite zašto odgovara pitanju. Dodavanje svih kombinacija koje računalo može generirati uključilo bi i modele neprikladne za vaše pitanje.</p>
-<p>Prije pregleda rezultata zapišite koje ćete odluke usporediti i zašto. Primjerice, možete opisno usporediti ista razdoblja kao u referentnim rezultatima, razmotriti odmake koje opravdava pitanje ili alternativno mjerenje kada je dostupno. Prikažite sve planirane rezultate i objasnite izostavljene specifikacije. Uključite i rezultate s drukčijim predznakom ili većom p-vrijednošću.</p>
-<p>Za medijski nastavak trebali biste pribaviti korpus s podrijetlom i uvjetima uporabe, definirati uključivanje članaka, ukloniti duplikate po opisanom pravilu te provjeriti mjerenje pažnje ili tona. Ručno označen uzorak može pomoći da provjerite koliko dobro alat razvrstava tekstove. To je zaseban projekt. Veličinu zbirke zabilježite nakon prikupljanja tekstova i provjere duplikata.</p>
+<section id="od-gotovog-izgleda-do-razumljivog-rezultata" class="level3">
+<h3 class="anchored" data-anchor-id="od-gotovog-izgleda-do-razumljivog-rezultata">Od gotovog izgleda do razumljivog rezultata</h3>
+<p>U svojem <a href="https://paulgp.substack.com/p/integration-and-collaboration-in">primjeru suradnje na empirijskoj analizi</a> Goldsmith-Pinkham opisuje kako je zapis rada naveo analizu koja nije bila provedena. Uredan opis postupka zato nije dovoljan da bismo znali što je stvarno izračunano. U našoj radionici tražimo konkretan izlaz koji možemo povezati s pitanjem, razdobljem i mjerama.</p>
+<p>Za istraživačku raspravu odaberite jedan rezultat koji još ne možete dobro objasniti. Zadržite se na njemu prije naručivanja novih tablica. Možda treba razjasniti vremensku usporedbu, možda nedostaje izračun, a možda su nam potrebni drukčiji podaci. Tako smanjujemo dug provjere spomenut na početku priručnika, kroz stvarni problem u analizi.</p>
+<p>Kada želite sačuvati završeni rad, preuzmite korištene podatke, prikaze i tablicu rezultata. Za potpuno ponavljanje računalnog postupka potrebna je i datoteka s uputama koje računalo može ponovno izvršiti. Zatražite od alata da je pripremi za preuzimanje. Ponovno slanje istog upita može dati drukčiju izvedbu. U razgovoru s kolegom objasnite što ste sačuvali i koji dio rada on iz toga može ponovno provesti.</p>
 </section>
 </section>
 <section id="poglavlje-24" class="level2">
@@ -502,60 +339,43 @@ window.Quarto = {
 <p><a href="../slides/day2.html#blok-24">Dan 2, tema 2.4</a> · <a href="../materials/exercises/index.html#v24">Vježba 2.4</a></p>
 <section id="primjer-iz-radionice-3" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-iz-radionice-3">Primjer iz radionice</h3>
-<p><strong>Razgovor.</strong> Kojim rezultatom podupiremo glavni nalaz?</p>
-<p><strong>Primjer.</strong> Uredimo odlomak o rastu godišnjih prosjeka između 2021. i 2022. Za HICP koristimo 2,68 % i 10,63 %, a za saldo 28,26 i 46,62 boda. Usporedimo AI izmjenu s tablicom i sačuvamo značenje mjera i granice zaključka.</p>
-<p><strong>Isprobajte.</strong> U istom razgovoru napišite oko 150 riječi odgovora na svoje pitanje, uz graf, provjerene brojke i jedno ograničenje. Zatražite jezičnu doradu i provjerite svaku promjenu značenja. Pokažite graf i objasnite jedan nalaz iz završnog odlomka.</p>
+<p><strong>Razgovor.</strong> Što biste o svojem nalazu objasnili osobi koja nije sudjelovala u analizi?</p>
+<p><strong>Primjer.</strong> Napišemo vlastito tumačenje jednoga grafa, zatražimo komentare na argument i odlučimo kako ćemo ga preraditi.</p>
+<p><strong>Isprobajte.</strong> Sastavite oko 150 riječi odgovora na svoje pitanje. Uz graf pokažite broj koji podupire glavni nalaz i objasnite jedno otvoreno pitanje. Kolegi obrazložite jednu odluku pri uređivanju.</p>
 </section>
-<section id="pisanje-je-dio-istraživanja" class="level3">
-<h3 class="anchored" data-anchor-id="pisanje-je-dio-istraživanja">Pisanje je dio istraživanja</h3>
-<p>Nakon analize treba objasniti što rezultati govore o pitanju. U tekstu povežite nalaz s grafom i brojkama. Razjasnite što ste utvrdili, što pretpostavljate i što biste htjeli dodatno istražiti.</p>
-<p>AI može označiti nejasan pojam, predložiti redoslijed i upozoriti na tvrdnju bez potpore. Procijenite komentare prema tome koliko pomažu objasniti vaš nalaz.</p>
-<p>Korinekov <a href="https://www.aeaweb.org/articles?id=10.1257/jel.20231736">pregled primjena u ekonomskim istraživanjima</a> opisuje pomoć pri razvoju ideja i komentiranju rada, pisanju, prikupljanju literature, analizi podataka, programiranju i matematičkim izvodima. Taj popis pomaže odrediti za koji biste zadatak tražili pomoć. Svaki preuzeti prijedlog provjerite prema zahtjevima svojeg rada.</p>
-</section>
-<section id="kako-koristiti-pomoć-pri-pisanju" class="level3">
-<h3 class="anchored" data-anchor-id="kako-koristiti-pomoć-pri-pisanju">Kako koristiti pomoć pri pisanju</h3>
-<p>Krenite od pitanja, izvora i vlastitog tumačenja. Zatražite pomoć tamo gdje vam treba jasnija rečenica ili bolji redoslijed objašnjenja.</p>
-<p>Usporedite novu verziju s početnom. Provjerite brojke, izvore i značenje tvrdnji te odaberite izmjene koje čine objašnjenje jasnijim.</p>
-<p>Kada tuđu misao prepričate vlastitim riječima, sačuvajte njezino značenje i navedite izvor. Objasnite kako vam taj rad pomaže odgovoriti na pitanje.</p>
-</section>
-<section id="šest-obrazaca-koje-možete-prilagoditi" class="level3">
-<h3 class="anchored" data-anchor-id="šest-obrazaca-koje-možete-prilagoditi">Šest obrazaca koje možete prilagoditi</h3>
-<p>1. Jasnoća i stil. Dajte vlastiti odlomak i zatražite uklanjanje nepotrebnih riječi, objašnjenje nejasnih izraza i popis promjena. Izričito zadržite brojke, jedinice i razinu sigurnosti. „HNB je često u medijima” ne smije postati „empirijski podaci pokazuju pozitivnu korelaciju” ako takvu analizu niste proveli.</p>
+<section id="pisanje-razvija-razumijevanje" class="level3">
+<h3 class="anchored" data-anchor-id="pisanje-razvija-razumijevanje">Pisanje razvija razumijevanje</h3>
+<p>Kada pokušamo objasniti rezultat, često tek tada primijetimo da nam neki dio argumenta nije jasan. Možda ne znamo zašto smo odabrali razdoblje ili kako prijeći od brojke do ekonomskog značenja. Pisanje nas potiče da te veze razradimo. Zbog toga je korisno najprije izreći vlastito tumačenje, i kada ono još nije stilski uređeno.</p>
+<p>Goldsmith-Pinkham u tekstu <a href="https://paulgp.substack.com/p/writing-and-thinking-with-ai-assistance">Writing &amp; Thinking with AI Assistance</a> razlikuje pomoć u rutinskom pisanju od prepuštanja oblikovanja argumenta. Kao jedan pristup predlaže komentare na nacrt, nakon kojih autor sam odlučuje kako će ga preraditi. To nije opća zabrana jezične pomoći, nego način da zadržimo vlastito razmišljanje u radu.</p>
+<p>Za naš zaključak počnite odgovorom na odabrano pitanje. Ako vas zanimaju razlike među razdobljima, istaknite tu usporedbu. Ako ste proučavali promjene tijekom 2021. i 2022., usmjerite tekst na te godine. Ne trebate prepričati svaku tablicu koju ste proizveli.</p>
 <blockquote class="blockquote">
-<p>Uredi jasnoću ovog odlomka koristeći samo činjenice, izvore i rezultate iz teksta. Sačuvaj jedinice i razliku između povezanosti i uzročnosti. Najprije navedi probleme, zatim predloži izmjene i objasni svaku bitnu promjenu.</p>
+<p>Pročitaj moj nacrt zaključka i daj komentare bez prepisivanja. Izdvoji mjesto na kojem argument nije jasan, pitanje na koje još nisam odgovorio i tvrdnju kojoj treba bolje obrazloženje. Za svaki komentar objasni zašto je važan za moje istraživačko pitanje. Zatim pričekaj moju preradu.</p>
 </blockquote>
-<p>2. Kritika argumenta. Tražite logičke praznine, skrivene pretpostavke i moguće alternativno objašnjenje. Ako odlomak povezuje očekivanja i inflaciju, model može upozoriti na zajedničke šokove ili obrnuti smjer povezanosti. Vi provjeravate jesu li prigovori relevantni za konkretan dizajn. Prihvatite prigovore za koje možete pokazati razlog u podacima ili metodi.</p>
-<p>3. Prijelaz između odlomaka. Dajte dva susjedna odlomka i zatražite jasniju vezu između njih. Provjerite slijed objašnjenja. Čitatelj treba razumjeti zašto nakon definicije mjere slijedi odabrani izračun.</p>
-<p>4. Prepričavanje i navođenje izvora. Priložite provjereni odlomak i bibliografske podatke. Zatražite prijedlog parafraze koji čuva granice nalaza te usporedite ga s izvornikom. Stil citiranja prilagodite uputama rada. Godinu, naslov i DOI provjerite kod izdavača ili u bibliografskom zapisu.</p>
-<p>5. Usklađenost uvoda i zaključka. Usporedite pitanje, obećani postupak i zaključnu tvrdnju. Ako uvod najavljuje uzročni učinak medija, a provedena je samo opisna usporedba inflacije i salda, problem se rješava promjenom pitanja i zaključka ili novim istraživanjem. Uskladite formulaciju zaključka s onim što provedeni postupak može pokazati.</p>
-<p>6. Radni predložak. Model može pomoći organizirati vaše točke u nacrt. Nepoznate podatke označite, primjerice <code>[unesi rezultat iz provjerene tablice]</code>. Takve oznake zamijenite podacima iz provjerenog izračuna. Zatim pročitajte nacrt i povežite njegove tvrdnje s izvorima i rezultatima.</p>
-<p>Možete zatražiti i da vam model postavlja pitanja jedno po jedno prije predlaganja metodološkog odlomka. Primjerice, koje su jedinice, koji je uzorak i kako ste postupili s prazninama? To može otkriti odluku koju niste zapisali. Odgovore usporedite i s vlastitim popisom potrebnih provjera.</p>
+<p>Odaberite komentar koji vam najviše pomaže. Ako vam nije jasno zašto bi promjena bila korisna, nastavite razgovor o tom mjestu. Možete odbaciti komentar koji ne odgovara pitanju ili sadržaju vaše analize. Razlog za odluku važan je dio razgovora o tekstu.</p>
 </section>
-<section id="četiri-prolaza-kroz-tekst" class="level3">
-<h3 class="anchored" data-anchor-id="četiri-prolaza-kroz-tekst">Četiri prolaza kroz tekst</h3>
-<p>Najprije pročitajte tekst bez prepisivanja. Pročitajte odlomak s obzirom na pitanje, dokaz, jasnoću i granice zaključka. Zatražite konkretna mjesta koja treba popraviti. Ocjena „7 od 10” bez obrazloženja malo pomaže. Korisniji je komentar „navedi da su očekivanja mjerena kvalitativnim saldom”.</p>
-<p>Zatim provjerite redoslijed objašnjenja. Posložite problem, mjere, postupak, nalaz i ograničenje. Definirajte pojam prije nego što ga tumačite. Tablicu ili graf uvedite rečenicom koja objašnjava što čitatelj treba gledati, a nakon prikaza objasnite relevantan nalaz. U tekstu izdvojite brojeve koji pomažu odgovoriti na pitanje.</p>
-<p>Provjerite i jesu li tvrdnje jače od dokaza. Zamijenite „dokazuje” s formulacijom koja točno opisuje što vaš postupak pokazuje. „U uzorku postoji pozitivna linearna povezanost” preciznije je od „rezultati sugeriraju statistički značajan utjecaj” kada niste proveli odgovarajući test ni identificirali uzročni učinak.</p>
-<p>Na kraju uredite jezik i uskladite nazive. Provjerite nazive mjera, decimalne oznake, datume, padeže i kratice. Svaku mjeru dosljedno imenujte prema njezinoj definiciji. Razlikujte percepciju, očekivanje i pouzdanje. Nakon jezične izmjene ponovno pročitajte značenje, jer gramatički glađa rečenica može sadržajno biti manje precizna.</p>
-</section>
-<section id="kako-obrazložiti-nalaz" class="level3">
-<h3 class="anchored" data-anchor-id="kako-obrazložiti-nalaz">Kako obrazložiti nalaz</h3>
-<p>Sljedeća je rečenica <strong>namjerno pogrešan početni nacrt</strong>.</p>
+<section id="povežite-pitanje-graf-i-nalaz" class="level3">
+<h3 class="anchored" data-anchor-id="povežite-pitanje-graf-i-nalaz">Povežite pitanje, graf i nalaz</h3>
+<p>Čitatelju najprije recite što uspoređujete. Zatim ga usmjerite na odabrani obrazac u grafu ili broj u tablici. Na kraju objasnite što taj nalaz govori o pitanju i koje pitanje ostaje otvoreno. Takav redoslijed omogućuje da se vaš zaključak razumije i izvan razgovora u kojem je analiza nastala.</p>
+<p>Za usporedbu godišnjih sažetaka možemo napisati sljedeći odlomak.</p>
 <blockquote class="blockquote">
-<p>Naša analiza dokazuje da očekivanja uzrokuju inflaciju, jer je korelacija 0,70. Potrošači su zato uspješno predvidjeli rast cijena.</p>
+<p>U hrvatskim podacima prosjek mjesečnih godišnjih stopa HICP-a porastao je s 2,68 % u 2021. na 10,63 % u 2022. U istim je godinama prosjek salda očekivanih promjena cijena porastao s 28,26 na 46,62 boda. Godišnji sažeci tako pokazuju rast obiju mjera, dok mjesečni grafovi omogućuju detaljniji opis njihova kretanja. Iz te usporedbe još ne možemo odrediti uzrok promjene ni uspješnost predviđanja buduće inflacije.</p>
 </blockquote>
-<p>U prvom prolazu označite tri problema, korelacija ne identificira uzrok, mjere su nedovoljno opisane i usporedba istog mjeseca ne provjerava točnost prognoze. U drugom prolazu navedite uzorak i dvije mjere. U trećem ograničite zaključak na opisnu povezanost. Završni odlomak možete napisati ovako.</p>
-<blockquote class="blockquote">
-<p>U hrvatskom mjesečnom uzorku za 2015.–2024. Pearsonova korelacija između godišnje stope promjene HICP-a i salda očekivanih promjena cijena iznosi približno 0,6985. Taj rezultat opisuje pozitivnu linearnu povezanost dviju mjera u istom mjesecu. Saldo sažima kvalitativne odgovore ankete. Za procjenu uzročnog učinka ili prognozne točnosti potreban je zaseban istraživački postupak.</p>
-</blockquote>
-<p>Broj u ovom odlomku odnosi se na spremljenu verziju podataka i može se provjeriti skriptom. Kada se promijene podaci, razdoblje ili postupak, ponovno izračunajte i prepišite odgovarajući dio. Novi broj preuzmite iz ponovno pokrenute skripte.</p>
-<p>Za temu HNB-ove komunikacije primjeren zaključak u ovom trenutku glasi da je riječ o nastavku koji traži dodatne podatke. Za provjeru je li komunikacija usidrila očekivanja trebamo odgovarajuće podatke i istraživački dizajn.</p>
+<p>Ovaj odlomak odgovara na jedno određeno pitanje. Za pitanje o povezanosti među razdobljima upotrijebite korelacije iz prethodnog poglavlja i objasnite što uspoređuju. Izbor nalaza treba čitatelju pokazati zbog čega ste proveli upravo tu analizu.</p>
 </section>
-<section id="hrvatski-jezik-i-terminologija" class="level3">
-<h3 class="anchored" data-anchor-id="hrvatski-jezik-i-terminologija">Hrvatski jezik i terminologija</h3>
-<p>Provjerite stručni naziv u relevantnoj literaturi i dosljedno ga koristite. Jezični model može predložiti formulaciju. Zatim provjerite padeže i stručne nazive. Posebno pregledajte duge rečenice koje uvode više pojmova i ograničenja odjednom.</p>
-<p><a href="https://github.com/clarinsi/classla">CLASSLA</a> je skup alata za obradu jezika, uključujući jezično označavanje i lematizaciju. Te postupke koristite u istraživanju teksta. Gramatiku i značenje cijelog odlomka provjerite zasebnim čitanjem.</p>
-<p>U vlastitom malom pojmovniku zadržite razliku između inflacije i razine cijena, salda i postotka, opažanja i ispitanika, korelacije i učinka, standardne pogreške i reziduala. Ako isti naziv koristite za različite mjere, čitatelj neće moći pratiti vaš zaključak.</p>
+<section id="jezična-pomoć-i-vlastiti-glas" class="level3">
+<h3 class="anchored" data-anchor-id="jezična-pomoć-i-vlastiti-glas">Jezična pomoć i vlastiti glas</h3>
+<p>Nakon što ste zadovoljni argumentom, zatražite pomoć pri jasnoći i jeziku. Asistent može skratiti predugu rečenicu, predložiti razumljiviji redoslijed ili pomoći pri izražavanju na jeziku koji vam nije prvi. Korist takve pomoći procijenite prema tome koliko jasno prenosi ono što želite reći.</p>
+<blockquote class="blockquote">
+<p>Predloži jezičnu doradu ovog odlomka. Zadrži moje tumačenje, brojke i nazive mjera. Objasni jednu važnu promjenu koju predlažeš. Ako ti sadržaj nije jasan, najprije me pitaj što želim reći na tom mjestu.</p>
+</blockquote>
+<p>U hrvatskom tekstu dosljedno razlikujte inflaciju i razinu cijena, saldo i postotak te očekivanja i percepcije. Odaberite formulacije koje možete prirodno upotrijebiti i u usmenom objašnjenju. Vrlo formalna rečenica može otežati čitanje ako skriva jednostavnu misao.</p>
+<p>Pokažite kolegi završni graf i objasnite glavni nalaz bez čitanja cijelog odlomka. Njegovo pitanje može pokazati gdje tekst još treba dopunu. Ako ste mijenjali argument nakon komentara AI-ja, objasnite što ste promijenili i zašto. Time rasprava o autorstvu dobiva konkretan sadržaj: koje ste odluke donijeli i razumijete li tekst koji predstavljate?</p>
+</section>
+<section id="od-zaključka-do-sljedećeg-pitanja" class="level3">
+<h3 class="anchored" data-anchor-id="od-zaključka-do-sljedećeg-pitanja">Od zaključka do sljedećeg pitanja</h3>
+<p>Naša analiza može potaknuti pitanje o ulozi medija ili komunikacije HNB-a. Za takav projekt trebali bismo povezati podatke o cijenama i očekivanjima s novom zbirkom tekstova. Goldsmith-Pinkhamova <a href="https://paulgp.substack.com/p/from-edgar-filings-to-a-structured">demonstracija pretvaranja objava u strukturirane podatke</a> pokazuje kako AI može olakšati takav početak istraživanja.</p>
+<p>Za temu medija najprije odaberite mali skup članaka i pitanje koje njima želite istražiti. Dogovorite što znači medijska pažnja ili ton, razmotrite nekoliko primjera zajedno i usporedite vlastita tumačenja s klasifikacijom alata. Tek kada razumijete tu mjeru, ima smisla širiti zbirku i povezivati je s drugim podacima. Odnos koji tada pronađete i dalje traži zasebno objašnjenje prije uzročnog zaključka.</p>
+<p>Radionicu završite razgovorom o tome što je postalo lakše, koja je odluka ostala zahtjevna i koje biste pitanje sada mogli istražiti. Ponesite primjer rada koji možete nastaviti razvijati i objasniti drugoj osobi.</p>
 <div class="booklet-next">
 <p><a href="../materials/rubric.html">Pogledajte pitanja za osvrt →</a></p>
 </div>

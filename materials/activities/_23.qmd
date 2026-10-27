@@ -16,10 +16,13 @@ pitajte što bi se izgubilo kada bismo cijelo desetljeće opisali jednim brojem.
 > Ponovno kreni od svih 120 redaka izvornog CSV-a. Izračunaj Pearsonovu
 > korelaciju između hicp_yoy_pct i expectations_balance za cijelo razdoblje,
 > za 2015.–2019. te za 2020.–2024. Poveži vrijednosti iz istog mjeseca.
-> Za svaki izračun prikaži broj opažanja i izvršeni kod. Usporedi
-> rezultate s vremenskim grafovima i opiši razlike.
+> Za svaki izračun prikaži broj opažanja i objasni postupak
+> običnim jezikom, bez programskog koda. Usporedi rezultate s
+> vremenskim grafovima i opiši razlike.
 
-Objasnite daje li jedna korelacija za cijelo razdoblje dovoljan opis.
+Prije izračuna recite očekujete li jednaku povezanost u oba razdoblja
+na temelju grafova. Nakon izračuna objasnite daje li jedna korelacija
+za cijelo razdoblje dovoljan opis.
 Za zajedničku usporedbu koristimo ista dva podrazdoblja, a zatim nalaz
 povežite sa svojim pitanjem.
 

@@ -4,123 +4,92 @@
 
 ### Primjer iz radionice
 
-**Razgovor.** Što treba provjeriti prije izrade grafa i izračuna?
+**Razgovor.** Što predstavlja jedan redak naše tablice i kako iz njega
+čitamo dvije mjere?
 
-**Primjer.** Učitanom CSV-u zatražimo pregled prvih i posljednjih redaka,
-broja opažanja, stupaca, datuma i jedinica. Prikaz usporedimo s cijelom
-tablicom na stranici dana.
+**Primjer.** Zatražimo kratak opis učitanog skupa i pogledamo nekoliko
+mjeseci na početku i kraju razdoblja. Povežemo prikazane vrijednosti
+sa značenjem HICP-a i anketnog salda.
 
-**Isprobajte.** Provjerite jedinstvenost i potpunost mjeseci te praznine
-u dvjema brojčanim serijama. Očekujemo 120 uzastopnih mjeseci od 2015-01
-do 2024-12, bez duplikata i praznina u tim serijama. Prazne oznake statusa
-čitamo prema njihovu značenju. Pregledajte izvršeni kod i objasnite
-što nalaz govori o spremnosti podataka za analizu.
+**Isprobajte.** Odaberite jedan mjesec i objasnite što njegove vrijednosti
+govore, na koje se vrijeme odnose i što biste o njima htjeli saznati.
 
-### Pregled podataka u jednom razgovoru
+### Učitana tablica kao početak razgovora
 
-Za analizu koristimo učitani CSV sa svih 120 mjeseci. Na stranici dana
-možete otvoriti cijelu tablicu i usporediti nekoliko redaka s prikazom
-koji je dao AI. To pomaže provjeriti koristi li stvarne podatke.
+Nastavite u razgovoru iz prvog dana. Ako počinjete ovdje, preuzmite
+[CSV radionice](../data/processed/croatia_inflation.csv), dodajte ga
+u alat koji može izvršavati analizu i navedite pitanje koje ste odabrali.
+Za prvi pregled dovoljan je kratak zahtjev.
 
-Kod koji alat izvrši možete otvoriti u istom razgovoru. Ako nastavite
-rad u R-u, početna skripta i rječnik u paketu opisuju isti skup.
+> Upoznaj me s učitanom tablicom. Opiši što predstavlja jedan redak,
+> koliko mjeseci obuhvaća i koje dvije mjere analiziramo. Prikaži
+> nekoliko redaka s početka i kraja razdoblja. Reci jesu li mjeseci
+> uzastopni i postoje li praznine u brojčanim serijama. Objašnjenje
+> i rezultate prikaži u razgovoru, bez programskog koda.
 
-### Što sadrži naš skup podataka
+Očekujemo 120 različitih uzastopnih mjeseci od siječnja 2015. do prosinca
+2024. Obje brojčane serije imaju vrijednost za svaki mjesec. Prazne oznake
+statusa u našoj tablici znače da dodatni status podatka nije naveden.
+U [rječniku podataka](../data/dictionary.qmd) opisani su stupci i jedinice.
 
-Jedan redak naše tablice predstavlja mjesec u Hrvatskoj. Ključ `month`
-povezuje mjesece, `hicp_yoy_pct` predstavlja godišnju stopu promjene HICP-a,
-a `expectations_balance` kvalitativni anketni saldo. Oznaka „monthly” opisuje mjesečnu učestalost podataka. Podatak se objavljuje mjesečno, a stopa uspoređuje cijene s istim
-mjesecom prethodne godine.
+Takav pregled pomaže zamisliti što će graf prikazivati. Svaka točka na
+vremenskoj osi predstavlja mjesec za Hrvatsku. Anketni odgovori potrošača
+već su sažeti u pokazatelj. Iz tih redaka zato ne možemo opisivati
+razlike među pojedinim kućanstvima. Za takvo pitanje trebali bismo
+podatke na razini ispitanika.
 
-Prije analize potvrdite 120 uzastopnih mjeseci, od siječnja 2015. do
-prosinca 2024. Provjerite ima li dvostrukih zapisa, praznina i neočekivanih
-vrijednosti. Usporedite nekoliko vrijednosti s tablicom na stranici dana.
-Za detaljniju provjeru podrijetla u paketu su izvorne JSON datoteke
-i zapis upita korištenih za preuzimanje.
-U svim primjerima koristimo istu spremljenu kopiju podataka. Tako naknadne službene izmjene
-ne mijenjaju rezultate radionice.
+### Dvije mjere, dva vremenska značenja
 
-Vi određujete što očekujete od podataka i provjeravate to naredbama u skripti.
-Uz broj redaka provjerite i mjesece. Tablica od 120 redaka može sadržavati
-ponovljen mjesec uz prazninu za drugi mjesec. Isto vrijedi za graf koji izgleda
-glatko i uvjerljivo, a počiva na pogrešno spojenim datumima.
+HICP u ovoj tablici izražen je godišnjom stopom promjene. Vrijednost
+za određeni mjesec uspoređuje cijene s istim mjesecom prethodne godine.
+Saldo očekivanja potječe iz odgovora o budućem kretanju cijena. Mjesečna
+učestalost objave zajednička je objema serijama, ali njihovi vremenski
+horizonti imaju različito značenje.
 
-### Provjerite vrijednosti i jedinice
+To je važno za pitanje koje ćemo postaviti grafu. Usporedba vrijednosti
+iz istog mjeseca govori o tome kako se dvije mjere zajedno kreću.
+Za istraživanje prognozne uspješnosti trebalo bi odrediti koji kasniji
+ishod odgovara očekivanju i što je ispitanicima bilo poznato u trenutku
+odgovora. Na radionici počinjemo istodobnom opisnom usporedbom.
 
-„Očisti podatke” preširok je zadatak. Prazno polje označava nedostajući podatak, a nula izmjerenu vrijednost.
-Visoka inflacija može biti stvarna posljedica gospodarskog šoka.
-Prije brisanja, zamjene ili transformacije treba razumjeti izvor i napisati
-pravilo. Čuvajte izvorne podatke te promjene provodite u skripti.
+> Odaberi ožujak 2022. i objasni obje vrijednosti običnim jezikom.
+> Uz svaku navedi jedinicu i vremensku usporedbu na koju se odnosi.
+> Predloži zatim jedno pitanje na koje nam taj redak sam ne može
+> odgovoriti, ali bi nam pomogao pogled na okolne mjesece.
 
-Podaci za jednu zemlju kroz vrijeme čine vremensku seriju. Panel čini
-više jedinica, primjerice zemalja, praćenih kroz vrijeme. Naš skup
-sadrži dvije mjere za Hrvatsku.
-Ta razlika određuje koje je modele uopće smisleno razmatrati.
+Razgovor o jednom retku usporava rad upravo ondje gdje nastaje
+razumijevanje. Kada znate objasniti te dvije vrijednosti, lakše je
+čitati cijeli niz i uočiti što u AI-jevu opisu ima smisla.
 
-Logaritam je definiran za pozitivne vrijednosti. Naš saldo i stopa mogu
-imati nulte ili negativne vrijednosti, pa ih u osnovnoj analizi koristimo
-u izvornim jedinicama. U modelu s logaritmiranim varijablama tumačenje
-koeficijenta ovisi o obliku jednadžbe. Za spajanje dnevnih i mjesečnih
-podataka unaprijed odredite pravilo svođenja na istu vremensku razinu.
+### Što podaci trebaju da bi postali korisni
 
-### Povežite nalaz provjere s analizom
+Goldsmith-Pinkham u demonstraciji
+[Large Datasets and Structured Databases](https://paulgp.substack.com/p/large-datasets-and-structured-databases)
+pokazuje kako organizirani podaci i njihovi opisi olakšavaju istraživanje.
+Jedan od problema u njegovu primjeru nastaje zbog promjene identifikatora,
+što nalikuje stvarnoj promjeni u podacima dok se ne razumije njihova
+struktura. Poruka se odnosi i na male tablice: značenje podataka
+određuje koje su usporedbe opravdane.
 
-Broj redaka, raspon mjeseci, praznine i jedinice zajedno govore kakvu
-tablicu analiziramo. Prazna oznaka statusa može biti očekivana, a prazna
-brojčana vrijednost traži objašnjenje. Zato provjere čitamo uz definicije
-stupaca. U našem skupu oba brojčana niza imaju svih 120 vrijednosti.
+U našem su skupu opisi i razdoblje već pripremljeni. U drugom projektu
+trebalo bi razjasniti jesu li kroz vrijeme ostali isti obuhvat, pitanje
+ankete i način mjerenja. AI može pomoći pronaći i objasniti takve
+promjene. Njihova važnost proizlazi iz teme koju istražujemo.
 
-### Dodatno čitanje / provjera podataka uz agenta
+Zato zadatak „očisti podatke” često traži razgovor prije izvršavanja.
+Visoka vrijednost može biti upravo događaj koji želimo proučiti.
+Nedostajuća vrijednost i nula imaju različito značenje. U ovoj radionici
+zadržavamo izvorne brojčane vrijednosti i cijelo razdoblje, a uži
+odabir koristimo samo za jasno određenu usporedbu ili prikaz.
 
-Istu provjeru podataka možete zadati programskom asistentu. Programska pomoć može
-biti dopunjavanje retka, razgovor o skripti ili agent koji čita datoteke,
-predlaže izmjene i pokreće naredbe. Ista aplikacija često nudi nekoliko tih mogućnosti.
+### Koliko posla prepustiti asistentu
 
-Claude Code je primjer agenta koji može izravno raditi na projektu. Ako mu okruženje i dopuštenja to omogućuju, može urediti nekoliko
-datoteka i izvršiti analizu. To štedi ručno prepisivanje. Prije rada odredite što agent smije
-mijenjati, a nakon rada pregledajte promjene.
+Asistent može samostalno pripremiti pregled tablice ili niz grafova.
+Veći prostor za odlučivanje znači i više izbora koje kasnije trebamo
+razumjeti. Za učenje je koristan postupak u kojem najprije sami
+izgovorite što očekujete, a zatim pogledate kako je zahtjev izveden.
 
-Zamislite istraživačkog suradnika s kojim dijelite radnu mapu. Treba mu
-reći što se smije mijenjati, koje datoteke predstavljaju izvorne podatke
-i kako izgleda prihvatljiv rezultat. „Analiziraj ovo” ostavlja previše
-prostora za proizvoljan izbor uzorka i metode. „Provjeri mjesece i jedinice,
-zatim prikaži nalaze provjere” određuje provjerljiv korak.
-
-### Kontekst, upute i dopuštenja
-
-Dokumentacija [Claude Code memorije](https://code.claude.com/docs/en/memory)
-razlikuje projektne upute i automatski spremljene bilješke. Takve datoteke pomažu nastaviti započeti rad.
-Istraživački dnevnik, spremljene skripte i povijest promjena i dalje su
-potrebni. Važne odluke spremite u istraživački dnevnik.
-
-Povezivanje s dodatnim alatima, primjerice putem MCP-a, može proširiti
-što agent može čitati ili izvršiti. Pristup pojedinim bazama i radnjama ovisi o povezanim uslugama
-i dodijeljenim pravima. Prije rada provjerite dostupne
-funkcije i dopuštenja. Tekst s weba ili iz učitane datoteke istraživački je
-materijal. Radni postupak određujte vlastitim uputama agentu.
-
-Rad u zasebnoj grani omogućuje pregled izmjena prije njihova prihvaćanja.
-Pristup računalu ograničite zasebnim dopuštenjima. Ako koristite
-podagente, odredite gdje svaki radi i pregledajte njihove izmjene.
-Za početak je praktično zadavati male uzastopne korake
-i pregledati kod nakon svakog od njih.
-
-Primjer početnog zaduženja.
-
-> Radi unutar ovog projekta. Najprije pročitaj rječnik podataka
-> i postojeće skripte. Izvorne datoteke u data/raw ostavi nepromijenjene.
-> Provjeri broj mjeseci, datumski raspon, duplikate, nedostajuće vrijednosti
-> i jedinice. Prikaži plan i nalaze provjere. Zadrži sva opažanja i početno
-> istraživačko pitanje. Svaku predloženu promjenu zasebno obrazloži.
-
-### Kako provjeriti rad agenta
-
-Pregledajte razliku izmjena, pročitajte ključne retke i pokrenite postupak
-od početka. Usporedite barem jedan rezultat neovisnim izračunom. Pročitajte što su testovi provjerili i zasebno ocijenite ekonomsko
-tumačenje rezultata.
-
-### Ako želite nastaviti
-
-Zadajte agentu iste provjere koje ste već proveli u skripti.
-Usporedite njegove naredbe i rezultate s vlastitim zapisom.
-Obrazložite jednu prihvaćenu ili izmijenjenu naredbu.
+Prije izrade godišnje tablice, primjerice, objasnite zašto očekujete
+deset redaka i dvanaest mjeseci u svakoj godini. Nakon prikaza možete
+usporediti vlastito očekivanje s rezultatom. Time gradite sposobnost
+usmjeravanja analize, iako račun obavlja alat.

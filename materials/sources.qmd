@@ -28,6 +28,30 @@ Ostali izvori služe daljnjem čitanju o podacima i metodama.
    rezultat za 2015.–2024. provjeravamo u podacima radionice. Riječ je
    o istraživačkom članku središnje banke. Podatak o recenziji potražite kod izdavača.
 
+## AI i istraživačka prosudba: Paul Goldsmith-Pinkham {#ai-istrazivanje}
+
+Ovi autorski tekstovi i demonstracije daju polazišta za raspravu.
+Njihove primjene u našem hrvatskom primjeru nastavne su prilagodbe.
+
+- [Research in the Time of AI](https://paulgp.com/2026/03/16/research-in-time-of-ai.html).
+  Zašto lakša izvedba povećava važnost izbora pitanja i poznavanja teme;
+  polazište za poglavlje 1.1.
+- [Integration and Collaboration](https://paulgp.substack.com/p/integration-and-collaboration-in).
+  Dug provjere i primjer analize koja je opisana kao provedena;
+  povezuje početnu raspravu s poglavljem 2.3.
+- [AI and the Research O-Ring](https://paulgp.substack.com/p/ai-and-the-research-o-ring).
+  Analogija međusobno ovisnih istraživačkih koraka;
+  u poglavlju 1.4 povezujemo je sa značenjem anketnog salda.
+- [From an Empty Folder to a Figure](https://paulgp.substack.com/p/from-an-empty-folder-to-a-figure).
+  Demonstracija bržeg prelaska od ideje do prikaza;
+  potiče razgovor o izboru grafa u poglavlju 2.2.
+- [Writing & Thinking with AI Assistance](https://paulgp.substack.com/p/writing-and-thinking-with-ai-assistance).
+  Pisanje kao razmišljanje i komentari prije prerade;
+  osnova završne vježbe u poglavlju 2.4.
+- [From EDGAR Filings to a Structured Database](https://paulgp.substack.com/p/from-edgar-filings-to-a-structured).
+  Primjer pretvaranja dokumenata u podatke;
+  poticaj za zaseban projekt o medijskim tekstovima.
+
 ## Dodatni metodološki izvori
 
 - [ASA, izjava o p-vrijednostima](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).

@@ -11,7 +11,8 @@ postupak svojem pitanju.
 Ako počinjete ovdje, preuzmite CSV i dodajte ga jednom u AI razgovor
 koji podržava učitavanje datoteka i izvršavanje analize. Možete krenuti
 od zajedničkog pitanja ispod. Ako je prethodna sesija istekla, ponovno
-dodajte istu datoteku. Grafovi, tablice i kod prikazuju se u razgovoru.
+dodajte istu datoteku. Grafovi, tablice i objašnjenja prikazuju se u razgovoru.
+Zadatke zadajemo običnim jezikom, bez pisanja programskog koda.
 
 ## Podaci i zajedničko pitanje {#podaci}
 
@@ -31,7 +32,7 @@ Podaci su spremljeni 26. listopada 2026.
 
 {{< include ../materials/activities/_21.qmd >}}
 
-## 2.2 Dopunite i objasnite kod {#blok-22}
+## 2.2 Izradite i objasnite prikaze {#blok-22}
 
 {{< include ../materials/activities/_22.qmd >}}
 

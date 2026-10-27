@@ -4,148 +4,95 @@
 
 ### Primjer iz radionice
 
-**Razgovor.** Što provjeravamo u sažetku koji zvuči uvjerljivo?
+**Razgovor.** Kako sažimanjem možemo promijeniti značenje nalaza?
 
-**Primjer.** Ispravimo tvrdnju da korelacija od približno 0,70 dokazuje
-uzročni učinak očekivanja na inflaciju. Objasnimo što usporedba
-vrijednosti iz istog mjeseca stvarno pokazuje.
+**Primjer.** Usporedimo rečenicu o pozitivnoj korelaciji s tvrdnjom
+da očekivanja uzrokuju inflaciju. Razgovaramo o tome što je u drugoj
+rečenici dodano izvan samog rezultata.
 
-**Isprobajte.** Preradite namjerno pogrešan odlomak sa stranice dana.
-U njemu su 120 mjeseci zamijenjeni kućanstvima, saldo postotkom
-inflacije, a korelacija uspješnom prognozom. Jedan je rezultat prenesen
-na svako razdoblje. U tri ili četiri rečenice popravite tumačenje uzorka,
-jedinice, vremenske usporedbe i opsega zaključka.
+**Isprobajte.** Preradite ovaj namjerno pogrešan odlomak. Objasnite
+komu ili čemu opažanja pripadaju, kako su izražene mjere i na koje
+se razdoblje zaključak odnosi.
 
-### Provjerite tvrdnju po tvrdnju
+> U uzorku od 120 hrvatskih kućanstava očekivana inflacija 2022. iznosila
+> je prosječno 46,62 %. Korelacija s ostvarenom inflacijom od približno
+> 0,70 pokazuje da su potrošači uspješno predvidjeli buduće cijene.
+> Isti zaključak vrijedi za svako razdoblje od 2015. do 2024.
 
-U radionici uređujemo odlomak o cijelom skupu. Provjeravamo što je
-jedinica opažanja, kako su izražene mjere i koje se razdoblje uspoređuje.
-Korelaciju tumačimo kao opis linearnog odnosa. Za prognozu treba povezati
-ranija očekivanja s odgovarajućim kasnijim ishodom i provjeriti točnost.
+### Što dobar sažetak čuva
 
-Pogledajte što rečenica tvrdi, koju mjeru spominje i s čime uspoređuje
-rezultat. Te pojedinosti često pokazuju gdje je sažimanjem promijenjeno značenje.
+Sažetak nam pomaže shvatiti glavnu ideju rada bez ponavljanja svih
+pojedinosti. Njegova je vrijednost u odabiru onoga što ostaje važno
+za razumijevanje. U istraživačkom tekstu to su pitanje, okolnosti
+istraživanja, način dolaska do nalaza i granice zaključka.
 
-### Dodatno čitanje / pregled više izvora uz Gemini Deep Research
+Primjerice, „dvije mjere u istom mjesecu pozitivno su povezane” i
+„potrošači su uspješno predvidjeli inflaciju” govore o različitim
+odnosima. Druga tvrdnja zahtijeva povezivanje ranijih očekivanja
+s odgovarajućim kasnijim ishodom. Ako taj korak izostavimo iz sažetka,
+čitatelj može steći dojam da je provedena analiza koju zapravo nemamo.
 
-Kratak odgovor može pomoći pri traženju pojma ili pojedinog rada.
-Za usporedbu teorijskih objašnjenja i podataka iz više studija treba
-pripremiti pregled literature. Istraživački način rada u AI alatu može
-planirati više pretraga, prikupiti izvore i predložiti njihov zajednički sažetak.
+Goldsmith-Pinkham u prijedlogu
+[LLM-Friendly Academic Papers](https://paulgp.com/2026/03/10/llms-txt-for-academic-papers.html)
+zagovara oblikovanje istraživačkih materijala tako da jezični modeli
+lakše prenesu njihove rezultate i ograničenja. Za naš rad iz toga
+možemo uzeti jednostavnu ideju: uz glavni nalaz objasnite što on
+ostavlja otvorenim. Tako se važna ograničenja prenose zajedno s
+tvrdnjom, i u sažetku i u kasnijoj raspravi.
 
-Razlika je slična onoj između kratkog pitanja vodiču i naručivanja
-opširnog izvješća. Isti alat može nuditi oba načina rada. Kvalitetu izvješća procijenite prema pokrivenosti teme i točnosti
-tvrdnji u odnosu na izvore.
+> Sažmi ovaj odlomak za sudionika radionice. Zadrži pitanje, uzorak,
+> značenje mjera i glavni nalaz. Objasni što iz tog nalaza još ne
+> možemo zaključiti. Zatim navedi jednu važnu pojedinost koju si
+> izostavio zbog kratkoće i zašto.
 
-Za samostalni nastavak razmotrite primjer Gemini Deep Researcha. Prema [Googleovim uputama](https://support.google.com/gemini/answer/15719111?hl=en),
-možete odabrati izvore, priložiti materijale i urediti predloženi plan prije
-pokretanja istraživanja. Dostupnost povezanih izvora ovisi o računu i
-postavkama. Sučelje se može promijeniti do sljedeće radionice, pa provjerite upute
-za račun na kojem radite.
+Usporedite dvije nastale verzije i odaberite onu koja čitatelju bolje
+pomaže razumjeti istraživanje. Kraći tekst može biti jasniji, ali
+ponekad upravo uklonjena pojedinost određuje smisao rezultata.
+Raspravite koja je informacija nužna za vašu publiku.
 
-### Istraživački plan je vaš dokument
+### Kako povezati više pročitanih radova
 
-Prije pokretanja napišite što trebate znati. Razdvojite definicije,
-empirijske nalaze, metodološka pitanja i podatke. Zatim odredite obuhvat.
-Zemlje, razdoblje objavljivanja, populaciju i jezike. Ako tražite noviju
-literaturu, dopustite zasebno navođenje starijih teorijskih radova kako
-vremenski filtar ne bi uklonio temeljne pojmove.
+Pregled literature traži više od niza pojedinačnih sažetaka. Njime
+pokazujemo kako se objašnjenja nadopunjuju, gdje se razilaze i što
+to znači za naše pitanje. Za temu inflacijskih očekivanja možemo
+usporediti radove prema tome kako mjere očekivanja, kojim se
+informacijama bave i kakav odnos pokušavaju ustanoviti.
 
-Zahtjev može biti preširok.
+Istraživački načini rada, poput Deep Researcha, mogu pomoći u
+organiziranju opsežnije pretrage. Prije prikupljanja materijala
+razgovarajte s alatom o svrsi pregleda. Ako vas zanima medijsko
+izvještavanje, povijest monetarne politike može biti kratak kontekst,
+dok više prostora zaslužuju mjerenje medijske pažnje i način na koji
+studije povezuju informacije s očekivanjima.
 
-> Napiši pregled literature o inflaciji.
+> Predloži plan pregleda literature o medijskom izvještavanju i
+> inflacijskim očekivanjima kućanstava. Poveži ga s našim pitanjem
+> o Hrvatskoj. Organiziraj ga oko mjerenja očekivanja, uloge
+> informacija i istraživačkih pristupa. Za svaki dio objasni kako
+> bi pomogao razumjeti temu. Najprije razgovarajmo o planu.
 
-On ne kaže trebate li udžbeničko objašnjenje, pregled prognoziranja ili
-raspravu o očekivanjima. Za temu medijskog izvještavanja zahtjev možemo precizirati ovako.
+Plan možete promijeniti nakon prvih radova. Ako saznate da dio
+literature proučava percepcije, odlučite treba li vam poseban odjeljak
+o razlici između prošlih i budućih cijena. Ako se radovi bave drugim
+zemljama, objasnite koje bi osobine hrvatskog konteksta mogle biti
+važne za prijenos njihova objašnjenja.
 
-> Pripremi plan pregleda empirijske literature o medijskom izvještavanju
-> i inflacijskim očekivanjima kućanstava u europskim zemljama. Glavni
-> obuhvat su radovi objavljeni od 2010. nadalje. Temeljne teorijske radove
-> navedi zasebno. Organiziraj pregled prema mjerenju očekivanja, mjerenju
-> medijske pažnje, istraživačkom dizajnu i ograničenjima.
->
-> Za svaki rad navedi izvor, uzorak, razdoblje, mjere, metodu i glavni
-> nalaz. Označi imaš li puni tekst. Razlikuj korelaciju, prognozu i uzročni
-> zaključak. Ako podatak ne možeš provjeriti, označi ga kao nepoznat.
-> Najprije pokaži plan. Prikupljanje medijskih tekstova predvidi kao zaseban zadatak.
+### Od pregleda literature do vlastite ideje
 
-Upit traži usporedive zapise o radovima i izričito označavanje nepoznatih
-podataka. Zaključak ostavlja otvorenim. U odgovoru provjerite je li alat
-poštovao te zahtjeve ili je, primjerice, dodao broj opažanja koji nije
-naveden u izvoru.
+Neslaganje među radovima može postati početak dobrog pitanja.
+Primjerice, odnos informacija i očekivanja mogao bi ovisiti o tome
+je li inflacija dugo niska ili se upravo naglo mijenja. Takva ideja
+može motivirati opisnu usporedbu razdoblja u našem skupu. Rezultat
+usporedbe potom pomaže odlučiti kakav bi daljnji projekt bio smislen.
 
-Pregledajte predloženi plan prije izvršavanja. Ako se većina prostora
-troši na povijest središnjih banaka, a vi trebate usporediti mjere očekivanja,
-promijenite raspored. Ako nedostaje odjeljak o hrvatskim izvorima, dodajte
-ga. Ako plan predviđa procjenu učinka medija na temelju podataka koje nemate,
-zaustavite taj korak i razjasnite što bi trebalo prikupiti.
+Zatražite od AI-ja nekoliko mogućih objašnjenja istog obrasca, a
+zatim odaberite jedno koje možete jasno obrazložiti. Razgovor postaje
+korisniji kada navodite što bi se trebalo vidjeti u podacima ako je
+objašnjenje primjereno. Pritom ostaje otvoreno mogu li isti obrazac
+proizvesti i drugi procesi.
 
-### Što može nedostajati u dugom izvješću
-
-Pristup alata ponekad je ograničen na naslov ili sažetak rada. Može koristiti javnu radnu verziju
-umjesto kasnije objavljene verzije. Zasebno provjerite pristup alata punom tekstu, čak i kada ga
-možete otvoriti kroz ustanovu u svom pregledniku. Za važan rad sami
-provjerite verziju dokumenta i dostupnost metodoloških dodataka.
-
-Uz bilješku da autori koriste regresijsku analizu zapišite kako su
-odabrali uzorak, koje su varijable uključili i na čemu temelje tumačenje
-rezultata. Pročitajte opis modela i obrazloženje u izvornom radu. Ako izvješće navodi samo naziv metode, to je polazna bilješka,
-koju još treba provjeriti i dopuniti.
-
-Obuhvat izvješća provjerite dodatnim pretragama na hrvatskom i drugim
-relevantnim jezicima. Uključite drukčije pojmove i radove dostupne kroz
-ustanovu. Tvrdnju o istraživačkoj praznini potkrijepite pregledom
-relevantne literature uz jasno navedena pravila pretrage i odabira.
-
-Dugi postupak može završiti
-izvješćem koje krši dio kriterija, drugi vremenski raspon, druga populacija
-ili niz općenitih zaključaka bez pojedinačnih izvora. Usporedite rezultat
-s početnim planom. Ta je provjera jednostavna ako ste kriterije prethodno
-zapisali. Mnogo je teža ako ih tek naknadno prilagođavate dobivenom tekstu.
-
-### Kako provjeriti i preraditi izvješće
-
-Prvo pročitajte naslove i zaključak. Zatim izdvojite tri tvrdnje koje su
-najvažnije za vaše pitanje. Za svaku otvorite izvor i provedite trostruku
-provjeru iz prethodnog poglavlja. Zatim na isti način provjerite sve
-ostale tvrdnje koje ćete preuzeti u svoj rad. U izvornom tekstu pronađite
-odlomak koji podupire svaku tvrdnju. Provjerite odnosi li se na navedenu
-populaciju i dopušta li takav zaključak.
-
-Napravite jednostavnu evidenciju nalaza, zadržati, provjeriti, suziti ili
-izostaviti. Primjerice, dobru definiciju mjere možete zadržati uz izvor.
-Tvrdnju o „svim europskim kućanstvima” suziti na uzorak studije. Broj bez
-izvora izostaviti. Ako se dva izvora razlikuju, nemojte ih automatski
-izjednačiti u kompromisnu tvrdnju. Razlika može proizlaziti iz pitanja,
-mjere, razdoblja ili istraživačkog dizajna.
-
-Sačuvajte plan, datum pretrage, popis izvora i vlastite bilješke. Generirano
-izvješće služi kao radni materijal. Njegovu strukturu možete preraditi,
-ali svaka tvrdnja u završnom pregledu treba imati mjesto u vašem dokaznom
-zapisu. Kada pišete, uspoređujte radove po doprinosu pitanju umjesto da
-prepričavate jedan za drugim.
-
-### Povezivanje s našim podacima
-
-Za našu analizu proučite
-HICP i anketni saldo, odredite opisno pitanje i odlučite što ćete
-prikazati. U početnom pregledu objasnite što svaka mjera znači, koja su njezina
-ograničenja i kako možete usporediti dvije serije.
-
-Nakon čitanja metodologije možete odlučiti prikazati dvije odvojene serije
-sa zajedničkom vremenskom osi, izračunati godišnje sažetke i opisati
-korelaciju vrijednosti iz istog mjeseca. Panel-model, analiza medijskih tekstova i predviđanje inflacije
-mogu biti zasebni nastavci istraživanja. Za svako proširenje prije kodiranja odredite koji dodatni podaci
-i metodološko obrazloženje nedostaju.
-
-### Ako želite nastaviti
-
-Sastavite plan za vlastito pitanje i napišite što bi vas navelo da ga
-promijenite. Ako imate pristup istraživačkom načinu rada, pokrenite ga.
-Dok čekate, provjerite jedan već pronađeni izvor. Odvojite dovoljno
-vremena za čitanje i provjeru izvora.
-
-Kada izvješće stigne, provjerite tri ključne tvrdnje, zabilježite jednu
-prazninu i napišite vlastiti kratki sažetak. Razdvojite
-potvrđeno, vjerojatno i zasad nepoznato. Ako nemate pristup alatu, napravite
-isti plan i sažetak iz tri početna izvora radionice. Uz sažetak sačuvajte bilješke iz kojih je vidljivo na što se oslanjate.
+U našem slučaju literatura pomaže razumjeti zašto uspoređujemo
+ostvarenu inflaciju i anketni saldo. Za procjenu uloge medija trebali
+bismo dodati podatke o izvještavanju. Takvu mogućnost možemo smisleno
+oblikovati već sada, bez pripisivanja medijima rezultata iz tablice
+koja medijske podatke ne sadrži.

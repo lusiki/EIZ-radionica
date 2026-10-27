@@ -6,152 +6,91 @@
 
 **Razgovor.** Kako definicija mjere utječe na usporedbu inflacije i očekivanja?
 
-**Primjer.** Povežemo stupac hicp_yoy_pct s godišnjom stopom u Eurostatovu
-opisu HICP-a. Objasnimo da vrijednost za ožujak 2022. uspoređuje cijene
-s ožujkom 2021., iako tablica ima jedan redak za svaki mjesec.
+**Primjer.** U Eurostatovu opisu HICP-a pronađemo značenje godišnje stope.
+Vrijednost za ožujak 2022. uspoređuje cijene s ožujkom 2021., iako
+naša tablica ima zaseban redak za svaki mjesec.
 
-**Isprobajte.** U metodologiji Europske komisije pronađite Consumer Survey,
-CONS_006 i Balances. Objasnite što mjeri expectations_balance, na koje
-se razdoblje odnosi i kako biste ga označili na grafu. Usporedite svoje
-objašnjenje s AI odgovorom i izvornim opisom.
+**Isprobajte.** U metodologiji Europske komisije pronađite pitanje
+CONS_006 i objašnjenje salda. Objasnite što odgovori govore o budućem
+kretanju cijena i predložite naziv okomite osi grafa.
 
-### Kako početi pregled literature
+### Pretraživanje koje prati pitanje
 
-Pri traženju literature za seminarski rad lako je otvoriti više radova
-nego što ih stignete pažljivo pročitati. Dio rezultata nije dostupan bez
-pretplate, dio se ne odnosi na temu, a bilješke se brzo pomiješaju.
-AI pretraživanje može pomoći u početnom snalaženju, predložiti pojmove,
-sažeti pronađene stranice i povezati tvrdnje s izvorima.
+Prvi rezultati pretrage često miješaju vijesti, službene podatke i
+istraživačke radove. Svaka od tih vrsta izvora može pomoći, ali na drukčiji
+način. Vijest otvara aktualnu temu, metodologija određuje značenje mjere,
+a istraživački rad razvija i ispituje objašnjenje. Prije pretrage odlučite
+što vam upravo nedostaje za vaše pitanje.
 
-U knjižnici vas katalog usmjerava prema policama. AI pretraživač uz
-poveznice pokušava ponuditi i sažetak pronađenog materijala. Sažetak je
-koristan samo ako možete ustanoviti što je stvarno pročitano. Asistent
-može zamijeniti sažetak rada s cijelim radom, povezati citat s preširokom
-tvrdnjom ili zanemariti izvor do kojeg nije uspio doći.
+AI pretraživanje može predložiti pojmove i približiti sadržaj pronađenih
+izvora. Perplexity i drugi sustavi s web pretraživanjem mogu poslužiti
+za takvu početnu orijentaciju. Zatražite poveznice kojima se možete
+vratiti tijekom čitanja. Kada odgovor govori o radu dostupnom samo
+u sažetku, njegove pojedinosti ostaju otvorene za daljnje čitanje.
 
-Perplexity je jedan primjer takvog rada. Web pretraživanje s izvorima
-nude i drugi razgovorni sustavi. Dohvaćanje sadržaja i njegovo korištenje pri
-pisanju odgovora često se naziva RAG. Dohvaćeni dokumenti daju modelu izvore za odgovor. Zatim provjerite
-obuhvat pretrage, citate i kvalitetu uključenih studija.
-
-### Tri upita koji postupno razjašnjavaju temu
-
-Počnimo kratkim, neodređenim upitom.
+Početni upit može biti vrlo kratak.
 
 > Inflacija Hrvatska.
 
-Ovakav upit može voditi prema najnovijem podatku, objašnjenju pojma
-ili istraživačkoj literaturi. Odredite što od toga trebate. Mješavina vijesti, službenih podataka i
-općih objašnjenja može biti korisna za orijentaciju, ali teško ju je
-pretvoriti u pregled literature bez dodatnog usmjeravanja.
+Takav zahtjev ne razlikuje aktualnu stopu od objašnjenja inflacije ili
+istraživanja očekivanja. Precizniji upit određuje odnos koji vas zanima.
 
-Sljedeći korak određuje predmet interesa.
+> Pronađi istraživanja o tome kako kućanstva oblikuju očekivanja o
+> budućim promjenama cijena. Usmjeri se na europske zemlje. Za svaki
+> odabrani rad ukratko objasni pitanje, podatke i glavni doprinos temi
+> te navedi poveznicu na izvor. Naznači čitaš li puni tekst ili sažetak.
 
-> Koji čimbenici mogu biti povezani s percepcijom inflacije kod kućanstava
-> u europskim zemljama? Pronađi istraživanja i za svako navedi autora,
-> naslov, godinu i poveznicu na izvor. Odvoji radove od novinskih prikaza.
+Za međunarodnu literaturu često pomaže engleski izraz inflation
+expectations. Hrvatski pojmovi i lokalni izvori važni su za kontekst
+Hrvatske. Pretražujte i pojedine mehanizme: osobno iskustvo kupnje,
+informacije iz medija ili povjerenje u institucije. Tako opća tema
+postupno dobiva istraživački sadržaj.
 
-Sada tražite istraživanja o tome kako kućanstva doživljavaju inflaciju.
-Percepcija se odnosi na prošle promjene, a očekivanja na buduće. U nastavku razgovora razjasnite koji pojam želite proučavati.
-Upit precizirajte prema onome što želite istražiti.
+### Što zapravo pitamo potrošače
 
-> Find empirical studies on media coverage and households' inflation
-> expectations in European economies, published from 2015 onward.
-> Separate studies of perceptions from studies of expectations. For each
-> candidate, report the exact title, authors, publication type, data,
-> method and source URL. State whether you accessed the full text or
-> only an abstract. Describe findings supported by the text you accessed.
+Za naš je primjer važno razlikovati percepciju prošlih promjena cijena
+od očekivanja budućih promjena. Anketno pitanje CONS_006 traži procjenu
+kretanja cijena u sljedećih dvanaest mjeseci u usporedbi s proteklih
+dvanaest mjeseci. Ponuđene su kategorije odgovora, iz kojih se računa
+saldo. Njegova vrijednost govori o raspodjeli odgovora prema pravilima
+ankete. Iz vrijednosti 40 bodova ne možemo zaključiti da ispitanici
+očekuju stopu inflacije od 40 posto.
 
-Engleski pojmovi mogu olakšati pretraživanje međunarodne literature, ali
-pretragu treba dopuniti hrvatskim izrazima i lokalnim izvorima. Preuski
-vremenski filtar može isključiti temeljni teorijski rad. Stoga noviju
-empirijsku literaturu i teorijske početne radove možete tražiti odvojeno.
+Otvorite [metodologiju Europske komisije](https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en)
+i pročitajte pitanje uz ponuđene odgovore. U
+[Eurostatovu opisu HICP-a](https://ec.europa.eu/eurostat/web/hicp/information-data)
+pogledajte kako se određuje godišnja promjena. Naša usporedba povezuje
+mjeru ostvarenog kretanja cijena s kvalitativnom mjerom očekivanja.
+Različite jedinice kasnije će odrediti kako oblikujemo grafove.
 
-### Tri provjere izvora
+> Objasni razliku između godišnje stope HICP-a i salda iz pitanja
+> CONS_006. Osloni se na ova dva službena opisa. Za svaku mjeru
+> predloži jasnu oznaku osi i jednu rečenicu kojom bih je predstavio
+> osobi koja prvi put vidi graf.
 
-Prva provjera je postojanje. Otvorite stranicu rada kod izdavača,
-institucionalni repozitorij ili bibliografski zapis. Usporedite naslov,
-autore, godinu i identifikator. Provjerite vodi li DOI na članak koji je naveden u odgovoru. Ako ne možete doći do punog teksta, to označite umjesto
-da prepričavate zaključke koje niste pročitali.
+U razgovoru pokušajte odgovoriti što može značiti rast salda. Govori
+li on o većem očekivanom ubrzanju cijena, o promjeni udjela odgovora
+ili o točno određenoj budućoj stopi? Vratite se formulaciji pitanja
+kada se tumačenja raziđu. To je primjer kako čitanje izvora izravno
+mijenja analizu.
 
-Druga provjera je potpora tvrdnji. Pronađite odjeljak, tablicu ili
-stranicu koji odgovaraju rečenici koju želite napisati. Studija može
-opisivati povezanost, a AI sažetak uzročnost. Može proučavati određenu
-zemlju, skupinu ispitanika ili informacijski eksperiment, dok sažetak
-govori o svim kućanstvima. Zabilježite te granice uz sam izvor.
+### Izvor kao dio objašnjenja
 
-Treća provjera je vrsta i kvaliteta izvora. Recenzirani članak, radni
-materijal središnje banke, metodološki priručnik i novinski tekst imaju
-različite namjene. Kod izdavača provjerite je li dokument prošao recenziju.
-Prikladnost njegove metode procijenite prema vlastitom pitanju. Procijenite podatke, dizajn, ograničenja
-i relevantnost.
+Članak Meylera i Reiche u
+[ECB Economic Bulletinu](https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html)
+pomaže razumjeti kvalitativne i kvantitativne mjere percepcija i
+očekivanja. Taj je doprinos drukčiji od izračuna korelacije za našu
+tablicu. Kad uključujete rad u vlastiti tekst, objasnite čemu služi
+u argumentu: određuje pojam, predlaže mehanizam ili donosi nalaz iz
+određenog istraživanja.
 
-Primjer za naš slučaj jest članak Meylera i Reiche o percepcijama i
-očekivanjima u [ECB Economic Bulletinu](https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html).
-Koristan je za razumijevanje razlike između kvalitativnih i kvantitativnih
-mjera. Koristite ga za objašnjenje mjera. Brojčane rezultate za Hrvatsku
-od 2015. do 2024. provjerite u podacima i skriptama radionice.
+Ako dvije studije dolaze do različitih zaključaka, usporedite njihova
+pitanja i okolnosti. Jedna može ispitivati kratku informacijsku
+intervenciju, a druga dugoročna kretanja u anketi. Ta razlika može
+objasniti neslaganje bolje od pokušaja da njihove nalaze spojite
+u jednu opću tvrdnju.
 
-### Za dulji projekt / bilješke o izvorima
-
-Za svaki od tri izvora napišite kratak zapis. Navedite tvrdnju koju
-potvrđuje, autora, naslov i godinu te poveznicu i mjesto u tekstu.
-Dodajte vlastiti sažetak i jedno ograničenje. Tako nastaje pregled koji možete ponovno
-otvoriti kada budete pisali. Sam popis referenci bez tih bilježaka lako
-postaje zbirka naslova koje više ne povezujete s argumentom.
-
-Razmislite o rečenici „potrošači očekuju rast inflacije”. Prvo provjerite
-što točno pita anketa. Ispitanici uspoređuju očekivano kretanje cijena u
-sljedećih dvanaest mjeseci s proteklih dvanaest mjeseci. Biraju ponuđenu
-kategoriju odgovora. U dokazni zapis unesite formulaciju pitanja i način
-izračuna salda kako biste ga pravilno tumačili u analizi i zaključku.
-
-Ponovljeno pojavljivanje istog autora u rezultatima može biti trag za
-daljnje čitanje. Provjerite radi li se o različitim radovima ili o
-ponovljenim poveznicama na isti rad i njegove novinske prikaze. Pratite
-reference unatrag i novije citate unaprijed. Vodite bilješku o korištenim
-pojmovima, datumu pretrage i kriterijima odabira.
-
-### Obrasci za nastavak pretraživanja
-
-Za metodološki pregled pitajte koje se metode koriste za konkretno
-pitanje i što omogućuje njihovu interpretaciju. Najprije proučite dostupne
-podatke, a zatim usporedite prikladne metode. Za svaki pronađeni rad
-zatražite objašnjenje veze između pitanja, dizajna i pretpostavki.
-
-Za teorijski okvir tražite definiciju mehanizma, njegove pretpostavke i
-predviđanja koja bi se mogla razlikovati od alternativnih objašnjenja.
-Pojmovi poput racionalne nepažnje i sporog usvajanja informacija mogu biti
-korisni za temu očekivanja. Pročitajte izvor i objasnite što bi pojedina teorija značila za vaše mjere.
-
-Za pregled podataka zatražite instituciju, šifru skupa, jedinicu,
-frekvenciju, obuhvat i uvjete pristupa. Za provjeru tvrdnje tražite i
-dokaze koji joj ne idu u prilog. Na primjer.
-
-> Koji nalazi ograničavaju tvrdnju da intenzivnije medijsko izvještavanje
-> povećava inflacijska očekivanja? Razlikuj opisnu povezanost od učinka
-> identificiranog istraživačkim dizajnom. Navedi mjesto u svakom izvoru.
-
-Ako naiđete na nepoznatu kraticu, pronađite njezinu definiciju u radu,
-pravilo izračuna i izvor podataka. Primjer je IAG iz starog nastavnog
-materijala. Za njegovo uključivanje u analizu najprije treba potvrditi
-definiciju, način izračuna i izvor podataka.
-
-### Organizacija i pristup
-
-Perplexityjevi [Spaces](https://hub-prod.perplexity.ai/hub/faq/what-are-spaces)
-služe organiziranju razgovora i materijala po temama. Za naš primjer
-korisno je odvojiti provjerene bilješke od početnih odgovora. Zajednički
-prostor olakšava suradnju. Uz njega vodite vlastitu bibliografiju i
-zabilježite koje ste izvore provjerili.
-
-Filtri izvora i nazivi načina pretraživanja mogu se mijenjati. Za svaki
-rad provjerite status recenzije kod izdavača. Za sustavni pregled unaprijed
-opišite baze, pojmove za pretragu i pravila odabira radova. Na radionici povezujemo obje mjere s njihovim službenim definicijama.
-Opsežniji pregled literature možete razviti kasnije.
-
-### Ako želite nastaviti
-
-Isprobajte isti način provjere na temi koja vas zanima. Pronađite jedan
-izvor i usporedite ga s AI odgovorom. Ako odlučite razviti dulji pregled
-literature, prethodni odjeljci mogu pomoći pri organizaciji izvora.
+Za raspravu odaberite jedan rad koji mijenja vaše početno razumijevanje
+teme. Objasnite što biste bez njega pogrešno pretpostavili. Time
+pretraga dobiva jasan završetak za trenutačni zadatak, a pitanje
+određuje koji vam je sljedeći izvor doista potreban.

@@ -4,235 +4,99 @@
 
 ### Primjer iz radionice
 
-**Razgovor.** Koliko rezultat ovisi o razdoblju i kako možemo provjeriti izračun?
+**Razgovor.** Koliko naš opis odnosa ovisi o razdoblju koje promatramo?
 
-**Primjer.** Iz izvornog CSV-a ponovno izdvojimo svih 12 stopa za 2022.
-Njihov zbroj je 127,6, a prosjek približno 10,6333 %. Izdvojene retke
-usporedimo s tablicom podataka i dobiveni prosjek s godišnjim sažetkom.
+**Primjer.** Iz cijelog CSV-a ponovno izdvojimo dvanaest vrijednosti
+HICP-a za 2022. Njihov zbroj iznosi 127,6, a prosjek približno
+10,6333 %. Povežemo taj račun s godišnjom tablicom.
 
-**Isprobajte.** Ponovno krenite od cijelog CSV-a. Izračunajte istodobnu
-Pearsonovu korelaciju za svih 120 mjeseci te zasebno za 2015.–2019.
-i 2020.–2024., po 60 mjeseci. Rezultati su približno 0,6985, 0,8279
-i 0,5342. Usporedite ih s grafovima i objasnite što jedna korelacija
-za cijelo desetljeće sažima, a što se vidi tek po podrazdobljima.
+**Isprobajte.** Usporedite korelaciju za cijelo desetljeće i za dva
+petogodišnja razdoblja. Objasnite što se izgubi kada odnos opišemo
+samo jednim brojem.
 
-### Provjerite izračun prije tumačenja
+### Vratite se cijelom skupu
 
-Godišnji prosjek provjeravamo iz njegovih sastavnica. U prikazu za 2022.
-trebaju biti svih 12 mjeseci iz CSV-a. Usporedite vrijednosti s podacima
-na stranici, zbrojite ih i podijelite s 12. Tako provjeravamo odabir
-redaka i račun koji je proizveo godišnju tablicu.
+U prethodnom poglavlju mogli ste izdvojiti 2020.–2024. za lakši pregled.
+Sada ponovno koristimo svih 120 mjeseci kako bismo usporedili ranije
+i kasnije razdoblje. Jasno zadajte početak novog izračuna. Time
+razlikujete prethodno napravljeni prikaz od podataka za novu usporedbu.
 
-Pri usporedbi podrazdoblja ponovno krećemo od cijelog skupa. Raniji
-odabir 2020.–2024. za graf ostaje zaseban prikaz. Broj opažanja uz
-korelaciju pomaže uočiti je li izračun koristio namjeravano razdoblje.
+> Ponovno kreni od cijelog učitanog CSV-a. Prikaži svih dvanaest
+> godišnjih stopa HICP-a za 2022., njihov zbroj i prosjek. Zatim
+> izračunaj Pearsonovu korelaciju između dviju mjera iz istog
+> mjeseca za 2015.–2024., 2015.–2019. i 2020.–2024. Uz svaki
+> rezultat navedi broj mjeseci. Prikaži tablicu i objašnjenje
+> postupka običnim jezikom, bez programskog koda.
 
-### Pročitajte grafove i sažetke
+Prosjek za 2022. možemo razumjeti kroz sastavnice: zbroj dvanaest
+vrijednosti podijeljen s dvanaest daje približno 10,63 %.
+Takav mali račun pokazuje kako je nastao jedan rezultat tablice.
+Za složeniji izračun tražimo objašnjenje koje nam omogućuje razumjeti
+što se uspoređuje i kako je odabrano razdoblje.
 
-Dvije serije imaju različite jedinice. U analizi prikazujemo ih u
-odvojenim panelima sa zajedničkom vremenskom osi. Čitatelj vidi kada se
-promjene događaju, ali ih ne zamjenjuje za brojčano usporedive veličine.
-Dvije neovisno skalirane y-osi mogu proizvesti privid preklapanja linija
-ovisno o odabranom rasponu. Zato za ovaj zadatak koristimo odvojene prikaze.
+### Što korelacija sažima
 
-Pogledajte razdoblja ubrzanja, usporavanja i promjena raspona. Opisujte
-ono što slika pokazuje, a moguća objašnjenja navedite kao pitanja za
-daljnje istraživanje. Za provjeru strukturnog loma ili smjera uzročnosti
-potrebni su zaseban postupak i jasno navedene pretpostavke.
+Pearsonova korelacija opisuje linearnu povezanost parova vrijednosti.
+U našoj spremljenoj verziji podataka iznosi približno **0,6985** za
+2015.–2024., uz 120 mjeseci. Za 2015.–2019. iznosi **0,8279**, a za
+2020.–2024. **0,5342**, uz po 60 mjeseci. To su opisni rezultati
+iz [referentne analize](../materials/results.qmd).
 
-Pearsonova korelacija sažima linearnu povezanost parova opažanja. U
-zamrznutom uzorku cijelog razdoblja iznosi približno 0,6985. U dijelu
-2015.–2019. približno 0,8279, a u dijelu 2020.–2024. približno 0,5342.
-Te su vrijednosti spremljene u `results/correlations.csv`. Razlika
-među podrazdobljima pokazuje da sažetak ovisi o promatranom razdoblju.
-Za test razlike korelacija ili promjene uzročnog mehanizma trebalo bi
-provesti zasebnu analizu.
+Ranije podrazdoblje ima jaču pozitivnu linearnu povezanost prema tom
+pokazatelju. Jedna vrijednost za cijelo desetljeće sažima različite
+obrasce koje vremenski graf može pomoći uočiti. Pogledajte kada se
+serije kreću slično i postoje li dijelovi u kojima im se kretanja
+razlikuju. Broj i graf zajedno daju potpuniji opis.
 
-### Dodatno čitanje / kako sačuvati ponovljiv postupak
+Razlika između dviju korelacija sama po sebi ne pokazuje da se dogodio
+određeni strukturni lom ili da je jedna mjera promijenila drugu.
+Na odnos mogu utjecati zajednički šokovi, vremenska ovisnost i izbor
+razdoblja. Za ispitivanje takvih objašnjenja trebalo bi oblikovati
+zaseban postupak. Ovdje možemo postaviti dobro obrazloženo sljedeće
+pitanje, primjerice zbog čega se povezanost razlikuje.
 
-Ako sutra pošaljete isti upit modelu, može nastati drukčiji kod. Model,
-postavke, dostupni alati ili izvori također se mogu promijeniti. Za
-reprodukciju našeg numeričkog rezultata zato čuvamo **prihvaćeni kod i
-ulazne podatke**. Iz njih ponovno pokrećemo analizu, a zapis upita
-čuvamo kao objašnjenje nastanka rada.
+### Kada više izračuna postane novo istraživanje
 
-Za slučajne postupke treba navesti sjeme generatora i relevantne
-postavke. Za vanjske izvore treba sačuvati datum dohvata i, kada je
-dopušteno, korištenu kopiju. Za softverske ovisnosti treba opisati verzije
-i način obnove okruženja. [renv](https://rstudio.github.io/renv/articles/renv.html)
-pomaže upravljanju R paketima. Zasebno zabilježite potrebne sistemske
-biblioteke, podatke i vanjske usluge.
+AI nam olakšava naručivanje dodatnih usporedbi. Možemo zatražiti
+drukčiji početni mjesec, kraći raspon ili pomicanje jedne serije
+u odnosu na drugu. Svaka od tih odluka mijenja pitanje koje broj
+sažima. Prije izračuna objasnite zašto vas određena promjena zanima.
 
-Za priloženu analizu cijelog skupa dovoljne su spremljene datoteke i osnovni
-R. Složeniji projekti mogu tražiti izolirano okruženje
-i automatizirane provjere. Razina infrastrukture treba odgovarati
-stvarnim ovisnostima i riziku gubitka postupka.
+Ako isprobavate različita razdoblja kako biste upoznali podatke,
+predstavite taj rad kao istraživanje obrazaca. Odabir samo najjače
+korelacije nakon mnogo pokušaja ne pokazuje da je upravo taj odnos
+najvažniji. Za prognozu biste trebali odrediti cilj i vremenski
+horizont te odvojiti razdoblje na kojem procjenjujete uspješnost.
 
-### Dodatno čitanje / isti postupak u bilježnici
+Goldsmith-Pinkham u raspravi o
+[AI one-shot papers](https://paulgp.com/2026/03/21/ai-oneshot-papers.html)
+upozorava da automatizirana izvedba može posezati za poznatim metodama
+koje i dalje zahtijevaju istraživačku prosudbu. Naš je primjer
+jednostavniji, ali otvara isto pitanje: što bi nam dodatna metoda
+omogućila zaključiti i zašto su njezine pretpostavke ovdje uvjerljive?
 
-Zamislite bilježnicu u kojoj zapisujete pitanje, odmah ispod njega
-izvodite izračun, a zatim dodajete graf i komentar. Takav dokument može
-biti i istraživački dnevnik i radno okruženje. Računalne bilježnice spajaju
-tekst, kod i rezultate. AI pomoć može dodati razgovorno sučelje za pisanje
-i objašnjavanje koda.
+> Predloži jedno moguće objašnjenje razlike među podrazdobljima
+> i jedno alternativno objašnjenje. Za svako reci koje dodatne
+> podatke ili usporedbe trebamo da bismo ih mogli razlikovati.
+> Poveži prijedloge s onim što smo stvarno vidjeli na grafovima.
 
-Razgovorna sučelja mogu spremati rad u različitim oblicima.
-Chat koji prikazuje graf, interaktivni prikaz izrađen u razgovoru i
-Jupyter bilježnica nemaju nužno isti način spremanja koda i izvođenja.
-Prije analize provjerite možete li vidjeti izvršeni kod, preuzeti podatke
-i rezultat te ponovno pokrenuti postupak iz prazne sesije.
+### Od gotovog izgleda do razumljivog rezultata
 
-Googleova [dokumentacija Colaba](https://research.google.com/colaboratory/intl/en-GB/faq.html)
-opisuje razgovornu pomoć, izmjene koda i agentske postupke unutar
-bilježnice. Pristup ovisi o računu i dostupnosti funkcije. Za učenje
-je važnije razumjeti što je izvršeno nego pamtiti koji se model nalazi
-u pozadini pojedinog proizvoda.
+U svojem [primjeru suradnje na empirijskoj analizi](https://paulgp.substack.com/p/integration-and-collaboration-in)
+Goldsmith-Pinkham opisuje kako je zapis rada naveo analizu koja nije
+bila provedena. Uredan opis postupka zato nije dovoljan da bismo
+znali što je stvarno izračunano. U našoj radionici tražimo konkretan
+izlaz koji možemo povezati s pitanjem, razdobljem i mjerama.
 
-Bilježnicu možete predati kao završni istraživački dokument ako sadrži
-sav potreban kod, opis ulaza i okruženja te se može izvršiti pravilnim
-redom. Iste uvjete treba zadovoljiti i skripta u repozitoriju.
-Ponovljivost postupka provjeravate ponovnim izvođenjem spremljenog postupka.
+Za istraživačku raspravu odaberite jedan rezultat koji još ne možete
+dobro objasniti. Zadržite se na njemu prije naručivanja novih tablica.
+Možda treba razjasniti vremensku usporedbu, možda nedostaje izračun,
+a možda su nam potrebni drukčiji podaci. Tako smanjujemo dug provjere
+spomenut na početku priručnika, kroz stvarni problem u analizi.
 
-### Skriveno stanje / zašto dokument radi samo vama
-
-Bilježnica može sadržavati ćeliju koja koristi objekt stvoren ranije,
-ali čija je izrada poslije izbrisana. Možete izvršiti ćelije redoslijedom
-3, 1, 4, promijeniti podatke i zaboraviti ponovno pokrenuti graf.
-Na ekranu tada vidite uredan niz rezultata koji ne odgovara redoslijedu
-koda u spremljenom dokumentu. To je problem skrivenog stanja.
-
-AI ga može dodatno zamagliti ako kaže da je „ponovno izračunao sve”,
-a izmijeni samo jednu ćeliju. Spremite dokument,
-ponovno pokrenite jezgru i izvršite sve ćelije od početka. Provjerite
-rezultate i spremite ih nakon uspješnog izvođenja. Ako postupak ne radi,
-pronađite nedostajući korak umjesto da se oslonite na staru sliku.
-
-Isti problem postoji u interaktivnoj R konzoli. Objekt iz jučerašnje
-sesije može omogućiti današnjoj nepotpunoj skripti da radi. Zato spremljeni postupak pokrenite od početka s poznatim ulaznim
-podacima i provjerite dobivene rezultate.
-
-### Pet pitanja za provjeru rezultata u bilježnici
-
-Koristite istih 120 mjeseci za Hrvatsku. Tako možete usporediti rad
-u bilježnici s radom u skripti na već poznatim podacima.
-
-Prvo pitanje, što je učitano? Prikažite broj opažanja, nazive i tipove
-stupaca, nekoliko redaka te vremenski raspon. Usporedite odgovor modela
-sa stvarnom tablicom. Ako model saldo nazove „očekivanom inflacijom u
-postocima”, ispravite definiciju prije bilo kakvog grafa.
-
-Drugo pitanje, kako se mjere kreću kroz vrijeme? Zatražite dva panela
-sa zajedničkom vremenskom osi. Jasno navedite jedinice i razdoblje.
-Provjerite jesu li mjeseci poredani od najranijeg prema najkasnijem. U ovom skupu tekstualni format YYYY-MM
-omogućuje kronološko sortiranje, a za druge formate provjerite pravilo sortiranja.
-
-Treće pitanje, kakav je raspon i raspodjela? Sažetak i histogram
-otkrivaju različite stvari. Histogram prikazuje raspodjelu, ali skriva
-vremenski slijed. Vremenski graf čuva slijed, ali slabije pokazuje koliko
-je često pojedina vrijednost zastupljena. Koristite ih za različita
-pitanja. Najmanje i najveće vrijednosti usporedite s izvornim podacima.
-
-Četvrto pitanje, koliko je sažetak osjetljiv na razdoblje? Izračunajte
-korelaciju za cijeli uzorak i dva unaprijed navedena podrazdoblja.
-Objasnite da se uspoređuju isti mjeseci dviju serija. Ako želite ispitati
-vremenski odmak, napišite koju varijablu pomičete, u kojem smjeru i zašto.
-Unaprijed odredite odmake i prikažite rezultate za sve odabrane odmake.
-
-Peto pitanje, što je sljedeće istraživačko pitanje? Početni pregled podataka može potaknuti hipotezu o razlikama između
-razdoblja. Za njezinu provjeru pripremite zaseban plan analize. Zapišite kada je ideja nastala i kakvi su dodatni podaci
-ili dizajn potrebni. Za AI prijedlog da dodate medijski ton morali biste prikupiti nove
-podatke i započeti zaseban projekt.
-
-### Za dulji projekt / što sačuvati iz razgovora
-
-Preuzmite skriptu ili bilježnicu, potrebne ulazne podatke ako to dopuštaju
-uvjeti uporabe, tablicu rezultata i graf. Dodajte opis koraka, verzije
-važnih paketa i bilješku o AI pomoći. Sačuvajte datoteke iz kojih druga osoba može provjeriti brojeve
-i ponoviti postupak s drukčijim pretpostavkama.
-
-Iz razgovora sačuvajte odluke i zapise potrebne za provjeru rada.
-U zajedničku mapu spremite dijelove razgovora važne za analizu.
-Osobne podatke čuvajte zasebno. Primjer
-korisne bilješke, „Model je predložio interpolaciju. Odbijena je jer
-zamrznuti skup nema praznina i takva transformacija nije dio plana.”
-
-### Usporedite tri načina rada
-
-Agentu možete zadati ograničen posao nad više datoteka. U editoru je
-lakše pratiti male promjene koda dok učite, dok bilježnica drži pitanje,
-kod i komentar na jednom mjestu. Sva
-tri načina rada mogu biti pregledna ako čuvate kod i bilježite odluke.
-U svakom trebate provjeriti može li se analiza ponovno pokrenuti.
-
-Umjesto rangiranja proizvoda, usporedite isti mali zadatak u dvama
-okruženjima, koliko vam treba vremena do **provjerenog** rezultata,
-možete li objasniti svaku transformaciju, gdje se sprema kod i može li
-ga druga osoba pokrenuti? Ako ste brže dobili graf, a ne možete doći
-do koda, dobitak može nestati pri pisanju završnog rada.
-
-### Ako želite nastaviti
-
-Napišite kratak pregled podataka s pet pitanja iz ovog poglavlja.
-Spremite prihvaćeni kod, ponovno pokrenite okruženje i izvedite ga od
-početka. Usporedite broj mjeseci i korelaciju s referentnim datotekama.
-Zatim dajte kolegi postupak bez svoje otvorene sesije i usmenih dopuna.
-Zabilježite što mu je nedostajalo.
-
-Na kraju napišite što kolega može ponoviti iz spremljenih datoteka,
-a za što još treba vašu pomoć ili pristup vanjskoj usluzi.
-Preostale ovisnosti navedite u uputama uz predanu analizu.
-
-### Dodatno čitanje / regresija i HAC
-
-Cijela referentna analiza počinje opisnim rezultatima. U dodatnom primjeru
-možete razmotriti OLS regresiju. Jednostavan model s konstantom glasi
-
-$$y_t = \alpha + \beta x_t + u_t.$$
-
-U dodatnom primjeru $y_t$ je ostvarena inflacija, a $x_t$ saldo očekivanja
-u istom mjesecu. Koeficijent opisuje linearnu povezanost u tom modelu.
-Anketno pitanje gleda unaprijed, a ova regresija uspoređuje vrijednosti
-iz istog mjeseca. Za prognozu treba uskladiti cilj, horizont i dostupnost
-informacija u trenutku predviđanja.
-
-Konvencionalne standardne pogreške OLS-a počivaju na pretpostavkama o
-greškama. Kod heteroskedastičnosti ili serijske korelacije mogu biti
-neprimjerene. Odstupanje može ići u oba smjera. HAC procjena
-kovarijacijske matrice, primjerice Newey-West, mijenja procjenu
-nesigurnosti uz odgovarajuće uvjete. OLS koeficijenti ostaju isti. Endogenost, izostavljene varijable,
-kvalitetu mjerenja i nestacionarnost treba zasebno provjeriti i riješiti
-odgovarajućim istraživačkim postupkom.
-
-U [`sandwich::NeweyWest`](https://sandwich.r-forge.r-project.org/reference/NeweyWest.html)
-važni su odabir odmaka, prethodno izbjeljivanje i korekcija za veličinu
-uzorka. Naš dodatak navodi postavke izričito, `lag = 12`,
-`prewhite = FALSE`, `adjust = TRUE`. U ovom primjeru koristimo dvanaest odmaka jer radimo s mjesečnim
-podacima. Broj odmaka prilagodite pitanju i svojstvima serije. Procjena i
-interpretacija traže pregled dinamike i osjetljivosti na razumne postavke.
-
-P-vrijednost se odnosi na kompatibilnost rezultata s nul-hipotezom i
-pretpostavkama modela, pod tim uvjetima izražava vjerojatnost statistike
-barem toliko ekstremne koliko je opažena. Uz p-vrijednost prikažite procjenu učinka, njegovu nesigurnost
-i pretpostavke analize. [ASA-ina izjava](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf)
-objašnjava kako p-vrijednost tumačiti zajedno s ostalim dokazima.
-Prikladnost dizajna prethodi tumačenju p-vrijednosti.
-
-### Dodatno čitanje / usporedba postupaka
-
-U naprednom radu možete usporediti više opravdanih načina analize
-i provjeriti koliko se rezultati mijenjaju. Takav se pristup naziva
-multiverzumom modela, a rezultate je moguće prikazati specifikacijskom
-krivuljom. Za svaki uključeni model objasnite zašto odgovara pitanju. Dodavanje svih kombinacija koje računalo
-može generirati uključilo bi i modele neprikladne za vaše pitanje.
-
-Prije pregleda rezultata zapišite koje ćete odluke usporediti i zašto.
-Primjerice, možete opisno usporediti ista razdoblja kao u referentnim
-rezultatima, razmotriti odmake koje opravdava pitanje ili alternativno
-mjerenje kada je dostupno. Prikažite sve planirane rezultate i objasnite
-izostavljene specifikacije. Uključite i rezultate s drukčijim predznakom ili većom p-vrijednošću.
-
-Za medijski nastavak trebali biste pribaviti korpus s podrijetlom i
-uvjetima uporabe, definirati uključivanje članaka, ukloniti duplikate po
-opisanom pravilu te provjeriti mjerenje pažnje ili tona. Ručno označen
-uzorak može pomoći da provjerite koliko dobro alat razvrstava tekstove. To je zaseban projekt. Veličinu zbirke zabilježite nakon prikupljanja
-tekstova i provjere duplikata.
+Kada želite sačuvati završeni rad, preuzmite korištene podatke,
+prikaze i tablicu rezultata. Za potpuno ponavljanje računalnog
+postupka potrebna je i datoteka s uputama koje računalo može
+ponovno izvršiti. Zatražite od alata da je pripremi za preuzimanje. Ponovno slanje istog upita može dati drukčiju
+izvedbu. U razgovoru s kolegom objasnite što ste sačuvali i koji
+dio rada on iz toga može ponovno provesti.

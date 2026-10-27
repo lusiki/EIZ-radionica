@@ -20,6 +20,24 @@ Na prvom danu povežite pitanje s izvorima i planom. Na drugom od tog
 plana napravite graf, usporedbu i zaključak. Pitajte zašto je netko
 odabrao određeno razdoblje, kako je provjerio rezultat i što mu graf govori.
 
+## Povežite izvedbu s razumijevanjem
+
+Prije izračuna godišnjih prosjeka pitajte koliko redaka očekujemo i
+koliko mjeseci ulazi u svaki prosjek. Kada se pojavi graf, najprije
+pozovite sudionike da kažu što vide, a zatim pročitajte AI opis.
+Promjena prikaza dobra je prilika da objasne što žele istaknuti.
+
+U planiranju povežite Goldsmith-Pinkhamovu ideju međusobno ovisnih
+koraka s našim primjerom: pogrešno značenje salda može se prenijeti
+u graf i zaključak i kada je račun točan. Usporedite brzinu dobivanja
+rezultata s vremenom potrebnim da ga razumijemo. Zadržite se na
+jednom takvom rezultatu umjesto naručivanja još nekoliko tablica.
+
+Za završno pisanje najprije tražite vlastiti nacrt. Nakon AI komentara
+neka svatko sam preradi jedno mjesto i objasni odluku. Jezična pomoć
+ostaje dostupna kada su zadovoljni argumentom. Taj slijed pokazuje
+pisanje kao dio razmišljanja, uz konkretan rezultat za završni razgovor.
+
 ## Ako netko zapne {#pomoć-tijekom-rada}
 
 Pogledajte zajedno posljednji upit i rezultat. Razjasnite jedan problem,
@@ -34,6 +52,6 @@ i u paru uz jedan ekran.
 
 Pozovite nekoliko ljudi da pokažu graf i pročitaju glavni nalaz svojeg
 zaključka. Pitajte kojim ga rezultatom podupiru i što bi htjeli istražiti
-dalje. Priručnik, R skripte i dodatni alati služe tom nastavku.
+dalje. Priručnik i dodatni materijali služe tom nastavku.
 
 [Pregled tema](workshop_overview.qmd) · [Svi primjeri](../materials/exercises/index.qmd)

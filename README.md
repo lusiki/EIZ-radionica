@@ -10,8 +10,9 @@ CSV dodajemo jednom u AI razgovor koji podržava izvršavanje koda.
 Pitanje, plan, grafovi, tablice i zaključak ostaju u istom razgovoru.
 
 Stranice dana i primjera sadrže upite, pregled svih podataka i referentne
-brojke. Priručnik detaljnije objašnjava isti postupak. R projekt,
-predlošci i dodatni alati dostupni su za samostalni nastavak.
+brojke. Priručnik objašnjava istraživačke odluke i uključuje rasprave
+Paula Goldsmith-Pinkhama. Upute za oba dana i priručnik ne prikazuju
+programski kod. R projekt i dodatni alati dostupni su zasebno za nastavak.
 
 ## Izrada i lokalni pregled materijala
 
@@ -61,8 +62,8 @@ Za samostalni nastavak u R-u možete pokrenuti
 Svaka tema ima isti broj i naslov na stranici dana, u priručniku
 i u primjerima. Dan 1 i Dan 2 sadrže cijeli sadržaj za zajednički rad.
 Stranica Primjeri okuplja ih na jednom mjestu. Zajednički izvori su u
-`materials/activities/`. Priručnik počinje istim aktivnostima, a zatim
-objašnjava širi postupak. Pregled poveznica je u
+`materials/activities/`. Priručnik počinje kratkim prikazom tih
+aktivnosti, a zatim objašnjava istraživačke odluke. Pregled poveznica je u
 [priručniku](booklet/index.qmd#osam-povezanih-blokova).
 
 ## Materijali

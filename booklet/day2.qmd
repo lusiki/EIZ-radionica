@@ -9,10 +9,10 @@ toc-title: "Sadržaj drugog dijela"
 [O priručniku](index.qmd) · [Cijeli PDF](../downloads/EIZ-prirucnik.pdf) ·
 [Kratki pregled drugog dana](../slides/day2.qmd)
 
-Svako poglavlje počinje aktivnošću sa stranice drugog dana. U jednom
-AI razgovoru analiziramo cijeli skup, izrađujemo grafove, provjeravamo
-brojke, uspoređujemo razdoblja i pišemo zaključak. Upute za R projekt,
-agente, bilježnice i napredne metode služe samostalnom nastavku.
+Svako poglavlje počinje kratkim prikazom aktivnosti drugog dana.
+U jednom AI razgovoru upoznajemo podatke, izrađujemo grafove, uspoređujemo
+razdoblja i oblikujemo vlastiti zaključak. Upute i upiti napisani su
+običnim jezikom. Naglasak je na izboru postupka i razumijevanju rezultata.
 
 {{< include _05-agents.qmd >}}
 

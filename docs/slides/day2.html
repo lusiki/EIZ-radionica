@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#podaci" id="toc-podaci" class="nav-link active" data-scroll-target="#podaci">Podaci i zajedničko pitanje</a></li>
   <li><a href="#blok-21" id="toc-blok-21" class="nav-link" data-scroll-target="#blok-21">2.1 Upoznajte i provjerite podatke</a></li>
-  <li><a href="#blok-22" id="toc-blok-22" class="nav-link" data-scroll-target="#blok-22">2.2 Dopunite i objasnite kod</a></li>
+  <li><a href="#blok-22" id="toc-blok-22" class="nav-link" data-scroll-target="#blok-22">2.2 Izradite i objasnite prikaze</a></li>
   <li><a href="#blok-23" id="toc-blok-23" class="nav-link" data-scroll-target="#blok-23">2.3 Ponovite analizu od početka</a></li>
   <li><a href="#blok-24" id="toc-blok-24" class="nav-link" data-scroll-target="#blok-24">2.4 Napišite i uredite zaključak</a></li>
   <li><a href="#za-provjeru-i-daljnje-čitanje" id="toc-za-provjeru-i-daljnje-čitanje" class="nav-link" data-scroll-target="#za-provjeru-i-daljnje-čitanje">Za provjeru i daljnje čitanje</a></li>
@@ -188,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Nastavite u AI razgovoru iz prvog dana, uz isto pitanje, plan i učitani CSV. Danas pregledavamo podatke, izrađujemo grafove, uspoređujemo razdoblja i pišemo zaključak. Najprije pogledamo primjer, zatim svatko prilagodi postupak svojem pitanju.</p>
-<p>Ako počinjete ovdje, preuzmite CSV i dodajte ga jednom u AI razgovor koji podržava učitavanje datoteka i izvršavanje analize. Možete krenuti od zajedničkog pitanja ispod. Ako je prethodna sesija istekla, ponovno dodajte istu datoteku. Grafovi, tablice i kod prikazuju se u razgovoru.</p>
+<p>Ako počinjete ovdje, preuzmite CSV i dodajte ga jednom u AI razgovor koji podržava učitavanje datoteka i izvršavanje analize. Možete krenuti od zajedničkog pitanja ispod. Ako je prethodna sesija istekla, ponovno dodajte istu datoteku. Grafovi, tablice i objašnjenja prikazuju se u razgovoru. Zadatke zadajemo običnim jezikom, bez pisanja programskog koda.</p>
 <section id="podaci" class="level2">
 <h2 class="anchored" data-anchor-id="podaci">Podaci i zajedničko pitanje</h2>
 <p>Radimo sa <strong>120 mjesečnih opažanja za Hrvatsku od 2015. do 2024.</strong> Stupac <code>hicp_yoy_pct</code> sadrži godišnju stopu HICP-a u postocima. Stupac <code>expectations_balance</code> sadrži saldo odgovora potrošača o kretanju cijena u sljedećih 12 mjeseci, izražen u bodovima salda. Podaci su spremljeni 26. listopada 2026.</p>
@@ -814,28 +814,25 @@ Pogledajte svih 120 mjeseci
 </section>
 <section id="blok-21" class="level2">
 <h2 class="anchored" data-anchor-id="blok-21">2.1 Upoznajte i provjerite podatke</h2>
-<p><strong>Razgovor.</strong> Što bismo provjerili prije nego što od ovih podataka zatražimo graf ili izračun?</p>
-<p><strong>Primjer.</strong> Nastavite u razgovoru s učitanim CSV-om. Zatražite početni pregled.</p>
+<p><strong>Razgovor.</strong> Što predstavlja jedan redak naše tablice i kako iz njega čitamo dvije mjere?</p>
+<p><strong>Primjer.</strong> Nastavite u razgovoru s učitanim CSV-om i zatražite početni pregled.</p>
 <blockquote class="blockquote">
-<p>Učitaj priloženi CSV i prikaži prvih i posljednjih pet redaka. Navedi broj redaka, nazive stupaca i raspon mjeseci. Objasni što predstavlja jedan redak te jedinice stupaca hicp_yoy_pct i expectations_balance. Koristi stvarni sadržaj datoteke.</p>
+<p>Upoznaj me s učitanom tablicom. Opiši što predstavlja jedan redak, koliko mjeseci obuhvaća i koje dvije mjere analiziramo. Prikaži prvih i posljednjih pet redaka. Reci jesu li mjeseci jedinstveni i uzastopni te postoje li praznine u hicp_yoy_pct i expectations_balance. Prazne oznake hicp_flag i expectations_flag znače da dodatni status nije naveden. Prikaži rezultate i objašnjenje bez programskog koda.</p>
 </blockquote>
-<p>Usporedite prikaz sa svih 120 mjeseci na ovoj stranici. Jedan redak je jedan mjesec u Hrvatskoj. Prvi je 2015-01, a posljednji 2024-12. U CSV-u su i šifre jedinica te oznake statusa podataka.</p>
-<p><strong>Isprobajte.</strong> Zatražite provjeru potpunosti tablice.</p>
-<blockquote class="blockquote">
-<p>Provjeri jesu li mjeseci jedinstveni i uzastopni od 2015-01 do 2024-12. Prikaži broj nedostajućih vrijednosti u hicp_yoy_pct i expectations_balance. Prazne oznake hicp_flag i expectations_flag znače da dodatni status nije naveden. Sačuvaj sva opažanja i pokaži kod koji si izvršio.</p>
-</blockquote>
-<p>Pogledajte nalaz i objasnite bi li podaci bili spremni za analizu. Očekujemo <strong>120 različitih uzastopnih mjeseci</strong>, <strong>0 duplikata</strong> i <strong>0 praznina u dvjema brojčanim serijama</strong>. Usporedite nekoliko prikazanih redaka s tablicom na stranici, uključujući neki koji nije na početku.</p>
+<p>Očekujemo <strong>120 različitih uzastopnih mjeseci</strong>, od <strong>2015-01 do 2024-12</strong>, <strong>0 duplikata</strong> i <strong>0 praznina u dvjema brojčanim serijama</strong>. Jedan redak predstavlja mjesec u Hrvatskoj. Usporedite prikaz s tablicom na ovoj stranici.</p>
+<p><strong>Isprobajte.</strong> Odaberite jedan mjesec, primjerice ožujak 2022. Najprije pokušajte objasniti obje vrijednosti vlastitim riječima, a zatim zatražite AI objašnjenje. Na koje se vrijeme odnosi HICP, a na koje anketno pitanje? Što biste o tom mjesecu htjeli saznati gledajući okolne mjesece?</p>
+<p>Prije sljedeće teme recite koliko redaka očekujete u godišnjoj tablici i koliko mjeseci treba ući u svaki godišnji prosjek.</p>
 </section>
 <section id="blok-22" class="level2">
-<h2 class="anchored" data-anchor-id="blok-22">2.2 Dopunite i objasnite kod</h2>
-<p><strong>Razgovor.</strong> Kako prikazati dvije mjere da možemo usporediti njihovo kretanje i pritom jasno vidjeti njihove jedinice?</p>
-<p><strong>Primjer.</strong> Zatražite analizu učitanog skupa.</p>
+<h2 class="anchored" data-anchor-id="blok-22">2.2 Izradite i objasnite prikaze</h2>
+<p><strong>Razgovor.</strong> Kako prikazati dvije mjere da se njihovo kretanje može usporediti?</p>
+<p><strong>Primjer.</strong> Iz učitanog CSV-a zatražite grafove i godišnju tablicu.</p>
 <blockquote class="blockquote">
-<p>Iz našeg CSV-a izradi dva vremenska grafa jedan iznad drugoga, sa zajedničkom osi mjeseci od 2015-01 do 2024-12. Na prvom prikaži hicp_yoy_pct u postocima, a na drugom expectations_balance u bodovima salda. Zatim napravi godišnju tablicu s prosjekom svake mjere i brojem mjeseci. Svaka godina treba imati 12 mjeseci. Prosjek HICP-a nazovi prosjekom mjesečnih godišnjih stopa. Pokreni kod i prikaži grafove, tablicu i kod ovdje u razgovoru. Uz rezultate navedi Eurostat i DG ECFIN te datum preuzimanja podataka 26. listopada 2026.</p>
+<p>Iz našeg CSV-a izradi dva vremenska grafa jedan iznad drugoga, sa zajedničkom osi mjeseci od 2015-01 do 2024-12. Na prvom prikaži hicp_yoy_pct u postocima, a na drugom expectations_balance u bodovima salda. Zatim napravi godišnju tablicu s prosjekom svake mjere i brojem mjeseci. Prosjek HICP-a nazovi prosjekom mjesečnih godišnjih stopa. Prikaži grafove i tablicu bez programskog koda. Uz rezultate navedi Eurostat i DG ECFIN te datum preuzimanja podataka 26. listopada 2026.</p>
 </blockquote>
-<p>Pogledajte razdoblja rasta i pada. Otvorite dio koda koji grupira podatke po godini i zatražite njegovo objašnjenje. Provjerite oznake osi i broj mjeseci u godišnjoj tablici.</p>
-<p><strong>Isprobajte.</strong> Prilagodite prikaz svojem pitanju. Primjerice, zatražite grafove samo za 2020.–2024., s jasno označenim godinama. Zadržite cijeli učitani skup za kasnije usporedbe. Pogledajte koji se dio koda promijenio i objasnite jedan obrazac koji se sada lakše vidi.</p>
-<p>U godišnjoj tablici za 2022. očekujemo <strong>10,63 %</strong> za prosjek mjesečnih godišnjih stopa HICP-a i <strong>46,62 boda</strong> za prosjek salda, uz <strong>12 mjeseci</strong>. To su dvije različite mjere. Svaku čitamo u njezinoj jedinici.</p>
+<p>Najprije pogledajte graf bez AI-jeva objašnjenja. Odaberite promjenu koju biste pokazali kolegi. Zatim usporedite svoje opažanje s AI opisom. Što saznajemo iz mjesečnog grafa, a što iz godišnje tablice?</p>
+<p><strong>Isprobajte.</strong> Prilagodite prikaz svojem pitanju, primjerice izdvojite 2020.–2024. Prije izmjene recite što očekujete da će biti lakše vidjeti. Zadržite cijeli učitani skup za kasnije usporedbe. Nakon izmjene objasnite jedan jasniji obrazac i koji se kontekst gubi izostavljanjem ranijih godina.</p>
+<p>Svaki godišnji prosjek obuhvaća <strong>12 mjeseci</strong>. Za 2021. očekujemo <strong>2,68 %</strong> za HICP i <strong>28,26 bodova</strong> za saldo, a za 2022. <strong>10,63 %</strong> i <strong>46,62 boda</strong>. Prosjek mjesečnih godišnjih stopa razlikuje se od godišnje promjene prosjeka indeksa cijena, koja se računa iz razina indeksa.</p>
 <details>
 <summary>
 Pogledajte referentni graf
@@ -859,9 +856,9 @@ Pogledajte referentni graf
 <p>Zbroj je <strong>127,6</strong>, a prosjek <strong>127,6 / 12 = 10,6333</strong>, približno <strong>10,63 %</strong>. Usporedite izdvojene retke s tablicom podataka na ovoj stranici. Zatim pitajte što bi se izgubilo kada bismo cijelo desetljeće opisali jednim brojem.</p>
 <p><strong>Isprobajte.</strong> Usporedite povezanost u dvama unaprijed odabranim razdobljima.</p>
 <blockquote class="blockquote">
-<p>Ponovno kreni od svih 120 redaka izvornog CSV-a. Izračunaj Pearsonovu korelaciju između hicp_yoy_pct i expectations_balance za cijelo razdoblje, za 2015.–2019. te za 2020.–2024. Poveži vrijednosti iz istog mjeseca. Za svaki izračun prikaži broj opažanja i izvršeni kod. Usporedi rezultate s vremenskim grafovima i opiši razlike.</p>
+<p>Ponovno kreni od svih 120 redaka izvornog CSV-a. Izračunaj Pearsonovu korelaciju između hicp_yoy_pct i expectations_balance za cijelo razdoblje, za 2015.–2019. te za 2020.–2024. Poveži vrijednosti iz istog mjeseca. Za svaki izračun prikaži broj opažanja i objasni postupak običnim jezikom, bez programskog koda. Usporedi rezultate s vremenskim grafovima i opiši razlike.</p>
 </blockquote>
-<p>Objasnite daje li jedna korelacija za cijelo razdoblje dovoljan opis. Za zajedničku usporedbu koristimo ista dva podrazdoblja, a zatim nalaz povežite sa svojim pitanjem.</p>
+<p>Prije izračuna recite očekujete li jednaku povezanost u oba razdoblja na temelju grafova. Nakon izračuna objasnite daje li jedna korelacija za cijelo razdoblje dovoljan opis. Za zajedničku usporedbu koristimo ista dva podrazdoblja, a zatim nalaz povežite sa svojim pitanjem.</p>
 <details>
 <summary>
 Pogledajte referentne rezultate
@@ -897,17 +894,17 @@ Pogledajte referentne rezultate
 </section>
 <section id="blok-24" class="level2">
 <h2 class="anchored" data-anchor-id="blok-24">2.4 Napišite i uredite zaključak</h2>
-<p><strong>Razgovor.</strong> Koji je najvažniji nalaz za naše pitanje i kojim ga rezultatom možemo potkrijepiti?</p>
-<p><strong>Primjer.</strong> Pogledajte nacrt koji se oslanja na provjerenu godišnju tablicu.</p>
+<p><strong>Razgovor.</strong> Što biste o svojem nalazu objasnili osobi koja nije sudjelovala u analizi?</p>
+<p><strong>Primjer.</strong> Pogledajte odlomak koji se oslanja na godišnju tablicu.</p>
 <blockquote class="blockquote">
-<p>Godišnji prosjek mjesečnih godišnjih stopa HICP-a u Hrvatskoj porastao je s 2,68 % u 2021. na 10,63 % u 2022., a prosjek salda očekivanja s 28,26 na 46,62 boda. Obje mjere u toj usporedbi rastu. Rezultat opisuje njihovo kretanje, a objašnjenje uzroka traži dodatne dokaze.</p>
+<p>Prosjek mjesečnih godišnjih stopa HICP-a u Hrvatskoj porastao je s 2,68 % u 2021. na 10,63 % u 2022., a prosjek salda očekivanja s 28,26 na 46,62 boda. Obje mjere u toj usporedbi rastu. Mjesečni grafovi omogućuju detaljniji opis njihova kretanja. Za objašnjenje uzroka promjene trebali bismo dodatne dokaze.</p>
 </blockquote>
-<p>Zatražite jasniju verziju uz iste brojke, jedinice i značenje. Usporedite izmjenu s tablicom. Posebno provjerite ostaje li jasno što godišnji prosjek sažima.</p>
-<p><strong>Isprobajte.</strong> U istom razgovoru napišite oko <strong>150 riječi</strong> koje odgovaraju na vaše pitanje iz prvog dana. Oslonite se na svoj graf i provjerene rezultate. Objasnite glavni obrazac, upotrijebite brojke koje ga podupiru i navedite jedno ograničenje. Zatim pošaljite ovaj upit uz svoj odlomak.</p>
+<p>Objasnite na koje pitanje odlomak odgovara. Što bi trebalo promijeniti da je naše pitanje o razlici u povezanosti između dvaju petogodišnjih razdoblja?</p>
+<p><strong>Isprobajte.</strong> Napišite oko <strong>150 riječi</strong> odgovora na vlastito pitanje. Oslonite se na odabrani graf i rezultate. Objasnite glavni obrazac i jedno otvoreno pitanje. Uz svoj nacrt zatim pošaljite ovaj upit.</p>
 <blockquote class="blockquote">
-<p>Uredi ovaj odlomak da bude jasan i prirodan. Sačuvaj brojke, jedinice, razdoblje i granice zaključka. Koristi rezultate iz našeg razgovora. Objasni svaku promjenu koja bi mogla utjecati na značenje.</p>
+<p>Daj komentare na moj nacrt bez prepisivanja. Izdvoji mjesto na kojem argument nije jasan, pitanje na koje još nisam odgovorio i tvrdnju kojoj treba bolje obrazloženje. Objasni zašto je svaki komentar važan za moje istraživačko pitanje. Pričekaj moju preradu.</p>
 </blockquote>
-<p>Pročitajte završnu verziju uz graf i tablicu. Pokažite jedan nalaz i objasnite zašto ga smatrate uvjerljivim. Završni rezultat ostaje u razgovoru kao graf i kratak zaključak.</p>
+<p>Odaberite koristan komentar i sami preradite odlomak. Jezičnu doradu možete zatražiti nakon što ste zadovoljni argumentom. Pokažite kolegi graf, objasnite glavni nalaz i jednu odluku koju ste donijeli pri uređivanju. Završni rezultat ostaje u razgovoru kao odabrani graf i kratak zaključak.</p>
 </section>
 <section id="za-provjeru-i-daljnje-čitanje" class="level2">
 <h2 class="anchored" data-anchor-id="za-provjeru-i-daljnje-čitanje">Za provjeru i daljnje čitanje</h2>

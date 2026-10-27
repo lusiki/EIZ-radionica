@@ -6,7 +6,7 @@ Pregled materijala, 27. listopada 2026.
 
 Jedan CSV sa 120 mjesečnih opažanja za Hrvatsku od 2015. do 2024.
 dodaje se jednom u AI razgovor s podrškom za izvršavanje analize.
-Pitanje, plan, kod, tablice, grafovi i zaključak ostaju u tom razgovoru.
+Pitanje, plan, tablice, grafovi i zaključak ostaju u tom razgovoru.
 Stranice dana sadrže sve upite i pregled svih mjeseci. Ako sesija istekne,
 ponovno se dodaje ista datoteka. Pripremljeni rezultati dostupni su na stranici.
 
@@ -20,7 +20,7 @@ Završni rezultat je graf i oko 150 riječi tumačenja vlastitog pitanja.
 | 1.3 Provjerite i uredite sažetak | Preraditi uvjerljiv odlomak s pogrešnim tumačenjima. |
 | 1.4 Pripremite plan analize | Odabrati prikaz i usporedbu za svoje pitanje. |
 | 2.1 Upoznajte i provjerite podatke | Provjeriti mjesece, praznine i jedinice cijelog skupa. |
-| 2.2 Dopunite i objasnite kod | Izraditi grafove i godišnje sažetke te prilagoditi prikaz. |
+| 2.2 Izradite i objasnite prikaze | Izraditi grafove i godišnje sažetke te prilagoditi prikaz. |
 | 2.3 Ponovite analizu od početka | Provjeriti izračun i usporediti povezanost u dva razdoblja. |
 | 2.4 Napišite i uredite zaključak | Objasniti svoj nalaz u odlomku uz graf i provjerene brojke. |
 
@@ -39,8 +39,11 @@ opisno. Statistička razlika, prognoza i uzročni učinak traže zasebnu analizu
 ## Materijali i daljnji rad
 
 materials/activities/ sadrži zajedničke aktivnosti za stranice dana
-i sve primjere. Priručnik prati iste naslove i aktivnosti. R projekt,
-agenti, bilježnice, predlošci i OLS/HAC ostaju mogućnosti za nastavak.
+i sve primjere. Priručnik prati iste naslove i aktivnosti, uz
+objašnjenja istraživačkih odluka i poveznice na Goldsmith-Pinkhamove
+rasprave. Oba dana koriste upute običnim jezikom, bez prikazivanja koda.
+Pisanje slijedi vlastiti nacrt, AI komentare i vlastitu preradu.
+Referentne skripte i dodatne metode dostupne su zasebno u repozitoriju.
 Privatni vodič čuva se izvan repozitorija, javnog weba i ZIP-a.
 
 Quarto gradi web, a PDF koristi iste tekstove poglavlja kao web priručnik.

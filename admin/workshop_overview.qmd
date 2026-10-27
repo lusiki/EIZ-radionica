@@ -21,7 +21,7 @@ Svaka tema ima razgovor, pokazani primjer i vlastiti pokušaj.
 | Tema | Što isprobavamo |
 |---|---|
 | [2.1 Upoznajte i provjerite podatke](../slides/day2.qmd#blok-21) | Provjeriti mjesece, praznine i jedinice cijelog skupa. |
-| [2.2 Dopunite i objasnite kod](../slides/day2.qmd#blok-22) | Izraditi grafove i godišnje sažetke te prilagoditi prikaz. |
+| [2.2 Izradite i objasnite prikaze](../slides/day2.qmd#blok-22) | Izraditi grafove i godišnje sažetke te prilagoditi prikaz. |
 | [2.3 Ponovite analizu od početka](../slides/day2.qmd#blok-23) | Provjeriti izračun i usporediti povezanost u dva razdoblja. |
 | [2.4 Napišite i uredite zaključak](../slides/day2.qmd#blok-24) | Objasniti svoj nalaz u odlomku uz graf i provjerene brojke. |
 

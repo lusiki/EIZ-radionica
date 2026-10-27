@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles/fonts.css">
 </head>
@@ -187,45 +158,32 @@ window.Quarto = {
   <li><a href="#poglavlje-11" id="toc-poglavlje-11" class="nav-link active" data-scroll-target="#poglavlje-11">1.1 Postavite istraživačko pitanje</a>
   <ul class="collapse">
   <li><a href="#primjer-iz-radionice" id="toc-primjer-iz-radionice" class="nav-link" data-scroll-target="#primjer-iz-radionice">Primjer iz radionice</a></li>
-  <li><a href="#od-prazne-stranice-do-istraživačkog-pitanja" id="toc-od-prazne-stranice-do-istraživačkog-pitanja" class="nav-link" data-scroll-target="#od-prazne-stranice-do-istraživačkog-pitanja">Od prazne stranice do istraživačkog pitanja</a></li>
-  <li><a href="#odredite-što-želite-saznati" id="toc-odredite-što-želite-saznati" class="nav-link" data-scroll-target="#odredite-što-želite-saznati">Odredite što želite saznati</a></li>
-  <li><a href="#kako-jezični-model-oblikuje-odgovor" id="toc-kako-jezični-model-oblikuje-odgovor" class="nav-link" data-scroll-target="#kako-jezični-model-oblikuje-odgovor">Kako jezični model oblikuje odgovor</a></li>
-  <li><a href="#tri-vrste-uvjerljive-pogreške" id="toc-tri-vrste-uvjerljive-pogreške" class="nav-link" data-scroll-target="#tri-vrste-uvjerljive-pogreške">Tri vrste uvjerljive pogreške</a></li>
-  <li><a href="#birajte-mogućnost-a-zatim-alat" id="toc-birajte-mogućnost-a-zatim-alat" class="nav-link" data-scroll-target="#birajte-mogućnost-a-zatim-alat">Birajte mogućnost, a zatim alat</a></li>
-  <li><a href="#za-dulji-projekt-korisne-bilješke" id="toc-za-dulji-projekt-korisne-bilješke" class="nav-link" data-scroll-target="#za-dulji-projekt-korisne-bilješke">Za dulji projekt / korisne bilješke</a></li>
-  <li><a href="#ako-želite-nastaviti" id="toc-ako-želite-nastaviti" class="nav-link" data-scroll-target="#ako-želite-nastaviti">Ako želite nastaviti</a></li>
+  <li><a href="#što-se-mijenja-kada-je-lakše-provesti-ideju" id="toc-što-se-mijenja-kada-je-lakše-provesti-ideju" class="nav-link" data-scroll-target="#što-se-mijenja-kada-je-lakše-provesti-ideju">Što se mijenja kada je lakše provesti ideju</a></li>
+  <li><a href="#od-teme-do-pitanja-na-koje-možemo-odgovoriti" id="toc-od-teme-do-pitanja-na-koje-možemo-odgovoriti" class="nav-link" data-scroll-target="#od-teme-do-pitanja-na-koje-možemo-odgovoriti">Od teme do pitanja na koje možemo odgovoriti</a></li>
+  <li><a href="#kako-razgovaramo-s-modelom" id="toc-kako-razgovaramo-s-modelom" class="nav-link" data-scroll-target="#kako-razgovaramo-s-modelom">Kako razgovaramo s modelom</a></li>
+  <li><a href="#brzina-i-razumijevanje" id="toc-brzina-i-razumijevanje" class="nav-link" data-scroll-target="#brzina-i-razumijevanje">Brzina i razumijevanje</a></li>
   </ul></li>
   <li><a href="#poglavlje-12" id="toc-poglavlje-12" class="nav-link" data-scroll-target="#poglavlje-12">1.2 Pronađite i provjerite izvore</a>
   <ul class="collapse">
   <li><a href="#primjer-iz-radionice-1" id="toc-primjer-iz-radionice-1" class="nav-link" data-scroll-target="#primjer-iz-radionice-1">Primjer iz radionice</a></li>
-  <li><a href="#kako-početi-pregled-literature" id="toc-kako-početi-pregled-literature" class="nav-link" data-scroll-target="#kako-početi-pregled-literature">Kako početi pregled literature</a></li>
-  <li><a href="#tri-upita-koji-postupno-razjašnjavaju-temu" id="toc-tri-upita-koji-postupno-razjašnjavaju-temu" class="nav-link" data-scroll-target="#tri-upita-koji-postupno-razjašnjavaju-temu">Tri upita koji postupno razjašnjavaju temu</a></li>
-  <li><a href="#tri-provjere-izvora" id="toc-tri-provjere-izvora" class="nav-link" data-scroll-target="#tri-provjere-izvora">Tri provjere izvora</a></li>
-  <li><a href="#za-dulji-projekt-bilješke-o-izvorima" id="toc-za-dulji-projekt-bilješke-o-izvorima" class="nav-link" data-scroll-target="#za-dulji-projekt-bilješke-o-izvorima">Za dulji projekt / bilješke o izvorima</a></li>
-  <li><a href="#obrasci-za-nastavak-pretraživanja" id="toc-obrasci-za-nastavak-pretraživanja" class="nav-link" data-scroll-target="#obrasci-za-nastavak-pretraživanja">Obrasci za nastavak pretraživanja</a></li>
-  <li><a href="#organizacija-i-pristup" id="toc-organizacija-i-pristup" class="nav-link" data-scroll-target="#organizacija-i-pristup">Organizacija i pristup</a></li>
-  <li><a href="#ako-želite-nastaviti-1" id="toc-ako-želite-nastaviti-1" class="nav-link" data-scroll-target="#ako-želite-nastaviti-1">Ako želite nastaviti</a></li>
+  <li><a href="#pretraživanje-koje-prati-pitanje" id="toc-pretraživanje-koje-prati-pitanje" class="nav-link" data-scroll-target="#pretraživanje-koje-prati-pitanje">Pretraživanje koje prati pitanje</a></li>
+  <li><a href="#što-zapravo-pitamo-potrošače" id="toc-što-zapravo-pitamo-potrošače" class="nav-link" data-scroll-target="#što-zapravo-pitamo-potrošače">Što zapravo pitamo potrošače</a></li>
+  <li><a href="#izvor-kao-dio-objašnjenja" id="toc-izvor-kao-dio-objašnjenja" class="nav-link" data-scroll-target="#izvor-kao-dio-objašnjenja">Izvor kao dio objašnjenja</a></li>
   </ul></li>
   <li><a href="#poglavlje-13" id="toc-poglavlje-13" class="nav-link" data-scroll-target="#poglavlje-13">1.3 Provjerite i uredite sažetak</a>
   <ul class="collapse">
   <li><a href="#primjer-iz-radionice-2" id="toc-primjer-iz-radionice-2" class="nav-link" data-scroll-target="#primjer-iz-radionice-2">Primjer iz radionice</a></li>
-  <li><a href="#provjerite-tvrdnju-po-tvrdnju" id="toc-provjerite-tvrdnju-po-tvrdnju" class="nav-link" data-scroll-target="#provjerite-tvrdnju-po-tvrdnju">Provjerite tvrdnju po tvrdnju</a></li>
-  <li><a href="#dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research" id="toc-dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research" class="nav-link" data-scroll-target="#dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research">Dodatno čitanje / pregled više izvora uz Gemini Deep Research</a></li>
-  <li><a href="#istraživački-plan-je-vaš-dokument" id="toc-istraživački-plan-je-vaš-dokument" class="nav-link" data-scroll-target="#istraživački-plan-je-vaš-dokument">Istraživački plan je vaš dokument</a></li>
-  <li><a href="#što-može-nedostajati-u-dugom-izvješću" id="toc-što-može-nedostajati-u-dugom-izvješću" class="nav-link" data-scroll-target="#što-može-nedostajati-u-dugom-izvješću">Što može nedostajati u dugom izvješću</a></li>
-  <li><a href="#kako-provjeriti-i-preraditi-izvješće" id="toc-kako-provjeriti-i-preraditi-izvješće" class="nav-link" data-scroll-target="#kako-provjeriti-i-preraditi-izvješće">Kako provjeriti i preraditi izvješće</a></li>
-  <li><a href="#povezivanje-s-našim-podacima" id="toc-povezivanje-s-našim-podacima" class="nav-link" data-scroll-target="#povezivanje-s-našim-podacima">Povezivanje s našim podacima</a></li>
-  <li><a href="#ako-želite-nastaviti-2" id="toc-ako-želite-nastaviti-2" class="nav-link" data-scroll-target="#ako-želite-nastaviti-2">Ako želite nastaviti</a></li>
+  <li><a href="#što-dobar-sažetak-čuva" id="toc-što-dobar-sažetak-čuva" class="nav-link" data-scroll-target="#što-dobar-sažetak-čuva">Što dobar sažetak čuva</a></li>
+  <li><a href="#kako-povezati-više-pročitanih-radova" id="toc-kako-povezati-više-pročitanih-radova" class="nav-link" data-scroll-target="#kako-povezati-više-pročitanih-radova">Kako povezati više pročitanih radova</a></li>
+  <li><a href="#od-pregleda-literature-do-vlastite-ideje" id="toc-od-pregleda-literature-do-vlastite-ideje" class="nav-link" data-scroll-target="#od-pregleda-literature-do-vlastite-ideje">Od pregleda literature do vlastite ideje</a></li>
   </ul></li>
   <li><a href="#poglavlje-14" id="toc-poglavlje-14" class="nav-link" data-scroll-target="#poglavlje-14">1.4 Pripremite plan analize</a>
   <ul class="collapse">
   <li><a href="#primjer-iz-radionice-3" id="toc-primjer-iz-radionice-3" class="nav-link" data-scroll-target="#primjer-iz-radionice-3">Primjer iz radionice</a></li>
-  <li><a href="#povežite-izvore-u-obrazloženje" id="toc-povežite-izvore-u-obrazloženje" class="nav-link" data-scroll-target="#povežite-izvore-u-obrazloženje">Povežite izvore u obrazloženje</a></li>
-  <li><a href="#pripremite-materijale-prije-razgovora" id="toc-pripremite-materijale-prije-razgovora" class="nav-link" data-scroll-target="#pripremite-materijale-prije-razgovora">Pripremite materijale prije razgovora</a></li>
-  <li><a href="#pet-načela-za-koristan-upit" id="toc-pet-načela-za-koristan-upit" class="nav-link" data-scroll-target="#pet-načela-za-koristan-upit">Pet načela za koristan upit</a></li>
-  <li><a href="#dodatno-čitanje-razrada-plana-za-dulji-rad" id="toc-dodatno-čitanje-razrada-plana-za-dulji-rad" class="nav-link" data-scroll-target="#dodatno-čitanje-razrada-plana-za-dulji-rad">Dodatno čitanje / razrada plana za dulji rad</a></li>
-  <li><a href="#kako-povezati-hipotezu-s-analizom" id="toc-kako-povezati-hipotezu-s-analizom" class="nav-link" data-scroll-target="#kako-povezati-hipotezu-s-analizom">Kako povezati hipotezu s analizom</a></li>
-  <li><a href="#plan-za-sljedeći-korak" id="toc-plan-za-sljedeći-korak" class="nav-link" data-scroll-target="#plan-za-sljedeći-korak">Plan za sljedeći korak</a></li>
+  <li><a href="#plan-kao-razgovor-o-izborima" id="toc-plan-kao-razgovor-o-izborima" class="nav-link" data-scroll-target="#plan-kao-razgovor-o-izborima">Plan kao razgovor o izborima</a></li>
+  <li><a href="#dijelovi-istraživanja-ovise-jedni-o-drugima" id="toc-dijelovi-istraživanja-ovise-jedni-o-drugima" class="nav-link" data-scroll-target="#dijelovi-istraživanja-ovise-jedni-o-drugima">Dijelovi istraživanja ovise jedni o drugima</a></li>
+  <li><a href="#zadajte-izvediv-korak" id="toc-zadajte-izvediv-korak" class="nav-link" data-scroll-target="#zadajte-izvediv-korak">Zadajte izvediv korak</a></li>
+  <li><a href="#povežite-prvi-i-drugi-dan" id="toc-povežite-prvi-i-drugi-dan" class="nav-link" data-scroll-target="#povežite-prvi-i-drugi-dan">Povežite prvi i drugi dan</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -254,57 +212,41 @@ window.Quarto = {
 
 
 <p><a href="../booklet/index.html">O priručniku</a> · <a href="../downloads/EIZ-prirucnik.pdf">Cijeli PDF</a> · <a href="../slides/day1.html">Kratki pregled prvog dana</a></p>
-<p>Svako poglavlje počinje aktivnošću sa stranice prvog dana. Na istom skupu od 120 mjeseci biramo pitanje, provjeravamo mjere, uređujemo sažetak i planiramo analizu. Daljnji tekst objašnjava razloge i mogućnosti za nastavak. Dokumentacija alata provjerena je 26. listopada 2026.</p>
+<p>Svako poglavlje počinje kratkim prikazom aktivnosti prvog dana. Na istom skupu od 120 mjeseci biramo pitanje, upoznajemo mjere, razgovaramo o značenju sažetka i planiramo analizu. Daljnji tekst povezuje te odluke s raspravama o ulozi AI-ja u istraživanju.</p>
 <section id="poglavlje-11" class="level2">
 <h2 class="anchored" data-anchor-id="poglavlje-11">1.1 Postavite istraživačko pitanje</h2>
 <p><a href="../slides/day1.html#blok-11">Dan 1, tema 1.1</a> · <a href="../materials/exercises/index.html#v11">Vježba 1.1</a></p>
 <section id="primjer-iz-radionice" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-iz-radionice">Primjer iz radionice</h3>
 <p><strong>Razgovor.</strong> Koje pitanje možemo istražiti s dvije mjesečne serije za Hrvatsku?</p>
-<p><strong>Primjer.</strong> Pogledamo svih 120 mjeseci i zatražimo od AI-ja da temu „inflacija i očekivanja” pretvori u opisno pitanje. Zajedničko pitanje odnosi se na kretanje mjera od 2015. do 2024. i povezanost u različitim razdobljima.</p>
-<p><strong>Isprobajte.</strong> Odaberite vlastito pitanje o razdoblju ili obrascu. Zatražite komentar i objasnite koje biste stupce i prikaze koristili. Pitanje ostaje u razgovoru i vodi kasniju analizu.</p>
+<p><strong>Primjer.</strong> Od teme „inflacija i očekivanja” dolazimo do pitanja o kretanju dviju mjera od 2015. do 2024. i njihovoj povezanosti u različitim razdobljima.</p>
+<p><strong>Isprobajte.</strong> Odaberite razdoblje ili obrazac koji vas zanima. Zatražite prijedlog pitanja i objasnite kakav bi vam prikaz pomogao odgovoriti na njega.</p>
 </section>
-<section id="od-prazne-stranice-do-istraživačkog-pitanja" class="level3">
-<h3 class="anchored" data-anchor-id="od-prazne-stranice-do-istraživačkog-pitanja">Od prazne stranice do istraživačkog pitanja</h3>
-<p>Zamislite da želite istražiti neku temu. Imate nekoliko otvorenih kartica i bilješke, ali još tražite pitanje od kojeg ćete krenuti. Traženje literature, povezivanje pojmova i organiziranje bilježaka oduzimaju vrijeme prije nego što uopće počnete analizirati podatke. AI može pomoći u svakom od tih koraka, no njegov prijedlog treba provjeriti. Je li pitanje dovoljno određeno? Možete li pronaći autora i izvor? Izvršava li se skripta i podupiru li dokazi tvrdnje u odlomku?</p>
-<p>U ovom priručniku nalaze se i primjeri iz Perplexityja, Geminija i Claudea. Za proširenu analizu opisani su R skripte, programski asistenti i bilježnice. Mogućnosti tih proizvoda preklapaju se. Odaberite dostupan alat i uvježbajte pronalaženje dokaza i objašnjavanje rezultata.</p>
-<p>Tijekom oba dana koristimo cijeli skup za Hrvatsku. U njemu pratimo ostvarenu inflaciju i odgovore potrošača o očekivanim promjenama cijena od 2015. do 2024. Imamo dvije mjere i 120 mjeseci. Sve izračune možete ponoviti priloženim skriptama. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje motivacija za nastavak istraživanja. Za taj nastavak treba prikupiti medijske tekstove i izraditi indeks medijske pažnje.</p>
+<section id="što-se-mijenja-kada-je-lakše-provesti-ideju" class="level3">
+<h3 class="anchored" data-anchor-id="što-se-mijenja-kada-je-lakše-provesti-ideju">Što se mijenja kada je lakše provesti ideju</h3>
+<p>Početak istraživanja često izgleda kao niz malih prepreka. Treba pronaći prikladne podatke, upoznati njihove oznake, izraditi prvi prikaz i odrediti vrijedi li ideju razvijati. AI može olakšati taj početak. Lakše je isprobati nekoliko prikaza, razumjeti nepoznat pojam ili razmotriti objašnjenje koje nam nije prvo palo na pamet. Time otvaramo prostor za pitanja koja bismo prije odgodili jer je početna obrada tražila previše vremena.</p>
+<p>Paul Goldsmith-Pinkham u tekstu <a href="https://paulgp.com/2026/03/16/research-in-time-of-ai.html">Research in the Time of AI</a> opisuje kako jeftinija izvedba mijenja raspored istraživačkog rada. Kada je lakše sastaviti podatke i proizvesti rezultate, izbor pitanja, poznavanje teme i procjena smisla dobivenog odgovora postaju važniji. To je koristan okvir za ovu radionicu: alat obavlja dio posla, a mi odlučujemo što želimo saznati i kamo usmjeriti sljedeći pokušaj.</p>
+<p>Naš skup omogućuje da usporedimo inflaciju i očekivanja kroz desetljeće. Možemo istražiti razdoblje ubrzanja cijena, usporediti ranije i kasnije godine ili pogledati mijenjaju li se mjere zajedno. Za pitanje o tome što je uzrokovalo promjenu trebali bismo razviti poseban istraživački dizajn. Važno je prepoznati koje pitanje upravo postavljamo.</p>
 </section>
-<section id="odredite-što-želite-saznati" class="level3">
-<h3 class="anchored" data-anchor-id="odredite-što-želite-saznati">Odredite što želite saznati</h3>
-<p>Zajedničko početno pitanje glasi „Kako su se u Hrvatskoj od 2015. do 2024. kretali ostvarena inflacija i očekivanja potrošača o promjenama cijena?” U njemu su navedeni zemlja, razdoblje i dvije mjere. Iz tog pitanja možete odrediti koje izvore i podatke trebate pronaći.</p>
-<p>U temi 1.1 svatko odabire pitanje o određenom razdoblju ili obrascu. Cijeli skup ostaje dostupan za usporedbu. Odabrano pitanje vodi plan, graf i završni odlomak.</p>
+<section id="od-teme-do-pitanja-na-koje-možemo-odgovoriti" class="level3">
+<h3 class="anchored" data-anchor-id="od-teme-do-pitanja-na-koje-možemo-odgovoriti">Od teme do pitanja na koje možemo odgovoriti</h3>
+<p>Tema „inflacija u Hrvatskoj” obuhvaća mnogo različitih istraživanja. Pitanje „Kako su se godišnja stopa HICP-a i saldo očekivanih promjena cijena kretali od 2015. do 2024.?” već određuje zemlju, vrijeme i dvije mjere. Iz njega možemo zamisliti prikaz i objasniti što će čitatelj saznati.</p>
+<blockquote class="blockquote">
+<p>U učitanom skupu imamo 120 mjeseci za Hrvatsku, godišnju stopu HICP-a i saldo očekivanih promjena cijena. Predloži tri opisna pitanja koja možemo istražiti tim podacima. Za svako objasni što bismo saznali i koji bi prikaz pomogao odgovoriti. Zatim mi postavi jedno pitanje koje će mi pomoći odabrati temu.</p>
+</blockquote>
+<p>Usporedite prijedloge prema tome što vas u njima zanima. Pitanje o 2022. godini usmjerava pogled na naglu promjenu, dok usporedba dvaju petogodišnjih razdoblja otvara pitanje stabilnosti odnosa. Oba izbora mogu biti korisna. Obrazložite zašto vaš izbor zaslužuje pažnju i što bi odgovor dodao početnom opisu. Ako još ne možete objasniti njegovu svrhu, nastavite razgovor o pitanju prije naručivanja dodatnih rezultata.</p>
+<p>Pitanje se može promijeniti nakon prvog grafa. To je dio istraživanja: uočeni obrazac otvara novu mogućnost. U razgovoru razjasnite je li riječ o prvotnoj zamisli ili o ideji potaknutoj onim što ste upravo vidjeli. Tako razlikujete istraživanje mogućnosti od zasebnog ispitivanja hipoteze.</p>
 </section>
-<section id="kako-jezični-model-oblikuje-odgovor" class="level3">
-<h3 class="anchored" data-anchor-id="kako-jezični-model-oblikuje-odgovor">Kako jezični model oblikuje odgovor</h3>
-<p>Jezični model tijekom učenja prepoznaje obrasce u podacima. Kada mu postavite pitanje, koristi ono što je naučio i sadržaj razgovora kako bi sastavio odgovor. Tekst dijeli na manje jedinice koje se zovu tokeni. Token može biti dio riječi, cijela riječ ili znak. Broj tokena ovisi o jeziku i načinu dijeljenja teksta. Za hrvatski provjerite broj tokena na hrvatskom primjeru.</p>
-<p>Model procjenjuje koji bi tokeni mogli slijediti nakon već napisanog teksta. To se može zapisati kao <span class="math inline">\(P(t_k \mid t_1, \ldots, t_{k-1}; \theta)\)</span>. Oznaka <code>t_k</code> predstavlja sljedeći token, a grčko slovo theta ono što je model naučio tijekom treniranja. Model bira sljedeći token prema procijenjenim vjerojatnostima i postavkama sustava. Izbor može uključiti slučajnost. Točnost nastale tvrdnje provjeravamo zasebno, čitanjem izvora ili ponavljanjem izračuna.</p>
-<p>Model brzo predlaže formulacije na temelju naučenih obrazaca. Aplikacija s pristupom alatima može i otvoriti dokument, pretražiti web ili izvršiti kod. Provjerite na čemu se odgovor temelji. Model može pisati iz onoga što je naučio, koristiti otvorene izvore ili navesti rezultat pokrenutog koda. Za tvrdnju iz literature tražite izvor, a za broj podatke i izračun.</p>
-<p>Kontekstni prozor određuje koliko sadržaja model može obraditi u pojedinom koraku. Aplikacija može sažeti ranije poruke ili odabrati dijelove učitanih dokumenata koje će koristiti u odgovoru. Zato navedite datoteku, odjeljak ili tablicu na koju se pitanje odnosi.</p>
-<p>Postavka temperature, ako je možete mijenjati, utječe na to koliko je izbor sljedećeg tokena raznolik. Za provjeru odgovora otvorite citirani izvor ili ponovite izračun. Prikaz plana i objašnjenja koristite za praćenje predloženih koraka.</p>
+<section id="kako-razgovaramo-s-modelom" class="level3">
+<h3 class="anchored" data-anchor-id="kako-razgovaramo-s-modelom">Kako razgovaramo s modelom</h3>
+<p>Jezični model oblikuje odgovor koristeći naučene obrasce i sadržaj koji mu je dostupan u razgovoru. Tekst obrađuje u manjim jedinicama, tokenima, i postupno sastavlja nastavak. Aplikacija mu može omogućiti i korištenje alata, primjerice pretraživanje, čitanje dokumenta ili izvođenje izračuna. Zbog toga je korisno jasno reći kada tražite ideju, kada objašnjenje pročitanog izvora, a kada račun iz učitane tablice.</p>
+<p>Kontekst je sadržaj na koji se model u tom trenutku može osloniti. U dugom razgovoru raniji dijelovi mogu biti sažeti ili izostavljeni. Prije novog zadatka kratko ponovite pitanje i važnu odluku, primjerice da analizirate cijelo desetljeće ili da saldo izražavate u bodovima. To je dovoljno da nastavak ostane povezan s onim što želite istražiti.</p>
+<p>Za ovu radionicu odaberite dostupan alat koji može čitati datoteke i izvršavati analizu. Korisnost procijenite na vlastitom zadatku: pomaže li vam oblikovati pitanje, razumjeti prikaz i objasniti nalaz? Razgovor s kolegama može biti jednako vrijedan kada treba odlučiti je li pitanje zanimljivo ili koje bi ga alternativno objašnjenje promijenilo.</p>
 </section>
-<section id="tri-vrste-uvjerljive-pogreške" class="level3">
-<h3 class="anchored" data-anchor-id="tri-vrste-uvjerljive-pogreške">Tri vrste uvjerljive pogreške</h3>
-<p>Izmišljena referenca može sadržavati stvarno prezime autora, uvjerljiv naslov i nepostojeći DOI. Ako je citat sastavljen uredno, lakše ga je zamijeniti s provjerenim izvorom. Postojanje rada provjerite kod izdavača ili u bibliografskoj bazi, a zatim pročitajte dio koji navodno podupire tvrdnju.</p>
-<p>Pogrešno protumačen broj može potjecati iz stvarne tablice. Primjerice, vrijednost salda očekivanja 40 izražena je u bodovima salda. Tumačite je prema pravilima izračuna anketnog pokazatelja. Uz račun provjerite i što broj zapravo mjeri.</p>
-<p>Kod koji radi pogrešnu stvar može se izvršiti bez upozorenja. Spajanje dviju tablica prema rednom broju retka umjesto prema mjesecu može povezati različite datume. Automatsko uklanjanje praznina može promijeniti uzorak. Zato uz izlaznu tablicu provjeravamo ulaz, broj opažanja i pravilo obrade.</p>
-<p>Za vježbu uzmite pripremljenu tvrdnju „pozitivna korelacija dokazuje da očekivanja uzrokuju inflaciju” i usporedite je s onim što izračun doista pokazuje. Time vježbate istu vještinu čak i kada model ponudi besprijekoran odgovor. Namjerno pogrešan primjer treba jasno označiti, kako ga netko ne bi kasnije preuzeo kao nalaz.</p>
-</section>
-<section id="birajte-mogućnost-a-zatim-alat" class="level3">
-<h3 class="anchored" data-anchor-id="birajte-mogućnost-a-zatim-alat">Birajte mogućnost, a zatim alat</h3>
-<p>Za prvo upoznavanje teme koristan je sustav koji pretražuje izvore i daje poveznice. Za usporedbu više pročitanih radova koristan je rad s dokumentima. Za izračun je potrebno okruženje koje izvršava kod i omogućuje njegov izvoz. Za uređivanje teksta potrebni su jasni komentari i mogućnost usporedbe verzija. Jedan proizvod može pokrivati nekoliko tih potreba.</p>
-<p>Službena dokumentacija sada opisuje pretraživanje i istraživačke postupke u više aplikacija, uključujući <a href="https://learn.chatgpt.com/docs/web-search">ChatGPT</a>, <a href="https://support.google.com/gemini/answer/15719111?hl=en">Gemini</a> i <a href="https://support.claude.com/en/articles/9517075-what-are-projects">Claude Projects</a>. Pristup ovisi o računu, planu i postavkama ustanove. Prije uporabe provjerite funkciju koja vas zanima, njezinu cijenu i ograničenja uporabe.</p>
-<p>Za usporedbu dvaju dostupnih alata pripremite isti mali zadatak, isti odlomak, tri ista izvora i isto pitanje. Usporedite točnost, mogućnost provjere izvora, razumljivost i vrijeme potrebno za provjeru. Prednost dajte odgovoru čije tvrdnje možete potvrditi u navedenim izvorima. Ako alat ne može otvoriti izvor, bilješka „nemam pristup punom tekstu” korisnija je od uvjerljivog nagađanja.</p>
-</section>
-<section id="za-dulji-projekt-korisne-bilješke" class="level3">
-<h3 class="anchored" data-anchor-id="za-dulji-projekt-korisne-bilješke">Za dulji projekt / korisne bilješke</h3>
-<p>Uz važnu tvrdnju sačuvajte izvor i mjesto na kojem je objašnjena. Kad vam AI pomogne, zabilježite koristan prijedlog i kako ste ga provjerili. To može biti nekoliko rečenica koje će vam kasnije pomoći obnoviti postupak.</p>
-<p>Primjerice, „AI je predložio oznake osi. Usporedio/la sam ih s rječnikom podataka i promijenio/la oznaku očekivanja iz postotka u saldo.” <a href="../materials/templates/ai-use-log.md">Predložak bilješke</a> može poslužiti kao podsjetnik.</p>
-<p>Za radionicu koristimo javne podatke za cijelu zemlju. Osobne podatke i povjerljive materijale čuvajte u okruženju prikladnom za njihovu obradu.</p>
-</section>
-<section id="ako-želite-nastaviti" class="level3">
-<h3 class="anchored" data-anchor-id="ako-želite-nastaviti">Ako želite nastaviti</h3>
-<p>Napišite jedno pitanje o inflaciji i unaprijed odredite što bi bio provjerljiv odgovor. Zatim zatražite prijedlog od dostupnog asistenta. Posebno označite tvrdnje koje trebaju izvor, prijedloge postupka i pitanja na koja još nema odgovora. Provjerite jednu tvrdnju u izvornom dokumentu i jednu brojku u podacima. Na kraju vlastitim riječima objasnite što vam je model olakšao i koju ste odluku ipak morali donijeti sami.</p>
+<section id="brzina-i-razumijevanje" class="level3">
+<h3 class="anchored" data-anchor-id="brzina-i-razumijevanje">Brzina i razumijevanje</h3>
+<p>AI može proizvesti nove rezultate brže nego što ih stignemo razumjeti. Goldsmith-Pinkham taj zaostatak naziva <a href="https://paulgp.substack.com/p/integration-and-collaboration-in">dugom provjere</a>. Na radionici ga možemo prepoznati kada već imamo nekoliko tablica, a još ne znamo objasniti što sažima prva. Tada je korisnije zadržati se na jednom nalazu i razjasniti njegov smisao.</p>
+<p>Usporedite vrijeme potrebno da dobijete prvi graf s vremenom potrebnim da o njemu napišete jasnu rečenicu. Razlika pokazuje koji dio rada alat olakšava, a kojem još trebate posvetiti pažnju. Upravo se kroz takve odluke razvija istraživačka prosudba.</p>
 </section>
 </section>
 <section id="poglavlje-12" class="level2">
@@ -313,63 +255,37 @@ window.Quarto = {
 <section id="primjer-iz-radionice-1" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-iz-radionice-1">Primjer iz radionice</h3>
 <p><strong>Razgovor.</strong> Kako definicija mjere utječe na usporedbu inflacije i očekivanja?</p>
-<p><strong>Primjer.</strong> Povežemo stupac hicp_yoy_pct s godišnjom stopom u Eurostatovu opisu HICP-a. Objasnimo da vrijednost za ožujak 2022. uspoređuje cijene s ožujkom 2021., iako tablica ima jedan redak za svaki mjesec.</p>
-<p><strong>Isprobajte.</strong> U metodologiji Europske komisije pronađite Consumer Survey, CONS_006 i Balances. Objasnite što mjeri expectations_balance, na koje se razdoblje odnosi i kako biste ga označili na grafu. Usporedite svoje objašnjenje s AI odgovorom i izvornim opisom.</p>
+<p><strong>Primjer.</strong> U Eurostatovu opisu HICP-a pronađemo značenje godišnje stope. Vrijednost za ožujak 2022. uspoređuje cijene s ožujkom 2021., iako naša tablica ima zaseban redak za svaki mjesec.</p>
+<p><strong>Isprobajte.</strong> U metodologiji Europske komisije pronađite pitanje CONS_006 i objašnjenje salda. Objasnite što odgovori govore o budućem kretanju cijena i predložite naziv okomite osi grafa.</p>
 </section>
-<section id="kako-početi-pregled-literature" class="level3">
-<h3 class="anchored" data-anchor-id="kako-početi-pregled-literature">Kako početi pregled literature</h3>
-<p>Pri traženju literature za seminarski rad lako je otvoriti više radova nego što ih stignete pažljivo pročitati. Dio rezultata nije dostupan bez pretplate, dio se ne odnosi na temu, a bilješke se brzo pomiješaju. AI pretraživanje može pomoći u početnom snalaženju, predložiti pojmove, sažeti pronađene stranice i povezati tvrdnje s izvorima.</p>
-<p>U knjižnici vas katalog usmjerava prema policama. AI pretraživač uz poveznice pokušava ponuditi i sažetak pronađenog materijala. Sažetak je koristan samo ako možete ustanoviti što je stvarno pročitano. Asistent može zamijeniti sažetak rada s cijelim radom, povezati citat s preširokom tvrdnjom ili zanemariti izvor do kojeg nije uspio doći.</p>
-<p>Perplexity je jedan primjer takvog rada. Web pretraživanje s izvorima nude i drugi razgovorni sustavi. Dohvaćanje sadržaja i njegovo korištenje pri pisanju odgovora često se naziva RAG. Dohvaćeni dokumenti daju modelu izvore za odgovor. Zatim provjerite obuhvat pretrage, citate i kvalitetu uključenih studija.</p>
-</section>
-<section id="tri-upita-koji-postupno-razjašnjavaju-temu" class="level3">
-<h3 class="anchored" data-anchor-id="tri-upita-koji-postupno-razjašnjavaju-temu">Tri upita koji postupno razjašnjavaju temu</h3>
-<p>Počnimo kratkim, neodređenim upitom.</p>
+<section id="pretraživanje-koje-prati-pitanje" class="level3">
+<h3 class="anchored" data-anchor-id="pretraživanje-koje-prati-pitanje">Pretraživanje koje prati pitanje</h3>
+<p>Prvi rezultati pretrage često miješaju vijesti, službene podatke i istraživačke radove. Svaka od tih vrsta izvora može pomoći, ali na drukčiji način. Vijest otvara aktualnu temu, metodologija određuje značenje mjere, a istraživački rad razvija i ispituje objašnjenje. Prije pretrage odlučite što vam upravo nedostaje za vaše pitanje.</p>
+<p>AI pretraživanje može predložiti pojmove i približiti sadržaj pronađenih izvora. Perplexity i drugi sustavi s web pretraživanjem mogu poslužiti za takvu početnu orijentaciju. Zatražite poveznice kojima se možete vratiti tijekom čitanja. Kada odgovor govori o radu dostupnom samo u sažetku, njegove pojedinosti ostaju otvorene za daljnje čitanje.</p>
+<p>Početni upit može biti vrlo kratak.</p>
 <blockquote class="blockquote">
 <p>Inflacija Hrvatska.</p>
 </blockquote>
-<p>Ovakav upit može voditi prema najnovijem podatku, objašnjenju pojma ili istraživačkoj literaturi. Odredite što od toga trebate. Mješavina vijesti, službenih podataka i općih objašnjenja može biti korisna za orijentaciju, ali teško ju je pretvoriti u pregled literature bez dodatnog usmjeravanja.</p>
-<p>Sljedeći korak određuje predmet interesa.</p>
+<p>Takav zahtjev ne razlikuje aktualnu stopu od objašnjenja inflacije ili istraživanja očekivanja. Precizniji upit određuje odnos koji vas zanima.</p>
 <blockquote class="blockquote">
-<p>Koji čimbenici mogu biti povezani s percepcijom inflacije kod kućanstava u europskim zemljama? Pronađi istraživanja i za svako navedi autora, naslov, godinu i poveznicu na izvor. Odvoji radove od novinskih prikaza.</p>
+<p>Pronađi istraživanja o tome kako kućanstva oblikuju očekivanja o budućim promjenama cijena. Usmjeri se na europske zemlje. Za svaki odabrani rad ukratko objasni pitanje, podatke i glavni doprinos temi te navedi poveznicu na izvor. Naznači čitaš li puni tekst ili sažetak.</p>
 </blockquote>
-<p>Sada tražite istraživanja o tome kako kućanstva doživljavaju inflaciju. Percepcija se odnosi na prošle promjene, a očekivanja na buduće. U nastavku razgovora razjasnite koji pojam želite proučavati. Upit precizirajte prema onome što želite istražiti.</p>
+<p>Za međunarodnu literaturu često pomaže engleski izraz inflation expectations. Hrvatski pojmovi i lokalni izvori važni su za kontekst Hrvatske. Pretražujte i pojedine mehanizme: osobno iskustvo kupnje, informacije iz medija ili povjerenje u institucije. Tako opća tema postupno dobiva istraživački sadržaj.</p>
+</section>
+<section id="što-zapravo-pitamo-potrošače" class="level3">
+<h3 class="anchored" data-anchor-id="što-zapravo-pitamo-potrošače">Što zapravo pitamo potrošače</h3>
+<p>Za naš je primjer važno razlikovati percepciju prošlih promjena cijena od očekivanja budućih promjena. Anketno pitanje CONS_006 traži procjenu kretanja cijena u sljedećih dvanaest mjeseci u usporedbi s proteklih dvanaest mjeseci. Ponuđene su kategorije odgovora, iz kojih se računa saldo. Njegova vrijednost govori o raspodjeli odgovora prema pravilima ankete. Iz vrijednosti 40 bodova ne možemo zaključiti da ispitanici očekuju stopu inflacije od 40 posto.</p>
+<p>Otvorite <a href="https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/methodology-business-and-consumer-surveys/methodological-concepts_en">metodologiju Europske komisije</a> i pročitajte pitanje uz ponuđene odgovore. U <a href="https://ec.europa.eu/eurostat/web/hicp/information-data">Eurostatovu opisu HICP-a</a> pogledajte kako se određuje godišnja promjena. Naša usporedba povezuje mjeru ostvarenog kretanja cijena s kvalitativnom mjerom očekivanja. Različite jedinice kasnije će odrediti kako oblikujemo grafove.</p>
 <blockquote class="blockquote">
-<p>Find empirical studies on media coverage and households’ inflation expectations in European economies, published from 2015 onward. Separate studies of perceptions from studies of expectations. For each candidate, report the exact title, authors, publication type, data, method and source URL. State whether you accessed the full text or only an abstract. Describe findings supported by the text you accessed.</p>
+<p>Objasni razliku između godišnje stope HICP-a i salda iz pitanja CONS_006. Osloni se na ova dva službena opisa. Za svaku mjeru predloži jasnu oznaku osi i jednu rečenicu kojom bih je predstavio osobi koja prvi put vidi graf.</p>
 </blockquote>
-<p>Engleski pojmovi mogu olakšati pretraživanje međunarodne literature, ali pretragu treba dopuniti hrvatskim izrazima i lokalnim izvorima. Preuski vremenski filtar može isključiti temeljni teorijski rad. Stoga noviju empirijsku literaturu i teorijske početne radove možete tražiti odvojeno.</p>
+<p>U razgovoru pokušajte odgovoriti što može značiti rast salda. Govori li on o većem očekivanom ubrzanju cijena, o promjeni udjela odgovora ili o točno određenoj budućoj stopi? Vratite se formulaciji pitanja kada se tumačenja raziđu. To je primjer kako čitanje izvora izravno mijenja analizu.</p>
 </section>
-<section id="tri-provjere-izvora" class="level3">
-<h3 class="anchored" data-anchor-id="tri-provjere-izvora">Tri provjere izvora</h3>
-<p>Prva provjera je postojanje. Otvorite stranicu rada kod izdavača, institucionalni repozitorij ili bibliografski zapis. Usporedite naslov, autore, godinu i identifikator. Provjerite vodi li DOI na članak koji je naveden u odgovoru. Ako ne možete doći do punog teksta, to označite umjesto da prepričavate zaključke koje niste pročitali.</p>
-<p>Druga provjera je potpora tvrdnji. Pronađite odjeljak, tablicu ili stranicu koji odgovaraju rečenici koju želite napisati. Studija može opisivati povezanost, a AI sažetak uzročnost. Može proučavati određenu zemlju, skupinu ispitanika ili informacijski eksperiment, dok sažetak govori o svim kućanstvima. Zabilježite te granice uz sam izvor.</p>
-<p>Treća provjera je vrsta i kvaliteta izvora. Recenzirani članak, radni materijal središnje banke, metodološki priručnik i novinski tekst imaju različite namjene. Kod izdavača provjerite je li dokument prošao recenziju. Prikladnost njegove metode procijenite prema vlastitom pitanju. Procijenite podatke, dizajn, ograničenja i relevantnost.</p>
-<p>Primjer za naš slučaj jest članak Meylera i Reiche o percepcijama i očekivanjima u <a href="https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html">ECB Economic Bulletinu</a>. Koristan je za razumijevanje razlike između kvalitativnih i kvantitativnih mjera. Koristite ga za objašnjenje mjera. Brojčane rezultate za Hrvatsku od 2015. do 2024. provjerite u podacima i skriptama radionice.</p>
-</section>
-<section id="za-dulji-projekt-bilješke-o-izvorima" class="level3">
-<h3 class="anchored" data-anchor-id="za-dulji-projekt-bilješke-o-izvorima">Za dulji projekt / bilješke o izvorima</h3>
-<p>Za svaki od tri izvora napišite kratak zapis. Navedite tvrdnju koju potvrđuje, autora, naslov i godinu te poveznicu i mjesto u tekstu. Dodajte vlastiti sažetak i jedno ograničenje. Tako nastaje pregled koji možete ponovno otvoriti kada budete pisali. Sam popis referenci bez tih bilježaka lako postaje zbirka naslova koje više ne povezujete s argumentom.</p>
-<p>Razmislite o rečenici „potrošači očekuju rast inflacije”. Prvo provjerite što točno pita anketa. Ispitanici uspoređuju očekivano kretanje cijena u sljedećih dvanaest mjeseci s proteklih dvanaest mjeseci. Biraju ponuđenu kategoriju odgovora. U dokazni zapis unesite formulaciju pitanja i način izračuna salda kako biste ga pravilno tumačili u analizi i zaključku.</p>
-<p>Ponovljeno pojavljivanje istog autora u rezultatima može biti trag za daljnje čitanje. Provjerite radi li se o različitim radovima ili o ponovljenim poveznicama na isti rad i njegove novinske prikaze. Pratite reference unatrag i novije citate unaprijed. Vodite bilješku o korištenim pojmovima, datumu pretrage i kriterijima odabira.</p>
-</section>
-<section id="obrasci-za-nastavak-pretraživanja" class="level3">
-<h3 class="anchored" data-anchor-id="obrasci-za-nastavak-pretraživanja">Obrasci za nastavak pretraživanja</h3>
-<p>Za metodološki pregled pitajte koje se metode koriste za konkretno pitanje i što omogućuje njihovu interpretaciju. Najprije proučite dostupne podatke, a zatim usporedite prikladne metode. Za svaki pronađeni rad zatražite objašnjenje veze između pitanja, dizajna i pretpostavki.</p>
-<p>Za teorijski okvir tražite definiciju mehanizma, njegove pretpostavke i predviđanja koja bi se mogla razlikovati od alternativnih objašnjenja. Pojmovi poput racionalne nepažnje i sporog usvajanja informacija mogu biti korisni za temu očekivanja. Pročitajte izvor i objasnite što bi pojedina teorija značila za vaše mjere.</p>
-<p>Za pregled podataka zatražite instituciju, šifru skupa, jedinicu, frekvenciju, obuhvat i uvjete pristupa. Za provjeru tvrdnje tražite i dokaze koji joj ne idu u prilog. Na primjer.</p>
-<blockquote class="blockquote">
-<p>Koji nalazi ograničavaju tvrdnju da intenzivnije medijsko izvještavanje povećava inflacijska očekivanja? Razlikuj opisnu povezanost od učinka identificiranog istraživačkim dizajnom. Navedi mjesto u svakom izvoru.</p>
-</blockquote>
-<p>Ako naiđete na nepoznatu kraticu, pronađite njezinu definiciju u radu, pravilo izračuna i izvor podataka. Primjer je IAG iz starog nastavnog materijala. Za njegovo uključivanje u analizu najprije treba potvrditi definiciju, način izračuna i izvor podataka.</p>
-</section>
-<section id="organizacija-i-pristup" class="level3">
-<h3 class="anchored" data-anchor-id="organizacija-i-pristup">Organizacija i pristup</h3>
-<p>Perplexityjevi <a href="https://hub-prod.perplexity.ai/hub/faq/what-are-spaces">Spaces</a> služe organiziranju razgovora i materijala po temama. Za naš primjer korisno je odvojiti provjerene bilješke od početnih odgovora. Zajednički prostor olakšava suradnju. Uz njega vodite vlastitu bibliografiju i zabilježite koje ste izvore provjerili.</p>
-<p>Filtri izvora i nazivi načina pretraživanja mogu se mijenjati. Za svaki rad provjerite status recenzije kod izdavača. Za sustavni pregled unaprijed opišite baze, pojmove za pretragu i pravila odabira radova. Na radionici povezujemo obje mjere s njihovim službenim definicijama. Opsežniji pregled literature možete razviti kasnije.</p>
-</section>
-<section id="ako-želite-nastaviti-1" class="level3">
-<h3 class="anchored" data-anchor-id="ako-želite-nastaviti-1">Ako želite nastaviti</h3>
-<p>Isprobajte isti način provjere na temi koja vas zanima. Pronađite jedan izvor i usporedite ga s AI odgovorom. Ako odlučite razviti dulji pregled literature, prethodni odjeljci mogu pomoći pri organizaciji izvora.</p>
+<section id="izvor-kao-dio-objašnjenja" class="level3">
+<h3 class="anchored" data-anchor-id="izvor-kao-dio-objašnjenja">Izvor kao dio objašnjenja</h3>
+<p>Članak Meylera i Reiche u <a href="https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html">ECB Economic Bulletinu</a> pomaže razumjeti kvalitativne i kvantitativne mjere percepcija i očekivanja. Taj je doprinos drukčiji od izračuna korelacije za našu tablicu. Kad uključujete rad u vlastiti tekst, objasnite čemu služi u argumentu: određuje pojam, predlaže mehanizam ili donosi nalaz iz određenog istraživanja.</p>
+<p>Ako dvije studije dolaze do različitih zaključaka, usporedite njihova pitanja i okolnosti. Jedna može ispitivati kratku informacijsku intervenciju, a druga dugoročna kretanja u anketi. Ta razlika može objasniti neslaganje bolje od pokušaja da njihove nalaze spojite u jednu opću tvrdnju.</p>
+<p>Za raspravu odaberite jedan rad koji mijenja vaše početno razumijevanje teme. Objasnite što biste bez njega pogrešno pretpostavili. Time pretraga dobiva jasan završetak za trenutačni zadatak, a pitanje određuje koji vam je sljedeći izvor doista potreban.</p>
 </section>
 </section>
 <section id="poglavlje-13" class="level2">
@@ -377,58 +293,37 @@ window.Quarto = {
 <p><a href="../slides/day1.html#blok-13">Dan 1, tema 1.3</a> · <a href="../materials/exercises/index.html#v13">Vježba 1.3</a></p>
 <section id="primjer-iz-radionice-2" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-iz-radionice-2">Primjer iz radionice</h3>
-<p><strong>Razgovor.</strong> Što provjeravamo u sažetku koji zvuči uvjerljivo?</p>
-<p><strong>Primjer.</strong> Ispravimo tvrdnju da korelacija od približno 0,70 dokazuje uzročni učinak očekivanja na inflaciju. Objasnimo što usporedba vrijednosti iz istog mjeseca stvarno pokazuje.</p>
-<p><strong>Isprobajte.</strong> Preradite namjerno pogrešan odlomak sa stranice dana. U njemu su 120 mjeseci zamijenjeni kućanstvima, saldo postotkom inflacije, a korelacija uspješnom prognozom. Jedan je rezultat prenesen na svako razdoblje. U tri ili četiri rečenice popravite tumačenje uzorka, jedinice, vremenske usporedbe i opsega zaključka.</p>
-</section>
-<section id="provjerite-tvrdnju-po-tvrdnju" class="level3">
-<h3 class="anchored" data-anchor-id="provjerite-tvrdnju-po-tvrdnju">Provjerite tvrdnju po tvrdnju</h3>
-<p>U radionici uređujemo odlomak o cijelom skupu. Provjeravamo što je jedinica opažanja, kako su izražene mjere i koje se razdoblje uspoređuje. Korelaciju tumačimo kao opis linearnog odnosa. Za prognozu treba povezati ranija očekivanja s odgovarajućim kasnijim ishodom i provjeriti točnost.</p>
-<p>Pogledajte što rečenica tvrdi, koju mjeru spominje i s čime uspoređuje rezultat. Te pojedinosti često pokazuju gdje je sažimanjem promijenjeno značenje.</p>
-</section>
-<section id="dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research" class="level3">
-<h3 class="anchored" data-anchor-id="dodatno-čitanje-pregled-više-izvora-uz-gemini-deep-research">Dodatno čitanje / pregled više izvora uz Gemini Deep Research</h3>
-<p>Kratak odgovor može pomoći pri traženju pojma ili pojedinog rada. Za usporedbu teorijskih objašnjenja i podataka iz više studija treba pripremiti pregled literature. Istraživački način rada u AI alatu može planirati više pretraga, prikupiti izvore i predložiti njihov zajednički sažetak.</p>
-<p>Razlika je slična onoj između kratkog pitanja vodiču i naručivanja opširnog izvješća. Isti alat može nuditi oba načina rada. Kvalitetu izvješća procijenite prema pokrivenosti teme i točnosti tvrdnji u odnosu na izvore.</p>
-<p>Za samostalni nastavak razmotrite primjer Gemini Deep Researcha. Prema <a href="https://support.google.com/gemini/answer/15719111?hl=en">Googleovim uputama</a>, možete odabrati izvore, priložiti materijale i urediti predloženi plan prije pokretanja istraživanja. Dostupnost povezanih izvora ovisi o računu i postavkama. Sučelje se može promijeniti do sljedeće radionice, pa provjerite upute za račun na kojem radite.</p>
-</section>
-<section id="istraživački-plan-je-vaš-dokument" class="level3">
-<h3 class="anchored" data-anchor-id="istraživački-plan-je-vaš-dokument">Istraživački plan je vaš dokument</h3>
-<p>Prije pokretanja napišite što trebate znati. Razdvojite definicije, empirijske nalaze, metodološka pitanja i podatke. Zatim odredite obuhvat. Zemlje, razdoblje objavljivanja, populaciju i jezike. Ako tražite noviju literaturu, dopustite zasebno navođenje starijih teorijskih radova kako vremenski filtar ne bi uklonio temeljne pojmove.</p>
-<p>Zahtjev može biti preširok.</p>
+<p><strong>Razgovor.</strong> Kako sažimanjem možemo promijeniti značenje nalaza?</p>
+<p><strong>Primjer.</strong> Usporedimo rečenicu o pozitivnoj korelaciji s tvrdnjom da očekivanja uzrokuju inflaciju. Razgovaramo o tome što je u drugoj rečenici dodano izvan samog rezultata.</p>
+<p><strong>Isprobajte.</strong> Preradite ovaj namjerno pogrešan odlomak. Objasnite komu ili čemu opažanja pripadaju, kako su izražene mjere i na koje se razdoblje zaključak odnosi.</p>
 <blockquote class="blockquote">
-<p>Napiši pregled literature o inflaciji.</p>
+<p>U uzorku od 120 hrvatskih kućanstava očekivana inflacija 2022. iznosila je prosječno 46,62 %. Korelacija s ostvarenom inflacijom od približno 0,70 pokazuje da su potrošači uspješno predvidjeli buduće cijene. Isti zaključak vrijedi za svako razdoblje od 2015. do 2024.</p>
 </blockquote>
-<p>On ne kaže trebate li udžbeničko objašnjenje, pregled prognoziranja ili raspravu o očekivanjima. Za temu medijskog izvještavanja zahtjev možemo precizirati ovako.</p>
+</section>
+<section id="što-dobar-sažetak-čuva" class="level3">
+<h3 class="anchored" data-anchor-id="što-dobar-sažetak-čuva">Što dobar sažetak čuva</h3>
+<p>Sažetak nam pomaže shvatiti glavnu ideju rada bez ponavljanja svih pojedinosti. Njegova je vrijednost u odabiru onoga što ostaje važno za razumijevanje. U istraživačkom tekstu to su pitanje, okolnosti istraživanja, način dolaska do nalaza i granice zaključka.</p>
+<p>Primjerice, „dvije mjere u istom mjesecu pozitivno su povezane” i „potrošači su uspješno predvidjeli inflaciju” govore o različitim odnosima. Druga tvrdnja zahtijeva povezivanje ranijih očekivanja s odgovarajućim kasnijim ishodom. Ako taj korak izostavimo iz sažetka, čitatelj može steći dojam da je provedena analiza koju zapravo nemamo.</p>
+<p>Goldsmith-Pinkham u prijedlogu <a href="https://paulgp.com/2026/03/10/llms-txt-for-academic-papers.html">LLM-Friendly Academic Papers</a> zagovara oblikovanje istraživačkih materijala tako da jezični modeli lakše prenesu njihove rezultate i ograničenja. Za naš rad iz toga možemo uzeti jednostavnu ideju: uz glavni nalaz objasnite što on ostavlja otvorenim. Tako se važna ograničenja prenose zajedno s tvrdnjom, i u sažetku i u kasnijoj raspravi.</p>
 <blockquote class="blockquote">
-<p>Pripremi plan pregleda empirijske literature o medijskom izvještavanju i inflacijskim očekivanjima kućanstava u europskim zemljama. Glavni obuhvat su radovi objavljeni od 2010. nadalje. Temeljne teorijske radove navedi zasebno. Organiziraj pregled prema mjerenju očekivanja, mjerenju medijske pažnje, istraživačkom dizajnu i ograničenjima.</p>
-<p>Za svaki rad navedi izvor, uzorak, razdoblje, mjere, metodu i glavni nalaz. Označi imaš li puni tekst. Razlikuj korelaciju, prognozu i uzročni zaključak. Ako podatak ne možeš provjeriti, označi ga kao nepoznat. Najprije pokaži plan. Prikupljanje medijskih tekstova predvidi kao zaseban zadatak.</p>
+<p>Sažmi ovaj odlomak za sudionika radionice. Zadrži pitanje, uzorak, značenje mjera i glavni nalaz. Objasni što iz tog nalaza još ne možemo zaključiti. Zatim navedi jednu važnu pojedinost koju si izostavio zbog kratkoće i zašto.</p>
 </blockquote>
-<p>Upit traži usporedive zapise o radovima i izričito označavanje nepoznatih podataka. Zaključak ostavlja otvorenim. U odgovoru provjerite je li alat poštovao te zahtjeve ili je, primjerice, dodao broj opažanja koji nije naveden u izvoru.</p>
-<p>Pregledajte predloženi plan prije izvršavanja. Ako se većina prostora troši na povijest središnjih banaka, a vi trebate usporediti mjere očekivanja, promijenite raspored. Ako nedostaje odjeljak o hrvatskim izvorima, dodajte ga. Ako plan predviđa procjenu učinka medija na temelju podataka koje nemate, zaustavite taj korak i razjasnite što bi trebalo prikupiti.</p>
+<p>Usporedite dvije nastale verzije i odaberite onu koja čitatelju bolje pomaže razumjeti istraživanje. Kraći tekst može biti jasniji, ali ponekad upravo uklonjena pojedinost određuje smisao rezultata. Raspravite koja je informacija nužna za vašu publiku.</p>
 </section>
-<section id="što-može-nedostajati-u-dugom-izvješću" class="level3">
-<h3 class="anchored" data-anchor-id="što-može-nedostajati-u-dugom-izvješću">Što može nedostajati u dugom izvješću</h3>
-<p>Pristup alata ponekad je ograničen na naslov ili sažetak rada. Može koristiti javnu radnu verziju umjesto kasnije objavljene verzije. Zasebno provjerite pristup alata punom tekstu, čak i kada ga možete otvoriti kroz ustanovu u svom pregledniku. Za važan rad sami provjerite verziju dokumenta i dostupnost metodoloških dodataka.</p>
-<p>Uz bilješku da autori koriste regresijsku analizu zapišite kako su odabrali uzorak, koje su varijable uključili i na čemu temelje tumačenje rezultata. Pročitajte opis modela i obrazloženje u izvornom radu. Ako izvješće navodi samo naziv metode, to je polazna bilješka, koju još treba provjeriti i dopuniti.</p>
-<p>Obuhvat izvješća provjerite dodatnim pretragama na hrvatskom i drugim relevantnim jezicima. Uključite drukčije pojmove i radove dostupne kroz ustanovu. Tvrdnju o istraživačkoj praznini potkrijepite pregledom relevantne literature uz jasno navedena pravila pretrage i odabira.</p>
-<p>Dugi postupak može završiti izvješćem koje krši dio kriterija, drugi vremenski raspon, druga populacija ili niz općenitih zaključaka bez pojedinačnih izvora. Usporedite rezultat s početnim planom. Ta je provjera jednostavna ako ste kriterije prethodno zapisali. Mnogo je teža ako ih tek naknadno prilagođavate dobivenom tekstu.</p>
+<section id="kako-povezati-više-pročitanih-radova" class="level3">
+<h3 class="anchored" data-anchor-id="kako-povezati-više-pročitanih-radova">Kako povezati više pročitanih radova</h3>
+<p>Pregled literature traži više od niza pojedinačnih sažetaka. Njime pokazujemo kako se objašnjenja nadopunjuju, gdje se razilaze i što to znači za naše pitanje. Za temu inflacijskih očekivanja možemo usporediti radove prema tome kako mjere očekivanja, kojim se informacijama bave i kakav odnos pokušavaju ustanoviti.</p>
+<p>Istraživački načini rada, poput Deep Researcha, mogu pomoći u organiziranju opsežnije pretrage. Prije prikupljanja materijala razgovarajte s alatom o svrsi pregleda. Ako vas zanima medijsko izvještavanje, povijest monetarne politike može biti kratak kontekst, dok više prostora zaslužuju mjerenje medijske pažnje i način na koji studije povezuju informacije s očekivanjima.</p>
+<blockquote class="blockquote">
+<p>Predloži plan pregleda literature o medijskom izvještavanju i inflacijskim očekivanjima kućanstava. Poveži ga s našim pitanjem o Hrvatskoj. Organiziraj ga oko mjerenja očekivanja, uloge informacija i istraživačkih pristupa. Za svaki dio objasni kako bi pomogao razumjeti temu. Najprije razgovarajmo o planu.</p>
+</blockquote>
+<p>Plan možete promijeniti nakon prvih radova. Ako saznate da dio literature proučava percepcije, odlučite treba li vam poseban odjeljak o razlici između prošlih i budućih cijena. Ako se radovi bave drugim zemljama, objasnite koje bi osobine hrvatskog konteksta mogle biti važne za prijenos njihova objašnjenja.</p>
 </section>
-<section id="kako-provjeriti-i-preraditi-izvješće" class="level3">
-<h3 class="anchored" data-anchor-id="kako-provjeriti-i-preraditi-izvješće">Kako provjeriti i preraditi izvješće</h3>
-<p>Prvo pročitajte naslove i zaključak. Zatim izdvojite tri tvrdnje koje su najvažnije za vaše pitanje. Za svaku otvorite izvor i provedite trostruku provjeru iz prethodnog poglavlja. Zatim na isti način provjerite sve ostale tvrdnje koje ćete preuzeti u svoj rad. U izvornom tekstu pronađite odlomak koji podupire svaku tvrdnju. Provjerite odnosi li se na navedenu populaciju i dopušta li takav zaključak.</p>
-<p>Napravite jednostavnu evidenciju nalaza, zadržati, provjeriti, suziti ili izostaviti. Primjerice, dobru definiciju mjere možete zadržati uz izvor. Tvrdnju o „svim europskim kućanstvima” suziti na uzorak studije. Broj bez izvora izostaviti. Ako se dva izvora razlikuju, nemojte ih automatski izjednačiti u kompromisnu tvrdnju. Razlika može proizlaziti iz pitanja, mjere, razdoblja ili istraživačkog dizajna.</p>
-<p>Sačuvajte plan, datum pretrage, popis izvora i vlastite bilješke. Generirano izvješće služi kao radni materijal. Njegovu strukturu možete preraditi, ali svaka tvrdnja u završnom pregledu treba imati mjesto u vašem dokaznom zapisu. Kada pišete, uspoređujte radove po doprinosu pitanju umjesto da prepričavate jedan za drugim.</p>
-</section>
-<section id="povezivanje-s-našim-podacima" class="level3">
-<h3 class="anchored" data-anchor-id="povezivanje-s-našim-podacima">Povezivanje s našim podacima</h3>
-<p>Za našu analizu proučite HICP i anketni saldo, odredite opisno pitanje i odlučite što ćete prikazati. U početnom pregledu objasnite što svaka mjera znači, koja su njezina ograničenja i kako možete usporediti dvije serije.</p>
-<p>Nakon čitanja metodologije možete odlučiti prikazati dvije odvojene serije sa zajedničkom vremenskom osi, izračunati godišnje sažetke i opisati korelaciju vrijednosti iz istog mjeseca. Panel-model, analiza medijskih tekstova i predviđanje inflacije mogu biti zasebni nastavci istraživanja. Za svako proširenje prije kodiranja odredite koji dodatni podaci i metodološko obrazloženje nedostaju.</p>
-</section>
-<section id="ako-želite-nastaviti-2" class="level3">
-<h3 class="anchored" data-anchor-id="ako-želite-nastaviti-2">Ako želite nastaviti</h3>
-<p>Sastavite plan za vlastito pitanje i napišite što bi vas navelo da ga promijenite. Ako imate pristup istraživačkom načinu rada, pokrenite ga. Dok čekate, provjerite jedan već pronađeni izvor. Odvojite dovoljno vremena za čitanje i provjeru izvora.</p>
-<p>Kada izvješće stigne, provjerite tri ključne tvrdnje, zabilježite jednu prazninu i napišite vlastiti kratki sažetak. Razdvojite potvrđeno, vjerojatno i zasad nepoznato. Ako nemate pristup alatu, napravite isti plan i sažetak iz tri početna izvora radionice. Uz sažetak sačuvajte bilješke iz kojih je vidljivo na što se oslanjate.</p>
+<section id="od-pregleda-literature-do-vlastite-ideje" class="level3">
+<h3 class="anchored" data-anchor-id="od-pregleda-literature-do-vlastite-ideje">Od pregleda literature do vlastite ideje</h3>
+<p>Neslaganje među radovima može postati početak dobrog pitanja. Primjerice, odnos informacija i očekivanja mogao bi ovisiti o tome je li inflacija dugo niska ili se upravo naglo mijenja. Takva ideja može motivirati opisnu usporedbu razdoblja u našem skupu. Rezultat usporedbe potom pomaže odlučiti kakav bi daljnji projekt bio smislen.</p>
+<p>Zatražite od AI-ja nekoliko mogućih objašnjenja istog obrasca, a zatim odaberite jedno koje možete jasno obrazložiti. Razgovor postaje korisniji kada navodite što bi se trebalo vidjeti u podacima ako je objašnjenje primjereno. Pritom ostaje otvoreno mogu li isti obrazac proizvesti i drugi procesi.</p>
+<p>U našem slučaju literatura pomaže razumjeti zašto uspoređujemo ostvarenu inflaciju i anketni saldo. Za procjenu uloge medija trebali bismo dodati podatke o izvještavanju. Takvu mogućnost možemo smisleno oblikovati već sada, bez pripisivanja medijima rezultata iz tablice koja medijske podatke ne sadrži.</p>
 </section>
 </section>
 <section id="poglavlje-14" class="level2">
@@ -436,59 +331,40 @@ window.Quarto = {
 <p><a href="../slides/day1.html#blok-14">Dan 1, tema 1.4</a> · <a href="../materials/exercises/index.html#v14">Vježba 1.4</a></p>
 <section id="primjer-iz-radionice-3" class="level3">
 <h3 class="anchored" data-anchor-id="primjer-iz-radionice-3">Primjer iz radionice</h3>
-<p><strong>Razgovor.</strong> Koji graf i usporedba odgovaraju našem pitanju?</p>
-<p><strong>Primjer.</strong> Zatražimo plan u četiri koraka. Pregledamo podatke, izradimo dva vremenska grafa i godišnje sažetke, usporedimo razdoblja i napišemo zaključak. Svaki korak povežemo s onim što želimo saznati.</p>
-<p><strong>Isprobajte.</strong> Prilagodite plan svojem pitanju iz teme 1.1. Odaberite razdoblje, prikaz i usporedbu. Objasnite jedan izbor i granicu svojeg zaključka. Plan ostaje u istom razgovoru za drugi dan.</p>
+<p><strong>Razgovor.</strong> Koji prikaz i usporedba odgovaraju našem pitanju?</p>
+<p><strong>Primjer.</strong> Predložimo slijed: upoznati podatke, prikazati dvije serije, sažeti ih po godinama, usporediti razdoblja i objasniti nalaz.</p>
+<p><strong>Isprobajte.</strong> Prilagodite plan svojem pitanju. Objasnite zašto biste zadržali jedan predloženi korak, a drugi promijenili ili izostavili.</p>
 </section>
-<section id="povežite-izvore-u-obrazloženje" class="level3">
-<h3 class="anchored" data-anchor-id="povežite-izvore-u-obrazloženje">Povežite izvore u obrazloženje</h3>
-<p>Nakon pretrage imate izvore, provjerene tvrdnje i otvorena pitanja. Sada treba odlučiti kojim ćete ih redoslijedom objasniti čitatelju i kako se zajedno odnose na vaše istraživačko pitanje.</p>
-<p>Claudeu možete dati vlastite materijale i zatražiti prijedlog strukture te komentare na nejasna mjesta. Isti zadatak možete proći s kolegom ili drugim dostupnim asistentom. U oba slučaja trebate jasno objasniti što istražujete i kakvu pomoć tražite.</p>
-<p>Kao u razgovoru s mentorom, navedite pitanje, raspoložive podatke i mjesto na kojem ste zapeli. Razlika je u tome što odgovor modela morate provjeriti i kada zvuči kao siguran stručni savjet.</p>
-</section>
-<section id="pripremite-materijale-prije-razgovora" class="level3">
-<h3 class="anchored" data-anchor-id="pripremite-materijale-prije-razgovora">Pripremite materijale prije razgovora</h3>
-<p>Provjerene bilješke držite odvojeno od vlastitih pretpostavki i otvorenih pitanja. Uz izvor navedite naziv datoteke i mjesto relevantnog odlomka. Uz broj navedite jedinicu, razdoblje i skriptu ili tablicu iz koje potječe. Ako je rečenica samo radna ideja, označite je tako da model ne bi ugradio pretpostavku u nacrt kao već potvrđen nalaz.</p>
-<p>Claude <a href="https://support.claude.com/en/articles/9517075-what-are-projects">Projects</a> omogućuje organiziranje materijala i projektnih uputa. Dokumentacija <a href="https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects">projektnog dohvaćanja</a> opisuje korištenje relevantnih dijelova datoteka kada sadržaj nadilazi raspoloživi kontekst. Odgovor se tada oslanja na odabrane dijelove projektnih dokumenata. Za ključnu tvrdnju navedite točan dokument i zatražite mjesto na kojem se temelji odgovor.</p>
-<p>U projektnim uputama zatražite da alat piše hrvatski, razlikuje podatke od pretpostavki i označi gdje nema dokaza. Zatražite da navodi izvore koje je otvorio. Takve upute usmjeravaju odgovor u razgovoru. Svaki prihvaćeni prijedlog zatim provjerite prema svojim izvorima i podacima. Korisnije su provjerljive granice od dugog opisa zamišljene osobnosti stručnjaka.</p>
-</section>
-<section id="pet-načela-za-koristan-upit" class="level3">
-<h3 class="anchored" data-anchor-id="pet-načela-za-koristan-upit">Pet načela za koristan upit</h3>
-<p>1. Dajte kontekst i jasno zaduženje. Objasnite što radite i gdje trebate pomoć. Upit može glasiti ovako.</p>
+<section id="plan-kao-razgovor-o-izborima" class="level3">
+<h3 class="anchored" data-anchor-id="plan-kao-razgovor-o-izborima">Plan kao razgovor o izborima</h3>
+<p>Plan analize povezuje ono što želimo saznati s onim što ćemo napraviti. Ako pitamo kada su mjere najviše rasle, važan je vremenski prikaz. Ako pitamo koliko se njihov odnos razlikuje između dvaju razdoblja, trebamo usporedive sažetke za oba razdoblja. Svaki korak ima svrhu koju možemo objasniti prije nego što vidimo rezultat.</p>
+<p>AI može predložiti nekoliko putova kroz isto pitanje. Korisno je zatražiti obrazloženje izbora: zašto ovaj graf, zašto ovo razdoblje i što dodatni izračun donosi? Tako dobijemo razgovor o istraživanju koji možemo voditi i s kolegom. Odgovor modela otvara mogućnosti, a prihvaćeni plan izražava našu odluku o smjeru rada.</p>
 <blockquote class="blockquote">
-<p>Pripremam kratki izvještaj o ostvarenoj inflaciji i saldu očekivanih promjena cijena u Hrvatskoj od 2015. do 2024. Imam 120 mjesečnih opažanja i tri provjerena izvora. Pomozi mi urediti plan opisne analize. Nemam medijske podatke ni istraživački dizajn za procjenu uzročnog učinka. Najprije navedi nejasnoće u mom planu.</p>
+<p>Želim opisati kako se odnos godišnje stope HICP-a i salda očekivanih promjena cijena razlikuje između 2015.–2019. i 2020.–2024. Predloži kratak plan koristeći učitane podatke. Za svaki korak objasni što ćemo saznati. Ponudi jednu jednostavniju varijantu plana i reci što bismo njome izgubili.</p>
 </blockquote>
-<p>Uputa „budi kritički recenzent” određuje vrstu komentara koju tražite. Njihovu stručnu utemeljenost provjeravate vi. Kontekst, materijali i kriteriji provjere čine glavninu korisne upute.</p>
-<p>2. Odredite format i opseg. Za nacrt zatražite odjeljke i kratko objašnjenje njihove svrhe. Ako želite usporedbu izvora, zatražite teme, slaganja, razlike i ograničenja. Evo jednog primjera upita.</p>
+<p>Pri usporedbi planova pitajte donosi li svaki novi izlaz novu informaciju. Deset sličnih grafova može otežati izbor glavnog nalaza. Dva pažljivo odabrana prikaza mogu otvoriti jasniju raspravu. Opseg prilagodite pitanju i vremenu koje imate za tumačenje.</p>
+</section>
+<section id="dijelovi-istraživanja-ovise-jedni-o-drugima" class="level3">
+<h3 class="anchored" data-anchor-id="dijelovi-istraživanja-ovise-jedni-o-drugima">Dijelovi istraživanja ovise jedni o drugima</h3>
+<p>Goldsmith-Pinkham u tekstu <a href="https://paulgp.substack.com/p/ai-and-the-research-o-ring">AI and the Research O-Ring</a> koristi ekonomsku analogiju komplementarnih koraka: slabost jednog dijela može ograničiti vrijednost cjeline. To nije procijenjeni zakon o uspješnosti svakog istraživanja, nego način da razumijemo zašto izvrsna izvedba pojedinog zadatka ponekad ne rješava glavni problem.</p>
+<p>U našem primjeru pogrešno razumijevanje salda utjecalo bi na oznaku osi, usporedbu s HICP-om i tekst zaključka. Račun može biti točan, a tumačenje i dalje pogrešno. Zato planiranje uključuje razgovor o mjerama i pitanju, a kasniji rezultati mogu nas vratiti na te odluke.</p>
+<p>To objašnjava i zašto istraživački rad nije potpuno linearan. Graf može pokazati da se odnos mijenja kroz vrijeme, pa početno pitanje o prosječnom odnosu postaje pitanje o razlikama među razdobljima. Takav povratak na pitanje može poboljšati istraživanje. Važno je moći ispričati kako smo do novog pitanja došli.</p>
+</section>
+<section id="zadajte-izvediv-korak" class="level3">
+<h3 class="anchored" data-anchor-id="zadajte-izvediv-korak">Zadajte izvediv korak</h3>
+<p>Dobro zaduženje govori što želimo dobiti i koje izbore još razmatramo. Za početak zatražite jedan prikaz ili jednu usporedbu. Nakon što razumijete rezultat, lakše ćete odrediti sljedeći korak. Ako alat predloži novu metodu, pitajte koje pitanje ona rješava i kakve podatke zahtijeva. Metodu biramo prema tome što želimo ustanoviti.</p>
 <blockquote class="blockquote">
-<p>Predloži pet odjeljaka, pitanje, podaci, postupak, rezultati i ograničenja. Za svaki napiši svrhu, dokaz koji je potreban i pitanje na koje još moram odgovoriti. Nalaze napiši nakon što ti pošaljem izlaz analize.</p>
+<p>Za početak prikaži obje mjere kroz svih 120 mjeseci u odvojenim panelima sa zajedničkom vremenskom osi. Objasni što se iz takva prikaza može vidjeti. Zatim predloži jednu usporedbu koja bi pomogla odgovoriti na moje pitanje o razdobljima.</p>
 </blockquote>
-<p>3. Dajte primjer željenog rezultata. Jedan dobro napisan odlomak ili jedan dovršen dokazni zapis često je korisniji od mnoštva stilskih pridjeva. Primjer mora sadržavati istinite podatke ili jasno označena mjesta za unos. U suprotnom će se i pogreška iz primjera proširiti na ostatak.</p>
-<p>4. Zatražite procjenu metode. Upit koji traži opravdanje već odabrane Newey-West korekcije usmjerava odgovor prema potvrdi vašeg izbora. Pitajte čemu metoda služi, koje pretpostavke zahtijeva i što treba zasebno provjeriti. Jednako vrijedi za pitanje o istraživačkoj praznini. Neka model razlikuje prazninu u vašim bilješkama od tvrdnje da nešto nitko još nije istražio.</p>
-<p>5. Poboljšavajte pojedinačne dijelove. Nakon prvog nacrta izaberite jedan problem. „Objasni kako se računa i tumači saldo” preciznije je od „učini tekst akademskijim”. Sačuvajte verzije i odbacite prijedlog koji mijenja značenje. Svaku novu verziju usporedite s prethodnom prema jasnoći i točnosti.</p>
+<p>Ako je prijedlog preširok, suzite ga običnim jezikom: „Zadržimo se na usporedbi razdoblja” ili „Objasni najprije kako bi se čitao taj prikaz”. Ako odgovor pretpostavlja medijske podatke koje nemamo, razdvojite zadatak koji je sada izvediv od zamisli za novi projekt.</p>
+<p>Ponavljajuće zadatke s vremenom možete zadavati na sličan način. Goldsmith-Pinkham takve postupke razmatra kroz <a href="https://paulgp.substack.com/p/skills-specifying-how-an-agent-should">ponovno upotrebljive upute, odnosno skills</a>. Za radionicu je dovoljan obrazac koji vam pomaže jasno naručiti prikaz ili komentar. Njegovu vrijednost pokazuje rezultat rada; sama spremljena uputa ne jamči da će zadatak svaki put biti dobro izveden.</p>
 </section>
-<section id="dodatno-čitanje-razrada-plana-za-dulji-rad" class="level3">
-<h3 class="anchored" data-anchor-id="dodatno-čitanje-razrada-plana-za-dulji-rad">Dodatno čitanje / razrada plana za dulji rad</h3>
-<p>U prvom koraku prikupite bilješke. Za naš primjer možete zapisati sljedeće. „Imam mjesečni HICP, godišnju stopu promjene. Imam kvalitativni saldo očekivanja. Podaci pokrivaju Hrvatsku 2015.–2024. Želim usporediti kretanja. Nisam siguran/na kako opisati odnos.” Uključite definicije iz rječnika uz nazive stupaca.</p>
-<p>U drugom koraku pitajte što nedostaje u planu.</p>
-<blockquote class="blockquote">
-<p>Razdvoji što već mogu istražiti ovim podacima, što trebam dodatno provjeriti u metodologiji i što zahtijeva nove podatke. Za svaku preporuku objasni vezu s mojim pitanjem. Analizu ograniči na priložene varijable.</p>
-</blockquote>
-<p>Koristan odgovor može upozoriti na različite jedinice i vremenski horizont ankete. Prijedlog da analizirate medijski sentiment zahtijeva novu zbirku tekstova, pravilo mjerenja i provjeru kvalitete. Za taj posao treba zasebno planirati vrijeme i podatke.</p>
-<p>U trećem koraku odredite redoslijed argumenta. Najprije objasnite pitanje i mjere, zatim provjeru podataka, vizualni prikaz i sažetke, a na kraju interpretaciju i ograničenja. Uz svaki odjeljak napišite što ćete u njemu objasniti. U odjeljku o metodama navedite što ćete izračunati i kako.</p>
-<p>U četvrtom koraku popravite najslabije mjesto. Ako nacrt zaključuje da mediji oblikuju očekivanja, vratite ga na ono što podaci sadrže. Ako predviđa regresiju zato što rad „mora biti ozbiljan”, pitajte na koje pitanje ta regresija odgovara. Opisna analiza može dati koristan odgovor kada su pitanje, mjere i granice zaključka jasno objašnjeni.</p>
-</section>
-<section id="kako-povezati-hipotezu-s-analizom" class="level3">
-<h3 class="anchored" data-anchor-id="kako-povezati-hipotezu-s-analizom">Kako povezati hipotezu s analizom</h3>
-<p>Model može predložiti hipotezu, pa i originalnu ideju. Vi provjeravate je li jasno postavljena, povezana s teorijom i mjerljiva dostupnim podacima te odlučujete vrijedi li je istražiti.</p>
-<p>Ako vam ideja za hipotezu dođe nakon gledanja grafa, zapišite to. Opišite je kao ideju nastalu tijekom pregleda podataka. Za provjeru prognoze unaprijed odredite što predviđate, koliko unaprijed i na kojem ćete razdoblju provjeriti točnost. Za zaključak o uzroku morate objasniti kako ćete razlikovati učinak koji vas zanima od drugih mogućih objašnjenja.</p>
-<p>Za kritiku izvora možete zatražiti procjenu jasnoće pitanja, podataka, metode i granica zaključka. Ako modelu dajete samo sažetak, neka i komentar bude ograničen na sažetak. Za procjenu pojedinosti modela pročitajte metodološki odjeljak rada.</p>
-</section>
-<section id="plan-za-sljedeći-korak" class="level3">
-<h3 class="anchored" data-anchor-id="plan-za-sljedeći-korak">Plan za sljedeći korak</h3>
-<p>U radionici plan ostaje u AI razgovoru uz učitani CSV. Drugi dan iz njega izrađujemo prikaze i usporedbe. Uz svaki graf i tablicu objasnite kako pomažu odgovoriti na pitanje. Za dulji projekt možete kasnije dodati zaseban opis podataka, izvora i odluka.</p>
+<section id="povežite-prvi-i-drugi-dan" class="level3">
+<h3 class="anchored" data-anchor-id="povežite-prvi-i-drugi-dan">Povežite prvi i drugi dan</h3>
+<p>Na kraju prvog dana svatko ukratko predstavi pitanje, odabrani prikaz i usporedbu koju želi napraviti. Kolega može pitati zašto je baš ta usporedba korisna ili predložiti jednostavniji put. Taj razgovor često razjasni dio plana koji je u razgovoru s AI-jem ostao neodređen.</p>
+<p>U istom AI razgovoru zatražite kratak sažetak dogovorenog smjera. Sažetak služi kao početak drugog dana. Ako se sesija prekine, uz isti CSV ponovno navedite pitanje i odabranu usporedbu. Time možete nastaviti rad i u drugom dostupnom alatu.</p>
 <div class="booklet-next">
-<p><a href="../booklet/day2.html">Nastavite na drugi dio, kodiranje i pisanje →</a></p>
+<p><a href="../booklet/day2.html">Nastavite na drugi dio, prikazi, usporedbe i pisanje →</a></p>
 </div>
 
 

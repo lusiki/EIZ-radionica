@@ -1,6 +1,9 @@
 # Raw API checksums must survive Windows and Unix checkouts unchanged.
 data/raw/*.json -text
 data/raw/manifest.json text eol=lf
+# Published downloads must remain byte-for-byte identical across platforms.
+*.pdf binary
+*.zip binary
 # Preserve generated bootstrap and third-party licence text verbatim.
 renv/activate.R whitespace=-blank-at-eol
 styles/fonts/*.txt whitespace=-blank-at-eol

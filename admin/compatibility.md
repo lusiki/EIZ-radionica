@@ -1,5 +1,8 @@
 # Dated compatibility record
 
+The latest revision is recorded at the end of this file. Earlier entries
+describe their own editions and do not describe the current reader length.
+
 Revision, 2026-10-26. Windows 11 reference machine.
 
 | Component | Status |
@@ -45,3 +48,25 @@ The two base-R code snippets were executed against the frozen dataset.
 These checks cover the generated materials, not a learner pilot or live
 testing of every optional commercial AI product. Editorial mapping and
 dated documentation notes are in `booklet/README.md`.
+
+## Condensed reader and research discussion, 27 October 2026
+
+The reader now contains 5,747 source words and 19 PDF pages. All 192 source
+blocks, 33 linked targets, 11 bookmarks, source hashes, page bounds and
+printed correlations pass the PDF checks. Completeness is checked against
+the full source text rather than the minimum page count of the older edition.
+The nine reader source files contain no Pandoc Code or CodeBlock nodes.
+The removed checklist/project-note sections are absent from those sources.
+
+The local 15-page release check passes its independent raw-data and CSV
+cross-checks, local links/anchors, fonts and ZIP contents. Browser checks
+of both reading parts, the second-day guide and instructor guide pass at
+1440px and 390px widths without horizontal overflow, code blocks or
+JavaScript errors. The updated chapter 2.2 title is consistent across them.
+PDF pages were rendered and visually inspected; the final paragraph was
+shortened to eliminate a nearly empty last page.
+
+The numerical reference scripts and data were not changed. The build used
+SkipAnalysis and retained the previously computed results; the independent
+release check recalculates the values used here. No new learner pilot or
+live AI-account test is claimed by this editorial revision.

@@ -1,32 +1,38 @@
 ## Kako čitati ovaj priručnik {#kako-citati}
 
-Radionica prati jedan stvarni skup podataka. Imamo 120 mjesečnih opažanja
-za Hrvatsku od siječnja 2015. do prosinca 2024. Uspoređujemo godišnju
-stopu HICP-a i saldo očekivanih promjena cijena. Podaci su preuzeti
-26. listopada 2026. i spremljeni uz materijale.
+Ovaj priručnik prati put od istraživačkog pitanja do objašnjenja rezultata.
+Svako poglavlje možete čitati samostalno, a zajedno čine primjer malog
+istraživanja koje se razvija tijekom dva dana. Radimo s istim podacima:
+120 mjesečnih opažanja za Hrvatsku od siječnja 2015. do prosinca 2024.
+Uspoređujemo godišnju stopu HICP-a i saldo očekivanih promjena cijena.
+Podaci su preuzeti 26. listopada 2026. i spremljeni uz materijale.
 
-Svaku temu otvaramo razgovorom, pogledamo jedan primjer i zatim isprobamo
-vlastiti pristup. Prvi dan biramo pitanje, provjeravamo izvore, uređujemo
-sažetak i pripremamo plan. Drugi dan pregledavamo cijeli skup, izrađujemo
-grafove i godišnje sažetke, uspoređujemo razdoblja i pišemo zaključak.
+Za rad je dovoljan AI razgovor koji može učitati CSV i izvršavati analizu.
+Datoteku dodajemo jednom, a zatim običnim jezikom zadajemo što želimo
+saznati i prikazati. Priručnik sadrži upute i upite koje možete prilagoditi.
+Za njihovu uporabu nije potrebno pisati programski kod.
 
-Za zajednički rad koristimo stranicu dana i jedan AI razgovor koji može
-učitati CSV i izvršiti kod. Datoteku dodajemo jednom, a pitanje, plan,
-grafovi, tablice i tekst ostaju u istom razgovoru. Ako sesija istekne,
-ponovno dodamo isti CSV. Na stranici dana dostupni su svi upiti, pregled
-svih 120 mjeseci i referentne brojke. Završni rezultat je graf i kratak
-odgovor na odabrano pitanje.
+Svako poglavlje otvaraju pitanje za razgovor, primjer i vlastiti pokušaj.
+Nakon toga slijedi objašnjenje istraživačke odluke koju primjer otvara.
+Voditelj može pokazati upit i rezultat, a sudionici predložiti drukčije
+pitanje, prikaz ili tumačenje. Pripremljeni grafovi i brojke omogućuju
+razgovor i kada alat nije dostupan ili izračun ne uspije.
 
-Priručnik prati iste brojeve i naslove kao dani i vježbe. Svako poglavlje
-najprije opisuje aktivnost, a zatim objašnjava postupak i njegove granice.
-Možete pročitati cijelo poglavlje ili otvoriti dio koji vam treba.
-Pripremljeni rezultati služe usporedbi s analizom iz vašeg razgovora.
+Prvi dan bavimo se pitanjem, izvorima, čitanjem i planom. Drugi dan
+upoznajemo podatke, izrađujemo prikaze, uspoređujemo razdoblja i pišemo
+zaključak. Isti brojevi poglavlja vode na stranice dana i zajedničke
+primjere. Završni je rezultat odabrani graf i kratak odgovor na vlastito
+pitanje, koji možete objasniti drugoj osobi.
 
-Upute za R projekt, agente, računalne bilježnice i napredne metode
-služe daljnjem radu. To su mogući načini nastavka istog istraživanja.
+Rasprave Paula Goldsmith-Pinkhama o AI-ju u istraživanju pomažu povezati
+te korake. Njegove ideje o trošku izvedbe, istraživačkoj prosudbi i
+pisanju kao razmišljanju navedene su uz konkretne primjene. Riječ je
+o argumentima i demonstracijama na koje se možemo osloniti u raspravi;
+ne predstavljamo ih kao dokaz jednakog učinka na svakog istraživača.
+Za pregled odabranih tekstova otvorite
+[kratki popis za čitanje](../materials/sources.qmd#ai-istrazivanje).
 
-Izvorne materijale napisao je Luka Šikić, UNICATH. Priručnik se temelji
-na njegovim tekstovima za oba dana, uz ažurirana objašnjenja i provjeru
-analize. Izdanje je pripremljeno uz AI pomoć. Dokumentacija alata
-provjerena je 26. listopada 2026. Izvorni tekst ostaje dostupan u
-povijesti repozitorija.
+Izvorne materijale napisao je Luka Šikić, UNICATH. Ovo izdanje uređeno
+je 27. listopada 2026. uz AI pomoć. Izvorni materijal ostaje dostupan
+u povijesti repozitorija. Podrijetlo podataka i referentni rezultati
+opisani su u priloženim materijalima radionice.

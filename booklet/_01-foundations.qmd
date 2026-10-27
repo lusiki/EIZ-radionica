@@ -6,142 +6,91 @@
 
 **Razgovor.** Koje pitanje možemo istražiti s dvije mjesečne serije za Hrvatsku?
 
-**Primjer.** Pogledamo svih 120 mjeseci i zatražimo od AI-ja da temu
-„inflacija i očekivanja” pretvori u opisno pitanje. Zajedničko pitanje
-odnosi se na kretanje mjera od 2015. do 2024. i povezanost u različitim razdobljima.
+**Primjer.** Od teme „inflacija i očekivanja” dolazimo do pitanja o kretanju
+dviju mjera od 2015. do 2024. i njihovoj povezanosti u različitim razdobljima.
 
-**Isprobajte.** Odaberite vlastito pitanje o razdoblju ili obrascu.
-Zatražite komentar i objasnite koje biste stupce i prikaze koristili.
-Pitanje ostaje u razgovoru i vodi kasniju analizu.
+**Isprobajte.** Odaberite razdoblje ili obrazac koji vas zanima. Zatražite
+prijedlog pitanja i objasnite kakav bi vam prikaz pomogao odgovoriti na njega.
 
-### Od prazne stranice do istraživačkog pitanja
+### Što se mijenja kada je lakše provesti ideju
 
-Zamislite da želite istražiti neku temu. Imate nekoliko otvorenih kartica
-i bilješke, ali još tražite pitanje od kojeg ćete krenuti.
-Traženje literature, povezivanje pojmova i organiziranje bilježaka oduzimaju
-vrijeme prije nego što uopće počnete analizirati podatke. AI može pomoći u
-svakom od tih koraka, no njegov prijedlog treba provjeriti. Je li pitanje
-dovoljno određeno? Možete li pronaći autora i izvor? Izvršava li se skripta
-i podupiru li dokazi tvrdnje u odlomku?
+Početak istraživanja često izgleda kao niz malih prepreka. Treba pronaći
+prikladne podatke, upoznati njihove oznake, izraditi prvi prikaz i odrediti
+vrijedi li ideju razvijati. AI može olakšati taj početak. Lakše je isprobati
+nekoliko prikaza, razumjeti nepoznat pojam ili razmotriti objašnjenje koje
+nam nije prvo palo na pamet. Time otvaramo prostor za pitanja koja bismo
+prije odgodili jer je početna obrada tražila previše vremena.
 
-U ovom priručniku nalaze se i primjeri iz Perplexityja, Geminija i Claudea.
-Za proširenu analizu opisani su R skripte, programski asistenti i bilježnice.
-Mogućnosti tih proizvoda preklapaju se. Odaberite dostupan alat i uvježbajte pronalaženje dokaza i objašnjavanje
-rezultata.
+Paul Goldsmith-Pinkham u tekstu
+[Research in the Time of AI](https://paulgp.com/2026/03/16/research-in-time-of-ai.html)
+opisuje kako jeftinija izvedba mijenja raspored istraživačkog rada.
+Kada je lakše sastaviti podatke i proizvesti rezultate, izbor pitanja,
+poznavanje teme i procjena smisla dobivenog odgovora postaju važniji.
+To je koristan okvir za ovu radionicu: alat obavlja dio posla, a mi
+odlučujemo što želimo saznati i kamo usmjeriti sljedeći pokušaj.
 
-Tijekom oba dana koristimo cijeli skup za Hrvatsku. U njemu pratimo
-ostvarenu inflaciju i odgovore potrošača o očekivanim promjenama cijena
-od 2015. do 2024. Imamo dvije mjere i 120 mjeseci. Sve izračune možete
-ponoviti priloženim skriptama. Šire pitanje o ulozi medija i komunikacije HNB-a ostaje
-motivacija za nastavak istraživanja. Za taj nastavak treba prikupiti medijske tekstove i izraditi indeks
-medijske pažnje.
+Naš skup omogućuje da usporedimo inflaciju i očekivanja kroz desetljeće.
+Možemo istražiti razdoblje ubrzanja cijena, usporediti ranije i kasnije
+godine ili pogledati mijenjaju li se mjere zajedno. Za pitanje o tome
+što je uzrokovalo promjenu trebali bismo razviti poseban istraživački
+dizajn. Važno je prepoznati koje pitanje upravo postavljamo.
 
-### Odredite što želite saznati
+### Od teme do pitanja na koje možemo odgovoriti
 
-Zajedničko početno pitanje glasi „Kako su se u Hrvatskoj od 2015. do 2024.
-kretali ostvarena inflacija i očekivanja potrošača o promjenama cijena?”
-U njemu su navedeni zemlja, razdoblje i dvije mjere. Iz tog pitanja
-možete odrediti koje izvore i podatke trebate pronaći.
+Tema „inflacija u Hrvatskoj” obuhvaća mnogo različitih istraživanja.
+Pitanje „Kako su se godišnja stopa HICP-a i saldo očekivanih promjena
+cijena kretali od 2015. do 2024.?” već određuje zemlju, vrijeme i dvije
+mjere. Iz njega možemo zamisliti prikaz i objasniti što će čitatelj saznati.
 
-U temi 1.1 svatko odabire pitanje o određenom razdoblju ili obrascu.
-Cijeli skup ostaje dostupan za usporedbu. Odabrano pitanje vodi plan,
-graf i završni odlomak.
+> U učitanom skupu imamo 120 mjeseci za Hrvatsku, godišnju stopu HICP-a
+> i saldo očekivanih promjena cijena. Predloži tri opisna pitanja koja
+> možemo istražiti tim podacima. Za svako objasni što bismo saznali i
+> koji bi prikaz pomogao odgovoriti. Zatim mi postavi jedno pitanje
+> koje će mi pomoći odabrati temu.
 
-### Kako jezični model oblikuje odgovor
+Usporedite prijedloge prema tome što vas u njima zanima. Pitanje o 2022.
+godini usmjerava pogled na naglu promjenu, dok usporedba dvaju petogodišnjih
+razdoblja otvara pitanje stabilnosti odnosa. Oba izbora mogu biti korisna.
+Obrazložite zašto vaš izbor zaslužuje pažnju i što bi odgovor dodao
+početnom opisu. Ako još ne možete objasniti njegovu svrhu, nastavite
+razgovor o pitanju prije naručivanja dodatnih rezultata.
 
-Jezični model tijekom učenja prepoznaje obrasce u podacima. Kada mu
-postavite pitanje, koristi ono što je naučio i sadržaj razgovora kako
-bi sastavio odgovor. Tekst dijeli na manje jedinice koje se zovu tokeni.
-Token može biti dio riječi, cijela riječ ili znak. Broj tokena ovisi
-o jeziku i načinu dijeljenja teksta. Za hrvatski provjerite broj tokena
-na hrvatskom primjeru.
+Pitanje se može promijeniti nakon prvog grafa. To je dio istraživanja:
+uočeni obrazac otvara novu mogućnost. U razgovoru razjasnite je li riječ
+o prvotnoj zamisli ili o ideji potaknutoj onim što ste upravo vidjeli.
+Tako razlikujete istraživanje mogućnosti od zasebnog ispitivanja hipoteze.
 
-Model procjenjuje koji bi tokeni mogli slijediti nakon već napisanog
-teksta. To se može zapisati kao
-$P(t_k \mid t_1, \ldots, t_{k-1}; \theta)$. Oznaka `t_k` predstavlja
-sljedeći token, a grčko slovo theta ono što je model naučio tijekom treniranja.
-Model bira sljedeći token prema procijenjenim vjerojatnostima i
-postavkama sustava. Izbor može uključiti slučajnost. Točnost nastale
-tvrdnje provjeravamo zasebno, čitanjem izvora ili ponavljanjem izračuna.
+### Kako razgovaramo s modelom
 
-Model brzo predlaže formulacije na temelju naučenih obrazaca.
-Aplikacija s pristupom alatima može i otvoriti dokument, pretražiti web
-ili izvršiti kod.
-Provjerite na čemu se odgovor temelji. Model može pisati iz onoga što je
-naučio, koristiti otvorene izvore ili navesti rezultat pokrenutog koda.
-Za tvrdnju iz literature tražite izvor, a za broj podatke i izračun.
+Jezični model oblikuje odgovor koristeći naučene obrasce i sadržaj koji
+mu je dostupan u razgovoru. Tekst obrađuje u manjim jedinicama, tokenima,
+i postupno sastavlja nastavak. Aplikacija mu može omogućiti i korištenje
+alata, primjerice pretraživanje, čitanje dokumenta ili izvođenje izračuna.
+Zbog toga je korisno jasno reći kada tražite ideju, kada objašnjenje
+pročitanog izvora, a kada račun iz učitane tablice.
 
-Kontekstni prozor određuje koliko sadržaja model može obraditi u pojedinom
-koraku. Aplikacija može sažeti ranije poruke ili odabrati dijelove
-učitanih dokumenata koje će koristiti u odgovoru. Zato navedite datoteku, odjeljak
-ili tablicu na koju se pitanje odnosi.
+Kontekst je sadržaj na koji se model u tom trenutku može osloniti.
+U dugom razgovoru raniji dijelovi mogu biti sažeti ili izostavljeni.
+Prije novog zadatka kratko ponovite pitanje i važnu odluku, primjerice
+da analizirate cijelo desetljeće ili da saldo izražavate u bodovima.
+To je dovoljno da nastavak ostane povezan s onim što želite istražiti.
 
-Postavka temperature, ako je možete mijenjati, utječe na to koliko
-je izbor sljedećeg tokena raznolik. Za provjeru odgovora otvorite citirani izvor ili ponovite izračun.
-Prikaz plana i objašnjenja koristite za praćenje predloženih koraka.
+Za ovu radionicu odaberite dostupan alat koji može čitati datoteke i
+izvršavati analizu. Korisnost procijenite na vlastitom zadatku: pomaže li
+vam oblikovati pitanje, razumjeti prikaz i objasniti nalaz? Razgovor
+s kolegama može biti jednako vrijedan kada treba odlučiti je li pitanje
+zanimljivo ili koje bi ga alternativno objašnjenje promijenilo.
 
-### Tri vrste uvjerljive pogreške
+### Brzina i razumijevanje
 
-Izmišljena referenca može sadržavati stvarno prezime autora, uvjerljiv
-naslov i nepostojeći DOI. Ako je citat sastavljen uredno, lakše ga je
-zamijeniti s provjerenim izvorom. Postojanje rada provjerite kod izdavača
-ili u bibliografskoj bazi, a zatim pročitajte dio koji navodno podupire tvrdnju.
+AI može proizvesti nove rezultate brže nego što ih stignemo razumjeti.
+Goldsmith-Pinkham taj zaostatak naziva
+[dugom provjere](https://paulgp.substack.com/p/integration-and-collaboration-in).
+Na radionici ga možemo prepoznati kada već imamo nekoliko tablica,
+a još ne znamo objasniti što sažima prva. Tada je korisnije zadržati
+se na jednom nalazu i razjasniti njegov smisao.
 
-Pogrešno protumačen broj može potjecati iz stvarne tablice. Primjerice,
-vrijednost salda očekivanja 40 izražena je u bodovima salda.
-Tumačite je prema pravilima izračuna anketnog pokazatelja. Uz račun provjerite
-i što broj zapravo mjeri.
-
-Kod koji radi pogrešnu stvar može se izvršiti bez upozorenja. Spajanje
-dviju tablica prema rednom broju retka umjesto prema mjesecu može povezati
-različite datume. Automatsko uklanjanje praznina može promijeniti uzorak.
-Zato uz izlaznu tablicu provjeravamo ulaz, broj opažanja i pravilo obrade.
-
-Za vježbu uzmite pripremljenu
-tvrdnju „pozitivna korelacija dokazuje da očekivanja uzrokuju inflaciju” i
-usporedite je s onim što izračun doista pokazuje. Time vježbate istu vještinu
-čak i kada model ponudi besprijekoran odgovor. Namjerno pogrešan primjer
-treba jasno označiti, kako ga netko ne bi kasnije preuzeo kao nalaz.
-
-### Birajte mogućnost, a zatim alat
-
-Za prvo upoznavanje teme koristan je sustav koji pretražuje izvore i daje
-poveznice. Za usporedbu više pročitanih radova koristan je rad s dokumentima.
-Za izračun je potrebno okruženje koje izvršava kod i omogućuje njegov izvoz.
-Za uređivanje teksta potrebni su jasni komentari i mogućnost usporedbe
-verzija. Jedan proizvod može pokrivati nekoliko tih potreba.
-
-Službena dokumentacija sada opisuje pretraživanje i istraživačke postupke
-u više aplikacija, uključujući [ChatGPT](https://learn.chatgpt.com/docs/web-search),
-[Gemini](https://support.google.com/gemini/answer/15719111?hl=en) i
-[Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects).
-Pristup ovisi o računu, planu i postavkama ustanove. Prije uporabe
-provjerite funkciju koja vas zanima, njezinu cijenu i ograničenja
-uporabe.
-
-Za usporedbu dvaju dostupnih alata pripremite isti mali zadatak, isti
-odlomak, tri ista izvora i isto pitanje. Usporedite točnost, mogućnost provjere izvora,
-razumljivost i vrijeme potrebno za provjeru. Prednost dajte odgovoru čije tvrdnje možete potvrditi u navedenim izvorima. Ako alat ne može otvoriti izvor, bilješka
-„nemam pristup punom tekstu” korisnija je od uvjerljivog nagađanja.
-
-### Za dulji projekt / korisne bilješke
-
-Uz važnu tvrdnju sačuvajte izvor i mjesto na kojem je objašnjena.
-Kad vam AI pomogne, zabilježite koristan prijedlog i kako ste ga provjerili.
-To može biti nekoliko rečenica koje će vam kasnije pomoći obnoviti postupak.
-
-Primjerice, „AI je predložio oznake osi. Usporedio/la sam ih s rječnikom
-podataka i promijenio/la oznaku očekivanja iz postotka u saldo.”
-[Predložak bilješke](../materials/templates/ai-use-log.md) može poslužiti
-kao podsjetnik.
-
-Za radionicu koristimo javne podatke za cijelu zemlju. Osobne podatke i
-povjerljive materijale čuvajte u okruženju prikladnom za njihovu obradu.
-
-### Ako želite nastaviti
-
-Napišite jedno pitanje o inflaciji i unaprijed odredite što bi bio provjerljiv
-odgovor. Zatim zatražite prijedlog od dostupnog asistenta. Posebno označite tvrdnje koje trebaju izvor, prijedloge postupka
-i pitanja na koja još nema odgovora. Provjerite jednu tvrdnju u izvornom
-dokumentu i jednu brojku u podacima. Na kraju vlastitim riječima objasnite
-što vam je model olakšao i koju ste odluku ipak morali donijeti sami.
+Usporedite vrijeme potrebno da dobijete prvi graf s vremenom potrebnim
+da o njemu napišete jasnu rečenicu. Razlika pokazuje koji dio rada
+alat olakšava, a kojem još trebate posvetiti pažnju. Upravo se kroz
+takve odluke razvija istraživačka prosudba.

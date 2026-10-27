@@ -42,7 +42,7 @@ Podaci su spremljeni 26. listopada 2026.
 
 {{< include ../activities/_21.qmd >}}
 
-## 2.2 Dopunite i objasnite kod {#v22}
+## 2.2 Izradite i objasnite prikaze {#v22}
 
 {{< include ../activities/_22.qmd >}}
 

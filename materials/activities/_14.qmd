@@ -15,7 +15,9 @@ dvije mjere s različitim jedinicama prikazujemo odvojeno.
 **Isprobajte.** Prilagodite plan svojem pitanju iz teme 1.1. Odaberite
 razdoblje, graf i usporedbu koji mu odgovaraju. Možete, primjerice,
 usredotočiti graf na 2020.–2024. ili usporediti ranijih i kasnijih pet godina.
-U razgovoru objasnite jedan izbor i jednu granicu svojeg zaključka.
+Objasnite zašto biste jedan predloženi korak zadržali, a drugi
+promijenili ili izostavili. Razmotrite što bi jednostavniji plan izgubio.
 
-Pitanje i plan ostaju u istom AI razgovoru. Drugi dan iz tog plana
-izrađujemo analizu.
+U istom AI razgovoru zatražite kratak sažetak odabranog pitanja, prikaza
+i usporedbe. Drugi dan iz tog plana izrađujemo analizu. Ako se sesija
+prekine, uz isti CSV ponovno navedite pitanje i odabranu usporedbu.

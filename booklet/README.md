@@ -1,5 +1,8 @@
 # Extended reader / editorial and build notes
 
+The latest content revision is documented in the final section below;
+earlier sections record the successive editorial history.
+
 This is an edited reading edition of the original two workshop days, not
 an unchanged historical facsimile. The source is commit
 `d942375f366e5c2aba7081b346b0cc3cb27a1c08`, `slides/day1.qmd` and
@@ -101,3 +104,28 @@ plan and execute descriptive analysis, compare periods and write about
 150 words supported by a graph and checked numbers. The shared chapter
 openers match the day pages and exercises. Desktop R, project folders,
 separate logs and advanced methods remain optional further reading.
+
+
+## Research discussion and instructions without code, 27 October 2026
+
+This revision supersedes the longer reader and its optional IDE, notebook,
+R-code and project-management passages described above. Both parts now
+use natural-language instructions and prompts throughout. Repeated source
+checklists, project-note boxes and continuation closers were removed.
+The eight-topic sequence, frozen Croatian data and numerical distinctions
+remain. Chapter 2.2 is now "Izradite i objasnite prikaze" everywhere.
+
+Goldsmith-Pinkham's primary essays and demonstrations are integrated where
+they explain a research decision: execution costs and judgment, verification
+debt, complementary stages, data meaning, choosing a display, and writing
+to understand. They are identified as arguments or demonstrations, not
+causal evidence of learning gains. A six-item annotated reading list is
+available in materials/sources.qmd. The media-text extension is a proposed
+new project, not a result from the frozen two-series dataset.
+
+The live activities and instructor guide follow the same approach. Students
+explain an expected result, interpret a display and justify a choice.
+Writing starts with their own draft, followed by AI comments and their own
+revision, with language assistance available afterwards. Reader openers
+summarize these activities; detailed prompts remain on the day pages.
+Reference scripts stay in the repository, separate from the reading text.

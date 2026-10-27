@@ -4,138 +4,92 @@
 
 ### Primjer iz radionice
 
-**Razgovor.** Koji graf i usporedba odgovaraju našem pitanju?
+**Razgovor.** Koji prikaz i usporedba odgovaraju našem pitanju?
 
-**Primjer.** Zatražimo plan u četiri koraka. Pregledamo podatke, izradimo
-dva vremenska grafa i godišnje sažetke, usporedimo razdoblja i napišemo
-zaključak. Svaki korak povežemo s onim što želimo saznati.
+**Primjer.** Predložimo slijed: upoznati podatke, prikazati dvije serije,
+sažeti ih po godinama, usporediti razdoblja i objasniti nalaz.
 
-**Isprobajte.** Prilagodite plan svojem pitanju iz teme 1.1. Odaberite
-razdoblje, prikaz i usporedbu. Objasnite jedan izbor i granicu svojeg
-zaključka. Plan ostaje u istom razgovoru za drugi dan.
+**Isprobajte.** Prilagodite plan svojem pitanju. Objasnite zašto biste
+zadržali jedan predloženi korak, a drugi promijenili ili izostavili.
 
-### Povežite izvore u obrazloženje
+### Plan kao razgovor o izborima
 
-Nakon pretrage imate izvore, provjerene tvrdnje i otvorena pitanja.
-Sada treba odlučiti kojim ćete ih redoslijedom objasniti čitatelju
-i kako se zajedno odnose na vaše istraživačko pitanje.
+Plan analize povezuje ono što želimo saznati s onim što ćemo napraviti.
+Ako pitamo kada su mjere najviše rasle, važan je vremenski prikaz.
+Ako pitamo koliko se njihov odnos razlikuje između dvaju razdoblja,
+trebamo usporedive sažetke za oba razdoblja. Svaki korak ima svrhu
+koju možemo objasniti prije nego što vidimo rezultat.
 
-Claudeu možete dati vlastite materijale i zatražiti prijedlog strukture
-te komentare na nejasna mjesta. Isti zadatak možete proći s kolegom
-ili drugim dostupnim asistentom. U oba slučaja trebate jasno objasniti
-što istražujete i kakvu pomoć tražite.
+AI može predložiti nekoliko putova kroz isto pitanje. Korisno je
+zatražiti obrazloženje izbora: zašto ovaj graf, zašto ovo razdoblje
+i što dodatni izračun donosi? Tako dobijemo razgovor o istraživanju
+koji možemo voditi i s kolegom. Odgovor modela otvara mogućnosti,
+a prihvaćeni plan izražava našu odluku o smjeru rada.
 
-Kao u razgovoru s mentorom, navedite pitanje, raspoložive podatke i
-mjesto na kojem ste zapeli. Razlika je u tome što odgovor
-modela morate provjeriti i kada zvuči kao siguran stručni savjet.
+> Želim opisati kako se odnos godišnje stope HICP-a i salda očekivanih
+> promjena cijena razlikuje između 2015.–2019. i 2020.–2024.
+> Predloži kratak plan koristeći učitane podatke. Za svaki korak
+> objasni što ćemo saznati. Ponudi jednu jednostavniju varijantu
+> plana i reci što bismo njome izgubili.
 
-### Pripremite materijale prije razgovora
+Pri usporedbi planova pitajte donosi li svaki novi izlaz novu informaciju.
+Deset sličnih grafova može otežati izbor glavnog nalaza. Dva pažljivo
+odabrana prikaza mogu otvoriti jasniju raspravu. Opseg prilagodite
+pitanju i vremenu koje imate za tumačenje.
 
-Provjerene bilješke držite odvojeno od vlastitih pretpostavki i
-otvorenih pitanja. Uz izvor navedite naziv datoteke i mjesto relevantnog
-odlomka. Uz broj navedite jedinicu, razdoblje i skriptu ili tablicu iz koje
-potječe. Ako je rečenica samo radna ideja, označite je tako da model ne bi
-ugradio pretpostavku u nacrt kao već potvrđen nalaz.
+### Dijelovi istraživanja ovise jedni o drugima
 
-Claude [Projects](https://support.claude.com/en/articles/9517075-what-are-projects)
-omogućuje organiziranje materijala i projektnih uputa. Dokumentacija
-[projektnog dohvaćanja](https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects)
-opisuje korištenje relevantnih dijelova datoteka kada sadržaj nadilazi
-raspoloživi kontekst. Odgovor se tada oslanja na odabrane dijelove projektnih dokumenata. Za ključnu tvrdnju navedite točan dokument
-i zatražite mjesto na kojem se temelji odgovor.
+Goldsmith-Pinkham u tekstu
+[AI and the Research O-Ring](https://paulgp.substack.com/p/ai-and-the-research-o-ring)
+koristi ekonomsku analogiju komplementarnih koraka: slabost jednog
+dijela može ograničiti vrijednost cjeline. To nije procijenjeni zakon
+o uspješnosti svakog istraživanja, nego način da razumijemo zašto
+izvrsna izvedba pojedinog zadatka ponekad ne rješava glavni problem.
 
-U projektnim uputama zatražite da alat piše hrvatski, razlikuje podatke
-od pretpostavki i označi gdje nema dokaza. Zatražite da navodi izvore koje je otvorio.
-Takve upute usmjeravaju odgovor u razgovoru. Svaki prihvaćeni
-prijedlog zatim provjerite prema svojim izvorima i podacima. Korisnije su provjerljive granice od
-dugog opisa zamišljene osobnosti stručnjaka.
+U našem primjeru pogrešno razumijevanje salda utjecalo bi na oznaku
+osi, usporedbu s HICP-om i tekst zaključka. Račun može biti točan,
+a tumačenje i dalje pogrešno. Zato planiranje uključuje razgovor
+o mjerama i pitanju, a kasniji rezultati mogu nas vratiti na te odluke.
 
-### Pet načela za koristan upit
+To objašnjava i zašto istraživački rad nije potpuno linearan. Graf
+može pokazati da se odnos mijenja kroz vrijeme, pa početno pitanje
+o prosječnom odnosu postaje pitanje o razlikama među razdobljima.
+Takav povratak na pitanje može poboljšati istraživanje. Važno je
+moći ispričati kako smo do novog pitanja došli.
 
-1\. Dajte kontekst i jasno zaduženje. Objasnite što radite i gdje trebate pomoć. Upit može glasiti ovako.
+### Zadajte izvediv korak
 
-> Pripremam kratki izvještaj o ostvarenoj inflaciji i saldu
-> očekivanih promjena cijena u Hrvatskoj od 2015. do 2024. Imam 120
-> mjesečnih opažanja i tri provjerena izvora. Pomozi mi urediti plan
-> opisne analize. Nemam medijske podatke ni istraživački dizajn za
-> procjenu uzročnog učinka. Najprije navedi nejasnoće u mom planu.
+Dobro zaduženje govori što želimo dobiti i koje izbore još razmatramo.
+Za početak zatražite jedan prikaz ili jednu usporedbu. Nakon što
+razumijete rezultat, lakše ćete odrediti sljedeći korak. Ako alat
+predloži novu metodu, pitajte koje pitanje ona rješava i kakve podatke
+zahtijeva. Metodu biramo prema tome što želimo ustanoviti.
 
-Uputa „budi kritički recenzent” određuje vrstu komentara koju tražite.
-Njihovu stručnu utemeljenost provjeravate vi. Kontekst,
-materijali i kriteriji provjere čine glavninu korisne upute.
+> Za početak prikaži obje mjere kroz svih 120 mjeseci u odvojenim
+> panelima sa zajedničkom vremenskom osi. Objasni što se iz takva
+> prikaza može vidjeti. Zatim predloži jednu usporedbu koja bi
+> pomogla odgovoriti na moje pitanje o razdobljima.
 
-2\. Odredite format i opseg. Za nacrt zatražite odjeljke i kratko objašnjenje njihove svrhe. Ako želite usporedbu izvora, zatražite teme, slaganja, razlike i
-ograničenja. Evo jednog primjera upita.
+Ako je prijedlog preširok, suzite ga običnim jezikom: „Zadržimo se
+na usporedbi razdoblja” ili „Objasni najprije kako bi se čitao taj
+prikaz”. Ako odgovor pretpostavlja medijske podatke koje nemamo,
+razdvojite zadatak koji je sada izvediv od zamisli za novi projekt.
 
-> Predloži pet odjeljaka, pitanje, podaci, postupak, rezultati i ograničenja.
-> Za svaki napiši svrhu, dokaz koji je potreban i pitanje na koje još
-> moram odgovoriti. Nalaze napiši nakon što ti pošaljem izlaz analize.
+Ponavljajuće zadatke s vremenom možete zadavati na sličan način.
+Goldsmith-Pinkham takve postupke razmatra kroz
+[ponovno upotrebljive upute, odnosno skills](https://paulgp.substack.com/p/skills-specifying-how-an-agent-should).
+Za radionicu je dovoljan obrazac koji vam pomaže jasno naručiti
+prikaz ili komentar. Njegovu vrijednost pokazuje rezultat rada;
+sama spremljena uputa ne jamči da će zadatak svaki put biti dobro izveden.
 
-3\. Dajte primjer željenog rezultata. Jedan dobro napisan odlomak ili
-jedan dovršen dokazni zapis često je korisniji od mnoštva stilskih
-pridjeva. Primjer mora sadržavati istinite podatke ili jasno označena
-mjesta za unos. U suprotnom će se i pogreška iz primjera proširiti na ostatak.
+### Povežite prvi i drugi dan
 
-4\. Zatražite procjenu metode. Upit koji traži opravdanje već odabrane
-Newey-West korekcije usmjerava odgovor prema potvrdi vašeg izbora.
-Pitajte čemu metoda služi, koje pretpostavke zahtijeva i što treba zasebno provjeriti. Jednako vrijedi za pitanje o istraživačkoj praznini.
-Neka model razlikuje prazninu u vašim bilješkama od tvrdnje da nešto nitko
-još nije istražio.
+Na kraju prvog dana svatko ukratko predstavi pitanje, odabrani prikaz
+i usporedbu koju želi napraviti. Kolega može pitati zašto je baš ta
+usporedba korisna ili predložiti jednostavniji put. Taj razgovor
+često razjasni dio plana koji je u razgovoru s AI-jem ostao neodređen.
 
-5\. Poboljšavajte pojedinačne dijelove. Nakon prvog nacrta izaberite
-jedan problem. „Objasni kako se računa i tumači saldo” preciznije je
-od „učini tekst akademskijim”. Sačuvajte verzije i odbacite prijedlog koji
-mijenja značenje. Svaku novu verziju usporedite s prethodnom prema jasnoći i točnosti.
-
-### Dodatno čitanje / razrada plana za dulji rad
-
-U prvom koraku prikupite bilješke. Za naš primjer možete zapisati sljedeće.
-„Imam mjesečni HICP, godišnju stopu promjene. Imam kvalitativni saldo
-očekivanja. Podaci pokrivaju Hrvatsku 2015.–2024. Želim usporediti
-kretanja. Nisam siguran/na kako opisati odnos.” Uključite definicije iz
-rječnika uz nazive stupaca.
-
-U drugom koraku pitajte što nedostaje u planu.
-
-> Razdvoji što već mogu istražiti ovim podacima, što trebam dodatno
-> provjeriti u metodologiji i što zahtijeva nove podatke. Za svaku
-> preporuku objasni vezu s mojim pitanjem. Analizu ograniči na priložene varijable.
-
-Koristan odgovor može upozoriti na različite jedinice i vremenski horizont
-ankete. Prijedlog da analizirate medijski sentiment zahtijeva novu zbirku tekstova,
-pravilo mjerenja i provjeru kvalitete. Za taj posao treba zasebno planirati vrijeme i podatke.
-
-U trećem koraku odredite redoslijed argumenta. Najprije objasnite pitanje
-i mjere, zatim provjeru podataka, vizualni prikaz i sažetke, a na kraju
-interpretaciju i ograničenja. Uz svaki odjeljak napišite što ćete u njemu objasniti.
-U odjeljku o metodama navedite što ćete izračunati i kako.
-
-U četvrtom koraku popravite najslabije mjesto. Ako nacrt zaključuje da
-mediji oblikuju očekivanja, vratite ga na ono što podaci sadrže. Ako
-predviđa regresiju zato što rad „mora biti ozbiljan”, pitajte na koje
-pitanje ta regresija odgovara. Opisna analiza može dati koristan odgovor kada su pitanje,
-mjere i granice zaključka jasno objašnjeni.
-
-### Kako povezati hipotezu s analizom
-
-Model može predložiti hipotezu, pa i originalnu ideju. Vi provjeravate
-je li jasno postavljena, povezana s teorijom i mjerljiva dostupnim
-podacima te odlučujete vrijedi li je istražiti.
-
-Ako vam ideja za hipotezu dođe nakon gledanja grafa, zapišite to.
-Opišite je kao ideju nastalu tijekom pregleda podataka. Za provjeru prognoze
-unaprijed odredite što predviđate, koliko unaprijed i na kojem ćete
-razdoblju provjeriti točnost. Za zaključak o uzroku morate objasniti
-kako ćete razlikovati učinak koji vas zanima od drugih mogućih objašnjenja.
-
-Za kritiku izvora možete zatražiti procjenu jasnoće pitanja, podataka,
-metode i granica zaključka. Ako modelu dajete samo sažetak, neka i komentar
-bude ograničen na sažetak. Za procjenu pojedinosti modela pročitajte
-metodološki odjeljak rada.
-
-### Plan za sljedeći korak
-
-U radionici plan ostaje u AI razgovoru uz učitani CSV. Drugi dan iz njega
-izrađujemo prikaze i usporedbe. Uz svaki graf i tablicu objasnite kako
-pomažu odgovoriti na pitanje. Za dulji projekt možete kasnije dodati
-zaseban opis podataka, izvora i odluka.
+U istom AI razgovoru zatražite kratak sažetak dogovorenog smjera.
+Sažetak služi kao početak drugog dana. Ako se sesija prekine, uz
+isti CSV ponovno navedite pitanje i odabranu usporedbu. Time možete
+nastaviti rad i u drugom dostupnom alatu.

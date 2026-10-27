@@ -1,25 +1,23 @@
-**Razgovor.** Što bismo provjerili prije nego što od ovih podataka
-zatražimo graf ili izračun?
+**Razgovor.** Što predstavlja jedan redak naše tablice i kako iz njega
+čitamo dvije mjere?
 
-**Primjer.** Nastavite u razgovoru s učitanim CSV-om. Zatražite početni pregled.
+**Primjer.** Nastavite u razgovoru s učitanim CSV-om i zatražite početni pregled.
 
-> Učitaj priloženi CSV i prikaži prvih i posljednjih pet redaka.
-> Navedi broj redaka, nazive stupaca i raspon mjeseci. Objasni što
-> predstavlja jedan redak te jedinice stupaca hicp_yoy_pct i expectations_balance.
-> Koristi stvarni sadržaj datoteke.
-
-Usporedite prikaz sa svih 120 mjeseci na ovoj stranici. Jedan redak je
-jedan mjesec u Hrvatskoj. Prvi je 2015-01, a posljednji 2024-12.
-U CSV-u su i šifre jedinica te oznake statusa podataka.
-
-**Isprobajte.** Zatražite provjeru potpunosti tablice.
-
-> Provjeri jesu li mjeseci jedinstveni i uzastopni od 2015-01 do 2024-12.
-> Prikaži broj nedostajućih vrijednosti u hicp_yoy_pct i expectations_balance.
+> Upoznaj me s učitanom tablicom. Opiši što predstavlja jedan redak,
+> koliko mjeseci obuhvaća i koje dvije mjere analiziramo. Prikaži prvih
+> i posljednjih pet redaka. Reci jesu li mjeseci jedinstveni i uzastopni
+> te postoje li praznine u hicp_yoy_pct i expectations_balance.
 > Prazne oznake hicp_flag i expectations_flag znače da dodatni status
-> nije naveden. Sačuvaj sva opažanja i pokaži kod koji si izvršio.
+> nije naveden. Prikaži rezultate i objašnjenje bez programskog koda.
 
-Pogledajte nalaz i objasnite bi li podaci bili spremni za analizu.
-Očekujemo **120 različitih uzastopnih mjeseci**, **0 duplikata** i
-**0 praznina u dvjema brojčanim serijama**. Usporedite nekoliko prikazanih
-redaka s tablicom na stranici, uključujući neki koji nije na početku.
+Očekujemo **120 različitih uzastopnih mjeseci**, od **2015-01 do 2024-12**,
+**0 duplikata** i **0 praznina u dvjema brojčanim serijama**. Jedan redak
+predstavlja mjesec u Hrvatskoj. Usporedite prikaz s tablicom na ovoj stranici.
+
+**Isprobajte.** Odaberite jedan mjesec, primjerice ožujak 2022. Najprije
+pokušajte objasniti obje vrijednosti vlastitim riječima, a zatim zatražite
+AI objašnjenje. Na koje se vrijeme odnosi HICP, a na koje anketno pitanje?
+Što biste o tom mjesecu htjeli saznati gledajući okolne mjesece?
+
+Prije sljedeće teme recite koliko redaka očekujete u godišnjoj tablici
+i koliko mjeseci treba ući u svaki godišnji prosjek.

@@ -1,26 +1,25 @@
-**Razgovor.** Kako prikazati dvije mjere da možemo usporediti njihovo
-kretanje i pritom jasno vidjeti njihove jedinice?
+**Razgovor.** Kako prikazati dvije mjere da se njihovo kretanje može usporediti?
 
-**Primjer.** Zatražite analizu učitanog skupa.
+**Primjer.** Iz učitanog CSV-a zatražite grafove i godišnju tablicu.
 
 > Iz našeg CSV-a izradi dva vremenska grafa jedan iznad drugoga, sa
 > zajedničkom osi mjeseci od 2015-01 do 2024-12. Na prvom prikaži
-> hicp_yoy_pct u postocima, a na drugom expectations_balance u bodovima salda.
-> Zatim napravi godišnju tablicu s prosjekom svake mjere i brojem mjeseci.
-> Svaka godina treba imati 12 mjeseci. Prosjek HICP-a nazovi prosjekom
-> mjesečnih godišnjih stopa. Pokreni kod i prikaži grafove, tablicu i kod
-> ovdje u razgovoru. Uz rezultate navedi Eurostat i DG ECFIN te datum
-> preuzimanja podataka 26. listopada 2026.
+> hicp_yoy_pct u postocima, a na drugom expectations_balance u bodovima
+> salda. Zatim napravi godišnju tablicu s prosjekom svake mjere i brojem
+> mjeseci. Prosjek HICP-a nazovi prosjekom mjesečnih godišnjih stopa.
+> Prikaži grafove i tablicu bez programskog koda. Uz rezultate navedi
+> Eurostat i DG ECFIN te datum preuzimanja podataka 26. listopada 2026.
 
-Pogledajte razdoblja rasta i pada. Otvorite dio koda koji grupira podatke
-po godini i zatražite njegovo objašnjenje. Provjerite oznake osi i broj
-mjeseci u godišnjoj tablici.
+Najprije pogledajte graf bez AI-jeva objašnjenja. Odaberite promjenu
+koju biste pokazali kolegi. Zatim usporedite svoje opažanje s AI opisom.
+Što saznajemo iz mjesečnog grafa, a što iz godišnje tablice?
 
-**Isprobajte.** Prilagodite prikaz svojem pitanju. Primjerice, zatražite
-grafove samo za 2020.–2024., s jasno označenim godinama. Zadržite cijeli
-učitani skup za kasnije usporedbe. Pogledajte koji se dio koda promijenio
-i objasnite jedan obrazac koji se sada lakše vidi.
+**Isprobajte.** Prilagodite prikaz svojem pitanju, primjerice izdvojite
+2020.–2024. Prije izmjene recite što očekujete da će biti lakše vidjeti.
+Zadržite cijeli učitani skup za kasnije usporedbe. Nakon izmjene objasnite
+jedan jasniji obrazac i koji se kontekst gubi izostavljanjem ranijih godina.
 
-U godišnjoj tablici za 2022. očekujemo **10,63 %** za prosjek mjesečnih
-godišnjih stopa HICP-a i **46,62 boda** za prosjek salda, uz **12 mjeseci**.
-To su dvije različite mjere. Svaku čitamo u njezinoj jedinici.
+Svaki godišnji prosjek obuhvaća **12 mjeseci**. Za 2021. očekujemo
+**2,68 %** za HICP i **28,26 bodova** za saldo, a za 2022. **10,63 %**
+i **46,62 boda**. Prosjek mjesečnih godišnjih stopa razlikuje se od
+godišnje promjene prosjeka indeksa cijena, koja se računa iz razina indeksa.

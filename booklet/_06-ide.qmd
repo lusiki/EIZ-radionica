@@ -1,166 +1,96 @@
-## 2.2 Dopunite i objasnite kod {#poglavlje-22}
+## 2.2 Izradite i objasnite prikaze {#poglavlje-22}
 
 [Dan 2, tema 2.2](../slides/day2.qmd#blok-22) · [Vježba 2.2](../materials/exercises/index.qmd#v22)
 
 ### Primjer iz radionice
 
-**Razgovor.** Kako usporediti dvije mjere i jasno prikazati njihove različite jedinice?
+**Razgovor.** Kako prikazati dvije mjere da se njihovo kretanje može usporediti?
 
-**Primjer.** AI izvrši kod koji izrađuje dva vremenska grafa sa zajedničkom
-osi mjeseci i godišnju tablicu prosjeka. Pregledamo dio koda za grupiranje
-po godini, oznake osi i broj mjeseci. Svaka godina ima 12 opažanja.
-Za 2022. dobivamo približno 10,63 % za prosjek mjesečnih godišnjih stopa
-HICP-a i 46,62 boda za prosjek salda.
+**Primjer.** Zatražimo dva vremenska grafa sa zajedničkom osi mjeseci
+i godišnju tablicu prosjeka. Objasnimo što saznajemo iz grafa, a što
+iz tablice.
 
 **Isprobajte.** Prilagodite prikaz svojem pitanju, primjerice izdvojite
-2020.–2024. Zadržite cijeli učitani skup za kasnije usporedbe. Objasnite
-promjenu koda i obrazac koji je sada lakše uočiti. Graf, tablica i kod
-ostaju u istom AI razgovoru.
+2020.–2024. Objasnite koji se obrazac sada lakše vidi i zašto.
 
-### Od upita do izvršene analize
+### Naručite prikaz koji odgovara pitanju
 
-U razgovornom alatu tražimo da učita CSV, pokrene kod i prikaže rezultat.
-Tako možemo pratiti vezu između upita, postupka i dobivenog grafa.
-Pogledajte dio koda koji bira mjesece ili grupira retke po godini.
-Zatražite objašnjenje i usporedite ga s tablicom rezultata.
+Graf je način istraživanja: odabirom prikaza određujemo koji će odnos
+postati vidljiv. Za pitanje o kretanju kroz vrijeme želimo zadržati
+redoslijed mjeseci. Za usporedbu godina koristan je sažetak, dok nam
+raspodjela vrijednosti govori nešto drugo. Prije oblikovanja navedite
+što želite da čitatelj primijeti.
 
-Ako kasnije radite u razvojnom okruženju, odnosno IDE-u, editor, konzola
-i prikaz rezultata dostupni su na jednom mjestu. Iste provjere vrijede
-za analizu u pregledniku i za taj način rada.
+Naše dvije serije imaju različite jedinice. Prikazat ćemo ih u dva
+panela, jedan iznad drugoga, sa zajedničkom vremenskom osi. Tako
+možemo usporediti trenutke promjene uz zasebnu skalu svake mjere.
 
-Asistent je ovdje poput pomoćnika koji vam dodaje alat dok radite.
-Pročitajte njegov prijedlog prije prihvaćanja i pregledajte rezultat
-nakon izvršavanja. Ako ne znate što funkcija
-radi, tražite objašnjenje na malom primjeru i usporedite ga s dokumentacijom.
+> Iz učitanog CSV-a izradi dva vremenska grafa za 2015.–2024., jedan
+> iznad drugoga, sa zajedničkom osi mjeseci. Na prvom prikaži godišnju
+> stopu HICP-a u postocima, a na drugom saldo očekivanih promjena
+> cijena u bodovima. Dodaj jasne naslove i izvore Eurostat i DG ECFIN,
+> s datumom preuzimanja 26. listopada 2026. Prikaži grafove i kratko
+> objasni njihov sadržaj, bez programskog koda.
 
-### Za daljnji rad / izbor okruženja
+Najprije pogledajte graf bez AI-jeva objašnjenja. Odaberite promjenu
+koju biste pokazali drugoj osobi. Je li riječ o razdoblju rasta,
+naglom vrhuncu ili vremenu u kojem se dvije serije kreću drukčije?
+Zatim usporedite svoje opažanje s ponuđenim opisom. Različit izbor
+naglaska može otvoriti korisnu raspravu o pitanju.
 
-RStudio i Positron mogu poslužiti za daljnji rad s kodom. RStudio ima
-[dokumentiranu integraciju Copilota](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html),
-pa Copilot možete koristiti i u tom okruženju. RStudio razdvaja rad sučelja i R sesije. Pri izboru editora
-provjerite njegove mogućnosti, a istraživačku metodu birajte prema pitanju
-i podacima.
+### Što dobivamo godišnjom tablicom
 
-Positron je okruženje za rad s R-om i Pythonom. Njegova
-[dokumentacija proširenja](https://positron.posit.co/extensions.html)
-objašnjava način instalacije i ograničenja kompatibilnosti. Za svako proširenje iz VS Codea provjerite podršku u Positronu. Za rad s punim projektom
-korisni su otvaranje mape, odabir R-a, čitanje skripte, izvršavanje i pregled izlaza. AI dodatak ostaje izborna pomoć.
+Mjesečni graf čuva dinamiku, a godišnji prosjek daje pregled na višoj
+vremenskoj razini. Tablica može olakšati usporedbu 2021. i 2022., ali
+ne pokazuje u kojem se mjesecu promjena dogodila. Zato ta dva prikaza
+koristimo zajedno.
 
-Prema
-[Positovoj dokumentaciji](https://positron.posit.co/assistant), Posit Assistant
-od verzije Positrona 2026.07 zamjenjuje prethodni Positron Assistant i
-Databot. Stare upute o sučelju mogu se odnositi na stariji proizvod.
-Provjerite instaliranu verziju i odgovarajuće upute. Dostupne modele, naredbe i dozvole provjerite u svojoj instalaciji.
+> Napravi tablicu godišnjih prosjeka za obje mjere. Uz svaku godinu
+> navedi broj mjeseci koji ulaze u prosjek. Prosjek HICP-a nazovi
+> prosjekom mjesečnih godišnjih stopa, a saldo izrazi u bodovima.
+> Prikaži dvije decimale. Zatim usporedi 2021. i 2022. i objasni
+> što je godišnje sažimanje sakrilo u odnosu na mjesečni graf.
 
-Odaberite okruženje u kojem znate otvoriti projekt, pregledati kod
-i pronaći spremljene rezultate. Provjerite možete li sve pokrenuti
-od početka. U svakom okruženju ostaju iste provjere podataka i postupka. Valjanost analize procijenite prema podacima i primijenjenoj metodi.
+Za 2021. prosjek mjesečnih godišnjih stopa HICP-a iznosi približno
+2,68 %, a prosjek salda 28,26 bodova. Za 2022. odgovarajuće su vrijednosti
+10,63 % i 46,62 boda. Svaki prosjek obuhvaća dvanaest mjeseci.
+Godišnji prosjek stopa u ovoj tablici treba razlikovati od godišnje
+promjene prosjeka samog indeksa cijena. Tu drugu veličinu računali
+bismo iz razina indeksa.
 
-### Tri vrste pomoći koje treba razlikovati
+Razgovarajte o tome koliko bi se zaključak promijenio kada biste
+vidjeli samo godišnju tablicu. Možete prepoznati veliku razliku među
+godinama, ali za opis nastanka i trajanja promjene treba pogledati
+mjesece. Isti podaci dopuštaju različite korisne sažetke.
 
-Dopunjavanje koda predlaže nastavak retka na mjestu gdje pišete.
-Pomaže pri ponavljanju sličnih naredbi i pisanju malih funkcija. Provjerite nazive stupaca, argumente
-i smjer filtra. Kod koji se pokrene bez pogreške može koristiti
-varijablu iz nekog drugog projekta ili pretpostaviti pogrešnu jedinicu.
+### Promijenite jednu stvar i objasnite učinak
 
-Razgovor o kodu služi objašnjenjima i usmjerenim pitanjima. Umjesto
-„popravi sve” navedite poruku o pogrešci, relevantan dio skripte i
-očekivani rezultat. Tražite objašnjenje uzroka, a zatim najmanju promjenu
-koja ga rješava. Pročitajte i upozorenja koja prate uspješno prikazan graf.
+Za vlastiti pokušaj odaberite jednu promjenu prikaza. Možete izdvojiti
+kasnije razdoblje, jasnije označiti godine ili prilagoditi naslov
+pitanju koje postavljate. Prije izmjene recite što očekujete da će
+biti lakše vidjeti. Nakon nje usporedite prikaze.
 
-Uređivanje i agentsko izvršavanje mogu zahvatiti više datoteka.
-Njihova dostupnost ovisi o proizvodu i integraciji. Pregled izmjena,
-dopuštenja i izvršenih naredbi važniji je od opće etikete „IDE” ili
-„agent”. Terminalski alat može omogućiti detaljnu provjeru, a pomoćnik
-u editoru može izvoditi opsežne radnje.
+> Izradi dodatnu verziju grafova samo za 2020.–2024. Zadrži iste
+> definicije mjera. Cijeli izvorni skup ostaje dostupan za kasniju
+> usporedbu. Objasni što uži vremenski prikaz ističe i koji se
+> kontekst gubi izostavljanjem ranijih godina.
 
-### Dodatni primjer / cijeli skup u R-u
+Izdvojeni prikaz obuhvaća 60 mjeseci. Može olakšati čitanje promjene,
+ali izbor početka i kraja utječe na dojam. Ako uspoređujete nekoliko
+grafova iste mjere, razgovarajte i o rasponu okomite osi. Jednaka
+skala olakšava procjenu veličine razlika između prikaza.
 
-Otvorite korijen preuzetog projekta. Sljedeći mali primjer koristi
-osnovni R i iste podatke kao službene skripte. Svrha mu je pokazati
-što čitate i provjeravate pri radu s cijelim skupom. Taj prošireni postupak
-nalazi se u datotekama u mapi `code`.
+### Izvedba koja ostavlja prostor za razmišljanje
 
-```r
-d <- read.csv("data/processed/croatia_inflation.csv")
-stopifnot(nrow(d) == 120L, !anyDuplicated(d$month))
-str(d)
-head(d)
-```
+Goldsmith-Pinkhamova demonstracija
+[From an Empty Folder to a Figure](https://paulgp.substack.com/p/from-an-empty-folder-to-a-figure)
+pokazuje kako AI može pomoći da početna ideja brzo dobije oblik grafa.
+To je prikaz mogućeg načina rada, a ne procjena vremena potrebnog
+svakom početniku. U našoj su radionici podaci već pripremljeni,
+pa pažnju možemo usmjeriti na izbor prikaza i njegovo tumačenje.
 
-Pitajte asistenta što provjerava `stopifnot`, a što još ne provjerava.
-Primjer potvrđuje broj redaka i jedinstvenost mjeseca. Zasebno
-provjerite potpunost kalendara i definicije varijabli. Usporedite ga s opsežnijom provjerom
-u projektu. Dobro objašnjenje navodi i ograničenje vlastitog koda.
-
-Zatim izračunajte jednostavan sažetak.
-
-```r
-summary(d[c("hicp_yoy_pct", "expectations_balance")])
-colSums(is.na(d))
-```
-
-U ovoj tablici prazna polja `hicp_flag` i `expectations_flag` znače da
-nema dodatne oznake statusa podatka. Brojčane vrijednosti inflacije i salda provjerite u njihovim stupcima. Zato popis iz `colSums` čitajte zajedno s rječnikom
-podataka. Automatsko uklanjanje svakog retka koji ima bilo koje prazno
-polje uklonilo bi i valjana opažanja.
-
-Zahtjev „napravi profesionalnu tablicu” prerano usmjerava pažnju na izgled.
-Prvo provjerite mjere, broj opažanja i nedostajuće vrijednosti. Naknadno
-možete urediti naslove i broj decimala. U svakom stupcu zadržite jednu jasno definiranu mjeru i jedinicu.
-
-Za godišnji prosjek napišite pravilo prije koda, grupiramo prema godini,
-očekujemo dvanaest mjeseci i računamo prosjek mjesečnih godišnjih stopa.
-Taj prosjek sažima dvanaest mjesečnih godišnjih stopa. Asistent neka
-objasni svaki argument i provjeri `n_months` prije sažimanja.
-
-Za vizualizaciju zatražite dva panela sa zajedničkom osi vremena, jasnim
-jedinicama i izvorom. Ispravite oznaku ako piše „očekivana inflacija (%)”.
-U našem slučaju odgovarajuća je oznaka „saldo očekivanih promjena cijena”.
-Navedite i da HICP predstavlja godišnju stopu promjene, kako čitatelj ne
-bi pretpostavio mjesečnu promjenu.
-
-### Objasnite promjenu prikaza
-
-Za prikaz 2020.–2024. kod bira 60 mjeseci. Ostale mjesece čuvamo u
-izvornom skupu jer nam trebaju za usporedbu razdoblja. Pogledajte odabir
-datuma u izmijenjenom kodu i usporedite ga s rasponom osi na grafu.
-Objasnite što je na tom prikazu lakše uočiti i što se vidi tek u cijelom nizu.
-
-### Kako pronaći uzrok pogreške
-
-Kada kod ne radi, prvo pročitajte poruku i utvrdite u kojem koraku nastaje
-problem. Nedostajuća datoteka često je problem radnog direktorija.
-Nepostojeći stupac može značiti pogrešno ime ili drukčiji način učitavanja.
-Nazive stupaca usporedite s rječnikom podataka prije preimenovanja.
-
-Koristan upit glasi.
-
-> Ova naredba javlja sljedeću pogrešku, [poruka]. Radim iz korijena
-> projekta, a ulazna datoteka ima ove nazive stupaca, [nazivi]. Objasni
-> vjerojatan uzrok i predloži najmanju izmjenu. Sačuvaj definicije
-> varijabli i sva opažanja.
-
-Provjerite rješenje u čistoj sesiji. Objekt koji je ostao od ranijeg
-pokretanja može prikriti nedostajući korak. Spremite skriptu, ponovno
-pokrenite R i izvodite je od početka. Taj postupak vrijedi i u RStudiju
-i u Positronu. Koristite ga u okruženju u kojem radite.
-
-### Dodatno čitanje / priprema za naprednu analizu
-
-Proširenje s Hrvatske na više zemalja traži usklađene definicije, obuhvat
-i datume. Tek tada ima smisla razmatrati panel pristup. Izbor fiksnih ili
-slučajnih efekata ne treba svesti na automatsko pravilo temeljeno na jednoj
-p-vrijednosti. Način uzorkovanja, pretpostavke o neopaženim razlikama i
-struktura zavisnosti određuju koje su procjene i standardne pogreške
-prikladne.
-
-Takva analiza traži prikladne podatke i poznavanje panel-modela.
-Možete joj se vratiti nakon što upoznate osnovni postupak. Za početak
-isprobajte malu izmjenu koda i pogledajte što ona mijenja.
-
-### Ako želite nastaviti
-
-U R-u možete ponoviti analizu koju ste izveli u razgovoru. Početna
-skripta u paketu koristi isti skup. Usporedite broj mjeseci, godišnje
-prosjeke i grafove te objasnite dijelove koda koji ih stvaraju.
+Na kraju pokažite kolegi jedan graf i objasnite zašto ste ga odabrali.
+Zamolite ga da kaže što prvo primjećuje. Ako se njegov dojam razlikuje
+od onoga što ste željeli prikazati, promijenite naslov, objašnjenje
+ili sam prikaz. Takav razgovor pokazuje koliko je graf uspio prenijeti
+istraživačku ideju.

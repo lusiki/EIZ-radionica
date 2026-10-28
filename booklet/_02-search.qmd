@@ -47,12 +47,12 @@ tada će biti bliži pitanju koje pokušavate postaviti.
 
 ### Što pretraga nije mogla pročitati
 
-U dodatku [What can be read](https://www.lukasikic.info/ai/supplements/coverage)
-Šikić razlikuje zapis o radu od dostupnosti njegova punog teksta.
-Njegova je zbirka odabrani pregled, ali otvara važno pitanje za svaku
-pretragu: utječe li dostupnost na sliku literature koju dobivamo?
-Lako dostupan vodič može zauzeti više mjesta u AI sažetku od rada
-kojemu alat vidi samo naslov.
+Zapis o radu može sadržavati naslov, autore i sažetak, dok puni tekst
+ostaje nedostupan. Pri pretrazi zato pitajte utječe li dostupnost
+na sliku literature koju dobivate. Usporedite koliko prostora AI
+odgovor daje otvorenom vodiču, a koliko radu kojemu vidi samo naslov.
+Što biste o tom radu još trebali pročitati prije usporedbe njihovih
+argumenata?
 
 Odaberite jedan važan rad i potražite autorsku verziju ili pristup
 preko knjižnice. Zatim usporedite što ste o njemu znali prije i nakon

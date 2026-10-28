@@ -55,8 +55,7 @@ s njihovim radom. Tablica služi kao podsjetnik tijekom vođenja.
 | [2.3 Ponavljanje](../booklet/day2.qmd#poglavlje-23) | Je li provjera otkrila namjernu pogrešku i prihvatila točne vrijednosti? | Pokus izvedite na kopiji tablice. Razlikujte komentar od ponovnog izračuna i vratite ispravan rezultat. |
 | [2.4 Zaključak](../booklet/day2.qmd#poglavlje-24) | Što sada možete objasniti bez razgovora s alatom? | Postavite novo pitanje uz isti graf. Nalaz o kratkim zadacima učenja ne prenosite automatski na dugoročno učenje ekonomije. |
 
-Poveznice na pregled *How Economics Absorbed AI*, njegove dodatke i
-izvorna istraživanja nalaze se uz odlomke i na
+Poveznice na izvorna istraživanja nalaze se uz odlomke i na
 [stranici izvora](../materials/sources.qmd#kako-ekonomija-koristi-ai).
 
 ## Ako netko zapne {#pomoć-tijekom-rada}

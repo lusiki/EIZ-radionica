@@ -79,12 +79,11 @@ skala olakšava procjenu veličine razlika između prikaza.
 
 ### Udio čega?
 
-Šikićev [opis metode](https://www.lukasikic.info/ai/supplements/method)
-pokazuje kako širenje zbirke može promijeniti udjele u njoj. To je
-koristan primjer za čitanje grafova. Zamislite da prikupljate medijske
-tekstove o inflaciji. Njihov broj može rasti, a udio padati ako ukupan
-broj prikupljenih tekstova raste još brže. Promjena može nastati i
-zato što ste uključili novi portal.
+Zamislite da prikupljate medijske tekstove o inflaciji. Njihov broj
+može rasti, a udio padati ako ukupan broj prikupljenih tekstova raste
+još brže. Promjena može nastati i zato što ste uključili novi portal.
+Prije tumačenja grafa razjasnite prati li promjenu izvještavanja u
+istim izvorima ili promjenu zbirke koju analizirate.
 
 Za takav graf pitajte: zanima li nas količina izvještavanja ili mjesto
 inflacije među svim temama? Uz udio treba znati što ulazi u nazivnik.

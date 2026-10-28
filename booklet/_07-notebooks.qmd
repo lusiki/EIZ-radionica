@@ -79,12 +79,11 @@ omogućila zaključiti i zašto su njezine pretpostavke ovdje uvjerljive?
 
 ### Kako provjeriti provjeru
 
-U [skici modela provjere](https://www.lukasikic.info/ai/supplements/model)
-Šikić razmatra i pogreške onoga tko provjerava tuđi rad. To je teorijsko
-polazište, a ne procjena pouzdanosti pojedinog alata. Na radionici ga
-možemo pretvoriti u mali pokus. U kopiji tablice namjerno promijenite
-jedan godišnji prosjek, ostavite druge vrijednosti točnima i zatražite
-provjeru prema izvornom CSV-u.
+Provjeru možete isprobati na rezultatu kojemu poznajete točnu
+vrijednost. U kopiji tablice namjerno promijenite jedan godišnji
+prosjek, ostavite druge vrijednosti točnima i zatražite provjeru
+prema izvornom CSV-u. Tako unaprijed znate što bi trebalo ispraviti
+i koje bi vrijednosti trebale ostati iste.
 
 Je li alat pronašao pogrešku? Je li točan rezultat proglasio pogrešnim?
 Pogledajte je li ponovno izračunao vrijednosti ili samo komentirao

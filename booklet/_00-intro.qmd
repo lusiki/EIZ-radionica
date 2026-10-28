@@ -34,5 +34,5 @@ Odabrani tekstovi nalaze se na
 [kratkom popisu za čitanje](../materials/sources.qmd#ai-istrazivanje).
 
 Autor izvornih materijala je Luka Šikić, UNICATH. Izdanje je revidirano
-27. listopada 2026. Podrijetlo podataka i referentni rezultati opisani
+28. listopada 2026. Podrijetlo podataka i referentni rezultati opisani
 su u priloženim materijalima radionice.

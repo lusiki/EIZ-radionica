@@ -36,12 +36,10 @@ istraživanje koje može razlikovati moguća objašnjenja.
 
 ### Što poznavanje teme donosi pitanju
 
-Luka Šikić u pregledu
-[How Economics Absorbed AI](https://www.lukasikic.info/ai/)
-ističe vrijednost poznavanja određenog područja, jezika i izvora podataka.
-To može biti polazište i za vaš izbor teme. U hrvatskom primjeru
-poznavanje lokalnih rasprava o cijenama može vas navesti na pitanje
-koje općeniti upit o inflaciji ne bi otvorio.
+Pri izboru teme krenite i od onoga što već poznajete: određenog
+područja, jezika ili izvora podataka. U hrvatskom primjeru poznavanje
+lokalnih rasprava o cijenama može vas navesti na pitanje koje općeniti
+upit o inflaciji ne bi otvorio.
 
 Recite koju biste okolnost izdvojili nekome tko slabo poznaje Hrvatsku.
 Što biste zbog nje željeli istražiti? Potom razjasnite imamo li u tablici

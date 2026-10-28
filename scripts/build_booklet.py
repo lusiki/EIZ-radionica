@@ -134,7 +134,7 @@ class Cover(Flowable):
         c.drawString(0, h-258, "Prošireni tekst obaju dana radionice")
         c.setFont("Jost", 11)
         c.drawString(0, h-284, "Izvorni materijal / Luka Šikić, UNICATH")
-        c.drawString(0, h-302, "Revidirano izdanje / 27. listopada 2026.")
+        c.drawString(0, h-302, "Revidirano izdanje / 28. listopada 2026.")
         # Zvono geometry: baseline, dome, disc and vertical axis.
         x, y, radius = w-118, 126, 100
         c.setFillColor(NAVY)
@@ -177,7 +177,7 @@ class ReaderDoc(BaseDocTemplate):
         c.drawString(self.leftMargin, A4[1]-15*mm, "EIZ / ISTRAŽIVANJE UZ AI")
         c.setLineWidth(.5)
         c.line(self.leftMargin, A4[1]-18*mm, A4[0]-self.rightMargin, A4[1]-18*mm)
-        c.drawString(self.leftMargin, 13*mm, "Izdanje / 27. listopada 2026.")
+        c.drawString(self.leftMargin, 13*mm, "Izdanje / 28. listopada 2026.")
         c.drawRightString(A4[0]-self.rightMargin, 13*mm, str(doc.page))
         c.restoreState()
 
@@ -271,7 +271,7 @@ def build():
     doc.multiBuild(story)
     sources = [INTRO, *CHAPTERS]
     manifest = {
-        "revision": "2026-10-27", "pdf": OUT.name,
+        "revision": "2026-10-28", "pdf": OUT.name,
         "source_files": {str(p.relative_to(ROOT)).replace("\\", "/"):
                          hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},
         "word_count": len(re.findall(r"\S+", manuscript)),

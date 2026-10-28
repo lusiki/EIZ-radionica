@@ -94,3 +94,15 @@ use ordinary prose without code. The full PDF was rendered for visual
 review, and the HTML was checked at desktop and mobile widths. The release
 check covers local links and anchors, frozen numerical results, fonts and
 portable ZIP entries. The data and reference computations are unchanged.
+
+## Citation correction, 28 October 2026
+
+The corrected reader has 6,202 source words and 20 pages. All 216 source
+blocks, 35 linked targets, 11 bookmarks, page bounds, hashes and numerical
+examples pass. The six self-attributions and all links to the background
+reading map and its supplements are absent from the reader, source list,
+instructor page and search index. The author credit remains.
+
+The PDF pages were rendered and visually reviewed. Desktop and mobile
+browser checks and the 15-page release check pass. Existing prompts and
+all other source links are retained. No data or analysis changes were made.

@@ -141,8 +141,8 @@ unchanged. The rebuilt edition has 5,426 source words and 19 pages.
 ## Short discussion extensions, 27 October 2026
 
 The following extension retains that prose pass and adds one short section
-to each of the eight steps, using Luka Šikić's How Economics Absorbed AI,
-its supplements, and two linked primary studies. The additions cover local
+to each of the eight steps, drawing on discussions of research with AI
+and two linked primary studies. The additions cover local
 knowledge, source access, forecasts, portable plans, LLM measurement,
 denominators, testing a checker, and independent understanding. Classroom
 applications are distinguished from findings. The collection is not treated
@@ -153,3 +153,12 @@ The instructor page supplies eight matching discussion prompts. Sources
 are linked beside the new passages and on the sources page. Existing
 activity prompts, numerical examples and the eight-step structure remain.
 The extended edition has 6,221 source words and 20 pages.
+
+## Citation correction, 28 October 2026
+
+The background reading map is not a cited authority in the handbook.
+Six discussion passages now present ordinary teaching guidance without
+self-citations. Its bibliography entries and instructor-guide reference
+were removed. Direct links to the two primary studies remain, as does
+the original material's author credit. Further substantive replacements
+are proposed separately for review rather than added in this correction.

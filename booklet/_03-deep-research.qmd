@@ -51,11 +51,11 @@ toga bude nešto dulji.
 
 ### Kad sažetak govori o budućnosti
 
-Šikićev [pregled predviđanja](https://www.lukasikic.info/ai/supplements/predictions)
-uz očekivani događaj navodi rok, procjenu vjerojatnosti i uvjete po kojima
-će se kasnije ocijeniti. Takav zapis pomaže sačuvati razliku između
-onoga što se dogodilo i onoga što autor očekuje. Navedena vjerojatnost
-izražava procjenu autora, a nije izmjeren udio događaja.
+Kad autor iznosi predviđanje, potražite događaj koji očekuje, rok i
+uvjete po kojima će se kasnije ocijeniti. Ako navodi vjerojatnost,
+pogledajte kako je do nje došao. Osobna procjena i procjena dobivena
+statističkim modelom imaju različitu osnovu. U sažetku sačuvajte tu
+osnovu i razliku između onoga što se dogodilo i onoga što se očekuje.
 
 Uzmite tvrdnju „AI će promijeniti istraživački rad” i pokušajte reći
 koju biste promjenu mogli opažati, kod koga i do kada. Koji bi nalaz

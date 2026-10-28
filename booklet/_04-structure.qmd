@@ -79,11 +79,10 @@ novim podacima i pitanju.
 
 ### Plan koji možete prenijeti u drugi alat
 
-U pregledu [How Economics Absorbed AI](https://www.lukasikic.info/ai/)
-Šikić predlaže da postupak opišemo odvojeno od proizvoda u kojem ga
-trenutačno izvodimo. Za našu analizu bitne su odluke o mjerama,
-razdoblju i usporedbi. Nazivi izbornika pomažu dok koristimo jednu
-aplikaciju, ali sami ne objašnjavaju analizu.
+Opišite postupak tako da ga možete izvesti i u drugoj aplikaciji.
+Za našu analizu bitne su odluke o mjerama, razdoblju i usporedbi.
+Nazivi izbornika pomažu dok koristimo jedan alat, ali sami ne
+objašnjavaju analizu.
 
 Pokušajte kolegi prenijeti plan bez spominjanja naziva alata. Može li
 iz njega razumjeti koje podatke treba, što treba napraviti i kako

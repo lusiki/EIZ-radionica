@@ -77,18 +77,24 @@ ali izbor početka i kraja utječe na dojam. Ako uspoređujete nekoliko
 grafova iste mjere, razgovarajte i o rasponu okomite osi. Jednaka
 skala olakšava procjenu veličine razlika između prikaza.
 
-### Udio čega?
+### Odluke skrivene u gotovom grafu
 
-Zamislite da prikupljate medijske tekstove o inflaciji. Njihov broj
-može rasti, a udio padati ako ukupan broj prikupljenih tekstova raste
-još brže. Promjena može nastati i zato što ste uključili novi portal.
-Prije tumačenja grafa razjasnite prati li promjenu izvještavanja u
-istim izvorima ili promjenu zbirke koju analizirate.
+Kad zatražite „najbolji graf”, alat mora odabrati što će prikazati,
+kako će sažeti podatke i koju će usporedbu istaknuti. Pogledajte
+koji je izbor napravio. U našem primjeru godišnji prosjek sažima
+dvanaest mjeseci, dok mjesečni prikaz čuva trenutak promjene.
+Naslov zatim usmjerava pažnju čitatelja na jedan obrazac.
 
-Za takav graf pitajte: zanima li nas količina izvještavanja ili mjesto
-inflacije među svim temama? Uz udio treba znati što ulazi u nazivnik.
-U našoj godišnjoj tablici srodno je pitanje koliko mjeseci ulazi u
-svaki prosjek. Jednaki stupci ne jamče da sažimaju jednak obuhvat.
+Za udjele treba razjasniti i nazivnik. Zamislite da prikupljate
+medijske tekstove o inflaciji. Njihov broj može rasti, a udio padati
+ako ukupan broj tekstova raste još brže. Uključivanje novog portala
+također može promijeniti sliku. Što graf tada opisuje: izvještavanje
+u istim izvorima ili promjenu obuhvata zbirke?
+
+Vratite se svojem prikazu. Objasnite jednu odluku koju je alat donio
+bez vašeg izričitog zahtjeva i predložite drugu mogućnost. Koja bolje
+odgovara vašem pitanju? Odabir obrazložite onime što čitatelj treba
+moći usporediti.
 
 ### Što graf govori čitatelju
 

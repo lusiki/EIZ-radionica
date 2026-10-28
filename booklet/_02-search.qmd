@@ -16,10 +16,8 @@ kretanju cijena i predložite naziv okomite osi grafa.
 
 ### Pretraživanje koje prati pitanje
 
-Pretraga o inflaciji vratit će vijesti, službene podatke i istraživačke
-radove. Vijest može upozoriti na zanimljivu promjenu, metodologija
-objasniti mjeru, a istraživački rad ponuditi i ispitati neko objašnjenje.
-Prije pretrage odredite što vam od toga nedostaje.
+Prije pretrage odredite što vam nedostaje: aktualan podatak,
+definicija mjere ili istraživanje mogućeg objašnjenja.
 
 AI pretraživanje može predložiti pojmove i sažeti pronađene izvore.
 Perplexity i slični alati mogu poslužiti za prvi pregled teme. Zatražite
@@ -45,19 +43,23 @@ suzite na ono što bi moglo oblikovati očekivanja: iskustvo kupnje,
 informacije iz medija ili povjerenje u institucije. Pronađeni radovi
 tada će biti bliži pitanju koje pokušavate postaviti.
 
-### Što pretraga nije mogla pročitati
+### Koji izvor služi kojem pitanju
 
-Zapis o radu može sadržavati naslov, autore i sažetak, dok puni tekst
-ostaje nedostupan. Pri pretrazi zato pitajte utječe li dostupnost
-na sliku literature koju dobivate. Usporedite koliko prostora AI
-odgovor daje otvorenom vodiču, a koliko radu kojemu vidi samo naslov.
-Što biste o tom radu još trebali pročitati prije usporedbe njihovih
-argumenata?
+Istraživački rad, praktični vodič i razgovor s istraživačem mogu biti
+korisni u različitim trenucima. U radu tražimo podatke i postupak koji
+podupiru nalaz. Vodič može pokazati kako izvesti postupak, a intervju
+otvoriti pitanje koje vrijedi dalje istražiti. Isti autor u razgovoru
+može iznijeti pretpostavku koju njegov rad još nije ispitao.
 
-Odaberite jedan važan rad i potražite autorsku verziju ili pristup
-preko knjižnice. Zatim usporedite što ste o njemu znali prije i nakon
-čitanja. Ako neki izvor nedostaje iz odgovora, to još ne znači da
-o toj temi nema istraživanja.
+Ako vas razgovor o cijenama navede na pitanje o ulozi medija, pronađite
+studiju na koju se govornik oslanja. Pogledajte što je doista usporedila.
+Za izradu prikaza zatim možete upotrijebiti vodič. Objasnite kolegi
+koji vam je izvor dao ideju, koji podupire tvrdnju, a koji pomaže
+izvesti analizu.
+
+Pritom razlikujte pronađen zapis od pročitanog rada. Ako alat vidi
+samo sažetak, potražite autorsku verziju ili pristup preko knjižnice.
+Izostanak rada iz AI odgovora još ne znači da istraživanje ne postoji.
 
 ### Što zapravo pitamo potrošače
 
@@ -91,10 +93,8 @@ tumačenja raziđu, ponovno pročitajte ponuđene kategorije odgovora.
 Članak Meylera i Reiche u
 [ECB Economic Bulletinu](https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202102_02~32e2ff1af1.en.html)
 pomaže razumjeti kvalitativne i kvantitativne mjere percepcija i
-očekivanja. Koristimo ga da objasnimo što mjerimo. Korelaciju za
-hrvatski primjer računamo iz svoje tablice. Kad navodite izvor,
-recite čemu vam služi: objašnjava li pojam, predlaže mogući uzrok
-ili donosi nalaz koji uspoređujete sa svojim?
+očekivanja. Njime objašnjavamo što mjerimo. Korelaciju za hrvatski
+primjer računamo iz svoje tablice.
 
 Ako dvije studije dolaze do različitih zaključaka, usporedite njihova
 pitanja i okolnosti. Jedna može ispitivati kratku informacijsku

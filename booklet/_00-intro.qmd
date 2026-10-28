@@ -25,13 +25,14 @@ i pišemo zaključak. Brojevi poglavlja odgovaraju temama na stranicama
 radionice. Na kraju ćete imati odabrani graf i kratak odgovor na svoje
 pitanje, spreman za razgovor s kolegom.
 
-Na nekoliko mjesta oslanjamo se na rasprave Paula Goldsmith-Pinkhama
-o AI-ju u istraživanju. Zanima nas što se mijenja kada je lakše provesti
-ideju, kako procijeniti dobiveni rezultat i zašto nam pisanje pomaže
-razmišljati. Njegove tekstove i demonstracije koristimo kao povod za
-raspravu. Njihove pouke treba procijeniti na vlastitom zadatku.
-Odabrani tekstovi nalaze se na
-[kratkom popisu za čitanje](../materials/sources.qmd#ai-istrazivanje).
+Uz pojedine korake povezujemo
+[tekstove i demonstracije Paula Goldsmith-Pinkhama](../materials/sources.qmd#ai-istrazivanje)
+s [istraživanjima o radu i učenju uz AI](../materials/sources.qmd#kako-ekonomija-koristi-ai).
+Zanima nas kako odabrati pitanje, prepoznati pogrešku u mjerenju,
+protumačiti rezultat i objasniti ga vlastitim riječima. Nalaze tih
+istraživanja povezujemo s našim primjerom i navodimo što je svako
+od njih stvarno ispitalo. Pitanja uz odlomke možete otvoriti u skupini
+ili ih upotrijebiti za samostalni pokušaj.
 
 Autor izvornih materijala je Luka Šikić, UNICATH. Izdanje je revidirano
 28. listopada 2026. Podrijetlo podataka i referentni rezultati opisani

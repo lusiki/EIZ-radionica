@@ -167,7 +167,7 @@ class ReaderDoc(BaseDocTemplate):
         self.outline_counter = 0
         self.canv.setTitle("Istraživanje uz AI - priručnik")
         self.canv.setAuthor("Izvorni materijal / Luka Šikić, UNICATH")
-        self.canv.setSubject("Izdanje 27.10.2026. / dokumentacija provjerena 26.10.2026.")
+        self.canv.setSubject("Izdanje 28.10.2026. / dokumentacija alata provjerena 26.10.2026.")
         self.canv.setCreator("EIZ booklet builder / ReportLab; shared Quarto chapter sources")
 
     def decorate(self, c, doc):

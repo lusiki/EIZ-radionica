@@ -106,3 +106,16 @@ instructor page and search index. The author credit remains.
 The PDF pages were rendered and visually reviewed. Desktop and mobile
 browser checks and the 15-page release check pass. Existing prompts and
 all other source links are retained. No data or analysis changes were made.
+
+## Primary-research discussion revision, 28 October 2026
+
+The reader contains 6,312 source words across 20 pages. All 222 source
+blocks, 41 linked targets, 11 bookmarks, page bounds, source hashes and
+numerical examples pass the PDF check. All eight proposed discussion
+changes are present. The original quoted prompts and links remain.
+
+The reader contains no code blocks, semicolons, self-citations or links to
+the background map. The PDF was rendered for visual review. Browser checks
+cover both reading parts and the instructor guide at desktop and mobile
+widths. The 15-page release check covers links, anchors, fonts, portable ZIP
+contents and independent verification of the unchanged numerical results.

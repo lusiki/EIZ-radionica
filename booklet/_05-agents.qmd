@@ -84,18 +84,23 @@ odabir koristimo samo za jasno određenu usporedbu ili prikaz.
 
 ### Kada AI stvara novu mjeru
 
-Ako bismo kasnije analizirali medijske tekstove, mogli bismo zatražiti
-da AI svaki članak označi prema tonu. Tada njegov odgovor postaje
-istraživačka varijabla. Ludwig, Mullainathan i Rambachan u radu
-[Large Language Models: An Applied Econometric Framework](https://www.nber.org/papers/w33344)
-objašnjavaju zašto takvo mjerenje treba usporediti s validacijskim
-uzorkom. Pogreške u oznakama mogu utjecati na kasnije procjene odnosa.
+Ako AI označi ton medijskih članaka, njegove oznake postaju podatak
+za daljnju analizu. Zamislite da svaku pojavu riječi „poskupljenje”
+protumači kao zabrinutost, pa tako označi i neutralne vijesti.
+Tada bismo mogli precijeniti zabrinut ton upravo u mjesecima kada
+se o cijenama više izvještava. Pogreška u oznaci može promijeniti
+i odnos koji kasnije procjenjujemo.
 
-Za početak odaberite nekoliko tekstova i dogovorite što biste nazvali
-zabrinutim tonom. Usporedite svoje oznake s AI oznakama i razgovarajte
-o neslaganjima. Tih nekoliko primjera služi učenju, a za istraživanje
-treba osmisliti zaseban validacijski uzorak i uzeti pogreške u obzir.
-To bi bio novi projekt. U našem CSV-u takvih oznaka nema.
+Ludwig, Mullainathan i Rambachan u radu
+[Large Language Models: An Applied Econometric Framework](https://www.nber.org/papers/w33344)
+objašnjavaju kako validacijski uzorak omogućuje procjenu pogrešaka
+AI mjerenja i njihovo uzimanje u obzir u daljnjoj analizi.
+
+Za vježbu usporedite nekoliko vlastitih oznaka s AI oznakama.
+Razgovarajte o neslaganju: je li kategorija nejasna ili je model
+pogrešno protumačio tekst? Za istraživanje treba odabrati zaseban
+validacijski uzorak i procijeniti kako pogreške utječu na nalaz.
+To bi bio novi projekt. U našem CSV-u medijskih oznaka nema.
 
 ### Koliko posla prepustiti asistentu
 

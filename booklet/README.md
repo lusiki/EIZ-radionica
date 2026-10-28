@@ -162,3 +162,23 @@ self-citations. Its bibliography entries and instructor-guide reference
 were removed. Direct links to the two primary studies remain, as does
 the original material's author credit. Further substantive replacements
 are proposed separately for review rather than added in this correction.
+
+## Primary-research discussion revision, 28 October 2026
+
+The approved eight-step proposal is now implemented in the reader. Each
+earlier extension has been revised around a research decision or a short
+classroom comparison. The new material covers choosing a worthwhile
+question, using sources for different purposes, interpreting fixed numbers
+under different prompts, delegation, measurement error, graph choices,
+reproduction versus justification, and independent understanding.
+
+Specific findings link directly to Li, Alizadeh and colleagues, Korinek,
+Ludwig and colleagues, Xu and Yang, Toda, and Liu and colleagues. The text
+states relevant limits of AI scoring, particular model/task experiments,
+four-paper theory checking, and short learning tasks. The background map
+is not cited. The instructor's eight prompts and the source list match the
+reader. Original copyable prompts, frozen data and numerical examples remain.
+
+Overlapping explanations were shortened to avoid sparse overflow pages.
+The revised reader has 6,312 source words and 20 pages, with unchanged
+typography and chapter structure. PDF metadata now matches the edition date.

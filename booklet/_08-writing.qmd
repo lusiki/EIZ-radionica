@@ -90,18 +90,20 @@ promijenili i zašto.
 
 ### Što ostaje kad zatvorite razgovor
 
-Liu i suradnici u eksperimentima s razlomcima i razumijevanjem pročitanog
-nalaze slabiji samostalan učinak nakon uklanjanja AI pomoći nego u
-kontrolnoj skupini. Njihov rad
+Dovršen tekst pokazuje što smo proizveli. Razumijevanje možemo
+isprobati novim pitanjem. Liu i suradnici u radu
 [AI Assistance Reduces Persistence and Hurts Independent Performance](https://ai-project-website.github.io/AI-assistance-reduces-persistence/)
-ne ispituje pisanje ekonomskih radova ni dugoročno učenje. Ipak, daje
-povod da razdvojimo dovršen zadatak od onoga što smo naučili.
+nalaze slabiji samostalan učinak nakon uklanjanja AI pomoći nego u
+kontrolnoj skupini. Ispitivali su kratke zadatke s razlomcima i
+razumijevanjem pročitanog. Ti rezultati ne daju izravnu procjenu
+dugoročnog učenja ekonomije.
 
 Zatvorite razgovor i uz svoj graf objasnite zašto ste odabrali baš
-tu usporedbu. Zatim odgovorite na novo pitanje kolege, primjerice
-što bi se izgubilo prikazom samo godišnjih prosjeka. Ako zapnete,
-vratite se objašnjenju ili zatražite malu pomoć prije gotovog odgovora.
-Koji biste dio analize sada mogli sami objasniti u novom zadatku?
+tu usporedbu. Neka kolega postavi novo pitanje, primjerice što bi
+se izgubilo prikazom samo godišnjih prosjeka. Pokušajte odgovoriti
+vlastitim riječima, pa se vratite dijelu koji vam je ostao nejasan.
+Za njega zatražite objašnjenje ili mali trag i ponovno pokušajte.
+Što biste sada znali napraviti u sličnom zadatku s drugim podacima?
 
 ### Od zaključka do sljedećeg pitanja
 

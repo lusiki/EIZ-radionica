@@ -54,14 +54,35 @@ Njihove primjene u našem hrvatskom primjeru nastavne su prilagodbe.
 
 ## Kako ekonomija koristi AI {#kako-ekonomija-koristi-ai}
 
-Ova istraživanja otvaraju pitanja o mjerenju i učenju uz AI.
-Čitamo ih izravno kod autora ili izdavača i povezujemo s primjerima
-iz radionice.
+Ovi radovi i vodiči otvaraju pitanja o izboru ideje, tumačenju,
+delegiranju, mjerenju, ponavljanju analize i učenju. Čitamo ih
+izravno kod autora ili izdavača. Primjeri s hrvatskim podacima
+nastavne su prilagodbe.
 
+- Ning Li (2026),
+  [The Ideation Bottleneck](https://arxiv.org/abs/2604.03338).
+  Za korak 1.1 razlikujemo kvalitetu ideje i izvedbe. Radna verzija
+  koristi AI ocjenjivanje, što treba uzeti u obzir pri čitanju nalaza.
+- Meysam Alizadeh i suradnici (2026),
+  [AI Coding Agents in Social Science](https://arxiv.org/abs/2606.11456).
+  Korak 1.3 povezuje tumačenje s formulacijom zahtjeva. Radna verzija
+  opisuje rezultate određenog zadatka, modela i uputa.
+- Anton Korinek (2025),
+  [AI Agents for Economic Research](https://www.nber.org/papers/w34202).
+  Vodič o planiranju i izvođenju povezanih zadataka. U koraku 1.4
+  razgovaramo o delegiranju i odlukama koje trebamo obrazložiti.
 - Jens Ludwig, Sendhil Mullainathan i Ashesh Rambachan,
   [Large Language Models: An Applied Econometric Framework](https://www.nber.org/papers/w33344).
   Za korak 2.1 važna je uloga validacijskog uzorka kada AI stvara
   mjeru koja se koristi u daljnjoj analizi.
+- Yiqing Xu i Leo Yang Yang (2026),
+  [Scaling Reproducibility](https://arxiv.org/abs/2602.16733).
+  U koraku 2.3 razlikujemo ponovno izvršavanje analize i usporedbu
+  rezultata od procjene opravdanosti zaključka. Poveznica vodi na radnu verziju.
+- Alexis Akira Toda (2026),
+  [Can AI Refute Economic Theory?](https://arxiv.org/abs/2606.05383).
+  Radna verzija opisuje provjeru četiriju teorijskih radova s poznatim
+  pogreškama. U koraku 2.3 razgovaramo o ulozi ljudskog usmjeravanja.
 - Grace Liu i suradnici,
   [AI Assistance Reduces Persistence and Hurts Independent Performance](https://ai-project-website.github.io/AI-assistance-reduces-persistence/).
   Eksperimenti s aritmetikom i razumijevanjem pročitanog potiču
@@ -85,6 +106,6 @@ iz radionice.
 [Positron proširenja](https://positron.posit.co/extensions.html) ·
 [CLASSLA](https://github.com/clarinsi/classla).
 
-Izvori za nove rasprave pregledani su 27. listopada 2026.
+Izvori za nove rasprave pregledani su 28. listopada 2026.
 Dokumentacija alata provjerena je 26. listopada 2026. Dostupnost funkcija i
 uvjeti pristupa mogu se promijeniti. Za izvođenje analize koristite razgovor s podrškom za CSV i izvršavanje koda. Pripremljeni rezultati služe usporedbi i radu kad taj pristup nije dostupan.

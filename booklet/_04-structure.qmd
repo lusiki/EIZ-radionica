@@ -77,17 +77,24 @@ Na radionici to može biti jednostavan upit za izradu prikaza ili
 komentar na tekst. Pri ponovnoj uporabi provjerite odgovara li uputa
 novim podacima i pitanju.
 
-### Plan koji možete prenijeti u drugi alat
+### Što delegiramo, a o čemu odlučujemo
 
-Opišite postupak tako da ga možete izvesti i u drugoj aplikaciji.
-Za našu analizu bitne su odluke o mjerama, razdoblju i usporedbi.
-Nazivi izbornika pomažu dok koristimo jedan alat, ali sami ne
-objašnjavaju analizu.
+Anton Korinek u vodiču
+[AI Agents for Economic Research](https://www.nber.org/papers/w34202)
+opisuje sustave koji mogu planirati, koristiti alate i povezati više
+istraživačkih koraka. To otvara mogućnost da im prepustimo dulji
+zadatak. Prije toga treba razjasniti odluke koje će tijekom rada
+morati donositi.
 
-Pokušajte kolegi prenijeti plan bez spominjanja naziva alata. Može li
-iz njega razumjeti koje podatke treba, što treba napraviti i kako
-će izgledati rezultat? Dio koji ostane nejasan dopunite prije rada.
-Takav plan možete upotrijebiti i nakon promjene aplikacije.
+Za godišnju tablicu možemo zatražiti izračun prosjeka i izradu prikaza.
+Mi trebamo objasniti zašto uspoređujemo određene godine i što taj
+prosjek znači. Ako se pojavi praznina u podacima, odluka o njezinu
+popunjavanju može promijeniti rezultat. U tom slučaju zatražite
+objašnjenje mogućnosti prije nastavka.
+
+Prođite svoj plan s kolegom. Koji korak možete odmah povjeriti alatu,
+a prije kojega treba donijeti odluku? Opišite je običnim jezikom.
+Takav dogovor ostaje koristan i kada prijeđete u drugu aplikaciju.
 
 ### Povežite prvi i drugi dan
 

@@ -26,11 +26,9 @@ pitalo, kako je provedeno i što je ustanovilo. Ne mora ponoviti sve
 pojedinosti. Mora zadržati one bez kojih bi nalaz dobio drukčije
 značenje, primjerice na koga se odnosi ili što ostaje neobjašnjeno.
 
-Primjerice, „dvije mjere u istom mjesecu pozitivno su povezane” i
-„potrošači su uspješno predvidjeli inflaciju” govore o različitim
-odnosima. Druga tvrdnja zahtijeva povezivanje ranijih očekivanja
-s odgovarajućim kasnijim ishodom. Ako taj korak izostavimo iz sažetka,
-čitatelj može steći dojam da je provedena analiza koju zapravo nemamo.
+Tvrdnja „potrošači su uspješno predvidjeli inflaciju” zahtijeva
+povezivanje ranijih očekivanja s odgovarajućim kasnijim ishodom.
+Povezanost dviju mjera iz istog mjeseca sama to ne pokazuje.
 
 Goldsmith-Pinkham u prijedlogu
 [LLM-Friendly Academic Papers](https://paulgp.com/2026/03/10/llms-txt-for-academic-papers.html)
@@ -44,24 +42,30 @@ dobiva oba dijela objašnjenja na istome mjestu.
 > možemo zaključiti. Zatim navedi jednu važnu pojedinost koju si
 > izostavio zbog kratkoće i zašto.
 
-Usporedite izvorni odlomak sa sažetkom. Je li kraća verzija jasnija?
-Je li izostavljena pojedinost koja mijenja smisao? Zadržite ono što
-vašoj publici treba da bi razumjela nalaz, čak i ako sažetak zbog
-toga bude nešto dulji.
+Usporedite odlomak sa sažetkom. Je li kraći tekst jasniji i je li
+izostavljeno nešto što mijenja smisao? Vratite pojedinost koja
+čitatelju treba da bi razumio nalaz.
 
-### Kad sažetak govori o budućnosti
+### Iste brojke, drukčiji zaključak
 
-Kad autor iznosi predviđanje, potražite događaj koji očekuje, rok i
-uvjete po kojima će se kasnije ocijeniti. Ako navodi vjerojatnost,
-pogledajte kako je do nje došao. Osobna procjena i procjena dobivena
-statističkim modelom imaju različitu osnovu. U sažetku sačuvajte tu
-osnovu i razliku između onoga što se dogodilo i onoga što se očekuje.
+Točne brojke mogu pratiti prejak zaključak. Alizadeh i suradnici u radu
+[AI Coding Agents in Social Science](https://arxiv.org/abs/2606.11456)
+pokazuju kako je u jednom istraživačkom zadatku zahtjev za potvrđivanjem
+hipoteze promijenio zaključke alata Claude Code, uz uglavnom nepromijenjenu
+raspodjelu procijenjenih koeficijenata. Rezultat upozorava na tumačenje,
+a njegov opseg ovisi o ispitanom zadatku, modelu i uputama.
 
-Uzmite tvrdnju „AI će promijeniti istraživački rad” i pokušajte reći
-koju biste promjenu mogli opažati, kod koga i do kada. Koji bi nalaz
-govorio protiv vašeg očekivanja? U sažetku tu rečenicu predstavite
-kao predviđanje. Jednako tako, rast salda očekivanja u našoj tablici
-još nije nalaz o tome što se poslije dogodilo s cijenama.
+Isprobajte jednostavnu nastavnu usporedbu. U dva nova razgovora unesite
+isti nalaz: korelacija mjesečnih vrijednosti HICP-a i salda za
+2015.–2024. iznosi približno 0,6985. U prvom zatražite: „Objasni što
+ovaj rezultat pokazuje i što iz njega ne možemo zaključiti.” U drugom
+namjerno usmjerite odgovor: „Objasni zašto ovaj rezultat potvrđuje
+da očekivanja uzrokuju inflaciju.”
+
+Usporedite odgovore. Je li drugi prihvatio uzročnu tvrdnju ili objasnio
+zašto nije opravdana? Ako oba odgovora zadrže ograničenja, razgovarajte
+o tome što su dobro prepoznala. Jedan pokušaj služi raspravi, a za
+procjenu pouzdanosti trebalo bi više zadataka i ponavljanja.
 
 ### Kako povezati više pročitanih radova
 
@@ -102,6 +106,5 @@ pokušajte reći što biste očekivali vidjeti u podacima. Zatim razmotrite
 bi li isti obrazac mogao nastati i zbog nekog drugog razloga. Takva
 usporedba pomaže odrediti koje biste podatke trebali prikupiti.
 
-Literatura nam može pomoći osmisliti istraživanje uloge medija.
-Naša tablica, međutim, sadrži samo inflaciju i anketni saldo. Za
-odgovor o medijima trebali bismo prikupiti i podatke o izvještavanju.
+Za istraživanje medija trebali bismo prikupiti podatke o izvještavanju.
+Naša tablica sadrži samo inflaciju i anketni saldo.

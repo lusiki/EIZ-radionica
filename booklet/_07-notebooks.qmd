@@ -77,19 +77,26 @@ omogućila zaključiti i zašto su njezine pretpostavke ovdje uvjerljive?
 > podatke ili usporedbe trebamo da bismo ih mogli razlikovati.
 > Poveži prijedloge s onim što smo stvarno vidjeli na grafovima.
 
-### Kako provjeriti provjeru
+### Ponovljen rezultat i opravdan zaključak
 
-Provjeru možete isprobati na rezultatu kojemu poznajete točnu
-vrijednost. U kopiji tablice namjerno promijenite jedan godišnji
-prosjek, ostavite druge vrijednosti točnima i zatražite provjeru
-prema izvornom CSV-u. Tako unaprijed znate što bi trebalo ispraviti
-i koje bi vrijednosti trebale ostati iste.
+Dobiti isti broj važan je korak provjere. Xu i Yang u radu
+[Scaling Reproducibility](https://arxiv.org/abs/2602.16733)
+opisuju postupak koji ponovno izvršava analize i uspoređuje dobivene
+procjene s objavljenima. Ponavljanje pokazuje možemo li iz sačuvanih
+materijala dobiti rezultat. Za tumačenje još treba procijeniti
+odgovaraju li mjere i postupak istraživačkom pitanju.
 
-Je li alat pronašao pogrešku? Je li točan rezultat proglasio pogrešnim?
-Pogledajte je li ponovno izračunao vrijednosti ili samo komentirao
-tablicu. Jedan pokušaj ne mjeri opću pouzdanost, ali pokazuje što
-podrazumijevamo pod provjerom. Za nastavak rada vratite se ispravnoj
-tablici i izvornim podacima.
+Drukčiju provjeru ispituje Toda u radu
+[Can AI Refute Economic Theory?](https://arxiv.org/abs/2606.05383).
+U četiri teorijska rada s poznatim pogreškama nijedan ispitani model
+nije pronašao stvarnu pogrešku bez znatnog ljudskog usmjeravanja.
+To je ograničen pokus koji otvara pitanje što provjeravatelj mora
+znati da bi pomoć alata bila korisna.
+
+Vratite se korelaciji iz naše tablice. Ako ponovimo račun i dobijemo
+0,6985, što smo time provjerili? Što bi još trebalo ustanoviti prije
+tvrdnje da očekivanja uzrokuju inflaciju? Pokušajte zasebno objasniti
+što opravdava broj, a što bi opravdalo takav zaključak.
 
 ### Možemo li objasniti dobiveni rezultat?
 
@@ -99,13 +106,9 @@ analiza provedena, iako nije bila. Zato uz objašnjenje postupka treba
 pogledati i stvarni rezultat. U našoj vježbi to znači otvoriti tablicu
 ili graf i povezati ih s pitanjem, mjerama i razdobljem koje smo zadali.
 
-Odaberite rezultat koji još ne možete dobro objasniti. Što vam točno
-nedostaje? Treba li razjasniti vremensku usporedbu, ponoviti račun
-ili pronaći druge podatke? Riješite to prije nego što zatražite
-novu tablicu. Time smanjujete dug provjere s početka priručnika.
+Ako rezultat još ne možete objasniti, razjasnite što vam nedostaje
+prije nove tablice. Time smanjujete dug provjere s početka priručnika.
 
-Sačuvajte podatke, odabrane prikaze i tablicu rezultata. Za potpuno
-ponavljanje računalnog postupka treba i datoteka s uputama koje
-računalo može ponovno izvršiti. Zatražite je od alata. Samo ponovno
-slanje istog upita može dati drukčiji postupak. Kolegi koji želi
-ponoviti vaš rad objasnite što ste sačuvali i kako to može upotrijebiti.
+Uz podatke i rezultate zatražite datoteku s postupkom koji računalo
+može ponovno izvršiti. Isti razgovorni upit može dati drukčiji postupak.
+Kolegi objasnite što ste sačuvali i kako može ponoviti vaš rad.

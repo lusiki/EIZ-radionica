@@ -34,17 +34,24 @@ razdoblje ubrzanja cijena ili istražiti kreću li se dvije mjere zajedno.
 Ako želimo objasniti što je uzrokovalo promjenu, morat ćemo osmisliti
 istraživanje koje može razlikovati moguća objašnjenja.
 
-### Što poznavanje teme donosi pitanju
+### Koje pitanje vrijedi istražiti
 
-Pri izboru teme krenite i od onoga što već poznajete: određenog
-područja, jezika ili izvora podataka. U hrvatskom primjeru poznavanje
-lokalnih rasprava o cijenama može vas navesti na pitanje koje općeniti
-upit o inflaciji ne bi otvorio.
+Kad je lako dobiti mnogo prijedloga, treba odlučiti kojemu posvetiti
+vrijeme. Zamislite da AI predloži usporedbu prosjeka, potragu za
+neobičnim mjesecima i usporedbu dvaju razdoblja. Svaki je zadatak
+izvediv, ali svaki otkriva nešto drugo. Koji bi odgovor promijenio
+vaše razumijevanje teme?
 
-Recite koju biste okolnost izdvojili nekome tko slabo poznaje Hrvatsku.
-Što biste zbog nje željeli istražiti? Potom razjasnite imamo li u tablici
-mjeru koja bi pomogla odgovoriti. Poznavanje konteksta pomaže osmisliti
-pitanje, a podaci određuju koliko mu se možemo približiti.
+Ning Li u radu [The Ideation Bottleneck](https://arxiv.org/abs/2604.03338)
+odvojeno razmatra kvalitetu ideje i izvedbe te u svojoj usporedbi
+radova istraživača i radova koje je sastavio AI nalazi veću razliku
+u idejama. Riječ je o
+radnoj verziji istraživanja u kojoj kvalitetu ocjenjuju AI modeli.
+Koristimo je kao povod za razgovor o tome što smatramo dobrim pitanjem.
+
+Kad dobijete tri prijedloga iz upita u nastavku, odaberite jedan i
+objasnite što biste njegovim odgovorom saznali. Recite i zašto biste
+drugi prijedlog zasad ostavili po strani.
 
 ### Od teme do pitanja na koje možemo odgovoriti
 
@@ -58,12 +65,6 @@ mjere. Iz njega možemo zamisliti prikaz i objasniti što će čitatelj saznati.
 > možemo istražiti tim podacima. Za svako objasni što bismo saznali i
 > koji bi prikaz pomogao odgovoriti. Zatim mi postavi jedno pitanje
 > koje će mi pomoći odabrati temu.
-
-Odaberite prijedlog koji vas zanima. Pitanje o 2022. usmjerava pogled
-na naglu promjenu cijena, dok usporedba dvaju petogodišnjih razdoblja
-ispituje koliko je odnos stabilan. Objasnite što biste odgovorom na
-svoje pitanje dodali početnom opisu. Ako vam to još nije jasno,
-razradite pitanje prije nego što zatražite nove rezultate.
 
 Prvi graf može vas navesti na novo pitanje. Recite što vas je na njemu
 iznenadilo i kako je to promijenilo početnu zamisao. Pitanje koje ste

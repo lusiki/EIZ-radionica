@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#naručite-prikaz-koji-odgovara-pitanju" id="toc-naručite-prikaz-koji-odgovara-pitanju" class="nav-link" data-scroll-target="#naručite-prikaz-koji-odgovara-pitanju">Naručite prikaz koji odgovara pitanju</a></li>
   <li><a href="#što-dobivamo-godišnjom-tablicom" id="toc-što-dobivamo-godišnjom-tablicom" class="nav-link" data-scroll-target="#što-dobivamo-godišnjom-tablicom">Što dobivamo godišnjom tablicom</a></li>
   <li><a href="#promijenite-jednu-stvar-i-objasnite-učinak" id="toc-promijenite-jednu-stvar-i-objasnite-učinak" class="nav-link" data-scroll-target="#promijenite-jednu-stvar-i-objasnite-učinak">Promijenite jednu stvar i objasnite učinak</a></li>
-  <li><a href="#udio-čega" id="toc-udio-čega" class="nav-link" data-scroll-target="#udio-čega">Udio čega?</a></li>
+  <li><a href="#odluke-skrivene-u-gotovom-grafu" id="toc-odluke-skrivene-u-gotovom-grafu" class="nav-link" data-scroll-target="#odluke-skrivene-u-gotovom-grafu">Odluke skrivene u gotovom grafu</a></li>
   <li><a href="#što-graf-govori-čitatelju" id="toc-što-graf-govori-čitatelju" class="nav-link" data-scroll-target="#što-graf-govori-čitatelju">Što graf govori čitatelju</a></li>
   </ul></li>
   <li><a href="#poglavlje-23" id="toc-poglavlje-23" class="nav-link" data-scroll-target="#poglavlje-23">2.3 Ponovite analizu od početka</a>
@@ -179,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#vratite-se-cijelom-skupu" id="toc-vratite-se-cijelom-skupu" class="nav-link" data-scroll-target="#vratite-se-cijelom-skupu">Vratite se cijelom skupu</a></li>
   <li><a href="#što-korelacija-sažima" id="toc-što-korelacija-sažima" class="nav-link" data-scroll-target="#što-korelacija-sažima">Što korelacija sažima</a></li>
   <li><a href="#kada-više-izračuna-postane-novo-istraživanje" id="toc-kada-više-izračuna-postane-novo-istraživanje" class="nav-link" data-scroll-target="#kada-više-izračuna-postane-novo-istraživanje">Kada više izračuna postane novo istraživanje</a></li>
-  <li><a href="#kako-provjeriti-provjeru" id="toc-kako-provjeriti-provjeru" class="nav-link" data-scroll-target="#kako-provjeriti-provjeru">Kako provjeriti provjeru</a></li>
+  <li><a href="#ponovljen-rezultat-i-opravdan-zaključak" id="toc-ponovljen-rezultat-i-opravdan-zaključak" class="nav-link" data-scroll-target="#ponovljen-rezultat-i-opravdan-zaključak">Ponovljen rezultat i opravdan zaključak</a></li>
   <li><a href="#možemo-li-objasniti-dobiveni-rezultat" id="toc-možemo-li-objasniti-dobiveni-rezultat" class="nav-link" data-scroll-target="#možemo-li-objasniti-dobiveni-rezultat">Možemo li objasniti dobiveni rezultat?</a></li>
   </ul></li>
   <li><a href="#poglavlje-24" id="toc-poglavlje-24" class="nav-link" data-scroll-target="#poglavlje-24">2.4 Napišite i uredite zaključak</a>
@@ -254,8 +254,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="kada-ai-stvara-novu-mjeru" class="level3">
 <h3 class="anchored" data-anchor-id="kada-ai-stvara-novu-mjeru">Kada AI stvara novu mjeru</h3>
-<p>Ako bismo kasnije analizirali medijske tekstove, mogli bismo zatražiti da AI svaki članak označi prema tonu. Tada njegov odgovor postaje istraživačka varijabla. Ludwig, Mullainathan i Rambachan u radu <a href="https://www.nber.org/papers/w33344">Large Language Models: An Applied Econometric Framework</a> objašnjavaju zašto takvo mjerenje treba usporediti s validacijskim uzorkom. Pogreške u oznakama mogu utjecati na kasnije procjene odnosa.</p>
-<p>Za početak odaberite nekoliko tekstova i dogovorite što biste nazvali zabrinutim tonom. Usporedite svoje oznake s AI oznakama i razgovarajte o neslaganjima. Tih nekoliko primjera služi učenju, a za istraživanje treba osmisliti zaseban validacijski uzorak i uzeti pogreške u obzir. To bi bio novi projekt. U našem CSV-u takvih oznaka nema.</p>
+<p>Ako AI označi ton medijskih članaka, njegove oznake postaju podatak za daljnju analizu. Zamislite da svaku pojavu riječi „poskupljenje” protumači kao zabrinutost, pa tako označi i neutralne vijesti. Tada bismo mogli precijeniti zabrinut ton upravo u mjesecima kada se o cijenama više izvještava. Pogreška u oznaci može promijeniti i odnos koji kasnije procjenjujemo.</p>
+<p>Ludwig, Mullainathan i Rambachan u radu <a href="https://www.nber.org/papers/w33344">Large Language Models: An Applied Econometric Framework</a> objašnjavaju kako validacijski uzorak omogućuje procjenu pogrešaka AI mjerenja i njihovo uzimanje u obzir u daljnjoj analizi.</p>
+<p>Za vježbu usporedite nekoliko vlastitih oznaka s AI oznakama. Razgovarajte o neslaganju: je li kategorija nejasna ili je model pogrešno protumačio tekst? Za istraživanje treba odabrati zaseban validacijski uzorak i procijeniti kako pogreške utječu na nalaz. To bi bio novi projekt. U našem CSV-u medijskih oznaka nema.</p>
 </section>
 <section id="koliko-posla-prepustiti-asistentu" class="level3">
 <h3 class="anchored" data-anchor-id="koliko-posla-prepustiti-asistentu">Koliko posla prepustiti asistentu</h3>
@@ -298,10 +299,11 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <p>Izdvojeni prikaz obuhvaća 60 mjeseci. Može olakšati čitanje promjene, ali izbor početka i kraja utječe na dojam. Ako uspoređujete nekoliko grafova iste mjere, razgovarajte i o rasponu okomite osi. Jednaka skala olakšava procjenu veličine razlika između prikaza.</p>
 </section>
-<section id="udio-čega" class="level3">
-<h3 class="anchored" data-anchor-id="udio-čega">Udio čega?</h3>
-<p>Zamislite da prikupljate medijske tekstove o inflaciji. Njihov broj može rasti, a udio padati ako ukupan broj prikupljenih tekstova raste još brže. Promjena može nastati i zato što ste uključili novi portal. Prije tumačenja grafa razjasnite prati li promjenu izvještavanja u istim izvorima ili promjenu zbirke koju analizirate.</p>
-<p>Za takav graf pitajte: zanima li nas količina izvještavanja ili mjesto inflacije među svim temama? Uz udio treba znati što ulazi u nazivnik. U našoj godišnjoj tablici srodno je pitanje koliko mjeseci ulazi u svaki prosjek. Jednaki stupci ne jamče da sažimaju jednak obuhvat.</p>
+<section id="odluke-skrivene-u-gotovom-grafu" class="level3">
+<h3 class="anchored" data-anchor-id="odluke-skrivene-u-gotovom-grafu">Odluke skrivene u gotovom grafu</h3>
+<p>Kad zatražite „najbolji graf”, alat mora odabrati što će prikazati, kako će sažeti podatke i koju će usporedbu istaknuti. Pogledajte koji je izbor napravio. U našem primjeru godišnji prosjek sažima dvanaest mjeseci, dok mjesečni prikaz čuva trenutak promjene. Naslov zatim usmjerava pažnju čitatelja na jedan obrazac.</p>
+<p>Za udjele treba razjasniti i nazivnik. Zamislite da prikupljate medijske tekstove o inflaciji. Njihov broj može rasti, a udio padati ako ukupan broj tekstova raste još brže. Uključivanje novog portala također može promijeniti sliku. Što graf tada opisuje: izvještavanje u istim izvorima ili promjenu obuhvata zbirke?</p>
+<p>Vratite se svojem prikazu. Objasnite jednu odluku koju je alat donio bez vašeg izričitog zahtjeva i predložite drugu mogućnost. Koja bolje odgovara vašem pitanju? Odabir obrazložite onime što čitatelj treba moći usporediti.</p>
 </section>
 <section id="što-graf-govori-čitatelju" class="level3">
 <h3 class="anchored" data-anchor-id="što-graf-govori-čitatelju">Što graf govori čitatelju</h3>
@@ -341,16 +343,17 @@ ul.task-list li input[type="checkbox"] {
 <p>Predloži jedno moguće objašnjenje razlike među podrazdobljima i jedno alternativno objašnjenje. Za svako reci koje dodatne podatke ili usporedbe trebamo da bismo ih mogli razlikovati. Poveži prijedloge s onim što smo stvarno vidjeli na grafovima.</p>
 </blockquote>
 </section>
-<section id="kako-provjeriti-provjeru" class="level3">
-<h3 class="anchored" data-anchor-id="kako-provjeriti-provjeru">Kako provjeriti provjeru</h3>
-<p>Provjeru možete isprobati na rezultatu kojemu poznajete točnu vrijednost. U kopiji tablice namjerno promijenite jedan godišnji prosjek, ostavite druge vrijednosti točnima i zatražite provjeru prema izvornom CSV-u. Tako unaprijed znate što bi trebalo ispraviti i koje bi vrijednosti trebale ostati iste.</p>
-<p>Je li alat pronašao pogrešku? Je li točan rezultat proglasio pogrešnim? Pogledajte je li ponovno izračunao vrijednosti ili samo komentirao tablicu. Jedan pokušaj ne mjeri opću pouzdanost, ali pokazuje što podrazumijevamo pod provjerom. Za nastavak rada vratite se ispravnoj tablici i izvornim podacima.</p>
+<section id="ponovljen-rezultat-i-opravdan-zaključak" class="level3">
+<h3 class="anchored" data-anchor-id="ponovljen-rezultat-i-opravdan-zaključak">Ponovljen rezultat i opravdan zaključak</h3>
+<p>Dobiti isti broj važan je korak provjere. Xu i Yang u radu <a href="https://arxiv.org/abs/2602.16733">Scaling Reproducibility</a> opisuju postupak koji ponovno izvršava analize i uspoređuje dobivene procjene s objavljenima. Ponavljanje pokazuje možemo li iz sačuvanih materijala dobiti rezultat. Za tumačenje još treba procijeniti odgovaraju li mjere i postupak istraživačkom pitanju.</p>
+<p>Drukčiju provjeru ispituje Toda u radu <a href="https://arxiv.org/abs/2606.05383">Can AI Refute Economic Theory?</a>. U četiri teorijska rada s poznatim pogreškama nijedan ispitani model nije pronašao stvarnu pogrešku bez znatnog ljudskog usmjeravanja. To je ograničen pokus koji otvara pitanje što provjeravatelj mora znati da bi pomoć alata bila korisna.</p>
+<p>Vratite se korelaciji iz naše tablice. Ako ponovimo račun i dobijemo 0,6985, što smo time provjerili? Što bi još trebalo ustanoviti prije tvrdnje da očekivanja uzrokuju inflaciju? Pokušajte zasebno objasniti što opravdava broj, a što bi opravdalo takav zaključak.</p>
 </section>
 <section id="možemo-li-objasniti-dobiveni-rezultat" class="level3">
 <h3 class="anchored" data-anchor-id="možemo-li-objasniti-dobiveni-rezultat">Možemo li objasniti dobiveni rezultat?</h3>
 <p>U svojem <a href="https://paulgp.substack.com/p/integration-and-collaboration-in">primjeru suradnje na empirijskoj analizi</a> Goldsmith-Pinkham opisuje slučaj u kojem je zapis rada tvrdio da je analiza provedena, iako nije bila. Zato uz objašnjenje postupka treba pogledati i stvarni rezultat. U našoj vježbi to znači otvoriti tablicu ili graf i povezati ih s pitanjem, mjerama i razdobljem koje smo zadali.</p>
-<p>Odaberite rezultat koji još ne možete dobro objasniti. Što vam točno nedostaje? Treba li razjasniti vremensku usporedbu, ponoviti račun ili pronaći druge podatke? Riješite to prije nego što zatražite novu tablicu. Time smanjujete dug provjere s početka priručnika.</p>
-<p>Sačuvajte podatke, odabrane prikaze i tablicu rezultata. Za potpuno ponavljanje računalnog postupka treba i datoteka s uputama koje računalo može ponovno izvršiti. Zatražite je od alata. Samo ponovno slanje istog upita može dati drukčiji postupak. Kolegi koji želi ponoviti vaš rad objasnite što ste sačuvali i kako to može upotrijebiti.</p>
+<p>Ako rezultat još ne možete objasniti, razjasnite što vam nedostaje prije nove tablice. Time smanjujete dug provjere s početka priručnika.</p>
+<p>Uz podatke i rezultate zatražite datoteku s postupkom koji računalo može ponovno izvršiti. Isti razgovorni upit može dati drukčiji postupak. Kolegi objasnite što ste sačuvali i kako može ponoviti vaš rad.</p>
 </section>
 </section>
 <section id="poglavlje-24" class="level2">
@@ -392,8 +395,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="što-ostaje-kad-zatvorite-razgovor" class="level3">
 <h3 class="anchored" data-anchor-id="što-ostaje-kad-zatvorite-razgovor">Što ostaje kad zatvorite razgovor</h3>
-<p>Liu i suradnici u eksperimentima s razlomcima i razumijevanjem pročitanog nalaze slabiji samostalan učinak nakon uklanjanja AI pomoći nego u kontrolnoj skupini. Njihov rad <a href="https://ai-project-website.github.io/AI-assistance-reduces-persistence/">AI Assistance Reduces Persistence and Hurts Independent Performance</a> ne ispituje pisanje ekonomskih radova ni dugoročno učenje. Ipak, daje povod da razdvojimo dovršen zadatak od onoga što smo naučili.</p>
-<p>Zatvorite razgovor i uz svoj graf objasnite zašto ste odabrali baš tu usporedbu. Zatim odgovorite na novo pitanje kolege, primjerice što bi se izgubilo prikazom samo godišnjih prosjeka. Ako zapnete, vratite se objašnjenju ili zatražite malu pomoć prije gotovog odgovora. Koji biste dio analize sada mogli sami objasniti u novom zadatku?</p>
+<p>Dovršen tekst pokazuje što smo proizveli. Razumijevanje možemo isprobati novim pitanjem. Liu i suradnici u radu <a href="https://ai-project-website.github.io/AI-assistance-reduces-persistence/">AI Assistance Reduces Persistence and Hurts Independent Performance</a> nalaze slabiji samostalan učinak nakon uklanjanja AI pomoći nego u kontrolnoj skupini. Ispitivali su kratke zadatke s razlomcima i razumijevanjem pročitanog. Ti rezultati ne daju izravnu procjenu dugoročnog učenja ekonomije.</p>
+<p>Zatvorite razgovor i uz svoj graf objasnite zašto ste odabrali baš tu usporedbu. Neka kolega postavi novo pitanje, primjerice što bi se izgubilo prikazom samo godišnjih prosjeka. Pokušajte odgovoriti vlastitim riječima, pa se vratite dijelu koji vam je ostao nejasan. Za njega zatražite objašnjenje ili mali trag i ponovno pokušajte. Što biste sada znali napraviti u sličnom zadatku s drugim podacima?</p>
 </section>
 <section id="od-zaključka-do-sljedećeg-pitanja" class="level3">
 <h3 class="anchored" data-anchor-id="od-zaključka-do-sljedećeg-pitanja">Od zaključka do sljedećeg pitanja</h3>

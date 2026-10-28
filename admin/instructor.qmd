@@ -46,14 +46,14 @@ s njihovim radom. Tablica služi kao podsjetnik tijekom vođenja.
 
 | Korak | Pitanje za razgovor | Na što usmjeriti razgovor |
 |---|---|---|
-| [1.1 Pitanje](../booklet/day1.qmd#poglavlje-11) | Što biste o hrvatskom kontekstu objasnili nekome tko ga slabo poznaje? | Povežite tu okolnost s pitanjem i podatkom koji bi za odgovor trebao. |
-| [1.2 Izvori](../booklet/day1.qmd#poglavlje-12) | Što se promijenilo kada ste otvorili puni tekst? | Razmotrite kako dostupnost izvora može oblikovati pregled literature. |
-| [1.3 Sažetak](../booklet/day1.qmd#poglavlje-13) | Po čemu bismo i kada znali da se predviđanje ostvarilo? | Sačuvajte razliku između nalaza, tumačenja i očekivanja. |
-| [1.4 Plan](../booklet/day1.qmd#poglavlje-14) | Možete li opisati analizu bez naziva aplikacije? | Izdvojite odluke koje ostaju iste nakon promjene alata. |
-| [2.1 Podaci](../booklet/day2.qmd#poglavlje-21) | Kada bi AI oznaka tona članka postala koristan podatak? | Razgovarajte o značenju kategorija i neslaganjima s ljudskim oznakama. Medijski tekstovi bili bi novi projekt. |
-| [2.2 Prikazi](../booklet/day2.qmd#poglavlje-22) | Može li broj tekstova rasti, a njihov udio padati? | Tražite objašnjenje nazivnika i promjene obuhvata. |
-| [2.3 Ponavljanje](../booklet/day2.qmd#poglavlje-23) | Je li provjera otkrila namjernu pogrešku i prihvatila točne vrijednosti? | Pokus izvedite na kopiji tablice. Razlikujte komentar od ponovnog izračuna i vratite ispravan rezultat. |
-| [2.4 Zaključak](../booklet/day2.qmd#poglavlje-24) | Što sada možete objasniti bez razgovora s alatom? | Postavite novo pitanje uz isti graf. Nalaz o kratkim zadacima učenja ne prenosite automatski na dugoročno učenje ekonomije. |
+| [1.1 Pitanje](../booklet/day1.qmd#poglavlje-11) | Koji od tri prijedloga vrijedi istražiti i zašto? | Tražite što bi odgovor dodao razumijevanju teme. Li koristi AI ocjenjivanje kvalitete, pa njegov nalaz otvara raspravu o kriterijima. |
+| [1.2 Izvori](../booklet/day1.qmd#poglavlje-12) | Koji izvor daje ideju, koji podupire tvrdnju, a koji objašnjava postupak? | Povežite rad, vodič i razgovor s istraživačem s njihovom svrhom. Razlikujte dostupan sažetak od punog teksta. |
+| [1.3 Sažetak](../booklet/day1.qmd#poglavlje-13) | Mijenja li se tumačenje istih brojki kada pitanje sugerira zaključak? | U dva nova razgovora usporedite neutralnu i namjerno usmjerenu uputu iz priručnika. Ako oba odgovora prepoznaju ograničenje, objasnite što je dobro. |
+| [1.4 Plan](../booklet/day1.qmd#poglavlje-14) | Koji korak možemo delegirati, a prije kojega treba donijeti odluku? | Razlikujte izračun prosjeka od izbora razdoblja i postupanja s mogućim prazninama u podacima. |
+| [2.1 Podaci](../booklet/day2.qmd#poglavlje-21) | Što se događa ako AI neutralne vijesti o poskupljenju označi kao zabrinute? | Povežite pogrešku u oznaci s kasnijom usporedbom. Nekoliko nastavnih primjera nije zamjena za validacijski uzorak. |
+| [2.2 Prikazi](../booklet/day2.qmd#poglavlje-22) | Koju je odluku o grafu alat donio bez našeg zahtjeva? | Razgovarajte o sažimanju, obuhvatu, nazivniku i naslovu. Neka sudionici obrazlože jednu drugu mogućnost. |
+| [2.3 Ponavljanje](../booklet/day2.qmd#poglavlje-23) | Što smo provjerili ako smo ponovno dobili korelaciju 0,6985? | Razlikujte ponavljanje računa od opravdanosti uzročnog zaključka. Usporedite izvršavanje analize s provjerom teorijskog argumenta. |
+| [2.4 Zaključak](../booklet/day2.qmd#poglavlje-24) | Možete li odgovoriti na novo pitanje uz svoj graf bez čitanja razgovora? | Ostavite vrijeme za vlastiti odgovor. Nalaz o kratkim zadacima učenja ne prenosite automatski na dugoročno učenje ekonomije. |
 
 Poveznice na izvorna istraživanja nalaze se uz odlomke i na
 [stranici izvora](../materials/sources.qmd#kako-ekonomija-koristi-ai).
